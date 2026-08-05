@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "summer-school-db"
+version = "0.1.0"
+description = "db2 schema, API and staging loader"
+requires-python = ">=3.9"
+dependencies = ["pandas", "loguru"]
+
+[tool.setuptools]
+packages = ["probedb", "loader"]
+
+[tool.setuptools.package-dir]
+probedb = "database/probedb"
+loader = "loader"

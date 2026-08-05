@@ -1,0 +1,10 @@
+uniprot_id	target_key	hgnc	species
+P53350	PLK1	PLK1	Homo sapiens
+O60885	BRD4	BRD4	Homo sapiens
+P25440	BRD2	BRD2	Homo sapiens
+P09874	PARP1	PARP1	Homo sapiens
+P09874	PARP 1, 2 and 3	PARP1	Homo sapiens
+Q9UGN5	PARP 1, 2 and 3	PARP2	Homo sapiens
+Q9Y6F1	PARP 1, 2 and 3	PARP3	Homo sapiens
+P06493	CDK1/cyclin B1	CDK1	Homo sapiens
+P14635	CDK1/cyclin B1	CCNB1	Homo sapiens

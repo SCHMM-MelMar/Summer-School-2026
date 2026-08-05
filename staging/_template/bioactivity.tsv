@@ -1,0 +1,14 @@
+inchikey	target_key	moa	bioactivity_type	relation	value	unit	assay_type	assay_description	cell_line	concentration	concentration_unit	source_db	source	source_xref
+XQVVPGYIWAGRNI-JOCHJYFZSA-N	PLK1	inhibitor	IC50	=	0.83	nM	biochemical	kinase activity assay				opnMe		probe:BI-2536
+XQVVPGYIWAGRNI-JOCHJYFZSA-N	PLK1	inhibitor	pIC50	=	10.08	-log(M)	biochemical					Probes & Drugs	PMID:33539089	activity:138064
+XQVVPGYIWAGRNI-JOCHJYFZSA-N	PLK1	inhibitor	IC50	=	1.1	nM	biochemical	kinase activity assay				in-house	assay report 2024-03	PLK1-BIO-0042
+XQVVPGYIWAGRNI-JOCHJYFZSA-N	PLK1	inhibitor	EC50	=	12	nM	cell	antiproliferation	HeLa			in-house	assay report 2024-03	PLK1-CELL-0007
+XQVVPGYIWAGRNI-JOCHJYFZSA-N	BRD4	inhibitor	IC50	=	1.2	nM	biochemical					literature	PMID:32088495	
+XQVVPGYIWAGRNI-JOCHJYFZSA-N	CDK1/cyclin B1		IC50	>	10000	nM	biochemical	kinase counter-screen				literature	PMID:17291758	
+DNVXATUJJDPFDM-KRWDZBQOSA-N	BRD4	inhibitor	EC50	=	144.5	nM	cell		MV4-11			literature	PMID:31303996	
+DNVXATUJJDPFDM-KRWDZBQOSA-N	BRD2	inhibitor	IC50	=	120.2	nM	biochemical					literature	PMID:35007061	
+DNVXATUJJDPFDM-KRWDZBQOSA-N	BRD2	inhibitor	IC50	=	141.3	nM	biochemical					literature	PMID:35007061	
+DNVXATUJJDPFDM-KRWDZBQOSA-N	BRD2	inhibitor	Kd	=	10.96	nM	binding					literature	PMID:36470106	
+FDLYAMZZIXQODN-UHFFFAOYSA-N	PARP1	inhibitor	IC50	=	0.1	nM	biochemical					literature	PMID:38776806	
+FDLYAMZZIXQODN-UHFFFAOYSA-N	PARP 1, 2 and 3	inhibitor	IC50	=	20.89	nM	biochemical					literature	PMID:23473053	
+FDLYAMZZIXQODN-UHFFFAOYSA-N	PLK1		Kd	>	30	uM	binding	selectivity counter-screen				in-house	assay report 2024-03	PLK1-BIO-0043
