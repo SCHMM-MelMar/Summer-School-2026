@@ -55,7 +55,7 @@ MoA: Dennis, Andrea
 P&D: Raquel, Brennan
 OpmMe: Danya
 SGC: Lukas
-ReFrame: Andreea
+ReFrame: Andreea, Maedeh
 
 IT Team:
 Dennis, Danya, Melanie, Nina, Leander
