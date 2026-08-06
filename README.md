@@ -8,6 +8,7 @@ database/schema.sql       the DDL, the single source of truth
 database/probedb/         connect, insert, query
 loader/                   read staging files, write them into the database
 staging/_template/        worked example of what a data source hands over
+chemicalprobes.org/       the same thing done from a real source, start at its README
 examples/                 populate_db.py, explore_db.ipynb
 tests.py
 ```

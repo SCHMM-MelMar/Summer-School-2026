@@ -117,6 +117,25 @@ SELECT t.target_id, t.type, t.name,
   LEFT JOIN uniprot u ON u.uniprot_id = tu.uniprot_id;
 
 
+-- ---------------------------------------------------------------------------
+-- Added for the Chemical Probes Portal source (chemicalprobes.org/).
+--
+-- Everything above this line is unchanged. These tables are appended, not
+-- inserted, for one concrete reason: probedb/schema.py reads a vocabulary back
+-- out of this file with an unanchored regex, so a CHECK on a column whose name
+-- ends in `type` or `relation` placed ABOVE the table it belongs to would be
+-- found first and silently replace that table's vocabulary. Appending is safe;
+-- inserting is not.
+--
+-- They hold what the four staging files cannot: a source's opinion of a
+-- compound, its opinion of a target, animal doses, a reading list, numbers it
+-- could read but not trust, and records that could not become a compound at
+-- all. Nothing here is portal-specific in its shape -- any source with the same
+-- kinds of fact can use them.
+--
+-- Written by chemicalprobes.org/preprocess.py; see chemicalprobes.org/README.md.
+-- ---------------------------------------------------------------------------
+
 -- the portal publishes compounds it has judged unsuitable as probes, with no
 -- target and no measurement, so the only thing that explains them is this
 -- verdict. name, smiles and the ChEMBL ids are not repeated here: inchikey is a
