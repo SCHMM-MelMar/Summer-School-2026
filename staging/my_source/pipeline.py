@@ -1,5 +1,21 @@
-import pandas as pd
+from pathlib import Path
+
 import numpy as np
+import pandas as pd
+
+
+def normalize_negative_control_values(bioactivity_df):
+    result = bioactivity_df.copy()
+    negative_control_mask = (
+        result["value"].fillna("").astype(str).str.strip().str.lower() == "negative control"
+    )
+
+    if negative_control_mask.any():
+        result.loc[negative_control_mask, "moa"] = "Negative control"
+        result.loc[negative_control_mask, "value"] = np.nan
+
+    return result
+
 
 def generate_tsvs():
     input_file = "EUbOPEN compounds_cv_approved.csv"
@@ -72,6 +88,8 @@ def generate_tsvs():
     
     bio1['assay_type'] = "biochemical"
     bio1['value'] = df['Affinity Biochemical (nM)']
+    bio1['bioactivity_type'] = df['Affinity Biochemical Definition']
+    bio1['relation'] = df['Affinity Biochemical Relation']
     bio1['assay_description'] = df['Affinity Biochemical Assay Type']
     bio1['source_xref'] = df['Affinity Biochemical Source Knowledge']
     
@@ -90,6 +108,8 @@ def generate_tsvs():
     
     bio2['assay_type'] = "cell"
     bio2['value'] = df['Affinity On-target Cellular (nM)']
+    bio2['bioactivity_type'] = df['Affinity On-target Cellular Definition']
+    bio2['relation'] = df['Affinity On-target Cellular Relation']
     bio2['assay_description'] = df['Affinity On-target Cellular Assay Type']
     bio2['source_xref'] = df['Affinity on-target cellular Source Knowledge']
     
@@ -97,6 +117,9 @@ def generate_tsvs():
     bioactivity_df = pd.concat([bio1, bio2], ignore_index=True)
     
     # Remove rows where the bioactivity value is missing to prevent unnecessary duplications
+    bioactivity_df = bioactivity_df.dropna(subset=['value'])
+    bioactivity_df['relation'] = bioactivity_df['relation'].replace(0, np.nan)
+    bioactivity_df = normalize_negative_control_values(bioactivity_df)
     bioactivity_df = bioactivity_df.dropna(subset=['value'])
     
     # Save to TSV
