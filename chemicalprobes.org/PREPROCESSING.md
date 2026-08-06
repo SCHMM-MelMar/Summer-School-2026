@@ -20,10 +20,11 @@ has been changed** — that is a decision, not an omission, see below.
 
 | | decision |
 | --- | -------- |
-| **schema** | `database/schema.sql` is **not changed**. D2, D3, D5 and D11 are not taken, so the 11 fields with no column, the 1265 in vivo records, and the range/error numbers do not reach the database. The summary of exactly what that omits is below |
-| **loader** | `database/` and `loader/` are **not touched**. The two defects stay documented in `REVIEW_FINDINGS.md`; the 149 rows re-inserted per reload and the 33 dropped rows are a property of loading this source as things stand |
+| **schema** | `database/schema.sql` grows **7 tables**, so every generated file loads: `unsuitable`, `compound_annotation`, `target_annotation`, `in_vivo`, `compound_reference`, `quarantine`, `skipped_compound`. Nothing the export carries is left in a file with no home |
+| **loader** | `loader/` is **not touched**. Its seven-column identity still collapses 33 rows, so `populate()` puts them in afterwards: all 3626 written measurements reach the database |
 | **the keyless 34** | resolved externally. 10 of 34 resolved through PubChem, all 10 round-tripping through RDKit and none colliding with an existing key. Written with the lookup recorded, so a resolved structure is never mistakable for a portal one |
-| **the unsuitables** | their own entry, `unsuitable.tsv`, keyed on `inchikey` so it references `compound` the way `chembl` does. 260 rows, 14 columns |
+| **the unsuitables** | their own table, keyed on `inchikey` with a foreign key onto `compound` and one onto `bioactivity_source`. 260 rows |
+| **file names** | every generated file is `chemicalprobes_<table>.tsv` and matches its table column for column |
 
 ### How the examples see it
 

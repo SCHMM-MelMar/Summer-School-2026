@@ -143,3 +143,116 @@ CREATE TABLE unsuitable (
 );
 
 CREATE INDEX idx_unsuitable_source ON unsuitable (source_id);
+
+
+-- what a source says about a compound that has no column of its own: scores,
+-- flags, dates, external ids, the names of its control compounds. one property
+-- per row so a source can add one without a migration, and ordinal so a
+-- property can hold a list. the key makes a reload idempotent.
+CREATE TABLE compound_annotation (
+    inchikey      VARCHAR(27) NOT NULL,
+    source_db     VARCHAR(255) NOT NULL,
+    property      VARCHAR(100) NOT NULL,
+    ordinal       INTEGER NOT NULL DEFAULT 0,
+    value         TEXT,
+    CONSTRAINT pk_compound_annotation
+        PRIMARY KEY (inchikey, source_db, property, ordinal),
+    CONSTRAINT fk_ca_compound
+        FOREIGN KEY (inchikey) REFERENCES compound (inchikey)
+);
+
+
+-- the same, for what a source says about a target that is not its composition.
+-- keyed on target_id and not on an accession: one accession carries more than
+-- one class when two sources, or two records of one source, disagree.
+CREATE TABLE target_annotation (
+    target_id     INTEGER NOT NULL,
+    source_db     VARCHAR(255) NOT NULL,
+    property      VARCHAR(100) NOT NULL,
+    ordinal       INTEGER NOT NULL DEFAULT 0,
+    value         TEXT,
+    CONSTRAINT pk_target_annotation
+        PRIMARY KEY (target_id, source_db, property, ordinal),
+    CONSTRAINT fk_ta_target
+        FOREIGN KEY (target_id) REFERENCES target (target_id)
+);
+
+
+-- a dose given to an animal is not a potency: no endpoint, nothing to compare,
+-- and no target, so it cannot be a bioactivity row. one row per dose, and
+-- dose_raw keeps the string it was read out of.
+CREATE TABLE in_vivo (
+    id            SERIAL PRIMARY KEY,
+    inchikey      VARCHAR(27) NOT NULL,
+    organism      VARCHAR(100),
+    dose_value    NUMERIC,
+    dose_unit     VARCHAR(50),
+    route         VARCHAR(20),
+    dose_raw      VARCHAR(255),
+    source_id     INTEGER,
+    CONSTRAINT ck_route
+        CHECK (route IS NULL OR route IN ('IV', 'PO', 'IP', 'SC', 'topical')),
+    CONSTRAINT fk_iv_compound
+        FOREIGN KEY (inchikey) REFERENCES compound (inchikey),
+    CONSTRAINT fk_iv_source
+        FOREIGN KEY (source_id) REFERENCES bioactivity_source (source_id)
+);
+
+
+-- the literature a source cites for a compound, where it cites a reading list
+-- rather than a paper per measurement. xref_id + source_xref resolves it, the
+-- same convention bioactivity_source uses.
+CREATE TABLE compound_reference (
+    id            SERIAL PRIMARY KEY,
+    inchikey      VARCHAR(27) NOT NULL,
+    xref_id       VARCHAR(255),
+    source_xref   VARCHAR(400),
+    raw           TEXT,
+    CONSTRAINT fk_cr_compound
+        FOREIGN KEY (inchikey) REFERENCES compound (inchikey)
+);
+
+
+-- a number a preprocessor could read but not trust: a factor of 10^n it refuses
+-- to apply, a reciprocal rate constant, a range that reads high to low. kept out
+-- of bioactivity on purpose, and kept here rather than dropped so a curator can
+-- see them. reason says why, raw is the string it came from.
+CREATE TABLE quarantine (
+    id                SERIAL PRIMARY KEY,
+    inchikey          VARCHAR(27) NOT NULL,
+    target_id         INTEGER,
+    reason            VARCHAR(255) NOT NULL,
+    raw               TEXT,
+    fragment          TEXT,
+    relation          VARCHAR(5),
+    value             NUMERIC,
+    unit              VARCHAR(50),
+    bioactivity_type  VARCHAR(50),
+    assay_description TEXT,
+    source_id         INTEGER,
+    CONSTRAINT fk_q_compound
+        FOREIGN KEY (inchikey) REFERENCES compound (inchikey),
+    CONSTRAINT fk_q_target
+        FOREIGN KEY (target_id) REFERENCES target (target_id),
+    CONSTRAINT fk_q_source
+        FOREIGN KEY (source_id) REFERENCES bioactivity_source (source_id)
+);
+
+
+-- a record a source published that could not become a compound at all, almost
+-- always because it has no structure and the InChIKey is the key everywhere.
+-- the one table with no foreign key, because its rows are about absence.
+CREATE TABLE skipped_compound (
+    id            SERIAL PRIMARY KEY,
+    name          VARCHAR(255) NOT NULL,
+    source_db     VARCHAR(255) NOT NULL,
+    reason        VARCHAR(255),
+    portal_path   VARCHAR(255),
+    targets       INTEGER,
+    validations   INTEGER
+);
+
+CREATE INDEX idx_compound_annotation_property ON compound_annotation (property);
+CREATE INDEX idx_in_vivo_compound             ON in_vivo (inchikey);
+CREATE INDEX idx_compound_reference_compound  ON compound_reference (inchikey);
+CREATE INDEX idx_quarantine_compound          ON quarantine (inchikey);

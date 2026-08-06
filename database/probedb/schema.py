@@ -14,6 +14,12 @@ TABLES = [
     "bioactivity_group",
     "bioactivity",
     "unsuitable",
+    "compound_annotation",
+    "target_annotation",
+    "in_vivo",
+    "compound_reference",
+    "quarantine",
+    "skipped_compound",
 ]
 
 VIEWS = ["target_flat"]

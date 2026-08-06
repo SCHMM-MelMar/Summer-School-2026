@@ -93,7 +93,8 @@ COLUMNS = {
     "in_vivo": ["inchikey", "organism", "dose_value", "dose_unit", "route", "dose_raw",
                 "source_db", "source"],
     "reference": ["inchikey", "xref_id", "source_xref", "raw"],
-    "skipped_compound": ["name", "reason", "portal_path", "targets", "validations"],
+    "skipped_compound": ["name", "source_db", "reason", "portal_path", "targets",
+                         "validations"],
 }
 
 
@@ -456,7 +457,7 @@ def parse_dose(raw):
     return out
 
 
-ROUTE_CANON = {"oral": "PO", "gavage": "PO"}
+ROUTE_CANON = {"oral": "PO", "gavage": "PO", "topical": "topical"}
 
 
 def normalise_route(route):
@@ -909,7 +910,7 @@ def build_leftovers(probe, target, invivo, reference, control, validation=None):
     validations_per_probe = (validation.groupby("probe_ix").size()
                              if validation is not None else {})
     targets_per_probe = target.groupby("probe_ix").size()
-    skipped = [{"name": row.name,
+    skipped = [{"name": row.name, "source_db": SOURCE_DB,
                 "reason": "no InChIKey in the export and no structure resolved",
                 "portal_path": path_of[row.probe_ix],
                 "targets": targets_per_probe.get(row.probe_ix, 0),
@@ -1071,29 +1072,52 @@ def source_ids(db):
             db.conn.execute("SELECT source_id, source_db, source FROM bioactivity_source")}
 
 
-def load_unsuitable(db, out):
-    """The verdicts, into the unsuitable table.
+# every generated file loads into a table. a staging file names its source with
+# source_db/source and its target with the accession, the way bioactivity.tsv
+# does, so those are resolved to source_id and target_id on the way in.
+EXTRA_TABLES = {
+    "unsuitable": ("unsuitable", True, False),
+    "compound_annotation": ("compound_annotation", False, False),
+    "target_annotation": ("target_annotation", False, True),
+    "in_vivo": ("in_vivo", True, False),
+    "reference": ("compound_reference", False, False),
+    "quarantine": ("quarantine", True, True),
+    "skipped_compound": ("skipped_compound", False, False),
+}
 
-    Not loader/'s job: `unsuitable` is a portal concept and the loader reads the
-    four files of the contract and nothing else. The file carries source_db and
-    source where the table carries source_id, so the source is resolved here the
-    way the loader resolves it for a measurement.
+
+def load_extra(db, out):
+    """The files loader/ does not read, into the tables that hold them.
+
+    Not loader/'s job: it reads the four files of the contract and nothing else,
+    and these are this source's own tables.
     """
-    known = source_ids(db)
-    loaded = 0
-    for row in read_written(out, "unsuitable"):
-        key = (row["source_db"], row["source"])
-        if key not in known:
-            known[key] = db.add_source(row["source_db"], row["source"],
-                                       row.get("xref_id"))
-        db.insert("unsuitable", source_id=known[key],
-                  **{column: row[column] or None for column in
-                     ("inchikey", "portal_path", "published_date", "pains",
-                      "toxicophore", "cansar_id", "rating_in_cell",
-                      "rating_in_organism", "rating_count", "reference")})
-        loaded += 1
+    sources = source_ids(db)
+    targets = {u: t for t, u in
+               db.conn.execute("SELECT target_id, uniprot_id FROM target_uniprot")}
+    loaded = {}
+    for name, (table, has_source, has_target) in EXTRA_TABLES.items():
+        columns = {r[1] for r in db.conn.execute(f"PRAGMA table_info({table})")}
+        count = 0
+        for row in read_written(out, name):
+            values = {k: (v or None) for k, v in row.items() if k in columns}
+            if has_source:
+                key = (row.get("source_db"), row.get("source"))
+                if key not in sources:
+                    sources[key] = db.add_source(key[0], key[1], row.get("xref_id"))
+                values["source_id"] = sources[key]
+            if has_target:
+                values["target_id"] = targets.get(row.get("target_key"))
+            db.insert(table, **values)
+            count += 1
+        loaded[table] = count
     db.commit()
     return loaded
+
+
+def load_unsuitable(db, out):
+    """Kept for the tests that name it: the verdicts are one of the extra tables."""
+    return load_extra(db, out)["unsuitable"]
 
 
 def load_collapsed(db, out):
@@ -1151,7 +1175,7 @@ def populate(db_path, out, force=False):
     with tempfile.TemporaryDirectory() as tmp:
         result = load(db, contract_directory(out, tmp), source=SOURCE_DB)
     result["recovered_from_the_dedup"] = load_collapsed(db, out)
-    result["unsuitable"] = load_unsuitable(db, out)
+    result.update(load_extra(db, out))
     return db, result
 
 
