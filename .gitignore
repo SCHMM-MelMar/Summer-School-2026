@@ -1,7 +1,6 @@
 *.db
 __pycache__/
 *.egg-info/
-staging/*
 !staging/_template/
 build/
 dist/
