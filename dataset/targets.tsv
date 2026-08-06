@@ -1,0 +1,1121 @@
+target_key,type,name
+AADAT,protein,"Kynurenine/alpha-aminoadipate aminotransferase, mitochondrial"
+AAK1,protein,AP2-associated protein kinase 1
+ABCB1,protein,ATP-dependent translocase ABCB1
+ABCB11,protein,Bile salt export pump
+ABCC1,protein,Multidrug resistance-associated protein 1
+ABCC2,protein,ATP-binding cassette sub-family C member 2
+ABCC4,protein,ATP-binding cassette sub-family C member 4
+ABCC8/KCNJ11,complex,ATP-binding cassette sub-family C member 8 / ATP-sensitive inward rectifier potassium channel 11
+ABCC9,protein,ATP-binding cassette sub-family C member 9
+ABCG2,protein,Broad substrate specificity ATP-binding cassette transporter ABCG2
+ABHD12,protein,Lysophosphatidylserine lipase ABHD12
+ABHD6,protein,Monoacylglycerol lipase ABHD6
+ABL1,protein,Tyrosine-protein kinase ABL1
+ABL2,protein,Tyrosine-protein kinase ABL2
+ABL2/ABL1,complex,Tyrosine-protein kinase ABL2 / Tyrosine-protein kinase ABL1
+ACACA,protein,Acetyl-CoA carboxylase 1
+ACACB,protein,Acetyl-CoA carboxylase 2
+ACE,protein,Angiotensin-converting enzyme
+ACHE,protein,Acetylcholinesterase
+ACLY,protein,ATP-citrate synthase
+ACVR1,protein,Activin receptor type-1
+ACVR1B,protein,Activin receptor type-1B
+ACVR2A,protein,Activin receptor type-2A
+ACVR2B,protein,Activin receptor type-2B
+ACVRL1,protein,Activin receptor type-1-like
+ADAM17,protein,Disintegrin and metalloproteinase domain-containing protein 17
+ADAMTS4,protein,A disintegrin and metalloproteinase with thrombospondin motifs 4
+ADAMTS5,protein,A disintegrin and metalloproteinase with thrombospondin motifs 5
+ADK,protein,Adenosine kinase
+ADORA1,protein,Adenosine receptor A1
+ADORA2A,protein,Adenosine receptor A2a
+ADORA2A/ADORA2B,complex,Adenosine receptor A2a / Adenosine receptor A2b
+ADORA2B,protein,Adenosine receptor A2b
+ADORA3,protein,Adenosine receptor A3
+ADRA1A,protein,Alpha-1D adrenergic receptor
+ADRA1A/ADRA1B/ADRA1D,complex,Alpha-1D adrenergic receptor / Alpha-1B adrenergic receptor / Alpha-1D adrenergic receptor
+ADRA1B,protein,Alpha-1B adrenergic receptor
+ADRA1D,protein,Alpha-1D adrenergic receptor
+ADRA2A,protein,Alpha-2A adrenergic receptor
+ADRA2B,protein,Alpha-2B adrenergic receptor
+ADRA2C,protein,Alpha-2C adrenergic receptor
+ADRA2C/ADRA2A/ADRA1B/ADRA1A/ADRA1D/ADRA2B,complex,Alpha-2C adrenergic receptor / Alpha-2A adrenergic receptor / Alpha-1B adrenergic receptor / Alpha-1D adrenergic receptor / Alpha-1D adrenergic receptor / Alpha-2B adrenergic receptor
+ADRB1,protein,Beta-1 adrenergic receptor
+ADRB2,protein,Beta-2 adrenergic receptor
+ADRB3,protein,Beta-3 adrenergic receptor
+AGTR1,protein,Type-1 angiotensin II receptor
+AHR,protein,Aryl hydrocarbon receptor
+AKR1A1,protein,Aldo-keto reductase family 1 member A1
+AKR1B1,protein,Aldo-keto reductase family 1 member B1
+AKR1B10,protein,Aldo-keto reductase family 1 member B10
+AKR1C1,protein,Aldo-keto reductase family 1 member C1
+AKR1C2,protein,Aldo-keto reductase family 1 member C2
+AKR1C3,protein,Aldo-keto reductase family 1 member C3
+AKR1C4,protein,Aldo-keto reductase family 1 member C4
+AKT1,protein,RAC-alpha serine/threonine-protein kinase
+AKT2,protein,RAC-beta serine/threonine-protein kinase
+AKT3,protein,RAC-gamma serine/threonine-protein kinase
+ALB,protein,Fas-binding factor 1
+ALDH1A1,protein,Aldehyde dehydrogenase 1A1
+ALDH2,protein,"Aldehyde dehydrogenase, mitochondrial"
+ALDH3A1,protein,"Aldehyde dehydrogenase, dimeric NADP-preferring"
+ALK,protein,ALK tyrosine kinase receptor
+ALOX12,protein,Polyunsaturated fatty acid lipoxygenase ALOX12
+ALOX15,protein,Polyunsaturated fatty acid lipoxygenase ALOX15
+ALOX5,protein,Polyunsaturated fatty acid 5-lipoxygenase
+ALOX5AP,protein,Arachidonate 5-lipoxygenase-activating protein
+ALPL,protein,"Alkaline phosphatase, tissue-nonspecific isozyme"
+ALPPL2,protein,"Alkaline phosphatase, germ cell type"
+AMY1A/AMY1B/AMY1C,complex,Alpha-amylase 1A / Alpha-amylase 1B / Alpha-amylase 1C
+ANKK1,protein,Ankyrin repeat and protein kinase domain-containing protein 1
+ANPEP,protein,Aminopeptidase N
+AOX1,protein,Aldehyde oxidase
+APEX1,protein,DNA repair nuclease/redox regulator APEX1
+APOBEC3A,protein,DNA dC->dU-editing enzyme APOBEC-3A
+APOBEC3G,protein,DNA dC->dU-editing enzyme APOBEC-3G
+APP,protein,Amyloid-beta precursor protein
+AR,protein,Androgen receptor
+ARAF,protein,Serine/threonine-protein kinase A-Raf
+ATG4B,protein,Cysteine protease ATG4B
+ATIC,protein,Bifunctional purine biosynthesis protein ATIC
+ATP1A1,protein,Sodium/potassium-transporting ATPase subunit alpha-1
+AURKA,protein,Aurora kinase A
+AURKB,protein,Aurora kinase B
+AURKC,protein,Aurora kinase C
+AVPR1A,protein,Vasopressin V1a receptor
+AVPR1B,protein,Vasopressin V1b receptor
+AVPR2,protein,Vasopressin V2 receptor
+AXIN2,protein,Axin-2
+AXL,protein,Tyrosine-protein kinase receptor UFO
+Adra1d/Adra1a,complex,Alpha-1D adrenergic receptor / Alpha-1D adrenergic receptor
+BACE1,protein,Beta-secretase 1
+BACE2,protein,Beta-secretase 2
+BAD,protein,Bcl2-associated agonist of cell death
+BBOX1,protein,Gamma-butyrobetaine dioxygenase
+BCHE,protein,Cholinesterase
+BCL2,protein,Apoptosis regulator Bcl-2
+BCL2A1,protein,Bcl-2-related protein A1
+BCL2L1,protein,Bcl-2-like protein 1
+BCL2L10,protein,Bcl-2-like protein 10
+BCL2L2,protein,Bcl-2-like protein 2
+BCR/ABL1,complex,Breakpoint cluster region protein / Tyrosine-protein kinase ABL1
+BIRC2,protein,Baculoviral IAP repeat-containing protein 2
+BIRC3,protein,Baculoviral IAP repeat-containing protein 3
+BLK,protein,Tyrosine-protein kinase Blk
+BLM,protein,RecQ-like DNA helicase BLM
+BMP2K,protein,BMP-2-inducible protein kinase
+BMPR1A,protein,Bone morphogenetic protein receptor type-1A
+BMPR1B,protein,Bone morphogenetic protein receptor type-1B
+BMPR2,protein,Bone morphogenetic protein receptor type-2
+BMX,protein,Cytoplasmic tyrosine-protein kinase BMX
+BRAF,protein,Serine/threonine-protein kinase B-raf
+BRCA1,protein,Breast cancer type 1 susceptibility protein
+BRD2,protein,Bromodomain-containing protein 2
+BRD3,protein,Bromodomain-containing protein 3
+BRD4,protein,Bromodomain-containing protein 4
+BRDT,protein,Bromodomain testis-specific protein
+BRSK1,protein,Serine/threonine-protein kinase BRSK1
+BRSK2,protein,Serine/threonine-protein kinase BRSK2
+BRWD1,protein,Bromodomain and WD repeat-containing protein 1
+BTK,protein,Tyrosine-protein kinase BTK
+CA1,protein,Carbonic anhydrase 1
+CA12,protein,Carbonic anhydrase 12
+CA13,protein,Carbonic anhydrase 13
+CA14,protein,Carbonic anhydrase 14
+CA2,protein,Carbonic anhydrase 2
+CA3,protein,Carbonic anhydrase 3
+CA4,protein,Carbonic anhydrase 4
+CA4/CA14/CA5A/CA7/CA5B/CA3/CA2/CA13/CA1/CA12/CA6/CA9,complex,"Carbonic anhydrase 4 / Carbonic anhydrase 14 / Carbonic anhydrase 5A, mitochondrial / Carbonic anhydrase 7 / Carbonic anhydrase 5B, mitochondrial / Carbonic anhydrase 3 / Carbonic anhydrase 2 / Carbonic anhydrase 13 / Carbonic anhydrase 1 / Carbonic anhydrase 12 / Carbonic anhydrase 6 / Carbonic anhydrase 9"
+CA5A,protein,"Carbonic anhydrase 5A, mitochondrial"
+CA5A/CA5B,complex,"Carbonic anhydrase 5A, mitochondrial / Carbonic anhydrase 5B, mitochondrial"
+CA5B,protein,"Carbonic anhydrase 5B, mitochondrial"
+CA6,protein,Carbonic anhydrase 6
+CA7,protein,Carbonic anhydrase 7
+CA9,protein,Carbonic anhydrase 9
+CACNA1B,protein,Voltage-dependent N-type calcium channel subunit alpha-1B
+CACNA1C,protein,Voltage-dependent L-type calcium channel subunit alpha-1C
+CACNA1D,protein,Voltage-dependent L-type calcium channel subunit alpha-1D
+CACNA1G,protein,Voltage-dependent T-type calcium channel subunit alpha-1G
+CACNA1H,protein,Voltage-dependent T-type calcium channel subunit alpha-1H
+CACNA2D1,protein,Voltage-dependent calcium channel subunit alpha-2/delta-1
+CACNB2/CACNA1C,complex,Voltage-dependent L-type calcium channel subunit beta-2 / Voltage-dependent L-type calcium channel subunit alpha-1C
+CALM1/CALM3/CALM2,complex,Calmodulin-1 / Calmodulin-3 / Calmodulin-2
+CAMK1,protein,Calcium/calmodulin-dependent protein kinase type 1
+CAMK1D,protein,Calcium/calmodulin-dependent protein kinase type 1D
+CAMK1G,protein,Calcium/calmodulin-dependent protein kinase type 1G
+CAMK2A,protein,Calcium/calmodulin-dependent protein kinase type II subunit alpha
+CAMK2B,protein,Calcium/calmodulin-dependent protein kinase type II subunit beta
+CAMK2D,protein,Calcium/calmodulin-dependent protein kinase type II subunit delta
+CAMK2D/CAMK2B/CAMK2G/CAMK2A,complex,Calcium/calmodulin-dependent protein kinase type II subunit delta / Calcium/calmodulin-dependent protein kinase type II subunit beta / Calcium/calmodulin-dependent protein kinase type II subunit gamma / Calcium/calmodulin-dependent protein kinase type II subunit alpha
+CAMK2G,protein,Calcium/calmodulin-dependent protein kinase type II subunit gamma
+CAMK4,protein,Calcium/calmodulin-dependent protein kinase type IV
+CAMKK1,protein,Calcium/calmodulin-dependent protein kinase kinase 1
+CAMKK2,protein,Calcium/calmodulin-dependent protein kinase kinase 2
+CAPN1/CAPNS1,complex,Calpain-1 catalytic subunit / Calpain small subunit 1
+CARM1,protein,Histone-arginine methyltransferase CARM1
+CASP1,protein,Caspase-1
+CASP3,protein,Caspase-3
+CASR,protein,Extracellular calcium-sensing receptor
+CBR1,protein,Carbonyl reductase [NADPH] 1
+CCKAR,protein,Cholecystokinin receptor type A
+CCKBR,protein,Gastrin/cholecystokinin type B receptor
+CCL2,protein,C-C motif chemokine 2
+CCNA1/CDK2,complex,Cyclin-A1 / Cyclin-dependent kinase 2
+CCNA2/CDK1,complex,Cyclin-A2 / Cyclin-dependent kinase 1
+CCNA2/CDK2,complex,Cyclin-A2 / Cyclin-dependent kinase 2
+CCNB3/CDK1/CCNB1/CCNB2,complex,G2/mitotic-specific cyclin-B3 / Cyclin-dependent kinase 1 / G2/mitotic-specific cyclin-B1 / G2/mitotic-specific cyclin-B2
+CCND1/CDK4,complex,G1/S-specific cyclin-D1 / Cyclin-dependent kinase 4
+CCND1/CDK6,complex,G1/S-specific cyclin-D1 / Cyclin-dependent kinase 6
+CCNE1/CDK2,complex,G1/S-specific cyclin-E1 / Cyclin-dependent kinase 2
+CCNE1/CDK3,complex,G1/S-specific cyclin-E1 / Cyclin-dependent kinase 3
+CCNE2/CDK2/CCNE1,complex,G1/S-specific cyclin-E2 / Cyclin-dependent kinase 2 / G1/S-specific cyclin-E1
+CCNK/CDK9,complex,Cyclin-K / Cyclin-dependent kinase 9
+CCR2,protein,C-C chemokine receptor type 2
+CCR4,protein,C-C chemokine receptor type 4
+CCR5,protein,C-C chemokine receptor type 5
+CCR9,protein,C-C chemokine receptor type 9
+CD38,protein,ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 1
+CDC25A,protein,M-phase inducer phosphatase 1
+CDC25B,protein,M-phase inducer phosphatase 2
+CDC25C,protein,M-phase inducer phosphatase 3
+CDC42BPA,protein,Serine/threonine-protein kinase MRCK alpha
+CDC42BPB,protein,Serine/threonine-protein kinase MRCK beta
+CDC42BPG,protein,Serine/threonine-protein kinase MRCK gamma
+CDC7,protein,Cell division cycle 7-related protein kinase
+CDK1,protein,Cyclin-dependent kinase 1
+CDK1/CCNB1,complex,Cyclin-dependent kinase 1 / G2/mitotic-specific cyclin-B1
+CDK11A,protein,Cyclin-dependent kinase 11A
+CDK11B,protein,Cyclin-dependent kinase 11B
+CDK14,protein,Cyclin-dependent kinase 14
+CDK16,protein,Cyclin-dependent kinase 16
+CDK17,protein,Cyclin-dependent kinase 17
+CDK18,protein,Cyclin-dependent kinase 18
+CDK19,protein,Cyclin-dependent kinase 19
+CDK2,protein,Cyclin-dependent kinase 2
+CDK2/CCNA1/CCNA2,complex,Cyclin-dependent kinase 2 / Cyclin-A1 / Cyclin-A2
+CDK3,protein,Cyclin-dependent kinase 3
+CDK4,protein,Cyclin-dependent kinase 4
+CDK5,protein,Cyclin-dependent kinase 5
+CDK5R1/CDK5,complex,Cyclin-dependent kinase 5 activator 1 / Cyclin-dependent kinase 5
+CDK6,protein,Cyclin-dependent kinase 6
+CDK7,protein,Cyclin-dependent kinase 7
+CDK7/CCNH,complex,Cyclin-dependent kinase 7 / Cyclin-H
+CDK8,protein,Cyclin-dependent kinase 8
+CDK9,protein,Cyclin-dependent kinase 9
+CDK9/CCNT1,complex,Cyclin-dependent kinase 9 / Cyclin-T1
+CELA1,protein,Chymotrypsin-like elastase family member 1
+CES1,protein,Liver carboxylesterase 1
+CES2,protein,Liver carboxylesterase 1
+CFTR,protein,Cystic fibrosis transmembrane conductance regulator
+CHEK1,protein,Serine/threonine-protein kinase Chk1
+CHEK2,protein,Serine/threonine-protein kinase Chk2
+CHRM1,protein,Muscarinic acetylcholine receptor M1
+CHRM2,protein,Muscarinic acetylcholine receptor M2
+CHRM3,protein,Muscarinic acetylcholine receptor M3
+CHRM4,protein,Muscarinic acetylcholine receptor M4
+CHRM5,protein,Muscarinic acetylcholine receptor M5
+CHRNA1,protein,Acetylcholine receptor subunit alpha
+CHRNA3,protein,Neuronal acetylcholine receptor subunit alpha-3
+CHRNA3/CHRNB1/CHRNB4/CHRNB2/CHRNB3,complex,Neuronal acetylcholine receptor subunit alpha-3 / Acetylcholine receptor subunit beta / Neuronal acetylcholine receptor subunit beta-4 / Neuronal acetylcholine receptor subunit beta-2 / Neuronal acetylcholine receptor subunit beta-3
+CHRNA3/CHRNB4,complex,Neuronal acetylcholine receptor subunit alpha-3 / Neuronal acetylcholine receptor subunit beta-4
+CHRNA4,protein,Neuronal acetylcholine receptor subunit alpha-4
+CHRNA4/CHRNB2,complex,Neuronal acetylcholine receptor subunit alpha-4 / Neuronal acetylcholine receptor subunit beta-2
+CHRNA5/CHRNA3/CHRNB4/CHRNB2,complex,Neuronal acetylcholine receptor subunit alpha-5 / Neuronal acetylcholine receptor subunit alpha-3 / Neuronal acetylcholine receptor subunit beta-4 / Neuronal acetylcholine receptor subunit beta-2
+CHRNA7,protein,Neuronal acetylcholine receptor subunit alpha-7
+CHRNB1/CHRNA1/CHRNG/CHRND,complex,Acetylcholine receptor subunit beta / Acetylcholine receptor subunit alpha / Acetylcholine receptor subunit gamma / Acetylcholine receptor subunit delta
+CHRNB3/CHRNA6/CHRNB2/CHRNA3,complex,Neuronal acetylcholine receptor subunit beta-3 / Neuronal acetylcholine receptor subunit alpha-6 / Neuronal acetylcholine receptor subunit beta-2 / Neuronal acetylcholine receptor subunit alpha-3
+CHRNB4/CHRNA1,complex,Neuronal acetylcholine receptor subunit beta-4 / Acetylcholine receptor subunit alpha
+CHRNB4/CHRNA4,complex,Neuronal acetylcholine receptor subunit beta-4 / Neuronal acetylcholine receptor subunit alpha-4
+CHRND/CHRNE/CHRNB1/CHRNG/CHRNA1,complex,Acetylcholine receptor subunit delta / Acetylcholine receptor subunit epsilon / Acetylcholine receptor subunit beta / Acetylcholine receptor subunit gamma / Acetylcholine receptor subunit alpha
+CHUK,protein,Inhibitor of nuclear factor kappa-B kinase subunit alpha
+CIT,protein,Citron Rho-interacting kinase
+CLK1,protein,Dual specificity protein kinase CLK1
+CLK2,protein,Dual specificity protein kinase CLK2
+CLK3,protein,Dual specificity protein kinase CLK3
+CLK4,protein,Dual specificity protein kinase CLK4
+CMA1,protein,Chymase
+CNR1,protein,Cannabinoid receptor 1
+CNR2,protein,Cannabinoid receptor 2
+COQ8A,protein,"Atypical kinase COQ8A, mitochondrial"
+COQ8B,protein,"Atypical kinase COQ8B, mitochondrial"
+CREBBP,protein,CREB-binding protein
+CRHR1,protein,Corticotropin-releasing hormone receptor 1
+CSF1R,protein,Macrophage colony-stimulating factor 1 receptor
+CSK,protein,Tyrosine-protein kinase CSK
+CSNK1A1L,protein,Casein kinase I isoform alpha-like
+CSNK1D,protein,Casein kinase I isoform delta
+CSNK1E,protein,Casein kinase I isoform epsilon
+CSNK1G1,protein,Casein kinase I isoform gamma-1
+CSNK1G2,protein,Casein kinase I isoform gamma-2
+CSNK1G3,protein,Casein kinase I isoform gamma-3
+CSNK2A1,protein,Casein kinase II subunit alpha
+CSNK2A2,protein,Casein kinase II subunit alpha'
+CSNK2B/CSNK2A2/CSNK2A1,complex,Casein kinase II subunit beta / Casein kinase II subunit alpha' / Casein kinase II subunit alpha
+CTRB1,protein,Chymotrypsinogen B
+CTSB,protein,Cathepsin B
+CTSC,protein,Dipeptidyl peptidase 1
+CTSD,protein,Cathepsin D
+CTSH,protein,Pro-cathepsin H
+CTSK,protein,Cathepsin K
+CTSL,protein,Procathepsin L
+CTSS,protein,Cathepsin S
+CTSV,protein,Cathepsin L2
+CX3CR1,protein,CX3C chemokine receptor 1
+CXCL8,protein,Interleukin-8
+CXCR1,protein,C-X-C chemokine receptor type 1
+CXCR2,protein,C-X-C chemokine receptor type 2
+CXCR2/CXCR1,complex,C-X-C chemokine receptor type 2 / C-X-C chemokine receptor type 1
+CXCR4,protein,C-X-C chemokine receptor type 4
+CYP11B1,protein,"Cytochrome P450 11B1, mitochondrial"
+CYP11B2,protein,"Cytochrome P450 11B2, mitochondrial"
+CYP17A1,protein,"Steroid 17-alpha-hydroxylase/17,20 lyase"
+CYP19A1,protein,Aromatase
+CYP1A1,protein,Cytochrome P450 1A1
+CYP1A2,protein,Cytochrome P450 1A2
+CYP1B1,protein,Cytochrome P450 1B1
+CYP24A1,protein,"1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial"
+CYP26A1,protein,Cytochrome P450 26A1
+CYP2A13,protein,Cytochrome P450 2A13
+CYP2A6,protein,Cytochrome P450 2A6
+CYP2B6,protein,Cytochrome P450 2B6
+CYP2C19,protein,Cytochrome P450 2C19
+CYP2C8,protein,Cytochrome P450 2C8
+CYP2C9,protein,Cytochrome P450 2C9
+CYP2D6,protein,Cytochrome P450 2D6
+CYP2J2,protein,Cytochrome P450 2J2
+CYP3A4,protein,Cytochrome P450 3A4
+CYP3A5,protein,Cytochrome P450 3A5
+CYP4F2,protein,Cytochrome P450 4F2
+CYP51A1,protein,Lanosterol 14-alpha demethylase
+CYSLTR1,protein,Cysteinyl leukotriene receptor 1
+CYSLTR2,protein,Cysteinyl leukotriene receptor 2
+DAGLA,protein,Diacylglycerol lipase-alpha
+DAGLB,protein,Diacylglycerol lipase-beta
+DAO,protein,D-amino-acid oxidase
+DAPK1,protein,Death-associated protein kinase 1
+DAPK2,protein,Death-associated protein kinase 2
+DAPK3,protein,Death-associated protein kinase 3
+DCLK1,protein,Serine/threonine-protein kinase DCLK1
+DCLK2,protein,Serine/threonine-protein kinase DCLK2
+DCLK3,protein,Serine/threonine-protein kinase DCLK3
+DDO,protein,D-aspartate oxidase
+DDR1,protein,Epithelial discoidin domain-containing receptor 1
+DDR2,protein,Discoidin domain-containing receptor 2
+DGAT1,protein,Diacylglycerol O-acyltransferase 1
+DHFR,protein,Dihydrofolate reductase
+DHODH,protein,"Dihydroorotate dehydrogenase (quinone), mitochondrial"
+DHRS9,protein,Dehydrogenase/reductase SDR family member 9
+DMPK,protein,Myotonin-protein kinase
+DNMT1,protein,DNA (cytosine-5)-methyltransferase 1
+DNMT3A,protein,DNA (cytosine-5)-methyltransferase 3A
+DNMT3B,protein,DNA (cytosine-5)-methyltransferase 3B
+DNMT3L/DNMT3A,complex,DNA (cytosine-5)-methyltransferase 3-like / DNA (cytosine-5)-methyltransferase 3A
+DOT1L,protein,"Histone-lysine N-methyltransferase, H3 lysine-79 specific"
+DPP4,protein,Dipeptidyl peptidase 4
+DPP7,protein,Dipeptidyl peptidase 2
+DPP8,protein,Dipeptidyl peptidase 8
+DPP9,protein,Dipeptidyl peptidase 9
+DRD1,protein,D(1A) dopamine receptor
+DRD2,protein,D(2) dopamine receptor
+DRD3,protein,D(3) dopamine receptor
+DRD4,protein,D(4) dopamine receptor
+DRD5,protein,D(1B) dopamine receptor
+DYRK1A,protein,Dual specificity tyrosine-phosphorylation-regulated kinase 1A
+DYRK1B,protein,Dual specificity tyrosine-phosphorylation-regulated kinase 1B
+DYRK2,protein,Dual specificity tyrosine-phosphorylation-regulated kinase 2
+Drd2,protein,D(2) dopamine receptor
+Dyrk1a,protein,Dual specificity tyrosine-phosphorylation-regulated kinase 1A
+EBP,protein,"3-beta-hydroxysteroid-Delta(8),Delta(7)-isomerase"
+EED/SUZ12/EZH2,complex,Polycomb protein EED / Polycomb protein SUZ12 / Histone-lysine N-methyltransferase EZH2
+EEF2K,protein,Eukaryotic elongation factor 2 kinase
+EGFR,protein,Epidermal growth factor receptor
+EGLN1,protein,Egl nine homolog 1
+EHMT1,protein,Histone-lysine N-methyltransferase EHMT1
+EHMT2,protein,Histone-lysine N-methyltransferase EHMT2
+EIF2AK2,protein,"Interferon-induced, double-stranded RNA-activated protein kinase"
+EIF2AK3,protein,Eukaryotic translation initiation factor 2-alpha kinase 3
+EIF2AK4,protein,eIF-2-alpha kinase GCN2
+ELANE,protein,Neutrophil elastase
+EP300,protein,Histone acetyltransferase p300
+EPHA1,protein,Ephrin type-A receptor 1
+EPHA2,protein,Ephrin type-A receptor 2
+EPHA3,protein,Ephrin type-A receptor 3
+EPHA4,protein,Ephrin type-A receptor 4
+EPHA5,protein,Ephrin type-A receptor 5
+EPHA6,protein,Ephrin type-A receptor 6
+EPHA7,protein,Ephrin type-A receptor 7
+EPHA8,protein,Ephrin type-A receptor 8
+EPHB1,protein,Ephrin type-B receptor 1
+EPHB2,protein,Ephrin type-B receptor 2
+EPHB3,protein,Ephrin type-B receptor 3
+EPHB4,protein,Ephrin type-B receptor 4
+EPHX2,protein,Bifunctional epoxide hydrolase 2
+ERBB2,protein,Receptor tyrosine-protein kinase erbB-2
+ERBB3,protein,Receptor tyrosine-protein kinase erbB-3
+ERBB4/ERBB3/ERBB2/EGFR,complex,Receptor tyrosine-protein kinase erbB-4 / Receptor tyrosine-protein kinase erbB-3 / Receptor tyrosine-protein kinase erbB-2 / Epidermal growth factor receptor
+ESR1,protein,Estrogen receptor
+ESR1/ESR2,complex,Estrogen receptor / Estrogen receptor beta
+ESR2,protein,Estrogen receptor beta
+ESRRA,protein,Steroid hormone receptor ERR1
+ESRRB,protein,Steroid hormone receptor ERR2
+ESRRG,protein,Estrogen-related receptor gamma
+EZH1,protein,Histone-lysine N-methyltransferase EZH1
+EZH2,protein,Histone-lysine N-methyltransferase EZH2
+F10,protein,Coagulation factor X
+F11,protein,Coagulation factor XI
+F2,protein,Prothrombin
+F2R,protein,Proteinase-activated receptor 1
+F3,protein,Tissue factor
+F5,protein,Coagulation factor V
+F7,protein,Coagulation factor VII
+F9,protein,Coagulation factor IX
+FAAH,protein,Fatty-acid amide hydrolase 1
+FAP,protein,Prolyl endopeptidase FAP
+FASN,protein,Fatty acid synthase
+FBP1,protein,"Fructose-1,6-bisphosphatase 1"
+FDPS,protein,Farnesyl pyrophosphate synthase
+FEN1,protein,Flap endonuclease 1
+FER,protein,Tyrosine-protein kinase Fer
+FES,protein,Tyrosine-protein kinase Fes/Fps
+FFAR1,protein,Free fatty acid receptor 1
+FFAR4,protein,Free fatty acid receptor 4
+FGFR1,protein,Fibroblast growth factor receptor 1
+FGFR2,protein,Fibroblast growth factor receptor 2
+FGFR2/FGFR3/FGFR4/FGFR1,complex,Fibroblast growth factor receptor 2 / Fibroblast growth factor receptor 3 / Fibroblast growth factor receptor 4 / Fibroblast growth factor receptor 1
+FGFR3,protein,Fibroblast growth factor receptor 3
+FGFR4,protein,Fibroblast growth factor receptor 4
+FGR,protein,Tyrosine-protein kinase Fgr
+FKBP1A,protein,Peptidyl-prolyl cis-trans isomerase FKBP1A
+FKBP1A/MTOR,complex,Peptidyl-prolyl cis-trans isomerase FKBP1A / Serine/threonine-protein kinase mTOR
+FKBP1B,protein,Peptidyl-prolyl cis-trans isomerase FKBP1B
+FKBP5,protein,Peptidyl-prolyl cis-trans isomerase FKBP5
+FLT1,protein,Vascular endothelial growth factor receptor 1
+FLT3,protein,Receptor-type tyrosine-protein kinase FLT3
+FLT4,protein,Vascular endothelial growth factor receptor 3
+FLT4/FLT1/KDR,complex,Vascular endothelial growth factor receptor 3 / Vascular endothelial growth factor receptor 1 / Vascular endothelial growth factor receptor 2
+FNTA/FNTB,complex,Protein farnesyltransferase/geranylgeranyltransferase type-1 subunit alpha / Protein farnesyltransferase subunit beta
+FOLH1,protein,Glutamate carboxypeptidase 2
+FOLR1,protein,Folate receptor alpha
+FOLR2,protein,Folate receptor beta
+FPR1,protein,N-formyl peptide receptor 1
+FPR2,protein,N-formyl peptide receptor 2
+FRK,protein,Tyrosine-protein kinase FRK
+FYN,protein,Tyrosine-protein kinase Fyn
+G6PD,protein,Glucose-6-phosphate 1-dehydrogenase
+GAA,protein,Lysosomal alpha-glucosidase
+GABBR2/GABBR1,complex,Gamma-aminobutyric acid type B receptor subunit 2 / Gamma-aminobutyric acid type B receptor subunit 1
+GABRA1,protein,Gamma-aminobutyric acid receptor subunit alpha-1
+GABRA1/GABRB2/GABRG2,complex,Gamma-aminobutyric acid receptor subunit alpha-1 / Gamma-aminobutyric acid receptor subunit beta-2 / Gamma-aminobutyric acid receptor subunit gamma-2
+GABRA2/GABRB3/GABRG2,complex,Gamma-aminobutyric acid receptor subunit alpha-2 / Gamma-aminobutyric acid receptor subunit beta-3 / Gamma-aminobutyric acid receptor subunit gamma-2
+GABRA5/GABRB2/GABRA3/GABRA1/GABRB3/GABRA2/GABRA4/GABRA6/GABRB1,complex,Gamma-aminobutyric acid receptor subunit alpha-5 / Gamma-aminobutyric acid receptor subunit beta-2 / Gamma-aminobutyric acid receptor subunit alpha-3 / Gamma-aminobutyric acid receptor subunit alpha-1 / Gamma-aminobutyric acid receptor subunit beta-3 / Gamma-aminobutyric acid receptor subunit alpha-2 / Gamma-aminobutyric acid receptor subunit alpha-4 / Gamma-aminobutyric acid receptor subunit alpha-6 / Gamma-aminobutyric acid receptor subunit beta-1
+GABRB3/GABRA3/GABRG2,complex,Gamma-aminobutyric acid receptor subunit beta-3 / Gamma-aminobutyric acid receptor subunit alpha-3 / Gamma-aminobutyric acid receptor subunit gamma-2
+GABRB3/GABRA4/GABRG2,complex,Gamma-aminobutyric acid receptor subunit beta-3 / Gamma-aminobutyric acid receptor subunit alpha-4 / Gamma-aminobutyric acid receptor subunit gamma-2
+GABRB3/GABRG2/GABRA1,complex,Gamma-aminobutyric acid receptor subunit beta-3 / Gamma-aminobutyric acid receptor subunit gamma-2 / Gamma-aminobutyric acid receptor subunit alpha-1
+GAK,protein,Cyclin-G-associated kinase
+GALE,protein,UDP-glucose 4-epimerase
+GALK1,protein,Galactokinase
+GAPDH,protein,Glyceraldehyde-3-phosphate dehydrogenase
+GART,protein,Trifunctional purine biosynthetic protein adenosine-3
+GC,protein,Vitamin D-binding protein
+GCGR,protein,Glucagon receptor
+GCK,protein,Hexokinase-4
+GGPS1,protein,Geranylgeranyl pyrophosphate synthase
+GHSR,protein,Growth hormone secretagogue receptor type 1
+GIPR,protein,Gastric inhibitory polypeptide receptor
+GLA,protein,Alpha-galactosidase A
+GLO1,protein,Lactoylglutathione lyase
+GLP1R,protein,Glucagon-like peptide 1 receptor
+GLRA1,protein,Glycine receptor subunit alpha-1
+GMNN,protein,Geminin
+GPBAR1,protein,G protein-coupled bile acid receptor 1
+GPER1,protein,G protein-coupled estrogen receptor 1
+GPR119,protein,Glucose-dependent insulinotropic receptor
+GPR17,protein,Uracil nucleotide/cysteinyl leukotriene receptor
+GPR18,protein,N-arachidonyl glycine receptor
+GPR183,protein,G protein-coupled receptor 183
+GPR35,protein,G protein-coupled receptor 35
+GPR52,protein,G protein-coupled receptor 52
+GPR55,protein,G protein-coupled receptor 55
+GRIA1,protein,Glutamate receptor 1
+GRIA2,protein,Glutamate receptor 2
+GRIA3,protein,Glutamate receptor 3
+GRIA4,protein,Glutamate receptor 4
+GRIK1,protein,"Glutamate receptor ionotropic, kainate 1"
+GRIK2,protein,"Glutamate receptor ionotropic, kainate 5"
+GRIK3,protein,"Glutamate receptor ionotropic, kainate 3"
+GRIK5,protein,"Glutamate receptor ionotropic, kainate 5"
+GRIN1/GRIN2B,complex,"Glutamate receptor ionotropic, NMDA 1 / Glutamate receptor ionotropic, NMDA 2B"
+GRIN2A/GRIN1,complex,"Glutamate receptor ionotropic, NMDA 2A / Glutamate receptor ionotropic, NMDA 1"
+GRIN2B,protein,"Glutamate receptor ionotropic, NMDA 2B"
+GRM1,protein,Metabotropic glutamate receptor 1
+GRM2,protein,Metabotropic glutamate receptor 2
+GRM3,protein,Metabotropic glutamate receptor 3
+GRM5,protein,Metabotropic glutamate receptor 5
+GRM6,protein,Metabotropic glutamate receptor 6
+GRM8,protein,Metabotropic glutamate receptor 8
+GSK3A,protein,Glycogen synthase kinase-3 alpha
+GSK3B,protein,Glycogen synthase kinase-3 beta
+GSK3B/GSK3A,complex,Glycogen synthase kinase-3 beta / Glycogen synthase kinase-3 alpha
+GSR,protein,"Glutathione reductase, mitochondrial"
+GSTA1,protein,Glutathione S-transferase A1
+GSTP1,protein,Glutathione S-transferase P
+GYS1,protein,"Glycogen [starch] synthase, muscle"
+Grm1,protein,Metabotropic glutamate receptor 1
+HBB,protein,Hemoglobin subunit beta
+HCAR2,protein,Hydroxycarboxylic acid receptor 2
+HCAR3,protein,Hydroxycarboxylic acid receptor 3
+HCK,protein,Tyrosine-protein kinase HCK
+HCN1,protein,Potassium/sodium hyperpolarization-activated cyclic nucleotide-gated channel 1
+HCN4,protein,Potassium/sodium hyperpolarization-activated cyclic nucleotide-gated channel 4
+HCRTR1,protein,Orexin/Hypocretin receptor type 1
+HCRTR2,protein,Orexin receptor type 2
+HDAC1,protein,Histone deacetylase 1
+HDAC1/HDAC2,complex,Histone deacetylase 1 / Histone deacetylase 2
+HDAC10,protein,Polyamine deacetylase HDAC10
+HDAC11,protein,Histone deacetylase 11
+HDAC11/HDAC6/HDAC2/HDAC1/HDAC9/HDAC5/HDAC7/HDAC4/HDAC3/HDAC10/HDAC8,complex,Histone deacetylase 11 / Protein deacetylase HDAC6 / Histone deacetylase 2 / Histone deacetylase 1 / Histone deacetylase 9 / Histone deacetylase 5 / Histone deacetylase 9 / Histone deacetylase 4 / Histone deacetylase 3 / Polyamine deacetylase HDAC10 / Histone deacetylase 8
+HDAC2,protein,Histone deacetylase 2
+HDAC3,protein,Histone deacetylase 3
+HDAC4,protein,Histone deacetylase 4
+HDAC5,protein,Histone deacetylase 5
+HDAC6,protein,Protein deacetylase HDAC6
+HDAC7,protein,Histone deacetylase 9
+HDAC8,protein,Histone deacetylase 8
+HDAC8/HDAC5/HDAC3/HDAC1,complex,Histone deacetylase 8 / Histone deacetylase 5 / Histone deacetylase 3 / Histone deacetylase 1
+HDAC9,protein,Histone deacetylase 9
+HEXA,protein,Beta-hexosaminidase subunit alpha
+HEXB,protein,Beta-hexosaminidase subunit beta
+HEXB/HEXA,complex,Beta-hexosaminidase subunit beta / Beta-hexosaminidase subunit alpha
+HIF1A,protein,Hypoxia-inducible factor 1-alpha
+HIF1AN,protein,Hypoxia-inducible factor 1-alpha inhibitor
+HIPK3,protein,Homeodomain-interacting protein kinase 3
+HKDC1,protein,Hexokinase HKDC1
+HMGCR,protein,3-hydroxy-3-methylglutaryl-coenzyme A reductase
+HNRNPA1,protein,Heterogeneous nuclear ribonucleoprotein A1
+HPGD,protein,15-hydroxyprostaglandin dehydrogenase [NAD(+)]
+HPGDS,protein,Hematopoietic prostaglandin D synthase
+HRH1,protein,Histamine H1 receptor
+HRH3,protein,Histamine H3 receptor
+HRH4,protein,Histamine H4 receptor
+HSD11B1,protein,11-beta-hydroxysteroid dehydrogenase 1
+HSD11B2,protein,11-beta-hydroxysteroid dehydrogenase type 2
+HSD17B1,protein,17-beta-hydroxysteroid dehydrogenase type 1
+HSD17B10,protein,3-hydroxyacyl-CoA dehydrogenase type-2
+HSD17B2,protein,17-beta-hydroxysteroid dehydrogenase type 2
+HSD17B3,protein,17-beta-hydroxysteroid dehydrogenase type 3
+HSD3B1,protein,3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase type 1
+HSP90AA1,protein,Heat shock protein HSP 90-alpha
+HSP90AB1,protein,Heat shock protein HSP 90-beta
+HSP90AB1/HSP90AA1,complex,Heat shock protein HSP 90-beta / Heat shock protein HSP 90-alpha
+HSP90B1,protein,Endoplasmin
+HSPA8,protein,Heat shock cognate 71 kDa protein
+HSPB1,protein,Heat shock protein beta-1
+HTR1A,protein,5-hydroxytryptamine receptor 1A
+HTR1B,protein,5-hydroxytryptamine receptor 1B
+HTR1D,protein,5-hydroxytryptamine receptor 1D
+HTR1E,protein,5-hydroxytryptamine receptor 1E
+HTR2A,protein,5-hydroxytryptamine receptor 2A
+HTR2A/HTR2C/HTR2B,complex,5-hydroxytryptamine receptor 2A / 5-hydroxytryptamine receptor 2C / 5-hydroxytryptamine receptor 2B
+HTR2B,protein,5-hydroxytryptamine receptor 2B
+HTR2C,protein,5-hydroxytryptamine receptor 2C
+HTR3A,protein,5-hydroxytryptamine receptor 3A
+HTR3A/HTR3E/HTR3B/HTR3D/HTR3C,complex,5-hydroxytryptamine receptor 3A / 5-hydroxytryptamine receptor 3E / 5-hydroxytryptamine receptor 3B / 5-hydroxytryptamine receptor 3D / 5-hydroxytryptamine receptor 3C
+HTR3B/HTR3A,complex,5-hydroxytryptamine receptor 3B / 5-hydroxytryptamine receptor 3A
+HTR4,protein,5-hydroxytryptamine receptor 4
+HTR5A,protein,5-hydroxytryptamine receptor 5A
+HTR6,protein,5-hydroxytryptamine receptor 6
+HTR7,protein,5-hydroxytryptamine receptor 7
+HTT,protein,Sodium-dependent serotonin transporter
+Htr1a,protein,5-hydroxytryptamine receptor 1A
+Htr7,protein,5-hydroxytryptamine receptor 7
+ICAM1,protein,Intercellular adhesion molecule 1
+ICMT,protein,Protein-S-isoprenylcysteine O-methyltransferase
+IDO1,protein,"Indoleamine 2,3-dioxygenase 1"
+IGF1R,protein,Insulin-like growth factor 1 receptor
+IKBKB,protein,Inhibitor of nuclear factor kappa-B kinase subunit beta
+IKBKE,protein,Inhibitor of nuclear factor kappa-B kinase subunit epsilon
+IKBKG,protein,NF-kappa-B essential modulator
+IL2,protein,Interleukin-2
+IMPDH1,protein,Inosine-5'-monophosphate dehydrogenase 1
+IMPDH2,protein,Inosine-5'-monophosphate dehydrogenase 2
+INSR,protein,Insulin receptor
+INSRR,protein,Insulin receptor-related protein
+IRAK3,protein,Interleukin-1 receptor-associated kinase 3
+IRAK4,protein,Interleukin-1 receptor-associated kinase 4
+ITGA2/ITGB3,complex,Integrin alpha-2 / Integrin beta-3
+ITGA2B/ITGB3,complex,Integrin alpha-IIb / Integrin beta-3
+ITGAL,protein,Integrin alpha-L
+ITGAL/ICAM1/ITGB2,complex,Integrin alpha-L / Intercellular adhesion molecule 1 / Integrin beta-2
+ITGAV,protein,Integrin alpha-V
+ITGAV/ITGB1,complex,Integrin alpha-V / Integrin beta-1
+ITGAV/ITGB3,complex,Integrin alpha-V / Integrin beta-3
+ITGAV/ITGB6,complex,Integrin alpha-V / Integrin beta-6
+ITGB1/ITGA4,complex,Integrin beta-1 / Integrin alpha-4
+ITGB1/ITGA5,complex,Integrin beta-1 / Integrin alpha-5
+ITGB5/ITGAV,complex,Integrin beta-5 / Integrin alpha-V
+ITGB7/ITGA4,complex,Integrin beta-7 / Integrin alpha-4
+ITK,protein,Tyrosine-protein kinase ITK/TSK
+JAK1,protein,Tyrosine-protein kinase JAK1
+JAK1/JAK2,complex,Tyrosine-protein kinase JAK1 / Tyrosine-protein kinase JAK2
+JAK2,protein,Tyrosine-protein kinase JAK2
+JAK3,protein,Tyrosine-protein kinase JAK3
+JAK3/JAK1,complex,Tyrosine-protein kinase JAK3 / Tyrosine-protein kinase JAK1
+KARS,protein,Lysine--tRNA ligase
+KCNA3,protein,Potassium voltage-gated channel subfamily A member 3
+KCNA5,protein,Potassium voltage-gated channel subfamily A member 5
+KCNH2,protein,Voltage-gated inwardly rectifying potassium channel KCNH2
+KCNJ11/ABCC9,complex,ATP-sensitive inward rectifier potassium channel 11 / ATP-binding cassette sub-family C member 9
+KCNJ5/KCNJ3,complex,G protein-activated inward rectifier potassium channel 4 / G protein-activated inward rectifier potassium channel 1
+KCNJ6/KCNJ3,complex,G protein-activated inward rectifier potassium channel 2 / G protein-activated inward rectifier potassium channel 1
+KCNMA1,protein,Calcium-activated potassium channel subunit alpha-1
+KCNN4,protein,Intermediate conductance calcium-activated potassium channel protein 4
+KCNQ2,protein,Potassium voltage-gated channel subfamily KQT member 2
+KCNQ3,protein,Potassium voltage-gated channel subfamily KQT member 3
+KCNQ4,protein,Potassium voltage-gated channel subfamily KQT member 4
+KCNQ5,protein,Potassium voltage-gated channel subfamily KQT member 5
+KDM1A,protein,Lysine-specific histone demethylase 1A
+KDM4C,protein,Lysine-specific demethylase 4C
+KDM4E,protein,Lysine-specific demethylase 4E
+KDR,protein,Vascular endothelial growth factor receptor 2
+KEAP1,protein,Kelch-like ECH-associated protein 1
+KIF11,protein,Kinesin-like protein KIF11
+KIT,protein,Mast/stem cell growth factor receptor Kit
+KLK14,protein,Kallikrein-14
+KLK5,protein,Kallikrein-5
+KLK7,protein,Kallikrein-7
+KMO,protein,Kynurenine 3-monooxygenase
+KMT2A,protein,Histone-lysine N-methyltransferase 2A
+KMT2A/MEN1,complex,Histone-lysine N-methyltransferase 2A / Menin
+KMT5A,protein,N-lysine methyltransferase KMT5A
+KMT5C,protein,Histone-lysine N-methyltransferase KMT5C
+KYAT1,protein,Kynurenine--oxoglutarate transaminase 1
+KYAT3,protein,Kynurenine--oxoglutarate transaminase 3
+L3MBTL1,protein,Lethal(3)malignant brain tumor-like protein 1
+L3MBTL3,protein,Lethal(3)malignant brain tumor-like protein 3
+LAP3,protein,Cytosol aminopeptidase
+LATS1,protein,Serine/threonine-protein kinase LATS1
+LATS2,protein,Serine/threonine-protein kinase LATS2
+LCK,protein,Tyrosine-protein kinase Lck
+LIMK1,protein,LIM domain kinase 1
+LIMK2,protein,LIM domain kinase 2
+LIPC,protein,Hepatic triacylglycerol lipase
+LIPG,protein,Endothelial lipase
+LMP1,protein,LMP1
+LPAR1,protein,Lysophosphatidic acid receptor 1
+LPAR3,protein,Lysophosphatidic acid receptor 3
+LPL,protein,Lipoprotein lipase
+LRRK2,protein,Leucine-rich repeat serine/threonine-protein kinase 2
+LSS,protein,Lanosterol synthase
+LTA4H,protein,Leukotriene A-4 hydrolase
+LTB4R,protein,Leukotriene B4 receptor 1
+LTB4R/LTB4R2,complex,Leukotriene B4 receptor 1 / Leukotriene B4 receptor 2
+LTK,protein,Leukocyte tyrosine kinase receptor
+LYN,protein,Tyrosine-protein kinase Lyn
+MAOA,protein,Amine oxidase [flavin-containing] A
+MAOB,protein,Amine oxidase [flavin-containing] B
+MAP2K1,protein,Dual specificity mitogen-activated protein kinase kinase 1
+MAP2K1/MAP2K2,complex,Dual specificity mitogen-activated protein kinase kinase 1 / Dual specificity mitogen-activated protein kinase kinase 2
+MAP2K1/RAF1,complex,Dual specificity mitogen-activated protein kinase kinase 1 / RAF proto-oncogene serine/threonine-protein kinase
+MAP2K2,protein,Dual specificity mitogen-activated protein kinase kinase 2
+MAP2K3,protein,Dual specificity mitogen-activated protein kinase kinase 3
+MAP2K4,protein,Dual specificity mitogen-activated protein kinase kinase 4
+MAP2K6,protein,Dual specificity mitogen-activated protein kinase kinase 6
+MAP3K10,protein,Mitogen-activated protein kinase kinase kinase 10
+MAP3K11,protein,Mitogen-activated protein kinase kinase kinase 11
+MAP3K12,protein,Mitogen-activated protein kinase kinase kinase 12
+MAP3K14,protein,Mitogen-activated protein kinase kinase kinase 14
+MAP3K20,protein,Mitogen-activated protein kinase kinase kinase 20
+MAP3K4,protein,Mitogen-activated protein kinase kinase kinase 4
+MAP3K5,protein,Mitogen-activated protein kinase kinase kinase 5
+MAP3K9,protein,Mitogen-activated protein kinase kinase kinase 9
+MAP4K1,protein,Mitogen-activated protein kinase kinase kinase kinase 1
+MAP4K3,protein,Mitogen-activated protein kinase kinase kinase kinase 3
+MAP4K4,protein,Mitogen-activated protein kinase kinase kinase kinase 4
+MAP4K5,protein,Mitogen-activated protein kinase kinase kinase kinase 5
+MAPK1,protein,Mitogen-activated protein kinase 1
+MAPK10,protein,Mitogen-activated protein kinase 10
+MAPK11,protein,Mitogen-activated protein kinase 11
+MAPK12,protein,Mitogen-activated protein kinase 12
+MAPK13/MAPK14/MAPK11/MAPK12,complex,Mitogen-activated protein kinase 13 / Mitogen-activated protein kinase 14 / Mitogen-activated protein kinase 11 / Mitogen-activated protein kinase 12
+MAPK14,protein,Mitogen-activated protein kinase 14
+MAPK15,protein,Mitogen-activated protein kinase 15
+MAPK3,protein,Mitogen-activated protein kinase 3
+MAPK4,protein,Mitogen-activated protein kinase 4
+MAPK6,protein,Mitogen-activated protein kinase 6
+MAPK7,protein,Mitogen-activated protein kinase 7
+MAPK8,protein,Mitogen-activated protein kinase 8
+MAPK9,protein,Mitogen-activated protein kinase 9
+MAPK9/MAPK10/MAPK8,complex,Mitogen-activated protein kinase 9 / Mitogen-activated protein kinase 10 / Mitogen-activated protein kinase 8
+MAPKAPK2,protein,MAP kinase-activated protein kinase 2
+MAPT,protein,Microtubule-associated protein tau
+MARK1,protein,Serine/threonine-protein kinase MARK1
+MARK2,protein,Serine/threonine-protein kinase MARK2
+MARK3,protein,MAP/microtubule affinity-regulating kinase 3
+MARK4,protein,MAP/microtubule affinity-regulating kinase 4
+MBTD1,protein,MBT domain-containing protein 1
+MCHR1,protein,Melanin-concentrating hormone receptor 1
+MCL1,protein,Induced myeloid leukemia cell differentiation protein Mcl-1
+MDM2,protein,E3 ubiquitin-protein ligase Mdm2
+MDM2/TP53,complex,E3 ubiquitin-protein ligase Mdm2 / Cellular tumor antigen p53
+MDM4/TP53,complex,Protein Mdm4 / Cellular tumor antigen p53
+ME1,protein,NADP-dependent malic enzyme
+MELK,protein,Maternal embryonic leucine zipper kinase
+MERTK,protein,Tyrosine-protein kinase Mer
+MET,protein,Hepatocyte growth factor receptor
+METAP2,protein,Methionine aminopeptidase 2
+MGLL,protein,Monoglyceride lipase
+MGMT,protein,Methylated-DNA--protein-cysteine methyltransferase
+MIF,protein,Anti-Muellerian hormone
+MKNK1,protein,MAP kinase-interacting serine/threonine-protein kinase 1
+MKNK2,protein,MAP kinase-interacting serine/threonine-protein kinase 2
+MLNR,protein,Motilin receptor
+MLX,protein,Max-like protein X
+MME,protein,Neprilysin
+MMP1,protein,Interstitial collagenase
+MMP10,protein,Stromelysin-2
+MMP12,protein,Macrophage metalloelastase
+MMP13,protein,Collagenase 3
+MMP14,protein,Matrix metalloproteinase-14
+MMP15,protein,Matrix metalloproteinase-15
+MMP16,protein,Matrix metalloproteinase-16
+MMP2,protein,72 kDa type IV collagenase
+MMP26,protein,Matrix metalloproteinase-26
+MMP3,protein,Stromelysin-1
+MMP7,protein,Matrilysin
+MMP8,protein,Neutrophil collagenase
+MMP9,protein,Matrix metalloproteinase-9
+MPEG1,protein,Macrophage-expressed gene 1 protein
+MPG,protein,DNA-3-methyladenine glycosylase
+MPI,protein,Mannose-6-phosphate isomerase
+MST1R,protein,Macrophage-stimulating protein receptor
+MT-CO2,protein,Cytochrome c oxidase subunit 2
+MTNR1A,protein,Melatonin receptor type 1A
+MTNR1B,protein,Melatonin receptor type 1B
+MTOR,protein,Serine/threonine-protein kinase mTOR
+MTTP,protein,Microsomal triglyceride transfer protein large subunit
+MUSK,protein,"Muscle, skeletal receptor tyrosine-protein kinase"
+MYC,protein,Myc proto-oncogene protein
+MYLK,protein,"Myosin light chain kinase, smooth muscle"
+MYLK2,protein,"Myosin light chain kinase 2, skeletal/cardiac muscle"
+MYLK4,protein,Myosin light chain kinase family member 4
+MYO3A,protein,Myosin-IIIa
+MYO3B,protein,Myosin-IIIb
+MYT1,protein,Membrane-associated tyrosine- and threonine-specific cdc2-inhibitory kinase
+Mylk,protein,"Myosin light chain kinase, smooth muscle"
+NAMPT,protein,Nicotinamide phosphoribosyltransferase
+NCOR1/HDAC3,complex,Nuclear receptor corepressor 1 / Histone deacetylase 3
+NCOR2/HDAC3,complex,Nuclear receptor corepressor 2 / Histone deacetylase 3
+NCOR2/PPARG,complex,Nuclear receptor corepressor 2 / Peroxisome proliferator-activated receptor gamma
+NEK1,protein,Serine/threonine-protein kinase Nek1
+NEK2,protein,Serine/threonine-protein kinase Nek2
+NEK5,protein,Serine/threonine-protein kinase Nek5
+NEK6,protein,Serine/threonine-protein kinase Nek6
+NEK7,protein,Serine/threonine-protein kinase Nek7
+NEK9,protein,Serine/threonine-protein kinase Nek9
+NEU2,protein,Sialidase-2
+NEU3,protein,Sialidase-3
+NFE2L2/KEAP1,complex,Nuclear factor erythroid 2-related factor 2 / Kelch-like ECH-associated protein 1
+NFKB1,protein,Nuclear factor NF-kappa-B p105 subunit
+NFKB1/RELA/NFKB2,complex,Nuclear factor NF-kappa-B p105 subunit / Transcription factor p65 / Nuclear factor NF-kappa-B p100 subunit
+NFKBIA,protein,NF-kappa-B inhibitor alpha
+NLK,protein,Serine/threonine-protein kinase NLK
+NMUR2,protein,Neuromedin-U receptor 2
+NOD1,protein,Nucleotide-binding oligomerization domain-containing protein 1
+NOS1,protein,Nitric oxide synthase 1
+NOS2,protein,"Nitric oxide synthase, inducible"
+NOS3,protein,Nitric oxide synthase 3
+NPC1,protein,NPC intracellular cholesterol transporter 1
+NPC1L1,protein,NPC1-like intracellular cholesterol transporter 1
+NPFFR1,protein,Neuropeptide FF receptor 1
+NPFFR2,protein,Neuropeptide FF receptor 2
+NPM1/ALK,complex,Nucleophosmin / ALK tyrosine kinase receptor
+NPSR1,protein,Neuropeptide S receptor
+NPY1R,protein,Neuropeptide Y receptor type 1
+NPY2R,protein,Neuropeptide Y receptor type 2
+NQO1,protein,NAD(P)H dehydrogenase [quinone] 1
+NQO2,protein,Ribosyldihydronicotinamide dehydrogenase [quinone]
+NR1H2,protein,Oxysterols receptor LXR-beta
+NR1H3,protein,Oxysterols receptor LXR-alpha
+NR1H4,protein,Bile acid receptor
+NR1I2,protein,Nuclear receptor subfamily 1 group I member 2
+NR3C1,protein,Glucocorticoid receptor
+NR3C2,protein,Mineralocorticoid receptor
+NR4A2,protein,Nuclear receptor subfamily 4 group A member 2
+NTRK1,protein,High affinity nerve growth factor receptor
+NTRK2,protein,BDNF/NT-3 growth factors receptor
+NTRK3,protein,NT-3 growth factor receptor
+NTSR1,protein,Neurotensin receptor type 1
+NTSR2,protein,Neurotensin receptor type 2
+NUAK1,protein,NUAK family SNF1-like kinase 1
+NUAK2,protein,NUAK family SNF1-like kinase 2
+ODC1,protein,Ornithine decarboxylase
+OPRD1,protein,Delta-type opioid receptor
+OPRK1,protein,Kappa-type opioid receptor
+OPRL1,protein,Nociceptin receptor
+OPRM1,protein,Mu-type opioid receptor
+OXTR,protein,Oxytocin receptor
+P2RX2,protein,P2X purinoceptor 2
+P2RX4,protein,P2X purinoceptor 4
+P2RX7,protein,P2X purinoceptor 7
+P2RY12,protein,P2Y purinoceptor 12
+PAK1,protein,Serine/threonine-protein kinase PAK 1
+PAK2,protein,Serine/threonine-protein kinase PAK 2
+PAK3,protein,Serine/threonine-protein kinase PAK 3
+PAK4,protein,Serine/threonine-protein kinase PAK 4
+PAK5,protein,Serine/threonine-protein kinase PAK 6
+PAK6,protein,Serine/threonine-protein kinase PAK 6
+PARP1,protein,Poly [ADP-ribose] polymerase 1
+PARP2,protein,Poly [ADP-ribose] polymerase 2
+PARP3,protein,Protein mono-ADP-ribosyltransferase PARP3
+PBRM1,protein,Protein polybromo-1
+PCNA,protein,DNA sliding clamp PCNA
+PDE10A,protein,"cAMP and cAMP-inhibited cGMP 3',5'-cyclic phosphodiesterase 10A"
+PDE11A,protein,"Dual 3',5'-cyclic-AMP and -GMP phosphodiesterase 11A"
+PDE1A,protein,"Dual specificity calcium/calmodulin-dependent 3',5'-cyclic nucleotide phosphodiesterase 1A"
+PDE1B/PDE1A/PDE1C,complex,"Dual specificity calcium/calmodulin-dependent 3',5'-cyclic nucleotide phosphodiesterase 1B / Dual specificity calcium/calmodulin-dependent 3',5'-cyclic nucleotide phosphodiesterase 1A / Dual specificity calcium/calmodulin-dependent 3',5'-cyclic nucleotide phosphodiesterase 1C"
+PDE2A,protein,"cGMP-dependent 3',5'-cyclic phosphodiesterase"
+PDE3A,protein,"cGMP-inhibited 3',5'-cyclic phosphodiesterase 3A"
+PDE3A/PDE3B,complex,"cGMP-inhibited 3',5'-cyclic phosphodiesterase 3A / cGMP-inhibited 3',5'-cyclic phosphodiesterase 3B"
+PDE3B,protein,"cGMP-inhibited 3',5'-cyclic phosphodiesterase 3B"
+PDE4A,protein,"3',5'-cyclic-AMP phosphodiesterase 4A"
+PDE4B,protein,"3',5'-cyclic-AMP phosphodiesterase 4B"
+PDE4C,protein,"3',5'-cyclic-AMP phosphodiesterase 4C"
+PDE4D,protein,"3',5'-cyclic-AMP phosphodiesterase 4D"
+PDE4D/PDE4A/PDE4B/PDE4C,complex,"3',5'-cyclic-AMP phosphodiesterase 4D / 3',5'-cyclic-AMP phosphodiesterase 4A / 3',5'-cyclic-AMP phosphodiesterase 4B / 3',5'-cyclic-AMP phosphodiesterase 4C"
+PDE5A,protein,"cGMP-specific 3',5'-cyclic phosphodiesterase"
+PDE6B/PDE6A/PDE6H/PDE6C/PDE6D/PDE6G,complex,"Rod cGMP-specific 3',5'-cyclic phosphodiesterase subunit beta / Rod cGMP-specific 3',5'-cyclic phosphodiesterase subunit alpha / Retinal cone rhodopsin-sensitive cGMP 3',5'-cyclic phosphodiesterase subunit gamma / Cone cGMP-specific 3',5'-cyclic phosphodiesterase subunit alpha' / Retinal rod rhodopsin-sensitive cGMP 3',5'-cyclic phosphodiesterase subunit delta / Rod cGMP 3',5'-cyclic phosphodiesterase subunit gamma"
+PDE6D,protein,"Retinal rod rhodopsin-sensitive cGMP 3',5'-cyclic phosphodiesterase subunit delta"
+PDE7A,protein,"High affinity 3',5'-cyclic-AMP phosphodiesterase 7A"
+PDE9A,protein,"High affinity cGMP-specific 3',5'-cyclic phosphodiesterase 9A"
+PDF,protein,"Peptide deformylase, mitochondrial"
+PDGFA,protein,Platelet-derived growth factor subunit A
+PDGFB,protein,Platelet-derived growth factor subunit B
+PDGFRA,protein,Platelet-derived growth factor receptor alpha
+PDGFRA/PDGFRB,complex,Platelet-derived growth factor receptor alpha / Platelet-derived growth factor receptor beta
+PDGFRB,protein,Platelet-derived growth factor receptor beta
+PDK1,protein,3-phosphoinositide-dependent protein kinase 1
+PDK3/PDK2/PDK4/PDK1,complex,"[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 3, mitochondrial / [Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 2, mitochondrial / [Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 4, mitochondrial / 3-phosphoinositide-dependent protein kinase 1"
+PDPK1,protein,3-phosphoinositide-dependent protein kinase 1
+PGR,protein,Progesterone receptor
+PHKG1,protein,"Phosphorylase b kinase gamma catalytic chain, skeletal muscle/heart isoform"
+PHKG2,protein,"Phosphorylase b kinase gamma catalytic chain, liver/testis isoform"
+PHOSPHO1,protein,Phosphoethanolamine/phosphocholine phosphatase
+PIK3C2A,protein,Phosphatidylinositol 4-phosphate 3-kinase C2 domain-containing subunit alpha
+PIK3C2B,protein,Phosphatidylinositol 4-phosphate 3-kinase C2 domain-containing subunit beta
+PIK3C3,protein,Phosphatidylinositol 3-kinase catalytic subunit type 3
+PIK3CA,protein,"Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit alpha isoform"
+PIK3CB,protein,"Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit beta isoform"
+PIK3CD,protein,"Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit delta isoform"
+PIK3CG,protein,"Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit gamma isoform"
+PIM1,protein,Serine/threonine-protein kinase pim-1
+PIM2,protein,Serine/threonine-protein kinase pim-2
+PIM3,protein,Serine/threonine-protein kinase pim-3
+PIP4K2B,protein,Phosphatidylinositol 5-phosphate 4-kinase type-2 beta
+PIP5K1A,protein,Phosphatidylinositol 4-phosphate 5-kinase type-1 alpha
+PKM,protein,Pyruvate kinase PKM
+PKMYT1,protein,Membrane-associated tyrosine- and threonine-specific cdc2-inhibitory kinase
+PKN1,protein,Serine/threonine-protein kinase N1
+PKN2,protein,Serine/threonine-protein kinase N2
+PLA2G10,protein,Group 10 secretory phospholipase A2
+PLA2G1B,protein,Phospholipase A2
+PLA2G2A,protein,"Phospholipase A2, membrane associated"
+PLA2G2D,protein,Group IID secretory phospholipase A2
+PLA2G2E,protein,Group IIE secretory phospholipase A2
+PLA2G2F,protein,Group IIF secretory phospholipase A2
+PLA2G5,protein,Phospholipase A2 group V
+PLA2G7,protein,Platelet-activating factor acetylhydrolase
+PLAU,protein,Urokinase-type plasminogen activator
+PLD1,protein,Phospholipase D1
+PLD2,protein,Phospholipase D2
+PLG,protein,Plasminogen
+PLK1,protein,Serine/threonine-protein kinase PLK1
+PLK3,protein,Serine/threonine-protein kinase PLK3
+PLK4,protein,Serine/threonine-protein kinase PLK4
+PMM2,protein,Phosphomannomutase 2
+PNMT,protein,Phenylethanolamine N-methyltransferase
+PNP,protein,Pancreatic polypeptide prohormone
+POLB,protein,DNA polymerase beta
+POLR1A,protein,DNA-directed RNA polymerase I subunit RPA1
+POU2F1,protein,"POU domain, class 2, transcription factor 1"
+POU2F2,protein,"POU domain, class 2, transcription factor 2"
+PPARA,protein,Peroxisome proliferator-activated receptor alpha
+PPARD,protein,Peroxisome proliferator-activated receptor delta
+PPARG,protein,Peroxisome proliferator-activated receptor gamma
+PPIA,protein,Peptidyl-prolyl cis-trans isomerase A
+PPIB,protein,Peptidyl-prolyl cis-trans isomerase B
+PREP,protein,Prolyl endopeptidase
+PRKAA1,protein,5'-AMP-activated protein kinase catalytic subunit alpha-1
+PRKAA2,protein,5'-AMP-activated protein kinase catalytic subunit alpha-2
+PRKAB1,protein,5'-AMP-activated protein kinase subunit beta-1
+PRKACA,protein,Protein kinase C alpha type
+PRKACB,protein,cAMP-dependent protein kinase catalytic subunit beta
+PRKACG/PRKACA/PRKACB,complex,cAMP-dependent protein kinase catalytic subunit gamma / Protein kinase C alpha type / cAMP-dependent protein kinase catalytic subunit beta
+PRKAG2/PRKAB2/PRKAA1/PRKAA2/PRKAB1/PRKAG1/PRKAG3,complex,5'-AMP-activated protein kinase subunit gamma-2 / 5'-AMP-activated protein kinase subunit beta-2 / 5'-AMP-activated protein kinase catalytic subunit alpha-1 / 5'-AMP-activated protein kinase catalytic subunit alpha-2 / 5'-AMP-activated protein kinase subunit beta-1 / 5'-AMP-activated protein kinase subunit gamma-1 / 5'-AMP-activated protein kinase subunit gamma-3
+PRKCA,protein,Protein kinase C alpha type
+PRKCB,protein,Protein kinase C beta type
+PRKCD,protein,Protein kinase C delta type
+PRKCE,protein,Protein kinase C epsilon type
+PRKCG,protein,Protein kinase C gamma type
+PRKCH,protein,Protein kinase C eta type
+PRKCI,protein,Protein kinase C iota type
+PRKCQ,protein,Protein kinase C theta type
+PRKD1,protein,Serine/threonine-protein kinase D1
+PRKD1/PRKCI/PRKCH/PRKCB/PRKCG/PRKCD/PRKCA/PRKD3/PRKCE/PRKCQ/PRKCZ,complex,Serine/threonine-protein kinase D1 / Protein kinase C iota type / Protein kinase C eta type / Protein kinase C beta type / Protein kinase C gamma type / Protein kinase C delta type / Protein kinase C alpha type / Serine/threonine-protein kinase D3 / Protein kinase C epsilon type / Protein kinase C theta type / Protein kinase C zeta type
+PRKD2,protein,Serine/threonine-protein kinase D2
+PRKD3,protein,Serine/threonine-protein kinase D3
+PRKDC,protein,DNA-dependent protein kinase catalytic subunit
+PRKG1,protein,cGMP-dependent protein kinase 1
+PRKG2,protein,cGMP-dependent protein kinase 2
+PRKX,protein,cAMP-dependent protein kinase catalytic subunit PRKX
+PRMT1,protein,Protein arginine N-methyltransferase 1
+PRMT7,protein,Protein arginine N-methyltransferase 7
+PROC,protein,Vitamin K-dependent protein C
+PRSS3/PRSS2/PRSS1,complex,Trypsin-3 / Trypsin-2 / Serine protease 1
+PSEN1,protein,Presenilin-1
+PSEN2/PSENEN/NCSTN/APH1A/PSEN1/APH1B,complex,Presenilin-2 / Gamma-secretase subunit PEN-2 / Nicastrin / Gamma-secretase subunit APH-1A / Presenilin-1 / Gamma-secretase subunit APH-1B
+PTAFR,protein,Platelet-activating factor receptor
+PTGDR,protein,Prostaglandin D2 receptor
+PTGDR2,protein,Prostaglandin D2 receptor 2
+PTGER1,protein,Prostaglandin E2 receptor EP1 subtype
+PTGER2,protein,Prostaglandin E2 receptor EP4 subtype
+PTGER3,protein,Prostaglandin E2 receptor EP3 subtype
+PTGER4,protein,Prostaglandin E2 receptor EP4 subtype
+PTGES,protein,Prostaglandin E synthase
+PTGES2,protein,Prostaglandin E synthase 2
+PTGIR,protein,Prostacyclin receptor
+PTGS1,protein,Prostaglandin G/H synthase 1
+PTGS2,protein,Prostaglandin G/H synthase 2
+PTK2,protein,Focal adhesion kinase 1
+PTK2B,protein,Protein-tyrosine kinase 2-beta
+PTK6,protein,Protein-tyrosine kinase 6
+PTPN1,protein,Tyrosine-protein phosphatase non-receptor type 1
+PTPN11,protein,Tyrosine-protein phosphatase non-receptor type 11
+PTPN6,protein,Tyrosine-protein phosphatase non-receptor type 6
+PTPN7,protein,Tyrosine-protein phosphatase non-receptor type 7
+PYGL,protein,"Glycogen phosphorylase, liver form"
+Ppara,protein,Peroxisome proliferator-activated receptor alpha
+RAB9A,protein,Ras-related protein Rab-9A
+RAD1,protein,Cell cycle checkpoint protein RAD1
+RAD51,protein,DNA repair protein RAD51 homolog 1
+RAF1,protein,RAF proto-oncogene serine/threonine-protein kinase
+RAPGEF3,protein,Rap guanine nucleotide exchange factor 3
+RAPGEF4,protein,Rap guanine nucleotide exchange factor 4
+RARA,protein,Retinoic acid receptor alpha
+RARB,protein,Retinoic acid receptor beta
+RARG,protein,Retinoic acid receptor gamma
+RBP4,protein,Retinol-binding protein 4
+RECQL,protein,ATP-dependent DNA helicase Q1
+RELA,protein,Transcription factor p65
+REN,protein,Renin
+RET,protein,Proto-oncogene tyrosine-protein kinase receptor Ret
+RGS8,protein,Regulator of G protein signaling 8
+RIOK1,protein,Serine/threonine-protein kinase RIO1
+RIOK3,protein,Serine/threonine-protein kinase RIO3
+RIPK1,protein,Receptor-interacting serine/threonine-protein kinase 1
+RIPK2,protein,Receptor-interacting serine/threonine-protein kinase 2
+RNASEH1,protein,Ribonuclease H1
+ROCK1,protein,Rho-associated protein kinase 1
+ROCK2,protein,Rho-associated protein kinase 2
+ROCK2/ROCK1,complex,Rho-associated protein kinase 2 / Rho-associated protein kinase 1
+RORA,protein,Nuclear receptor ROR-alpha
+RORC,protein,Nuclear receptor ROR-gamma
+ROS1,protein,Proto-oncogene tyrosine-protein kinase ROS
+RPS6KA1,protein,Ribosomal protein S6 kinase alpha-1
+RPS6KA2,protein,Ribosomal protein S6 kinase alpha-2
+RPS6KA3,protein,Ribosomal protein S6 kinase alpha-3
+RPS6KA4,protein,Ribosomal protein S6 kinase alpha-4
+RPS6KA5,protein,Ribosomal protein S6 kinase alpha-5
+RPS6KA6,protein,Ribosomal protein S6 kinase alpha-6
+RPS6KB1,protein,Ribosomal protein S6 kinase beta-1
+RXFP1,protein,Relaxin receptor 1
+RXRA,protein,Retinoic acid receptor RXR-alpha
+RXRB,protein,Retinoic acid receptor RXR-beta
+RXRG,protein,Retinoic acid receptor RXR-gamma
+Rara,protein,Retinoic acid receptor alpha
+S1PR1,protein,Sphingosine 1-phosphate receptor 1
+S1PR4,protein,Sphingosine 1-phosphate receptor 4
+SAE1/UBA2,complex,SUMO-activating enzyme subunit 1 / SUMO-activating enzyme subunit 2
+SCD,protein,Stearoyl-CoA desaturase
+SCN10A,protein,Sodium channel protein type 10 subunit alpha
+SCN2A,protein,Sodium channel protein type 2 subunit alpha
+SCN3A,protein,Sodium channel protein type 3 subunit alpha
+SCN4A,protein,Sodium channel protein type 4 subunit alpha
+SCN5A,protein,Sodium channel protein type 5 subunit alpha
+SCN9A,protein,Sodium channel protein type 9 subunit alpha
+SENP6,protein,Sentrin-specific protease 6
+SENP7,protein,Sentrin-specific protease 7
+SENP8,protein,Sentrin-specific protease 8
+SERPINE1,protein,Plasminogen activator inhibitor 1
+SETD7,protein,Histone-lysine N-methyltransferase SETD7
+SETDB1,protein,Histone-lysine N-methyltransferase SETDB1
+SF3B3,protein,Splicing factor 3B subunit 3
+SGK1,protein,Serine/threonine-protein kinase Sgk1
+SGK2,protein,Serine/threonine-protein kinase Sgk2
+SGK3,protein,Serine/threonine-protein kinase Sgk3
+SHBG,protein,Sex hormone-binding globulin
+SHH,protein,Sonic hedgehog protein
+SIGMAR1,protein,Sigma non-opioid intracellular receptor 1
+SIK1,protein,Serine/threonine-protein kinase SIK1
+SIK2,protein,Serine/threonine-protein kinase SIK2
+SIRT1,protein,NAD-dependent protein deacetylase sirtuin-1
+SIRT2,protein,NAD-dependent protein deacetylase sirtuin-2
+SIRT3,protein,"NAD-dependent protein deacetylase sirtuin-3, mitochondrial"
+SLC12A5,protein,Solute carrier family 12 member 5
+SLC16A1,protein,Monocarboxylate transporter 1
+SLC19A1,protein,Reduced folate transporter
+SLC22A1,protein,Solute carrier family 22 member 1
+SLC22A12,protein,Solute carrier family 22 member 12
+SLC22A2,protein,Solute carrier family 22 member 2
+SLC22A3,protein,Solute carrier family 22 member 3
+SLC28A2,protein,Sodium/nucleoside cotransporter 2
+SLC28A3,protein,Solute carrier family 28 member 3
+SLC29A1,protein,Equilibrative nucleoside transporter 1
+SLC2A1,protein,"Solute carrier family 2, facilitated glucose transporter member 1"
+SLC46A1,protein,Proton-coupled folate transporter
+SLC47A1,protein,Multidrug and toxin extrusion protein 1
+SLC47A2,protein,Multidrug and toxin extrusion protein 2
+SLC5A1,protein,Sodium/glucose cotransporter 1
+SLC5A2,protein,Sodium/glucose cotransporter 2
+SLC5A4,protein,Probable glucose sensor protein SLC5A4
+SLC6A2,protein,Sodium-dependent noradrenaline transporter
+SLC6A3,protein,Sodium-dependent dopamine transporter
+SLC6A4,protein,Sodium-dependent serotonin transporter
+SLC6A5,protein,Sodium-dependent noradrenaline transporter
+SLC7A11,protein,Cystine/glutamate transporter
+SLC9A1,protein,Sodium/hydrogen exchanger 1
+SLCO1B1,protein,Solute carrier organic anion transporter family member 1B1
+SLCO1B3,protein,Solute carrier organic anion transporter family member 1B3
+SLCO2B1,protein,Solute carrier organic anion transporter family member 2B1
+SLK,protein,STE20-like serine/threonine-protein kinase
+SMG1,protein,Serine/threonine-protein kinase SMG1
+SMN1/SMN2,complex,Survival motor neuron protein / Survival motor neuron protein
+SMO,protein,Protein smoothened
+SMYD2,protein,N-lysine methyltransferase SMYD2
+SOAT1,protein,Sterol O-acyltransferase 1
+SOAT2,protein,Sterol O-acyltransferase 2
+SORT1,protein,Sortilin
+SPHK1,protein,Sphingosine kinase 1
+SRC,protein,Proto-oncogene tyrosine-protein kinase Src
+SRD5A1,protein,3-oxo-5-alpha-steroid 4-dehydrogenase 1
+SRD5A2,protein,3-oxo-5-alpha-steroid 4-dehydrogenase 2
+SRMS,protein,Tyrosine-protein kinase Srms
+SRPK1,protein,SRSF protein kinase 1
+SRPK2,protein,SRSF protein kinase 2
+SSTR1,protein,Somatostatin receptor type 1
+SSTR1/SSTR5/SSTR3/SSTR4/SSTR2,complex,Somatostatin receptor type 1 / Somatostatin receptor type 5 / Somatostatin receptor type 3 / Somatostatin receptor type 4 / Somatostatin receptor type 2
+SSTR2,protein,Somatostatin receptor type 2
+SSTR3,protein,Somatostatin receptor type 3
+SSTR4,protein,Somatostatin receptor type 4
+SSTR5,protein,Somatostatin receptor type 5
+ST14,protein,Suppressor of tumorigenicity 14 protein
+STAT1,protein,Signal transducer and activator of transcription 1-alpha/beta
+STAT3,protein,Signal transducer and activator of transcription 3
+STAT5A,protein,Signal transducer and activator of transcription 5A
+STAT6,protein,Signal transducer and activator of transcription 6
+STK10,protein,Serine/threonine-protein kinase 10
+STK11,protein,Serine/threonine-protein kinase STK11
+STK16,protein,Serine/threonine-protein kinase 16
+STK17A,protein,Serine/threonine-protein kinase 17A
+STK17B,protein,Serine/threonine-protein kinase 17B
+STK24,protein,Serine/threonine-protein kinase 24
+STK25,protein,Serine/threonine-protein kinase 25
+STK26,protein,Serine/threonine-protein kinase 26
+STK3,protein,Serine/threonine-protein kinase 24
+STK32B,protein,Serine/threonine-protein kinase 32B
+STK32C,protein,Serine/threonine-protein kinase 32C
+STK33,protein,Serine/threonine-protein kinase 33
+STK36,protein,Serine/threonine-protein kinase 36
+STK38L,protein,Serine/threonine-protein kinase 38-like
+STK4,protein,Serine/threonine-protein kinase 4
+SULT1A1,protein,Sulfotransferase 1A1
+SUV39H1,protein,Histone-lysine N-methyltransferase SUV39H1
+SUV39H2,protein,Histone-lysine N-methyltransferase SUV39H2
+SYK,protein,Tyrosine-protein kinase SYK
+TAAR1,protein,Trace amine-associated receptor 1
+TACR1,protein,Substance-P receptor
+TACR2,protein,Substance-K receptor
+TACR3,protein,Neuromedin-K receptor
+TAF1,protein,Transcription initiation factor TFIID subunit 1
+TAF1L,protein,Transcription initiation factor TFIID subunit 1-like
+TBK1,protein,Serine/threonine-protein kinase TBK1
+TBXA2R,protein,Thromboxane A2 receptor
+TBXAS1,protein,Thromboxane-A synthase
+TDO2,protein,"Tryptophan 2,3-dioxygenase"
+TDP1,protein,Tyrosyl-DNA phosphodiesterase 1
+TDP2,protein,Tyrosyl-DNA phosphodiesterase 2
+TEC,protein,Tyrosine-protein kinase Tec
+TEK,protein,Angiopoietin-1 receptor
+TERT,protein,Telomerase reverse transcriptase
+TESK1,protein,Dual specificity testis-specific protein kinase 1
+TGFBR1,protein,TGF-beta receptor type-1
+TGFBR2,protein,TGF-beta receptor type-2
+TGM1,protein,Protein-glutamine gamma-glutamyltransferase K
+TGM2,protein,Protein-glutamine gamma-glutamyltransferase 2
+TGM3,protein,Protein-glutamine gamma-glutamyltransferase E
+THPO,protein,Thrombopoietin
+THRA,protein,Thyroid hormone receptor alpha
+THRB,protein,Thyroid hormone receptor beta
+TIE1,protein,Tyrosine-protein kinase receptor Tie-1
+TK1,protein,"Thymidine kinase, cytosolic"
+TLK1,protein,Serine/threonine-protein kinase tousled-like 1
+TLK2,protein,Serine/threonine-protein kinase tousled-like 2
+TLR7,protein,Toll-like receptor 7
+TLR8,protein,Toll-like receptor 8
+TMPRSS4,protein,Transmembrane protease serine 4
+TNIK,protein,TRAF2 and NCK-interacting protein kinase
+TNK1,protein,Non-receptor tyrosine-protein kinase TNK1
+TNK2,protein,Activated CDC42 kinase 1
+TNKS,protein,Poly [ADP-ribose] polymerase tankyrase-1
+TNKS2,protein,Poly [ADP-ribose] polymerase tankyrase-2
+TNNI3K,protein,Serine/threonine-protein kinase TNNI3K
+TOP1,protein,DNA topoisomerase 1
+TOP2A,protein,DNA topoisomerase 2-alpha
+TOP2B/TOP2A,complex,DNA topoisomerase 2-beta / DNA topoisomerase 2-alpha
+TP53,protein,Cellular tumor antigen p53
+TP53BP1,protein,TP53-binding protein 1
+TRAP1,protein,"Heat shock protein 75 kDa, mitochondrial"
+TRIM24,protein,Transcription intermediary factor 1-alpha
+TRIM33,protein,E3 ubiquitin-protein ligase TRIM33
+TRPA1,protein,Transient receptor potential cation channel subfamily A member 1
+TRPM2,protein,Transient receptor potential cation channel subfamily M member 2
+TRPM8,protein,Transient receptor potential cation channel subfamily M member 8
+TRPV1,protein,Transient receptor potential cation channel subfamily V member 1
+TRPV4,protein,Transient receptor potential cation channel subfamily V member 4
+TSHR,protein,Thyrotropin receptor
+TSPO,protein,Translocator protein
+TSSK1B,protein,Testis-specific serine/threonine-protein kinase 1
+TTK,protein,Dual specificity protein kinase TTK
+TTR,protein,Transthyretin
+TUBB2B/TUBB6/TUBA1C/TUBA3E/TUBB2A/TUBA1B/TUBB3/TUBB4B/TUBA1A/TUBB/TUBB8/TUBB4A/TUBB1/TUBA4A/TUBA3C/TUBA3D,complex,Tubulin beta-2B chain / Tubulin beta-6 chain / Tubulin alpha-1C chain / Tubulin alpha-3E chain / Tubulin beta-2A chain / Tubulin alpha-1B chain / Tubulin beta-3 chain / Tubulin beta-4B chain / Tubulin alpha-1A chain / Tubulin beta chain / Tubulin beta-8 chain / Tubulin beta-4A chain / Tubulin beta-1 chain / Tubulin alpha-4A chain / Tubulin alpha-3C chain / Tubulin alpha-3D chain
+TUBB3,protein,Tubulin beta-3 chain
+TXK,protein,Tyrosine-protein kinase TXK
+TYK2,protein,Non-receptor tyrosine-protein kinase TYK2
+TYK2/JAK1,complex,Non-receptor tyrosine-protein kinase TYK2 / Tyrosine-protein kinase JAK1
+TYK2/JAK2,complex,Non-receptor tyrosine-protein kinase TYK2 / Tyrosine-protein kinase JAK2
+TYK2/JAK2/JAK1,complex,Non-receptor tyrosine-protein kinase TYK2 / Tyrosine-protein kinase JAK2 / Tyrosine-protein kinase JAK1
+TYMS,protein,Thymidylate synthase
+TYRO3,protein,Tyrosine-protein kinase receptor TYRO3
+Tuba1a,protein,Tubulin alpha-1A chain
+UBE2N,protein,Ubiquitin-conjugating enzyme E2 N
+UGCG,protein,Ceramide glucosyltransferase
+UGT1A1,protein,UDP-glucuronosyltransferase 1A1
+UGT1A10,protein,UDP-glucuronosyltransferase 1A10
+UGT1A4,protein,UDP-glucuronosyltransferase 1A4
+UGT1A6,protein,UDP-glucuronosyltransferase 1A6
+UGT1A7,protein,UDP-glucuronosyltransferase 1A7
+UGT1A9,protein,UDP-glucuronosyltransferase 1A9
+UGT2B7,protein,UDP-glucuronosyltransferase 2B7
+USP1,protein,Ubiquitin carboxyl-terminal hydrolase 1
+USP2,protein,Ubiquitin carboxyl-terminal hydrolase 2
+USP7,protein,Ubiquitin C-terminal hydrolase 7
+UTS2R,protein,Urotensin-2 receptor
+VAV1,protein,Proto-oncogene vav
+VCP,protein,Transitional endoplasmic reticulum ATPase
+VDR,protein,Vitamin D3 receptor
+WEE1,protein,Wee1-like protein kinase
+WNT3A,protein,Protein Wnt-3a
+XDH,protein,Xanthine dehydrogenase/oxidase
+XIAP,protein,E3 ubiquitin-protein ligase XIAP
+YES1,protein,Tyrosine-protein kinase Yes
+ZAP70,protein,Tyrosine-protein kinase ZAP-70
