@@ -282,7 +282,7 @@ PARP1/PARP2/TNKS/TNKS2), which is what `target.type = 'family'` exists for (D14)
 | `unsuitable.tsv` | 260 |
 | `compound_annotation.tsv` | 11428 |
 | `target_annotation.tsv` | 1475 |
-| `in_vivo.tsv` | 1450 — 1265 records, expanded one row per dose |
+| `in_vivo.tsv` | 1450 — the 1207 records under a written compound, one row per dose (193 hold several) |
 | `reference.tsv` | 1792 |
 | `skipped_compound.tsv` | 24 |
 

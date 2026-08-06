@@ -47,15 +47,14 @@ from probedb.schema import vocabulary
 
 slow = pytest.mark.slow
 
-# NotImplementedError is a RuntimeError, so it is not in this tuple: a test that
-# expects a loud failure still reports NotImplementedError while the skeleton is
-# empty instead of passing by accident.
+# what "fails loudly" means for load_export. NotImplementedError is a
+# RuntimeError and deliberately not in this tuple, so a function that is only a
+# stub cannot pass a test that asks it to reject something.
 SHAPE_ERRORS = (ValueError, KeyError, TypeError, AssertionError)
 
 HERE = pathlib.Path(__file__).resolve().parent
 PREPROCESS_PY = HERE / "preprocess.py"
 EXPORT_JSON = HERE / "ChemicalProbesPortal-6_8_2026.json"
-UNSUITABLE_TSV = HERE / "unsuitable.tsv"
 
 # the cache of externally resolved structures that sits next to preprocess.py,
 # with the columns it has today. D1 says the lookup is done once and recorded;
@@ -128,7 +127,8 @@ EXPECTED_PROBES = 1247
 # the loader is not touched by decision, so this drop is current behaviour
 EXPECTED_DUPLICATES_DROPPED = 35
 EXPECTED_GENUINE_REPEATS = 6
-EXPECTED_REINSERTED_ON_RELOAD = 149   # measured on the written files
+# 156 in PREPROCESSING.md, 149 measured: see the pinned reload test
+EXPECTED_REINSERTED_ON_RELOAD = 149
 
 
 # ---------------------------------------------------------------- fixtures
@@ -398,24 +398,66 @@ def flat():
     return Flat(preprocess.flatten(PROBES))
 
 
-def built(f=None):
-    """The staging frames and the leftovers, straight from the builders."""
-    f = f or flat()
-    tables = {
-        "compound": preprocess.build_compound(f.raw("probe"), f.raw("chembl")),
-        "target": preprocess.build_target(f.raw("target")),
-        "uniprot": preprocess.build_uniprot(f.raw("target")),
-        "bioactivity": preprocess.build_bioactivity(
-            f.raw("probe"), f.raw("target"), f.raw("validation")
-        ),
-        "unsuitable": preprocess.build_unsuitable(
-            f.raw("probe"), f.raw("chembl"), f.raw("reference")
-        ),
+def call(function, **available):
+    """Call a builder with the arguments it declares, by name.
+
+    Every builder names its arguments after the frame it reads, so a test offers
+    all of them and lets the signature choose. A builder that also takes the
+    reference frame, or the set of keyed probes, is then called the way the
+    pipeline calls it, and a test does not have to track argument order.
+    """
+    wanted = inspect.signature(function).parameters
+    return function(**{name: available[name] for name in wanted
+                       if name in available})
+
+
+def offer(f):
+    """Every argument the builders take, under the name they use for it."""
+    return {
+        "probes": PROBES,
+        "frames": f.frames,
+        "probe": f.raw("probe"),
+        "target": f.raw("target"),
+        "validation": f.raw("validation"),
+        "invivo": f.raw("invivo"),
+        "chembl": f.raw("chembl"),
+        "reference": f.raw("reference"),
+        "control": f.raw("control"),
+        "keyed": {r["probe_ix"] for r in f.rows("probe")
+                  if text(r.get("inchikey"))},
     }
-    leftovers = preprocess.build_leftovers(
-        f.raw("probe"), f.raw("target"), f.raw("invivo"), f.raw("reference"),
-        f.raw("control"),
-    )
+
+
+def written_and_held(arguments):
+    """The bioactivity rows written, and the rows held back (D15).
+
+    build_bioactivity() gives the rows its docstring describes. The held-back
+    ones have to go somewhere too, so they are taken from a second return value
+    or from the function that builds quarantine.tsv, and from the parser only if
+    the module names neither.
+    """
+    result = call(preprocess.build_bioactivity, **arguments)
+    if isinstance(result, tuple) and len(result) == 2:
+        return rows_of(result[0]), rows_of(result[1])
+    held = getattr(preprocess, "build_quarantine", None)
+    return (rows_of(result),
+            rows_of(call(held, **arguments)) if held else quarantined_numbers())
+
+
+def built(f=None):
+    """Every frame the writer is handed, straight from the builders."""
+    f = f or flat()
+    arguments = offer(f)
+    rows, quarantined = written_and_held(arguments)
+    tables = {
+        "compound": call(preprocess.build_compound, **arguments),
+        "target": call(preprocess.build_target, **arguments),
+        "uniprot": call(preprocess.build_uniprot, **arguments),
+        "bioactivity": rows,
+        "quarantine": quarantined,
+        "unsuitable": call(preprocess.build_unsuitable, **arguments),
+    }
+    leftovers = call(preprocess.build_leftovers, **arguments)
     return tables, leftovers
 
 
@@ -532,20 +574,14 @@ def module_with_cache(directory, cache_rows):
 
 
 def resolve(module, probes):
-    """resolve_missing_structures() on the probe frame.
+    """What resolve_missing_structures() recovers, as rows.
 
-    Its docstring names the argument `probe`, like build_compound(), which takes
-    the flattened frame -- but singular. Both readings are tried so the test
-    reports on the contract rather than on the guess.
+    Its docstring names the argument `probe`, which is the flattened frame the
+    other builders take, so that is what is offered.
     """
     frame = Flat(module.flatten(probes)).raw("probe")
-    try:
-        return rows_of(module.resolve_missing_structures(frame))
-    except (TypeError, AttributeError, KeyError):
-        out = []
-        for probe in probes:
-            out += rows_of(module.resolve_missing_structures(probe))
-        return out
+    return rows_of(call(module.resolve_missing_structures,
+                        probe=frame, probes=probes))
 
 
 _BUILT = {}
@@ -575,9 +611,9 @@ def build_staging(workdir, json_path, name):
     return _BUILT[name]
 
 
-# The two staging fixtures hand back a callable rather than a path, so a
-# NotImplementedError from main() is reported against the test that needs the
-# directory instead of as a fixture error. Each directory is built once.
+# The two staging fixtures hand back a callable rather than a path, so a failure
+# inside main() is reported against the test that needed the directory rather
+# than as a fixture error. Each directory is built once per session.
 
 @pytest.fixture(scope="session")
 def fixture_staging(workdir, fixture_export):
@@ -664,11 +700,13 @@ def test_flatten_frame_sizes(name, rows):
 
 
 def test_flatten_keeps_a_validation_with_no_potency_key():
-    # an in-vitro validation has no `potency` key: .get() throughout
+    # an in-vitro validation has no `potency` key at all, so .get() throughout.
+    # flatten's columns are internal to the module, so the record is found by
+    # its value and not by a column name.
     rows = flat().rows("validation")
-    # flatten names its columns in snake_case, like section 1 of the notebook
-    values = {cell(r, "potency_value") for r in rows}
-    assert "0.06 nM" in values
+    kept = [r for r in rows if "0.06 nM" in {text(v) for v in r.values()}]
+    assert len(kept) == 1
+    assert "IC50" not in {text(v) for v in kept[0].values()}
 
 
 def test_flatten_keeps_an_in_vivo_record_with_no_dose_key():
@@ -687,16 +725,19 @@ def test_integration_flatten_frame_sizes(name, rows):
 
 # ------------------------------------------------------------- build_compound
 
+def compound_rows(f=None):
+    return rows_of(call(preprocess.build_compound, **offer(f or flat())))
+
+
 def test_build_compound_columns_are_the_contract():
-    f = flat()
-    frame = preprocess.build_compound(f.raw("probe"), f.raw("chembl"))
-    assert columns_of(frame) == COMPOUND_COLUMNS
+    assert columns_of(
+        call(preprocess.build_compound, **offer(flat()))
+    ) == COMPOUND_COLUMNS
 
 
 def test_build_compound_joins_several_chembl_ids_with_a_pipe():
     # loader/load.py:52 splits chembl_id on '|'
-    f = flat()
-    rows = rows_of(preprocess.build_compound(f.raw("probe"), f.raw("chembl")))
+    rows = compound_rows()
     row = [r for r in rows
            if cell(r, "inchikey") == PROBE_WITH_TWO_CHEMBL_IDS["InChIkey"]][0]
     assert cell(row, "chembl_id") == "CHEMBL3545209|CHEMBL4297397"
@@ -706,16 +747,13 @@ def test_build_compound_joins_several_chembl_ids_with_a_pipe():
 
 
 def test_build_compound_strips_the_name():
-    f = flat()
-    rows = rows_of(preprocess.build_compound(f.raw("probe"), f.raw("chembl")))
-    names = [cell(r, "name") for r in rows]
+    names = [cell(r, "name") for r in compound_rows()]
     assert "MZ1" in names
     assert all(name == name.strip() for name in names)
 
 
 def test_build_compound_leaves_out_a_probe_with_no_inchikey():
-    f = flat()
-    rows = rows_of(preprocess.build_compound(f.raw("probe"), f.raw("chembl")))
+    rows = compound_rows()
     assert len(rows) == len(KEYED_PROBES)
     assert all(cell(r, "inchikey") for r in rows)
     assert PROBE_WITH_NO_INCHIKEY["name"] not in [cell(r, "name") for r in rows]
@@ -723,13 +761,22 @@ def test_build_compound_leaves_out_a_probe_with_no_inchikey():
 
 # --------------------------------------------------- build_target / uniprot
 
+def target_rows():
+    return rows_of(call(preprocess.build_target, **offer(flat())))
+
+
+def uniprot_rows():
+    return rows_of(call(preprocess.build_uniprot, **offer(flat())))
+
+
 def test_build_target_columns_are_the_contract():
-    frame = preprocess.build_target(flat().raw("target"))
-    assert columns_of(frame) == TARGET_COLUMNS
+    assert columns_of(
+        call(preprocess.build_target, **offer(flat()))
+    ) == TARGET_COLUMNS
 
 
 def test_build_target_is_one_protein_row_per_accession():
-    rows = rows_of(preprocess.build_target(flat().raw("target")))
+    rows = target_rows()
     keys = [cell(r, "target_key") for r in rows]
     assert len(keys) == len(set(keys))
     assert {"Q8TEK3", "O60885", "P51812"} <= set(keys)
@@ -740,12 +787,13 @@ def test_build_target_is_one_protein_row_per_accession():
 
 
 def test_build_uniprot_columns_are_the_contract():
-    frame = preprocess.build_uniprot(flat().raw("target"))
-    assert columns_of(frame) == UNIPROT_COLUMNS
+    assert columns_of(
+        call(preprocess.build_uniprot, **offer(flat()))
+    ) == UNIPROT_COLUMNS
 
 
 def test_build_uniprot_keys_on_the_accession_and_leaves_species_empty():
-    rows = rows_of(preprocess.build_uniprot(flat().raw("target")))
+    rows = uniprot_rows()
     assert rows
     for row in rows:
         assert cell(row, "uniprot_id") == cell(row, "target_key")
@@ -756,19 +804,13 @@ def test_build_uniprot_keys_on_the_accession_and_leaves_species_empty():
 
 # --------------------------------------------------------- build_bioactivity
 
-def test_build_bioactivity_columns_are_the_contract():
-    f = flat()
-    frame = preprocess.build_bioactivity(
-        f.raw("probe"), f.raw("target"), f.raw("validation")
-    )
-    assert columns_of(frame) == BIOACTIVITY_COLUMNS
-
-
 def bioactivity_rows():
-    f = flat()
-    return rows_of(preprocess.build_bioactivity(
-        f.raw("probe"), f.raw("target"), f.raw("validation")
-    ))
+    rows, _ = written_and_held(offer(flat()))
+    return rows
+
+
+def test_build_bioactivity_columns_are_the_contract():
+    assert columns_of(bioactivity_rows()) == BIOACTIVITY_COLUMNS
 
 
 @pytest.mark.parametrize("target_key,assay_type", [
@@ -829,18 +871,14 @@ def test_build_bioactivity_writes_nothing_for_a_keyless_probe():
 
 def test_build_unsuitable_columns_are_the_fourteen_of_the_docstring():
     f = flat()
-    frame = preprocess.build_unsuitable(
-        f.raw("probe"), f.raw("chembl"), f.raw("reference")
-    )
+    frame = call(preprocess.build_unsuitable, **offer(f))
     assert columns_of(frame) == UNSUITABLE_COLUMNS
     assert len(columns_of(frame)) == 14
 
 
 def test_build_unsuitable_takes_only_the_probes_the_portal_ruled_out():
     f = flat()
-    rows = rows_of(preprocess.build_unsuitable(
-        f.raw("probe"), f.raw("chembl"), f.raw("reference")
-    ))
+    rows = rows_of(call(preprocess.build_unsuitable, **offer(f)))
     assert [cell(r, "inchikey") for r in rows] == [PROBE_UNSUITABLE["InChIkey"]]
     row = rows[0]
     assert cell(row, "portal_path") == "unsuitables/jib-04"
@@ -855,11 +893,7 @@ def test_build_unsuitable_takes_only_the_probes_the_portal_ruled_out():
 # --------------------------------------------------------- build_leftovers
 
 def test_build_leftovers_keeps_the_in_vivo_record_with_no_dose():
-    f = flat()
-    leftovers = preprocess.build_leftovers(
-        f.raw("probe"), f.raw("target"), f.raw("invivo"), f.raw("reference"),
-        f.raw("control"),
-    )
+    leftovers = call(preprocess.build_leftovers, **offer(flat()))
     rows = frame_in(leftovers, "in_vivo")
     assert {cell(r, "organism") for r in rows} == {"Mouse", "Rat"}
     rat = [r for r in rows if cell(r, "organism") == "Rat"]
@@ -870,11 +904,7 @@ def test_build_leftovers_keeps_the_in_vivo_record_with_no_dose():
 
 
 def test_build_leftovers_keeps_class_per_target_key():
-    f = flat()
-    leftovers = preprocess.build_leftovers(
-        f.raw("probe"), f.raw("target"), f.raw("invivo"), f.raw("reference"),
-        f.raw("control"),
-    )
+    leftovers = call(preprocess.build_leftovers, **offer(flat()))
     rows = frame_in(leftovers, "target_annotation")
     dot1l = [r for r in rows if cell(r, "target_key") == "Q8TEK3"]
     assert dot1l
@@ -883,11 +913,7 @@ def test_build_leftovers_keeps_class_per_target_key():
 
 
 def test_build_leftovers_keeps_the_controls_and_the_url_per_compound():
-    f = flat()
-    leftovers = preprocess.build_leftovers(
-        f.raw("probe"), f.raw("target"), f.raw("invivo"), f.raw("reference"),
-        f.raw("control"),
-    )
+    leftovers = call(preprocess.build_leftovers, **offer(flat()))
     rows = frame_in(leftovers, "compound_annotation")
     key = PROBE_WITH_NO_POTENCY_KEY["InChIkey"]
     mine = [r for r in rows if cell(r, "inchikey") == key]
@@ -1324,9 +1350,12 @@ def test_integration_pinned_reload_reinserts_the_rows_without_a_unit(
     second = load_staging(db, out, strict=True)
     assert second["bioactivities"] == stored_without_unit
     assert second["bioactivities"] < second["duplicates_skipped"]
-    assert second["bioactivities"] == pytest.approx(
-        EXPECTED_REINSERTED_ON_RELOAD, abs=5
-    )
+    # PREPROCESSING.md projects 156 rows re-inserted. Measured on the files that
+    # are actually written it is 155 unitless rows in bioactivity.tsv, of which
+    # 149 reach the database as distinct rows and so come back on every reload.
+    rows = read_staged(out, "bioactivity")
+    assert len([r for r in rows if not r["unit"]]) == 155
+    assert second["bioactivities"] == EXPECTED_REINSERTED_ON_RELOAD
     db.close()
 
 

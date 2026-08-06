@@ -209,7 +209,8 @@ CREATE INDEX idx_in_vivo_compound ON in_vivo (inchikey);
 ```
 
 Rows these would take: `compound_annotation` ~13100, `target_annotation` ~1500,
-`in_vivo` 1207 excluding the 34 keyless probes.
+`in_vivo` 1207 records excluding the 34 keyless probes, which become 1450 rows
+because 193 dose strings hold more than one dose.
 
 ## 4. Not taken
 
