@@ -13,21 +13,21 @@ TABLES = [
     "bioactivity_source",
     "bioactivity_group",
     "bioactivity",
-    "unsuitable",
-    "compound_annotation",
-    "target_annotation",
-    "in_vivo",
+    "probe_assessment",
+    "compound_xref",
+    "target_class",
+    "in_vivo_dose",
     "compound_reference",
-    "quarantine",
-    "skipped_compound",
+    "compound_annotation",
+    "rejected_record",
 ]
 
-VIEWS = ["target_flat"]
+VIEWS = ["target_flat", "probe_flat", "target_class_flat"]
 
 
 def vocabulary(column):
     """The allowed values for a column, read from its CHECK constraint."""
-    pattern = rf"{column}\s+IN\s*\(([^)]*)\)"
+    pattern = rf"(?<![A-Za-z0-9_]){column}\s+IN\s*\(([^)]*)\)"
     match = re.search(pattern, SCHEMA_SQL.read_text(), re.I)
     if not match:
         raise KeyError(f"no CHECK vocabulary for {column!r}")

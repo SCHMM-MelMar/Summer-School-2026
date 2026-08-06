@@ -1,0 +1,1476 @@
+target_key	level	ordinal	value	source_db	source
+O00141	class	0	Kinase	Chemical Probes Portal	
+O00141	subclass	0	AGC	Chemical Probes Portal	
+O00255	class	0	Epigenetic	Chemical Probes Portal	
+O00255	subclass	0	Scaffold Protein	Chemical Probes Portal	
+O00257	class	0	Epigenetic	Chemical Probes Portal	
+O00257	subclass	0	Methyl-lysine reader	Chemical Probes Portal	
+O00311	class	0	Kinase	Chemical Probes Portal	
+O00311	subclass	0	Ser/Thr Kinase	Chemical Probes Portal	
+O00329	class	0	Lipid kinase	Chemical Probes Portal	
+O00329	class	1	Kinase	Chemical Probes Portal	
+O00329	subclass	0	Class I	Chemical Probes Portal	
+O00329	subclass	1	PI3/PI4	Chemical Probes Portal	
+O00329	subclass	2	PI3/PI4 family	Chemical Probes Portal	
+O00329	subclass	3	PI3/PI4-kinase	Chemical Probes Portal	
+O00411	class	0	Enzyme	Chemical Probes Portal	
+O00411	subclass	0	RNA Polymerase	Chemical Probes Portal	
+O00444	class	0	Protein kinase	Chemical Probes Portal	
+O00444	class	1	Kinase	Chemical Probes Portal	
+O00444	subclass	0	Other	Chemical Probes Portal	
+O00444	subclass	1	Ser/Thr kinase	Chemical Probes Portal	
+O00444	subclass	2	Ser/Thr Kinase	Chemical Probes Portal	
+O00487	class	0	Enzyme	Chemical Probes Portal	
+O00487	subclass	0	Peptidase	Chemical Probes Portal	
+O00519	class	0	Lipid metabolism	Chemical Probes Portal	
+O00519	class	1	Enzyme	Chemical Probes Portal	
+O00519	subclass	0	Serine Hydrolase	Chemical Probes Portal	
+O00519	subclass	1	Amidase	Chemical Probes Portal	
+O00625	class	0	Other	Chemical Probes Portal	
+O00625	subclass	0	Cupin	Chemical Probes Portal	
+O00748	class	0	Enzyme	Chemical Probes Portal	
+O00748	subclass	0	carboxylesterase/lipase	Chemical Probes Portal	
+O00763	class	0	Enzyme	Chemical Probes Portal	
+O14578	class	0	Kinase	Chemical Probes Portal	
+O14578	subclass	0	AGC	Chemical Probes Portal	
+O14672	class	0	Other	Chemical Probes Portal	
+O14672	subclass	0	ADAM family	Chemical Probes Portal	
+O14684	class	0	Enzyme	Chemical Probes Portal	
+O14684	subclass	0	Synthase	Chemical Probes Portal	
+O14733	class	0	Kinase	Chemical Probes Portal	
+O14733	subclass	0	STE	Chemical Probes Portal	
+O14744	class	0	Epigenetic	Chemical Probes Portal	
+O14744	subclass	0	Methyltransferase	Chemical Probes Portal	
+O14744	subclass	1	Protein methyltransferase	Chemical Probes Portal	
+O14757	class	0	Protein kinase	Chemical Probes Portal	
+O14757	class	1	Kinase	Chemical Probes Portal	
+O14757	subclass	0	CAMK	Chemical Probes Portal	
+O14842	class	0	GPCR	Chemical Probes Portal	
+O14842	subclass	0	Free fatty acid receptor	Chemical Probes Portal	
+O14842	subclass	1	Free fatty acid receptors	Chemical Probes Portal	
+O14920	class	0	Kinase	Chemical Probes Portal	
+O14920	subclass	0	Serine kinase	Chemical Probes Portal	
+O14920	subclass	1	Ser/Thr Kinase	Chemical Probes Portal	
+O14936	class	0	Kinase	Chemical Probes Portal	
+O14936	subclass	0	CAMK	Chemical Probes Portal	
+O14939	class	0	Enzyme	Chemical Probes Portal	
+O14939	subclass	0	Phospholipase	Chemical Probes Portal	
+O14965	class	0	Kinase	Chemical Probes Portal	
+O14965	subclass	0	Ser/Thr kinase	Chemical Probes Portal	
+O14965	subclass	1	Ser/Thr Kinase	Chemical Probes Portal	
+O14965	subclass	2	cell cycle-regulated kinase	Chemical Probes Portal	
+O14976	class	0	Kinase	Chemical Probes Portal	
+O14976	subclass	0	Ser/Thr Kinase	Chemical Probes Portal	
+O15054	class	0	Epigenetic	Chemical Probes Portal	
+O15054	subclass	0	Lysine demethylase	Chemical Probes Portal	
+O15075	class	0	Kinase	Chemical Probes Portal	
+O15075	subclass	0	CAMK	Chemical Probes Portal	
+O15118	class	0	Other	Chemical Probes Portal	
+O15118	subclass	0	Intracellular Cholesterol Transporter	Chemical Probes Portal	
+O15164	class	0	Epigenetic	Chemical Probes Portal	
+O15164	subclass	0	Tripartite Motif Family	Chemical Probes Portal	
+O15294	class	0	Enzyme	Chemical Probes Portal	
+O15294	subclass	0	Glycosyltransferase	Chemical Probes Portal	
+O15297	class	0	Enzyme	Chemical Probes Portal	
+O15297	subclass	0	Phosphatase	Chemical Probes Portal	
+O15379	class	0	Epigenetic	Chemical Probes Portal	
+O15379	subclass	0	HDAC	Chemical Probes Portal	
+O15379	subclass	1	Histone deacetylase	Chemical Probes Portal	
+O15382	class	0	Enzyme	Chemical Probes Portal	
+O15382	subclass	0	Amino acid transaminase	Chemical Probes Portal	
+O15427	class	0	Transporter	Chemical Probes Portal	
+O15427	subclass	0	Monocarboxylate transporter	Chemical Probes Portal	
+O15530	class	0	Kinase	Chemical Probes Portal	
+O15530	subclass	0	AGC	Chemical Probes Portal	
+O15550	class	0	Epigenetic	Chemical Probes Portal	
+O15550	subclass	0	Lysine demethylase	Chemical Probes Portal	
+O15552	class	0	GPCR	Chemical Probes Portal	
+O15552	subclass	0	Free fatty acid receptor	Chemical Probes Portal	
+O15554	class	0	Ion Channel	Chemical Probes Portal	
+O15554	subclass	0	Potassium channel	Chemical Probes Portal	
+O43175	class	0	Enzyme	Chemical Probes Portal	
+O43175	subclass	0	Dehydrogenase	Chemical Probes Portal	
+O43194	class	0	GPCR	Chemical Probes Portal	
+O43318	class	0	Kinase	Chemical Probes Portal	
+O43318	subclass	0	TKL	Chemical Probes Portal	
+O43353	class	0	Kinase	Chemical Probes Portal	
+O43353	subclass	0	TKL	Chemical Probes Portal	
+O43526	class	0	Ion Channel	Chemical Probes Portal	
+O43526	subclass	0	Potassium Channel	Chemical Probes Portal	
+O43613	class	0	GPCR	Chemical Probes Portal	
+O43613	subclass	0	Orexin/Hypocretin receptor	Chemical Probes Portal	
+O43614	class	0	GPCR	Chemical Probes Portal	
+O43614	subclass	0	Orexin Receptor	Chemical Probes Portal	
+O43614	subclass	1	Orexin receptor	Chemical Probes Portal	
+O43614	subclass	2	Orexin 2 receptor	Chemical Probes Portal	
+O43683	class	0	Kinase	Chemical Probes Portal	
+O43683	subclass	0	Ser/Thr Protein Kinase	Chemical Probes Portal	
+O43739	class	0	Cytohesin	Chemical Probes Portal	
+O60260	class	0	Ubiquitin-protein ligase	Chemical Probes Portal	
+O60260	subclass	0	Parkinson disease protein	Chemical Probes Portal	
+O60285	class	0	Kinase	Chemical Probes Portal	
+O60285	subclass	0	CAMK	Chemical Probes Portal	
+O60341	class	0	Epigenetic	Chemical Probes Portal	
+O60502	class	0	Enzyme	Chemical Probes Portal	
+O60502	subclass	0	Hydrolase	Chemical Probes Portal	
+O60551	class	0	Other post-translational modification	Chemical Probes Portal	
+O60551	subclass	0	Acyltransferase	Chemical Probes Portal	
+O60674	class	0	Protein kinase	Chemical Probes Portal	
+O60674	class	1	Kinase	Chemical Probes Portal	
+O60674	subclass	0	TK	Chemical Probes Portal	
+O60674	subclass	1	Tyrosine kinase	Chemical Probes Portal	
+O60678	class	0	Epigenetic	Chemical Probes Portal	
+O60678	subclass	0	Protein methyltransferase	Chemical Probes Portal	
+O60678	subclass	1	Methyltransferase	Chemical Probes Portal	
+O60741	class	0	Ion Channel	Chemical Probes Portal	
+O60741	subclass	0	Potassium/Sodium Channel	Chemical Probes Portal	
+O60885	class	0	Epigenetic	Chemical Probes Portal	
+O60885	subclass	0	Bromodomain	Chemical Probes Portal	
+O60911	class	0	Protein metabolism	Chemical Probes Portal	
+O60911	subclass	0	Protease	Chemical Probes Portal	
+O75116	class	0	Kinase	Chemical Probes Portal	
+O75116	subclass	0	AGC	Chemical Probes Portal	
+O75164	class	0	Epigenetic	Chemical Probes Portal	
+O75164	subclass	0	Histone demethylase	Chemical Probes Portal	
+O75306	class	0	Enzyme	Chemical Probes Portal	
+O75306	subclass	0	Dehydrogenase	Chemical Probes Portal	
+O75385	class	0	Kinase	Chemical Probes Portal	
+O75385	subclass	0	Autophagy Activating Kinases	Chemical Probes Portal	
+O75417	class	0	Enzyme	Chemical Probes Portal	
+O75417	subclass	0	DNA Polymerase	Chemical Probes Portal	
+O75460	class	0	Kinase	Chemical Probes Portal	
+O75460	subclass	0	Ser/Thr Kinase	Chemical Probes Portal	
+O75530	class	0	Epigenetic	Chemical Probes Portal	
+O75530	subclass	0	Polycomb family	Chemical Probes Portal	
+O75575	class	0	CGRP-receptor component protein	Chemical Probes Portal	
+O75643	class	0	Enzyme	Chemical Probes Portal	
+O75643	subclass	0	Helicase	Chemical Probes Portal	
+O75716	class	0	Kinase	Chemical Probes Portal	
+O75716	subclass	0	Ser/Thr Kinase	Chemical Probes Portal	
+O75762	class	0	Transient Receptor	Chemical Probes Portal	
+O75762	class	1	Ion Channel	Chemical Probes Portal	
+O75762	subclass	0	Transient receptor, TRPV subfamily	Chemical Probes Portal	
+O75874	class	0	Enzyme	Chemical Probes Portal	
+O75874	class	1	Kinase	Chemical Probes Portal	
+O75874	subclass	0	Dehydrogenase	Chemical Probes Portal	
+O75907	class	0	Other	Chemical Probes Portal	
+O75907	class	1	Enzyme	Chemical Probes Portal	
+O75907	subclass	0	Diacylglycerol O-acyltransferase	Chemical Probes Portal	
+O75907	subclass	1	Acyltransferase	Chemical Probes Portal	
+O75914	class	0	Protein kinase	Chemical Probes Portal	
+O75914	subclass	0	STE	Chemical Probes Portal	
+O76039	class	0	Kinase	Chemical Probes Portal	
+O76039	subclass	0	CMGC	Chemical Probes Portal	
+O76083	class	0	Nucleic acid metabolism	Chemical Probes Portal	
+O76083	subclass	0	Phosphodiesterase	Chemical Probes Portal	
+O94768	class	0	Kinase	Chemical Probes Portal	
+O94768	subclass	0	CAMK	Chemical Probes Portal	
+O94782	class	0	Other post-translational modification	Chemical Probes Portal	
+O94782	subclass	0	Deubiquitinase	Chemical Probes Portal	
+O94921	class	0	Kinase	Chemical Probes Portal	
+O94921	subclass	0	CMGC	Chemical Probes Portal	
+O94925	class	0	Enzyme	Chemical Probes Portal	
+O94925	subclass	0	Glutaminase	Chemical Probes Portal	
+O94953	class	0	Epigenetic	Chemical Probes Portal	
+O94953	subclass	0	Histone demethylase	Chemical Probes Portal	
+O95069	class	0	Ion Channel	Chemical Probes Portal	
+O95069	subclass	0	Potassium Channel	Chemical Probes Portal	
+O95251	class	0	Epigenetic	Chemical Probes Portal	
+O95251	subclass	0	Histone Acetyltransferase	Chemical Probes Portal	
+O95271	class	0	Other post-translational modification	Chemical Probes Portal	
+O95271	subclass	0	PARP	Chemical Probes Portal	
+O95497	class	0	Vanin	Chemical Probes Portal	
+O95497	subclass	0	Biotinidase	Chemical Probes Portal	
+O95696	class	0	Epigenetic	Chemical Probes Portal	
+O95696	subclass	0	Bromodomain	Chemical Probes Portal	
+O95785	class	0	Transcription factor	Chemical Probes Portal	
+O95785	subclass	0	Zinc Finger	Chemical Probes Portal	
+O95835	class	0	Kinase	Chemical Probes Portal	
+O95835	subclass	0	AGC	Chemical Probes Portal	
+O95848	class	0	Epigenetic	Chemical Probes Portal	
+O95848	subclass	0	Nudix	Chemical Probes Portal	
+O95931	class	0	Epigenetic	Chemical Probes Portal	
+O95931	subclass	0	Methyl-lysine reader	Chemical Probes Portal	
+O96013	class	0	Protein kinase	Chemical Probes Portal	
+O96013	class	1	Kinase	Chemical Probes Portal	
+O96013	subclass	0	STE	Chemical Probes Portal	
+O96017	class	0	Protein kinase	Chemical Probes Portal	
+O96017	subclass	0	CAMK	Chemical Probes Portal	
+O96028	class	0	Epigenetic	Chemical Probes Portal	
+O96028	subclass	0	Methyltransferase	Chemical Probes Portal	
+P00338	class	0	Enzyme	Chemical Probes Portal	
+P00338	subclass	0	LDH family	Chemical Probes Portal	
+P00352	class	0	Other	Chemical Probes Portal	
+P00352	subclass	0	aldehyde dehydrogenase	Chemical Probes Portal	
+P00519	class	0	Kinase	Chemical Probes Portal	
+P00519	subclass	0	TK	Chemical Probes Portal	
+P00533	class	0	Kinase	Chemical Probes Portal	
+P00533	class	1	Protein kinase	Chemical Probes Portal	
+P00533	subclass	0	RTK	Chemical Probes Portal	
+P00533	subclass	1	TK	Chemical Probes Portal	
+P00751	class	0	Other	Chemical Probes Portal	
+P00751	subclass	0	Serine Protease	Chemical Probes Portal	
+P00797	class	0	Enzyme	Chemical Probes Portal	
+P00797	subclass	0	Angiotensinogenase	Chemical Probes Portal	
+P00918	class	0	Enzyme	Chemical Probes Portal	
+P00918	subclass	0	Anhydrase family	Chemical Probes Portal	
+P01111	class	0	Enzyme	Chemical Probes Portal	
+P01111	subclass	0	GTPase	Chemical Probes Portal	
+P01112	class	0	Enzyme	Chemical Probes Portal	
+P01112	subclass	0	GTPase	Chemical Probes Portal	
+P01116	class	0	Enzyme	Chemical Probes Portal	
+P01116	class	1	Kinase	Chemical Probes Portal	
+P01116	subclass	0	GTPase	Chemical Probes Portal	
+P01116	subclass	1	Ras Family	Chemical Probes Portal	
+P01137	class	0	Catalytic receptor	Chemical Probes Portal	
+P01137	subclass	0	Transforming Growth Factor	Chemical Probes Portal	
+P03372	class	0	Other	Chemical Probes Portal	
+P03372	class	1	NHR	Chemical Probes Portal	
+P03372	subclass	0	Hormone Receptor	Chemical Probes Portal	
+P03372	subclass	1	Estrogen Receptor	Chemical Probes Portal	
+P03372	subclass	2	NR3 Subfamily	Chemical Probes Portal	
+P03372	subclass	3	Estrogen receptor	Chemical Probes Portal	
+P03951	class	0	Enzyme	Chemical Probes Portal	
+P03951	subclass	0	Peptidase S1 family	Chemical Probes Portal	
+P04035	class	0	Lipid metabolism	Chemical Probes Portal	
+P04035	subclass	0	Sterol biosynthesis	Chemical Probes Portal	
+P04150	class	0	NHR	Chemical Probes Portal	
+P04150	class	1	Nuclear Receptor	Chemical Probes Portal	
+P04150	subclass	0	Subfamily 3	Chemical Probes Portal	
+P04150	subclass	1	Nuclear hormone receptor	Chemical Probes Portal	
+P04626	class	0	Kinase	Chemical Probes Portal	
+P04626	subclass	0	RTK	Chemical Probes Portal	
+P04629	class	0	Kinase	Chemical Probes Portal	
+P04629	subclass	0	TK	Chemical Probes Portal	
+P04629	subclass	1	Tyrosin kinase	Chemical Probes Portal	
+P04629	subclass	2	Tyr kinase	Chemical Probes Portal	
+P06213	class	0	Kinase	Chemical Probes Portal	
+P06213	subclass	0	TK	Chemical Probes Portal	
+P06239	class	0	Kinase	Chemical Probes Portal	
+P06239	subclass	0	TK	Chemical Probes Portal	
+P06241	class	0	Kinase	Chemical Probes Portal	
+P06241	subclass	0	TK	Chemical Probes Portal	
+P06493	class	0	Kinase	Chemical Probes Portal	
+P06493	subclass	0	CMGC	Chemical Probes Portal	
+P06576	class	0	Enzyme	Chemical Probes Portal	
+P07195	class	0	Enzyme	Chemical Probes Portal	
+P07195	subclass	0	LDH family	Chemical Probes Portal	
+P07333	class	0	Kinase	Chemical Probes Portal	
+P07333	subclass	0	TK	Chemical Probes Portal	
+P07437	class	0	Enzyme	Chemical Probes Portal	
+P07437	subclass	0	GTPase	Chemical Probes Portal	
+P07550	class	0	GPCR	Chemical Probes Portal	
+P07550	subclass	0	Adrenoceptor	Chemical Probes Portal	
+P07711	class	0	Protein metabolism	Chemical Probes Portal	
+P07711	class	1	Enzyme	Chemical Probes Portal	
+P07711	subclass	0	Protease	Chemical Probes Portal	
+P07711	subclass	1	Cysteine protease	Chemical Probes Portal	
+P07900	class	0	Other post-translational modification	Chemical Probes Portal	
+P07900	subclass	0	Chaperone	Chemical Probes Portal	
+P07947	class	0	Kinase	Chemical Probes Portal	
+P07947	subclass	0	TK	Chemical Probes Portal	
+P07948	class	0	Kinase	Chemical Probes Portal	
+P07948	subclass	0	TK	Chemical Probes Portal	
+P07949	class	0	Kinase	Chemical Probes Portal	
+P07949	subclass	0	Tyrosine Kinase	Chemical Probes Portal	
+P08069	class	0	Kinase	Chemical Probes Portal	
+P08069	subclass	0	TK	Chemical Probes Portal	
+P08172	class	0	GPCR	Chemical Probes Portal	
+P08172	subclass	0	Muscarinic Receptor	Chemical Probes Portal	
+P08172	subclass	1	Muscarinic receptor	Chemical Probes Portal	
+P08173	class	0	GPCR	Chemical Probes Portal	
+P08173	subclass	0	Muscarinic receptor	Chemical Probes Portal	
+P08235	class	0	NHR	Chemical Probes Portal	
+P08235	subclass	0	Mineralocorticoid receptor	Chemical Probes Portal	
+P08238	class	0	Other post-translational modification	Chemical Probes Portal	
+P08238	subclass	0	Chaperone	Chemical Probes Portal	
+P08246	class	0	Enzyme	Chemical Probes Portal	
+P08246	subclass	0	Protease	Chemical Probes Portal	
+P08246	subclass	1	peptidase S1 family	Chemical Probes Portal	
+P08581	class	0	Kinase	Chemical Probes Portal	
+P08581	subclass	0	TK	Chemical Probes Portal	
+P08581	subclass	1	Tyrosine kinase	Chemical Probes Portal	
+P08709	class	0	Enzyme	Chemical Probes Portal	
+P08709	subclass	0	Peptidase	Chemical Probes Portal	
+P08922	class	0	Kinase	Chemical Probes Portal	
+P08922	subclass	0	TK	Chemical Probes Portal	
+P09619	class	0	Kinase	Chemical Probes Portal	
+P09619	class	1	Protein kinase	Chemical Probes Portal	
+P09619	subclass	0	TK	Chemical Probes Portal	
+P09874	class	0	Other post-translational modification	Chemical Probes Portal	
+P09874	subclass	0	PARP	Chemical Probes Portal	
+P09936	class	0	Other	Chemical Probes Portal	
+P09936	class	1	Enzyme	Chemical Probes Portal	
+P09936	subclass	0	Peptidase C12 family	Chemical Probes Portal	
+P09936	subclass	1	Peptidase	Chemical Probes Portal	
+P09960	class	0	Other	Chemical Probes Portal	
+P09960	subclass	0	Hydrolase	Chemical Probes Portal	
+P10275	class	0	NHR	Chemical Probes Portal	
+P10275	class	1	Transcription factor	Chemical Probes Portal	
+P10275	subclass	0	Dihydrotestosterone receptor	Chemical Probes Portal	
+P10275	subclass	1	Androgen receptor	Chemical Probes Portal	
+P10275	subclass	2	Nuclear Hormone Receptor	Chemical Probes Portal	
+P10415	class	0	Enzyme	Chemical Probes Portal	
+P10415	class	1	Other	Chemical Probes Portal	
+P10415	subclass	0	Apoptosis Regulator	Chemical Probes Portal	
+P10415	subclass	1	Protein Phosphatase	Chemical Probes Portal	
+P10636	class	0	Extracellular protein	Chemical Probes Portal	
+P10636	subclass	0	Microtubule Associated Protein	Chemical Probes Portal	
+P10721	class	0	Protein kinase	Chemical Probes Portal	
+P10721	class	1	Kinase	Chemical Probes Portal	
+P10721	subclass	0	TK	Chemical Probes Portal	
+P10721	subclass	1	Tyr kinase	Chemical Probes Portal	
+P11166	class	0	Transporter	Chemical Probes Portal	
+P11166	subclass	0	Solute Carrier	Chemical Probes Portal	
+P11229	class	0	GPCR	Chemical Probes Portal	
+P11229	subclass	0	Acetylcholine Receptor	Chemical Probes Portal	
+P11309	class	0	Kinase	Chemical Probes Portal	
+P11309	subclass	0	CAMK	Chemical Probes Portal	
+P11362	class	0	Kinase	Chemical Probes Portal	
+P11362	subclass	0	TK	Chemical Probes Portal	
+P11362	subclass	1	Tyrosine kinase	Chemical Probes Portal	
+P11586	class	0	Enzyme	Chemical Probes Portal	
+P11586	subclass	0	Dehydrogenase	Chemical Probes Portal	
+P11597	class	0	Transporter	Chemical Probes Portal	
+P11597	subclass	0	BPI/LBP family	Chemical Probes Portal	
+P11802	class	0	Kinase	Chemical Probes Portal	
+P11802	subclass	0	CMGC	Chemical Probes Portal	
+P12931	class	0	Kinase	Chemical Probes Portal	
+P12931	class	1	Protein kinase	Chemical Probes Portal	
+P12931	subclass	0	TK	Chemical Probes Portal	
+P13569	class	0	Structural protein	Chemical Probes Portal	
+P13569	class	1	Ion Channel	Chemical Probes Portal	
+P13569	subclass	0	ABCC	Chemical Probes Portal	
+P13569	subclass	1	Conductance Regulator	Chemical Probes Portal	
+P13995	class	0	Enzyme	Chemical Probes Portal	
+P13995	subclass	0	Dehydrogenase	Chemical Probes Portal	
+P14174	class	0	Other post-translational modification	Chemical Probes Portal	
+P14174	subclass	0	Tautomerase	Chemical Probes Portal	
+P14616	class	0	Kinase	Chemical Probes Portal	
+P14616	subclass	0	TK	Chemical Probes Portal	
+P14902	class	0	Enzyme	Chemical Probes Portal	
+P14902	subclass	0	Dioxygenase	Chemical Probes Portal	
+P15056	class	0	Kinase	Chemical Probes Portal	
+P15056	subclass	0	TKL	Chemical Probes Portal	
+P15170	class	0	Other	Chemical Probes Portal	
+P15170	class	1	Transcription factor	Chemical Probes Portal	
+P15170	class	2	Translation Termination Factor	Chemical Probes Portal	
+P15170	subclass	0	Translation Termination Factor	Chemical Probes Portal	
+P16234	class	0	Kinase	Chemical Probes Portal	
+P16234	subclass	0	TK	Chemical Probes Portal	
+P17706	class	0	Enzyme	Chemical Probes Portal	
+P17706	subclass	0	Phosphatase	Chemical Probes Portal	
+P17948	class	0	Kinase	Chemical Probes Portal	
+P17948	subclass	0	Tyrosine kinase	Chemical Probes Portal	
+P18031	class	0	Enzyme	Chemical Probes Portal	
+P18031	subclass	0	Phosphatase	Chemical Probes Portal	
+P18089	class	0	GPCR	Chemical Probes Portal	
+P18089	subclass	0	Adrenergic receptor	Chemical Probes Portal	
+P19099	class	0	Enzyme	Chemical Probes Portal	
+P19099	subclass	0	B	Chemical Probes Portal	
+P19634	class	0	Transporter	Chemical Probes Portal	
+P19634	class	1	Ion Channel	Chemical Probes Portal	
+P19634	subclass	0	Solute Carrier	Chemical Probes Portal	
+P19634	subclass	1	Cation Proton Antiporter	Chemical Probes Portal	
+P19784	class	0	Kinase	Chemical Probes Portal	
+P19784	subclass	0	Ser/Thr kinase	Chemical Probes Portal	
+P19784	subclass	1	CMGC	Chemical Probes Portal	
+P19793	class	0	NHR	Chemical Probes Portal	
+P19793	subclass	0	Retinoic acid receptor	Chemical Probes Portal	
+P20292	class	0	Enzyme	Chemical Probes Portal	
+P20292	class	1	Membrane protein	Chemical Probes Portal	
+P20292	subclass	0	5-lipoxygenase	Chemical Probes Portal	
+P20292	subclass	1	Five-Lipoxygenase Activating Protein	Chemical Probes Portal	
+P20309	class	0	GPCR	Chemical Probes Portal	
+P20309	subclass	0	Muscarinic Receptor	Chemical Probes Portal	
+P20701	class	0	Integrin	Chemical Probes Portal	
+P21452	class	0	GPCR	Chemical Probes Portal	
+P21452	subclass	0	Tachykinin receptor	Chemical Probes Portal	
+P21453	class	0	GPCR	Chemical Probes Portal	
+P21453	subclass	0	Sphingosine receptor	Chemical Probes Portal	
+P21554	class	0	GPCR	Chemical Probes Portal	
+P21554	subclass	0	Cannabinoid Receptor	Chemical Probes Portal	
+P21554	subclass	1	Cannabinoid receptor	Chemical Probes Portal	
+P21589	class	0	Other	Chemical Probes Portal	
+P21589	subclass	0	Membrane Protein	Chemical Probes Portal	
+P21675	class	0	Epigenetic	Chemical Probes Portal	
+P21675	subclass	0	Bromodomain	Chemical Probes Portal	
+P21730	class	0	GPCR	Chemical Probes Portal	
+P21730	subclass	0	Complement peptide receptor	Chemical Probes Portal	
+P21802	class	0	Kinase	Chemical Probes Portal	
+P21802	subclass	0	TK	Chemical Probes Portal	
+P21802	subclass	1	Tyrosine Kinase	Chemical Probes Portal	
+P21860	class	0	Protein kinase	Chemical Probes Portal	
+P21860	subclass	0	RTK	Chemical Probes Portal	
+P21917	class	0	GPCR	Chemical Probes Portal	
+P21917	subclass	0	Dopamine receptor	Chemical Probes Portal	
+P21917	subclass	1	Dopamine D4 receptors	Chemical Probes Portal	
+P22314	class	0	Other post-translational modification	Chemical Probes Portal	
+P22314	class	1	Enzyme	Chemical Probes Portal	
+P22314	subclass	0	Ubiquitin-conjugating enzyme	Chemical Probes Portal	
+P22413	class	0	Enzyme	Chemical Probes Portal	
+P22413	subclass	0	phosphodiesterase	Chemical Probes Portal	
+P22455	class	0	Protein kinase	Chemical Probes Portal	
+P22455	class	1	Kinase	Chemical Probes Portal	
+P22455	subclass	0	TK	Chemical Probes Portal	
+P22455	subclass	1	Tyrosine kinase	Chemical Probes Portal	
+P22455	subclass	2	Tyrosine Kinase	Chemical Probes Portal	
+P22607	class	0	Kinase	Chemical Probes Portal	
+P22607	subclass	0	TK	Chemical Probes Portal	
+P22607	subclass	1	Tyrosine Kinase	Chemical Probes Portal	
+P22888	class	0	GPCR	Chemical Probes Portal	
+P22888	subclass	0	Luteinizing hormone receptor	Chemical Probes Portal	
+P22888	subclass	1	Hormone Receptor	Chemical Probes Portal	
+P23219	class	0	Enzyme	Chemical Probes Portal	
+P23219	subclass	0	Synthase	Chemical Probes Portal	
+P23458	class	0	Kinase	Chemical Probes Portal	
+P23458	subclass	0	TK	Chemical Probes Portal	
+P23458	subclass	1	Tyrosine kinase	Chemical Probes Portal	
+P23743	class	0	Kinase	Chemical Probes Portal	
+P23743	subclass	0	Lipid kinase	Chemical Probes Portal	
+P23946	class	0	Enzyme	Chemical Probes Portal	
+P23946	subclass	0	Peptidase	Chemical Probes Portal	
+P24530	class	0	GPCR	Chemical Probes Portal	
+P24530	subclass	0	Endothelin Receptor	Chemical Probes Portal	
+P24941	class	0	Kinase	Chemical Probes Portal	
+P24941	subclass	0	CMGC	Chemical Probes Portal	
+P25090	class	0	GPCR	Chemical Probes Portal	
+P25090	subclass	0	Formyl peptide receptor	Chemical Probes Portal	
+P25098	class	0	Kinase	Chemical Probes Portal	
+P25098	subclass	0	AGC	Chemical Probes Portal	
+P25100	class	0	GPCR	Chemical Probes Portal	
+P25100	subclass	0	Alpha-Adrenergic Receptor	Chemical Probes Portal	
+P25101	class	0	GPCR	Chemical Probes Portal	
+P25101	subclass	0	Endothelin Receptor	Chemical Probes Portal	
+P25103	class	0	GPCR	Chemical Probes Portal	
+P25103	subclass	0	NK-1 Receptor	Chemical Probes Portal	
+P25105	class	0	GPCR	Chemical Probes Portal	
+P25105	subclass	0	Platelet-activating factor receptor	Chemical Probes Portal	
+P25116	class	0	GPCR	Chemical Probes Portal	
+P25116	subclass	0	Trombin Receptor	Chemical Probes Portal	
+P25440	class	0	Epigenetic	Chemical Probes Portal	
+P25440	subclass	0	Bromodomain	Chemical Probes Portal	
+P25774	class	0	Enzyme	Chemical Probes Portal	
+P25774	subclass	0	Peptidase	Chemical Probes Portal	
+P25929	class	0	GPCR	Chemical Probes Portal	
+P25929	subclass	0	Neuropeptide Y receptor	Chemical Probes Portal	
+P26358	class	0	Epigenetic	Chemical Probes Portal	
+P26358	subclass	0	Methyltransferase	Chemical Probes Portal	
+P27361	class	0	Kinase	Chemical Probes Portal	
+P27361	subclass	0	CMGC	Chemical Probes Portal	
+P28065	class	0	Protein metabolism	Chemical Probes Portal	
+P28065	subclass	0	Proteasome subunit	Chemical Probes Portal	
+P28221	class	0	GPCR	Chemical Probes Portal	
+P28221	subclass	0	Serotonin Receptor	Chemical Probes Portal	
+P28223	class	0	GPCR	Chemical Probes Portal	
+P28223	subclass	0	Serotonin Receptor	Chemical Probes Portal	
+P28335	class	0	GPCR	Chemical Probes Portal	
+P28335	subclass	0	Serotonin Receptor	Chemical Probes Portal	
+P28347	class	0	Epigenetic	Chemical Probes Portal	
+P28347	subclass	0	Transcription factor	Chemical Probes Portal	
+P28347	subclass	1	Transcription Factor	Chemical Probes Portal	
+P28482	class	0	Kinase	Chemical Probes Portal	
+P28482	subclass	0	CMGC	Chemical Probes Portal	
+P28702	class	0	NHR	Chemical Probes Portal	
+P28702	subclass	0	Retinoic acid receptor	Chemical Probes Portal	
+P28799	class	0	Glycoprotein	Chemical Probes Portal	
+P28799	subclass	0	Granulin family	Chemical Probes Portal	
+P28845	class	0	Enzyme	Chemical Probes Portal	
+P28845	subclass	0	Dehydrogenase	Chemical Probes Portal	
+P29274	class	0	GPCR	Chemical Probes Portal	
+P29274	subclass	0	Adenosine receptor	Chemical Probes Portal	
+P29275	class	0	GPCR	Chemical Probes Portal	
+P29275	subclass	0	Adenosine receptor	Chemical Probes Portal	
+P29371	class	0	GPCR	Chemical Probes Portal	
+P29371	subclass	0	NK-3 Receptor	Chemical Probes Portal	
+P29597	class	0	Kinase	Chemical Probes Portal	
+P29597	subclass	0	Tyrosine Kinase	Chemical Probes Portal	
+P29597	subclass	1	Tyrosine kinase	Chemical Probes Portal	
+P30291	class	0	Kinase	Chemical Probes Portal	
+P30291	subclass	0	Ser/Thr kinase	Chemical Probes Portal	
+P30291	subclass	1	Ser/Thr Protein Kinase	Chemical Probes Portal	
+P30419	class	0	Other post-translational modification	Chemical Probes Portal	
+P30419	subclass	0	Acyltransferase	Chemical Probes Portal	
+P30518	class	0	GPCR	Chemical Probes Portal	
+P30518	subclass	0	Vasorepressin receptor	Chemical Probes Portal	
+P30530	class	0	Kinase	Chemical Probes Portal	
+P30530	subclass	0	Tyrosine kinase	Chemical Probes Portal	
+P30559	class	0	GPCR	Chemical Probes Portal	
+P30559	subclass	0	Oxytocin receptor	Chemical Probes Portal	
+P30968	class	0	GPCR	Chemical Probes Portal	
+P30968	subclass	0	GnRH receptor	Chemical Probes Portal	
+P30968	subclass	1	Hormone Receptor	Chemical Probes Portal	
+P31153	class	0	Other post-translational modification	Chemical Probes Portal	
+P31153	subclass	0	Methionine Adenosyltransferase	Chemical Probes Portal	
+P31639	class	0	Transporter	Chemical Probes Portal	
+P31639	subclass	0	Solute carrier	Chemical Probes Portal	
+P31644	class	0	Ion Channel	Chemical Probes Portal	
+P31645	class	0	Transporter	Chemical Probes Portal	
+P31645	subclass	0	Serotonin transporter	Chemical Probes Portal	
+P31749	class	0	Kinase	Chemical Probes Portal	
+P31749	subclass	0	AGC	Chemical Probes Portal	
+P31751	class	0	Kinase	Chemical Probes Portal	
+P31751	subclass	0	AGC	Chemical Probes Portal	
+P31939	class	0	Other	Chemical Probes Portal	
+P31939	subclass	0	formyltransferase and cyclohydrolase	Chemical Probes Portal	
+P32239	class	0	GPCR	Chemical Probes Portal	
+P32239	subclass	0	Cholecystokinin Receptor	Chemical Probes Portal	
+P32245	class	0	GPCR	Chemical Probes Portal	
+P32245	subclass	0	Melanocortin Receptor	Chemical Probes Portal	
+P32246	class	0	GPCR	Chemical Probes Portal	
+P32246	subclass	0	Chemokine Receptor	Chemical Probes Portal	
+P32247	class	0	GPCR	Chemical Probes Portal	
+P32247	subclass	0	Bombesin receptor	Chemical Probes Portal	
+P32745	class	0	GPCR	Chemical Probes Portal	
+P32745	subclass	0	Somatostatin Receptor	Chemical Probes Portal	
+P32745	subclass	1	Somatostatin receptor	Chemical Probes Portal	
+P33981	class	0	Kinase	Chemical Probes Portal	
+P33981	subclass	0	Ser/Thr Kinase	Chemical Probes Portal	
+P34913	class	0	Other	Chemical Probes Portal	
+P34913	subclass	0	Epoxide Hydrolase 2	Chemical Probes Portal	
+P34969	class	0	GPCR	Chemical Probes Portal	
+P34969	subclass	0	Serotonin receptor	Chemical Probes Portal	
+P35408	class	0	GPCR	Chemical Probes Portal	
+P35408	subclass	0	Prostaglandin receptor	Chemical Probes Portal	
+P35462	class	0	GPCR	Chemical Probes Portal	
+P35462	subclass	0	Dopamine receptor	Chemical Probes Portal	
+P35557	class	0	Kinase	Chemical Probes Portal	
+P35557	subclass	0	Hexokinase	Chemical Probes Portal	
+P35590	class	0	Kinase	Chemical Probes Portal	
+P35590	subclass	0	TK	Chemical Probes Portal	
+P35916	class	0	Kinase	Chemical Probes Portal	
+P35916	subclass	0	Tyrosine kinase	Chemical Probes Portal	
+P35968	class	0	Kinase	Chemical Probes Portal	
+P35968	subclass	0	TK	Chemical Probes Portal	
+P35968	subclass	1	Tyrosine kinase	Chemical Probes Portal	
+P36507	class	0	Kinase	Chemical Probes Portal	
+P36507	subclass	0	STE	Chemical Probes Portal	
+P36544	class	0	Ion Channel	Chemical Probes Portal	
+P36544	subclass	0	Cys-Loop Receptor	Chemical Probes Portal	
+P36639	class	0	Epigenetic	Chemical Probes Portal	
+P36639	subclass	0	Nudix Hydrolase	Chemical Probes Portal	
+P36888	class	0	Kinase	Chemical Probes Portal	
+P36888	subclass	0	TK	Chemical Probes Portal	
+P36896	class	0	Kinase	Chemical Probes Portal	
+P36896	subclass	0	TKL	Chemical Probes Portal	
+P36897	class	0	Protein kinase	Chemical Probes Portal	
+P36897	class	1	Kinase	Chemical Probes Portal	
+P36897	subclass	0	TKL	Chemical Probes Portal	
+P36969	class	0	Lipid metabolism	Chemical Probes Portal	
+P36969	class	1	Enzyme	Chemical Probes Portal	
+P36969	subclass	0	Glutathione Peroxidase	Chemical Probes Portal	
+P37023	class	0	Kinase	Chemical Probes Portal	
+P37023	subclass	0	TKL	Chemical Probes Portal	
+P37088	class	0	Ion Channel	Chemical Probes Portal	
+P37088	subclass	0	Sodium channel	Chemical Probes Portal	
+P37288	class	0	GPCR	Chemical Probes Portal	
+P37288	subclass	0	Vasorepressin receptor	Chemical Probes Portal	
+P37840	class	0	Synoclein family	Chemical Probes Portal	
+P39748	class	0	Enzyme	Chemical Probes Portal	
+P39748	subclass	0	Endonuclease	Chemical Probes Portal	
+P39900	class	0	Enzyme	Chemical Probes Portal	
+P39900	subclass	0	Metallopeptidase	Chemical Probes Portal	
+P40337	class	0	Other post-translational modification	Chemical Probes Portal	
+P40337	subclass	0	E3 ubiquitin ligase	Chemical Probes Portal	
+P40763	class	0	Transcription factor	Chemical Probes Portal	
+P40763	subclass	0	Signal transducer and transcription activator	Chemical Probes Portal	
+P41143	class	0	GPCR	Chemical Probes Portal	
+P41143	subclass	0	Opioid Receptor	Chemical Probes Portal	
+P41145	class	0	GPCR	Chemical Probes Portal	
+P41145	subclass	0	Opioid receptor	Chemical Probes Portal	
+P41145	subclass	1	Opioid receptors	Chemical Probes Portal	
+P41146	class	0	GPCR	Chemical Probes Portal	
+P41146	subclass	0	Opioid receptor	Chemical Probes Portal	
+P41182	class	0	Transcription factor	Chemical Probes Portal	
+P41182	class	1	Transcriptional Factor	Chemical Probes Portal	
+P41182	subclass	0	Transcriptional Repressor	Chemical Probes Portal	
+P41586	class	0	GPCR	Chemical Probes Portal	
+P41586	subclass	0	PAC receptor	Chemical Probes Portal	
+P41594	class	0	GPCR	Chemical Probes Portal	
+P41594	subclass	0	Metabatropic Glutamate Receptor	Chemical Probes Portal	
+P41595	class	0	GPCR	Chemical Probes Portal	
+P42226	class	0	Transcription factor	Chemical Probes Portal	
+P42226	subclass	0	Signal transducer	Chemical Probes Portal	
+P42330	class	0	Enzyme	Chemical Probes Portal	
+P42330	subclass	0	Reductase	Chemical Probes Portal	
+P42330	subclass	1	Hydroxysteroid dehydrogenase	Chemical Probes Portal	
+P42336	class	0	Kinase	Chemical Probes Portal	
+P42336	class	1	Lipid kinase	Chemical Probes Portal	
+P42336	subclass	0	PI3/PI4	Chemical Probes Portal	
+P42336	subclass	1	Class I	Chemical Probes Portal	
+P42336	subclass	2	PI3/PI4-kinase	Chemical Probes Portal	
+P42338	class	0	Kinase	Chemical Probes Portal	
+P42338	class	1	Lipid kinase	Chemical Probes Portal	
+P42338	subclass	0	PI3/PI4	Chemical Probes Portal	
+P42338	subclass	1	PI3/PI4-kinase	Chemical Probes Portal	
+P42345	class	0	Kinase	Chemical Probes Portal	
+P42345	class	1	Protein kinase	Chemical Probes Portal	
+P42345	subclass	0	PI3/PI4	Chemical Probes Portal	
+P42345	subclass	1	Atypical	Chemical Probes Portal	
+P42568	class	0	Epigenetic	Chemical Probes Portal	
+P42568	subclass	0	YEATS	Chemical Probes Portal	
+P43003	class	0	Transporter	Chemical Probes Portal	
+P43003	subclass	0	Solute carrier	Chemical Probes Portal	
+P43004	class	0	Other	Chemical Probes Portal	
+P43004	subclass	0	SLC Family	Chemical Probes Portal	
+P43088	class	0	GPCR	Chemical Probes Portal	
+P43088	subclass	0	Prostaglandin F Receptor	Chemical Probes Portal	
+P43116	class	0	GPCR	Chemical Probes Portal	
+P43116	subclass	0	Prostaglandin E Receptor 2	Chemical Probes Portal	
+P43119	class	0	GPCR	Chemical Probes Portal	
+P43119	subclass	0	Prostacyclin receptor	Chemical Probes Portal	
+P43235	class	0	Protein metabolism	Chemical Probes Portal	
+P43235	subclass	0	Protease	Chemical Probes Portal	
+P43354	class	0	NHR	Chemical Probes Portal	
+P43405	class	0	Protein kinase	Chemical Probes Portal	
+P43405	class	1	Kinase	Chemical Probes Portal	
+P43405	subclass	0	TK	Chemical Probes Portal	
+P43490	class	0	Enzyme	Chemical Probes Portal	
+P43490	class	1	Epigenetic	Chemical Probes Portal	
+P43490	subclass	0	Nicotinamide phosphoribosyltransferase	Chemical Probes Portal	
+P43490	subclass	1	Phosphoribosyltransferase	Chemical Probes Portal	
+P45452	class	0	Protein metabolism	Chemical Probes Portal	
+P45452	class	1	Enzyme	Chemical Probes Portal	
+P45452	subclass	0	Metallopeptidase	Chemical Probes Portal	
+P45452	subclass	1	Peptidase	Chemical Probes Portal	
+P45983	class	0	Kinase	Chemical Probes Portal	
+P45983	subclass	0	CMGC	Chemical Probes Portal	
+P45984	class	0	Kinase	Chemical Probes Portal	
+P45984	subclass	0	CMGC	Chemical Probes Portal	
+P45985	class	0	Kinase	Chemical Probes Portal	
+P45985	subclass	0	STE	Chemical Probes Portal	
+P46092	class	0	GPCR	Chemical Probes Portal	
+P46092	subclass	0	Chemokine receptor	Chemical Probes Portal	
+P46663	class	0	GPCR	Chemical Probes Portal	
+P46663	subclass	0	BK-1	Chemical Probes Portal	
+P48039	class	0	GPCR	Chemical Probes Portal	
+P48039	subclass	0	Melatonin Receptor	Chemical Probes Portal	
+P48426	class	0	Kinase	Chemical Probes Portal	
+P48426	subclass	0	PIP family	Chemical Probes Portal	
+P48426	subclass	1	Lipid Kinase	Chemical Probes Portal	
+P48443	class	0	NHR	Chemical Probes Portal	
+P48443	subclass	0	Retinoic acid receptor	Chemical Probes Portal	
+P48730	class	0	Kinase	Chemical Probes Portal	
+P48730	subclass	0	CK1	Chemical Probes Portal	
+P48735	class	0	Enzyme	Chemical Probes Portal	
+P48735	subclass	0	Dehydrogenase	Chemical Probes Portal	
+P48736	class	0	Kinase	Chemical Probes Portal	
+P48736	subclass	0	PI3/PI4	Chemical Probes Portal	
+P48736	subclass	1	PI3/PI4-kinase	Chemical Probes Portal	
+P48764	class	0	Transporter	Chemical Probes Portal	
+P49137	class	0	Kinase	Chemical Probes Portal	
+P49137	subclass	0	CAMK	Chemical Probes Portal	
+P49146	class	0	GPCR	Chemical Probes Portal	
+P49146	subclass	0	Neuropeptide Y receptor Y2	Chemical Probes Portal	
+P49146	subclass	1	Neuropeptide Y receptor	Chemical Probes Portal	
+P49286	class	0	GPCR	Chemical Probes Portal	
+P49286	subclass	0	Melatonin Receptor	Chemical Probes Portal	
+P49327	class	0	Lipid metabolism	Chemical Probes Portal	
+P49327	class	1	Enzyme	Chemical Probes Portal	
+P49327	subclass	0	Synthase	Chemical Probes Portal	
+P49336	class	0	Kinase	Chemical Probes Portal	
+P49336	subclass	0	CMGC	Chemical Probes Portal	
+P49356	class	0	Other post-translational modification	Chemical Probes Portal	
+P49356	subclass	0	Transferase	Chemical Probes Portal	
+P49674	class	0	Kinase	Chemical Probes Portal	
+P49674	class	1	Protein kinase	Chemical Probes Portal	
+P49674	subclass	0	CK1	Chemical Probes Portal	
+P49759	class	0	Kinase	Chemical Probes Portal	
+P49759	subclass	0	CMGC	Chemical Probes Portal	
+P49760	class	0	Kinase	Chemical Probes Portal	
+P49760	subclass	0	CMGC	Chemical Probes Portal	
+P49761	class	0	Kinase	Chemical Probes Portal	
+P49761	subclass	0	CMGC	Chemical Probes Portal	
+P49768	class	0	Enzyme	Chemical Probes Portal	
+P49768	subclass	0	Gamma-Secretase Complex	Chemical Probes Portal	
+P49768	subclass	1	Gamma-Secretase complex	Chemical Probes Portal	
+P49768	subclass	2	Aspartyl protease	Chemical Probes Portal	
+P49770	class	0	Guanine nucleotide-exchange factor	Chemical Probes Portal	
+P49840	class	0	Kinase	Chemical Probes Portal	
+P49840	subclass	0	CMGC	Chemical Probes Portal	
+P49841	class	0	Kinase	Chemical Probes Portal	
+P49841	subclass	0	CMGC	Chemical Probes Portal	
+P50053	class	0	Kinase	Chemical Probes Portal	
+P50053	subclass	0	Carbohydrate kinase	Chemical Probes Portal	
+P50053	subclass	1	Sugar Kinase	Chemical Probes Portal	
+P50579	class	0	Enzyme	Chemical Probes Portal	
+P50579	subclass	0	Methionine Aminopeptidase	Chemical Probes Portal	
+P50613	class	0	Kinase	Chemical Probes Portal	
+P50613	subclass	0	CMGC	Chemical Probes Portal	
+P50750	class	0	Kinase	Chemical Probes Portal	
+P50750	subclass	0	CMGC	Chemical Probes Portal	
+P51168	class	0	Ion Channel	Chemical Probes Portal	
+P51168	subclass	0	Sodium Channel	Chemical Probes Portal	
+P51170	class	0	Ion Channel	Chemical Probes Portal	
+P51170	subclass	0	Sodium channel	Chemical Probes Portal	
+P51449	class	0	Transcription factor	Chemical Probes Portal	
+P51449	class	1	NHR	Chemical Probes Portal	
+P51449	subclass	0	NR1 nuclear hormone receptors	Chemical Probes Portal	
+P51449	subclass	1	Orphan Receptor	Chemical Probes Portal	
+P51531	class	0	Epigenetic	Chemical Probes Portal	
+P51531	subclass	0	Bromodomain	Chemical Probes Portal	
+P51532	class	0	Epigenetic	Chemical Probes Portal	
+P51532	subclass	0	Bromodomain	Chemical Probes Portal	
+P51617	class	0	Kinase	Chemical Probes Portal	
+P51617	subclass	0	TKL	Chemical Probes Portal	
+P51681	class	0	GPCR	Chemical Probes Portal	
+P51681	subclass	0	Chemokine receptor	Chemical Probes Portal	
+P51692	class	0	Transcription factor	Chemical Probes Portal	
+P51692	subclass	0	Signal transducer and transcription activator	Chemical Probes Portal	
+P51787	class	0	Ion Channel	Chemical Probes Portal	
+P51787	subclass	0	Potassium Channel	Chemical Probes Portal	
+P51788	class	0	Ion Channel	Chemical Probes Portal	
+P51788	subclass	0	Chloride channel	Chemical Probes Portal	
+P51812	class	0	Protein kinase	Chemical Probes Portal	
+P51812	class	1	Kinase	Chemical Probes Portal	
+P51812	subclass	0	AGC	Chemical Probes Portal	
+P51813	class	0	Protein kinase	Chemical Probes Portal	
+P51813	subclass	0	TK	Chemical Probes Portal	
+P51955	class	0	Protein kinase	Chemical Probes Portal	
+P51955	subclass	0	Ser/Thr Protein Kinase	Chemical Probes Portal	
+P52333	class	0	Kinase	Chemical Probes Portal	
+P52333	subclass	0	TK	Chemical Probes Portal	
+P52333	subclass	1	Tyrosine kinase	Chemical Probes Portal	
+P52732	class	0	Motor protein	Chemical Probes Portal	
+P52732	subclass	0	Kinesin family	Chemical Probes Portal	
+P53350	class	0	Kinase	Chemical Probes Portal	
+P53350	subclass	0	Other	Chemical Probes Portal	
+P53667	class	0	Kinase	Chemical Probes Portal	
+P53667	subclass	0	TKL	Chemical Probes Portal	
+P53671	class	0	Kinase	Chemical Probes Portal	
+P53671	subclass	0	TKL	Chemical Probes Portal	
+P53779	class	0	Kinase	Chemical Probes Portal	
+P53779	subclass	0	CMGC	Chemical Probes Portal	
+P53985	class	0	Transporter	Chemical Probes Portal	
+P53985	class	1	Solute carrier	Chemical Probes Portal	
+P53985	subclass	0	Solute carrier	Chemical Probes Portal	
+P53985	subclass	1	Monocarboxylate porter	Chemical Probes Portal	
+P54687	class	0	Enzyme	Chemical Probes Portal	
+P54687	subclass	0	Amino acid transaminase	Chemical Probes Portal	
+P54750	class	0	Enzyme	Chemical Probes Portal	
+P54750	subclass	0	Phosphodiesterase	Chemical Probes Portal	
+P55055	class	0	NHR	Chemical Probes Portal	
+P55055	subclass	0	NR1 Subfamily	Chemical Probes Portal	
+P55072	class	0	ATPase	Chemical Probes Portal	
+P55072	class	1	Enzyme	Chemical Probes Portal	
+P55072	subclass	0	AAA+	Chemical Probes Portal	
+P55072	subclass	1	ATPase	Chemical Probes Portal	
+P55201	class	0	Epigenetic	Chemical Probes Portal	
+P55201	subclass	0	Bromodomain	Chemical Probes Portal	
+P56373	class	0	GPCR	Chemical Probes Portal	
+P56373	subclass	0	Purinoceptor	Chemical Probes Portal	
+P56817	class	0	Enzyme	Chemical Probes Portal	
+P56817	subclass	0	Protease	Chemical Probes Portal	
+P56817	subclass	1	Peptidase	Chemical Probes Portal	
+P57059	class	0	Kinase	Chemical Probes Portal	
+P57059	subclass	0	CAMK	Chemical Probes Portal	
+P57789	class	0	Ion Channel	Chemical Probes Portal	
+P57789	subclass	0	Potassium channel	Chemical Probes Portal	
+P57789	subclass	1	Potassium Channel	Chemical Probes Portal	
+P58397	class	0	Enzyme	Chemical Probes Portal	
+P58397	subclass	0	Disintegrin	Chemical Probes Portal	
+P61619	class	0	Integral membrane protein	Chemical Probes Portal	
+P61619	subclass	0	General secrectory pathway	Chemical Probes Portal	
+P61964	class	0	Structural protein	Chemical Probes Portal	
+P61964	class	1	WD repeat	Chemical Probes Portal	
+P61964	class	2	WD40 Repeat	Chemical Probes Portal	
+P61964	subclass	0	WD40-repeat proteins	Chemical Probes Portal	
+P61964	subclass	1	WD40 repeat	Chemical Probes Portal	
+P62942	class	0	Other	Chemical Probes Portal	
+P62942	subclass	0	Immunophilin Protein Family	Chemical Probes Portal	
+P63267	class	0	Structural protein	Chemical Probes Portal	
+P63267	subclass	0	Cytoskeleton	Chemical Probes Portal	
+P68400	class	0	Kinase	Chemical Probes Portal	
+P68400	subclass	0	Ser/Thr kinase	Chemical Probes Portal	
+P68400	subclass	1	CMGC	Chemical Probes Portal	
+P78356	class	0	Kinase	Chemical Probes Portal	
+P78356	subclass	0	Lipid Kinase	Chemical Probes Portal	
+P78362	class	0	Kinase	Chemical Probes Portal	
+P78362	subclass	0	CMGC	Chemical Probes Portal	
+P78527	class	0	Kinase	Chemical Probes Portal	
+P78527	subclass	0	PI3/PI4	Chemical Probes Portal	
+P80192	class	0	Kinase	Chemical Probes Portal	
+P80192	subclass	0	TKL	Chemical Probes Portal	
+Q00534	class	0	Kinase	Chemical Probes Portal	
+Q00534	subclass	0	CMGC	Chemical Probes Portal	
+Q00535	class	0	Kinase	Chemical Probes Portal	
+Q00535	subclass	0	CMGC	Chemical Probes Portal	
+Q00536	class	0	Kinase	Chemical Probes Portal	
+Q00536	subclass	0	CMGC	Chemical Probes Portal	
+Q00537	class	0	Kinase	Chemical Probes Portal	
+Q00537	subclass	0	CMGC	Chemical Probes Portal	
+Q00987	class	0	Other post-translational modification	Chemical Probes Portal	
+Q00987	class	1	Enzyme	Chemical Probes Portal	
+Q00987	class	2	Post translational modifications	Chemical Probes Portal	
+Q00987	subclass	0	E3 ubiquitin ligase	Chemical Probes Portal	
+Q00987	subclass	1	Ubiquitin Ligase	Chemical Probes Portal	
+Q00987	subclass	2	Ligase	Chemical Probes Portal	
+Q01064	class	0	Enzyme	Chemical Probes Portal	
+Q01064	subclass	0	Phosphodiesterase	Chemical Probes Portal	
+Q01718	class	0	GPCR	Chemical Probes Portal	
+Q01718	subclass	0	Adrenocorticotropic hormone receptor	Chemical Probes Portal	
+Q02127	class	0	Enzyme	Chemical Probes Portal	
+Q02127	subclass	0	Class 2 Dihydroorotate dehydrogenase	Chemical Probes Portal	
+Q02750	class	0	Kinase	Chemical Probes Portal	
+Q02750	subclass	0	STE	Chemical Probes Portal	
+Q02763	class	0	Protein kinase	Chemical Probes Portal	
+Q02763	class	1	Kinase	Chemical Probes Portal	
+Q02763	subclass	0	TK	Chemical Probes Portal	
+Q02779	class	0	Kinase	Chemical Probes Portal	
+Q02779	subclass	0	TKL	Chemical Probes Portal	
+Q03111	class	0	Epigenetic	Chemical Probes Portal	
+Q03111	subclass	0	YEATS	Chemical Probes Portal	
+Q03164	class	0	Epigenetic	Chemical Probes Portal	
+Q03164	subclass	0	Protein methyltransferase	Chemical Probes Portal	
+Q03181	class	0	Nuclear Hormone Receptor	Chemical Probes Portal	
+Q03181	subclass	0	Nuclear Receptor 1C2	Chemical Probes Portal	
+Q04771	class	0	Kinase	Chemical Probes Portal	
+Q04771	subclass	0	TKL	Chemical Probes Portal	
+Q04912	class	0	Kinase	Chemical Probes Portal	
+Q04912	subclass	0	TK	Chemical Probes Portal	
+Q05397	class	0	Kinase	Chemical Probes Portal	
+Q05397	subclass	0	TK	Chemical Probes Portal	
+Q05397	subclass	1	Tyr kinase	Chemical Probes Portal	
+Q05469	class	0	Enzyme	Chemical Probes Portal	
+Q05469	subclass	0	Lipase	Chemical Probes Portal	
+Q06124	class	0	Enzyme	Chemical Probes Portal	
+Q06124	subclass	0	Protein-tyrosine phosphatase	Chemical Probes Portal	
+Q06187	class	0	Kinase	Chemical Probes Portal	
+Q06187	class	1	Protein kinase	Chemical Probes Portal	
+Q06187	subclass	0	TK	Chemical Probes Portal	
+Q06187	subclass	1	Tyrosin Kinase	Chemical Probes Portal	
+Q06187	subclass	2	Tyr kinase	Chemical Probes Portal	
+Q06495	class	0	Transporter	Chemical Probes Portal	
+Q06495	subclass	0	SLC Family	Chemical Probes Portal	
+Q07002	class	0	Kinase	Chemical Probes Portal	
+Q07002	subclass	0	CMGC	Chemical Probes Portal	
+Q07343	class	0	Nucleic acid metabolism	Chemical Probes Portal	
+Q07343	subclass	0	Phosphodiesterase	Chemical Probes Portal	
+Q07817	class	0	Other	Chemical Probes Portal	
+Q07817	subclass	0	Apoptosis Regulator	Chemical Probes Portal	
+Q07817	subclass	1	Apoptosis regulator	Chemical Probes Portal	
+Q07820	class	0	Other	Chemical Probes Portal	
+Q07820	subclass	0	BCL2 family	Chemical Probes Portal	
+Q07869	class	0	Nuclear Hormone Receptor	Chemical Probes Portal	
+Q07869	subclass	0	Nuclear receptor 1C1	Chemical Probes Portal	
+Q07889	class	0	Enzyme	Chemical Probes Portal	
+Q07889	subclass	0	Nucleotide exchange factor	Chemical Probes Portal	
+Q07889	subclass	1	Nucleotide	Chemical Probes Portal	
+Q07912	class	0	Protein kinase	Chemical Probes Portal	
+Q07912	subclass	0	TK	Chemical Probes Portal	
+Q08211	class	0	Enzyme	Chemical Probes Portal	
+Q08211	subclass	0	Helicase	Chemical Probes Portal	
+Q08345	class	0	Kinase	Chemical Probes Portal	
+Q08345	class	1	Protein kinase	Chemical Probes Portal	
+Q08345	subclass	0	TK	Chemical Probes Portal	
+Q08345	subclass	1	Tyrosine kinase	Chemical Probes Portal	
+Q08345	subclass	2	CMGC	Chemical Probes Portal	
+Q08881	class	0	Kinase	Chemical Probes Portal	
+Q08881	subclass	0	TK	Chemical Probes Portal	
+Q08881	subclass	1	Tyr kinase	Chemical Probes Portal	
+Q09428	class	0	Ion Channel	Chemical Probes Portal	
+Q09428	subclass	0	Potassium channel	Chemical Probes Portal	
+Q09472	class	0	Epigenetic	Chemical Probes Portal	
+Q09472	subclass	0	Bromodomain	Chemical Probes Portal	
+Q09472	subclass	1	Histone acetyl transferase	Chemical Probes Portal	
+Q10469	class	0	Other post-translational modification	Chemical Probes Portal	
+Q10469	subclass	0	N-acetylglucosaminyltransferase	Chemical Probes Portal	
+Q12830	class	0	Epigenetic	Chemical Probes Portal	
+Q12830	subclass	0	Bromodomain	Chemical Probes Portal	
+Q12852	class	0	Protein kinase	Chemical Probes Portal	
+Q12852	class	1	Kinase	Chemical Probes Portal	
+Q12852	subclass	0	STE	Chemical Probes Portal	
+Q12866	class	0	Kinase	Chemical Probes Portal	
+Q12866	subclass	0	Tyrosine kinase	Chemical Probes Portal	
+Q12866	subclass	1	TK	Chemical Probes Portal	
+Q12879	class	0	Ion Channel	Chemical Probes Portal	
+Q12879	subclass	0	Glutamate receptor	Chemical Probes Portal	
+Q12879	subclass	1	glutamate-gated ion channel	Chemical Probes Portal	
+Q13085	class	0	Enzyme	Chemical Probes Portal	
+Q13131	class	0	Kinase	Chemical Probes Portal	
+Q13131	subclass	0	CAMK	Chemical Probes Portal	
+Q13133	class	0	NHR	Chemical Probes Portal	
+Q13133	subclass	0	NR1 Subfamily	Chemical Probes Portal	
+Q13153	class	0	Protein kinase	Chemical Probes Portal	
+Q13153	class	1	Kinase	Chemical Probes Portal	
+Q13153	subclass	0	STE	Chemical Probes Portal	
+Q13163	class	0	Protein kinase	Chemical Probes Portal	
+Q13163	subclass	0	STE	Chemical Probes Portal	
+Q13164	class	0	Kinase	Chemical Probes Portal	
+Q13164	class	1	Protein kinase	Chemical Probes Portal	
+Q13164	subclass	0	CMGC	Chemical Probes Portal	
+Q13177	class	0	Protein kinase	Chemical Probes Portal	
+Q13177	subclass	0	STE	Chemical Probes Portal	
+Q13191	class	0	Enzyme	Chemical Probes Portal	
+Q13191	subclass	0	Ubiquitin Ligase	Chemical Probes Portal	
+Q13315	class	0	Protein kinase	Chemical Probes Portal	
+Q13315	class	1	Kinase	Chemical Probes Portal	
+Q13315	subclass	0	Atypical	Chemical Probes Portal	
+Q13315	subclass	1	PI3/PI4	Chemical Probes Portal	
+Q13393	class	0	Enzyme	Chemical Probes Portal	
+Q13393	subclass	0	Phospholipase	Chemical Probes Portal	
+Q13422	class	0	Transcription factor	Chemical Probes Portal	
+Q13422	subclass	0	Zinc finger	Chemical Probes Portal	
+Q13451	class	0	Enzyme	Chemical Probes Portal	
+Q13451	subclass	0	Prolyl isomerase	Chemical Probes Portal	
+Q13464	class	0	Kinase	Chemical Probes Portal	
+Q13464	subclass	0	AGC	Chemical Probes Portal	
+Q13526	class	0	Enzyme	Chemical Probes Portal	
+Q13526	subclass	0	Isomerase	Chemical Probes Portal	
+Q13535	class	0	Kinase	Chemical Probes Portal	
+Q13535	class	1	Protein kinase	Chemical Probes Portal	
+Q13535	subclass	0	PI3/PI4	Chemical Probes Portal	
+Q13535	subclass	1	Atypical	Chemical Probes Portal	
+Q13546	class	0	Kinase	Chemical Probes Portal	
+Q13546	subclass	0	TKL	Chemical Probes Portal	
+Q13547	class	0	Epigenetic	Chemical Probes Portal	
+Q13547	subclass	0	HDAC	Chemical Probes Portal	
+Q13574	class	0	Kinase	Chemical Probes Portal	
+Q13574	subclass	0	Lipid kinase	Chemical Probes Portal	
+Q13627	class	0	Kinase	Chemical Probes Portal	
+Q13627	subclass	0	CMGC	Chemical Probes Portal	
+Q13822	class	0	Other	Chemical Probes Portal	
+Q13822	class	1	Enzyme	Chemical Probes Portal	
+Q13822	subclass	0	Phosphodiesterase	Chemical Probes Portal	
+Q13822	subclass	1	pyrophosphatase/phosphodiesterase	Chemical Probes Portal	
+Q13822	subclass	2	nucleotide pyrophosphatase/phosphodiesterase; lysophospholipase	Chemical Probes Portal	
+Q13822	subclass	3	Autotaxin	Chemical Probes Portal	
+Q13873	class	0	Kinase	Chemical Probes Portal	
+Q13873	subclass	0	TKL	Chemical Probes Portal	
+Q13882	class	0	Kinase	Chemical Probes Portal	
+Q13882	subclass	0	Tyr Kinase	Chemical Probes Portal	
+Q14004	class	0	Kinase	Chemical Probes Portal	
+Q14004	subclass	0	CMGC	Chemical Probes Portal	
+Q14123	class	0	Enzyme	Chemical Probes Portal	
+Q14123	subclass	0	Phosphodiesterase	Chemical Probes Portal	
+Q14145	class	0	Other post-translational modification	Chemical Probes Portal	
+Q14145	subclass	0	KEAP1 family	Chemical Probes Portal	
+Q14145	subclass	1	Protein ubiquitination	Chemical Probes Portal	
+Q14164	class	0	Kinase	Chemical Probes Portal	
+Q14164	subclass	0	Ser/Thr Protein Kinase	Chemical Probes Portal	
+Q14191	class	0	Enzyme	Chemical Probes Portal	
+Q14191	subclass	0	Helicase	Chemical Probes Portal	
+Q14289	class	0	Kinase	Chemical Probes Portal	
+Q14289	subclass	0	TK	Chemical Probes Portal	
+Q14432	class	0	Enzyme	Chemical Probes Portal	
+Q14432	subclass	0	Phosphodiesterase	Chemical Probes Portal	
+Q14654	class	0	Ion Channel	Chemical Probes Portal	
+Q14654	subclass	0	Potassium channel	Chemical Probes Portal	
+Q14680	class	0	Kinase	Chemical Probes Portal	
+Q14680	subclass	0	CAMK	Chemical Probes Portal	
+Q14833	class	0	GPCR	Chemical Probes Portal	
+Q14833	subclass	0	Glutamate receptor	Chemical Probes Portal	
+Q15022	class	0	Epigenetic	Chemical Probes Portal	
+Q15047	class	0	Enzyme	Chemical Probes Portal	
+Q15047	subclass	0	methyltransferase	Chemical Probes Portal	
+Q15047	subclass	1	Methyltransferase	Chemical Probes Portal	
+Q15059	class	0	Epigenetic	Chemical Probes Portal	
+Q15059	subclass	0	Bromodomain	Chemical Probes Portal	
+Q15131	class	0	Kinase	Chemical Probes Portal	
+Q15131	subclass	0	CMGC	Chemical Probes Portal	
+Q15233	class	0	DNA Binding	Chemical Probes Portal	
+Q15349	class	0	Kinase	Chemical Probes Portal	
+Q15349	subclass	0	AGC	Chemical Probes Portal	
+Q15391	class	0	GPCR	Chemical Probes Portal	
+Q15391	subclass	0	Purinergic Receptor	Chemical Probes Portal	
+Q15418	class	0	Kinase	Chemical Probes Portal	
+Q15418	subclass	0	AGC	Chemical Probes Portal	
+Q15418	subclass	1	CAMK	Chemical Probes Portal	
+Q15438	class	0	Cytohesin	Chemical Probes Portal	
+Q15561	class	0	Epigenetic	Chemical Probes Portal	
+Q15561	subclass	0	Transcription factor	Chemical Probes Portal	
+Q15561	subclass	1	Transcription Factor	Chemical Probes Portal	
+Q15562	class	0	Epigenetic	Chemical Probes Portal	
+Q15562	subclass	0	Transcription factor	Chemical Probes Portal	
+Q15562	subclass	1	Transcription Factor	Chemical Probes Portal	
+Q15717	class	0	Other	Chemical Probes Portal	
+Q15717	subclass	0	RNA Binding Protein	Chemical Probes Portal	
+Q15743	class	0	GPCR	Chemical Probes Portal	
+Q15743	subclass	0	Proton Sensing GPCR	Chemical Probes Portal	
+Q15759	class	0	Kinase	Chemical Probes Portal	
+Q15759	subclass	0	CMGC	Chemical Probes Portal	
+Q15825	class	0	Ion Channel	Chemical Probes Portal	
+Q15825	subclass	0	Nicotinic Acetylcholine Receptor	Chemical Probes Portal	
+Q15858	class	0	Ion Channel	Chemical Probes Portal	
+Q15858	subclass	0	Sodium Voltage-Gated Channel	Chemical Probes Portal	
+Q15910	class	0	Epigenetic	Chemical Probes Portal	
+Q15910	subclass	0	Protein methyltransferase	Chemical Probes Portal	
+Q15910	subclass	1	Methyltransferase	Chemical Probes Portal	
+Q16288	class	0	Kinase	Chemical Probes Portal	
+Q16288	subclass	0	TK	Chemical Probes Portal	
+Q16288	subclass	1	Tyrosine kinase	Chemical Probes Portal	
+Q16288	subclass	2	Tyr kinase	Chemical Probes Portal	
+Q16539	class	0	Kinase	Chemical Probes Portal	
+Q16539	class	1	Protein kinase	Chemical Probes Portal	
+Q16539	subclass	0	CMGC	Chemical Probes Portal	
+Q16584	class	0	Kinase	Chemical Probes Portal	
+Q16584	subclass	0	TKL	Chemical Probes Portal	
+Q16620	class	0	Kinase	Chemical Probes Portal	
+Q16620	subclass	0	TK	Chemical Probes Portal	
+Q16620	subclass	1	Tyrosine kinase	Chemical Probes Portal	
+Q16620	subclass	2	Tyr kinase	Chemical Probes Portal	
+Q16739	class	0	Enzyme	Chemical Probes Portal	
+Q16739	subclass	0	Glycosyltransferase	Chemical Probes Portal	
+Q16832	class	0	Kinase	Chemical Probes Portal	
+Q16832	subclass	0	TK	Chemical Probes Portal	
+Q16832	subclass	1	Tyrosine kinase	Chemical Probes Portal	
+Q16832	subclass	2	CMGC	Chemical Probes Portal	
+Q2M2I8	class	0	Kinase	Chemical Probes Portal	
+Q2M2I8	subclass	0	Ser/Thr kinase	Chemical Probes Portal	
+Q2NL67	class	0	Other post-translational modification	Chemical Probes Portal	
+Q2NL67	subclass	0	PARP	Chemical Probes Portal	
+Q4FZB7	class	0	Epigenetic	Chemical Probes Portal	
+Q4FZB7	subclass	0	Protein methyltransferase	Chemical Probes Portal	
+Q56A73	class	0	Epigenetic	Chemical Probes Portal	
+Q56A73	subclass	0	Chromatin Regulator	Chemical Probes Portal	
+Q58F21	class	0	Epigenetic	Chemical Probes Portal	
+Q58F21	subclass	0	Bromodomain	Chemical Probes Portal	
+Q5BJF2	class	0	Orphan receptor	Chemical Probes Portal	
+Q5BJF2	subclass	0	Sigma receptor	Chemical Probes Portal	
+Q5JUX0	class	0	Epigenetic	Chemical Probes Portal	
+Q5JUX0	subclass	0	Chromatin Regulator	Chemical Probes Portal	
+Q5NUL3	class	0	GPCR	Chemical Probes Portal	
+Q5NUL3	subclass	0	Free fatty acid receptor	Chemical Probes Portal	
+Q5S007	class	0	Protein kinase	Chemical Probes Portal	
+Q5S007	class	1	Kinase	Chemical Probes Portal	
+Q5S007	subclass	0	TKL	Chemical Probes Portal	
+Q5TCY1	class	0	Kinase	Chemical Probes Portal	
+Q5TCY1	subclass	0	CK1	Chemical Probes Portal	
+Q5VST6	class	0	Other post-translational modification	Chemical Probes Portal	
+Q5VST6	subclass	0	Depalmitoylase	Chemical Probes Portal	
+Q5VTY9	class	0	Other post-translational modification	Chemical Probes Portal	
+Q5VTY9	subclass	0	O-acyltransferase	Chemical Probes Portal	
+Q6B0I6	class	0	Epigenetic	Chemical Probes Portal	
+Q6B0I6	subclass	0	Histone demethylase	Chemical Probes Portal	
+Q6GMR7	class	0	Enzyme	Chemical Probes Portal	
+Q6GMR7	subclass	0	Amidase	Chemical Probes Portal	
+Q6IQ55	class	0	Kinase	Chemical Probes Portal	
+Q6IQ55	subclass	0	CK1	Chemical Probes Portal	
+Q6P2P2	class	0	Epigenetic	Chemical Probes Portal	
+Q6P2P2	subclass	0	Methyltransferase	Chemical Probes Portal	
+Q6P5Z2	class	0	Kinase	Chemical Probes Portal	
+Q6P5Z2	subclass	0	AGC	Chemical Probes Portal	
+Q6P6C2	class	0	Enzyme	Chemical Probes Portal	
+Q6P6C2	subclass	0	Dioxygenase	Chemical Probes Portal	
+Q6PL18	class	0	Epigenetic	Chemical Probes Portal	
+Q6PL18	subclass	0	ATPase	Chemical Probes Portal	
+Q6PL18	subclass	1	Bromodomain	Chemical Probes Portal	
+Q6V1X1	class	0	Enzyme	Chemical Probes Portal	
+Q6V1X1	subclass	0	Peptidase	Chemical Probes Portal	
+Q6W5P4	class	0	GPCR	Chemical Probes Portal	
+Q6W5P4	subclass	0	Neuropeptide S Receptor	Chemical Probes Portal	
+Q70CQ3	class	0	Enzyme	Chemical Probes Portal	
+Q70CQ3	subclass	0	Peptidase	Chemical Probes Portal	
+Q7L0J3	class	0	Transporter	Chemical Probes Portal	
+Q7L0J3	subclass	0	Glycoprotein	Chemical Probes Portal	
+Q7L7X3	class	0	Kinase	Chemical Probes Portal	
+Q7L7X3	subclass	0	STE	Chemical Probes Portal	
+Q7LBE3	class	0	Ion Channel	Chemical Probes Portal	
+Q7LBE3	subclass	0	Solute carrier	Chemical Probes Portal	
+Q7Z2W7	class	0	Ion Channel	Chemical Probes Portal	
+Q7Z2W7	subclass	0	Cation Channel	Chemical Probes Portal	
+Q7Z3E1	class	0	Other post-translational modification	Chemical Probes Portal	
+Q7Z3E1	subclass	0	PARP	Chemical Probes Portal	
+Q7Z5P4	class	0	Enzyme	Chemical Probes Portal	
+Q7Z5P4	subclass	0	SDR	Chemical Probes Portal	
+Q86TI2	class	0	Enzyme	Chemical Probes Portal	
+Q86TI2	subclass	0	Peptidase	Chemical Probes Portal	
+Q86U44	class	0	Epigenetic	Chemical Probes Portal	
+Q86U44	subclass	0	Methyltransferase	Chemical Probes Portal	
+Q86U86	class	0	Epigenetic	Chemical Probes Portal	
+Q86U86	subclass	0	Bromodomain	Chemical Probes Portal	
+Q86V86	class	0	Kinase	Chemical Probes Portal	
+Q86V86	subclass	0	CAMK	Chemical Probes Portal	
+Q86VF5	class	0	Enzyme	Chemical Probes Portal	
+Q86VF5	subclass	0	Acyltransferase	Chemical Probes Portal	
+Q86W56	class	0	DNA replication & repair enzyme	Chemical Probes Portal	
+Q86W56	subclass	0	Glycohydrolase	Chemical Probes Portal	
+Q86WV6	class	0	Transmembrane protein	Chemical Probes Portal	
+Q86WV6	subclass	0	STING family	Chemical Probes Portal	
+Q86X55	class	0	Epigenetic	Chemical Probes Portal	
+Q86X55	subclass	0	Methyltransferase	Chemical Probes Portal	
+Q86X55	subclass	1	Protein methyltransferase	Chemical Probes Portal	
+Q86Y97	class	0	Epigenetic	Chemical Probes Portal	
+Q86Y97	subclass	0	Protein methyltransferase	Chemical Probes Portal	
+Q86YT5	class	0	Transporter	Chemical Probes Portal	
+Q86YT5	subclass	0	Solute transporter	Chemical Probes Portal	
+Q86YV6	class	0	Kinase	Chemical Probes Portal	
+Q86YV6	subclass	0	CAMK	Chemical Probes Portal	
+Q8IU85	class	0	Kinase	Chemical Probes Portal	
+Q8IU85	subclass	0	CAMK	Chemical Probes Portal	
+Q8IVV7	class	0	E3 Ligase	Chemical Probes Portal	
+Q8IXJ6	class	0	Epigenetic	Chemical Probes Portal	
+Q8IXJ6	subclass	0	HDAC (Class III)	Chemical Probes Portal	
+Q8IYD1	class	0	Translation Termination Factor	Chemical Probes Portal	
+Q8IYT8	class	0	Kinase	Chemical Probes Portal	
+Q8IYT8	subclass	0	Autophagy Activating Kinases	Chemical Probes Portal	
+Q8IZX4	class	0	Epigenetic	Chemical Probes Portal	
+Q8IZX4	subclass	0	Bromodomain	Chemical Probes Portal	
+Q8N2K0	class	0	Lipid metabolism	Chemical Probes Portal	
+Q8N2K0	subclass	0	Serine Esterase	Chemical Probes Portal	
+Q8N568	class	0	Kinase	Chemical Probes Portal	
+Q8N568	subclass	0	CAMK	Chemical Probes Portal	
+Q8N5S9	class	0	Kinase	Chemical Probes Portal	
+Q8N5S9	subclass	0	Other STK	Chemical Probes Portal	
+Q8N5S9	subclass	1	Other	Chemical Probes Portal	
+Q8N884	class	0	Enzyme	Chemical Probes Portal	
+Q8N884	subclass	0	Synthase	Chemical Probes Portal	
+Q8NB16	class	0	Kinase	Chemical Probes Portal	
+Q8NB16	subclass	0	Other kinase	Chemical Probes Portal	
+Q8NCG7	class	0	Enzyme	Chemical Probes Portal	
+Q8NCG7	subclass	0	Lipase	Chemical Probes Portal	
+Q8NEB9	class	0	Kinase	Chemical Probes Portal	
+Q8NEB9	subclass	0	PI3/PI4 Kinase	Chemical Probes Portal	
+Q8NEB9	subclass	1	PI3/PI4-kinase family	Chemical Probes Portal	
+Q8NEB9	subclass	2	PI3/PI4	Chemical Probes Portal	
+Q8NER1	class	0	Ion Channel	Chemical Probes Portal	
+Q8TAF3	class	0	Other post-translational modification	Chemical Probes Portal	
+Q8TAF3	subclass	0	Deubiquitinase	Chemical Probes Portal	
+Q8TBC4	class	0	Enzyme	Chemical Probes Portal	
+Q8TBC4	class	1	Other post-translational modification	Chemical Probes Portal	
+Q8TBC4	subclass	0	Ubiquitin-conjugating enzyme	Chemical Probes Portal	
+Q8TBX8	class	0	Kinase	Chemical Probes Portal	
+Q8TBX8	subclass	0	Phosphatidylinositol Kinase	Chemical Probes Portal	
+Q8TBX8	subclass	1	Lipid kinase	Chemical Probes Portal	
+Q8TBX8	subclass	2	Lipid Kinase	Chemical Probes Portal	
+Q8TDX5	class	0	Enzyme	Chemical Probes Portal	
+Q8TDX5	subclass	0	Carboxylase	Chemical Probes Portal	
+Q8TDX7	class	0	Kinase	Chemical Probes Portal	
+Q8TDX7	subclass	0	Ser/Thr Kinase	Chemical Probes Portal	
+Q8TE04	class	0	Kinase	Chemical Probes Portal	
+Q8TE04	subclass	0	Pantothenate kinase	Chemical Probes Portal	
+Q8TEK3	class	0	Epigenetic	Chemical Probes Portal	
+Q8TEK3	subclass	0	Protein methyltransferase	Chemical Probes Portal	
+Q8WTS6	class	0	Epigenetic	Chemical Probes Portal	
+Q8WTS6	subclass	0	Protein methyltransferase	Chemical Probes Portal	
+Q8WYB5	class	0	Epigenetic	Chemical Probes Portal	
+Q8WYB5	subclass	0	MYST family	Chemical Probes Portal	
+Q92633	class	0	GPCR	Chemical Probes Portal	
+Q92769	class	0	Epigenetic	Chemical Probes Portal	
+Q92769	subclass	0	HDAC	Chemical Probes Portal	
+Q92793	class	0	Epigenetic	Chemical Probes Portal	
+Q92793	subclass	0	Bromodomain	Chemical Probes Portal	
+Q92793	subclass	1	Histone acetyltransferase	Chemical Probes Portal	
+Q92794	class	0	Epigenetic	Chemical Probes Portal	
+Q92794	class	1	Other	Chemical Probes Portal	
+Q92794	subclass	0	MYST family	Chemical Probes Portal	
+Q92794	subclass	1	Lysine Acetyltransferase	Chemical Probes Portal	
+Q92800	class	0	Epigenetic	Chemical Probes Portal	
+Q92800	subclass	0	Protein methyltransferase	Chemical Probes Portal	
+Q92830	class	0	Epigenetic	Chemical Probes Portal	
+Q92830	subclass	0	Bromodomain	Chemical Probes Portal	
+Q92831	class	0	Epigenetic	Chemical Probes Portal	
+Q92831	subclass	0	Bromodomain	Chemical Probes Portal	
+Q92918	class	0	Kinase	Chemical Probes Portal	
+Q92918	subclass	0	STE	Chemical Probes Portal	
+Q93009	class	0	Enzyme	Chemical Probes Portal	
+Q93009	subclass	0	Peptidase	Chemical Probes Portal	
+Q969F8	class	0	GPCR	Chemical Probes Portal	
+Q969F8	subclass	0	KISS 1 Receptor	Chemical Probes Portal	
+Q969S8	class	0	Enzyme	Chemical Probes Portal	
+Q969S8	class	1	Epigenetic	Chemical Probes Portal	
+Q969S8	subclass	0	Deacetylase	Chemical Probes Portal	
+Q969S8	subclass	1	Histone Deacetylase	Chemical Probes Portal	
+Q969S8	subclass	2	HDAC	Chemical Probes Portal	
+Q96BR1	class	0	Kinase	Chemical Probes Portal	
+Q96BR1	subclass	0	AGC	Chemical Probes Portal	
+Q96GD4	class	0	Kinase	Chemical Probes Portal	
+Q96GD4	subclass	0	cell cycle-regulated kinase	Chemical Probes Portal	
+Q96GD4	subclass	1	Ser/Thr kinase	Chemical Probes Portal	
+Q96GD4	subclass	2	Ser/Thr Kinase	Chemical Probes Portal	
+Q96GX5	class	0	Kinase	Chemical Probes Portal	
+Q96GX5	subclass	0	AGC	Chemical Probes Portal	
+Q96JM7	class	0	Epigenetic	Chemical Probes Portal	
+Q96JM7	subclass	0	Malignant brain tumor Reader	Chemical Probes Portal	
+Q96KQ7	class	0	Epigenetic	Chemical Probes Portal	
+Q96KQ7	subclass	0	Protein methyltransferase	Chemical Probes Portal	
+Q96KQ7	subclass	1	Methyltransferase	Chemical Probes Portal	
+Q96LA8	class	0	Epigenetic	Chemical Probes Portal	
+Q96LA8	subclass	0	Protein methyltransferase	Chemical Probes Portal	
+Q96LA8	subclass	1	Methyltransferase	Chemical Probes Portal	
+Q96LB1	class	0	GPCR	Chemical Probes Portal	
+Q96LB1	subclass	0	Mast cell-specific receptor	Chemical Probes Portal	
+Q96P20	class	0	Other	Chemical Probes Portal	
+Q96P20	class	1	Inflammasome	Chemical Probes Portal	
+Q96P20	class	2	NLRP family	Chemical Probes Portal	
+Q96P20	subclass	0	NACHT, LRR and PYD domains-containing Protein	Chemical Probes Portal	
+Q96PD7	class	0	Enzyme	Chemical Probes Portal	
+Q96PD7	subclass	0	Acyltransferase	Chemical Probes Portal	
+Q96PN6	class	0	Enzyme	Chemical Probes Portal	
+Q96PN6	subclass	0	Adenylyl Cyclase	Chemical Probes Portal	
+Q96PN6	subclass	1	Cyclase	Chemical Probes Portal	
+Q96Q15	class	0	Kinase	Chemical Probes Portal	
+Q96Q15	subclass	0	PI3/PI4	Chemical Probes Portal	
+Q96Q40	class	0	Kinase	Chemical Probes Portal	
+Q96Q40	subclass	0	CMGC	Chemical Probes Portal	
+Q96RI1	class	0	Transcription factor	Chemical Probes Portal	
+Q96RI1	subclass	0	Nuclear Receptor	Chemical Probes Portal	
+Q96RR4	class	0	Kinase	Chemical Probes Portal	
+Q96RR4	subclass	0	Other STK	Chemical Probes Portal	
+Q96RR4	subclass	1	Other	Chemical Probes Portal	
+Q96SB4	class	0	Kinase	Chemical Probes Portal	
+Q96SB4	subclass	0	CMGC	Chemical Probes Portal	
+Q96SW2	class	0	Other post-translational modification	Chemical Probes Portal	
+Q96SW2	class	1	post-translational modification	Chemical Probes Portal	
+Q96SW2	class	2	Post-translational	Chemical Probes Portal	
+Q96SW2	subclass	0	E3 Ligase	Chemical Probes Portal	
+Q99418	class	0	Cytohesin	Chemical Probes Portal	
+Q99527	class	0	GPCR	Chemical Probes Portal	
+Q99538	class	0	Enzyme	Chemical Probes Portal	
+Q99538	subclass	0	Endopeptidase	Chemical Probes Portal	
+Q99558	class	0	Kinase	Chemical Probes Portal	
+Q99558	subclass	0	STE	Chemical Probes Portal	
+Q99571	class	0	Ion Channel	Chemical Probes Portal	
+Q99571	subclass	0	ATP Receptor	Chemical Probes Portal	
+Q99572	class	0	Ion Channel	Chemical Probes Portal	
+Q99572	subclass	0	P2X Family	Chemical Probes Portal	
+Q99594	class	0	Epigenetic	Chemical Probes Portal	
+Q99594	subclass	0	Transcription factor	Chemical Probes Portal	
+Q99594	subclass	1	Transcription Factor	Chemical Probes Portal	
+Q99640	class	0	Kinase	Chemical Probes Portal	
+Q99640	subclass	0	Ser/Thr kinase	Chemical Probes Portal	
+Q99643	class	0	Other	Chemical Probes Portal	
+Q99643	subclass	0	TCA cycle	Chemical Probes Portal	
+Q99685	class	0	Enzyme	Chemical Probes Portal	
+Q99685	subclass	0	Lipase	Chemical Probes Portal	
+Q99814	class	0	Transcription factor	Chemical Probes Portal	
+Q99814	subclass	0	Hypoxia-Inducible Factor	Chemical Probes Portal	
+Q99865	class	0	Epigenetic	Chemical Probes Portal	
+Q99865	subclass	0	Chromatin Regulator	Chemical Probes Portal	
+Q99873	class	0	Epigenetic	Chemical Probes Portal	
+Q99873	subclass	0	Protein methyltransferase	Chemical Probes Portal	
+Q9BPZ2	class	0	Epigenetic	Chemical Probes Portal	
+Q9BPZ2	subclass	0	Chromatin Regulator	Chemical Probes Portal	
+Q9BUB5	class	0	Kinase	Chemical Probes Portal	
+Q9BUB5	subclass	0	CAMK	Chemical Probes Portal	
+Q9BV23	class	0	Enzyme	Chemical Probes Portal	
+Q9BV23	subclass	0	Lipase	Chemical Probes Portal	
+Q9BVS4	class	0	Kinase	Chemical Probes Portal	
+Q9BVS4	subclass	0	RIO Type	Chemical Probes Portal	
+Q9BVS4	subclass	1	RIO type	Chemical Probes Portal	
+Q9BWU1	class	0	Kinase	Chemical Probes Portal	
+Q9BWU1	subclass	0	CMGC	Chemical Probes Portal	
+Q9BXF3	class	0	Epigenetic	Chemical Probes Portal	
+Q9BXF3	subclass	0	Bromodomain	Chemical Probes Portal	
+Q9BY41	class	0	Epigenetic	Chemical Probes Portal	
+Q9BY41	subclass	0	HDAC	Chemical Probes Portal	
+Q9BY41	subclass	1	Histone deacetylase	Chemical Probes Portal	
+Q9BYW2	class	0	Epigenetic	Chemical Probes Portal	
+Q9BYW2	subclass	0	Histone Methyltransferase	Chemical Probes Portal	
+Q9BZ23	class	0	Kinase	Chemical Probes Portal	
+Q9BZ23	subclass	0	Pantothenate kinase	Chemical Probes Portal	
+Q9BZ95	class	0	Epigenetic	Chemical Probes Portal	
+Q9BZ95	subclass	0	Methyltransferase	Chemical Probes Portal	
+Q9C0B1	class	0	Epigenetic	Chemical Probes Portal	
+Q9C0B1	class	1	Enzyme	Chemical Probes Portal	
+Q9C0B1	subclass	0	RNA demethylase	Chemical Probes Portal	
+Q9C0B1	subclass	1	FTO family	Chemical Probes Portal	
+Q9GZN0	class	0	GPCR	Chemical Probes Portal	
+Q9GZN0	subclass	0	Striatum specific receptor	Chemical Probes Portal	
+Q9GZT9	class	0	Enzyme	Chemical Probes Portal	
+Q9GZT9	subclass	0	Hydrolase	Chemical Probes Portal	
+Q9GZV3	class	0	Transporter	Chemical Probes Portal	
+Q9GZV3	subclass	0	Solute carrier	Chemical Probes Portal	
+Q9H093	class	0	Kinase	Chemical Probes Portal	
+Q9H093	subclass	0	CAMK	Chemical Probes Portal	
+Q9H0E9	class	0	Epigenetic	Chemical Probes Portal	
+Q9H0E9	subclass	0	Bromodomain	Chemical Probes Portal	
+Q9H0K1	class	0	Kinase	Chemical Probes Portal	
+Q9H0K1	subclass	0	CAMK	Chemical Probes Portal	
+Q9H2K2	class	0	Other post-translational modification	Chemical Probes Portal	
+Q9H2K2	subclass	0	PARP	Chemical Probes Portal	
+Q9H3N8	class	0	GPCR	Chemical Probes Portal	
+Q9H3N8	subclass	0	Histamine Receptor	Chemical Probes Portal	
+Q9H3R0	class	0	Epigenetic	Chemical Probes Portal	
+Q9H3R0	subclass	0	Protein Demethylase	Chemical Probes Portal	
+Q9H3R0	subclass	1	Histone demethylase	Chemical Probes Portal	
+Q9H4B4	class	0	Kinase	Chemical Probes Portal	
+Q9H4B4	subclass	0	Other	Chemical Probes Portal	
+Q9H773	class	0	Enzyme	Chemical Probes Portal	
+Q9H773	subclass	0	Pyrophosphatase	Chemical Probes Portal	
+Q9H7B4	class	0	Epigenetic	Chemical Probes Portal	
+Q9H7B4	subclass	0	Methyltransferase	Chemical Probes Portal	
+Q9H8M2	class	0	Epigenetic	Chemical Probes Portal	
+Q9H8M2	subclass	0	Bromodomain	Chemical Probes Portal	
+Q9H903	class	0	Enzyme	Chemical Probes Portal	
+Q9H903	subclass	0	Dehydrogenase	Chemical Probes Portal	
+Q9H999	class	0	Kinase	Chemical Probes Portal	
+Q9H999	subclass	0	Pantothenate kinase	Chemical Probes Portal	
+Q9H9B1	class	0	Epigenetic	Chemical Probes Portal	
+Q9H9B1	subclass	0	Protein methyltransferase	Chemical Probes Portal	
+Q9H9B1	subclass	1	Methyltransferase	Chemical Probes Portal	
+Q9HAZ1	class	0	Kinase	Chemical Probes Portal	
+Q9HAZ1	subclass	0	CMGC	Chemical Probes Portal	
+Q9HBA0	class	0	Ion Channel	Chemical Probes Portal	
+Q9HBA0	subclass	0	Ca transporter	Chemical Probes Portal	
+Q9HBH9	class	0	Kinase	Chemical Probes Portal	
+Q9HBH9	subclass	0	CAMK	Chemical Probes Portal	
+Q9NPC1	class	0	GPCR	Chemical Probes Portal	
+Q9NPC1	subclass	0	BLT family	Chemical Probes Portal	
+Q9NPI1	class	0	Epigenetic	Chemical Probes Portal	
+Q9NPI1	subclass	0	Bromodomain	Chemical Probes Portal	
+Q9NQU5	class	0	Protein kinase	Chemical Probes Portal	
+Q9NQU5	class	1	Kinase	Chemical Probes Portal	
+Q9NQU5	subclass	0	STE	Chemical Probes Portal	
+Q9NQV7	class	0	Epigenetic	Chemical Probes Portal	
+Q9NQV7	subclass	0	Histone methyltransferase	Chemical Probes Portal	
+Q9NR22	class	0	Epigenetic	Chemical Probes Portal	
+Q9NR22	subclass	0	Protein methyltransferase	Chemical Probes Portal	
+Q9NR48	class	0	Epigenetic	Chemical Probes Portal	
+Q9NR48	subclass	0	HMT	Chemical Probes Portal	
+Q9NR97	class	0	Toll-Like Receptor	Chemical Probes Portal	
+Q9NR97	class	1	GPCR	Chemical Probes Portal	
+Q9NR97	subclass	0	Toll-like receptor	Chemical Probes Portal	
+Q9NRG4	class	0	Epigenetic	Chemical Probes Portal	
+Q9NRG4	subclass	0	Protein methyltransferase	Chemical Probes Portal	
+Q9NRG4	subclass	1	Methyltransferase	Chemical Probes Portal	
+Q9NRM7	class	0	Kinase	Chemical Probes Portal	
+Q9NRM7	subclass	0	AGC	Chemical Probes Portal	
+Q9NS75	class	0	GPCR	Chemical Probes Portal	
+Q9NS75	subclass	0	Cysteinyl leukotriene receptor	Chemical Probes Portal	
+Q9NSD7	class	0	GPCR	Chemical Probes Portal	
+Q9NSD7	subclass	0	Rexaxin receptor	Chemical Probes Portal	
+Q9NSY1	class	0	Kinase	Chemical Probes Portal	
+Q9NSY1	subclass	0	Ser/Thr kinase	Chemical Probes Portal	
+Q9NV35	class	0	Epigenetic	Chemical Probes Portal	
+Q9NV35	subclass	0	Nudix Hydrolase	Chemical Probes Portal	
+Q9NVM4	class	0	Epigenetic	Chemical Probes Portal	
+Q9NVM4	subclass	0	Methyltransferase	Chemical Probes Portal	
+Q9NVM4	subclass	1	Protein methyltransferase	Chemical Probes Portal	
+Q9NWM0	class	0	Enzyme	Chemical Probes Portal	
+Q9NWM0	subclass	0	Oxidase	Chemical Probes Portal	
+Q9NWZ3	class	0	Kinase	Chemical Probes Portal	
+Q9NWZ3	subclass	0	TKL	Chemical Probes Portal	
+Q9NYK1	class	0	Toll-Like Receptor	Chemical Probes Portal	
+Q9NYV4	class	0	Kinase	Chemical Probes Portal	
+Q9NYV4	subclass	0	CMGC	Chemical Probes Portal	
+Q9NYY3	class	0	Kinase	Chemical Probes Portal	
+Q9NYY3	subclass	0	Other	Chemical Probes Portal	
+Q9NZJ5	class	0	Kinase	Chemical Probes Portal	
+Q9NZJ5	subclass	0	Other	Chemical Probes Portal	
+Q9NZJ5	subclass	1	Ser/Thr Kinase	Chemical Probes Portal	
+Q9NZQ7	class	0	Receptor ligand	Chemical Probes Portal	
+Q9NZQ7	class	1	Programmed Cell Deatch	Chemical Probes Portal	
+Q9NZQ7	subclass	0	Cell death receptor ligand	Chemical Probes Portal	
+Q9P1W9	class	0	Kinase	Chemical Probes Portal	
+Q9P1W9	subclass	0	CAMK	Chemical Probes Portal	
+Q9P286	class	0	Protein kinase	Chemical Probes Portal	
+Q9P286	class	1	Kinase	Chemical Probes Portal	
+Q9P286	subclass	0	STE	Chemical Probes Portal	
+Q9P289	class	0	Kinase	Chemical Probes Portal	
+Q9P289	subclass	0	STE	Chemical Probes Portal	
+Q9UBE0	class	0	Enzyme	Chemical Probes Portal	
+Q9UBE0	subclass	0	SUMOylation Enzyme	Chemical Probes Portal	
+Q9UBN4	class	0	Ion Channel	Chemical Probes Portal	
+Q9UBN4	subclass	0	Transient receptor potential channels	Chemical Probes Portal	
+Q9UBN7	class	0	Epigenetic	Chemical Probes Portal	
+Q9UBN7	subclass	0	HDAC	Chemical Probes Portal	
+Q9UBP0	class	0	Enzyme	Chemical Probes Portal	
+Q9UBP0	subclass	0	ATPase	Chemical Probes Portal	
+Q9UBT2	class	0	Enzyme	Chemical Probes Portal	
+Q9UBT2	subclass	0	SUMOylation Enzyme	Chemical Probes Portal	
+Q9UDY8	class	0	Enzyme	Chemical Probes Portal	
+Q9UDY8	subclass	0	Peptidase	Chemical Probes Portal	
+Q9UEE5	class	0	Kinase	Chemical Probes Portal	
+Q9UEE5	subclass	0	CAMK	Chemical Probes Portal	
+Q9UGN5	class	0	Other post-translational modification	Chemical Probes Portal	
+Q9UGN5	subclass	0	PARP	Chemical Probes Portal	
+Q9UHD2	class	0	Protein kinase	Chemical Probes Portal	
+Q9UHD2	class	1	Kinase	Chemical Probes Portal	
+Q9UHD2	subclass	0	Ser/Thr Protein Kinase	Chemical Probes Portal	
+Q9UHD2	subclass	1	Ser/Thr kinase	Chemical Probes Portal	
+Q9UIF8	class	0	Epigenetic	Chemical Probes Portal	
+Q9UIF8	subclass	0	Bromodomain	Chemical Probes Portal	
+Q9UIF9	class	0	Epigenetic	Chemical Probes Portal	
+Q9UIF9	subclass	0	Bromodomain	Chemical Probes Portal	
+Q9UK32	class	0	Kinase	Chemical Probes Portal	
+Q9UK32	subclass	0	AGC	Chemical Probes Portal	
+Q9UK80	class	0	Enzyme	Chemical Probes Portal	
+Q9UK80	subclass	0	USP subfamily	Chemical Probes Portal	
+Q9UKE5	class	0	Kinase	Chemical Probes Portal	
+Q9UKE5	subclass	0	STE	Chemical Probes Portal	
+Q9UKK9	class	0	Epigenetic	Chemical Probes Portal	
+Q9UKK9	subclass	0	Nudix Hydrolase	Chemical Probes Portal	
+Q9UKK9	subclass	1	Nudix hydrolase	Chemical Probes Portal	
+Q9UKK9	subclass	2	Nudix	Chemical Probes Portal	
+Q9UKP4	class	0	Enzyme	Chemical Probes Portal	
+Q9UKP4	subclass	0	Disintegrin	Chemical Probes Portal	
+Q9UKS7	class	0	Transcription factor	Chemical Probes Portal	
+Q9UKS7	subclass	0	Zinc Finger	Chemical Probes Portal	
+Q9UKT9	class	0	Transcription factor	Chemical Probes Portal	
+Q9UKT9	subclass	0	Zinc Finger	Chemical Probes Portal	
+Q9UL54	class	0	Kinase	Chemical Probes Portal	
+Q9UL54	subclass	0	STE	Chemical Probes Portal	
+Q9UL62	class	0	Ion Channel	Chemical Probes Portal	
+Q9UL62	subclass	0	Transient receptor potential channels	Chemical Probes Portal	
+Q9ULC6	class	0	Enzyme	Chemical Probes Portal	
+Q9ULC6	subclass	0	Deiminase	Chemical Probes Portal	
+Q9ULD4	class	0	Epigenetic	Chemical Probes Portal	
+Q9ULD4	subclass	0	Bromodomain	Chemical Probes Portal	
+Q9ULI0	class	0	Epigenetic	Chemical Probes Portal	
+Q9ULI0	subclass	0	Bromodomain	Chemical Probes Portal	
+Q9ULW8	class	0	Enzyme	Chemical Probes Portal	
+Q9ULW8	subclass	0	Deiminase	Chemical Probes Portal	
+Q9UM07	class	0	Epigenetic	Chemical Probes Portal	
+Q9UM07	class	1	Enzyme	Chemical Probes Portal	
+Q9UM07	subclass	0	Arginine deaminase	Chemical Probes Portal	
+Q9UM07	subclass	1	Deiminase	Chemical Probes Portal	
+Q9UM73	class	0	Kinase	Chemical Probes Portal	
+Q9UM73	subclass	0	RTK	Chemical Probes Portal	
+Q9UM73	subclass	1	TK	Chemical Probes Portal	
+Q9UNQ0	class	0	Transporter	Chemical Probes Portal	
+Q9UNQ0	subclass	0	ABCG family	Chemical Probes Portal	
+Q9UNW8	class	0	GPCR	Chemical Probes Portal	
+Q9UPE1	class	0	Kinase	Chemical Probes Portal	
+Q9UPE1	subclass	0	CMGC	Chemical Probes Portal	
+Q9UQ84	class	0	Enzyme	Chemical Probes Portal	
+Q9UQ84	subclass	0	Endonuclease	Chemical Probes Portal	
+Q9UQ88	class	0	Kinase	Chemical Probes Portal	
+Q9UQ88	subclass	0	CMGC	Chemical Probes Portal	
+Q9UQB9	class	0	Kinase	Chemical Probes Portal	
+Q9UQB9	subclass	0	Ser/Thr kinase	Chemical Probes Portal	
+Q9UQB9	subclass	1	Ser/Thr Kinase	Chemical Probes Portal	
+Q9UQB9	subclass	2	cell cycle-regulated kinase	Chemical Probes Portal	
+Q9Y233	class	0	Epigenetic	Chemical Probes Portal	
+Q9Y233	class	1	Enzyme	Chemical Probes Portal	
+Q9Y233	subclass	0	Phosphodiesterase	Chemical Probes Portal	
+Q9Y243	class	0	Kinase	Chemical Probes Portal	
+Q9Y243	subclass	0	AGC	Chemical Probes Portal	
+Q9Y2I7	class	0	Kinase	Chemical Probes Portal	
+Q9Y2I7	subclass	0	Serine Kinase	Chemical Probes Portal	
+Q9Y2I7	subclass	1	Serine kinase	Chemical Probes Portal	
+Q9Y2J8	class	0	Enzyme	Chemical Probes Portal	
+Q9Y2J8	subclass	0	Deiminase	Chemical Probes Portal	
+Q9Y2K2	class	0	Kinase	Chemical Probes Portal	
+Q9Y2K2	subclass	0	CAMK	Chemical Probes Portal	
+Q9Y2T5	class	0	GPCR	Chemical Probes Portal	
+Q9Y2T5	subclass	0	A orphan G protein-coupled receptor	Chemical Probes Portal	
+Q9Y345	class	0	Transporter	Chemical Probes Portal	
+Q9Y345	subclass	0	SLC family	Chemical Probes Portal	
+Q9Y463	class	0	Protein kinase	Chemical Probes Portal	
+Q9Y463	class	1	Kinase	Chemical Probes Portal	
+Q9Y463	subclass	0	CMGC	Chemical Probes Portal	
+Q9Y4B6	class	0	Structural protein	Chemical Probes Portal	
+Q9Y570	class	0	Enzyme	Chemical Probes Portal	
+Q9Y570	subclass	0	Serine hydrolase	Chemical Probes Portal	
+Q9Y572	class	0	Kinase	Chemical Probes Portal	
+Q9Y572	subclass	0	TKL	Chemical Probes Portal	
+Q9Y5N5	class	0	Epigenetic	Chemical Probes Portal	
+Q9Y5Y4	class	0	GPCR	Chemical Probes Portal	
+Q9Y5Y4	subclass	0	Prostaglandin D2 receptor	Chemical Probes Portal	
+Q9Y5Y9	class	0	Ion Channel	Chemical Probes Portal	
+Q9Y5Y9	subclass	0	Sodium channel	Chemical Probes Portal	
+Q9Y5Z0	class	0	Enzyme	Chemical Probes Portal	
+Q9Y5Z0	subclass	0	Protease	Chemical Probes Portal	
+Q9Y5Z0	subclass	1	Peptidase	Chemical Probes Portal	
+Q9Y616	class	0	Kinase	Chemical Probes Portal	
+Q9Y616	subclass	0	TKL	Chemical Probes Portal	
+Q9Y657	class	0	Transcription factor	Chemical Probes Portal	
+Q9Y657	class	1	Epigenetic	Chemical Probes Portal	
+Q9Y657	subclass	0	Chromatin regulator	Chemical Probes Portal	
+Q9Y657	subclass	1	Chromatin Regulator	Chemical Probes Portal	
+Q9Y6A5	class	0	Motor Spindle Protein	Chemical Probes Portal	
+Q9Y6E0	class	0	Kinase	Chemical Probes Portal	
+Q9Y6E0	subclass	0	STE	Chemical Probes Portal	
+Q9Y6Q9	class	0	Nuclear receptor	Chemical Probes Portal	
+Q9Y6Q9	subclass	0	SRC family	Chemical Probes Portal	

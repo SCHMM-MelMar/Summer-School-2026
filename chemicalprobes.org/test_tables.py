@@ -1,12 +1,12 @@
 """Tests for preprocess.py: the table builders, the writer, and the load.
 
 Written against the contract, which is the docstring of each function plus
-README section 3 and the counts in PREPROCESSING.md -- not against a reading of
+README section 3 and the counts in README.md -- not against a reading of
 the bodies. A test that fails here is either a function that does not keep its
 docstring or a count that has moved.
 
 What is covered: load_export, flatten, build_compound, build_target,
-build_uniprot, build_bioactivity, build_unsuitable, build_leftovers,
+build_uniprot, build_leftovers,
 resolve_missing_structures, write_table, write_staging, report and main. The
 value parsers (parse_potency_value, canonical_unit, repair, ...) have their own
 suite; they appear here only where a table builder has to carry their result.
@@ -87,10 +87,9 @@ BIOACTIVITY_COLUMNS = [
     "concentration_unit", "source_db", "source", "source_xref", "xref_id",
 ]
 BIOACTIVITY_REQUIRED = ["inchikey", "target_key", "value", "unit"]
-UNSUITABLE_COLUMNS = [
-    "inchikey", "portal_path", "published_date", "pains", "toxicophore",
-    "cansar_id", "rating_in_cell", "rating_in_organism", "rating_count",
-    "reference", "source_db", "source", "xref_id",
+ASSESSMENT_COLUMNS = [
+    "inchikey", "verdict", "pains", "toxicophore", "rating_in_cell",
+    "rating_in_organism", "rating_count", "published_date", "source_db", "source",
 ]
 
 # the 18 keys of a probe record
@@ -104,7 +103,7 @@ EXPORT_KEYS = [
 FRAME_NAMES = ("probe", "target", "validation", "invivo", "chembl",
                "reference", "control")
 
-# PREPROCESSING.md, "What is in the export"
+# README.md, "What is in the export"
 EXPORT_FRAME_ROWS = {
     "probe": 1247,
     "target": 1372,
@@ -115,7 +114,7 @@ EXPORT_FRAME_ROWS = {
     "control": 418,
 }
 
-# PREPROCESSING.md, "What would be written"
+# README.md, "What would be written"
 EXPECTED_COMPOUNDS = 1223
 EXPECTED_TARGETS = 644
 EXPECTED_UNIPROTS = 644
@@ -127,7 +126,7 @@ EXPECTED_PROBES = 1247
 # the loader is not touched by decision, so this drop is current behaviour
 EXPECTED_DUPLICATES_DROPPED = 33   # 35 before ranges were censored with '>='
 EXPECTED_GENUINE_REPEATS = 6
-# 156 in PREPROCESSING.md, 149 measured: see the pinned reload test
+# 156 in README.md, 149 measured: see the pinned reload test
 EXPECTED_REINSERTED_ON_RELOAD = 149
 
 
@@ -466,7 +465,7 @@ def written_and_held(arguments):
     or from the function that builds quarantine.tsv, and from the parser only if
     the module names neither.
     """
-    result = call(preprocess.build_bioactivity, **arguments)
+    result = call(preprocess.split_bioactivity, **arguments)
     if isinstance(result, tuple) and len(result) == 2:
         return rows_of(result[0]), rows_of(result[1])
     held = getattr(preprocess, "build_quarantine", None)
@@ -484,10 +483,10 @@ def built(f=None):
         "target": call(preprocess.build_target, **arguments),
         "uniprot": call(preprocess.build_uniprot, **arguments),
         "bioactivity": rows,
-        "quarantine": quarantined,
-        "unsuitable": call(preprocess.build_unsuitable, **arguments),
     }
-    leftovers = call(preprocess.build_leftovers, **arguments)
+    # the held-back rows are one stage of rejected_record now, so they go in
+    # through build_leftovers rather than being a table of their own
+    leftovers = call(preprocess.build_leftovers, quarantined=quarantined, **arguments)
     return tables, leftovers
 
 
@@ -897,34 +896,11 @@ def test_build_bioactivity_writes_nothing_for_a_keyless_probe():
     assert all(cell(r, "inchikey") for r in rows)
 
 
-# ---------------------------------------------------------- build_unsuitable
-
-def test_build_unsuitable_columns_are_the_ones_of_the_table():
-    f = flat()
-    frame = call(preprocess.build_unsuitable, **offer(f))
-    assert columns_of(frame) == UNSUITABLE_COLUMNS
-    assert len(columns_of(frame)) == len(UNSUITABLE_COLUMNS)
-
-
-def test_build_unsuitable_takes_only_the_probes_the_portal_ruled_out():
-    f = flat()
-    rows = rows_of(call(preprocess.build_unsuitable, **offer(f)))
-    assert [cell(r, "inchikey") for r in rows] == [PROBE_UNSUITABLE["InChIkey"]]
-    row = rows[0]
-    assert cell(row, "portal_path") == "unsuitables/jib-04"
-    assert (preprocess.PORTAL_PREFIX + cell(row, "portal_path")
-            == PROBE_UNSUITABLE["URL"])
-    assert cell(row, "cansar_id") == "1354531"
-    assert cell(row, "source_db") == preprocess.SOURCE_DB
-    for column in ("rating_in_cell", "rating_in_organism", "rating_count"):
-        assert cell(row, column) == "0"
-
-
 # --------------------------------------------------------- build_leftovers
 
 def test_build_leftovers_keeps_the_in_vivo_record_with_no_dose():
     leftovers = call(preprocess.build_leftovers, **offer(flat()))
-    rows = frame_in(leftovers, "in_vivo")
+    rows = frame_in(leftovers, "in_vivo_dose")
     assert {cell(r, "organism") for r in rows} == {"Mouse", "Rat"}
     rat = [r for r in rows if cell(r, "organism") == "Rat"]
     assert len(rat) == 1
@@ -935,7 +911,7 @@ def test_build_leftovers_keeps_the_in_vivo_record_with_no_dose():
 
 def test_build_leftovers_keeps_class_per_target_key():
     leftovers = call(preprocess.build_leftovers, **offer(flat()))
-    rows = frame_in(leftovers, "target_annotation")
+    rows = frame_in(leftovers, "target_class")
     dot1l = [r for r in rows if cell(r, "target_key") == "Q8TEK3"]
     assert dot1l
     values = {text(v) for row in dot1l for v in row.values()}
@@ -949,7 +925,10 @@ def test_build_leftovers_keeps_the_controls_and_the_url_per_compound():
     mine = [r for r in rows if cell(r, "inchikey") == key]
     values = {text(v) for row in mine for v in row.values()}
     assert "SGC0649" in values                            # a control compound
-    assert PROBE_WITH_NO_POTENCY_KEY["URL"] in values     # and the portal page
+    # the url is not an annotation any more: it is the source, and the flags and
+    # dates moved to probe_assessment, so this table is the tail it should be
+    assert {text(r.get("property")) for r in rows} <= {"control_compound",
+                                                      "structure_source"}
     written = {p["InChIkey"] for p in KEYED_PROBES}
     assert {cell(r, "inchikey") for r in rows} <= written
 
@@ -1063,8 +1042,8 @@ def test_write_table_writes_an_integer_id_without_a_decimal_point(tmp_path):
     # a column with one missing value is float64 in pandas, which turns
     # canSAR_ID 1354531 into '1354531.0'
     frame = pd.DataFrame({"cansar_id": [1354531, None]})
-    preprocess.write_table(tmp_path / f"{preprocess.PREFIX}unsuitable.tsv", frame, ["cansar_id"])
-    with open(tmp_path / f"{preprocess.PREFIX}unsuitable.tsv", newline="") as handle:
+    preprocess.write_table(tmp_path / f"{preprocess.PREFIX}probe_assessment.tsv", frame, ["cansar_id"])
+    with open(tmp_path / f"{preprocess.PREFIX}probe_assessment.tsv", newline="") as handle:
         body = list(csv.reader(handle, delimiter="\t"))[1:]
     assert [row[0] for row in body] == ["1354531", ""]
 
@@ -1088,8 +1067,9 @@ def test_write_staging_writes_the_contract_and_the_report(tmp_path):
     assert header_of(tmp_path / f"{preprocess.PREFIX}target.tsv") == TARGET_COLUMNS
     assert header_of(tmp_path / f"{preprocess.PREFIX}uniprot.tsv") == UNIPROT_COLUMNS
     assert set(header_of(tmp_path / f"{preprocess.PREFIX}bioactivity.tsv")) == set(BIOACTIVITY_COLUMNS)
-    assert header_of(tmp_path / f"{preprocess.PREFIX}unsuitable.tsv") == UNSUITABLE_COLUMNS
-    assert len(read_staged(tmp_path, "quarantine")) == len(quarantined)
+    assert header_of(tmp_path / f"{preprocess.PREFIX}probe_assessment.tsv") == ASSESSMENT_COLUMNS
+    rejected = read_staged(tmp_path, "rejected_record")
+    assert sum(1 for r in rejected if r["stage"] == "bioactivity") == len(quarantined)
     assert isinstance(json.loads((tmp_path / "report.json").read_text()), dict)
 
 
@@ -1195,34 +1175,11 @@ def test_staging_keys_join(fixture_staging):
     assert {r["target_key"] for r in read_staged(out, "uniprot")} <= targets
 
 
-def test_unsuitable_inchikey_references_compound(fixture_staging):
-    out = fixture_staging()
-    compounds = {r["inchikey"] for r in read_staged(out, "compound")}
-    rows = read_staged(out, "unsuitable")
-    assert rows
-    assert {r["inchikey"] for r in rows} <= compounds
-
-
 def test_a_target_only_under_a_keyless_probe_is_not_written(fixture_staging):
     # 656 accessions in the export, 644 in target.tsv: the difference is the
     # accessions that appear only under a probe with no InChIKey
     targets = {r["target_key"] for r in read_staged(fixture_staging(), "target")}
     assert "P00533" not in targets
-
-
-def test_quarantined_rows_are_not_in_bioactivity(fixture_staging):
-    # D15: a row with a quarantine reason must not reach bioactivity.tsv
-    out = fixture_staging()
-    quarantine = read_staged(out, "quarantine")
-    assert len(quarantine) == 1
-    bioactivity = read_staged(out, "bioactivity")
-    assert len(bioactivity) == 3
-    held = {(r["inchikey"], r["target_key"], r.get("value")) for r in quarantine}
-    written = {(r["inchikey"], r["target_key"], r.get("value"))
-               for r in bioactivity}
-    assert held & written == set()
-    assert PROBE_WITH_IN_VIVO["InChIkey"] not in {r["inchikey"]
-                                                 for r in bioactivity}
 
 
 # ---------------------------------------------------------------------- report
@@ -1237,7 +1194,7 @@ def test_report_counts_match_the_frames_it_was_given():
             f"report() gives no row count for {name}"
         )
         assert count_in(report, name) == len(rows_of(frame))
-    assert count_in(report, "quarantine") == len(quarantined)
+    assert count_in(report, "rows held for curation") == len(quarantined)
 
 
 def test_report_accounts_for_every_input_record():
@@ -1246,9 +1203,9 @@ def test_report_accounts_for_every_input_record():
     report = preprocess.report(tables, leftovers, quarantined)
 
     compounds = count_in(report, "compound")
-    skipped = count_in(report, "skipped_compound")
+    skipped = count_in(report, "compounds skipped")
     written = count_in(report, "bioactivity")
-    held = count_in(report, "quarantine")
+    held = count_in(report, "rows held for curation")
     for name, value in (("compound", compounds), ("skipped_compound", skipped),
                         ("bioactivity", written), ("quarantine", held)):
         assert value is not None, f"report() gives no count for {name}"
@@ -1294,8 +1251,10 @@ def test_integration_bioactivity_numbers_are_the_projection(portal_staging,
                                                             portal_db):
     out = portal_staging()
     rows = read_staged(out, "bioactivity")
-    quarantine = read_staged(out, "quarantine")
-    # PREPROCESSING.md's table calls 3649 the size of bioactivity.tsv while D15
+    # quarantine and skipped_compound are one table now, one row per stage
+    rejected = read_staged(out, "rejected_record")
+    quarantine = [r for r in rejected if r["stage"] == "bioactivity"]
+    # README.md's table calls 3649 the size of bioactivity.tsv while D15
     # holds the 23 quarantined rows back, so the sum is what is asserted here.
     assert len(quarantine) == EXPECTED_QUARANTINED
     assert len(rows) + len(quarantine) == EXPECTED_BIOACTIVITY_NUMBERS
@@ -1312,7 +1271,8 @@ def test_integration_bioactivity_numbers_are_the_projection(portal_staging,
 def test_integration_every_probe_is_written_or_skipped(portal_staging):
     out = portal_staging()
     compounds = read_staged(out, "compound")
-    skipped = read_staged(out, "skipped_compound")
+    skipped = [r for r in read_staged(out, "rejected_record")
+               if r["stage"] == "compound"]
     assert len(compounds) == EXPECTED_COMPOUNDS
     assert len(skipped) == EXPECTED_SKIPPED_COMPOUNDS
     assert len(compounds) + len(skipped) == EXPECTED_PROBES
@@ -1340,28 +1300,6 @@ def test_integration_several_chembl_ids_share_one_cell(portal_staging):
     assert all(re.match(r"^CHEMBL[0-9]+$", i) for i in ids)
 
 
-@slow
-def test_integration_unsuitable_is_the_whole_entry(portal_staging):
-    out = portal_staging()
-    rows = read_staged(out, "unsuitable")
-    assert header_of(out / f"{preprocess.PREFIX}unsuitable.tsv") == UNSUITABLE_COLUMNS
-    assert len(rows) == EXPECTED_UNSUITABLE
-    keys = [r["inchikey"] for r in rows]
-    assert len(keys) == len(set(keys))
-    # inchikey is a foreign key into compound
-    compounds = {r["inchikey"] for r in read_staged(out, "compound")}
-    assert set(keys) <= compounds
-
-    url = {p["InChIkey"]: p["URL"] for p in export_probes() if p["InChIkey"]}
-    for row in rows:
-        assert (preprocess.PORTAL_PREFIX + row["portal_path"]
-                == url[row["inchikey"]])
-        for column in ("rating_in_cell", "rating_in_organism", "rating_count"):
-            assert row[column] == "0"
-        # never '1354531.0'
-        assert re.match(r"^[0-9]+$", row["cansar_id"]), row["cansar_id"]
-
-
 def test_integration_pinned_reload_reinserts_the_rows_without_a_unit(
         portal_staging):
     out = portal_staging()
@@ -1375,7 +1313,7 @@ def test_integration_pinned_reload_reinserts_the_rows_without_a_unit(
     second = load_staging(db, out, strict=True)
     assert second["bioactivities"] == stored_without_unit
     assert second["bioactivities"] < second["duplicates_skipped"]
-    # PREPROCESSING.md projects 156 rows re-inserted. Measured on the files that
+    # README.md projects 156 rows re-inserted. Measured on the files that
     # are actually written it is 155 unitless rows in bioactivity.tsv, of which
     # 149 reach the database as distinct rows and so come back on every reload.
     rows = read_staged(out, "bioactivity")

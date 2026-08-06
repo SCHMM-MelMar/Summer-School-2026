@@ -73,8 +73,9 @@ def test_a_standard_deviation_survives_in_the_description(raw, value, error):
 def test_every_range_and_error_reaches_the_written_file(tmp_path):
     """The counts behind A1: 85 range highs and 272 error bars were on no file."""
     preprocess.preprocess(EXPORT_JSON, tmp_path)
-    rows = read(tmp_path, "bioactivity") + read(tmp_path, "quarantine")
-    text = " ".join(r.get("assay_description", "") for r in rows)
+    rows = read(tmp_path, "bioactivity") + read(tmp_path, "rejected_record")
+    text = " ".join(r.get("assay_description", "") + " " + r.get("label", "")
+                    + " " + r.get("raw", "") for r in rows)
     probes = preprocess.load_export(EXPORT_JSON)
     missing = []
     for probe in probes:
@@ -315,105 +316,3 @@ def load_staged(directory):
         load(db, preprocess.contract_directory(directory, tmp),
              source=preprocess.SOURCE_DB, strict=True)
     return db
-
-
-# ------------------------------------------------------- the unsuitable table
-
-def test_the_schema_has_an_unsuitable_table():
-    from probedb import ProbeDB, schema
-
-    assert "unsuitable" in schema.TABLES, (
-        "a table db.counts() cannot see is a table nobody knows loaded"
-    )
-    db = ProbeDB(":memory:", create=True)
-    columns = [r[1] for r in db.conn.execute("PRAGMA table_info(unsuitable)")]
-    assert columns == ["inchikey", "portal_path", "published_date", "pains",
-                       "toxicophore", "cansar_id", "rating_in_cell",
-                       "rating_in_organism", "rating_count", "reference",
-                       "source_id"]
-    # name, smiles and the ChEMBL ids are not repeated here: the inchikey is a
-    # foreign key onto compound, which already holds them
-    assert "name" not in columns and "smiles" not in columns
-    db.close()
-
-
-def test_the_unsuitable_foreign_keys_are_enforced():
-    from probedb import ProbeDB
-
-    db = ProbeDB(":memory:", create=True)
-    with pytest.raises(Exception) as bad:
-        db.insert("unsuitable", inchikey="AAAAAAAAAAAAAA-BBBBBBBBBB-N",
-                  portal_path="unsuitables/x")
-    assert "FOREIGN KEY" in str(bad.value), (
-        "a verdict about a compound that is not in the database is not a verdict"
-    )
-    db.add_compound("AAAAAAAAAAAAAA-BBBBBBBBBB-N", "CC", "x")
-    db.insert("unsuitable", inchikey="AAAAAAAAAAAAAA-BBBBBBBBBB-N",
-              portal_path="unsuitables/x")
-    with pytest.raises(Exception) as twice:
-        db.insert("unsuitable", inchikey="AAAAAAAAAAAAAA-BBBBBBBBBB-N",
-                  portal_path="unsuitables/x")
-    assert "UNIQUE" in str(twice.value), "one verdict per compound"
-    with pytest.raises(Exception) as source:
-        db.add_compound("CCCCCCCCCCCCCC-DDDDDDDDDD-N", "CCC", "y")
-        db.insert("unsuitable", inchikey="CCCCCCCCCCCCCC-DDDDDDDDDD-N", source_id=999)
-    assert "FOREIGN KEY" in str(source.value), "the source has to exist"
-    db.close()
-
-
-@pytest.mark.parametrize("column", ["pains", "toxicophore"])
-def test_the_alerts_are_a_closed_vocabulary(column):
-    from probedb import ProbeDB
-    from probedb.schema import vocabulary
-
-    assert vocabulary(column) == {"Yes", "No"}
-    db = ProbeDB(":memory:", create=True)
-    db.add_compound("EEEEEEEEEEEEEE-FFFFFFFFFF-N", "C", "z")
-    with pytest.raises(Exception) as bad:
-        db.insert("unsuitable", inchikey="EEEEEEEEEEEEEE-FFFFFFFFFF-N",
-                  **{column: "Unknown"})
-    assert "CHECK" in str(bad.value)
-    db.close()
-
-
-@slow
-def test_the_unsuitable_file_matches_the_unsuitable_table(staged):
-    db = load_staged(staged)
-    from probedb import schema
-
-    load_unsuitable = preprocess.load_unsuitable
-    load_unsuitable(db, staged)
-    columns = [r[1] for r in db.conn.execute("PRAGMA table_info(unsuitable)")]
-    written = read(staged, "unsuitable")
-    # the file carries source_db/source/xref_id where the table carries source_id,
-    # the same way bioactivity.tsv does
-    assert set(written[0]) - {"source_db", "source", "xref_id"} == set(columns) - {"source_id"}
-    assert db.one("SELECT COUNT(*) FROM unsuitable") == len(written) == 260
-    blank = lambda v: "" if v is None else str(v)
-    keys = [c for c in columns if c != "source_id"]
-    in_file = {tuple(r[c] for c in keys) for r in written}
-    in_table = {tuple(blank(v) for v in row) for row in
-                db.conn.execute(f"SELECT {', '.join(keys)} FROM unsuitable")}
-    assert in_file == in_table
-    # every verdict points at a compound that is in the database, and at a source
-    assert db.one("SELECT COUNT(*) FROM unsuitable u "
-                  " LEFT JOIN compound c ON c.inchikey = u.inchikey "
-                  "WHERE c.inchikey IS NULL") == 0
-    assert db.one("SELECT COUNT(*) FROM unsuitable WHERE source_id IS NULL") == 0
-    assert db.conn.execute("PRAGMA foreign_key_check").fetchall() == []
-    db.close()
-
-
-@slow
-def test_the_unsuitable_table_explains_the_compounds_with_no_measurement(staged):
-    """The whole point: 260 of the 261 compounds with no data are rejects, and
-    now the database says so."""
-    db = load_staged(staged)
-    preprocess.load_unsuitable(db, staged)
-    quiet = db.read("""SELECT c.inchikey FROM compound c
-                        LEFT JOIN bioactivity b ON b.inchikey = c.inchikey
-                       WHERE b.id IS NULL""")
-    explained = db.read("SELECT inchikey FROM unsuitable")
-    assert len(quiet) == 261
-    assert len(set(quiet.inchikey) & set(explained.inchikey)) == 260
-    db.close()

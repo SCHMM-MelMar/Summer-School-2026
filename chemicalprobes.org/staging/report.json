@@ -9,20 +9,20 @@
     "rows with no unit": 155,
     "in vivo rows written": 1450,
     "reference rows written": 1792,
-    "unsuitable rows written": 260
+    "assessments written": 1223
   },
   "written": {
     "compound": 1223,
     "target": 644,
     "uniprot": 644,
     "bioactivity": 3626,
-    "unsuitable": 260,
-    "quarantine": 23,
-    "compound_annotation": 11428,
-    "target_annotation": 1475,
-    "in_vivo": 1450,
-    "reference": 1792,
-    "skipped_compound": 24
+    "probe_assessment": 1223,
+    "compound_xref": 1214,
+    "target_class": 1475,
+    "in_vivo_dose": 1450,
+    "compound_reference": 1792,
+    "compound_annotation": 421,
+    "rejected_record": 47
   },
   "problems": []
 }

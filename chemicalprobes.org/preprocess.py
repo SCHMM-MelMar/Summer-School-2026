@@ -11,7 +11,7 @@ reconciles every input record against one of those outputs. With --db it then
 loads the staging directory through loader/ into a fresh database.
 
 The mapping this follows, the counts behind it and the decisions are in
-preprocess.ipynb and PREPROCESSING.md.
+preprocess.ipynb and README.md.
 
 Decided:
   * database/schema.sql is NOT changed, so D2, D3, D5 and D11 are not taken. The
@@ -51,14 +51,15 @@ TARGET_TYPE = "protein"
 STAGING_FILES = ("compound", "target", "uniprot", "bioactivity")
 # unsuitable is the one that carries a foreign key: its inchikey references
 # compound, the way chembl does
-EXTRA_FILES = ("unsuitable", "quarantine", "compound_annotation",
-               "target_annotation", "in_vivo", "reference", "skipped_compound")
+EXTRA_FILES = ("probe_assessment", "compound_xref", "target_class", "in_vivo_dose",
+               "compound_reference", "compound_annotation", "rejected_record")
 
 RESOLVED_CACHE = Path(__file__).resolve().parent / "resolved_structures.tsv"
 
-# every generated file says which source it came from. loader/ wants the four
-# contract files under their bare names, so populate() hands it those.
-PREFIX = "chemicalprobes_"
+# every generated file says that it is the new schema's shape and which source
+# it came from. loader/ wants the four contract files under their bare names,
+# so populate() hands it those.
+PREFIX = "new_chemicalprobes_"
 
 # the 18 probe keys the mapping in preprocess.ipynb covers. a new one has to
 # stop the run, not be ignored
@@ -78,23 +79,21 @@ COLUMNS = {
                     "value", "unit", "assay_type", "assay_description", "cell_line",
                     "concentration", "concentration_unit", "source_db", "source",
                     "source_xref", "xref_id"],
-    # matches the unsuitable table, except that a staging file carries
-    # source_db/source/xref_id where the table carries source_id, the same way
-    # bioactivity.tsv does
-    "unsuitable": ["inchikey", "portal_path", "published_date", "pains",
-                   "toxicophore", "cansar_id", "rating_in_cell",
-                   "rating_in_organism", "rating_count", "reference",
-                   "source_db", "source", "xref_id"],
-    "quarantine": ["inchikey", "target_key", "reason", "raw", "fragment", "relation",
-                   "value", "unit", "bioactivity_type", "assay_description",
-                   "source_db", "source"],
-    "compound_annotation": ["inchikey", "source_db", "property", "ordinal", "value"],
-    "target_annotation": ["target_key", "source_db", "property", "ordinal", "value"],
-    "in_vivo": ["inchikey", "organism", "dose_value", "dose_unit", "route", "dose_raw",
-                "source_db", "source"],
-    "reference": ["inchikey", "xref_id", "source_xref", "raw"],
-    "skipped_compound": ["name", "source_db", "reason", "portal_path", "targets",
-                         "validations"],
+    # a staging file names its source with source_db/source and its target with
+    # the accession, the way bioactivity.tsv does. the loader resolves both.
+    "probe_assessment": ["inchikey", "verdict", "pains", "toxicophore",
+                         "rating_in_cell", "rating_in_organism", "rating_count",
+                         "published_date", "source_db", "source"],
+    "compound_xref": ["resource", "xref", "inchikey"],
+    "target_class": ["target_key", "level", "ordinal", "value", "source_db", "source"],
+    "in_vivo_dose": ["inchikey", "organism", "dose_value", "dose_unit", "route",
+                     "dose_raw", "source_db", "source"],
+    "compound_reference": ["inchikey", "xref_id", "source_xref", "raw",
+                           "source_db", "source"],
+    "compound_annotation": ["inchikey", "property", "ordinal", "value",
+                            "source_db", "source"],
+    "rejected_record": ["stage", "reason", "label", "inchikey", "target_key", "raw",
+                        "source_db", "source"],
 }
 
 
@@ -721,11 +720,6 @@ def build_provenance(probe, reference):
     return out
 
 
-def build_bioactivity(probe, target, validation, reference=None):
-    """One row per parsed number that can be trusted (D15)."""
-    return split_bioactivity(probe, target, validation, reference)[0]
-
-
 def split_bioactivity(probe, target, validation, reference=None):
     """(loadable rows, held-back rows). One row per parsed number."""
     provenance = build_provenance(probe, reference)
@@ -807,119 +801,98 @@ def bioactivity_row_from(fragment, description="", inchikey="", target_key="",
     }
 
 
-def build_unsuitable(probe, chembl, reference, provenance=None):
-    """The portal's verdict on the compounds it has ruled out.
 
-    260 rows keyed on inchikey, which is a foreign key onto compound, so the
-    name, the SMILES and the ChEMBL ids are not repeated here. They carry no
-    target, no validation and no in vivo record, so nothing else is lost.
-    """
-    refs = ({} if reference is None or len(reference) == 0
-            else reference.groupby("probe_ix").ref.apply(
-                lambda s: "|".join(reference_url(v) for v in s)))
-    provenance = provenance or build_provenance(probe, reference)
-    rows = []
-    for row in probe[(probe.unsuitable == "Yes") & (probe.inchikey != "")].itertuples():
-        source, _, xref_id = provenance[row.probe_ix]
-        rows.append({"inchikey": row.inchikey,
-                     "portal_path": portal_source(row.url)[1],
-                     "published_date": row.published_date,
-                     "pains": row.pains, "toxicophore": row.toxicophore,
-                     "cansar_id": row.cansar_id,
-                     "rating_in_cell": row.rating_in_cell,
-                     "rating_in_organism": row.rating_in_organism,
-                     "rating_count": row.rating_count,
-                     "reference": refs.get(row.probe_ix, ""),
-                     "source_db": SOURCE_DB, "source": source,
-                     "xref_id": xref_id})
-    return rows
-
-
-def reference_url(value):
-    prefix, xref = reference_source(value)
-    return (prefix + xref) if prefix else xref
 
 # ------------------------------------------------------------ what is left
 
-def build_leftovers(probe, target, invivo, reference, control, validation=None):
-    """The records the schema has no column for, one list per file.
+def build_leftovers(probe, target, invivo, reference, control, validation=None,
+                    quarantined=()):
+    """Everything that is not a measurement, one list per file.
 
-    Written whether or not the schema ever grows the tables, so the count is on
-    disk rather than only in a log (D2, D3, D4, D5).
+    Every one names its source. An assessment is made by the *resource* and not
+    by a paper inside it -- no single reference rates a probe -- so those rows
+    carry source_db with an empty source, which is the one row per resource that
+    UNIQUE (source_db, source) allows.
     """
     keyed = set(probe.loc[probe.inchikey != "", "probe_ix"])
     key_of = dict(zip(probe.probe_ix, probe.inchikey))
     name_of = dict(zip(probe.probe_ix, probe.name))
-    path_of = {r.probe_ix: portal_source(r.url)[1] for r in probe.itertuples()}
+    resource = {"source_db": SOURCE_DB, "source": ""}
 
-    annotation = []
-    for row in probe[probe.inchikey != ""].itertuples():
-        for prop, value in (("rating_in_cell", row.rating_in_cell),
-                            ("rating_in_organism", row.rating_in_organism),
-                            ("rating_count", row.rating_count),
-                            ("unsuitable", row.unsuitable),
-                            ("pains", row.pains),
-                            ("toxicophore", row.toxicophore),
-                            ("published_date", row.published_date),
-                            ("canSAR_ID", row.cansar_id),
-                            ("url", row.url)):
-            annotation.append({"inchikey": row.inchikey, "source_db": SOURCE_DB,
-                               "property": prop, "ordinal": 0, "value": value})
-        # a resolved structure did not come from the portal and must say so
-        if row.structure_from:
-            annotation.append({"inchikey": row.inchikey, "source_db": row.structure_from,
-                               "property": "structure_source", "ordinal": 0,
-                               "value": row.structure_lookup})
-    for probe_ix, group in control[control.probe_ix.isin(keyed)].groupby("probe_ix"):
-        for ordinal, name in enumerate(group.control_name):
-            annotation.append({"inchikey": key_of[probe_ix], "source_db": SOURCE_DB,
-                               "property": "control_compound", "ordinal": ordinal,
-                               "value": name})
+    assessment = [
+        {"inchikey": row.inchikey,
+         "verdict": "unsuitable" if row.unsuitable == "Yes" else "recommended",
+         "pains": row.pains, "toxicophore": row.toxicophore,
+         "rating_in_cell": row.rating_in_cell,
+         "rating_in_organism": row.rating_in_organism,
+         "rating_count": row.rating_count,
+         "published_date": row.published_date, **resource}
+        for row in probe[probe.inchikey != ""].itertuples()]
 
-    # the taxonomy belongs to the portal's (probe, target) row, so one accession
-    # carries several values: keep every distinct one, numbered, rather than
-    # letting the last row seen win
+    xref = [{"resource": "canSAR", "xref": row.cansar_id, "inchikey": row.inchikey}
+            for row in probe[(probe.inchikey != "") & (probe.cansar_id != "")].itertuples()]
+
+    # one target is filed under several classes by different records, so every
+    # distinct value is kept and numbered rather than the last one winning
     distinct = {}
     for row in target[target.probe_ix.isin(keyed)].itertuples():
-        for prop, value in (("class", row.target_class), ("subClass", row.subclass)):
+        for level, value in (("class", row.target_class), ("subclass", row.subclass)):
             if value:
-                distinct.setdefault((row.uniprot_id, prop), [])
-                if value not in distinct[(row.uniprot_id, prop)]:
-                    distinct[(row.uniprot_id, prop)].append(value)
-    target_annotation = [
-        {"target_key": accession, "source_db": SOURCE_DB, "property": prop,
-         "ordinal": ordinal, "value": value}
-        for (accession, prop), values in sorted(distinct.items())
+                distinct.setdefault((row.uniprot_id, level), [])
+                if value not in distinct[(row.uniprot_id, level)]:
+                    distinct[(row.uniprot_id, level)].append(value)
+    target_class = [
+        {"target_key": accession, "level": level, "ordinal": ordinal, "value": value,
+         **resource}
+        for (accession, level), values in sorted(distinct.items())
         for ordinal, value in enumerate(values)]
 
-    in_vivo = []
+    doses = []
     for row in invivo[invivo.probe_ix.isin(keyed)].itertuples():
-        doses = parse_dose(row.dose) or [(None, None, None)]
-        for value, unit, route in doses:
-            in_vivo.append({"inchikey": key_of[row.probe_ix], "organism": row.organism,
-                            "dose_value": as_number(value), "dose_unit": unit or "",
-                            "route": route or "", "dose_raw": row.dose,
-                            "source_db": SOURCE_DB, "source": name_of[row.probe_ix]})
+        for value, unit, route in parse_dose(row.dose) or [(None, None, None)]:
+            doses.append({"inchikey": key_of[row.probe_ix], "organism": row.organism,
+                          "dose_value": as_number(value), "dose_unit": unit or "",
+                          "route": route or "", "dose_raw": row.dose, **resource})
 
     references = []
     for row in reference[reference.probe_ix.isin(keyed)].itertuples():
-        prefix, xref = reference_source(row.ref)
+        prefix, xref_value = reference_source(row.ref)
         references.append({"inchikey": key_of[row.probe_ix], "xref_id": prefix or "",
-                           "source_xref": xref, "raw": row.ref})
+                           "source_xref": xref_value, "raw": row.ref, **resource})
 
-    validations_per_probe = (validation.groupby("probe_ix").size()
-                             if validation is not None else {})
-    targets_per_probe = target.groupby("probe_ix").size()
-    skipped = [{"name": row.name, "source_db": SOURCE_DB,
-                "reason": "no InChIKey in the export and no structure resolved",
-                "portal_path": path_of[row.probe_ix],
-                "targets": targets_per_probe.get(row.probe_ix, 0),
-                "validations": (validations_per_probe.get(row.probe_ix, 0)
-                                if len(validations_per_probe) else "")}
-               for row in probe[probe.inchikey == ""].itertuples()]
+    # the escape hatch, and it should stay small: everything above used to live
+    # here as a key and a value
+    annotation = []
+    for probe_ix, group in control[control.probe_ix.isin(keyed)].groupby("probe_ix"):
+        for ordinal, control_name in enumerate(group.control_name):
+            annotation.append({"inchikey": key_of[probe_ix], "property": "control_compound",
+                               "ordinal": ordinal, "value": control_name, **resource})
+    for row in probe[(probe.inchikey != "") & (probe.structure_from != "")].itertuples():
+        annotation.append({"inchikey": row.inchikey, "property": "structure_source",
+                           "ordinal": 0, "value": row.structure_lookup, **resource})
 
-    return {"compound_annotation": annotation, "target_annotation": target_annotation,
-            "in_vivo": in_vivo, "reference": references, "skipped_compound": skipped}
+    per_probe = (validation.groupby("probe_ix").size() if validation is not None else {})
+    rejected = [
+        {"stage": "compound", "reason": "no structure in the export and none resolved",
+         "label": row.name, "inchikey": "", "target_key": "",
+         "raw": f"{portal_source(row.url)[1]}; "
+                f"{len(per_probe) and per_probe.get(row.probe_ix, 0)} validations",
+         **resource}
+        for row in probe[probe.inchikey == ""].itertuples()]
+    # a held-back row arrives either as a written quarantine row or straight
+    # from the parser, which calls the same field `quarantine`
+    rejected += [
+        {"stage": "bioactivity",
+         "reason": row.get("reason") or row.get("quarantine"),
+         "label": row.get("fragment", ""), "inchikey": row.get("inchikey", ""),
+         "target_key": row.get("target_key", ""), "raw": row.get("raw", ""),
+         **resource}
+        for row in quarantined]
+
+    return {"probe_assessment": assessment, "compound_xref": xref,
+            "target_class": target_class, "in_vivo_dose": doses,
+            "compound_reference": references, "compound_annotation": annotation,
+            "rejected_record": rejected}
 
 
 def write_table(path, rows, columns):
@@ -951,8 +924,6 @@ def write_staging(out, tables, leftovers=None, quarantined=None, probes=None):
     out = Path(out)
     everything = dict(tables)
     everything.update(leftovers or {})
-    if quarantined is not None:
-        everything["quarantine"] = quarantined
     written = {}
     for name in STAGING_FILES + EXTRA_FILES:
         written[name] = write_table(out / f"{PREFIX}{name}.tsv", everything.get(name, []),
@@ -975,22 +946,24 @@ def report(tables, leftovers=None, quarantined=None, probes=None):
     quarantined = [] if quarantined is None else quarantined
     counted = dict(tables)
     counted.update(leftovers)
-    counted["quarantine"] = quarantined
     written = {name: len(counted.get(name, [])) for name in STAGING_FILES + EXTRA_FILES}
 
-    compounds, skipped = written["compound"], written["skipped_compound"]
+    rejected = counted.get("rejected_record", [])
+    compounds = written["compound"]
+    skipped = sum(1 for row in rejected if row.get("stage") == "compound")
+    held = sum(1 for row in rejected if row.get("stage") == "bioactivity")
     counts = {
         "probes in": len(probes) if probes is not None else compounds + skipped,
         "compounds written": compounds,
         "compounds skipped": skipped,
         "targets written": written["target"],
         "bioactivity rows written": written["bioactivity"],
-        "rows held for curation": written["quarantine"],
+        "rows held for curation": held,
         "rows with no unit": sum(1 for r in tables.get("bioactivity", [])
                                  if not r.get("unit")),
-        "in vivo rows written": written["in_vivo"],
-        "reference rows written": written["reference"],
-        "unsuitable rows written": written["unsuitable"],
+        "in vivo rows written": written["in_vivo_dose"],
+        "reference rows written": written["compound_reference"],
+        "assessments written": written["probe_assessment"],
     }
     problems = []
     if probes is not None and compounds + skipped != len(probes):
@@ -1002,9 +975,9 @@ def report(tables, leftovers=None, quarantined=None, probes=None):
         return tuple(row.get(column) for column in
                      ("inchikey", "target_key", "value", "unit", "bioactivity_type"))
 
-    held = {measurement(row) for row in quarantined}
+    held_rows = {measurement(row) for row in quarantined}
     for row in tables.get("bioactivity", []):
-        if measurement(row) in held:
+        if measurement(row) in held_rows:
             problems.append(f"held back and written at once: {measurement(row)}")
     return {"counts": counts, "written": written, "problems": problems}
 
@@ -1031,11 +1004,9 @@ def preprocess(json_path, out, resolve=False):
         "target": build_target(mine),
         "uniprot": build_uniprot(mine),
         "bioactivity": rows,
-        "unsuitable": build_unsuitable(probe, frames["chembl"], frames["reference"],
-                                       provenance),
     }
     leftovers = build_leftovers(probe, target, frames["invivo"], frames["reference"],
-                               frames["control"], frames["validation"])
+                               frames["control"], frames["validation"], quarantined)
     return write_staging(out, tables, leftovers, quarantined, probes=probes)
 
 
@@ -1076,13 +1047,13 @@ def source_ids(db):
 # source_db/source and its target with the accession, the way bioactivity.tsv
 # does, so those are resolved to source_id and target_id on the way in.
 EXTRA_TABLES = {
-    "unsuitable": ("unsuitable", True, False),
-    "compound_annotation": ("compound_annotation", False, False),
-    "target_annotation": ("target_annotation", False, True),
-    "in_vivo": ("in_vivo", True, False),
-    "reference": ("compound_reference", False, False),
-    "quarantine": ("quarantine", True, True),
-    "skipped_compound": ("skipped_compound", False, False),
+    "probe_assessment": ("probe_assessment", True, False),
+    "compound_xref": ("compound_xref", False, False),
+    "target_class": ("target_class", True, True),
+    "in_vivo_dose": ("in_vivo_dose", True, False),
+    "compound_reference": ("compound_reference", True, False),
+    "compound_annotation": ("compound_annotation", True, False),
+    "rejected_record": ("rejected_record", True, True),
 }
 
 
@@ -1107,7 +1078,9 @@ def load_extra(db, out):
                     sources[key] = db.add_source(key[0], key[1], row.get("xref_id"))
                 values["source_id"] = sources[key]
             if has_target:
-                values["target_id"] = targets.get(row.get("target_key"))
+                target_id = targets.get(row.get("target_key"))
+                if target_id is not None:
+                    values["target_id"] = target_id
             db.insert(table, **values)
             count += 1
         loaded[table] = count
@@ -1115,9 +1088,6 @@ def load_extra(db, out):
     return loaded
 
 
-def load_unsuitable(db, out):
-    """Kept for the tests that name it: the verdicts are one of the extra tables."""
-    return load_extra(db, out)["unsuitable"]
 
 
 def load_collapsed(db, out):

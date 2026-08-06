@@ -1,0 +1,1451 @@
+inchikey	organism	dose_value	dose_unit	route	dose_raw	source_db	source
+QMDKVNSQXPVCRD-RQNOJGIXSA-N	Other	5	mg/mL		5 mg/mL	Chemical Probes Portal	
+ZHMXXVNQAFCXKK-QGZVFWFLSA-N	Other				1,3, 10 (IV) mg/Kg; , 30, 100, 300 (PO) mg/Kg	Chemical Probes Portal	
+TXGKRVFSSHPBAJ-JKSUJKDBSA-N	Other	30	mg/kg		30 mg/kg	Chemical Probes Portal	
+XCFLWTZSJYBCPF-UHFFFAOYSA-N	Other	0.5	mg/kg		0.5 mg/kg	Chemical Probes Portal	
+XSMSNFMDVXXHGJ-UHFFFAOYSA-N	Other				0.4 (IV), 1 (PO) mg/Kg	Chemical Probes Portal	
+ISOCDPQFIXDIMS-HSZRJFAPSA-N	Other	30	mg/kg		30-300 mg/Kg	Chemical Probes Portal	
+GZFYZYBWLCYBMI-MYZJJQSMSA-N	Other	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+HHKGVQGXRGQBBA-UHFFFAOYSA-N	Other	1	mg/kg	IV	1 mg/kg (IV), 10 mg/kg (oral)	Chemical Probes Portal	
+HHKGVQGXRGQBBA-UHFFFAOYSA-N	Other	10	mg/kg	PO	1 mg/kg (IV), 10 mg/kg (oral)	Chemical Probes Portal	
+UOVSZRTTWLJPHE-HNXAPSNLSA-N	Other	10	mg/kg	PO	10 mg/kg (oral)	Chemical Probes Portal	
+CGCOPBXAGSCZNX-FNQJWKMRSA-N	Other	10	mg/kg		10 mg/Kg QD	Chemical Probes Portal	
+ARYVAQSYRLZVQD-UHFFFAOYSA-N	Other	10	mg/kg		10 mg/kg	Chemical Probes Portal	
+SAGZIBJAQGBRQA-UHFFFAOYSA-N	Other	2	mg/kg		2 mg/kg, 4 mg/kg	Chemical Probes Portal	
+SAGZIBJAQGBRQA-UHFFFAOYSA-N	Other	4	mg/kg		2 mg/kg, 4 mg/kg	Chemical Probes Portal	
+ATUUNJCZCOMUKD-OKILXGFUSA-N	Other	30	mg/kg	PO	30 mg/Kg Oral, 2 mg/Kg IV	Chemical Probes Portal	
+ATUUNJCZCOMUKD-OKILXGFUSA-N	Other	2	mg/kg	IV	30 mg/Kg Oral, 2 mg/Kg IV	Chemical Probes Portal	
+KMESAVNRPDKZCQ-UHFFFAOYSA-N	Other	1.2	mg/kg	IV	1.2 mg/Kg IV, 3 mg/Kg PO	Chemical Probes Portal	
+KMESAVNRPDKZCQ-UHFFFAOYSA-N	Other	3	mg/kg	PO	1.2 mg/Kg IV, 3 mg/Kg PO	Chemical Probes Portal	
+ZDOBSAPHUUUOHX-OSYLJGHBSA-N	Other	10	mg/kg	PO	10 mg/Kg PO, 1 mg/Kg IV	Chemical Probes Portal	
+ZDOBSAPHUUUOHX-OSYLJGHBSA-N	Other	1	mg/kg	IV	10 mg/Kg PO, 1 mg/Kg IV	Chemical Probes Portal	
+BTSUNSRQYLVGIS-ADTYUTHVSA-N	Other	10	mg/kg		10 mg/Kg (not effective), 25 mg/Kg	Chemical Probes Portal	
+BTSUNSRQYLVGIS-ADTYUTHVSA-N	Other	25	mg/kg		10 mg/Kg (not effective), 25 mg/Kg	Chemical Probes Portal	
+JQNINBDKGLWYMU-GEAQBIRJSA-N	Other	60	mg/kg		30 and 60 mg/Kg , 50 and 100 mg/Kg	Chemical Probes Portal	
+JQNINBDKGLWYMU-GEAQBIRJSA-N	Other	100	mg/kg		30 and 60 mg/Kg , 50 and 100 mg/Kg	Chemical Probes Portal	
+VSZRYLHBOKTNBO-UHFFFAOYSA-N	Other	10	mg/kg		0.1-1-3-10-30 mg/Kg	Chemical Probes Portal	
+CGECJCJUHCZZGO-UHFFFAOYSA-N	Other	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+OTKTZEZTFCAULO-DEOSSOPVSA-N	Other	10	mg/kg		1, 3, 10 mg/Kg	Chemical Probes Portal	
+XMNLWOQHMQRHDV-UHFFFAOYSA-N	Other	2	mg/kg	IV	2 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+XMNLWOQHMQRHDV-UHFFFAOYSA-N	Other	10	mg/kg	PO	2 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+BATCTBJIJJEPHM-UHFFFAOYSA-N	Other	1	mg/kg	PO	1 mg/Kg PO, 0.5 mg/Kg IV	Chemical Probes Portal	
+BATCTBJIJJEPHM-UHFFFAOYSA-N	Other	0.5	mg/kg	IV	1 mg/Kg PO, 0.5 mg/Kg IV	Chemical Probes Portal	
+QCQQONWEDCOTBV-UHFFFAOYSA-N	Other	5	mg/kg		5-30 mg/Kg	Chemical Probes Portal	
+XUYMIRYNRKXKOR-HMHJJOSWSA-N	Other	15	mg/kg		15-100 mg/Kg	Chemical Probes Portal	
+WUJVPELCYCESAP-UHFFFAOYSA-N	Other	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+ZLTQCDRXWXUYHJ-UHFFFAOYSA-N	Mouse	3	mg/kg	PO	3 mg/kg (oral), 1 mg/kg (IV)	Chemical Probes Portal	
+ZLTQCDRXWXUYHJ-UHFFFAOYSA-N	Mouse	1	mg/kg	IV	3 mg/kg (oral), 1 mg/kg (IV)	Chemical Probes Portal	
+NBTNHSGBRGTFJS-UHFFFAOYSA-N	Rat	5	mg/kg		5 mg/kg	Chemical Probes Portal	
+KYWWJENKIMRJBI-UHFFFAOYSA-N	Other	50	mg/kg		30 (r), 50 (m) mg/kg/day, 15, 50 mg/Kg (R), 20, 60, and 120 mg/kg/day (ham), 50 mg/Kg (mon)Rab	Chemical Probes Portal	
+KYWWJENKIMRJBI-UHFFFAOYSA-N	Other	120	mg/kg/day		30 (r), 50 (m) mg/kg/day, 15, 50 mg/Kg (R), 20, 60, and 120 mg/kg/day (ham), 50 mg/Kg (mon)Rab	Chemical Probes Portal	
+KYWWJENKIMRJBI-UHFFFAOYSA-N	Other	50	mg/kg		30 (r), 50 (m) mg/kg/day, 15, 50 mg/Kg (R), 20, 60, and 120 mg/kg/day (ham), 50 mg/Kg (mon)Rab	Chemical Probes Portal	
+MPASHPJAIUOWCK-UHFFFAOYSA-N	Rat	100	mg/kg		25, 50, 100 mg/Kg	Chemical Probes Portal	
+JVCWPUFNLFSKFS-UHFFFAOYSA-N	Mouse	30	mg/kg		3, 10, 30 mg/Kg	Chemical Probes Portal	
+KHWCPNJRJCNVRI-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/kg	Chemical Probes Portal	
+ZGBAJMQHJDFTQJ-DEOSSOPVSA-N	Mouse	30	mg/kg		30 mg/kg	Chemical Probes Portal	
+TXEBNKKOLVBTFK-UHFFFAOYSA-N	Other	100	mg/kg		10, 30 and 100 mg/kg	Chemical Probes Portal	
+CQCWHSDMJBAGDC-UHFFFAOYSA-N	Other	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO, 5-10-30 mg/Kg PO BID, Reviewer suggested: max 30 mg/Kg	Chemical Probes Portal	
+CQCWHSDMJBAGDC-UHFFFAOYSA-N	Other	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO, 5-10-30 mg/Kg PO BID, Reviewer suggested: max 30 mg/Kg	Chemical Probes Portal	
+CQCWHSDMJBAGDC-UHFFFAOYSA-N	Other	10	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO, 5-10-30 mg/Kg PO BID, Reviewer suggested: max 30 mg/Kg	Chemical Probes Portal	
+CQCWHSDMJBAGDC-UHFFFAOYSA-N	Other	10	mg/kg		1 mg/Kg IV, 5 mg/Kg PO, 5-10-30 mg/Kg PO BID, Reviewer suggested: max 30 mg/Kg	Chemical Probes Portal	
+DSUZLJDXUJUTGI-LLVKDONJSA-N	Mouse	1	mg/kg	IV	1 mg/Kg (IV), 10 mg/Kg (PO)	Chemical Probes Portal	
+DSUZLJDXUJUTGI-LLVKDONJSA-N	Mouse	10	mg/kg	PO	1 mg/Kg (IV), 10 mg/Kg (PO)	Chemical Probes Portal	
+VWEDZTZAXHMZIL-UHFFFAOYSA-N	Mouse	0.1	mg/kg		0.1 to 10 mg/Kg	Chemical Probes Portal	
+PKCDDUHJAFVJJB-VLZXCDOPSA-N	Other	5	mg/kg		5 mg/kg, 50-75 mg/Kg Oral (Reviewer Suggested)	Chemical Probes Portal	
+PKCDDUHJAFVJJB-VLZXCDOPSA-N	Other	50	mg/kg	PO	5 mg/kg, 50-75 mg/Kg Oral (Reviewer Suggested)	Chemical Probes Portal	
+JGQPZPLJOBHHBK-UFXYQILXSA-N	Mouse	10	mg/kg		10 mg/Kg, Reviewers suggest: 7.5 mg/Kg BID	Chemical Probes Portal	
+JGQPZPLJOBHHBK-UFXYQILXSA-N	Mouse	7.5	mg/kg		10 mg/Kg, Reviewers suggest: 7.5 mg/Kg BID	Chemical Probes Portal	
+XSMABFRQESMONQ-SFHVURJKSA-N	Mouse	50	mg/kg		5 , 10, 25, 50 mg/Kg	Chemical Probes Portal	
+NGEBYTLALFOQKI-HDJSIYSDSA-N	Other	20	mg/kg		0.5 (M), 2 (R), 1 (D) mg/kg IV, 1 (M), 5 (R), 1 (D) mg/kg PO, Reviewer suggest: 20 mg/Kg (M), 0.5-5 mg/Kg (R)	Chemical Probes Portal	
+NGEBYTLALFOQKI-HDJSIYSDSA-N	Other	0.5	mg/kg		0.5 (M), 2 (R), 1 (D) mg/kg IV, 1 (M), 5 (R), 1 (D) mg/kg PO, Reviewer suggest: 20 mg/Kg (M), 0.5-5 mg/Kg (R)	Chemical Probes Portal	
+RENRQMCACQEWFC-UGKGYDQZSA-N	Other	1	mg/kg		1 to 30 mg/Kg (R), 0.1 to 10 mg/Kg (D), 1 (IV), 10 (PO) mg/Kg (m)	Chemical Probes Portal	
+RENRQMCACQEWFC-UGKGYDQZSA-N	Other	0.1	mg/kg	IV	1 to 30 mg/Kg (R), 0.1 to 10 mg/Kg (D), 1 (IV), 10 (PO) mg/Kg (m)	Chemical Probes Portal	
+JKCSCHXVWPSGBG-OPKPGBGESA-N	Mouse	25	mg/kg		25 mg/Kg, 50 mg/Kg, 100 mg/Kg	Chemical Probes Portal	
+JKCSCHXVWPSGBG-OPKPGBGESA-N	Mouse	50	mg/kg		25 mg/Kg, 50 mg/Kg, 100 mg/Kg	Chemical Probes Portal	
+JKCSCHXVWPSGBG-OPKPGBGESA-N	Mouse	100	mg/kg		25 mg/Kg, 50 mg/Kg, 100 mg/Kg	Chemical Probes Portal	
+MPMKMQHJHDHPBE-RUZDIDTESA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 5-30 mg/Kg PO	Chemical Probes Portal	
+MPMKMQHJHDHPBE-RUZDIDTESA-N	Rat	5	mg/kg	PO	1 mg/Kg IV, 5-30 mg/Kg PO	Chemical Probes Portal	
+HNLHOKSDTBAERS-CWIPYCOQSA-N	Other	0.5	mg/kg	IV	0.5 mg/Kg (IV), 5 mg/Kg (PO)	Chemical Probes Portal	
+HNLHOKSDTBAERS-CWIPYCOQSA-N	Other	5	mg/kg	PO	0.5 mg/Kg (IV), 5 mg/Kg (PO)	Chemical Probes Portal	
+MXUSGDMIHGLCNC-HNNXBMFYSA-N	Other	10	mg/kg	PO	10 mg/Kg PO, 3 mg/Kg IV	Chemical Probes Portal	
+MXUSGDMIHGLCNC-HNNXBMFYSA-N	Other	3	mg/kg	IV	10 mg/Kg PO, 3 mg/Kg IV	Chemical Probes Portal	
+LXRZVMYMQHNYJB-UNXOBOICSA-N	Rat				1 (IV), 10 (PO) mg/Kg	Chemical Probes Portal	
+RUPXKSLKGSSZCP-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+ONBSHRSJOPSEGS-INIZCTEOSA-N	Other	3	mg/kg	IV	3 mg/Kg (IV), 10 mg/Kg (PO)	Chemical Probes Portal	
+ONBSHRSJOPSEGS-INIZCTEOSA-N	Other	10	mg/kg	PO	3 mg/Kg (IV), 10 mg/Kg (PO)	Chemical Probes Portal	
+TVTXCJFHQKSQQM-LJQIRTBHSA-N	Mouse	50	mg/kg	PO	50 mg/kg (oral); 5 mg/kg (IV)	Chemical Probes Portal	
+TVTXCJFHQKSQQM-LJQIRTBHSA-N	Mouse	5	mg/kg	IV	50 mg/kg (oral); 5 mg/kg (IV)	Chemical Probes Portal	
+GBJVVSCPOBPEIT-UHFFFAOYSA-N	Mouse	150	mg/kg		150 mg/kg	Chemical Probes Portal	
+NBOJHRYUGLRASX-UHFFFAOYSA-N	Other	10	mg/kg	IP	10 mg/Kg IP, 1-30 mg/Kg PO	Chemical Probes Portal	
+NBOJHRYUGLRASX-UHFFFAOYSA-N	Other	1	mg/kg	PO	10 mg/Kg IP, 1-30 mg/Kg PO	Chemical Probes Portal	
+IDKAKZRYYDCJDU-HBMMIIHUSA-N	Mouse	25	mg/kg		25-200 mg/kg	Chemical Probes Portal	
+SGIWFELWJPNFDH-UHFFFAOYSA-N	Mouse	10	mg/kg	PO	10 mg/Kg PO, 20 mg/Kg IP, 50 mg/Kg IP	Chemical Probes Portal	
+SGIWFELWJPNFDH-UHFFFAOYSA-N	Mouse	20	mg/kg	IP	10 mg/Kg PO, 20 mg/Kg IP, 50 mg/Kg IP	Chemical Probes Portal	
+SGIWFELWJPNFDH-UHFFFAOYSA-N	Mouse	50	mg/kg	IP	10 mg/Kg PO, 20 mg/Kg IP, 50 mg/Kg IP	Chemical Probes Portal	
+QADPYRIHXKWUSV-UHFFFAOYSA-N	Mouse				5 IV, 20 PO mg/Kg	Chemical Probes Portal	
+YYDUWLSETXNJJT-MTJSOVHGSA-N	Other	50	mg/kg		50-100 mg/Kg	Chemical Probes Portal	
+BLNNXJOEJRKHAM-UHFFFAOYSA-N	Mouse	30	ug		30 ug	Chemical Probes Portal	
+ZMNWFTYYYCSSTF-SOAUALDESA-N	Other	10	mg/kg	PO	10 mg/Kg PO, 5 mg/Kg IV	Chemical Probes Portal	
+ZMNWFTYYYCSSTF-SOAUALDESA-N	Other	5	mg/kg	IV	10 mg/Kg PO, 5 mg/Kg IV	Chemical Probes Portal	
+LXFOLMYKSYSZQS-XKHGBIBOSA-N	Other	20	mg/kg		20 mg/kg (mice), 1 mg/kg (rat)	Chemical Probes Portal	
+LXFOLMYKSYSZQS-XKHGBIBOSA-N	Other	1	mg/kg		20 mg/kg (mice), 1 mg/kg (rat)	Chemical Probes Portal	
+XQFINGFCBFHOPE-WXUXXXNLSA-N	Other	30	mg/kg		30 mg/kg - 300 mg/kg (R), 125 - 1000 mg/kg (M)	Chemical Probes Portal	
+XQFINGFCBFHOPE-WXUXXXNLSA-N	Other	300	mg/kg		30 mg/kg - 300 mg/kg (R), 125 - 1000 mg/kg (M)	Chemical Probes Portal	
+XQFINGFCBFHOPE-WXUXXXNLSA-N	Other	125	mg/kg		30 mg/kg - 300 mg/kg (R), 125 - 1000 mg/kg (M)	Chemical Probes Portal	
+RDALZZCKQFLGJP-UHFFFAOYSA-N	Mouse				3 (IV)- 100 (PO) mg/Kg	Chemical Probes Portal	
+JBHLOPKIPKTRSU-UHFFFAOYSA-N	Other	1	mg/kg		1-10 mg/Kg	Chemical Probes Portal	
+LQSHXYHWYGKAMX-FQEVSTJZSA-N	Other	5	mg/kg		5 mg/Kg, Reviewer suggests higher than 100-200 mg/Kg PO	Chemical Probes Portal	
+LQSHXYHWYGKAMX-FQEVSTJZSA-N	Other	100	mg/kg	PO	5 mg/Kg, Reviewer suggests higher than 100-200 mg/Kg PO	Chemical Probes Portal	
+AQTPWCUIYUOEMG-INIZCTEOSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+JFGOILLZIAIYGA-UHFFFAOYSA-N	Mouse	25	mg/kg		25 mg/Kg	Chemical Probes Portal	
+RPMGXDCRCWWCRY-JTQLQIEISA-N	Other	25	mg/kg		25 mg/Kg, 250 mg/Kg	Chemical Probes Portal	
+RPMGXDCRCWWCRY-JTQLQIEISA-N	Other	250	mg/kg		25 mg/Kg, 250 mg/Kg	Chemical Probes Portal	
+RIJLVEAXPNLDTC-UHFFFAOYSA-N	Rat	1	mg/kg	IV	1 mg/kg (IV); 5 mg/kg (oral)	Chemical Probes Portal	
+RIJLVEAXPNLDTC-UHFFFAOYSA-N	Rat	5	mg/kg	PO	1 mg/kg (IV); 5 mg/kg (oral)	Chemical Probes Portal	
+HWGQMRYQVZSGDQ-HZPDHXFCSA-N	Mouse	1	mg/kg		1 mg/kg	Chemical Probes Portal	
+SEDFZSHSBUXKAC-NIYFSFCBSA-N	Other	1	mg/kg	IV	1.0 mg/Kg IV, 5.0 mg/Kg PO (M), 0.5 mg/Kg IV, 1.0 mg/Kg PO (D), 1.0 mg/Kg IV, 5.0 mg/Kg PO (R)	Chemical Probes Portal	
+SEDFZSHSBUXKAC-NIYFSFCBSA-N	Other	5	mg/kg	PO	1.0 mg/Kg IV, 5.0 mg/Kg PO (M), 0.5 mg/Kg IV, 1.0 mg/Kg PO (D), 1.0 mg/Kg IV, 5.0 mg/Kg PO (R)	Chemical Probes Portal	
+SEDFZSHSBUXKAC-NIYFSFCBSA-N	Other	0.5	mg/kg	IV	1.0 mg/Kg IV, 5.0 mg/Kg PO (M), 0.5 mg/Kg IV, 1.0 mg/Kg PO (D), 1.0 mg/Kg IV, 5.0 mg/Kg PO (R)	Chemical Probes Portal	
+SEDFZSHSBUXKAC-NIYFSFCBSA-N	Other	1	mg/kg	PO	1.0 mg/Kg IV, 5.0 mg/Kg PO (M), 0.5 mg/Kg IV, 1.0 mg/Kg PO (D), 1.0 mg/Kg IV, 5.0 mg/Kg PO (R)	Chemical Probes Portal	
+SEDFZSHSBUXKAC-NIYFSFCBSA-N	Other	1	mg/kg	IV	1.0 mg/Kg IV, 5.0 mg/Kg PO (M), 0.5 mg/Kg IV, 1.0 mg/Kg PO (D), 1.0 mg/Kg IV, 5.0 mg/Kg PO (R)	Chemical Probes Portal	
+SEDFZSHSBUXKAC-NIYFSFCBSA-N	Other	5	mg/kg	PO	1.0 mg/Kg IV, 5.0 mg/Kg PO (M), 0.5 mg/Kg IV, 1.0 mg/Kg PO (D), 1.0 mg/Kg IV, 5.0 mg/Kg PO (R)	Chemical Probes Portal	
+ZOPNBMMVVZRSGH-NRFANRHFSA-N	Other				0.8 (M), 0.5 (R) 0.5 (D) 0.5 (C) mg/Kg IV, 5 (M), 0.5 (R) 2 (D) 0.5 (C) mg/Kg PO	Chemical Probes Portal	
+BWYBBMQLUKXECQ-GIVPXCGWSA-N	Other	3	mg/kg		1-2 (IV), 2-4 (PO) mg/Kg, Reviewer Suggest 3-30 mg/Kg	Chemical Probes Portal	
+CVWXJKQAOSCOAB-UHFFFAOYSA-N	Mouse	10	mg/mL		10 mg/mL	Chemical Probes Portal	
+VRVJKILQRBSEAG-LFPIHBKWSA-N	Mouse	500	mg/kg		50, 100, 200, 500 mg/kg	Chemical Probes Portal	
+UQRCJCNVNUFYDX-UHFFFAOYSA-N	Mouse	50	mg/kg		50-200 mg/Kg	Chemical Probes Portal	
+LWXLECMNBTVASW-UHFFFAOYSA-N	Other	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+LWXLECMNBTVASW-UHFFFAOYSA-N	Other	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+AILRADAXUVEEIR-UHFFFAOYSA-N	Other	10	mg/kg		3, 10 mg/Kg	Chemical Probes Portal	
+HUFOZJXAKZVRNJ-UHFFFAOYSA-N	Mouse	3	mg/kg		3-100 mg/Kg	Chemical Probes Portal	
+GHVMTHKJUAOZJP-CGTJXYLNSA-N	Other	100	mg/kg		100 mg/Kg	Chemical Probes Portal	
+ZEGMEJVULDALSH-NSHDSACASA-N	Other				0.1, 1, 3 (IV) mg/Kg, 0.3, 3, 10 (PO) mg/Kg	Chemical Probes Portal	
+SNCRCEGCQVMUBS-DNVCBOLYSA-N	Rat	10	mg/kg		10 mg/kg	Chemical Probes Portal	
+ORDHXXHTBUZRCN-NTEUORMPSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+ORDHXXHTBUZRCN-NTEUORMPSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+ORDHXXHTBUZRCN-NTEUORMPSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+ORDHXXHTBUZRCN-NTEUORMPSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+ORDHXXHTBUZRCN-NTEUORMPSA-N	Dog	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+ORDHXXHTBUZRCN-NTEUORMPSA-N	Dog	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+ORDHXXHTBUZRCN-NTEUORMPSA-N	Monkey (Rheus)	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+ORDHXXHTBUZRCN-NTEUORMPSA-N	Monkey (Rheus)	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+CUBDGLIBZGKXKQ-ZBLYBZFDSA-N	Rat	0.5	mg/kg		0.5 mg/kg	Chemical Probes Portal	
+CUBDGLIBZGKXKQ-ZBLYBZFDSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+CUBDGLIBZGKXKQ-ZBLYBZFDSA-N	Dog	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+CUBDGLIBZGKXKQ-ZBLYBZFDSA-N	Dog	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+CUBDGLIBZGKXKQ-ZBLYBZFDSA-N	Monkey (Cynomolgus)	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+CUBDGLIBZGKXKQ-ZBLYBZFDSA-N	Monkey (Cynomolgus)	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+XPLWBHWPOUEOSJ-GSZYCOFVSA-N	Rat	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+XPLWBHWPOUEOSJ-GSZYCOFVSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+XPLWBHWPOUEOSJ-GSZYCOFVSA-N	Monkey (Cynomolgus)	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+XPLWBHWPOUEOSJ-GSZYCOFVSA-N	Monkey (Cynomolgus)	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+YSVWFFNZZGLLAI-XNTOLAJGSA-N	Rat	30	nM/kg		30 nM/kg	Chemical Probes Portal	
+JYTIXGYXBIBOMN-UHFFFAOYSA-N	Other	3	mg/kg	PO	IV: 3 mg/Kg PO: 10 mg/kg (M) IV: 5 mg/kg / PO: 10 mg/kg (R), IV: 0.5 mg/kg / PO: 2 mg/kg (D)	Chemical Probes Portal	
+JYTIXGYXBIBOMN-UHFFFAOYSA-N	Other	10	mg/kg	IV	IV: 3 mg/Kg PO: 10 mg/kg (M) IV: 5 mg/kg / PO: 10 mg/kg (R), IV: 0.5 mg/kg / PO: 2 mg/kg (D)	Chemical Probes Portal	
+JYTIXGYXBIBOMN-UHFFFAOYSA-N	Other	5	mg/kg	PO	IV: 3 mg/Kg PO: 10 mg/kg (M) IV: 5 mg/kg / PO: 10 mg/kg (R), IV: 0.5 mg/kg / PO: 2 mg/kg (D)	Chemical Probes Portal	
+JYTIXGYXBIBOMN-UHFFFAOYSA-N	Other	10	mg/kg	IV	IV: 3 mg/Kg PO: 10 mg/kg (M) IV: 5 mg/kg / PO: 10 mg/kg (R), IV: 0.5 mg/kg / PO: 2 mg/kg (D)	Chemical Probes Portal	
+JYTIXGYXBIBOMN-UHFFFAOYSA-N	Other	0.5	mg/kg	PO	IV: 3 mg/Kg PO: 10 mg/kg (M) IV: 5 mg/kg / PO: 10 mg/kg (R), IV: 0.5 mg/kg / PO: 2 mg/kg (D)	Chemical Probes Portal	
+JYTIXGYXBIBOMN-UHFFFAOYSA-N	Other	2	mg/kg		IV: 3 mg/Kg PO: 10 mg/kg (M) IV: 5 mg/kg / PO: 10 mg/kg (R), IV: 0.5 mg/kg / PO: 2 mg/kg (D)	Chemical Probes Portal	
+KLHOCHQJHXNKAS-UHFFFAOYSA-N	Mouse	20	mg/kg		20 mg/kg	Chemical Probes Portal	
+IFRGXKKQHBVPCQ-UHFFFAOYSA-N	Mouse	2	mg/kg		2-60 mg/Kg	Chemical Probes Portal	
+BKLJDIJJOOQUFG-UHFFFAOYSA-N	Rat	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+BKLJDIJJOOQUFG-UHFFFAOYSA-N	Rat	0.6	mg/kg		0.6 mg/Kg	Chemical Probes Portal	
+BKLJDIJJOOQUFG-UHFFFAOYSA-N	Dog	0.1	mg/kg		0.1 mg/Kg	Chemical Probes Portal	
+BKLJDIJJOOQUFG-UHFFFAOYSA-N	Dog	0.2	mg/kg		0.2 mg/Kg	Chemical Probes Portal	
+FYQFEJFTCLKXTQ-UHFFFAOYSA-N	Mouse	60	mg/kg/day		30, 60 mg/Kg/day	Chemical Probes Portal	
+RRELDGDKULRRDM-UHFFFAOYSA-N	Mouse	0.1	mg/kg	IV	0.1 mg/kg IV, 1 mg/kg PO	Chemical Probes Portal	
+RRELDGDKULRRDM-UHFFFAOYSA-N	Mouse	1	mg/kg	PO	0.1 mg/kg IV, 1 mg/kg PO	Chemical Probes Portal	
+IYHHRZBKXXKDDY-UHFFFAOYSA-N	Mouse	1	mg/kg	IV	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+IYHHRZBKXXKDDY-UHFFFAOYSA-N	Mouse	10	mg/kg	PO	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+IYHHRZBKXXKDDY-UHFFFAOYSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+IYHHRZBKXXKDDY-UHFFFAOYSA-N	Rat	10	mg/kg	PO	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+IYHHRZBKXXKDDY-UHFFFAOYSA-N	Dog	1	mg/kg	IV	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+IYHHRZBKXXKDDY-UHFFFAOYSA-N	Dog	10	mg/kg	PO	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+IYHHRZBKXXKDDY-UHFFFAOYSA-N	Monkey (Cynomolgus)	1	mg/kg	IV	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+IYHHRZBKXXKDDY-UHFFFAOYSA-N	Monkey (Cynomolgus)	10	mg/kg	PO	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+DYUTWRFEEOPXMN-UHFFFAOYSA-N	Rat	0.2	mg/kg		0.2 mg/Kg	Chemical Probes Portal	
+DYUTWRFEEOPXMN-UHFFFAOYSA-N	Rat	0.6	mg/kg		0.6 mg/Kg	Chemical Probes Portal	
+AUYCSWFYKYVCLD-HXUWFJFHSA-N	Mouse	1	mg/kg	IV	1 mg/Kg IV and PO	Chemical Probes Portal	
+AUYCSWFYKYVCLD-HXUWFJFHSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV and PO	Chemical Probes Portal	
+AUYCSWFYKYVCLD-HXUWFJFHSA-N	Dog	1	mg/kg	IV	1 mg/Kg IV and PO	Chemical Probes Portal	
+AUYCSWFYKYVCLD-HXUWFJFHSA-N	Monkey (Cynomolgus)	1	mg/kg	IV	1 mg/Kg IV and PO	Chemical Probes Portal	
+OEDSFMUSNZDJFD-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/kg	Chemical Probes Portal	
+QMHRLXNEGYTSRV-UHFFFAOYSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+QMHRLXNEGYTSRV-UHFFFAOYSA-N	Rat	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+QMHRLXNEGYTSRV-UHFFFAOYSA-N	Dog	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+QMHRLXNEGYTSRV-UHFFFAOYSA-N	Dog	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+QMHRLXNEGYTSRV-UHFFFAOYSA-N	Rat					Chemical Probes Portal	
+LQEHCKYYIXQEBM-FUKIBTTHSA-N	Rat	5	mg/kg	IV	5 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+LQEHCKYYIXQEBM-FUKIBTTHSA-N	Rat	10	mg/kg	PO	5 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+LQEHCKYYIXQEBM-FUKIBTTHSA-N	Dog	5	mg/kg	IV	5 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+LQEHCKYYIXQEBM-FUKIBTTHSA-N	Dog	10	mg/kg	PO	5 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+LQEHCKYYIXQEBM-FUKIBTTHSA-N	Monkey (Cynomolgus)	5	mg/kg	IV	5 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+LQEHCKYYIXQEBM-FUKIBTTHSA-N	Monkey (Cynomolgus)	10	mg/kg	PO	5 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+CSJYMAFXYMYNCK-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+CSJYMAFXYMYNCK-UHFFFAOYSA-N	Rat	2	mg/kg		2 mg/kg	Chemical Probes Portal	
+ILHNIWOZZKIBNW-UHFFFAOYSA-N	Rat	3	mg/kg		3 mg/kg	Chemical Probes Portal	
+OAMLIJKKGZLNHE-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/kg	Chemical Probes Portal	
+OAMLIJKKGZLNHE-UHFFFAOYSA-N	Monkey (Rheus)	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+JTCAGRAKUAAYDY-OAHLLOKOSA-N	Rat	5	mg/kg	PO	5 mg/Kg PO, 1 mg/Kg IV	Chemical Probes Portal	
+JTCAGRAKUAAYDY-OAHLLOKOSA-N	Rat	1	mg/kg	IV	5 mg/Kg PO, 1 mg/Kg IV	Chemical Probes Portal	
+JTCAGRAKUAAYDY-OAHLLOKOSA-N	Dog	5	mg/kg	PO	5 mg/Kg PO, 1 mg/Kg IV	Chemical Probes Portal	
+JTCAGRAKUAAYDY-OAHLLOKOSA-N	Dog	1	mg/kg	IV	5 mg/Kg PO, 1 mg/Kg IV	Chemical Probes Portal	
+FSWFYCYPTDLKON-CMJOXMDJSA-N	Rat				0.52 (IV), 1.04 (PO) mg/Kg	Chemical Probes Portal	
+FSWFYCYPTDLKON-CMJOXMDJSA-N	Monkey (Cynomolgus)				0.50 (IV), 1.50 (PO) mg/Kg	Chemical Probes Portal	
+FSWFYCYPTDLKON-CMJOXMDJSA-N	Other					Chemical Probes Portal	
+SKZQFKBIJUXXCG-INIZCTEOSA-N	Rat	1	mg/kg		1 mg/kg	Chemical Probes Portal	
+SKZQFKBIJUXXCG-INIZCTEOSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+TVGAHWWPABTBCX-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+TVGAHWWPABTBCX-UHFFFAOYSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+TVGAHWWPABTBCX-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FRBRZGLUFOZRGD-JVPBZIDWSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FRBRZGLUFOZRGD-JVPBZIDWSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+FRBRZGLUFOZRGD-JVPBZIDWSA-N	Dog	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+FRBRZGLUFOZRGD-JVPBZIDWSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+PXQATVYJKMMHAU-UHFFFAOYSA-N	Rat					Chemical Probes Portal	
+PXQATVYJKMMHAU-UHFFFAOYSA-N	Dog					Chemical Probes Portal	
+PXQATVYJKMMHAU-UHFFFAOYSA-N	Monkey (Cynomolgus)					Chemical Probes Portal	
+YNFDIGJKJPNFFD-SJORKVTESA-N	Rat	4	mg/kg		4 mg/kg	Chemical Probes Portal	
+RPHDOVLXDYWDGF-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/kg	Chemical Probes Portal	
+KVJFJJXCBRSCDY-UHFFFAOYSA-N	Mouse	100	mg/kg		100 mg/Kg BID	Chemical Probes Portal	
+PGIVGIFOWOVINL-GOSISDBHSA-N	Rat	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+WZQLVEPIBAOOGF-RMMWZPCPSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+WZQLVEPIBAOOGF-RMMWZPCPSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+WZQLVEPIBAOOGF-RMMWZPCPSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+WZQLVEPIBAOOGF-RMMWZPCPSA-N	Dog	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+QZZCUOVXHPAQRQ-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+QZZCUOVXHPAQRQ-UHFFFAOYSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+QZZCUOVXHPAQRQ-UHFFFAOYSA-N	Dog	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+QZZCUOVXHPAQRQ-UHFFFAOYSA-N	Dog	1	mg/kg		1.0 mg/Kg	Chemical Probes Portal	
+JZTTUZXIQIRVAB-FZEVHQGJSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+JZTTUZXIQIRVAB-FZEVHQGJSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+ZLGNYFOIDAVMHY-MPKOGUQCSA-N	Mouse	25	mg/kg	IV	25 mg/Kg IV once weekly, 10 mg/Kg 3 times weekly, 25 mg/Kg 5 days a week for 2 weeks, 50 mg/Kg every other day for 3 weeks	Chemical Probes Portal	
+ZLGNYFOIDAVMHY-MPKOGUQCSA-N	Mouse	10	mg/kg		25 mg/Kg IV once weekly, 10 mg/Kg 3 times weekly, 25 mg/Kg 5 days a week for 2 weeks, 50 mg/Kg every other day for 3 weeks	Chemical Probes Portal	
+ZLGNYFOIDAVMHY-MPKOGUQCSA-N	Mouse	25	mg/kg		25 mg/Kg IV once weekly, 10 mg/Kg 3 times weekly, 25 mg/Kg 5 days a week for 2 weeks, 50 mg/Kg every other day for 3 weeks	Chemical Probes Portal	
+ZLGNYFOIDAVMHY-MPKOGUQCSA-N	Mouse	50	mg/kg		25 mg/Kg IV once weekly, 10 mg/Kg 3 times weekly, 25 mg/Kg 5 days a week for 2 weeks, 50 mg/Kg every other day for 3 weeks	Chemical Probes Portal	
+QULDDKSCVCJTPV-UHFFFAOYSA-N	Mouse	125	mg/kg		31, 62.5, 125 mg/Kg, 75, 150 mg/Kg, 100 mg/Kg	Chemical Probes Portal	
+QULDDKSCVCJTPV-UHFFFAOYSA-N	Mouse	150	mg/kg		31, 62.5, 125 mg/Kg, 75, 150 mg/Kg, 100 mg/Kg	Chemical Probes Portal	
+QULDDKSCVCJTPV-UHFFFAOYSA-N	Mouse	100	mg/kg		31, 62.5, 125 mg/Kg, 75, 150 mg/Kg, 100 mg/Kg	Chemical Probes Portal	
+BLVQHYHDYFTPDV-VCABWLAWSA-N	Other	10	mg/mL		10 mg/mL	Chemical Probes Portal	
+VLLFGVHGKLDDLW-SFHVURJKSA-N	Rat	0.3	mg		0.3 mg /Kg	Chemical Probes Portal	
+VLLFGVHGKLDDLW-SFHVURJKSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+VLLFGVHGKLDDLW-SFHVURJKSA-N	Dog	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+VLLFGVHGKLDDLW-SFHVURJKSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+VLLFGVHGKLDDLW-SFHVURJKSA-N	Monkey (Cynomolgus)	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+VLLFGVHGKLDDLW-SFHVURJKSA-N	Monkey (Cynomolgus)	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+UEMQPCYDWCSVCU-UHFFFAOYSA-N	Mouse	3	mg/kg	PO	3 mg/kg (oral), 1 mg/kg (IV)	Chemical Probes Portal	
+UEMQPCYDWCSVCU-UHFFFAOYSA-N	Mouse	1	mg/kg	IV	3 mg/kg (oral), 1 mg/kg (IV)	Chemical Probes Portal	
+XMBSZPZJLPTFMV-UHFFFAOYSA-N	Mouse	3	mg/kg	IV	3 mg/Kg IV, 10 mg/Kg PO, up to 50 mg/Kg	Chemical Probes Portal	
+XMBSZPZJLPTFMV-UHFFFAOYSA-N	Mouse	10	mg/kg	PO	3 mg/Kg IV, 10 mg/Kg PO, up to 50 mg/Kg	Chemical Probes Portal	
+XMBSZPZJLPTFMV-UHFFFAOYSA-N	Mouse	50	mg/kg		3 mg/Kg IV, 10 mg/Kg PO, up to 50 mg/Kg	Chemical Probes Portal	
+QYDASSGXBXGRBS-CKJXQJPGSA-N	Other	1	mg/kg		1 mg/kg and 30 mg/kg	Chemical Probes Portal	
+QYDASSGXBXGRBS-CKJXQJPGSA-N	Other	30	mg/kg		1 mg/kg and 30 mg/kg	Chemical Probes Portal	
+YQOLEILXOBUDMU-KRWDZBQOSA-N	Other	3	mg/kg		3-30 mg/Kg	Chemical Probes Portal	
+JNSLBXJNVHYNNW-CXNSMIOJSA-N	Mouse	50	mg/kg		50 mg/kg	Chemical Probes Portal	
+RNQODBQYMXYMCT-SJORKVTESA-N	Other					Chemical Probes Portal	
+RFZQYGBLRIKROZ-PCLIKHOPSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+RFZQYGBLRIKROZ-PCLIKHOPSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+RFZQYGBLRIKROZ-PCLIKHOPSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+BPLVDYJDAVYLRQ-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+WNEILUNVMHVMPH-UHFFFAOYSA-N	Other	8	mg/kg		0.5, 1, 2, 4, 8 mg/Kg	Chemical Probes Portal	
+AEJOEPSMZCEYJN-HXUWFJFHSA-N	Other	10	mg/kg		10 mg/kg	Chemical Probes Portal	
+OJKONCJPCULNOW-DYVFJYSZSA-N	Other	100	mg/kg		1, 3, 10, 100 mg/Kg	Chemical Probes Portal	
+YDNOHCOYQVZOMC-UHFFFAOYSA-N	Other	75	mg/kg		75 mg/Kg	Chemical Probes Portal	
+OFWWWKWUCDUISA-UHFFFAOYSA-N	Rat					Chemical Probes Portal	
+CDQRIIUMNLMHRH-UHFFFAOYSA-N	Other	10	mg/kg	PO	10 mg/kg (oral); 1 mg/kg (IV)	Chemical Probes Portal	
+CDQRIIUMNLMHRH-UHFFFAOYSA-N	Other	1	mg/kg	IV	10 mg/kg (oral); 1 mg/kg (IV)	Chemical Probes Portal	
+CHEANNSDVJOIBS-MHZLTWQESA-N	Other	1	mg/kg	IV	1 mg/kg, iv; 5 mg/kg, po (M), 0.5 mg/kg, iv; 2 mg/kg, po (R), 0.5 mg/kg, iv; 2 mg/kg, po (C), up to 100 mg/Kg po	Chemical Probes Portal	
+CHEANNSDVJOIBS-MHZLTWQESA-N	Other	5	mg/kg	PO	1 mg/kg, iv; 5 mg/kg, po (M), 0.5 mg/kg, iv; 2 mg/kg, po (R), 0.5 mg/kg, iv; 2 mg/kg, po (C), up to 100 mg/Kg po	Chemical Probes Portal	
+CHEANNSDVJOIBS-MHZLTWQESA-N	Other	0.5	mg/kg	IV	1 mg/kg, iv; 5 mg/kg, po (M), 0.5 mg/kg, iv; 2 mg/kg, po (R), 0.5 mg/kg, iv; 2 mg/kg, po (C), up to 100 mg/Kg po	Chemical Probes Portal	
+CHEANNSDVJOIBS-MHZLTWQESA-N	Other	2	mg/kg	PO	1 mg/kg, iv; 5 mg/kg, po (M), 0.5 mg/kg, iv; 2 mg/kg, po (R), 0.5 mg/kg, iv; 2 mg/kg, po (C), up to 100 mg/Kg po	Chemical Probes Portal	
+CHEANNSDVJOIBS-MHZLTWQESA-N	Other	0.5	mg/kg	IV	1 mg/kg, iv; 5 mg/kg, po (M), 0.5 mg/kg, iv; 2 mg/kg, po (R), 0.5 mg/kg, iv; 2 mg/kg, po (C), up to 100 mg/Kg po	Chemical Probes Portal	
+CHEANNSDVJOIBS-MHZLTWQESA-N	Other	2	mg/kg	PO	1 mg/kg, iv; 5 mg/kg, po (M), 0.5 mg/kg, iv; 2 mg/kg, po (R), 0.5 mg/kg, iv; 2 mg/kg, po (C), up to 100 mg/Kg po	Chemical Probes Portal	
+CHEANNSDVJOIBS-MHZLTWQESA-N	Other	100	mg/kg	PO	1 mg/kg, iv; 5 mg/kg, po (M), 0.5 mg/kg, iv; 2 mg/kg, po (R), 0.5 mg/kg, iv; 2 mg/kg, po (C), up to 100 mg/Kg po	Chemical Probes Portal	
+QBGKPEROWUKSBK-QPPIDDCLSA-N	Other	50	mg/kg		50 mg/kg	Chemical Probes Portal	
+NRSGWEVTVGZDFC-UHFFFAOYSA-N	Other	1	mg/kg		1 mg/Kg, 3 mg/Kg, 10 mg/Kg, 0.1-0.3 mg/Kg IV	Chemical Probes Portal	
+NRSGWEVTVGZDFC-UHFFFAOYSA-N	Other	3	mg/kg		1 mg/Kg, 3 mg/Kg, 10 mg/Kg, 0.1-0.3 mg/Kg IV	Chemical Probes Portal	
+NRSGWEVTVGZDFC-UHFFFAOYSA-N	Other	10	mg/kg		1 mg/Kg, 3 mg/Kg, 10 mg/Kg, 0.1-0.3 mg/Kg IV	Chemical Probes Portal	
+NRSGWEVTVGZDFC-UHFFFAOYSA-N	Other	0.1	mg/kg	IV	1 mg/Kg, 3 mg/Kg, 10 mg/Kg, 0.1-0.3 mg/Kg IV	Chemical Probes Portal	
+HUUSXLKCTQDPGL-UHFFFAOYSA-N	Other	3	mg/kg	IV	3 mg/Kg (IV), 20 mg/Kg (PO)	Chemical Probes Portal	
+HUUSXLKCTQDPGL-UHFFFAOYSA-N	Other	20	mg/kg	PO	3 mg/Kg (IV), 20 mg/Kg (PO)	Chemical Probes Portal	
+ARBRHWRTXPWZGN-UHFFFAOYSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 2.5 or 5 mg/Kg PO	Chemical Probes Portal	
+ARBRHWRTXPWZGN-UHFFFAOYSA-N	Rat	5	mg/kg	PO	1 mg/Kg IV, 2.5 or 5 mg/Kg PO	Chemical Probes Portal	
+PXVFFBGSTYQHRO-REQIQPEASA-N	Other	7.5	mg/kg		7.5-15 mg/Kg	Chemical Probes Portal	
+KPBNHDGDUADAGP-VAWYXSNFSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+KPBNHDGDUADAGP-VAWYXSNFSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+KPBNHDGDUADAGP-VAWYXSNFSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+JFOAJUGFHDCBJJ-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+JFOAJUGFHDCBJJ-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+FNYGWXSATBUBER-UHFFFAOYSA-N	Mouse	150	mg/kg		150 mg/kg, 450 mg/kg	Chemical Probes Portal	
+FNYGWXSATBUBER-UHFFFAOYSA-N	Mouse	450	mg/kg		150 mg/kg, 450 mg/kg	Chemical Probes Portal	
+WVAKRQOMAINQPU-UHFFFAOYSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+WVAKRQOMAINQPU-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+WVAKRQOMAINQPU-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+WVAKRQOMAINQPU-UHFFFAOYSA-N	Rat	4	mg/kg		4 mg/Kg	Chemical Probes Portal	
+NAXSRXHZFIBFMI-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/kg	Chemical Probes Portal	
+ZDBWLRLGUBSLPG-FDHYQTMZSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+KSGZCKSNTAJOJS-DZBMUNJRSA-N	Mouse	1	mg/kg		1 mg/kg (PK study), 0.16 mg/kg once-daily (efficacy study)	Chemical Probes Portal	
+KSGZCKSNTAJOJS-DZBMUNJRSA-N	Mouse	0.16	mg/kg		1 mg/kg (PK study), 0.16 mg/kg once-daily (efficacy study)	Chemical Probes Portal	
+JLFSBHQQXIAQEC-UHFFFAOYSA-N	Mouse	30	mg/kg		30-100 mg/kg	Chemical Probes Portal	
+FWLMVFUGMHIOAA-UHFFFAOYSA-N	Rat	12.5	mg/kg		12.5-50 mg/Kg	Chemical Probes Portal	
+FWLMVFUGMHIOAA-UHFFFAOYSA-N	Dog	12.5	mg/kg		12.5-50 mg/Kg	Chemical Probes Portal	
+XYFPWWZEPKGCCK-GOSISDBHSA-N	Mouse	3.31	mg/kg		3.31 mg/Kg	Chemical Probes Portal	
+XYFPWWZEPKGCCK-GOSISDBHSA-N	Mouse	14.2	mg/kg		14.2 mg/Kg	Chemical Probes Portal	
+LLVZBTWPGQVVLW-SNAWJCMRSA-N	Mouse	2.5	mg/kg		2.5 mg/kg	Chemical Probes Portal	
+VUVUVNZRUGEAHB-CYBMUJFWSA-N	Mouse	3	mg/mL		3 mg/mL	Chemical Probes Portal	
+ALGHKWSXJUQNJJ-UHFFFAOYSA-N	Rat	2.5	mg/kg		2.5 mg/Kg	Chemical Probes Portal	
+ALGHKWSXJUQNJJ-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+ALGHKWSXJUQNJJ-UHFFFAOYSA-N	Dog	1	mg/kg		1.0 mg/Kg	Chemical Probes Portal	
+ALGHKWSXJUQNJJ-UHFFFAOYSA-N	Dog	3	mg/kg		3.0 mg/Kg	Chemical Probes Portal	
+QPTCYEYTAWEZNT-UHFFFAOYSA-N	Mouse	30	ug		30 ug	Chemical Probes Portal	
+KSERXGMCDHOLSS-LJQANCHMSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+KSERXGMCDHOLSS-LJQANCHMSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+BIAVGWDGIJKWRM-FQEVSTJZSA-N	Rat	0.1	mg/kg		6.9 ± 0.1 mg/Kg	Chemical Probes Portal	
+BIAVGWDGIJKWRM-FQEVSTJZSA-N	Dog	0.02	mg/kg		0.93 ± 0.02 mg/Kg	Chemical Probes Portal	
+BIAVGWDGIJKWRM-FQEVSTJZSA-N	Rat	0	mg/kg		8.0 ± 0.0 mg/Kg	Chemical Probes Portal	
+BIAVGWDGIJKWRM-FQEVSTJZSA-N	Dog				4.2 ± 0.2	Chemical Probes Portal	
+WRCGBYNVBFVRTN-UHFFFAOYSA-N	Mouse	25	mg/kg		25 mg/Kg	Chemical Probes Portal	
+XNULRSOGWPFPBL-REWPJTCUSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+XNULRSOGWPFPBL-REWPJTCUSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+ADZBMFGQQWPHMJ-RHSMWYFYSA-N	Mouse	200	mg/kg		200 mg/Kg	Chemical Probes Portal	
+ILOIOIGZFHGSMS-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+FROGGFONBYACJB-KRWDZBQOSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+UQZCQKXJAXKZQH-LBPRGKRZSA-N	Mouse	300	mg/kg		3, 10, 30, 300 mg/Kg	Chemical Probes Portal	
+JZCWLJDSIRUGIN-UHFFFAOYSA-N	Mouse	60	mg/kg		60 mg/Kg	Chemical Probes Portal	
+LCFFREMLXLZNHE-GBOLQPHISA-N	Rat	2	mg/kg	IV	2 mg/Kg IV, 20 mg/Kg PO	Chemical Probes Portal	
+LCFFREMLXLZNHE-GBOLQPHISA-N	Rat	20	mg/kg	PO	2 mg/Kg IV, 20 mg/Kg PO	Chemical Probes Portal	
+FUIYMYNYUHVDPT-HDJSIYSDSA-N	Rat	1	mg/kg		1-3 mg/Kg	Chemical Probes Portal	
+FUIYMYNYUHVDPT-HDJSIYSDSA-N	Dog	1	mg/kg		1-3 mg/Kg	Chemical Probes Portal	
+GRTDDIZIUSADLD-CRAIPNDOSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+GRTDDIZIUSADLD-CRAIPNDOSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+GRTDDIZIUSADLD-CRAIPNDOSA-N	Monkey (Cynomolgus)	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+GRTDDIZIUSADLD-CRAIPNDOSA-N	Monkey (Cynomolgus)	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+OXQNLLVUVDAEHC-OAQYLSRUSA-N	Other					Chemical Probes Portal	
+PKNYXWMTHFMHKD-UHFFFAOYSA-N	Rat	3	mg/kg		3 mg/Kg BID	Chemical Probes Portal	
+PKNYXWMTHFMHKD-UHFFFAOYSA-N	Other	3	mg/kg		3 mg/Kg BID	Chemical Probes Portal	
+OYUDYQMFVRHPIY-UHFFFAOYSA-N	Mouse	2.5	mg/kg		2.5 mg/Kg	Chemical Probes Portal	
+OYUDYQMFVRHPIY-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+OYUDYQMFVRHPIY-UHFFFAOYSA-N	Rat	2.5	mg/kg		2.5 mg/Kg	Chemical Probes Portal	
+OYUDYQMFVRHPIY-UHFFFAOYSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+OYUDYQMFVRHPIY-UHFFFAOYSA-N	Dog	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+OYUDYQMFVRHPIY-UHFFFAOYSA-N	Dog	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+OYUDYQMFVRHPIY-UHFFFAOYSA-N	Monkey (Cynomolgus)	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+OYUDYQMFVRHPIY-UHFFFAOYSA-N	Monkey (Cynomolgus)	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+USHQRIKZLHNPQR-JTQLQIEISA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 3 mg/Kg PO	Chemical Probes Portal	
+USHQRIKZLHNPQR-JTQLQIEISA-N	Rat	3	mg/kg	PO	1 mg/Kg IV, 3 mg/Kg PO	Chemical Probes Portal	
+USHQRIKZLHNPQR-JTQLQIEISA-N	Dog	0.46	mg/kg	IV	0.46 mg/kg IV, 3 mg/kg PO	Chemical Probes Portal	
+USHQRIKZLHNPQR-JTQLQIEISA-N	Dog	3	mg/kg	PO	0.46 mg/kg IV, 3 mg/kg PO	Chemical Probes Portal	
+USHQRIKZLHNPQR-JTQLQIEISA-N	Monkey (Cynomolgus)	0.1	mg/kg	IV	0.1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+USHQRIKZLHNPQR-JTQLQIEISA-N	Monkey (Cynomolgus)	10	mg/kg	PO	0.1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+PQUGCKBLVKJMNT-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+PQUGCKBLVKJMNT-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+WWOOWAHTEXIWBO-QFRSUPTLSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+WULUGQONDYDNKY-UHFFFAOYSA-N	Mouse	1	mg/kg	IV	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+WULUGQONDYDNKY-UHFFFAOYSA-N	Mouse	10	mg/kg	PO	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+WULUGQONDYDNKY-UHFFFAOYSA-N	Rat	3	mg/kg	IV	3 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+WULUGQONDYDNKY-UHFFFAOYSA-N	Rat	10	mg/kg	PO	3 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+YEVOZZZLKJKCCD-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/kg	Chemical Probes Portal	
+YEVOZZZLKJKCCD-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+YEVOZZZLKJKCCD-UHFFFAOYSA-N	Mouse	100	mg/kg		3, 10, 30, 50, and 100 mg/kg	Chemical Probes Portal	
+PRNXOFBDXNTIFG-FQEVSTJZSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+PRNXOFBDXNTIFG-FQEVSTJZSA-N	Mouse	100	mg/kg		100 mg/Kg	Chemical Probes Portal	
+COOGVHJHSCBOQT-MRVPVSSYSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+COOGVHJHSCBOQT-MRVPVSSYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+COOGVHJHSCBOQT-MRVPVSSYSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+COOGVHJHSCBOQT-MRVPVSSYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+COOGVHJHSCBOQT-MRVPVSSYSA-N	Dog	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+COOGVHJHSCBOQT-MRVPVSSYSA-N	Dog	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+DLNFTRSEHUWEGO-HUUCEWRRSA-N	Mouse	50	mg/kg		50-200 mg/Kg BID	Chemical Probes Portal	
+LIIWIMDSZVNYHY-UHFFFAOYSA-N	Other	5	mg/kg		5 mg/kg	Chemical Probes Portal	
+PDMXSCCBEBCTGX-UHFFFAOYSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+QBIGUDRHHJTXKG-UUWRZZSWSA-N	Mouse	100	mg/kg		3, 10, 30, 100 mg/kg BID or 60 mg/kg QD	Chemical Probes Portal	
+QBIGUDRHHJTXKG-UUWRZZSWSA-N	Mouse	60	mg/kg		3, 10, 30, 100 mg/kg BID or 60 mg/kg QD	Chemical Probes Portal	
+QBIGUDRHHJTXKG-UUWRZZSWSA-N	Rat	1	mg/kg		1 mg/kg	Chemical Probes Portal	
+QBIGUDRHHJTXKG-UUWRZZSWSA-N	Rat	5	mg/kg		5 mg/kg	Chemical Probes Portal	
+GRXCLNMCJWKTAT-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+GRXCLNMCJWKTAT-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/kg	Chemical Probes Portal	
+VGRLXWFIXGZRMS-UHFFFAOYSA-N	Rat	2	mg/kg	IV	2 mg/kg IV, 10 mg/kg PO	Chemical Probes Portal	
+VGRLXWFIXGZRMS-UHFFFAOYSA-N	Rat	10	mg/kg	PO	2 mg/kg IV, 10 mg/kg PO	Chemical Probes Portal	
+PGKXDIMONUAMFR-AREMUKBSSA-N	Guinea Pig					Chemical Probes Portal	
+PGKXDIMONUAMFR-AREMUKBSSA-N	Guinea Pig					Chemical Probes Portal	
+PWKAYICUBVNJAZ-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+MSTXJJGAXXJCBY-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+MSTXJJGAXXJCBY-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+IVDUVEGCMXCMSO-FQEVSTJZSA-N	Mouse	150	mg/kg		150 mg/Kg	Chemical Probes Portal	
+HRJWTAWVFDCTGO-UHFFFAOYSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+HRJWTAWVFDCTGO-UHFFFAOYSA-N	Dog	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+BZZKEPGENYLQSC-FIBGUPNXSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+BZZKEPGENYLQSC-FIBGUPNXSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+BZZKEPGENYLQSC-FIBGUPNXSA-N	Dog	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+BZZKEPGENYLQSC-FIBGUPNXSA-N	Dog	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+BZZKEPGENYLQSC-FIBGUPNXSA-N	Monkey (Cynomolgus)	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+BZZKEPGENYLQSC-FIBGUPNXSA-N	Monkey (Cynomolgus)	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+XUKUURHRXDUEBC-KAYWLYCHSA-N	Mouse	10	mg/kg	IV	10 mg/kg (IV), 300 mg/kg (PO)	Chemical Probes Portal	
+XUKUURHRXDUEBC-KAYWLYCHSA-N	Mouse	300	mg/kg	PO	10 mg/kg (IV), 300 mg/kg (PO)	Chemical Probes Portal	
+WDHOIABIERMLGY-CMJOXMDJSA-N	Other				2/5 IV/PO mg/Kg (M), 0.5/1 IV/PO mg/Kg (R)	Chemical Probes Portal	
+YTINZZFBHWSAGL-NDEPHWFRSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+YTINZZFBHWSAGL-NDEPHWFRSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+YTINZZFBHWSAGL-NDEPHWFRSA-N	Monkey (Cynomolgus)	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+VRQMAABPASPXMW-HDICACEKSA-N						Chemical Probes Portal	
+JKJMWHULJIOKPJ-UHFFFAOYSA-N	Mouse	0.1	mg/kg		0.1 - 10 mg/Kg	Chemical Probes Portal	
+TXJZRSRTYPUYRW-GHTZIAJQSA-N	Other	100	mg/kg		100 mg/kg	Chemical Probes Portal	
+ARYUXFNGXHNNDM-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+WQAVGRAETZEADU-UHFFFAOYSA-N	Mouse	0.03	mg/kg		10, 1, 0.1, and 0.03 mg/kg	Chemical Probes Portal	
+WQAVGRAETZEADU-UHFFFAOYSA-N	Rat	0.03	mg/kg		10, 1, 0.1, and 0.03 mg/kg	Chemical Probes Portal	
+WQAVGRAETZEADU-UHFFFAOYSA-N	Dog	0.03	mg/kg		10, 1, 0.1, and 0.03 mg/kg	Chemical Probes Portal	
+WQAVGRAETZEADU-UHFFFAOYSA-N	Monkey (Cynomolgus)	0.03	mg/kg		10, 1, 0.1, and 0.03 mg/kg	Chemical Probes Portal	
+CDJPHTNUARAVMH-SECBINFHSA-N	Rat	1	mg/kg		1 mg/kg	Chemical Probes Portal	
+HFNKQEVNSGCOJV-OAHLLOKOSA-N	Mouse	90	mg/kg		90 mg/kg	Chemical Probes Portal	
+OQFCHSFVWSLDAO-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+OQFCHSFVWSLDAO-UHFFFAOYSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+WSEQXVZVJXJVFP-FQEVSTJZSA-N	Rat	1.6	mg/kg		1.6 mg/Kg	Chemical Probes Portal	
+KJDAGXLMHXUAGV-DGWLBADLSA-N	Mouse	25	mg/kg		12.5, 18.8, 25 mg/Kg	Chemical Probes Portal	
+CMJJZRAAQMUAFH-INIZCTEOSA-N	Mouse	4	mg/kg		4 mg/Kg	Chemical Probes Portal	
+CMJJZRAAQMUAFH-INIZCTEOSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+CMJJZRAAQMUAFH-INIZCTEOSA-N	Rat	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+CMJJZRAAQMUAFH-INIZCTEOSA-N	Rat	4	mg/kg		4 mg/Kg	Chemical Probes Portal	
+FFLJVBPCONQSQW-UHFFFAOYSA-N	Mouse	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+IESAJAZKMLPVIB-VXGBXAGGSA-N	Rat	30	mg/kg		30-90 mg/Kg	Chemical Probes Portal	
+PEMUGDMSUDYLHU-ZEQRLZLVSA-N	Other	3	mg/kg	IV	3 mg/Kg IV, 3 to 100 mg/Kg PO	Chemical Probes Portal	
+PEMUGDMSUDYLHU-ZEQRLZLVSA-N	Other	3	mg/kg	PO	3 mg/Kg IV, 3 to 100 mg/Kg PO	Chemical Probes Portal	
+NXQKSXLFSAEQCZ-SFHVURJKSA-N	Other	1	mg/kg	IV	1 mg/Kg IV, 10 mg/Kg PO, Reviewer suggest 30 and 100 mg/Kg PO	Chemical Probes Portal	
+NXQKSXLFSAEQCZ-SFHVURJKSA-N	Other	10	mg/kg	PO	1 mg/Kg IV, 10 mg/Kg PO, Reviewer suggest 30 and 100 mg/Kg PO	Chemical Probes Portal	
+NXQKSXLFSAEQCZ-SFHVURJKSA-N	Other	100	mg/kg	PO	1 mg/Kg IV, 10 mg/Kg PO, Reviewer suggest 30 and 100 mg/Kg PO	Chemical Probes Portal	
+RIGHCDSORZCRDE-UHFFFAOYSA-N	Mouse	2	mg/kg	IV	2 mg/Kg IV, 10 mg/Kg	Chemical Probes Portal	
+RIGHCDSORZCRDE-UHFFFAOYSA-N	Mouse	10	mg/kg		2 mg/Kg IV, 10 mg/Kg	Chemical Probes Portal	
+RAXZSEGXMBWYQK-SNVBAGLBSA-N	Rat	1	mg/kg	PO	1 mg/Kg PO, 0.5 mg/Kg IV	Chemical Probes Portal	
+RAXZSEGXMBWYQK-SNVBAGLBSA-N	Rat	0.5	mg/kg	IV	1 mg/Kg PO, 0.5 mg/Kg IV	Chemical Probes Portal	
+RAXZSEGXMBWYQK-SNVBAGLBSA-N	Dog	0.5	mg/kg	PO	0.5 mg/Kg PO, 0.25 mg/Kg IV	Chemical Probes Portal	
+RAXZSEGXMBWYQK-SNVBAGLBSA-N	Dog	0.25	mg/kg	IV	0.5 mg/Kg PO, 0.25 mg/Kg IV	Chemical Probes Portal	
+MVCOAUNKQVWQHZ-UHFFFAOYSA-N	Mouse	1	mg/kg	IV	1 mg/Kg (IV), 10 mg/Kg (PO)	Chemical Probes Portal	
+MVCOAUNKQVWQHZ-UHFFFAOYSA-N	Mouse	10	mg/kg	PO	1 mg/Kg (IV), 10 mg/Kg (PO)	Chemical Probes Portal	
+MVCOAUNKQVWQHZ-UHFFFAOYSA-N	Rat	1	mg/kg	IV	1 mg/Kg (IV), 10 mg/Kg (PO)	Chemical Probes Portal	
+MVCOAUNKQVWQHZ-UHFFFAOYSA-N	Rat	10	mg/kg	PO	1 mg/Kg (IV), 10 mg/Kg (PO)	Chemical Probes Portal	
+RHFIAUKMKYHHFA-UHFFFAOYSA-N	Other	0.4	mg/kg	IV	0.4-1 mg/kg (IV), 5 mg/Kg (PO)	Chemical Probes Portal	
+RHFIAUKMKYHHFA-UHFFFAOYSA-N	Other	5	mg/kg	PO	0.4-1 mg/kg (IV), 5 mg/Kg (PO)	Chemical Probes Portal	
+LUVOYGUFQRWXGQ-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+LUVOYGUFQRWXGQ-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+MCLDWKVRXDHDEI-UHFFFAOYSA-N	Mouse	2.29	mg/kg		2.29 mg/kg	Chemical Probes Portal	
+VSMTYSWGHKYXOF-UHFFFAOYSA-N	Mouse	20	mg/kg		20 mg/kg	Chemical Probes Portal	
+VSMTYSWGHKYXOF-UHFFFAOYSA-N	Mouse	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+DRSZMILOMUPIBJ-UHFFFAOYSA-N	Mouse	100	mg/kg		10, 30. 100 mg/Kg	Chemical Probes Portal	
+ZLHFILGSQDJULK-UHFFFAOYSA-N	Mouse	30	mg/kg		5, 10, 30 mg/Kg	Chemical Probes Portal	
+CWLAIOPWFOOJHQ-QHCPKHFHSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+NCDZABJPWMBMIQ-INIZCTEOSA-N	Mouse					Chemical Probes Portal	
+NCDZABJPWMBMIQ-INIZCTEOSA-N	Rat					Chemical Probes Portal	
+NCDZABJPWMBMIQ-INIZCTEOSA-N	Dog					Chemical Probes Portal	
+XDJGNPSZQSWJCV-UHFFFAOYSA-N	Rat	0.5	mg/kg		0.5 mg/kg	Chemical Probes Portal	
+XDJGNPSZQSWJCV-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+XDJGNPSZQSWJCV-UHFFFAOYSA-N	Dog	0.1	mg/kg		0.1 mg/Kg	Chemical Probes Portal	
+UZWDCWONPYILKI-UHFFFAOYSA-N	Mouse	12.5	mg/kg		>12.5 mg/Kg	Chemical Probes Portal	
+QJZQFVRFJCGDKF-UHFFFAOYSA-N	Mouse	5	mg/kg	IV	5 mg/Kg IV, 20 mg/Kg PO	Chemical Probes Portal	
+QJZQFVRFJCGDKF-UHFFFAOYSA-N	Mouse	20	mg/kg	PO	5 mg/Kg IV, 20 mg/Kg PO	Chemical Probes Portal	
+QJZQFVRFJCGDKF-UHFFFAOYSA-N	Rat	5	mg/kg	IV	5 mg/Kg IV, 20 mg/Kg	Chemical Probes Portal	
+QJZQFVRFJCGDKF-UHFFFAOYSA-N	Rat	20	mg/kg		5 mg/Kg IV, 20 mg/Kg	Chemical Probes Portal	
+QJZQFVRFJCGDKF-UHFFFAOYSA-N	Dog	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+QJZQFVRFJCGDKF-UHFFFAOYSA-N	Dog	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+QJZQFVRFJCGDKF-UHFFFAOYSA-N	Monkey (Cynomolgus)	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+QJZQFVRFJCGDKF-UHFFFAOYSA-N	Monkey (Cynomolgus)	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+YOVVNQKCSKSHKT-HNNXBMFYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+YOVVNQKCSKSHKT-HNNXBMFYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+YOVVNQKCSKSHKT-HNNXBMFYSA-N	Mouse	50	mg/kg		50 mg/Kg	Chemical Probes Portal	
+GBLBJPZSROAGMF-RWYJCYHVSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+KVLFRAWTRWDEDF-IRXDYDNUSA-N	Mouse	10	mg/kg		2.5 and 10 mg/Kg	Chemical Probes Portal	
+HFLMLZKGLUEWBU-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+UKBQFBRPXKGJPY-INIZCTEOSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+UKBQFBRPXKGJPY-INIZCTEOSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+UKBQFBRPXKGJPY-INIZCTEOSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+UKBQFBRPXKGJPY-INIZCTEOSA-N	Monkey (Cynomolgus)	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+OAZAPIKYVGRNCO-UHFFFAOYSA-N	Mouse	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+OAZAPIKYVGRNCO-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+RSMYFSPOTCDHHJ-GOSISDBHSA-N	Rat				unknown	Chemical Probes Portal	
+RSMYFSPOTCDHHJ-GOSISDBHSA-N	Dog				unknown	Chemical Probes Portal	
+GOOYSJIWTIHOGW-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+GOOYSJIWTIHOGW-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+JKDGKIBAOAFRPJ-ZBINZKHDSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JKDGKIBAOAFRPJ-ZBINZKHDSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+JKDGKIBAOAFRPJ-ZBINZKHDSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JKDGKIBAOAFRPJ-ZBINZKHDSA-N	Dog	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+JKDGKIBAOAFRPJ-ZBINZKHDSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JKDGKIBAOAFRPJ-ZBINZKHDSA-N	Dog	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+SJHNWSAWWOAWJH-MRXNPFEDSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+SJHNWSAWWOAWJH-MRXNPFEDSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+SJHNWSAWWOAWJH-MRXNPFEDSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+SJHNWSAWWOAWJH-MRXNPFEDSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+SJHNWSAWWOAWJH-MRXNPFEDSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+SJHNWSAWWOAWJH-MRXNPFEDSA-N	Dog	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+DJVYXMINSBMUHH-QAQDUYKDSA-N	Rat	2	mg/kg		2 mg/kg	Chemical Probes Portal	
+DJVYXMINSBMUHH-QAQDUYKDSA-N	Rat	5	mg/kg		5 mg/kg	Chemical Probes Portal	
+DJVYXMINSBMUHH-QAQDUYKDSA-N	Dog	1	mg/kg		1 mg/kg	Chemical Probes Portal	
+CDQQWCLOMUMQMM-UHFFFAOYSA-N	Mouse	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+CDQQWCLOMUMQMM-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+RQFYFNAGNBUGFC-UHFFFAOYSA-N	Rat	50	mg/kg		50 mg/Kg	Chemical Probes Portal	
+COGUZYALRYMQTD-LJQANCHMSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+COGUZYALRYMQTD-LJQANCHMSA-N	Mouse	5	mg/kg		5 mgKg	Chemical Probes Portal	
+COGUZYALRYMQTD-LJQANCHMSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+WQVPGYMGERDXLH-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/kg	Chemical Probes Portal	
+IWMCPJZTADUIFX-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+IWMCPJZTADUIFX-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+FWJRVGZWNDOOFH-OAHLLOKOSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+WDBUEMWHXKHQNB-NNAUULPKSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+WDBUEMWHXKHQNB-NNAUULPKSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+WDBUEMWHXKHQNB-NNAUULPKSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+DMUSMYYDKCXFKR-MRJIRHQNSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+DMUSMYYDKCXFKR-MRJIRHQNSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+VNSQFPFWUAZOTQ-UHFFFAOYSA-N	Mouse	1	mg/kg		1.0 mg/Kg	Chemical Probes Portal	
+VNSQFPFWUAZOTQ-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+XUOJHVFYSAMHNK-GWMXKSKGSA-N	Mouse	10	mg/kg	IV	0.3/10 mpk IV/PO	Chemical Probes Portal	
+XUOJHVFYSAMHNK-GWMXKSKGSA-N	Rat	3	mg/kg	IV	1/3 mpk IV/PO	Chemical Probes Portal	
+XUOJHVFYSAMHNK-GWMXKSKGSA-N	Dog	1	mg/kg	IV	0.3/1 mpk IV/PO	Chemical Probes Portal	
+XUOJHVFYSAMHNK-GWMXKSKGSA-N	Monkey (Cynomolgus)	1	mg/kg	IV	0.3/1 mpk IV/PO	Chemical Probes Portal	
+IVOACCSOISMVBL-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+IVOACCSOISMVBL-UHFFFAOYSA-N	Dog	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+IVOACCSOISMVBL-UHFFFAOYSA-N	Monkey (Cynomolgus)	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+HEUVRFNVTLGKMZ-SANMLTNESA-N	Other	5	mg/kg		5 mg/kg (Rat), 2.5 mg/kg (Dog), up to 25 mg/kg (PO)	Chemical Probes Portal	
+HEUVRFNVTLGKMZ-SANMLTNESA-N	Other	2.5	mg/kg		5 mg/kg (Rat), 2.5 mg/kg (Dog), up to 25 mg/kg (PO)	Chemical Probes Portal	
+HEUVRFNVTLGKMZ-SANMLTNESA-N	Other	25	mg/kg	PO	5 mg/kg (Rat), 2.5 mg/kg (Dog), up to 25 mg/kg (PO)	Chemical Probes Portal	
+DNVXATUJJDPFDM-KRWDZBQOSA-N	Mouse	50	mg/kg		50 mg/kg	Chemical Probes Portal	
+RCINICONZNJXQF-MZXODVADSA-N	Other	2	mg/kg		2-36 mg/kg	Chemical Probes Portal	
+DUCNNEYLFOQFSW-PMERELPUSA-N	Other	150	mg/kg		150 mg/kg	Chemical Probes Portal	
+UYKVJQCPBDDIFD-ZSEKCTLFSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+UYKVJQCPBDDIFD-ZSEKCTLFSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+UYKVJQCPBDDIFD-ZSEKCTLFSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+UYKVJQCPBDDIFD-ZSEKCTLFSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+UYKVJQCPBDDIFD-ZSEKCTLFSA-N	Mouse	4	mg/kg		4 mg/Kg	Chemical Probes Portal	
+UYKVJQCPBDDIFD-ZSEKCTLFSA-N	Rat	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+UYKVJQCPBDDIFD-ZSEKCTLFSA-N	Dog	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+UYKVJQCPBDDIFD-ZSEKCTLFSA-N	Dog	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+RWRSKMSFZCQDMQ-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+RWRSKMSFZCQDMQ-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+RIWTUJFFSTVYPW-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+QARLNMDDSQMINK-BVRKHOPBSA-N	Mouse	200	mg/kg		2, 20, 200 mg/Kg	Chemical Probes Portal	
+HKASDKLLEVWKJA-YADARESESA-N	Mouse	10	uM/kg		10 uM/Kg	Chemical Probes Portal	
+HKASDKLLEVWKJA-YADARESESA-N	Mouse	1	uM/kg		1 uM/Kg	Chemical Probes Portal	
+MDUYWDNWFXSMJJ-XWLWVQCSSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+MDUYWDNWFXSMJJ-XWLWVQCSSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+MDUYWDNWFXSMJJ-XWLWVQCSSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+MDUYWDNWFXSMJJ-XWLWVQCSSA-N	Dog	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+XRDVXQQZLHVEQZ-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+XRDVXQQZLHVEQZ-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+MZBOZBMARIQZGX-GRRGFIRHSA-N	Other	25	mg/kg		25 mg/kg (rat)	Chemical Probes Portal	
+UNRTVIQQMJRQLZ-UHFFFAOYSA-N	Mouse	250	mg/kg		250 mg/Kg	Chemical Probes Portal	
+BWBUPDTUXQDHSX-AWEZNQCLSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+BWBUPDTUXQDHSX-AWEZNQCLSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+BWBUPDTUXQDHSX-AWEZNQCLSA-N	Mouse	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+BWBUPDTUXQDHSX-AWEZNQCLSA-N	Mouse	40	mg/kg		40 mg/Kg	Chemical Probes Portal	
+BWBUPDTUXQDHSX-AWEZNQCLSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+BWBUPDTUXQDHSX-AWEZNQCLSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+ZRHWCAFAIHTQKD-QGZVFWFLSA-N	Mouse	50	mg/kg		50 mg/Kg	Chemical Probes Portal	
+CQAPXPSWLDAVEG-UHFFFAOYSA-N	Mouse	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+CQAPXPSWLDAVEG-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+YNVKFHIWFDRVNY-UHFFFAOYSA-N	Mouse	2.5	mg/kg		2.5 mg/kg	Chemical Probes Portal	
+QVQHWPLHUNEREE-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+XVFDNRYZXDHTHT-PXAZEXFGSA-N	Mouse					Chemical Probes Portal	
+XVFDNRYZXDHTHT-PXAZEXFGSA-N	Rat					Chemical Probes Portal	
+IVYQPSHHYIAUFO-VXKWHMMOSA-N	Other					Chemical Probes Portal	
+RVOZYMPVGIVNJX-UHFFFAOYSA-N	Rat	0.3	mg/kg	IV	0.3 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+RVOZYMPVGIVNJX-UHFFFAOYSA-N	Rat	10	mg/kg	PO	0.3 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+RVOZYMPVGIVNJX-UHFFFAOYSA-N	Dog	0.3	mg/kg	IV	0.3 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+RVOZYMPVGIVNJX-UHFFFAOYSA-N	Dog	10	mg/kg	PO	0.3 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+DFQGDHBGRSTTHX-UHFFFAOYSA-N	Rat	2	mg/kg	IV	2 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+DFQGDHBGRSTTHX-UHFFFAOYSA-N	Rat	10	mg/kg	PO	2 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+HNIFCPBQMKPRCX-UHFFFAOYSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+HNIFCPBQMKPRCX-UHFFFAOYSA-N	Dog	0.2	mg/kg		0.2 mg/Kg	Chemical Probes Portal	
+REQQVBGILUTQNN-UHFFFAOYSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+REQQVBGILUTQNN-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+REQQVBGILUTQNN-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+YJPWVCIGSHWNON-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/kg	Chemical Probes Portal	
+YJPWVCIGSHWNON-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+MCIACXAZCBVDEE-CUUWFGFTSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+MCIACXAZCBVDEE-CUUWFGFTSA-N	Rat	5	mg/kg		5.0 mg/Kg	Chemical Probes Portal	
+TVMJSGGZULFVCZ-XMMPIXPASA-N	Rat	30	ug		30 µg	Chemical Probes Portal	
+YIHHYCIYAIVQKX-MBIULKOWSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+MSFPLTWUFWOKBX-IFXJQAMLSA-O	Mouse	10	mg/kg		10 mg/kg	Chemical Probes Portal	
+BBIPVJCGIASXJB-PKTZIBPZSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+BBIPVJCGIASXJB-PKTZIBPZSA-N	Rat	9.75	mg/kg		9.75 mg/Kg	Chemical Probes Portal	
+BBIPVJCGIASXJB-PKTZIBPZSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+SPMVMDHWKHCIDT-UHFFFAOYSA-N	Rat	0.04	mg/kg		0.04 mg/Kg	Chemical Probes Portal	
+SPMVMDHWKHCIDT-UHFFFAOYSA-N	Rat	0.2	mg/kg		0.2 mg/Kg	Chemical Probes Portal	
+SPMVMDHWKHCIDT-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+SPMVMDHWKHCIDT-UHFFFAOYSA-N	Rat	5	mg/mL		5 mg/mL	Chemical Probes Portal	
+ZRPZPNYZFSJUPA-UHFFFAOYSA-N	Mouse	50	mg/kg		50 mg/Kg, 200 mg/Kg	Chemical Probes Portal	
+ZRPZPNYZFSJUPA-UHFFFAOYSA-N	Mouse	200	mg/kg		50 mg/Kg, 200 mg/Kg	Chemical Probes Portal	
+NDRFFOKFYGUOKD-ZDUSSCGKSA-N	Mouse	1	mg/kg	IV	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+NDRFFOKFYGUOKD-ZDUSSCGKSA-N	Mouse	10	mg/kg	PO	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+PJKRNPPUSQSCHN-UHFFFAOYSA-N	Mouse	0.5	umol/kg		0.5 umol/kg	Chemical Probes Portal	
+PJKRNPPUSQSCHN-UHFFFAOYSA-N	Rat	0.5	umol/kg		0.5 umol/Kg	Chemical Probes Portal	
+QGPXEIMWTKWHMH-DEOSSOPVSA-N	Rat	1	mg/kg	IV	1 mg/kg IV, 10 mg/kg PO	Chemical Probes Portal	
+QGPXEIMWTKWHMH-DEOSSOPVSA-N	Rat	10	mg/kg	PO	1 mg/kg IV, 10 mg/kg PO	Chemical Probes Portal	
+QGPXEIMWTKWHMH-DEOSSOPVSA-N	Dog	1	mg/kg	IV	1 mg/kg IV, 10 mg/kg PO	Chemical Probes Portal	
+QGPXEIMWTKWHMH-DEOSSOPVSA-N	Dog	10	mg/kg	PO	1 mg/kg IV, 10 mg/kg PO	Chemical Probes Portal	
+QGPXEIMWTKWHMH-DEOSSOPVSA-N	Monkey (Cynomolgus)	1	mg/kg	IV	1 mg/kg IV, 10 mg/kg PO	Chemical Probes Portal	
+QGPXEIMWTKWHMH-DEOSSOPVSA-N	Monkey (Cynomolgus)	10	mg/kg	PO	1 mg/kg IV, 10 mg/kg PO	Chemical Probes Portal	
+AAHNBILIYONQLX-UHFFFAOYSA-N	Rat				1 IV, 2 PO mg/Kg	Chemical Probes Portal	
+AAHNBILIYONQLX-UHFFFAOYSA-N	Dog				0.2 IV; 0.5 PO mg/Kg	Chemical Probes Portal	
+FRPJGTNLZNXQEX-UHFFFAOYSA-N	Rat	0.03	umol/kg		0.03 umol/Kg	Chemical Probes Portal	
+WDZVWDXOIGQJIO-UHFFFAOYSA-N	Rat	1	mg/kg	IV	1 mg/kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+WDZVWDXOIGQJIO-UHFFFAOYSA-N	Rat	5	mg/kg	PO	1 mg/kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+LWJGMYMNSNVCEM-UHFFFAOYSA-N	Mouse	0.1	mg/kg		0.1 - 10 mg/Kg	Chemical Probes Portal	
+LWJGMYMNSNVCEM-UHFFFAOYSA-N	Rat	1	mg/kg		1 - 10 mg/Kg	Chemical Probes Portal	
+BEBDKSYNJJVZSO-SECBINFHSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+BEBDKSYNJJVZSO-SECBINFHSA-N	Rat	10	mg/kg	PO	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+SWOIFXHMBKFCRM-UHFFFAOYSA-N	Mouse	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+SWOIFXHMBKFCRM-UHFFFAOYSA-N	Mouse	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+FOECKIWHCOYYFL-UHFFFAOYSA-N	Mouse	25	mg/kg		25 - 75 mg/kg	Chemical Probes Portal	
+UNSHMXUHOHBLIQ-UHFFFAOYSA-N	Rat	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+UNSHMXUHOHBLIQ-UHFFFAOYSA-N	Rat	0.6	mg/kg		0.6 mg/Kg	Chemical Probes Portal	
+UNSHMXUHOHBLIQ-UHFFFAOYSA-N	Mouse	100	mg/kg		25, 50, 100 mg/Kg	Chemical Probes Portal	
+ZGBAPSHWPBXEKN-OPHFCASCSA-N	Mouse	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+ZGBAPSHWPBXEKN-OPHFCASCSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+QVIWDCUKIZPUBD-WLRWWHNQSA-N	Mouse	100	mg/kg		100 mg/kg	Chemical Probes Portal	
+XFYUTGIEFKGWND-NRFANRHFSA-N	Other				1 IV, 5-50 PO mg/Kg	Chemical Probes Portal	
+KIWKRCCIHSGWQS-VIFPVBQESA-N	Other				5 uM	Chemical Probes Portal	
+OMZCMEYTWSXEPZ-UHFFFAOYSA-N	Mouse	20	mg/kg		20-80 mg/kg	Chemical Probes Portal	
+BMLGZNVPWRUVNM-IBGZPJMESA-N	Other	0.5	mg/kg	IP	0.5 mg/Kg IP, 2 mg/Kg PO	Chemical Probes Portal	
+BMLGZNVPWRUVNM-IBGZPJMESA-N	Other	2	mg/kg	PO	0.5 mg/Kg IP, 2 mg/Kg PO	Chemical Probes Portal	
+LZSPYTNDRPEZBK-OXYJHPMESA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+FSELUFUYNUNZKD-UHFFFAOYSA-N	Mouse	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+CYFBRQHYEQKYHH-MRXNPFEDSA-N	Mouse	100	mg/kg		100 mg/Kg	Chemical Probes Portal	
+AESXAJXKMUNYJP-ZWFIUULVSA-N	Rat	1	mg/kg		1-2 mg/Kg	Chemical Probes Portal	
+AESXAJXKMUNYJP-ZWFIUULVSA-N	Rat	2	mg/kg		2-5 mg/Kg	Chemical Probes Portal	
+AESXAJXKMUNYJP-ZWFIUULVSA-N	Dog	1	mg/kg		1-2 mg/Kg	Chemical Probes Portal	
+AESXAJXKMUNYJP-ZWFIUULVSA-N	Dog	2	mg/kg		2-5 mg/Kg	Chemical Probes Portal	
+CSBKUBOVPUXFLO-MAVVKCOWSA-N	Mouse	50	mg/kg/day		50 mg/Kg/day	Chemical Probes Portal	
+CLSNATLUIXZPMV-UHFFFAOYSA-N	Mouse	0.5	mg/kg		0.5-2 mg/Kg	Chemical Probes Portal	
+NTIFDLOQPKMIJK-AJTFRIOCSA-N	Mouse	4	mg/kg	IV	4 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+NTIFDLOQPKMIJK-AJTFRIOCSA-N	Mouse	10	mg/kg	PO	4 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+NTIFDLOQPKMIJK-AJTFRIOCSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 2 mg/Kg PO	Chemical Probes Portal	
+NTIFDLOQPKMIJK-AJTFRIOCSA-N	Rat	2	mg/kg	PO	1 mg/Kg IV, 2 mg/Kg PO	Chemical Probes Portal	
+NTIFDLOQPKMIJK-AJTFRIOCSA-N	Dog	1	mg/kg	IV	1 mg/Kg IV, 2 mg/Kg PO	Chemical Probes Portal	
+NTIFDLOQPKMIJK-AJTFRIOCSA-N	Dog	2	mg/kg	PO	1 mg/Kg IV, 2 mg/Kg PO	Chemical Probes Portal	
+NTIFDLOQPKMIJK-AJTFRIOCSA-N	Monkey (Rheus)	1	mg/kg	IV	1 mg/Kg IV, 2 mg/Kg PO	Chemical Probes Portal	
+NTIFDLOQPKMIJK-AJTFRIOCSA-N	Monkey (Rheus)	2	mg/kg	PO	1 mg/Kg IV, 2 mg/Kg PO	Chemical Probes Portal	
+VERWOWGGCGHDQE-UHFFFAOYSA-N	Other				"5 IV, 20 PO (M); 3 IV, 10 PO (R); 5 IV, 20 PO (D);	5 IV, 60 PO (C) mg/Kg"	Chemical Probes Portal	
+NRJKIOCCERLIDG-GOSISDBHSA-N	Other	2	mg/kg		0.5, 1, 2 mg/Kg	Chemical Probes Portal	
+BRJXJOWXAFLRTE-OAQYLSRUSA-N	Mouse	100	mg/kg		100 mg/Kg	Chemical Probes Portal	
+XOQVZSSDIQQUGO-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/kg twice daily	Chemical Probes Portal	
+URWYQGVSPQJGGB-DHUJRADRSA-N	Rat	0.25	mg/kg		0.25 mg/Kg	Chemical Probes Portal	
+HDZWHJYZJWLTAG-UHFFFAOYSA-N	Mouse	30	mg/kg/day		30 mg/Kg/Day	Chemical Probes Portal	
+BJXYHBKEQFQVES-NWDGAFQWSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+BJXYHBKEQFQVES-NWDGAFQWSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+BJXYHBKEQFQVES-NWDGAFQWSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+BXKNUXDLZJPPBO-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+BXKNUXDLZJPPBO-UHFFFAOYSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+WCPXAGKUVIPMIY-TZQLILQPSA-N	Mouse	3	mg/kg	IV	3 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+WCPXAGKUVIPMIY-TZQLILQPSA-N	Mouse	10	mg/kg	PO	3 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+WCPXAGKUVIPMIY-TZQLILQPSA-N	Dog	0.1	mg/kg	IV	0.1 mg/Kg IV, 0.3 mg/Kg PO	Chemical Probes Portal	
+WCPXAGKUVIPMIY-TZQLILQPSA-N	Dog	0.3	mg/kg	PO	0.1 mg/Kg IV, 0.3 mg/Kg PO	Chemical Probes Portal	
+WCPXAGKUVIPMIY-TZQLILQPSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 3 mg/Kg PO	Chemical Probes Portal	
+WCPXAGKUVIPMIY-TZQLILQPSA-N	Rat	3	mg/kg	PO	1 mg/Kg IV, 3 mg/Kg PO	Chemical Probes Portal	
+VHSIAYLBCLUAFT-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+VHSIAYLBCLUAFT-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+VHSIAYLBCLUAFT-UHFFFAOYSA-N	Dog	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+VHSIAYLBCLUAFT-UHFFFAOYSA-N	Monkey (Rheus)	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+AZXOTZCWQDJCLY-SJCJKPOMSA-N	Rat	1	mg/kg		1.0 mg/Kg	Chemical Probes Portal	
+AZXOTZCWQDJCLY-SJCJKPOMSA-N	Dog	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+APLVGTKXOIMODQ-IBGZPJMESA-N	Mouse	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+APLVGTKXOIMODQ-IBGZPJMESA-N	Mouse	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+HZRJHVDNTDBTOZ-QGZVFWFLSA-N	Mouse	0.3	mg/kg	IV	0.3 mg/Kg IV, up to 200 mg/Kg	Chemical Probes Portal	
+HZRJHVDNTDBTOZ-QGZVFWFLSA-N	Mouse	200	mg/kg		0.3 mg/Kg IV, up to 200 mg/Kg	Chemical Probes Portal	
+LHGUZCKPFXXVPV-GOSISDBHSA-N	Mouse	50	mg/kg		50-200 mg/kg	Chemical Probes Portal	
+QKKIWEILHCXECO-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/kg	Chemical Probes Portal	
+KIEQQZZDWUNUQK-UHFFFAOYSA-N	Mouse	2	mg/kg		2mg/Kg	Chemical Probes Portal	
+KIEQQZZDWUNUQK-UHFFFAOYSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+KIEQQZZDWUNUQK-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+GCWIQUVXWZWCLE-INIZCTEOSA-N	Mouse	30	mg/kg	PO	30 mg/kg (oral), 10 mg/kg (SC)	Chemical Probes Portal	
+GCWIQUVXWZWCLE-INIZCTEOSA-N	Mouse	10	mg/kg	SC	30 mg/kg (oral), 10 mg/kg (SC)	Chemical Probes Portal	
+XASOHFCUIQARJT-UHFFFAOYSA-N	Mouse	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+XASOHFCUIQARJT-UHFFFAOYSA-N	Mouse	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+XASOHFCUIQARJT-UHFFFAOYSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+XASOHFCUIQARJT-UHFFFAOYSA-N	Rat	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+XASOHFCUIQARJT-UHFFFAOYSA-N	Dog	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+XASOHFCUIQARJT-UHFFFAOYSA-N	Dog	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+KFRGPUFONMCXQI-RUZDIDTESA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+KFRGPUFONMCXQI-RUZDIDTESA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+KFRGPUFONMCXQI-RUZDIDTESA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+KFRGPUFONMCXQI-RUZDIDTESA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+XKFTZKGMDDZMJI-HSZRJFAPSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+HKROEBDHHKMNBZ-CHBKHGQFSA-N	Rat	30	umol/kg		30 μmol/kg	Chemical Probes Portal	
+HOTSVKDMIYWWIY-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+HOTSVKDMIYWWIY-UHFFFAOYSA-N	Rat	100	mg/kg		10, 30, 100 mg/Kg	Chemical Probes Portal	
+HOTSVKDMIYWWIY-UHFFFAOYSA-N	Guinea Pig	100	mg/kg		100 mg/Kg	Chemical Probes Portal	
+AECDBHGVIIRMOI-UHFFFAOYSA-N	Mouse	20	mg/kg		20-50 mg/kg	Chemical Probes Portal	
+PTAMRJLIOCHJMQ-PYNGZGNASA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+PTAMRJLIOCHJMQ-PYNGZGNASA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+PTAMRJLIOCHJMQ-PYNGZGNASA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+PTAMRJLIOCHJMQ-PYNGZGNASA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+JGPJQFOROWSRRS-UHFFFAOYSA-N	Rat	11	uM/kg		11 uM/Kg	Chemical Probes Portal	
+QEASMQZYZCGOSA-UHFFFAOYSA-N	Mouse	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+QEASMQZYZCGOSA-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+QEASMQZYZCGOSA-UHFFFAOYSA-N	Rat	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+QEASMQZYZCGOSA-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+VQINULODWGEVBB-UHFFFAOYSA-N	Mouse	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+GPXQUPCJIJBXHJ-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+YHYKUSGACIYRML-KRWDZBQOSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+YHYKUSGACIYRML-KRWDZBQOSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+YHYKUSGACIYRML-KRWDZBQOSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+YHYKUSGACIYRML-KRWDZBQOSA-N	Monkey (Cynomolgus)	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+YHYKUSGACIYRML-KRWDZBQOSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+YHYKUSGACIYRML-KRWDZBQOSA-N	Dog	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+UWPFUBNCDABUEE-SIFUEBAJSA-N	Mouse	20	mg/kg		2.5, 5.0, 10 and 20 mg/Kg	Chemical Probes Portal	
+VLYNCWZASZUTNV-FCQUAONHSA-N	Rat	4.2	mg/kg	IV	4.20 mg/kg  IV, 0.42 mg/kg PO	Chemical Probes Portal	
+VLYNCWZASZUTNV-FCQUAONHSA-N	Rat	0.42	mg/kg	PO	4.20 mg/kg  IV, 0.42 mg/kg PO	Chemical Probes Portal	
+XKDHFIPNTTUSIA-UHFFFAOYSA-N	Mouse	5	uM/kg		5 uM/Kg	Chemical Probes Portal	
+XKDHFIPNTTUSIA-UHFFFAOYSA-N	Mouse	50	uM/kg		50 uM/Kg	Chemical Probes Portal	
+XKDHFIPNTTUSIA-UHFFFAOYSA-N	Mouse	80	uM/kg		80 uM/Kg	Chemical Probes Portal	
+ALGPVOJFIGPPPX-VIFPVBQESA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+UOZVVPXKJGOFIG-UHFFFAOYSA-N	Mouse	50	mg/kg		50 mg/kg	Chemical Probes Portal	
+MSYKRHVOOPPJKU-BDAKNGLRSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+GCVYFXYBQCKHCH-UHFFFAOYSA-N	Rat	0.5	mg/kg		0.5 mg/kg	Chemical Probes Portal	
+GCVYFXYBQCKHCH-UHFFFAOYSA-N	Rat	1	mg/kg		1.0 mg/kg	Chemical Probes Portal	
+JGLGMFHQGRAHAO-HXUWFJFHSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JGLGMFHQGRAHAO-HXUWFJFHSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+GHNYLVIESIGHDJ-OAQYLSRUSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+GHNYLVIESIGHDJ-OAQYLSRUSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+GHNYLVIESIGHDJ-OAQYLSRUSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+YHLQVQKZDZYMIP-MOPGFXCFSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+YHLQVQKZDZYMIP-MOPGFXCFSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+YHLQVQKZDZYMIP-MOPGFXCFSA-N	Dog	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+YHLQVQKZDZYMIP-MOPGFXCFSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+YHLQVQKZDZYMIP-MOPGFXCFSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+YHLQVQKZDZYMIP-MOPGFXCFSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+NDAZATDQFDPQBD-UHFFFAOYSA-N	Mouse	50	mg/kg		50 mg/Kg	Chemical Probes Portal	
+UCJZOKGUEJUNIO-IINYFYTJSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+UCJZOKGUEJUNIO-IINYFYTJSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+UCJZOKGUEJUNIO-IINYFYTJSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+UCJZOKGUEJUNIO-IINYFYTJSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+UCJZOKGUEJUNIO-IINYFYTJSA-N	Dog	0.2	mg/kg		0.2 mg/Kg	Chemical Probes Portal	
+UCJZOKGUEJUNIO-IINYFYTJSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+UCJZOKGUEJUNIO-IINYFYTJSA-N	Monkey (Cynomolgus)	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+UCJZOKGUEJUNIO-IINYFYTJSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+ZLVKIBLQXFILMA-IKGGRYGDSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+ZLVKIBLQXFILMA-IKGGRYGDSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+ZLVKIBLQXFILMA-IKGGRYGDSA-N	Mouse	100	mg/kg		100 mg/Kg	Chemical Probes Portal	
+BUIJBFHGUQJYSD-XZOQPEGZSA-N	Mouse	10	mg/kg	IV	10 mg/Kg IV, 40 mg/Kg PO	Chemical Probes Portal	
+BUIJBFHGUQJYSD-XZOQPEGZSA-N	Mouse	40	mg/kg	PO	10 mg/Kg IV, 40 mg/Kg PO	Chemical Probes Portal	
+BUIJBFHGUQJYSD-XZOQPEGZSA-N	Rat	10	mg/kg	IV	10 mg/Kg IV and PO	Chemical Probes Portal	
+BLFBSGVUERKSST-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/kg	Chemical Probes Portal	
+MOWXJLUYGFNTAL-DEOSSOPVSA-N	Mouse	0.2	mg/kg		0.2 mg/Kg	Chemical Probes Portal	
+MOWXJLUYGFNTAL-DEOSSOPVSA-N	Mouse	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+OMISHRJQMYQPMG-UHFFFAOYSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+OMISHRJQMYQPMG-UHFFFAOYSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+OMISHRJQMYQPMG-UHFFFAOYSA-N	Monkey (Cynomolgus)	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+OMISHRJQMYQPMG-UHFFFAOYSA-N	Monkey (Cynomolgus)	1	mg/kg		1.0 mg/Kg	Chemical Probes Portal	
+LTOAWFRZXVPHAJ-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+AOTRIQLYUAFVSC-UHFFFAOYSA-N	Rat					Chemical Probes Portal	
+AOTRIQLYUAFVSC-UHFFFAOYSA-N	Dog					Chemical Probes Portal	
+AOTRIQLYUAFVSC-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+ATKHYZXUMVNCIO-UHFFFAOYSA-N	Rat	0.3	mg/kg	IV	0.3 mg/kg IV, 0.6 mg/kg PO	Chemical Probes Portal	
+ATKHYZXUMVNCIO-UHFFFAOYSA-N	Rat	0.6	mg/kg	PO	0.3 mg/kg IV, 0.6 mg/kg PO	Chemical Probes Portal	
+ATKHYZXUMVNCIO-UHFFFAOYSA-N	Mouse	0.3	mg/kg		0.3 mg/kg	Chemical Probes Portal	
+WXRCLFFPZXJCLS-UHFFFAOYSA-N	Mouse	30	mg/kg		0.3, 3.0, 30.0 mg/Kg	Chemical Probes Portal	
+KLKKWCPJBTXWOV-UHFFFAOYSA-N	Mouse					Chemical Probes Portal	
+IPUJINDWAGRAHN-KNXBSLHKSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+IPUJINDWAGRAHN-KNXBSLHKSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+IPUJINDWAGRAHN-KNXBSLHKSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+IPUJINDWAGRAHN-KNXBSLHKSA-N	Dog	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+IPUJINDWAGRAHN-KNXBSLHKSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+IPUJINDWAGRAHN-KNXBSLHKSA-N	Monkey (Cynomolgus)	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+FMQWOAKTQPLQBR-SANMLTNESA-N	Rat	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+FMQWOAKTQPLQBR-SANMLTNESA-N	Rat	2	mg/kg		2.0 mg/Kg	Chemical Probes Portal	
+JOFQERPJMGKMMX-QGZVFWFLSA-N	Rat					Chemical Probes Portal	
+IKPNRMYDOSNVAU-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/kg	Chemical Probes Portal	
+IKPNRMYDOSNVAU-UHFFFAOYSA-N	Dog	0.5	mg/kg		0.5 mg/kg	Chemical Probes Portal	
+IKPNRMYDOSNVAU-UHFFFAOYSA-N	Monkey (Cynomolgus)	0.5	mg/kg		0.5 mg/kg	Chemical Probes Portal	
+OYDTWNVVTPPDDO-UHFFFAOYSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+OYDTWNVVTPPDDO-UHFFFAOYSA-N	Rat	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+OYDTWNVVTPPDDO-UHFFFAOYSA-N	Mouse	80	mg/kg		20 and 80 mg/Kg	Chemical Probes Portal	
+UEMPFKOYBHCUIG-QVIWBNHYSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+UEMPFKOYBHCUIG-QVIWBNHYSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+UEMPFKOYBHCUIG-QVIWBNHYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+UEMPFKOYBHCUIG-QVIWBNHYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+ILPWEAHQRAWJIU-OAHLLOKOSA-N	Mouse	3	mg/kg	IV	3 mg/Kg IV, 30 mg/Kg PO	Chemical Probes Portal	
+ILPWEAHQRAWJIU-OAHLLOKOSA-N	Mouse	30	mg/kg	PO	3 mg/Kg IV, 30 mg/Kg PO	Chemical Probes Portal	
+ILPWEAHQRAWJIU-OAHLLOKOSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+ILPWEAHQRAWJIU-OAHLLOKOSA-N	Rat	10	mg/kg	PO	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+ILPWEAHQRAWJIU-OAHLLOKOSA-N	Dog	2	mg/kg	IV	2 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+ILPWEAHQRAWJIU-OAHLLOKOSA-N	Dog	10	mg/kg	PO	2 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+DVFCRTGTEXUFIN-GFCCVEGCSA-N	Mouse	10	mg/kg		1, 10 mg/Kg	Chemical Probes Portal	
+HPBOMWKBZHYYGE-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+HPBOMWKBZHYYGE-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JDUBGYFRJFOXQC-KRWDZBQOSA-N	Mouse					Chemical Probes Portal	
+JDUBGYFRJFOXQC-KRWDZBQOSA-N	Rat					Chemical Probes Portal	
+JDUBGYFRJFOXQC-KRWDZBQOSA-N	Dog					Chemical Probes Portal	
+MCRHRRIGPAVFNY-SFHVURJKSA-N	Mouse	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+MCRHRRIGPAVFNY-SFHVURJKSA-N	Mouse	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+FXMIIWBGTCDJJQ-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FXMIIWBGTCDJJQ-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FXMIIWBGTCDJJQ-UHFFFAOYSA-N	Rat	0.6	mg/kg		0.6 mg/Kg, 1 mg/Kg	Chemical Probes Portal	
+FXMIIWBGTCDJJQ-UHFFFAOYSA-N	Rat	1	mg/kg		0.6 mg/Kg, 1 mg/Kg	Chemical Probes Portal	
+FXMIIWBGTCDJJQ-UHFFFAOYSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FXMIIWBGTCDJJQ-UHFFFAOYSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+HKXSBJJCHBFTMB-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+IYFCFYWXRIVCTH-OAHLLOKOSA-N	Mouse	1	mg/kg	IV	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+IYFCFYWXRIVCTH-OAHLLOKOSA-N	Mouse	10	mg/kg	PO	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+JOAFWIHZEBKYQK-OAHLLOKOSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+JOAFWIHZEBKYQK-OAHLLOKOSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+JOAFWIHZEBKYQK-OAHLLOKOSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JOAFWIHZEBKYQK-OAHLLOKOSA-N	Dog	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+JOAFWIHZEBKYQK-OAHLLOKOSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JOAFWIHZEBKYQK-OAHLLOKOSA-N	Monkey (Cynomolgus)	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+QJRFBKYETDVAJQ-ZEQKJWHPSA-N	Rat	5	mg/kg		5 mg/kg	Chemical Probes Portal	
+QJRFBKYETDVAJQ-ZEQKJWHPSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+QJRFBKYETDVAJQ-ZEQKJWHPSA-N	Dog	2.5	mg/kg		2.5 mg/Kg	Chemical Probes Portal	
+QJRFBKYETDVAJQ-ZEQKJWHPSA-N	Dog	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+FVZCFUKXGUUDBQ-ZWSMLAFMSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FVZCFUKXGUUDBQ-ZWSMLAFMSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+FVZCFUKXGUUDBQ-ZWSMLAFMSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+YPPSMYLMSKHYAY-UHFFFAOYSA-N	Mouse	2.5	mg/kg		2.5 mg/kg	Chemical Probes Portal	
+FOLSZCLZVLICGG-GJYPPUQNSA-N	Mouse	1	mg/kg	IV	1 mg/kg IV, 15 mg/kg PO	Chemical Probes Portal	
+FOLSZCLZVLICGG-GJYPPUQNSA-N	Mouse	15	mg/kg	PO	1 mg/kg IV, 15 mg/kg PO	Chemical Probes Portal	
+FOLSZCLZVLICGG-GJYPPUQNSA-N	Monkey (Cynomolgus)	0.5	mg/kg	IV	0.5 mg/kg IV, 1 mg/kg PO	Chemical Probes Portal	
+FOLSZCLZVLICGG-GJYPPUQNSA-N	Monkey (Cynomolgus)	1	mg/kg	PO	0.5 mg/kg IV, 1 mg/kg PO	Chemical Probes Portal	
+AKCDDYGYIGPEKL-JQOQJDEVSA-N	Rat	40	mg/kg		10/40 mg/kg	Chemical Probes Portal	
+AKCDDYGYIGPEKL-JQOQJDEVSA-N	Dog	5	mg/kg		5 mg/kg and 20 mg/kg	Chemical Probes Portal	
+AKCDDYGYIGPEKL-JQOQJDEVSA-N	Dog	20	mg/kg		5 mg/kg and 20 mg/kg	Chemical Probes Portal	
+HFOBENSCBRZVSP-NRFSWKIWSA-N	Mouse	1	mg/kg	IV	1 mg/Kg IV, 30 mg/Kg PO	Chemical Probes Portal	
+HFOBENSCBRZVSP-NRFSWKIWSA-N	Mouse	30	mg/kg	PO	1 mg/Kg IV, 30 mg/Kg PO	Chemical Probes Portal	
+XYKISMBNQVUKPW-GOSISDBHSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+XYKISMBNQVUKPW-GOSISDBHSA-N	Mouse					Chemical Probes Portal	
+JJRRWLVKNLMRSA-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+ZZFKEZYGYPWBGP-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+ZZFKEZYGYPWBGP-UHFFFAOYSA-N	Mouse	60	mg/kg		60 mg/Kg	Chemical Probes Portal	
+STQKUEFQEVDNLU-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/kg	Chemical Probes Portal	
+MVYWULXPOKYILU-UHFFFAOYSA-N	Mouse	0.5	mg/kg	IV	0.5 mg/Kg IV, 30 mg/Kg PO	Chemical Probes Portal	
+MVYWULXPOKYILU-UHFFFAOYSA-N	Mouse	30	mg/kg	PO	0.5 mg/Kg IV, 30 mg/Kg PO	Chemical Probes Portal	
+OLEFHQBTXFCZON-HXUWFJFHSA-N	Mouse	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+OLEFHQBTXFCZON-HXUWFJFHSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+OLEFHQBTXFCZON-HXUWFJFHSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+OLEFHQBTXFCZON-HXUWFJFHSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+OLEFHQBTXFCZON-HXUWFJFHSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+OLEFHQBTXFCZON-HXUWFJFHSA-N	Dog	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+WZMIWVZGYMKUDV-UHFFFAOYSA-N	Mouse	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+WZMIWVZGYMKUDV-UHFFFAOYSA-N	Mouse	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+LPQXZOJIUVOCAL-NRFANRHFSA-N	Mouse	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+LPQXZOJIUVOCAL-NRFANRHFSA-N	Mouse	1	mg/kg		1.0 mg/Kg	Chemical Probes Portal	
+LPQXZOJIUVOCAL-NRFANRHFSA-N	Rat	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+LPQXZOJIUVOCAL-NRFANRHFSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+LPQXZOJIUVOCAL-NRFANRHFSA-N	Dog	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+LPQXZOJIUVOCAL-NRFANRHFSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+YBXRSCXGRPSTMW-CYBMUJFWSA-N	Mouse					Chemical Probes Portal	
+YBXRSCXGRPSTMW-CYBMUJFWSA-N	Rat					Chemical Probes Portal	
+YBXRSCXGRPSTMW-CYBMUJFWSA-N	Dog					Chemical Probes Portal	
+YBXRSCXGRPSTMW-CYBMUJFWSA-N	Mouse	4	mg/kg		4 mg/Kg	Chemical Probes Portal	
+YBXRSCXGRPSTMW-CYBMUJFWSA-N	Mouse	4	mg/kg		4 mg/Kg	Chemical Probes Portal	
+SCLLZBIBSFTLIN-INOGPEIASA-N	Mouse	30	mg/kg		30 mgKg	Chemical Probes Portal	
+DNHPDWGIXIMXSA-CXNSMIOJSA-N	Rat	1	mg/kg		1-30 mg/Kg	Chemical Probes Portal	
+DNHPDWGIXIMXSA-CXNSMIOJSA-N	Mouse	1	mg/kg		1-10 mg/Kg	Chemical Probes Portal	
+MMJPVSDTLGFIQW-UHFFFAOYSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+MMJPVSDTLGFIQW-UHFFFAOYSA-N	Rat	10	mg/kg	PO	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+KVMGAIOTUIGROS-AZUAARDMSA-N	Mouse	1	mg/kg		0.03, 0.1, 0.3 and 1 mg/kg	Chemical Probes Portal	
+ZGTWRRCZLAOQMY-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+ZHXNIYGJAOPMSO-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+ZHXNIYGJAOPMSO-UHFFFAOYSA-N	Mouse	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+RXSCURXNWIHEAV-UHFFFAOYSA-N	Mouse	0.2	mg/kg		0.2 mg/Kg	Chemical Probes Portal	
+RXSCURXNWIHEAV-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+BJFSUDWKXGMUKA-UHFFFAOYSA-N	Mouse	180	mg/kg		180 mg/kg	Chemical Probes Portal	
+RNAMYOYQYRYFQY-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/kg	Chemical Probes Portal	
+QOECJCJVIMVJGX-UHFFFAOYSA-N	Mouse	1	mg/mL		1 mg/mL	Chemical Probes Portal	
+DPJNKUOXBZSZAI-UHFFFAOYSA-N	Mouse	150	mg/kg		15, 50 or 150 mg/kg	Chemical Probes Portal	
+OTTJIRVZJJGFTK-SFHVURJKSA-N	Other	0.8	mg/kg		0.8 mg/kg (rat), 10-100 mg/kg (mouse)	Chemical Probes Portal	
+OTTJIRVZJJGFTK-SFHVURJKSA-N	Other	10	mg/kg		0.8 mg/kg (rat), 10-100 mg/kg (mouse)	Chemical Probes Portal	
+ZKXZLIFRWWKZRY-KRWDZBQOSA-N	Mouse	10	mg/kg		10 mg/kg, 2 mg/kg (IV)	Chemical Probes Portal	
+ZKXZLIFRWWKZRY-KRWDZBQOSA-N	Mouse	2	mg/kg	IV	10 mg/kg, 2 mg/kg (IV)	Chemical Probes Portal	
+PSOXOVKYGWBTPB-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/Kg, 40 mg/Kg, 50 mg/Kg	Chemical Probes Portal	
+PSOXOVKYGWBTPB-UHFFFAOYSA-N	Mouse	40	mg/kg		30 mg/Kg, 40 mg/Kg, 50 mg/Kg	Chemical Probes Portal	
+PSOXOVKYGWBTPB-UHFFFAOYSA-N	Mouse	50	mg/kg		30 mg/Kg, 40 mg/Kg, 50 mg/Kg	Chemical Probes Portal	
+MPUQHZXIXSTTDU-QXGSTGNESA-N	Other	10	mg/kg		10-60 mg/kg	Chemical Probes Portal	
+DYIRSNMPIZZNBK-UHFFFAOYSA-N	Mouse	40	mg/kg		4 and 40 mg/kg	Chemical Probes Portal	
+DRLCSJFKKILATL-YWCVFVGNSA-N	Other	0.5	mg/kg		0.5 mg/kg (rat)	Chemical Probes Portal	
+ZDNGJXBUEQNFBQ-GCJKJVERSA-N	Rat	35	umol/kg		35-50 µmol/kg	Chemical Probes Portal	
+QJJXYPPXXYFBGM-LFZNUXCKSA-N	Rat	10	mg/kg		1, 2, 5, 10 mg/Kg	Chemical Probes Portal	
+YKNAKDFZAWQEEO-IBGZPJMESA-N	Mouse	3	mg/mL		3 mg/mL	Chemical Probes Portal	
+QJZRFPJCWMNVAV-HHHXNRCGSA-N	Mouse					Chemical Probes Portal	
+QJZRFPJCWMNVAV-HHHXNRCGSA-N	Mouse					Chemical Probes Portal	
+JNAHVYVRKWKWKQ-CYBMUJFWSA-N	Other	10	mg/kg		10 mg/kg (mice), 5 mg/kg (rat)	Chemical Probes Portal	
+JNAHVYVRKWKWKQ-CYBMUJFWSA-N	Other	5	mg/kg		10 mg/kg (mice), 5 mg/kg (rat)	Chemical Probes Portal	
+FDLYAMZZIXQODN-UHFFFAOYSA-N	Other	10	mg/kg		10 mg/kg (mouse)  , 15 mg/kg (rat), 2.5 mg/kg (dog)	Chemical Probes Portal	
+FDLYAMZZIXQODN-UHFFFAOYSA-N	Other	15	mg/kg		10 mg/kg (mouse)  , 15 mg/kg (rat), 2.5 mg/kg (dog)	Chemical Probes Portal	
+FDLYAMZZIXQODN-UHFFFAOYSA-N	Other	2.5	mg/kg		10 mg/kg (mouse)  , 15 mg/kg (rat), 2.5 mg/kg (dog)	Chemical Probes Portal	
+PCHKPVIQAHNQLW-CQSZACIVSA-N	Other					Chemical Probes Portal	
+ULXXDDBFHOBEHA-CWDCEQMOSA-N	Mouse	20	mg/kg		20 mg/kg	Chemical Probes Portal	
+KXBDTLQSDKGAEB-UHFFFAOYSA-N	Other	50	mg/kg		50 mg/kg	Chemical Probes Portal	
+LGWDVWIZDPGCFG-UHFFFAOYSA-N	Mouse				2 (IV), 10 (PO) mg/Kg	Chemical Probes Portal	
+SQSZANZGUXWJEA-UHFFFAOYSA-N	Other	100	mg/kg		30, 60, 100 mg/Kg	Chemical Probes Portal	
+GMPQGWXPDRNCBL-UHFFFAOYSA-N	Other	10	mg/kg		10 mg/kg	Chemical Probes Portal	
+CYOHGALHFOKKQC-UHFFFAOYSA-N	Mouse	10	mg/kg		10-100 mg/kg	Chemical Probes Portal	
+REVJNSVNICWODC-KIDMSAQOSA-N	Mouse	300	mg/kg		300 mg/kg (with extended release vehicle)	Chemical Probes Portal	
+DFBDRVGWBHBJNR-BBNFHIFMSA-N	Other	5	mg/kg		5-100 mg/Kg	Chemical Probes Portal	
+RRZVGDGTWNQAPW-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/kg	Chemical Probes Portal	
+ITTRLTNMFYIYPA-UHFFFAOYSA-N	Other	1	mg/kg	IV	1 mg/Kg IV, 10-25 mg/Kg PO	Chemical Probes Portal	
+ITTRLTNMFYIYPA-UHFFFAOYSA-N	Other	10	mg/kg	PO	1 mg/Kg IV, 10-25 mg/Kg PO	Chemical Probes Portal	
+PMQUGSPFUBGJCZ-CHOKWEPUSA-N	Other	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+PMQUGSPFUBGJCZ-CHOKWEPUSA-N	Other	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+QKPUKWQKXUUTOK-UHFFFAOYSA-N	Other	80	mg/kg		80 mg/kg	Chemical Probes Portal	
+MFYLCAMJNGIULC-KCVUFLITSA-N	Other	0.5	mg/kg		0.5 mg/Kg, 16 mg/Kg, 25 mg/Kg	Chemical Probes Portal	
+MFYLCAMJNGIULC-KCVUFLITSA-N	Other	16	mg/kg		0.5 mg/Kg, 16 mg/Kg, 25 mg/Kg	Chemical Probes Portal	
+MFYLCAMJNGIULC-KCVUFLITSA-N	Other	25	mg/kg		0.5 mg/Kg, 16 mg/Kg, 25 mg/Kg	Chemical Probes Portal	
+PIEQDBPBBQPLPL-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/Kg, 60 mg/Kg	Chemical Probes Portal	
+PIEQDBPBBQPLPL-UHFFFAOYSA-N	Mouse	60	mg/kg		30 mg/Kg, 60 mg/Kg	Chemical Probes Portal	
+UMUQEMHROZVOTF-LJQANCHMSA-N	Mouse	3	mg/kg		3 mg/kg	Chemical Probes Portal	
+VPQCHIWQHIOPQS-UHFFFAOYSA-N	Mouse	15	mg/kg	IV	15 mg/Kg IV, 30 mg/Kg IP	Chemical Probes Portal	
+VPQCHIWQHIOPQS-UHFFFAOYSA-N	Mouse	30	mg/kg	IP	15 mg/Kg IV, 30 mg/Kg IP	Chemical Probes Portal	
+HXBRBOYWXDLHDC-UHFFFAOYSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+HXBRBOYWXDLHDC-UHFFFAOYSA-N	Mouse	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+HXBRBOYWXDLHDC-UHFFFAOYSA-N	Mouse	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+FQAXDSVNYVVQSE-UHFFFAOYSA-N	Other	30	mg/kg		5, 10, 30 mg/Kg	Chemical Probes Portal	
+VTFWALACVWFKNO-OCJYXSBASA-N	Rat	0.3	mg/kg		0.3 mg/kg	Chemical Probes Portal	
+VTFWALACVWFKNO-OCJYXSBASA-N	Rat	1	mg/kg		1.0 mg/kg	Chemical Probes Portal	
+VTFWALACVWFKNO-OCJYXSBASA-N	Dog	0.3	mg/kg		0.3 mg/kg	Chemical Probes Portal	
+VTFWALACVWFKNO-OCJYXSBASA-N	Dog	1	mg/kg		1.0 mg/kg	Chemical Probes Portal	
+VTFWALACVWFKNO-OCJYXSBASA-N	Monkey (Cynomolgus)	0.3	mg/kg		0.3 mg/kg	Chemical Probes Portal	
+VTFWALACVWFKNO-OCJYXSBASA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+RJTJRVASUFIDQM-UHFFFAOYSA-N	Rat	2.5	mg/kg		2.5 mg/Kg	Chemical Probes Portal	
+RJTJRVASUFIDQM-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+RJTJRVASUFIDQM-UHFFFAOYSA-N	Dog	1.5	mg/kg		1.5 mg/Kg	Chemical Probes Portal	
+MDGIEDNDSFMSLP-UHFFFAOYSA-N	Other	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+BHKDKKZMPODMIQ-UHFFFAOYSA-N	Other				1 IV, 3 PO mg/Kg (M), 0.5 IV, 3 PO mg/Kg (R), 0.1 IV, 0.3 PO mg/Kg (D)	Chemical Probes Portal	
+NMQUSJQZQWKQBL-UHFFFAOYSA-N	Other	25	mg/kg		25 mg/Kg	Chemical Probes Portal	
+LBVKEEFIPBQIMD-JTQLQIEISA-N	Other	3	mg/kg	IV	3 mg/Kg IV, 10 mg/Kg PO, Reviewer suggest 50-100 mg/Kg	Chemical Probes Portal	
+LBVKEEFIPBQIMD-JTQLQIEISA-N	Other	10	mg/kg	PO	3 mg/Kg IV, 10 mg/Kg PO, Reviewer suggest 50-100 mg/Kg	Chemical Probes Portal	
+LBVKEEFIPBQIMD-JTQLQIEISA-N	Other	50	mg/kg		3 mg/Kg IV, 10 mg/Kg PO, Reviewer suggest 50-100 mg/Kg	Chemical Probes Portal	
+FIVSJYGQAIEMOC-ZGNKEGEESA-N	Other	0.3	mg/kg		0.3 mg/kg, 1.0 mg/Kg IV, o.3 mg/Kg PO	Chemical Probes Portal	
+FIVSJYGQAIEMOC-ZGNKEGEESA-N	Other	1	mg/kg	IV	0.3 mg/kg, 1.0 mg/Kg IV, o.3 mg/Kg PO	Chemical Probes Portal	
+FIVSJYGQAIEMOC-ZGNKEGEESA-N	Other	3	mg/kg	PO	0.3 mg/kg, 1.0 mg/Kg IV, o.3 mg/Kg PO	Chemical Probes Portal	
+WMOAPWVQPPIAFY-HSZRJFAPSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+JLNAZAXGWJVJEC-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+JLNAZAXGWJVJEC-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+JLNAZAXGWJVJEC-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JLNAZAXGWJVJEC-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+JLNAZAXGWJVJEC-UHFFFAOYSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JLNAZAXGWJVJEC-UHFFFAOYSA-N	Dog	6.72	mg/kg		6.72 mg/Kg	Chemical Probes Portal	
+YLGMPWWMPCGYBF-UHFFFAOYSA-N	Mouse					Chemical Probes Portal	
+YLGMPWWMPCGYBF-UHFFFAOYSA-N	Rat					Chemical Probes Portal	
+YLGMPWWMPCGYBF-UHFFFAOYSA-N	Dog					Chemical Probes Portal	
+YLGMPWWMPCGYBF-UHFFFAOYSA-N	Monkey (Cynomolgus)					Chemical Probes Portal	
+RGHLRMNPUGUZEY-UHFFFAOYSA-N	Rat					Chemical Probes Portal	
+RGHLRMNPUGUZEY-UHFFFAOYSA-N	Rat					Chemical Probes Portal	
+RGHLRMNPUGUZEY-UHFFFAOYSA-N	Mouse	25	mg/kg		25 mg/kg	Chemical Probes Portal	
+RDLSKDOSNKLEAQ-UHFFFAOYSA-N	Other				1 (IV), 5-30 (PO) mg/Kg	Chemical Probes Portal	
+KGSBEYKVWODBRD-ICSRJNTNSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+XSQUJFKRXZMOKA-PAFIKIDNSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+XSQUJFKRXZMOKA-PAFIKIDNSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+XUZMWHLSFXCVMG-UHFFFAOYSA-N	Other	10	mg/kg		1, 3, 10 mg/Kg	Chemical Probes Portal	
+SGSFONPFVRRJLS-UHFFFAOYSA-N	Rat	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+SGSFONPFVRRJLS-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+SGSFONPFVRRJLS-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+SGSFONPFVRRJLS-UHFFFAOYSA-N	Dog	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+SGSFONPFVRRJLS-UHFFFAOYSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+SGSFONPFVRRJLS-UHFFFAOYSA-N	Monkey (Cynomolgus)	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+SGSFONPFVRRJLS-UHFFFAOYSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+XLOGLWKOHPIJLV-UHFFFAOYSA-N	Other	2	mg/kg	PO	2 mg/kg oral, 1 mg/kg IV crossover (mouse and rat)	Chemical Probes Portal	
+XLOGLWKOHPIJLV-UHFFFAOYSA-N	Other	1	mg/kg	IV	2 mg/kg oral, 1 mg/kg IV crossover (mouse and rat)	Chemical Probes Portal	
+LOGJQOUIVKBFGH-YBEGLDIGSA-N	Mouse	2	mg/kg		2-4 mg/Kg	Chemical Probes Portal	
+JIFCFQDXHMUPGP-UHFFFAOYSA-N	Mouse	100	mg/kg		100 mg/kg	Chemical Probes Portal	
+NDEXUOWTGYUVGA-LJQANCHMSA-N	Other	40	mg/kg		4, 20, and 40 mg/kg (4 mg/kg)	Chemical Probes Portal	
+NDEXUOWTGYUVGA-LJQANCHMSA-N	Other	4	mg/kg		4, 20, and 40 mg/kg (4 mg/kg)	Chemical Probes Portal	
+MUOKSQABCJCOPU-UHFFFAOYSA-N	Mouse	75	mg/mL		75 mg/mL	Chemical Probes Portal	
+CMWRPDHVGMHLSZ-GFCCVEGCSA-N	Rat	3	mg/kg		3 mg/kg	Chemical Probes Portal	
+DADASRPKWOGKCU-FVTQAUBDSA-N	Other	2.4	mg/kg		2.4-20 mg/kg	Chemical Probes Portal	
+HZASIAXCPXTISQ-NVXWUHKLSA-N	Other					Chemical Probes Portal	
+AUMDBEHGJRZSOO-UHFFFAOYSA-N	Other	100	mg/kg		100 mg/kg	Chemical Probes Portal	
+STUWGJZDJHPWGZ-LBPRGKRZSA-N	Rat	1	mg/kg		1 mg/kg	Chemical Probes Portal	
+HTFNVAVTYILUCF-UHFFFAOYSA-N	Mouse	50	mg/kg		50 mg/kg	Chemical Probes Portal	
+VEPKQEUBKLEPRA-UHFFFAOYSA-N	Other	40	mg/kg		40 mg/kg (43 mg/kg)	Chemical Probes Portal	
+VEPKQEUBKLEPRA-UHFFFAOYSA-N	Other	43	mg/kg		40 mg/kg (43 mg/kg)	Chemical Probes Portal	
+KDGFLJKFZUIJMX-UHFFFAOYSA-N	Mouse	6	mg/kg		6 mg/kg	Chemical Probes Portal	
+ZBCMHWUFWQFPLV-VVOJOOEHSA-N	Other	30	mg/kg		10, 20, and 30 mg/kg	Chemical Probes Portal	
+IVUGFMLRJOCGAS-UHFFFAOYSA-N	Mouse	3.75	mg/kg		3.75-15 mg/kg	Chemical Probes Portal	
+JCINBYQJBYJGDM-UHFFFAOYSA-N	Other	1	mg/kg		1-100 mg/kg	Chemical Probes Portal	
+JUSFANSTBFGBAF-IRXDYDNUSA-N	Other	4	uM/kg		4 uM/kg (rat), 7.5-15 mg/kg (mouse)	Chemical Probes Portal	
+JUSFANSTBFGBAF-IRXDYDNUSA-N	Other	7.5	mg/kg		4 uM/kg (rat), 7.5-15 mg/kg (mouse)	Chemical Probes Portal	
+HXMGCTFLLWPVFM-GOSISDBHSA-N	Mouse					Chemical Probes Portal	
+DEZZLWQELQORIU-RELWKKBWSA-N	Mouse	25	mg/kg		25 mg/kg	Chemical Probes Portal	
+IENLGMOXAQMNEH-CYBMUJFWSA-N	Mouse	25	mg/kg		25 - 150 mg/kg	Chemical Probes Portal	
+LHNIIDJUOCFXAP-UHFFFAOYSA-N	Mouse				75 ng/kg	Chemical Probes Portal	
+MJSHVHLADKXCML-RQNOJGIXSA-N	Mouse	3	mg/mL		3 mg/mL	Chemical Probes Portal	
+AHYMHWXQRWRBKT-UHFFFAOYSA-N	Mouse	100	mg/kg		3, 10, 30, and 100 mg/kg	Chemical Probes Portal	
+VASPFLVEEOBQOS-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+VASPFLVEEOBQOS-UHFFFAOYSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+VASPFLVEEOBQOS-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+VASPFLVEEOBQOS-UHFFFAOYSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+VASPFLVEEOBQOS-UHFFFAOYSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+VASPFLVEEOBQOS-UHFFFAOYSA-N	Monkey (Cynomolgus)	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+AYCPARAPKDAOEN-LJQANCHMSA-N	Mouse	7.5	mg/kg		7.5-30 mg/kg	Chemical Probes Portal	
+DEEOXSOLTLIWMG-UHFFFAOYSA-N	Other	10	mg/kg		10-100 mg/kg	Chemical Probes Portal	
+QAPAJIZPZGWAND-UHFFFAOYSA-N	Other	2	mg/kg		2 mg/kg	Chemical Probes Portal	
+LQBVNQSMGBZMKD-UHFFFAOYSA-N	Other	12.5	mg/kg		12.5 mg/kg	Chemical Probes Portal	
+SOYCFODXNRVBTI-UHFFFAOYSA-N	Other	5	mg/kg		5 mg/kg	Chemical Probes Portal	
+ZFBHXVOCZBPADE-SSEXGKCCSA-N	Other	25	mg/kg		25 mg/kg, Reviewer suggested dose: 6.25-25 mg/Kg IV	Chemical Probes Portal	
+ZFBHXVOCZBPADE-SSEXGKCCSA-N	Other	6.25	mg/kg	IV	25 mg/kg, Reviewer suggested dose: 6.25-25 mg/Kg IV	Chemical Probes Portal	
+GXTJETQFYHZHNB-GASCZTMLSA-N	Mouse	10	mg/kg		10 mg/Kg, 100 mg/Kg	Chemical Probes Portal	
+GXTJETQFYHZHNB-GASCZTMLSA-N	Mouse	100	mg/kg		10 mg/Kg, 100 mg/Kg	Chemical Probes Portal	
+QLXULUNLCRKWRD-UHFFFAOYSA-N	Other				2.9 (IV) mg/kg, 33 (PO) mg/kg	Chemical Probes Portal	
+ONIQOQHATWINJY-UHFFFAOYSA-N	Mouse	100	mg/kg		100 mg/Kg	Chemical Probes Portal	
+WBLVOWHFRUAMCP-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+WBLVOWHFRUAMCP-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/kg	Chemical Probes Portal	
+DTBGJTHCIGPRDA-UHFFFAOYSA-N	Mouse	30	mg/kg		30-50 mg/Kg	Chemical Probes Portal	
+DKZYXHCYPUVGAF-JCNLHEQBSA-N	Other	1	mg/kg		1-20 mg/Kg	Chemical Probes Portal	
+SXWMIXPJPNCXQQ-UHFFFAOYSA-N	Other	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+BKWJAKQVGHWELA-UHFFFAOYSA-N	Other	20	mg/kg		5, 10, or 20 mg/kg, Reviewer suggest: 20 and 30 mg/Kg	Chemical Probes Portal	
+BKWJAKQVGHWELA-UHFFFAOYSA-N	Other	30	mg/kg		5, 10, or 20 mg/kg, Reviewer suggest: 20 and 30 mg/Kg	Chemical Probes Portal	
+IRTDIKMSKMREGO-OAHLLOKOSA-N	Other	1	mg/kg	IV	1 mg/Kg (IV), 10 mg/Kg (PO), 10 mg/Kg (IP)	Chemical Probes Portal	
+IRTDIKMSKMREGO-OAHLLOKOSA-N	Other	10	mg/kg	PO	1 mg/Kg (IV), 10 mg/Kg (PO), 10 mg/Kg (IP)	Chemical Probes Portal	
+IRTDIKMSKMREGO-OAHLLOKOSA-N	Other	10	mg/kg	IP	1 mg/Kg (IV), 10 mg/Kg (PO), 10 mg/Kg (IP)	Chemical Probes Portal	
+CDOOFZZILLRUQH-GDLZYMKVSA-N	Other	30	mg/kg		30-100 mg/Kg	Chemical Probes Portal	
+VMJFTOSOFDEKTM-UHFFFAOYSA-N	Other	100	mg/kg		10, 30, 100 mg/Kg	Chemical Probes Portal	
+WKIALOXOAZXGMG-UHFFFAOYSA-N	Other	0.1	mg/kg		0.1-10 mg/Kg	Chemical Probes Portal	
+KNLROUBMVYVLGX-UHFFFAOYSA-N	Other	40	mg/kg		40 mg/kg	Chemical Probes Portal	
+GSGDUDAFETZSPM-IATAILRESA-N	Mouse	1	mg/kg	IV	1 mg/kg IV, 5 mg/kg PO	Chemical Probes Portal	
+GSGDUDAFETZSPM-IATAILRESA-N	Mouse	5	mg/kg	PO	1 mg/kg IV, 5 mg/kg PO	Chemical Probes Portal	
+PWBHUSLMHZLGRN-UHFFFAOYSA-N	Other	2	mg/kg		2 mg/Kg (M, R); 1 mg/Kg (Cyno)	Chemical Probes Portal	
+PWBHUSLMHZLGRN-UHFFFAOYSA-N	Other	1	mg/kg		2 mg/Kg (M, R); 1 mg/Kg (Cyno)	Chemical Probes Portal	
+WCPTUQOMNJBIET-CALCHBBNSA-N	Other	25	mg/kg	IV	25 mg/kg IV (mouse)	Chemical Probes Portal	
+NWGMIELHSCQGOG-ZDUSSCGKSA-N	Other					Chemical Probes Portal	
+OHRDCQFCAWLDBP-SBUREZEXSA-N	Other	1	mg/kg		1-10 mg/Kg	Chemical Probes Portal	
+KKFFOOWORPUAJB-NVXWUHKLSA-N	Mouse	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+BNTAEJNPQLMGDJ-LLVKDONJSA-N	Other	30	mg/kg		30 mg/Kg, 10 mg/Kg, 5 mg/Kg	Chemical Probes Portal	
+BNTAEJNPQLMGDJ-LLVKDONJSA-N	Other	10	mg/kg		30 mg/Kg, 10 mg/Kg, 5 mg/Kg	Chemical Probes Portal	
+BNTAEJNPQLMGDJ-LLVKDONJSA-N	Other	5	mg/kg		30 mg/Kg, 10 mg/Kg, 5 mg/Kg	Chemical Probes Portal	
+WXRGFPHDRFQODR-ICLZECGLSA-N	Mouse	50	mg/mL		50 mg/mL continuous infusion	Chemical Probes Portal	
+NSQSAUGJQHDYNO-UHFFFAOYSA-N	Mouse	125	mg/kg		125-500 mg/kg	Chemical Probes Portal	
+LQTWDAYNGMMHLV-UHFFFAOYSA-N	Mouse	5	mg/kg	IV	5 mg/Kg IV, 10 mg/Kg PO, 75 mg/Kg IP	Chemical Probes Portal	
+LQTWDAYNGMMHLV-UHFFFAOYSA-N	Mouse	10	mg/kg	PO	5 mg/Kg IV, 10 mg/Kg PO, 75 mg/Kg IP	Chemical Probes Portal	
+LQTWDAYNGMMHLV-UHFFFAOYSA-N	Mouse	75	mg/kg	IP	5 mg/Kg IV, 10 mg/Kg PO, 75 mg/Kg IP	Chemical Probes Portal	
+HPODOLXTMDHLLC-QGZVFWFLSA-N	Mouse	1	mg/kg	IV	1 mg/kg (IV), 100 mg/kg (PO)	Chemical Probes Portal	
+HPODOLXTMDHLLC-QGZVFWFLSA-N	Mouse	100	mg/kg	PO	1 mg/kg (IV), 100 mg/kg (PO)	Chemical Probes Portal	
+PTPNCCWOTBBVJR-UHFFFAOYSA-N	Mouse	10	ug		10 ug/Mouse	Chemical Probes Portal	
+ATFQBBCQZKVZJN-QMMMGPOBSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+ATFQBBCQZKVZJN-QMMMGPOBSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+ATFQBBCQZKVZJN-QMMMGPOBSA-N	Rat	50	mg/kg		50 mg/Kg	Chemical Probes Portal	
+ATFQBBCQZKVZJN-QMMMGPOBSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+ATFQBBCQZKVZJN-QMMMGPOBSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+ATFQBBCQZKVZJN-QMMMGPOBSA-N	Mouse	50	mg/kg		50 mg/Kg	Chemical Probes Portal	
+QLPHOXTXAKOFMU-WBVHZDCISA-N	Mouse	100	mg/kg		100 mg/kg	Chemical Probes Portal	
+VOVZXURTCKPRDQ-CQSZACIVSA-N	Other	30	mg/kg	PO	1 (M), 2(R), 1(D) mg/Kg IV, 30 (M), 30 (R), 15 (D) 30 mg/Kg PO	Chemical Probes Portal	
+IIQUYGWWHIHOCF-UHFFFAOYSA-N	Other	20	mg/kg		20 mg/kg	Chemical Probes Portal	
+OINGHOPGNMYCAB-INIZCTEOSA-N	Other					Chemical Probes Portal	
+JBGYKRAZYDNCNV-UHFFFAOYSA-N	Mouse	10	mg/kg		10 - 50 mg/Kg	Chemical Probes Portal	
+DMIDPTCQPIJYFE-UHFFFAOYSA-N	Mouse	30	mg/mL		30 mg/mL	Chemical Probes Portal	
+HSVRUECLQUGTDS-UHFFFAOYSA-N	Other	10	mg/kg		10-200 mg/Kg	Chemical Probes Portal	
+NVGROBHDOYRPAN-FPTDNZKUSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+NVGROBHDOYRPAN-FPTDNZKUSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+NVGROBHDOYRPAN-FPTDNZKUSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+NVGROBHDOYRPAN-FPTDNZKUSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+NVGROBHDOYRPAN-FPTDNZKUSA-N	Dog	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+NVGROBHDOYRPAN-FPTDNZKUSA-N	Dog	0.1	mg/kg		0.1 mg/Kg	Chemical Probes Portal	
+VKQBTIMLSDGNLG-QHCPKHFHSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+VKQBTIMLSDGNLG-QHCPKHFHSA-N	Rat	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+ZNNLBTZKUZBEKO-UHFFFAOYSA-N	Other	10	mg/kg		0.4, 1, 10 mg/Kg	Chemical Probes Portal	
+FAEKWTJYAYMJKF-QHCPKHFHSA-N	Rat	1	mg/kg		1 mg/kg	Chemical Probes Portal	
+LYPAFUINURXJSG-AWEZNQCLSA-N	Other	5	mg/kg	PO	1.1 (R) - 1.2 (M) mg/Kg, 2.1 (R) - 1.9 (M) mg/Kg, Reviewer suggested 5-50 mg/Kg PO	Chemical Probes Portal	
+JGWRKYUXBBNENE-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JGWRKYUXBBNENE-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+JGWRKYUXBBNENE-UHFFFAOYSA-N	Mouse	50	mg/kg		50 mg/Kg	Chemical Probes Portal	
+JGWRKYUXBBNENE-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JGWRKYUXBBNENE-UHFFFAOYSA-N	Rat	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+JGWRKYUXBBNENE-UHFFFAOYSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JGWRKYUXBBNENE-UHFFFAOYSA-N	Dog	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+JGWRKYUXBBNENE-UHFFFAOYSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JGWRKYUXBBNENE-UHFFFAOYSA-N	Monkey (Cynomolgus)	160	mg/kg		160 mg/Kg	Chemical Probes Portal	
+RZLXOEIALAVGKH-UHFFFAOYSA-N	Mouse	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+RZLXOEIALAVGKH-UHFFFAOYSA-N	Mouse	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+RZLXOEIALAVGKH-UHFFFAOYSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+RZLXOEIALAVGKH-UHFFFAOYSA-N	Rat	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+ZKIQFLSGMMYCGS-SANMLTNESA-N	Rat	30	mg/kg	IV	1, 10, 30 mg/Kg, 1.1 (IV), 2.2 (PO) mg/Kg	Chemical Probes Portal	
+NFHSJYKXENYICE-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+NFHSJYKXENYICE-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+NFHSJYKXENYICE-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+NFHSJYKXENYICE-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+NFHSJYKXENYICE-UHFFFAOYSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+NFHSJYKXENYICE-UHFFFAOYSA-N	Rat	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+GOVYBPLHWIEHEJ-UHFFFAOYSA-N	Mouse	5	mg/kg	IV	5 mg/Kg IV, 30 mg/Kg Oral	Chemical Probes Portal	
+GOVYBPLHWIEHEJ-UHFFFAOYSA-N	Mouse	30	mg/kg	PO	5 mg/Kg IV, 30 mg/Kg Oral	Chemical Probes Portal	
+OJQMKCBWYCWFPU-UHFFFAOYSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+OJQMKCBWYCWFPU-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+OJQMKCBWYCWFPU-UHFFFAOYSA-N	Dog	1	mg/kg		1 mg/kg	Chemical Probes Portal	
+OJQMKCBWYCWFPU-UHFFFAOYSA-N	Dog	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+OJQMKCBWYCWFPU-UHFFFAOYSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+WXTJCPHELGTTJU-FMKPAKJESA-N	Mouse	1	mg/kg		1 mg/kg	Chemical Probes Portal	
+WXTJCPHELGTTJU-FMKPAKJESA-N	Mouse	20	mg/kg		20 mg/kg	Chemical Probes Portal	
+JYYLVUFNAHSSFE-UHFFFAOYSA-N	Rat	5	mg/kg	IV	5 mg/Kg IV, PO	Chemical Probes Portal	
+JYYLVUFNAHSSFE-UHFFFAOYSA-N	Monkey (Cynomolgus)	5	mg/kg	IV	5 mg/Kg IV, PO	Chemical Probes Portal	
+JYYLVUFNAHSSFE-UHFFFAOYSA-N	Dog	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+HEAUOKZIVMZVQL-VWLOTQADSA-N	Rat	10	mg/kg		10 mg/kg	Chemical Probes Portal	
+HEAUOKZIVMZVQL-VWLOTQADSA-N	Mouse					Chemical Probes Portal	
+HEAUOKZIVMZVQL-VWLOTQADSA-N	Monkey (Rheus)					Chemical Probes Portal	
+HEAUOKZIVMZVQL-VWLOTQADSA-N	Dog	50	mg/kg	PO	50 mg/Kg PO	Chemical Probes Portal	
+ASRLBLHATMXGPC-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/kg	Chemical Probes Portal	
+ASRLBLHATMXGPC-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+POKVQQVLRJLUAK-UHFFFAOYSA-N	Mouse	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+POKVQQVLRJLUAK-UHFFFAOYSA-N	Mouse	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+POKVQQVLRJLUAK-UHFFFAOYSA-N	Rat	1	mg/kg	IV	1.0 mg/Kg IV, 2.5 mg/Kg PO	Chemical Probes Portal	
+POKVQQVLRJLUAK-UHFFFAOYSA-N	Rat	2.5	mg/kg	PO	1.0 mg/Kg IV, 2.5 mg/Kg PO	Chemical Probes Portal	
+POKVQQVLRJLUAK-UHFFFAOYSA-N	Dog	0.5	mg/kg	IV	0.5 mg/Kg IV, 1.15 mg/Kg PO	Chemical Probes Portal	
+POKVQQVLRJLUAK-UHFFFAOYSA-N	Dog	1.15	mg/kg	PO	0.5 mg/Kg IV, 1.15 mg/Kg PO	Chemical Probes Portal	
+POKVQQVLRJLUAK-UHFFFAOYSA-N	Monkey (Cynomolgus)	5	mg/kg	IV	o.5 mg/Kg IV, 1.25 mg/Kg PO	Chemical Probes Portal	
+POKVQQVLRJLUAK-UHFFFAOYSA-N	Monkey (Cynomolgus)	1.25	mg/kg	PO	o.5 mg/Kg IV, 1.25 mg/Kg PO	Chemical Probes Portal	
+RKAFYSIKAVFVPS-UHFFFAOYSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+RKAFYSIKAVFVPS-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+RKAFYSIKAVFVPS-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+RKAFYSIKAVFVPS-UHFFFAOYSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+XVGSKZXXLKUEIO-MRXNPFEDSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+XVGSKZXXLKUEIO-MRXNPFEDSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+XVGSKZXXLKUEIO-MRXNPFEDSA-N	Mouse	50	mg/kg		50 mg/Kg	Chemical Probes Portal	
+KTBSXLIQKWEBRB-UHFFFAOYSA-N	Mouse	80	mg		20, 40, and 80 mg/k	Chemical Probes Portal	
+HXYXHSDYBDFOFO-INIZCTEOSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+HXYXHSDYBDFOFO-INIZCTEOSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+HXYXHSDYBDFOFO-INIZCTEOSA-N	Rat	1	mg/kg	PO	1 mg/Kg followed  after 2 days of washout by a single oral dose of 3 mg/Kg	Chemical Probes Portal	
+HXYXHSDYBDFOFO-INIZCTEOSA-N	Rat	3	mg/kg		1 mg/Kg followed  after 2 days of washout by a single oral dose of 3 mg/Kg	Chemical Probes Portal	
+HHFWQMFTPDFWLM-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+HHFWQMFTPDFWLM-UHFFFAOYSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+FSQGWBXWGNWEAV-CMDGGOBGSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FSQGWBXWGNWEAV-CMDGGOBGSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+FSQGWBXWGNWEAV-CMDGGOBGSA-N	Mouse	75	mg/kg		75 mg/Kg	Chemical Probes Portal	
+FSQGWBXWGNWEAV-CMDGGOBGSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FSQGWBXWGNWEAV-CMDGGOBGSA-N	Rat	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+FSQGWBXWGNWEAV-CMDGGOBGSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FSQGWBXWGNWEAV-CMDGGOBGSA-N	Dog	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+OXTSYWDBUVRXFF-GDLZYMKVSA-N	Dog	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+OXTSYWDBUVRXFF-GDLZYMKVSA-N	Dog	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+KRNAOFGYEFKHPB-ANJVHQHFSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+KRNAOFGYEFKHPB-ANJVHQHFSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+KRNAOFGYEFKHPB-ANJVHQHFSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+KRNAOFGYEFKHPB-ANJVHQHFSA-N	Monkey (Cynomolgus)	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+LBFYQISQYCGDDW-UHFFFAOYSA-N	Other	0.2	mg/kg	IV	0.2 mg/kg (IV), 0.5 mg/kg (PO)	Chemical Probes Portal	
+LBFYQISQYCGDDW-UHFFFAOYSA-N	Other	0.5	mg/kg	PO	0.2 mg/kg (IV), 0.5 mg/kg (PO)	Chemical Probes Portal	
+WBFSPPPOPIJCLF-UHFFFAOYSA-N	Rat					Chemical Probes Portal	
+WBFSPPPOPIJCLF-UHFFFAOYSA-N	Monkey (Cynomolgus)					Chemical Probes Portal	
+FUEYCNUHTBZPRF-SVBPBHIXSA-N	Rat	10	mg/kg		10.0 mg/kg	Chemical Probes Portal	
+FUEYCNUHTBZPRF-SVBPBHIXSA-N	Rat	25	mg/kg		25.0 mg/kg	Chemical Probes Portal	
+KDTQFQYXTWVBCC-UHFFFAOYSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+KDTQFQYXTWVBCC-UHFFFAOYSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+KDTQFQYXTWVBCC-UHFFFAOYSA-N	Dog	0.1	mg/kg		0.1 mg/Kg	Chemical Probes Portal	
+GSLHDZCTAHKMDW-UHFFFAOYSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+GSLHDZCTAHKMDW-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+GSLHDZCTAHKMDW-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+ODRITQGYYWHQGM-INIZCTEOSA-N	Mouse	0.2	mg/kg	IV	0.2 mg/Kg IV, 0.5 mg/Kg PO	Chemical Probes Portal	
+ODRITQGYYWHQGM-INIZCTEOSA-N	Mouse	0.5	mg/kg	PO	0.2 mg/Kg IV, 0.5 mg/Kg PO	Chemical Probes Portal	
+ODRITQGYYWHQGM-INIZCTEOSA-N	Rat	0.2	mg/kg	IV	0.2 mg/Kg IV, 0.5 mg/Kg PO	Chemical Probes Portal	
+ODRITQGYYWHQGM-INIZCTEOSA-N	Rat	0.5	mg/kg	PO	0.2 mg/Kg IV, 0.5 mg/Kg PO	Chemical Probes Portal	
+ODRITQGYYWHQGM-INIZCTEOSA-N	Dog	0.2	mg/kg	IV	0.2 mg/Kg IV, 0.5 mg/Kg PO	Chemical Probes Portal	
+ODRITQGYYWHQGM-INIZCTEOSA-N	Dog	0.5	mg/kg	PO	0.2 mg/Kg IV, 0.5 mg/Kg PO	Chemical Probes Portal	
+BODASLVEZBWITD-ACCUITESSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+BODASLVEZBWITD-ACCUITESSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+OYMNPJXKQVTQTR-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+BXNMZRPTQFVRFA-QGZVFWFLSA-N	Rat	2	mg/kg		2-10 mg/Kg	Chemical Probes Portal	
+BXNMZRPTQFVRFA-QGZVFWFLSA-N	Dog	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+WCWUXEGQKLTGDX-LLVKDONJSA-N	Other	90	mg/kg		10, 60, 90 Mg/Kg	Chemical Probes Portal	
+HTCJUBZBSJQWBW-CQSZACIVSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+HTCJUBZBSJQWBW-CQSZACIVSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+HTCJUBZBSJQWBW-CQSZACIVSA-N	Dog	0.25	mg/kg		0.25 mg/Kg	Chemical Probes Portal	
+HTCJUBZBSJQWBW-CQSZACIVSA-N	Dog	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+HTCJUBZBSJQWBW-CQSZACIVSA-N	Monkey (Cynomolgus)	0.1	mg/kg		0.1 mg/Kg	Chemical Probes Portal	
+HTCJUBZBSJQWBW-CQSZACIVSA-N	Monkey (Cynomolgus)	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+HTCJUBZBSJQWBW-CQSZACIVSA-N	Other	3	mg/kg		3 mg/kg once weekly for 8 weeks	Chemical Probes Portal	
+VSOUDUXMPUHJEU-UHFFFAOYSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+VSOUDUXMPUHJEU-UHFFFAOYSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+VSOUDUXMPUHJEU-UHFFFAOYSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+VSOUDUXMPUHJEU-UHFFFAOYSA-N	Dog	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+VSOUDUXMPUHJEU-UHFFFAOYSA-N	Mouse	100	mg/kg		100 mg/Kg	Chemical Probes Portal	
+VSOUDUXMPUHJEU-UHFFFAOYSA-N	Rat	15	mg/kg		15 mg/Kg	Chemical Probes Portal	
+VSOUDUXMPUHJEU-UHFFFAOYSA-N	Dog	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+RSJAXPUYVJKAAA-JPGJPTAESA-N	Other	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+ATALOFNDEOCMKK-OITMNORJSA-N	Other	0.3	mg/kg		0.3-3.0 mg/Kg	Chemical Probes Portal	
+ATALOFNDEOCMKK-OITMNORJSA-N	Other	0.1	mg/kg		0.1-3.0 mg/Kg	Chemical Probes Portal	
+ATALOFNDEOCMKK-OITMNORJSA-N	Rat	5	mg/kg		2 and 5 mg/Kg	Chemical Probes Portal	
+ATALOFNDEOCMKK-OITMNORJSA-N	Dog	2	mg/kg		0.5, 2.0 mg/Kg	Chemical Probes Portal	
+ATHZIFFSGSWIAU-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+UXZAJSZFFARTEI-YRPNKDGESA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+YHGBLECINAKBKX-UHFFFAOYSA-N	Rat	1	mg/kg		1.0 mg/Kg	Chemical Probes Portal	
+YHGBLECINAKBKX-UHFFFAOYSA-N	Rat	5	mg/kg		5.0 mg/Kg	Chemical Probes Portal	
+NCWQLHHDGDXIJN-UHFFFAOYSA-N	Mouse	50	mg/kg		50 mg/Kg BID	Chemical Probes Portal	
+OAEWNSKRLBVVBV-QSEAXJEQSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+OAEWNSKRLBVVBV-QSEAXJEQSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+OAEWNSKRLBVVBV-QSEAXJEQSA-N	Dog	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+OAEWNSKRLBVVBV-QSEAXJEQSA-N	Monkey (Cynomolgus)	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+QLOHOGRMRUDDPM-LBPRGKRZSA-N	Rat	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+QLOHOGRMRUDDPM-LBPRGKRZSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+QLOHOGRMRUDDPM-LBPRGKRZSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+QLOHOGRMRUDDPM-LBPRGKRZSA-N	Dog	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+PUKBOVABABRILL-YZNIXAGQSA-N	Mouse	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+PUKBOVABABRILL-YZNIXAGQSA-N	Rat	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+PUKBOVABABRILL-YZNIXAGQSA-N	Dog	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+PUKBOVABABRILL-YZNIXAGQSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+PUKBOVABABRILL-YZNIXAGQSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+PUKBOVABABRILL-YZNIXAGQSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+PUKBOVABABRILL-YZNIXAGQSA-N	Rat	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+PUKBOVABABRILL-YZNIXAGQSA-N	Monkey (Cynomolgus)	100	mg/kg		100 mg/Kg	Chemical Probes Portal	
+FJZNNKJZHQFMCK-LRDDRELGSA-N	Mouse	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+FJZNNKJZHQFMCK-LRDDRELGSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FJZNNKJZHQFMCK-LRDDRELGSA-N	Rat	1	mg/kg		1.0 mg/Kg	Chemical Probes Portal	
+FJZNNKJZHQFMCK-LRDDRELGSA-N	Rat	1	mg/kg		1.0 mg/Kg	Chemical Probes Portal	
+FJZNNKJZHQFMCK-LRDDRELGSA-N	Dog	1	mg/kg		1.0 mg/Kg	Chemical Probes Portal	
+FJZNNKJZHQFMCK-LRDDRELGSA-N	Dog	1	mg/kg		1.0 mg/Kg	Chemical Probes Portal	
+FJZNNKJZHQFMCK-LRDDRELGSA-N	Monkey (Cynomolgus)	1	mg/kg		1.0 mg/Kg	Chemical Probes Portal	
+FJZNNKJZHQFMCK-LRDDRELGSA-N	Monkey (Cynomolgus)	3	mg/kg		3.0 mg/Kg	Chemical Probes Portal	
+BZCALJIHZVNMGJ-HSZRJFAPSA-N	Other				1 IV, 3 PO mg/Kg Rat, 0.5 IV, 1 PO mg/Kg Dog	Chemical Probes Portal	
+KDFQABSFVYLGPM-QFIPXVFZSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+KDFQABSFVYLGPM-QFIPXVFZSA-N	Dog	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+KDFQABSFVYLGPM-QFIPXVFZSA-N	Monkey (Rheus)	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+KDFQABSFVYLGPM-QFIPXVFZSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+KDFQABSFVYLGPM-QFIPXVFZSA-N	Dog	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+KDFQABSFVYLGPM-QFIPXVFZSA-N	Monkey (Rheus)	50	mg/kg		50 mg/Kg	Chemical Probes Portal	
+PZGSYNNVPNLHQG-SANMLTNESA-N	Rat	0.5	mg/kg	IV	0.5 mg/kg IV, 2.0, 10 and 30 mg/kg PO	Chemical Probes Portal	
+PZGSYNNVPNLHQG-SANMLTNESA-N	Rat	30	mg/kg	PO	0.5 mg/kg IV, 2.0, 10 and 30 mg/kg PO	Chemical Probes Portal	
+PZGSYNNVPNLHQG-SANMLTNESA-N	Dog	0.5	mg/kg	IV	0.5 mg/kg IV, 2.0 mg/kg PO	Chemical Probes Portal	
+PZGSYNNVPNLHQG-SANMLTNESA-N	Dog	2	mg/kg	PO	0.5 mg/kg IV, 2.0 mg/kg PO	Chemical Probes Portal	
+PZGSYNNVPNLHQG-SANMLTNESA-N	Monkey (Cynomolgus)	0.5	mg/kg	IV	0.5 mg/kg IV, 2.0 and 20 mg/kg PO	Chemical Probes Portal	
+PZGSYNNVPNLHQG-SANMLTNESA-N	Monkey (Cynomolgus)	20	mg/kg	PO	0.5 mg/kg IV, 2.0 and 20 mg/kg PO	Chemical Probes Portal	
+OGJGQVFWEPNYSB-UHFFFAOYSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+OGJGQVFWEPNYSB-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+VXNAMCLMCBLNOL-NFQMXDRXSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+VXNAMCLMCBLNOL-NFQMXDRXSA-N	Rat	10	mg/kg	PO	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+HVVLGXULBVAFRZ-UHFFFAOYSA-N	Rat	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+HVVLGXULBVAFRZ-UHFFFAOYSA-N	Dog	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+HLCHESOMJVGDSJ-LOYHVIPDSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+HLCHESOMJVGDSJ-LOYHVIPDSA-N	Rat	10	mg/kg	PO	1 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+HLCHESOMJVGDSJ-LOYHVIPDSA-N	Dog	0.2	mg/kg	IV	0.2 mg/Kg IV, 0.5 mg/Kg PO	Chemical Probes Portal	
+HLCHESOMJVGDSJ-LOYHVIPDSA-N	Dog	0.5	mg/kg	PO	0.2 mg/Kg IV, 0.5 mg/Kg PO	Chemical Probes Portal	
+VOSAWOSMGPKQEQ-OALUTQOASA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+VOSAWOSMGPKQEQ-OALUTQOASA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+VOSAWOSMGPKQEQ-OALUTQOASA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+TYXSIXOYTBHZFA-UHFFFAOYSA-N	Other	10	mg/kg		10 to 30 mg/Kg in Rat	Chemical Probes Portal	
+PMEQBGAGFZDWQX-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+ZPCGODCPRDIFRQ-UHFFFAOYSA-N	Mouse	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+ZPCGODCPRDIFRQ-UHFFFAOYSA-N	Mouse	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+ZPCGODCPRDIFRQ-UHFFFAOYSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+ZPCGODCPRDIFRQ-UHFFFAOYSA-N	Rat	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+ZPCGODCPRDIFRQ-UHFFFAOYSA-N	Dog	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+ZPCGODCPRDIFRQ-UHFFFAOYSA-N	Dog	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+AFJRYPJIKHMNGL-UHFFFAOYSA-N	Rat	0.3	mg/kg		0.3 to 3 mg/kg	Chemical Probes Portal	
+AFJRYPJIKHMNGL-UHFFFAOYSA-N	Rat	0.1	mg/kg		0.1 mg/Kg	Chemical Probes Portal	
+AFJRYPJIKHMNGL-UHFFFAOYSA-N	Rat	0.1	mg/kg		0.1 mg/Kg	Chemical Probes Portal	
+LPORLBPACXEOET-UHFFFAOYSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+LPORLBPACXEOET-UHFFFAOYSA-N	Rat	7.5	mg/kg		7.5 mg/Kg	Chemical Probes Portal	
+LPORLBPACXEOET-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+GQCXHIKRWBIQMD-AKJBCIBTSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+GQCXHIKRWBIQMD-AKJBCIBTSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+GQCXHIKRWBIQMD-AKJBCIBTSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+QAKJEKTXKXAPBP-MGCURZBSSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+QAKJEKTXKXAPBP-MGCURZBSSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+QAKJEKTXKXAPBP-MGCURZBSSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+QAKJEKTXKXAPBP-MGCURZBSSA-N	Monkey (Cynomolgus)	0.2	mg/kg		0.2 mg/Kg	Chemical Probes Portal	
+QAKJEKTXKXAPBP-MGCURZBSSA-N	Monkey (Cynomolgus)	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+ODOJVROSIRINJT-LJQANCHMSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+ODOJVROSIRINJT-LJQANCHMSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+ODOJVROSIRINJT-LJQANCHMSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+ZUFHZMHKCFCIHV-JRFCFUNGSA-N	Rat	0.25	mg/kg		0.25 mg/Kg	Chemical Probes Portal	
+ZUFHZMHKCFCIHV-JRFCFUNGSA-N	Rat	2	mg/kg		2.0 mg/Kg	Chemical Probes Portal	
+OVUNRYUVDVWTTE-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+OVUNRYUVDVWTTE-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+OVUNRYUVDVWTTE-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+HUOLMBXGHHSYHC-QWQFASRJSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+HUOLMBXGHHSYHC-QWQFASRJSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+CEGVLCNHZDUFIJ-NSHDSACASA-N	Mouse	0.5	mg/kg	IV	0.5 mg/Kg IV, 1 mg/Kg PO	Chemical Probes Portal	
+CEGVLCNHZDUFIJ-NSHDSACASA-N	Mouse	1	mg/kg	PO	0.5 mg/Kg IV, 1 mg/Kg PO	Chemical Probes Portal	
+CEGVLCNHZDUFIJ-NSHDSACASA-N	Rat				0.5 IV, 1.0 PO mg/Kg	Chemical Probes Portal	
+ZVDNXHUSIKGTSF-UHFFFAOYSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+ZVDNXHUSIKGTSF-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+ZVDNXHUSIKGTSF-UHFFFAOYSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+ZVDNXHUSIKGTSF-UHFFFAOYSA-N	Dog	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+QJWQAZTYFYCFQU-RMKNXTFCSA-N	Mouse	50	mg/kg		50 mg/Kg	Chemical Probes Portal	
+NORRDWRSNUOCBV-XCIZWWPASA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+NORRDWRSNUOCBV-XCIZWWPASA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+NORRDWRSNUOCBV-XCIZWWPASA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+NORRDWRSNUOCBV-XCIZWWPASA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+BFMWIVWPPKENIN-AWEZNQCLSA-N	Mouse	0.2	mg/kg		0.2 mg/Kg	Chemical Probes Portal	
+CLCTZVRHDOAUGJ-SYVGMNBRSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+CLCTZVRHDOAUGJ-SYVGMNBRSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+CLCTZVRHDOAUGJ-SYVGMNBRSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+CLCTZVRHDOAUGJ-SYVGMNBRSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+JNTJTCXFIXNXDV-VIFPVBQESA-N	Mouse				4.6 h	Chemical Probes Portal	
+JNTJTCXFIXNXDV-VIFPVBQESA-N	Rat				15 h	Chemical Probes Portal	
+JNTJTCXFIXNXDV-VIFPVBQESA-N	Dog					Chemical Probes Portal	
+DTWUUAFTYSMNQX-GFCCVEGCSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+FZJKQMONKPFLEO-NZIMVQFPSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FZJKQMONKPFLEO-NZIMVQFPSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+JFHROPTYMMSOLG-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JFHROPTYMMSOLG-UHFFFAOYSA-N	Rat					Chemical Probes Portal	
+BZJPCUQQPJJBTP-FGZHOGPDSA-N	Mouse	1	umol/kg	IV	1 umol/Kg IV, 10 umol/Kg PO, 2 umol/Kg IP	Chemical Probes Portal	
+BZJPCUQQPJJBTP-FGZHOGPDSA-N	Mouse	10	umol/kg	PO	1 umol/Kg IV, 10 umol/Kg PO, 2 umol/Kg IP	Chemical Probes Portal	
+BZJPCUQQPJJBTP-FGZHOGPDSA-N	Mouse	2	umol/kg	IP	1 umol/Kg IV, 10 umol/Kg PO, 2 umol/Kg IP	Chemical Probes Portal	
+ISQCXAWAHDJCRH-FKDRFZFOSA-N	Mouse				10 mf/Kg	Chemical Probes Portal	
+ISQCXAWAHDJCRH-FKDRFZFOSA-N	Rat	5	mg/kg		5 mg/kg	Chemical Probes Portal	
+ISQCXAWAHDJCRH-FKDRFZFOSA-N	Dog	2.5	mg/kg		2.5 mg/Kg	Chemical Probes Portal	
+JBTHUOYYUUPUOZ-LIHPQFRDSA-N	Mouse	5	mg		5 mg/K	Chemical Probes Portal	
+JBTHUOYYUUPUOZ-LIHPQFRDSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+PTARASCXNREVCH-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+PTARASCXNREVCH-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+PTARASCXNREVCH-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+DYDFSGCLYIZSAQ-UHFFFAOYSA-N	Mouse	1	mg/kg	IV	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+DYDFSGCLYIZSAQ-UHFFFAOYSA-N	Mouse	5	mg/kg	PO	1 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+FIFRHLLUVCAOIK-SJCJKPOMSA-N	Mouse	0.2	mg/kg	IV	0.2 mg/Kg IV, 10, 30 mg/Kg PO	Chemical Probes Portal	
+FIFRHLLUVCAOIK-SJCJKPOMSA-N	Mouse	30	mg/kg	PO	0.2 mg/Kg IV, 10, 30 mg/Kg PO	Chemical Probes Portal	
+FIFRHLLUVCAOIK-SJCJKPOMSA-N	Rat	0.2	mg/kg	IV	0.2 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+FIFRHLLUVCAOIK-SJCJKPOMSA-N	Rat	10	mg/kg	PO	0.2 mg/Kg IV, 10 mg/Kg PO	Chemical Probes Portal	
+FIFRHLLUVCAOIK-SJCJKPOMSA-N	Dog	0.2	mg/kg	IV	0.2 mg/Kg IV, 16 mg/Kg PO	Chemical Probes Portal	
+FIFRHLLUVCAOIK-SJCJKPOMSA-N	Dog	16	mg/kg	PO	0.2 mg/Kg IV, 16 mg/Kg PO	Chemical Probes Portal	
+MMHYOHYLSFWJJB-ZDUSSCGKSA-N	Mouse	4.5	mg/kg	IV	4.5 mg/Kg IV, 2 mg/Kg PO	Chemical Probes Portal	
+MMHYOHYLSFWJJB-ZDUSSCGKSA-N	Mouse	2	mg/kg	PO	4.5 mg/Kg IV, 2 mg/Kg PO	Chemical Probes Portal	
+MMHYOHYLSFWJJB-ZDUSSCGKSA-N	Rat	4.5	mg/kg	IV	4.5 mg/Kg IV, PO	Chemical Probes Portal	
+YPXUKPNZQTWCRR-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+YPXUKPNZQTWCRR-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+YPXUKPNZQTWCRR-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+YPXUKPNZQTWCRR-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+YPXUKPNZQTWCRR-UHFFFAOYSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+YPXUKPNZQTWCRR-UHFFFAOYSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+DJOZFERTDDZPJO-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+DJOZFERTDDZPJO-UHFFFAOYSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+RGHSVQHKNJAFGR-QFIPXVFZSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+LDFDXTNMCGLUMQ-YGKODULZSA-N	Mouse	50	mg/kg		50 mg/Kg	Chemical Probes Portal	
+RIEBAXQZOMUWKX-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+RIEBAXQZOMUWKX-UHFFFAOYSA-N	Mouse	3	mg/kg		3 mg/kg	Chemical Probes Portal	
+RIEBAXQZOMUWKX-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+LPDOIXPRZOWBJV-HOCLYGCPSA-N	Rat	0.5	mg/kg	IV	0.5 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+LPDOIXPRZOWBJV-HOCLYGCPSA-N	Rat	5	mg/kg	PO	0.5 mg/Kg IV, 5 mg/Kg PO	Chemical Probes Portal	
+HGQYUHFFAIXWDI-GOSISDBHSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+HGQYUHFFAIXWDI-GOSISDBHSA-N	Mouse	100	mg/kg		100 mg/Kg	Chemical Probes Portal	
+APEYSKGQWJKJAZ-LCLGPXMOSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+CLUWNSLFLMBFKA-RMCUFUCFSA-N	Mouse	50	mg/kg		50 mg/Kg	Chemical Probes Portal	
+GPZKXLCJTKULAU-UHFFFAOYSA-N	Mouse	3	mg/kg		3 mg/kg	Chemical Probes Portal	
+GPZKXLCJTKULAU-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+GPZKXLCJTKULAU-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/kg	Chemical Probes Portal	
+SVKZUEZCCKLNIM-UHFFFAOYSA-N	Mouse	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+LFCNOSRNWFMQLB-UHFFFAOYSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+HKSBXNVKPFTBIG-WUEKOBJSSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+HKSBXNVKPFTBIG-WUEKOBJSSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+HKSBXNVKPFTBIG-WUEKOBJSSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+DQRZNYPHOWVXPQ-YDUPODKQSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+DQRZNYPHOWVXPQ-YDUPODKQSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+ZGSWGXNEXAXEGV-XFCHVEHOSA-N	Mouse	8	mg/kg		8 mg/Kg	Chemical Probes Portal	
+DLQNQQYGRWMPES-LFHXKVDGSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+DLQNQQYGRWMPES-LFHXKVDGSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+DLQNQQYGRWMPES-LFHXKVDGSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+DLQNQQYGRWMPES-LFHXKVDGSA-N	Rat	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+DLQNQQYGRWMPES-LFHXKVDGSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+DLQNQQYGRWMPES-LFHXKVDGSA-N	Dog	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+DLQNQQYGRWMPES-LFHXKVDGSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+DLQNQQYGRWMPES-LFHXKVDGSA-N	Monkey (Cynomolgus)	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+OGAOHACYLUBWJQ-UHFFFAOYSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+OGAOHACYLUBWJQ-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+USEHXUPBCSTAIO-RAUDMRIHSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+USEHXUPBCSTAIO-RAUDMRIHSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+DOVSNSDMRJVTMR-JOCHJYFZSA-N	Mouse	1	uM/kg		1 uM/Kg	Chemical Probes Portal	
+DOVSNSDMRJVTMR-JOCHJYFZSA-N	Rat	1	uM/kg		1 uM/Kg	Chemical Probes Portal	
+WFVKDTWKNVLGGS-UHFFFAOYSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+WFVKDTWKNVLGGS-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+JTTGVFCANBFLCE-CJLVFECKSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+JTTGVFCANBFLCE-CJLVFECKSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+AYMGZLUKTNXEMY-UHFFFAOYSA-N	Mouse	50	mg/kg		50 mg/Kg	Chemical Probes Portal	
+SWVYYNLRVIYURK-AREMUKBSSA-N	Mouse	50	mg/kg		10, 25, or 50 mg/kg	Chemical Probes Portal	
+AAZUPSFRSHFTGV-INIZCTEOSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+LLCVDQHLYHBAHR-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+JALIPZPFONOAJA-ZKGBLMBJSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JALIPZPFONOAJA-ZKGBLMBJSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+JALIPZPFONOAJA-ZKGBLMBJSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JALIPZPFONOAJA-ZKGBLMBJSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+JALIPZPFONOAJA-ZKGBLMBJSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+JALIPZPFONOAJA-ZKGBLMBJSA-N	Dog	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+XJTIGGCBXFIZJV-UHFFFAOYSA-N	Mouse	10	mg/kg		10mg/kg	Chemical Probes Portal	
+ZORLJXWXFABTPZ-CTNGQTDRSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+ZZWWXIBKLBMSCS-FQEVSTJZSA-N	Rat	3	mg/kg		3 mg/kg	Chemical Probes Portal	
+FQWDVNSBYDXPIO-CQSZACIVSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FQWDVNSBYDXPIO-CQSZACIVSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+FQWDVNSBYDXPIO-CQSZACIVSA-N	Mouse	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+BASFYRLYJAZPPL-UONOGXRCSA-N	Mouse	5	mg/kg		5 mg/kg	Chemical Probes Portal	
+FHRKRGDHMCCDEO-LLVKDONJSA-N	Mouse				0.5 (IV), 1.0 (PO) mg/Kg	Chemical Probes Portal	
+QRYISIPABXJVOQ-AWEZNQCLSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+QRYISIPABXJVOQ-AWEZNQCLSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+UEUNDURNLYLSNB-HOTGVXAUSA-N	Mouse	1	mg/kg	IV	1 mg/Kg IV, 3 mg/Kg PO	Chemical Probes Portal	
+UEUNDURNLYLSNB-HOTGVXAUSA-N	Mouse	3	mg/kg	PO	1 mg/Kg IV, 3 mg/Kg PO	Chemical Probes Portal	
+UEUNDURNLYLSNB-HOTGVXAUSA-N	Rat	1	mg/kg	IV	1 mg/Kg IV, 3 mg/Kg PO	Chemical Probes Portal	
+UEUNDURNLYLSNB-HOTGVXAUSA-N	Rat	3	mg/kg	PO	1 mg/Kg IV, 3 mg/Kg PO	Chemical Probes Portal	
+UEUNDURNLYLSNB-HOTGVXAUSA-N	Monkey (Cynomolgus)	1	mg/kg	IV	1 mg/Kg IV, 3 mg/Kg PO	Chemical Probes Portal	
+UEUNDURNLYLSNB-HOTGVXAUSA-N	Monkey (Cynomolgus)	3	mg/kg	PO	1 mg/Kg IV, 3 mg/Kg PO	Chemical Probes Portal	
+AXNQNPVSVCEGTP-LALXJTNGSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+AXNQNPVSVCEGTP-LALXJTNGSA-N	Mouse	4	mg/kg		4 mg/Kg	Chemical Probes Portal	
+AXNQNPVSVCEGTP-LALXJTNGSA-N	Mouse	20	mg/kg		20 mg/Kg	Chemical Probes Portal	
+PFEKWBKJUBCXDT-KGLIPLIRSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+PFEKWBKJUBCXDT-KGLIPLIRSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+MUYQEHKMQMHJNI-ZDUSSCGKSA-N	Rat	1	mg/kg	IV	1 mg/kg IV, 5 mg/kg PO	Chemical Probes Portal	
+MUYQEHKMQMHJNI-ZDUSSCGKSA-N	Rat	5	mg/kg	PO	1 mg/kg IV, 5 mg/kg PO	Chemical Probes Portal	
+MUYQEHKMQMHJNI-ZDUSSCGKSA-N	Monkey (Cynomolgus)	0.5	mg/kg		0.5 mg/Kg	Chemical Probes Portal	
+MUYQEHKMQMHJNI-ZDUSSCGKSA-N	Dog	0.5	mg/kg	IV	0.5 mg/kg IV, 1.5 mg/kg PO	Chemical Probes Portal	
+MUYQEHKMQMHJNI-ZDUSSCGKSA-N	Dog	1.5	mg/kg	PO	0.5 mg/kg IV, 1.5 mg/kg PO	Chemical Probes Portal	
+QKVFMAAIXZONRN-UHFFFAOYSA-N	Mouse	10	mg/kg		10 mg/Kg BID	Chemical Probes Portal	
+QKVFMAAIXZONRN-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/Kg BID	Chemical Probes Portal	
+QKVFMAAIXZONRN-UHFFFAOYSA-N	Dog	10	mg/kg		10 mg/Kg BID	Chemical Probes Portal	
+CEIIEALEIHQDBX-UHFFFAOYSA-N	Rat	1	mg/kg		1 mg/kg	Chemical Probes Portal	
+FVICRBSEYSHKFY-JYQNNKODSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FVICRBSEYSHKFY-JYQNNKODSA-N	Mouse	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+FVICRBSEYSHKFY-JYQNNKODSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FVICRBSEYSHKFY-JYQNNKODSA-N	Rat	60	mg/kg		60 mg/Kg	Chemical Probes Portal	
+FVICRBSEYSHKFY-JYQNNKODSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FVICRBSEYSHKFY-JYQNNKODSA-N	Dog	8	mg/kg		8 mg/Kg	Chemical Probes Portal	
+FVICRBSEYSHKFY-JYQNNKODSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+FVICRBSEYSHKFY-JYQNNKODSA-N	Monkey (Cynomolgus)	2.5	mg/kg		2.5 mg/Kg	Chemical Probes Portal	
+BCFGMOOMADDAQU-UHFFFAOYSA-N	Mouse	30	mg/kg		30-100 mg/Kg	Chemical Probes Portal	
+LPGBXHWIQNZEJB-UHFFFAOYSA-N	Mouse					Chemical Probes Portal	
+FMSIRMKLDQFQKI-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+VDLHPYFVCAHCCZ-UHFFFAOYSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+VDLHPYFVCAHCCZ-UHFFFAOYSA-N	Mouse	50	mg/kg		50 mg/Kg	Chemical Probes Portal	
+VDLHPYFVCAHCCZ-UHFFFAOYSA-N	Mouse	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+YXYBHRORJSDZTQ-UHFFFAOYSA-N	Mouse	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+LIRYPHYGHXZJBZ-UHFFFAOYSA-N	Mouse	0.1	mg/kg		0.1-1 mg/Kg	Chemical Probes Portal	
+BUJWDBSVEVFQDP-UHFFFAOYSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+ZABZNDRRLTXBHH-UHFFFAOYSA-N	Mouse	1	mg/kg	IV	1 mg/kg IV, 5 mg/kg PO	Chemical Probes Portal	
+ZABZNDRRLTXBHH-UHFFFAOYSA-N	Mouse	5	mg/kg	PO	1 mg/kg IV, 5 mg/kg PO	Chemical Probes Portal	
+ZABZNDRRLTXBHH-UHFFFAOYSA-N	Rat	1	mg/kg	IV	1 mg/kg IV, 5 mg/kg PO	Chemical Probes Portal	
+ZABZNDRRLTXBHH-UHFFFAOYSA-N	Rat	5	mg/kg	PO	1 mg/kg IV, 5 mg/kg PO	Chemical Probes Portal	
+ZABZNDRRLTXBHH-UHFFFAOYSA-N	Dog	1	mg/kg	IV	1 mg/kg IV, 5 mg/kg PO	Chemical Probes Portal	
+ZABZNDRRLTXBHH-UHFFFAOYSA-N	Dog	5	mg/kg	PO	1 mg/kg IV, 5 mg/kg PO	Chemical Probes Portal	
+LIOLIMKSCNQPLV-UHFFFAOYSA-N	Mouse	10	mg/kg		0.03, 0.1, 0.3, 1, 3, or 10 mg/kg, Reviewer suggested: 3, 10, and 30 mg/kg BID	Chemical Probes Portal	
+LIOLIMKSCNQPLV-UHFFFAOYSA-N	Mouse	30	mg/kg		0.03, 0.1, 0.3, 1, 3, or 10 mg/kg, Reviewer suggested: 3, 10, and 30 mg/kg BID	Chemical Probes Portal	
+VRQXRVAKPDCRCI-ZNMIVQPWSA-N	Other	100	mg/kg		30 or 100 mg/Kg	Chemical Probes Portal	
+HPJVZSVEIGCFJP-SFHVURJKSA-N	Rat	80	mg/kg		up to 80 mg/Kg	Chemical Probes Portal	
+HPJVZSVEIGCFJP-SFHVURJKSA-N	Mouse	180	mg/kg		2.5, 7, 20, 60, and 180 mg/kg	Chemical Probes Portal	
+NYNZQNWKBKUAII-KBXCAEBGSA-N	Mouse	30	mg/kg		30 mg/Kg BID	Chemical Probes Portal	
+IBGLGMOPHJQDJB-IHRRRGAJSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+IBGLGMOPHJQDJB-IHRRRGAJSA-N	Rat	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+IBGLGMOPHJQDJB-IHRRRGAJSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+IBGLGMOPHJQDJB-IHRRRGAJSA-N	Dog	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+IBGLGMOPHJQDJB-IHRRRGAJSA-N	Monkey (Cynomolgus)	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+IBGLGMOPHJQDJB-IHRRRGAJSA-N	Monkey (Cynomolgus)	10	mg/kg		10 mg/Kg	Chemical Probes Portal	
+RHGZXPKHVAHQJO-BIIHCSGHSA-N	Rat				8.55 (IV), 20.3 (PO) μmol/kg	Chemical Probes Portal	
+RHGZXPKHVAHQJO-BIIHCSGHSA-N	Dog				10.5 (IV), 15.1 (PO) μmol/kg	Chemical Probes Portal	
+MWKYMZXCGYXLPL-ZDUSSCGKSA-N	Rat	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+MWKYMZXCGYXLPL-ZDUSSCGKSA-N	Rat	3	mg/kg		3 mg/Kg	Chemical Probes Portal	
+MWKYMZXCGYXLPL-ZDUSSCGKSA-N	Rat	30	mg/kg		30 mg/Kg	Chemical Probes Portal	
+MWKYMZXCGYXLPL-ZDUSSCGKSA-N	Dog	0.1	mg/kg		0.1 mg/Kg	Chemical Probes Portal	
+MWKYMZXCGYXLPL-ZDUSSCGKSA-N	Dog	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+MWKYMZXCGYXLPL-ZDUSSCGKSA-N	Monkey (Cynomolgus)	0.1	mg/kg		0.1 mg/Kg	Chemical Probes Portal	
+MWKYMZXCGYXLPL-ZDUSSCGKSA-N	Monkey (Cynomolgus)	0.3	mg/kg		0.3 mg/Kg	Chemical Probes Portal	
+HKTBYUWLRDZAJK-UHFFFAOYSA-N	Mouse	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+HKTBYUWLRDZAJK-UHFFFAOYSA-N	Rat	10	mg/kg		10 mg/kg	Chemical Probes Portal	
+HKTBYUWLRDZAJK-UHFFFAOYSA-N	Monkey (Cynomolgus)	3	mg/kg		3mg/kg	Chemical Probes Portal	
+HKTBYUWLRDZAJK-UHFFFAOYSA-N	Dog	5	mg/kg		5 mg/kg	Chemical Probes Portal	
+HKTBYUWLRDZAJK-UHFFFAOYSA-N	Mouse	10	mg		10 mg/ Kg	Chemical Probes Portal	
+PRWSIEBRGXYXAJ-UHFFFAOYSA-N	Mouse	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+PRWSIEBRGXYXAJ-UHFFFAOYSA-N	Mouse	13.4	mg/kg		13.4 mg/Kg	Chemical Probes Portal	
+PRWSIEBRGXYXAJ-UHFFFAOYSA-N	Rat	2.2	mg/kg		2.2 mg/Kg	Chemical Probes Portal	
+PRWSIEBRGXYXAJ-UHFFFAOYSA-N	Rat	4.3	mg/kg		4.3 mg/Kg	Chemical Probes Portal	
+PRWSIEBRGXYXAJ-UHFFFAOYSA-N	Dog	2.9	mg/kg		2.9 mg/Kg	Chemical Probes Portal	
+PRWSIEBRGXYXAJ-UHFFFAOYSA-N	Dog	5.2	mg/kg		5.2 mg/Kg	Chemical Probes Portal	
+VPJXPDLMACOGIZ-UHFFFAOYSA-N	Mouse	0.2	mg/kg	IV	0.2 mg/Kg IV, 0.5 mg/Kg PO	Chemical Probes Portal	
+VPJXPDLMACOGIZ-UHFFFAOYSA-N	Mouse	0.5	mg/kg	PO	0.2 mg/Kg IV, 0.5 mg/Kg PO	Chemical Probes Portal	
+VPJXPDLMACOGIZ-UHFFFAOYSA-N	Rat	0.2	mg/kg	IV	0.2 mg/Kg IV, 0.5 mg/Kg PO	Chemical Probes Portal	
+VPJXPDLMACOGIZ-UHFFFAOYSA-N	Rat	0.5	mg/kg	PO	0.2 mg/Kg IV, 0.5 mg/Kg PO	Chemical Probes Portal	
+VPJXPDLMACOGIZ-UHFFFAOYSA-N	Dog	0.2	mg/kg	IV	0.2 mg/Kg IV, 0.5 mg/Kg PO	Chemical Probes Portal	
+VPJXPDLMACOGIZ-UHFFFAOYSA-N	Dog	0.5	mg/kg	PO	0.2 mg/Kg IV, 0.5 mg/Kg PO	Chemical Probes Portal	
+BWINBHTTZLVXGT-NVXWUHKLSA-N	Mouse	1	mg/kg	IV	1 mpk IV and 10 mpk PO	Chemical Probes Portal	
+BWINBHTTZLVXGT-NVXWUHKLSA-N	Mouse	10	mg/kg	PO	1 mpk IV and 10 mpk PO	Chemical Probes Portal	
+BWINBHTTZLVXGT-NVXWUHKLSA-N	Rat	1	mg/kg	IV	1 mpk IV and 10 mpk PO	Chemical Probes Portal	
+BWINBHTTZLVXGT-NVXWUHKLSA-N	Rat	10	mg/kg	PO	1 mpk IV and 10 mpk PO	Chemical Probes Portal	
+XISVSTPEXYIKJL-UHFFFAOYSA-N	Rat	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+XISVSTPEXYIKJL-UHFFFAOYSA-N	Rat	5	mg/kg		5 mg/Kg	Chemical Probes Portal	
+XISVSTPEXYIKJL-UHFFFAOYSA-N	Dog	1	mg/kg		1 mg/Kg	Chemical Probes Portal	
+XISVSTPEXYIKJL-UHFFFAOYSA-N	Dog	2	mg/kg		2 mg/Kg	Chemical Probes Portal	
+QVOGVAVHOLLLAZ-UHFFFAOYSA-N	Mouse	0.5	mg/kg		0.5 mg/Kg (d)	Chemical Probes Portal	
+OYKPWSZSBLRRPL-HOYKHHGWSA-N	Rat	1	mg/kg		1-30 mg/Kg	Chemical Probes Portal	
+OYKPWSZSBLRRPL-HOYKHHGWSA-N	Dog	1	mg/kg		1-30 mg/Kg	Chemical Probes Portal	

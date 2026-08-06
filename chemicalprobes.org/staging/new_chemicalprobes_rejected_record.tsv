@@ -1,0 +1,48 @@
+stage	reason	label	inchikey	target_key	raw	source_db	source
+compound	no structure in the export and none resolved	LC-04-45			lc-04-45; 5 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	TO-1187			to-1187; 3 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	D16-M1P2			d16-m1p2; 3 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	SGC-CK1γ-1			cpd14; 4 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	FGFR3-IN-10s			fgfr3-in-10s; 4 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	LS-170			ls-170; 4 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	CDK11-In-37			cdk11-in-37; 4 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	ME43			me43; 4 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	MRK-A			mrk-a; 4 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	AP-204			ap-204; 2 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	HDM2004			hdm2004; 2 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	MKI-3			mki-3; 4 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	DOT1L808			dot1l808; 3 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	YYSW001			yysw001; 2 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	PRMT1-Deg-4			prmt1-deg-4; 4 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	CLM296			clm296; 1 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	NUAK1-In-10i			nuak1-in-10i; 3 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	KLHL12-In-7k			klhl12-in-7k; 4 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	PI3KAD-Deg-5			pi3kad-deg-5; 5 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	HDAC2-In-11			hdac2-in-11; 2 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	BIO-6553			bio-6553; 2 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	T-50301			t-50301; 10 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	UNC8209			unc8209; 2 validations	Chemical Probes Portal	
+compound	no structure in the export and none resolved	APL5125			apl5125; 6 validations	Chemical Probes Portal	
+bioactivity	scientific-notation factor not applied	0.6 X 10^5/(mol/L) s	TXEBNKKOLVBTFK-UHFFFAOYSA-N	P22455	0.6 X 10^5/(mol/L) s	Chemical Probes Portal	
+bioactivity	a duration, not a potency	0 - 8 h)	LXRZVMYMQHNYJB-UNXOBOICSA-N	Q9UBE0	15 nM; (32 - 46 nM, 0 - 8 h)	Chemical Probes Portal	
+bioactivity	a duration, not a potency	0 - 8 h)	LXRZVMYMQHNYJB-UNXOBOICSA-N	Q9UBT2	15 nM; (32 - 46 nM, 0 - 8 h)	Chemical Probes Portal	
+bioactivity	range reads high to low	10 nM to 1 µM	HRJWSEPIRZRGCL-UHFFFAOYSA-N	Q9NS75	10 nM to 1 µM	Chemical Probes Portal	
+bioactivity	a duration, not a potency	GluMax 182 h	ARYUXFNGXHNNDM-UHFFFAOYSA-N	Q14833	GluMax 182 h	Chemical Probes Portal	
+bioactivity	range reads high to low	89-3% residual activity	WSEQXVZVJXJVFP-FQEVSTJZSA-N	P31645	89-3% residual activity	Chemical Probes Portal	
+bioactivity	rate constant, not a potency	9900 ± 1800  M–1 s–1	NXQKSXLFSAEQCZ-SFHVURJKSA-N	P01116	9900 ± 1800  M–1 s–1	Chemical Probes Portal	
+bioactivity	rate constant, not a potency	1100 ± 200 M−1 s−1	ZRPZPNYZFSJUPA-UHFFFAOYSA-N	P01116	1,100 ± 200 M−1 s−1	Chemical Probes Portal	
+bioactivity	scientific-notation factor not applied	kinact/KI = 43.45*10-2 per s/umol/L	XOQVZSSDIQQUGO-UHFFFAOYSA-N	P21802	kinact/KI = 43.45*10-2 per s/umol/L	Chemical Probes Portal	
+bioactivity	two numbers separated by '/'	98/100%	PTAMRJLIOCHJMQ-PYNGZGNASA-N	O60885	98/100%	Chemical Probes Portal	
+bioactivity	a duration, not a potency	9 h	WKDNQONLGXOZRG-HRNNMHKYSA-N	P56817	9 h	Chemical Probes Portal	
+bioactivity	range reads high to low	98-85%	FYSWLIFIYIVHPI-DDWISSAJSA-N	O60885	98-85%	Chemical Probes Portal	
+bioactivity	scientific-notation factor not applied	7.69 x 10^4 per M per sec	KXBDTLQSDKGAEB-UHFFFAOYSA-N	Q06187	7.69 x 10^4 per M per sec	Chemical Probes Portal	
+bioactivity	p-scale endpoint with a molar unit	9.86 (0.11 nM) ER downregulation	DFBDRVGWBHBJNR-BBNFHIFMSA-N	P03372	9.86 (0.11 nM) ER downregulation; 9.55 (0.28 nM) PR antagonism; 10.4 (0.04 nM) anti-proliferation	Chemical Probes Portal	
+bioactivity	p-scale endpoint with a molar unit	9.55 (0.28 nM) PR antagonism	DFBDRVGWBHBJNR-BBNFHIFMSA-N	P03372	9.86 (0.11 nM) ER downregulation; 9.55 (0.28 nM) PR antagonism; 10.4 (0.04 nM) anti-proliferation	Chemical Probes Portal	
+bioactivity	p-scale endpoint with a molar unit	10.4 (0.04 nM) anti-proliferation	DFBDRVGWBHBJNR-BBNFHIFMSA-N	P03372	9.86 (0.11 nM) ER downregulation; 9.55 (0.28 nM) PR antagonism; 10.4 (0.04 nM) anti-proliferation	Chemical Probes Portal	
+bioactivity	two numbers separated by '/'	18/36 nM Hi/Lo ATP	JBGYKRAZYDNCNV-UHFFFAOYSA-N	P31751	18/36 nM Hi/Lo ATP	Chemical Probes Portal	
+bioactivity	two numbers separated by '/'	5.2/44 Hi/Lo ATP	JBGYKRAZYDNCNV-UHFFFAOYSA-N	P31749	5.2/44 Hi/Lo ATP	Chemical Probes Portal	
+bioactivity	rate constant, not a potency	kinact 0.052 min–1	XFBJUMZGUOUWSC-UHFFFAOYSA-N	O00748	kinact 0.052 min–1	Chemical Probes Portal	
+bioactivity	scientific-notation factor not applied	Kinact/Ki 6.83 ± 0.25 × 10*6 S-1 M-1	FUEYCNUHTBZPRF-SVBPBHIXSA-N	P07711	Kinact/Ki 6.83 ± 0.25 × 10*6 S-1 M-1	Chemical Probes Portal	
+bioactivity	implausible molar value	16 M	ZPCGODCPRDIFRQ-UHFFFAOYSA-N	Q9H0K1	16 M	Chemical Probes Portal	
+bioactivity	rate constant, not a potency	kinact/KI 38200 M–1·s–1	LTNDTFYBIKTRBQ-UHFFFAOYSA-N	P45984	kinact/KI 38,200 M–1·s–1	Chemical Probes Portal	
+bioactivity	rate constant, not a potency	kinact/KI 70100 M–1·s–1	LTNDTFYBIKTRBQ-UHFFFAOYSA-N	P53779	kinact/KI 70,100 M–1·s–1	Chemical Probes Portal	

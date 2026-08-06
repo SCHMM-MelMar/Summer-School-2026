@@ -1,6 +1,33 @@
 # Review record
 
-Three independent adversarial passes over the first version of this analysis,
+Five independent adversarial passes, each required to reproduce every claim by
+running code. Passes 1-3 attacked the analysis and the pipeline; passes 4-5
+attacked the schema this branch adds.
+
+## 5. The schema, after it was first written
+
+Seven tables were added quickly and two of them did not survive review.
+
+| was | is | why |
+| --- | -- | --- |
+| `unsuitable` (260) | `probe_assessment` (1223) | **100% redundant** — every fact was already in `compound_annotation`, and the name was a value masquerading as a table, so a source could never say 'recommended'. Its `source_id` was a fiction: 259 `bioactivity_source` rows with zero measurements |
+| `compound_annotation` (11428) | `compound_annotation` (421) + typed columns | 96% of it was a dense 1223x9 rectangle in key/value form. `MAX(value)` on `canSAR_ID` returned **999076** instead of 7447599, because the values are text |
+| `target_annotation` | `target_class` | same rows; the README's stated rationale was **false** (`target_id` and `uniprot_id` are a perfect bijection here). The real defence is `ordinal`: 215 of 1475 values are multi-valued |
+| `in_vivo` | `in_vivo_dose` | rename only; the shape was right |
+| `quarantine` (23) + `skipped_compound` (24) | `rejected_record` (47) | `quarantine` duplicated 9 of `bioactivity`'s 12 columns and had already drifted from it: `TEXT` vs `VARCHAR(255)`, nullable vs `NOT NULL`, and **no `ck_relation` at all**. `skipped_compound` described nothing the database contains |
+| — | `compound_xref` | canSAR ids behave exactly like ChEMBL ids: 1214 values, 1214 distinct |
+
+Also fixed: provenance was three conventions in one commit (`source_id`,
+`source_db` as text, and nothing at all) and is now `source_id` everywhere;
+`bioactivity_source` rows contributing nothing went from **589 to 1**; and
+`vocabulary()`'s regex is anchored, so a `CHECK` can no longer shadow another
+table's vocabulary from anywhere in the file.
+
+Net: 26784 rows to **17366**, with every count preserved.
+
+---
+
+Passes 1-3, over the first version of this analysis,
 each required to reproduce every claim by running code against the 3551 records
 rather than reading the notebook. What they found, what was fixed, and what is
 still open.

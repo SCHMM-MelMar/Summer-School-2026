@@ -117,161 +117,160 @@ SELECT t.target_id, t.type, t.name,
   LEFT JOIN uniprot u ON u.uniprot_id = tu.uniprot_id;
 
 
+
 -- ---------------------------------------------------------------------------
--- Added for the Chemical Probes Portal source (chemicalprobes.org/).
+-- Added for sources that carry more than a measurement (chemicalprobes.org/).
 --
--- Everything above this line is unchanged. These tables are appended, not
--- inserted, for one concrete reason: probedb/schema.py reads a vocabulary back
--- out of this file with an unanchored regex, so a CHECK on a column whose name
--- ends in `type` or `relation` placed ABOVE the table it belongs to would be
--- found first and silently replace that table's vocabulary. Appending is safe;
--- inserting is not.
---
--- They hold what the four staging files cannot: a source's opinion of a
--- compound, its opinion of a target, animal doses, a reading list, numbers it
--- could read but not trust, and records that could not become a compound at
--- all. Nothing here is portal-specific in its shape -- any source with the same
--- kinds of fact can use them.
---
--- Written by chemicalprobes.org/preprocess.py; see chemicalprobes.org/README.md.
+-- Everything above this line is unchanged. Nothing here is specific to one
+-- source: every table names the resource that made the claim, so two sources
+-- may disagree and both survive, which is the rule bioactivity already uses.
 -- ---------------------------------------------------------------------------
 
--- the portal publishes compounds it has judged unsuitable as probes, with no
--- target and no measurement, so the only thing that explains them is this
--- verdict. name, smiles and the ChEMBL ids are not repeated here: inchikey is a
--- foreign key onto compound, which already holds them. source_id says who is
--- making the judgement, the same way a measurement does.
-CREATE TABLE unsuitable (
-    inchikey           VARCHAR(27) PRIMARY KEY,
-    portal_path        VARCHAR(255),
-    published_date     VARCHAR(20),
+-- what a source concludes about a compound as a probe. one row per compound
+-- per source, so opnMe recommending what the portal rejected is two rows and
+-- not a conflict. the flags are computable from the structure rather than
+-- opinions, but a source states them, so they are stored as stated.
+CREATE TABLE probe_assessment (
+    inchikey           VARCHAR(27) NOT NULL,
+    source_id          INTEGER NOT NULL,
+    verdict            VARCHAR(20),
     pains              VARCHAR(3),
     toxicophore        VARCHAR(3),
-    cansar_id          VARCHAR(20),
     rating_in_cell     NUMERIC,
     rating_in_organism NUMERIC,
     rating_count       INTEGER,
-    reference          TEXT,
-    source_id          INTEGER,
+    published_date     VARCHAR(20),
+    CONSTRAINT pk_probe_assessment PRIMARY KEY (inchikey, source_id),
+    CONSTRAINT ck_verdict     CHECK (verdict IS NULL OR verdict IN ('recommended', 'unsuitable')),
     CONSTRAINT ck_pains       CHECK (pains IS NULL OR pains IN ('Yes', 'No')),
     CONSTRAINT ck_toxicophore CHECK (toxicophore IS NULL OR toxicophore IN ('Yes', 'No')),
-    CONSTRAINT fk_unsuitable_compound
-        FOREIGN KEY (inchikey) REFERENCES compound (inchikey),
-    CONSTRAINT fk_unsuitable_source
-        FOREIGN KEY (source_id) REFERENCES bioactivity_source (source_id)
+    CONSTRAINT fk_pa_compound FOREIGN KEY (inchikey) REFERENCES compound (inchikey),
+    CONSTRAINT fk_pa_source   FOREIGN KEY (source_id) REFERENCES bioactivity_source (source_id)
 );
 
-CREATE INDEX idx_unsuitable_source ON unsuitable (source_id);
 
-
--- what a source says about a compound that has no column of its own: scores,
--- flags, dates, external ids, the names of its control compounds. one property
--- per row so a source can add one without a migration, and ordinal so a
--- property can hold a list. the key makes a reload idempotent.
-CREATE TABLE compound_annotation (
+-- an identifier for a compound in some other resource. chembl has its own table
+-- because it came first; this is the same idea for the rest, so the next
+-- resource is one value in a CHECK and not a migration.
+CREATE TABLE compound_xref (
+    resource      VARCHAR(50) NOT NULL,
+    xref          VARCHAR(100) NOT NULL,
     inchikey      VARCHAR(27) NOT NULL,
-    source_db     VARCHAR(255) NOT NULL,
-    property      VARCHAR(100) NOT NULL,
-    ordinal       INTEGER NOT NULL DEFAULT 0,
-    value         TEXT,
-    CONSTRAINT pk_compound_annotation
-        PRIMARY KEY (inchikey, source_db, property, ordinal),
-    CONSTRAINT fk_ca_compound
-        FOREIGN KEY (inchikey) REFERENCES compound (inchikey)
+    CONSTRAINT pk_compound_xref PRIMARY KEY (resource, xref),
+    CONSTRAINT ck_resource CHECK (resource IN ('canSAR', 'PubChem', 'DrugBank', 'ZINC')),
+    CONSTRAINT fk_cx_compound FOREIGN KEY (inchikey) REFERENCES compound (inchikey)
 );
 
 
--- the same, for what a source says about a target that is not its composition.
--- keyed on target_id and not on an accession: one accession carries more than
--- one class when two sources, or two records of one source, disagree.
-CREATE TABLE target_annotation (
+-- where a source puts a target in its own taxonomy. two levels, and both are
+-- multi-valued: one target is filed under several classes by different records,
+-- so ordinal keeps them all rather than letting the last one win.
+CREATE TABLE target_class (
     target_id     INTEGER NOT NULL,
-    source_db     VARCHAR(255) NOT NULL,
-    property      VARCHAR(100) NOT NULL,
+    source_id     INTEGER NOT NULL,
+    level         VARCHAR(10) NOT NULL,
     ordinal       INTEGER NOT NULL DEFAULT 0,
-    value         TEXT,
-    CONSTRAINT pk_target_annotation
-        PRIMARY KEY (target_id, source_db, property, ordinal),
-    CONSTRAINT fk_ta_target
-        FOREIGN KEY (target_id) REFERENCES target (target_id)
+    value         VARCHAR(255) NOT NULL,
+    CONSTRAINT pk_target_class PRIMARY KEY (target_id, source_id, level, ordinal),
+    CONSTRAINT ck_level CHECK (level IN ('class', 'subclass')),
+    CONSTRAINT fk_tc_target FOREIGN KEY (target_id) REFERENCES target (target_id),
+    CONSTRAINT fk_tc_source FOREIGN KEY (source_id) REFERENCES bioactivity_source (source_id)
 );
 
 
--- a dose given to an animal is not a potency: no endpoint, nothing to compare,
+-- a dose given to an animal. not a potency: no endpoint, nothing to compare,
 -- and no target, so it cannot be a bioactivity row. one row per dose, and
 -- dose_raw keeps the string it was read out of.
-CREATE TABLE in_vivo (
+CREATE TABLE in_vivo_dose (
     id            SERIAL PRIMARY KEY,
     inchikey      VARCHAR(27) NOT NULL,
+    source_id     INTEGER NOT NULL,
     organism      VARCHAR(100),
     dose_value    NUMERIC,
     dose_unit     VARCHAR(50),
     route         VARCHAR(20),
     dose_raw      VARCHAR(255),
-    source_id     INTEGER,
-    CONSTRAINT ck_route
-        CHECK (route IS NULL OR route IN ('IV', 'PO', 'IP', 'SC', 'topical')),
-    CONSTRAINT fk_iv_compound
-        FOREIGN KEY (inchikey) REFERENCES compound (inchikey),
-    CONSTRAINT fk_iv_source
-        FOREIGN KEY (source_id) REFERENCES bioactivity_source (source_id)
+    CONSTRAINT ck_route CHECK (route IS NULL OR route IN ('IV', 'PO', 'IP', 'SC', 'topical')),
+    CONSTRAINT fk_ivd_compound FOREIGN KEY (inchikey) REFERENCES compound (inchikey),
+    CONSTRAINT fk_ivd_source   FOREIGN KEY (source_id) REFERENCES bioactivity_source (source_id)
 );
 
 
 -- the literature a source cites for a compound, where it cites a reading list
--- rather than a paper per measurement. xref_id + source_xref resolves it, the
--- same convention bioactivity_source uses.
+-- rather than a paper per measurement. raw is kept because 88% of these urls
+-- cannot be rebuilt from xref_id and source_xref.
 CREATE TABLE compound_reference (
     id            SERIAL PRIMARY KEY,
     inchikey      VARCHAR(27) NOT NULL,
+    source_id     INTEGER NOT NULL,
     xref_id       VARCHAR(255),
     source_xref   VARCHAR(400),
     raw           TEXT,
-    CONSTRAINT fk_cr_compound
-        FOREIGN KEY (inchikey) REFERENCES compound (inchikey)
+    CONSTRAINT fk_cr_compound FOREIGN KEY (inchikey) REFERENCES compound (inchikey),
+    CONSTRAINT fk_cr_source   FOREIGN KEY (source_id) REFERENCES bioactivity_source (source_id)
 );
 
 
--- a number a preprocessor could read but not trust: a factor of 10^n it refuses
--- to apply, a reciprocal rate constant, a range that reads high to low. kept out
--- of bioactivity on purpose, and kept here rather than dropped so a curator can
--- see them. reason says why, raw is the string it came from.
-CREATE TABLE quarantine (
-    id                SERIAL PRIMARY KEY,
-    inchikey          VARCHAR(27) NOT NULL,
-    target_id         INTEGER,
-    reason            VARCHAR(255) NOT NULL,
-    raw               TEXT,
-    fragment          TEXT,
-    relation          VARCHAR(5),
-    value             NUMERIC,
-    unit              VARCHAR(50),
-    bioactivity_type  VARCHAR(50),
-    assay_description TEXT,
-    source_id         INTEGER,
-    CONSTRAINT fk_q_compound
-        FOREIGN KEY (inchikey) REFERENCES compound (inchikey),
-    CONSTRAINT fk_q_target
-        FOREIGN KEY (target_id) REFERENCES target (target_id),
-    CONSTRAINT fk_q_source
-        FOREIGN KEY (source_id) REFERENCES bioactivity_source (source_id)
+-- the escape hatch, for a fact a source states that has no column anywhere.
+-- one property per row, ordinal so a property can hold a list. keep it small:
+-- anything every source has deserves a column instead.
+CREATE TABLE compound_annotation (
+    inchikey      VARCHAR(27) NOT NULL,
+    source_id     INTEGER NOT NULL,
+    property      VARCHAR(100) NOT NULL,
+    ordinal       INTEGER NOT NULL DEFAULT 0,
+    value         TEXT,
+    CONSTRAINT pk_compound_annotation PRIMARY KEY (inchikey, source_id, property, ordinal),
+    CONSTRAINT fk_ca_compound FOREIGN KEY (inchikey) REFERENCES compound (inchikey),
+    CONSTRAINT fk_ca_source   FOREIGN KEY (source_id) REFERENCES bioactivity_source (source_id)
 );
 
 
--- a record a source published that could not become a compound at all, almost
--- always because it has no structure and the InChIKey is the key everywhere.
--- the one table with no foreign key, because its rows are about absence.
-CREATE TABLE skipped_compound (
+-- one curator worklist: a record a source published that did not become a row.
+-- a number that could be read but not trusted, or a compound with no structure
+-- at all. stage says which, reason says why, raw keeps what it came from.
+CREATE TABLE rejected_record (
     id            SERIAL PRIMARY KEY,
-    name          VARCHAR(255) NOT NULL,
-    source_db     VARCHAR(255) NOT NULL,
-    reason        VARCHAR(255),
-    portal_path   VARCHAR(255),
-    targets       INTEGER,
-    validations   INTEGER
+    source_id     INTEGER NOT NULL,
+    stage         VARCHAR(20) NOT NULL,
+    reason        VARCHAR(255) NOT NULL,
+    label         VARCHAR(255),
+    inchikey      VARCHAR(27),
+    target_id     INTEGER,
+    raw           TEXT,
+    CONSTRAINT ck_stage CHECK (stage IN ('compound', 'bioactivity')),
+    CONSTRAINT fk_rr_source   FOREIGN KEY (source_id) REFERENCES bioactivity_source (source_id),
+    CONSTRAINT fk_rr_compound FOREIGN KEY (inchikey) REFERENCES compound (inchikey),
+    CONSTRAINT fk_rr_target   FOREIGN KEY (target_id) REFERENCES target (target_id)
 );
 
-CREATE INDEX idx_compound_annotation_property ON compound_annotation (property);
-CREATE INDEX idx_in_vivo_compound             ON in_vivo (inchikey);
-CREATE INDEX idx_compound_reference_compound  ON compound_reference (inchikey);
-CREATE INDEX idx_quarantine_compound          ON quarantine (inchikey);
+CREATE INDEX idx_probe_assessment_verdict ON probe_assessment (verdict);
+CREATE INDEX idx_compound_xref_inchikey   ON compound_xref (inchikey);
+CREATE INDEX idx_target_class_target      ON target_class (target_id);
+CREATE INDEX idx_in_vivo_dose_compound    ON in_vivo_dose (inchikey);
+CREATE INDEX idx_compound_reference_cmpd  ON compound_reference (inchikey);
+CREATE INDEX idx_rejected_record_source   ON rejected_record (source_id);
+
+
+-- one row per compound per source: the assessment with its identifiers, which
+-- is the sheet a curator actually wants. no chembl join, because two compounds
+-- carry two ChEMBL ids and it would fan out.
+CREATE VIEW probe_flat AS
+SELECT a.inchikey, c.name, c.smiles, s.source_db, a.verdict, a.pains, a.toxicophore,
+       a.rating_in_cell, a.rating_in_organism, a.rating_count, a.published_date,
+       (SELECT x.xref FROM compound_xref x
+         WHERE x.inchikey = a.inchikey AND x.resource = 'canSAR') AS cansar_id
+  FROM probe_assessment a
+  JOIN compound c ON c.inchikey = a.inchikey
+  JOIN bioactivity_source s ON s.source_id = a.source_id;
+
+
+-- target_class is two rows deep for a reason, but "what class is BRD4" should
+-- not need three joins to answer.
+CREATE VIEW target_class_flat AS
+SELECT t.target_id, t.name, u.hgnc, tc.level, tc.value, s.source_db
+  FROM target_class tc
+  JOIN target t ON t.target_id = tc.target_id
+  JOIN bioactivity_source s ON s.source_id = tc.source_id
+  LEFT JOIN target_uniprot tu ON tu.target_id = t.target_id
+  LEFT JOIN uniprot u ON u.uniprot_id = tu.uniprot_id;
