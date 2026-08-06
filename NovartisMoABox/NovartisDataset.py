@@ -15,9 +15,30 @@ DEFAULT_EXCEL = "March2020_NIBRmoabox-data_OAK.xlsx"
 DEFAULT_SHEET = "Report"
 DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parent / "custom_data"
 DEFAULT_CHEMBL_OUTPUT = DEFAULT_OUTPUT_DIR / "bioactivity.tsv"
+DEFAULT_COMPOUND_TSV = DEFAULT_OUTPUT_DIR / "compound.tsv"
 SOURCE_DB = "NIBR MOA Box"
 SPECIES = "Homo sapiens"
 CHEMBL_BASE_URL = "https://www.ebi.ac.uk/chembl/api/data"
+DEFAULT_MAX_ACTIVITIES_PER_COMPOUND = 5
+DEFAULT_CHEMBL_BATCH_SIZE = 50
+ASSAY_ENDPOINTS = {
+    "AC50",
+    "Activity",
+    "CC50",
+    "EC50",
+    "GI50",
+    "IC50",
+    "Inhibition",
+    "Kd",
+    "Ki",
+    "MIC",
+    "Potency",
+}
+EXCLUDED_ACTIVITY_TEXT = re.compile(
+    r"lung|lesion|tissue|organ|body weight|hepatotoxic|severity|mortality|"
+    r"lethal dose|clinical|adverse|toxicity|toxic",
+    re.I,
+)
 
 
 BIOACTIVITY_COLUMNS = [
@@ -224,6 +245,27 @@ def make_workbook_compound_maps(df: pd.DataFrame) -> tuple[dict[str, str], dict[
     return chembl_to_inchikey, inchikey_to_moa
 
 
+def make_compound_maps(
+    df: pd.DataFrame, compound_tsv: Path | None = DEFAULT_COMPOUND_TSV
+) -> tuple[dict[str, str], dict[str, str]]:
+    chembl_to_inchikey, inchikey_to_moa = make_workbook_compound_maps(df)
+    if compound_tsv is None or not compound_tsv.exists():
+        return chembl_to_inchikey, inchikey_to_moa
+
+    with compound_tsv.open(newline="", encoding="utf-8") as handle:
+        for row in csv.DictReader(handle, delimiter="\t"):
+            inchikey = clean_value(row.get("inchikey"))
+            chembl_ids = clean_value(row.get("chembl_id")).replace(";", "|").split("|")
+            if inchikey:
+                inchikey_to_moa.setdefault(inchikey, "")
+            for chembl_id in chembl_ids:
+                chembl_id = chembl_id.strip()
+                if chembl_id:
+                    chembl_to_inchikey.setdefault(chembl_id, inchikey)
+
+    return chembl_to_inchikey, inchikey_to_moa
+
+
 def chembl_get(endpoint: str, params: dict | None = None, retries: int = 3) -> dict:
     url = f"{CHEMBL_BASE_URL}/{endpoint.lstrip('/')}.json"
     params = params or {}
@@ -260,6 +302,11 @@ def iter_chembl_records(endpoint: str, collection_key: str, params: dict) -> Ite
         if not page_meta.get("next") or len(records) < limit:
             break
         offset += limit
+
+
+def chunks(values: list[str], size: int) -> Iterable[list[str]]:
+    for start in range(0, len(values), size):
+        yield values[start : start + size]
 
 
 def lookup_chembl_ids_by_inchikey(inchikeys: Iterable[str]) -> dict[str, str]:
@@ -320,10 +367,12 @@ def make_chembl_bioactivity(
     df: pd.DataFrame,
     max_compounds: int | None = None,
     max_activities: int | None = None,
-    fallback_to_inchikey_lookup: bool = True,
+    max_activities_per_compound: int | None = DEFAULT_MAX_ACTIVITIES_PER_COMPOUND,
+    compound_tsv: Path | None = DEFAULT_COMPOUND_TSV,
+    fallback_to_inchikey_lookup: bool = False,
     resolve_targets: bool = True,
 ) -> pd.DataFrame:
-    chembl_to_inchikey, inchikey_to_moa = make_workbook_compound_maps(df)
+    chembl_to_inchikey, inchikey_to_moa = make_compound_maps(df, compound_tsv)
 
     if fallback_to_inchikey_lookup:
         missing_inchikeys = [
@@ -352,6 +401,8 @@ def make_chembl_bioactivity(
                 {"molecule_chembl_id": compound_id, "limit": 1000},
             )
             for activity in activities:
+                if not keep_chembl_activity(activity):
+                    continue
                 inchikey = chembl_to_inchikey.get(compound_id, "")
                 target_chembl_id = clean_value(activity.get("target_chembl_id"))
                 records.append(
@@ -383,6 +434,12 @@ def make_chembl_bioactivity(
 
                 if max_activities is not None and len(records) >= max_activities:
                     return pd.DataFrame(records, columns=BIOACTIVITY_COLUMNS)
+                if (
+                    max_activities_per_compound is not None
+                    and sum(record["inchikey"] == inchikey for record in records)
+                    >= max_activities_per_compound
+                ):
+                    break
         except RuntimeError as error:
             print(f"Skipping {compound_id}: {error}", flush=True)
             continue
@@ -394,10 +451,13 @@ def iter_chembl_bioactivity_records(
     df: pd.DataFrame,
     max_compounds: int | None = None,
     max_activities: int | None = None,
-    fallback_to_inchikey_lookup: bool = True,
+    max_activities_per_compound: int | None = DEFAULT_MAX_ACTIVITIES_PER_COMPOUND,
+    batch_size: int = DEFAULT_CHEMBL_BATCH_SIZE,
+    compound_tsv: Path | None = DEFAULT_COMPOUND_TSV,
+    fallback_to_inchikey_lookup: bool = False,
     resolve_targets: bool = True,
 ) -> Iterable[dict[str, str]]:
-    chembl_to_inchikey, inchikey_to_moa = make_workbook_compound_maps(df)
+    chembl_to_inchikey, inchikey_to_moa = make_compound_maps(df, compound_tsv)
 
     if fallback_to_inchikey_lookup:
         missing_inchikeys = [
@@ -415,17 +475,28 @@ def iter_chembl_bioactivity_records(
     emitted = 0
     resolve_target_key = make_target_key_resolver(enable_lookup=resolve_targets)
 
-    for compound_number, compound_id in enumerate(compound_ids, start=1):
-        if compound_number % 100 == 0:
-            print(f"Queried {compound_number}/{len(compound_ids)} compounds...", flush=True)
-
+    kept_by_compound = {compound_id: 0 for compound_id in compound_ids}
+    for batch_number, compound_batch in enumerate(chunks(compound_ids, batch_size), start=1):
         try:
             activities = iter_chembl_records(
                 "activity",
                 "activities",
-                {"molecule_chembl_id": compound_id, "limit": 1000},
+                {
+                    "molecule_chembl_id__in": ",".join(compound_batch),
+                    "limit": 1000,
+                },
             )
             for activity in activities:
+                compound_id = clean_value(activity.get("molecule_chembl_id"))
+                if compound_id not in kept_by_compound:
+                    continue
+                if (
+                    max_activities_per_compound is not None
+                    and kept_by_compound[compound_id] >= max_activities_per_compound
+                ):
+                    continue
+                if not keep_chembl_activity(activity):
+                    continue
                 inchikey = chembl_to_inchikey.get(compound_id, "")
                 target_chembl_id = clean_value(activity.get("target_chembl_id"))
                 yield {
@@ -453,12 +524,47 @@ def iter_chembl_bioactivity_records(
                     "xref_id": clean_value(activity.get("activity_id")),
                 }
                 emitted += 1
+                kept_by_compound[compound_id] += 1
 
                 if max_activities is not None and emitted >= max_activities:
                     return
+                if max_activities_per_compound is not None and all(
+                    kept_by_compound[batch_compound] >= max_activities_per_compound
+                    for batch_compound in compound_batch
+                ):
+                    break
         except RuntimeError as error:
-            print(f"Skipping {compound_id}: {error}", flush=True)
+            print(f"Skipping ChEMBL batch {batch_number}: {error}", flush=True)
             continue
+
+        queried = min(batch_number * batch_size, len(compound_ids))
+        if queried % 500 == 0 or queried == len(compound_ids):
+            covered = sum(count > 0 for count in kept_by_compound.values())
+            print(
+                f"Queried {queried}/{len(compound_ids)} compounds; "
+                f"kept rows for {covered} compounds...",
+                flush=True,
+            )
+
+
+def keep_chembl_activity(activity: dict) -> bool:
+    endpoint = clean_value(activity.get("standard_type"))
+    if endpoint not in ASSAY_ENDPOINTS:
+        return False
+    if not clean_value(activity.get("standard_value")):
+        return False
+
+    text = " ".join(
+        clean_value(activity.get(key))
+        for key in (
+            "standard_type",
+            "assay_description",
+            "target_pref_name",
+            "assay_type",
+            "bao_label",
+        )
+    )
+    return not EXCLUDED_ACTIVITY_TEXT.search(text)
 
 
 def write_tsv(df: pd.DataFrame, output_path: Path) -> None:
@@ -488,7 +594,10 @@ def create_chembl_bioactivity_tsv(
     sheet_name: str,
     max_compounds: int | None = None,
     max_activities: int | None = None,
-    fallback_to_inchikey_lookup: bool = True,
+    max_activities_per_compound: int | None = DEFAULT_MAX_ACTIVITIES_PER_COMPOUND,
+    batch_size: int = DEFAULT_CHEMBL_BATCH_SIZE,
+    compound_tsv: Path | None = DEFAULT_COMPOUND_TSV,
+    fallback_to_inchikey_lookup: bool = False,
     resolve_targets: bool = True,
 ) -> int:
     df = load_report(excel_path, sheet_name)
@@ -507,6 +616,9 @@ def create_chembl_bioactivity_tsv(
             df,
             max_compounds=max_compounds,
             max_activities=max_activities,
+            max_activities_per_compound=max_activities_per_compound,
+            batch_size=batch_size,
+            compound_tsv=compound_tsv,
             fallback_to_inchikey_lookup=fallback_to_inchikey_lookup,
             resolve_targets=resolve_targets,
         ):
@@ -560,12 +672,37 @@ def parse_args() -> argparse.Namespace:
         "--max-activities",
         type=int,
         default=None,
-        help="Optional cap for ChEMBL activity rows, useful for testing.",
+        help="Optional global cap for ChEMBL activity rows, useful for testing.",
+    )
+    parser.add_argument(
+        "--max-activities-per-compound",
+        type=int,
+        default=DEFAULT_MAX_ACTIVITIES_PER_COMPOUND,
+        help=(
+            "Maximum kept ChEMBL activity rows per compound. "
+            f"Defaults to {DEFAULT_MAX_ACTIVITIES_PER_COMPOUND}; use 0 for no cap."
+        ),
+    )
+    parser.add_argument(
+        "--compound-tsv",
+        default=str(DEFAULT_COMPOUND_TSV),
+        help=f"Compound TSV used for broad ChEMBL lookup. Defaults to {DEFAULT_COMPOUND_TSV}.",
+    )
+    parser.add_argument(
+        "--chembl-batch-size",
+        type=int,
+        default=DEFAULT_CHEMBL_BATCH_SIZE,
+        help=f"Number of ChEMBL IDs to query per request batch. Defaults to {DEFAULT_CHEMBL_BATCH_SIZE}.",
     )
     parser.add_argument(
         "--no-inchikey-lookup",
         action="store_true",
-        help="Use only ChEMBL IDs already present in the workbook.",
+        help="Use only ChEMBL IDs already present in custom_data/compound.tsv or the workbook.",
+    )
+    parser.add_argument(
+        "--inchikey-lookup",
+        action="store_true",
+        help="Look up missing ChEMBL IDs from workbook InChIKeys. Slower; off by default.",
     )
     parser.add_argument(
         "--no-target-lookup",
@@ -584,7 +721,12 @@ def main() -> None:
             args.sheet,
             max_compounds=args.max_compounds,
             max_activities=args.max_activities,
-            fallback_to_inchikey_lookup=not args.no_inchikey_lookup,
+            max_activities_per_compound=(
+                None if args.max_activities_per_compound == 0 else args.max_activities_per_compound
+            ),
+            batch_size=args.chembl_batch_size,
+            compound_tsv=Path(args.compound_tsv) if args.compound_tsv else None,
+            fallback_to_inchikey_lookup=args.inchikey_lookup and not args.no_inchikey_lookup,
             resolve_targets=not args.no_target_lookup,
         )
         print(f"Wrote {args.chembl_output}: {row_count} rows")
