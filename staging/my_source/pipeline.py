@@ -117,8 +117,8 @@ def generate_tsvs():
     bioactivity_df = pd.concat([bio1, bio2], ignore_index=True)
     
     # Remove rows where the bioactivity value is missing to prevent unnecessary duplications
-    bioactivity_df = bioactivity_df.dropna(subset=['value'])
-    bioactivity_df['relation'] = bioactivity_df['relation'].replace(0, np.nan)
+    bioactivity_df['relation'] = bioactivity_df['relation'].replace('0', np.nan)
+    bioactivity_df['value'] = pd.to_numeric(bioactivity_df['value'], errors='coerce')
     bioactivity_df = normalize_negative_control_values(bioactivity_df)
     bioactivity_df = bioactivity_df.dropna(subset=['value'])
     
