@@ -1163,6 +1163,35 @@ def load_collapsed(db, out):
     return loaded
 
 
+def dump_tables(db, into, prefix="new_"):
+    """The built database, one file per table, columns exactly as declared.
+
+    The staging files are what a *source* hands over: they name a target by its
+    accession and a source by its name, and one of them feeds three tables. These
+    are the other shape -- what the *database* holds, one file per table with its
+    own columns and its own surrogate ids, so they load straight in with no
+    resolution step and nothing to unpack.
+    """
+    import shutil
+
+    from probedb import schema
+
+    into = Path(into)
+    into.mkdir(parents=True, exist_ok=True)
+    # the schema and its table list travel with the data, so the bundle cannot
+    # drift from the database it was dumped out of
+    shutil.copy(schema.SCHEMA_SQL, into / f"{prefix}schema.sql")
+    shutil.copy(Path(schema.__file__), into / f"{prefix}schema.py")
+    written = {}
+    for table in schema.TABLES:
+        columns = [r[1] for r in db.conn.execute(f"PRAGMA table_info({table})")]
+        rows = [dict(zip(columns, row))
+                for row in db.conn.execute(
+                    f"SELECT {', '.join(columns)} FROM {table}")]
+        written[table] = write_table(into / f"{prefix}{table}.tsv", rows, columns)
+    return written
+
+
 def populate(db_path, out, force=False):
     """Build a fresh database from the staging directory, through loader/."""
     import tempfile
@@ -1191,6 +1220,9 @@ def main(argv=None):
     parser.add_argument("--db", type=Path, help="also build a database from the result")
     parser.add_argument("--force", action="store_true",
                         help="replace the database file if it already exists")
+    parser.add_argument("--dump", type=Path,
+                        help="also write the built database out as one file per "
+                             "table, columns exactly as schema.sql declares them")
     parser.add_argument("--resolve", action="store_true",
                         help="re-query PubChem for the probes with no structure "
                              "and rewrite resolved_structures.tsv")
@@ -1225,7 +1257,14 @@ def main(argv=None):
                     + db.counts().to_string(index=False)
                     + f"\nduplicates skipped by the loader: "
                       f"{result['duplicates_skipped']}")
+        if args.dump:
+            dumped = dump_tables(db, args.dump)
+            logger.info(f"dumped {sum(dumped.values())} rows as one file per table "
+                        f"into {args.dump}\n"
+                        + "\n".join(f"{n:>7}  new_{t}.tsv" for t, n in dumped.items()))
         db.close()
+    elif args.dump:
+        raise SystemExit("--dump needs --db, there is nothing to dump without it")
     return 0 if not summary["problems"] else 1
 
 
