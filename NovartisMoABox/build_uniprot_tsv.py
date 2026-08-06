@@ -1,17 +1,17 @@
 import csv
 import re
-import sys
 import urllib.parse
 import urllib.request
 from collections import defaultdict
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parent.parent
-TARGET_TSV = ROOT / "staging" / "custom_data" / "target.tsv"
-UNIPROT_TSV = ROOT / "staging" / "custom_data" / "uniprot.tsv"
-UNMATCHED_TSV = ROOT / "staging" / "custom_data" / "uniprot_unmatched.tsv"
-UNIPROT_CACHE = ROOT / "staging" / "custom_data" / "_uniprot_reviewed_human.tsv"
+ROOT = Path(__file__).resolve().parent
+DATA_DIR = ROOT / "custom_data"
+TARGET_TSV = DATA_DIR / "target.tsv"
+UNIPROT_TSV = DATA_DIR / "uniprot.tsv"
+UNMATCHED_TSV = DATA_DIR / "uniprot_unmatched.tsv"
+UNIPROT_CACHE = DATA_DIR / "_uniprot_reviewed_human.tsv"
 
 MANUAL_MAPPINGS = {
     "CKBE": ("P12277", "CKB", "Homo sapiens (Human)"),

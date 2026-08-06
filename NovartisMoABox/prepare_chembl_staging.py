@@ -2,8 +2,8 @@ import csv
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parent.parent
-STAGING = ROOT / "staging" / "custom_data"
+ROOT = Path(__file__).resolve().parent
+STAGING = ROOT / "custom_data"
 TARGET_TSV = STAGING / "target.tsv"
 BIOACTIVITY_TSV = STAGING / "bioactivity.tsv"
 ADDED_TARGETS_TSV = STAGING / "target_added_from_bioactivity.tsv"

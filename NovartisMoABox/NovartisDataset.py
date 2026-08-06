@@ -13,6 +13,8 @@ import requests
 
 DEFAULT_EXCEL = "March2020_NIBRmoabox-data_OAK.xlsx"
 DEFAULT_SHEET = "Report"
+DEFAULT_OUTPUT_DIR = Path(__file__).resolve().parent / "custom_data"
+DEFAULT_CHEMBL_OUTPUT = DEFAULT_OUTPUT_DIR / "bioactivity.tsv"
 SOURCE_DB = "NIBR MOA Box"
 SPECIES = "Homo sapiens"
 CHEMBL_BASE_URL = "https://www.ebi.ac.uk/chembl/api/data"
@@ -178,9 +180,9 @@ def make_bioactivity(df: pd.DataFrame, source_name: str) -> pd.DataFrame:
                         "target_key": target_key,
                         "moa": clean_value(row.get("moa")),
                         "bioactivity_type": measure_name,
-                        "relation": "",
+                        "relation": "=",
                         "value": clean_value(row.get(measure_column)),
-                        "unit": "",
+                        "unit": "score",
                         "assay_type": "",
                         "assay_description": "",
                         "cell_line": "",
@@ -189,7 +191,7 @@ def make_bioactivity(df: pd.DataFrame, source_name: str) -> pd.DataFrame:
                         "source_db": SOURCE_DB,
                         "source": source_name,
                         "source_xref": clean_value(row.get("moabox_id")),
-                        "xref_id": clean_value(row.get("moabox_id")),
+                        "xref_id": "",
                     }
                 )
 
@@ -361,9 +363,9 @@ def make_chembl_bioactivity(
                         ),
                         "moa": inchikey_to_moa.get(inchikey, ""),
                         "bioactivity_type": clean_value(activity.get("standard_type")),
-                        "relation": clean_value(activity.get("standard_relation")),
+                        "relation": clean_value(activity.get("standard_relation")) or "=",
                         "value": clean_value(activity.get("standard_value")),
-                        "unit": clean_value(activity.get("standard_units")),
+                        "unit": clean_value(activity.get("standard_units")) or "unspecified",
                         "assay_type": clean_value(activity.get("assay_type")),
                         "assay_description": clean_value(activity.get("assay_description")),
                         "cell_line": first_present_dict(
@@ -434,9 +436,9 @@ def iter_chembl_bioactivity_records(
                     ),
                     "moa": inchikey_to_moa.get(inchikey, ""),
                     "bioactivity_type": clean_value(activity.get("standard_type")),
-                    "relation": clean_value(activity.get("standard_relation")),
+                    "relation": clean_value(activity.get("standard_relation")) or "=",
                     "value": clean_value(activity.get("standard_value")),
-                    "unit": clean_value(activity.get("standard_units")),
+                    "unit": clean_value(activity.get("standard_units")) or "unspecified",
                     "assay_type": clean_value(activity.get("assay_type")),
                     "assay_description": clean_value(activity.get("assay_description")),
                     "cell_line": first_present_dict(
@@ -530,8 +532,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "-o",
         "--output-dir",
-        default=".",
-        help="Folder where the TSV files should be written. Defaults to the current folder.",
+        default=str(DEFAULT_OUTPUT_DIR),
+        help=f"Folder where the TSV files should be written. Defaults to {DEFAULT_OUTPUT_DIR}.",
     )
     parser.add_argument(
         "--sheet",
@@ -545,8 +547,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--chembl-output",
-        default="bioactivity_chembl.tsv",
-        help="Output path for --chembl-bioactivity. Defaults to bioactivity_chembl.tsv.",
+        default=str(DEFAULT_CHEMBL_OUTPUT),
+        help=f"Output path for --chembl-bioactivity. Defaults to {DEFAULT_CHEMBL_OUTPUT}.",
     )
     parser.add_argument(
         "--max-compounds",
