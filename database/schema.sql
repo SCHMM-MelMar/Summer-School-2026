@@ -40,6 +40,11 @@ CREATE TABLE target_uniprot (
         FOREIGN KEY (uniprot_id) REFERENCES uniprot (uniprot_id)
 );
 
+-- source_db is the resource, source is the record inside it (a paper, an
+-- internal report, a release). xref_id is the prefix that turns the
+-- bioactivity.source_xref of a single measurement into a link, so for a
+-- literature source it is https://doi.org/ and source_xref is the DOI.
+-- leave xref_id empty if the source has nothing resolvable.
 CREATE TABLE bioactivity_source (
     source_id     SERIAL PRIMARY KEY,
     source_db     VARCHAR(255) NOT NULL,
@@ -101,8 +106,12 @@ CREATE INDEX idx_compound_name         ON compound (name);
 CREATE INDEX idx_chembl_inchikey       ON chembl (inchikey);
 
 
+-- target and uniprot have no column in common, the link is target_uniprot.
+-- this view does both joins so you get one flat frame instead of three.
+-- LEFT so a target with no accession yet still shows up.
 CREATE VIEW target_flat AS
-SELECT t.target_id, t.type, t.name, tu.uniprot_id, u.hgnc, u.species
+SELECT t.target_id, t.type, t.name,
+       tu.uniprot_id, u.hgnc, u.species, u.entrez_gene
   FROM target t
-  JOIN target_uniprot tu ON tu.target_id = t.target_id
-  JOIN uniprot u ON u.uniprot_id = tu.uniprot_id;
+  LEFT JOIN target_uniprot tu ON tu.target_id = t.target_id
+  LEFT JOIN uniprot u ON u.uniprot_id = tu.uniprot_id;

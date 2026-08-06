@@ -45,6 +45,30 @@ class ProbeDB:
         ]
         return pd.DataFrame(rows, columns=["table", "rows"])
 
+    def targets(self, key=None):
+        # target and uniprot share no column, target_uniprot is the link.
+        # one row per target and accession, so a complex comes back as
+        # several rows with the same target_id
+        sql = "SELECT * FROM target_flat"
+        params = []
+        if key is not None:
+            ids = self.targets_for(key)
+            sql += f" WHERE target_id IN ({','.join('?' * len(ids))})"
+            params = ids
+        return self.read(sql + " ORDER BY target_id, uniprot_id", *params)
+
+    def sources(self):
+        return self.read(
+            """
+            SELECT s.source_id, s.source_db, s.source, s.xref_id,
+                   COUNT(b.id) AS measurements
+              FROM bioactivity_source s
+              LEFT JOIN bioactivity b ON b.source_id = s.source_id
+             GROUP BY s.source_id
+             ORDER BY measurements DESC, s.source_db, s.source
+        """
+        )
+
     def bioactivities(self, compound=None, target=None):
         where, params = [], []
         if compound is not None:
@@ -60,7 +84,9 @@ class ProbeDB:
                    b.bioactivity_type, b.relation, b.value, b.unit,
                    b.assay_type, b.assay_description, b.cell_line,
                    b.concentration, b.concentration_unit,
-                   s.source_db, s.source, b.source_xref
+                   b.source_id, s.source_db, s.source, b.source_xref,
+                   CASE WHEN s.xref_id IS NOT NULL AND b.source_xref IS NOT NULL
+                        THEN s.xref_id || b.source_xref END AS source_url
               FROM bioactivity b
               JOIN compound c ON c.inchikey = b.inchikey
               JOIN target t ON t.target_id = b.target_id
@@ -210,16 +236,20 @@ class ProbeDB:
             source_db,
             source,
         )
-        return (
-            found
-            if found is not None
-            else self.insert(
+        if found is None:
+            return self.insert(
                 "bioactivity_source",
                 source_db=source_db,
                 source=source or None,
                 xref_id=xref_id or None,
             )
-        )
+        if xref_id:
+            self.conn.execute(
+                "UPDATE bioactivity_source SET xref_id = ? "
+                "WHERE source_id = ? AND xref_id IS NULL",
+                (xref_id, found),
+            )
+        return found
 
     def add_group(self, inchikey, target_id, moa=""):
         found = self.one(

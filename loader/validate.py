@@ -18,6 +18,7 @@ FILES = {
             "source_db",
             "source",
             "source_xref",
+            "xref_id",
             "assay_type",
             "assay_description",
             "cell_line",

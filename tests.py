@@ -96,12 +96,21 @@ plk1 = rows[
 ]
 assert len(set(plk1["source_db"])) == 3 and len(plk1) == 4
 
-# every datapoint names the database it came from. A record id is only there
-# when the source has one: a number read from a paper is identified by the PMID.
+# every datapoint names the database it came from, and where the source gives
+# a resolvable id the api hands back a link instead of leaving it to be guessed
 assert rows["source_db"].notna().all()
 assert set(rows["source_db"]) == {"literature", "opnMe", "Probes & Drugs", "in-house"}
-assert rows[rows.source_db == "literature"]["source"].str.startswith("PMID:").all()
-assert rows[rows.source_db == "literature"]["source_xref"].isna().all()
+lit = rows[rows.source_db == "literature"]
+assert lit["source"].str.startswith("PMID:").all()
+assert lit["source_url"].str.startswith("https://doi.org/10.").all()
+assert rows[rows.source_db == "in-house"]["source_url"].isna().all()
+assert db.sources()["measurements"].sum() == len(rows)
+
+# target and uniprot are two tables with no shared column, targets() joins them
+flat = db.targets()
+assert set(flat["target_id"]) == set(db.table("target")["target_id"])
+assert set(db.targets("PARP1")["uniprot_id"]) == {"P09874", "Q9UGN5", "Q9Y6F1"}
+assert (db.targets("P06493")["type"] == "complex").all()
 
 # a target type outside the vocabulary is refused
 try:

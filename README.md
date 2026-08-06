@@ -55,7 +55,11 @@ cp -r staging/_template staging/my_source
 | `compound.tsv`    | `inchikey` · `smiles` · `chembl_id`· `name`                                                                                                                                                                                 |
 | `target.tsv`      | `target_key` · `type` · `name`                                                                                                                                                                                              |
 | `uniprot.tsv`     | `uniprot_id` · `target_key` · `hgnc` · `species`                                                                                                                                                                         |
-| `bioactivity.tsv` | `inchikey` · `target_key` · `moa` · `bioactivity_type` · `relation` · `value` · `unit` · `assay_type` · `assay_description` · `cell_line` · `concentration` · `concentration_unit` · `source_db` · `source` · `source_xref` |
+| `bioactivity.tsv` | `inchikey` · `target_key` · `moa` · `bioactivity_type` · `relation` · `value` · `unit` · `assay_type` · `assay_description` · `cell_line` · `concentration` · `concentration_unit` · `source_db` · `source` · `source_xref` · `xref_id` |
+
+Only `inchikey`, `target_key`, `value` and `unit` have to be there in
+`bioactivity.tsv`, and `inchikey` in `compound.tsv`. Any other column can be
+left out of the header entirely and it loads as empty.
 
 The rules, in short:
 
@@ -69,6 +73,19 @@ The rules, in short:
 - `unit` says what the number means. Nothing is converted on load, so a source
   reporting pIC50 on -log(M) stays that way.
 - `relation` should always be written.
+
+The four provenance columns say where one number came from:
+
+- `source_db` is the resource, `opnMe` or `Probes & Drugs` or `literature`. If
+  you leave the column out it falls back to the directory name.
+- `source` is the record inside it, a paper, an internal report, a release.
+- `source_xref` identifies the single measurement in that record, so somebody
+  can go back to the exact row.
+- `xref_id` is the prefix that makes `source_xref` a link. It is a property of
+  the source, so write the same value on every row of it. Whether there is one
+  depends on the raw data: for a paper it is `https://doi.org/` with the DOI in
+  `source_xref`, for an internal report there is nothing to resolve and you
+  leave it empty.
 
 
 Check a directory before handing it over:
@@ -138,7 +155,7 @@ db.counts()
            uniprot     8
             target     6
     target_uniprot     9
-bioactivity_source     9
+bioactivity_source    10
  bioactivity_group     8
        bioactivity    13
 ```
@@ -176,13 +193,13 @@ df[["target", "moa", "bioactivity_type", "relation", "value", "unit",
 ```
 
 ```
-                              target       moa bioactivity_type relation     value    unit  assay_type cell_line      source_db
-Serine/threonine-protein kinase PLK1 inhibitor             IC50        =     0.830      nM biochemical                   opnMe
-Serine/threonine-protein kinase PLK1 inhibitor             IC50        =     1.100      nM biochemical                in-house
-Serine/threonine-protein kinase PLK1 inhibitor             EC50        =    12.000      nM        cell      HeLa    in-house
-Serine/threonine-protein kinase PLK1 inhibitor            pIC50        =     9.080 -log(M) biochemical          Probes & Drugs
-    Bromodomain-containing protein 4 inhibitor             IC50        =     1.202      nM biochemical                  ChEMBL
- Cyclin-dependent kinase 1/cyclin B1                       IC50        > 10000.000      nM biochemical                  ChEMBL
+                              target       moa bioactivity_type relation    value    unit  assay_type cell_line      source_db
+Serine/threonine-protein kinase PLK1 inhibitor             IC50        =     0.83      nM biochemical       NaN          opnMe
+Serine/threonine-protein kinase PLK1 inhibitor            pIC50        =    10.08 -log(M) biochemical       NaN Probes & Drugs
+Serine/threonine-protein kinase PLK1 inhibitor             IC50        =     1.10      nM biochemical       NaN       in-house
+Serine/threonine-protein kinase PLK1 inhibitor             EC50        =    12.00      nM        cell      HeLa       in-house
+    Bromodomain-containing protein 4 inhibitor             IC50        =     1.20      nM biochemical       NaN     literature
+ Cyclin-dependent kinase 1/cyclin B1                       IC50        > 10000.00      nM biochemical       NaN     literature
 ```
 
 Four numbers for PLK1 from three databases, one of them on a different scale,
@@ -200,9 +217,9 @@ db.bioactivities(target="BRD4")[
 ```
 
 ```
-compound bioactivity_type relation   value unit        source
- BI-2536             IC50        =   1.202   nM PMID:32088495
- (+)-JQ1             EC50        = 144.500   nM PMID:31303996
+compound bioactivity_type relation  value unit        source
+ BI-2536             IC50        =    1.2   nM PMID:32088495
+ (+)-JQ1             EC50        =  144.5   nM PMID:31303996
 ```
 
 ### One accession, several targets
@@ -221,28 +238,84 @@ db.targets_for("P09874")          # -> [4, 5]
 
 Those are two different targets and two different sets of measurements.
 
-### What a group is made of
+### Targets together with their accessions
 
-`target_flat` is a view with one row per target and accession pair.
+`db.table("target")` and `db.table("uniprot")` have no column in common, because
+the link between them is the third table `target_uniprot`. `db.targets()` does
+both joins and hands back one flat frame, one row per target and accession pair:
 
 ```python
-db.read("SELECT * FROM target_flat WHERE type <> 'protein' ORDER BY target_id")
+t = db.targets()
+t[t.type != "protein"]
 ```
 
 ```
- target_id    type                                name uniprot_id  hgnc      species
-         5  family                     PARP 1, 2 and 3     P09874 PARP1 Homo sapiens
-         5  family                     PARP 1, 2 and 3     Q9UGN5 PARP2 Homo sapiens
-         5  family                     PARP 1, 2 and 3     Q9Y6F1 PARP3 Homo sapiens
-         6 complex Cyclin-dependent kinase 1/cyclin B1     P06493  CDK1 Homo sapiens
-         6 complex Cyclin-dependent kinase 1/cyclin B1     P14635 CCNB1 Homo sapiens
+ target_id    type                                name uniprot_id  hgnc      species entrez_gene
+         5  family                     PARP 1, 2 and 3     P09874 PARP1 Homo sapiens        None
+         5  family                     PARP 1, 2 and 3     Q9UGN5 PARP2 Homo sapiens        None
+         5  family                     PARP 1, 2 and 3     Q9Y6F1 PARP3 Homo sapiens        None
+         6 complex Cyclin-dependent kinase 1/cyclin B1     P06493  CDK1 Homo sapiens        None
+         6 complex Cyclin-dependent kinase 1/cyclin B1     P14635 CCNB1 Homo sapiens        None
 ```
 
-To find one by its members instead:
+It takes the same argument as `bioactivities(target=...)`, an accession, an HGNC
+symbol or a target id, so `db.targets("PARP1")` gives the protein and the family
+containing it. The same frame is the `target_flat` view if you are writing SQL,
+and `target_id` joins it straight onto `db.bioactivities()`.
+
+If you would rather keep the raw tables, the merge is two steps:
+
+```python
+(db.table("target")
+   .merge(db.table("target_uniprot"), on="target_id")
+   .merge(db.table("uniprot"), on="uniprot_id"))
+```
+
+To find a target by its members instead:
 
 ```python
 db.find_target("family", ["Q9Y6F1", "P09874", "Q9UGN5"])   # order does not matter
 ```
+
+### Where a number came from
+
+`db.sources()` lists every source with how much it contributed.
+
+```python
+db.sources()
+```
+
+```
+ source_id      source_db               source          xref_id  measurements
+         3       in-house assay report 2024-03              NaN             3
+         7     literature        PMID:35007061 https://doi.org/             2
+         2 Probes & Drugs        PMID:33539089              NaN             1
+         5     literature        PMID:17291758 https://doi.org/             1
+        10     literature        PMID:23473053 https://doi.org/             1
+         6     literature        PMID:31303996 https://doi.org/             1
+```
+
+`source_id` is on every measurement, so this joins onto `db.bioactivities()`
+directly. Where the source has an `xref_id`, `bioactivities()` builds the link
+for you in `source_url`:
+
+```python
+act = db.bioactivities()
+act[act.source_url.notna()][
+    ["compound", "target", "value", "unit", "source_db", "source", "source_url"]]
+```
+
+```
+compound                              target   value unit  source_db        source                                   source_url
+ BI-2536    Bromodomain-containing protein 4     1.2   nM literature PMID:32088495 https://doi.org/10.1016/j.ejmech.2020.112152
+ BI-2536 Cyclin-dependent kinase 1/cyclin B1 10000.0   nM literature PMID:17291758    https://doi.org/10.1016/j.cub.2006.12.037
+ (+)-JQ1    Bromodomain-containing protein 4   144.5   nM literature PMID:31303996           https://doi.org/10.1039/c8md00412a
+ (+)-JQ1    Bromodomain-containing protein 2   120.2   nM literature PMID:35007061 https://doi.org/10.1021/acs.jmedchem.1c01779
+```
+
+`source_url` is empty when the source has nothing resolvable, which is the case
+for the in-house rows and for a Probes & Drugs activity id. The identifier is
+still in `source_xref` either way.
 
 ### Assay context
 
@@ -257,10 +330,10 @@ act[act.assay_type.notna()][
 ```
 
 ```
-compound                               target bioactivity_type  value unit  assay_type     assay_description cell_line
- BI-2536 Serine/threonine-protein kinase PLK1             IC50  0.830   nM biochemical kinase activity assay
- BI-2536 Serine/threonine-protein kinase PLK1             IC50  1.100   nM biochemical kinase activity assay
- BI-2536 Serine/threonine-protein kinase PLK1             EC50 12.000   nM        cell     antiproliferation      HeLa
+compound                               target bioactivity_type  value    unit  assay_type     assay_description cell_line
+ BI-2536 Serine/threonine-protein kinase PLK1             IC50   0.83      nM biochemical kinase activity assay       NaN
+ BI-2536 Serine/threonine-protein kinase PLK1            pIC50  10.08 -log(M) biochemical                   NaN       NaN
+ BI-2536 Serine/threonine-protein kinase PLK1             IC50   1.10      nM biochemical kinase activity assay       NaN
 ```
 
 
@@ -285,11 +358,11 @@ follows.
 | table                  | holds                                                        |
 | ---------------------- | ------------------------------------------------------------ |
 | `compound`           | one row per structure, keyed on InChIKey, searchable by name |
-| `chembl`             | InChIKey and SMILES of compounds that are in ChEMBL          |
+| `chembl`             | ChEMBL id of a compound, keyed on the id                     |
 | `uniprot`            | accession, HGNC symbol, species                              |
 | `target`             | one row per target, with a type                              |
 | `target_uniprot`     | which accessions make up a target                            |
-| `bioactivity_source` | `source_db` and `source` pairs                           |
+| `bioactivity_source` | where the numbers came from, and how to resolve an xref      |
 | `bioactivity_group`  | compound, target and MoA, the unit you would aggregate over  |
 | `bioactivity`        | one row per reported measurement, with how it was measured   |
 | `target_flat`        | view, one row per target and accession pair                  |

@@ -62,11 +62,15 @@ def load(db, directory, source=None, strict=True):
         )
     }
 
-    sources = {}
+    sources, resolved = {}, set()
     for row in read(directory, "bioactivity"):
         source_key = (row.get("source_db") or source, row.get("source") or None)
-        if source_key not in sources:
-            sources[source_key] = db.add_source(*source_key)
+        xref_id = row.get("xref_id")
+        # a source may only carry its xref prefix on some of its rows
+        if source_key not in sources or (xref_id and source_key not in resolved):
+            sources[source_key] = db.add_source(*source_key, xref_id)
+            if xref_id:
+                resolved.add(source_key)
 
         key = (
             compounds[row["inchikey"].upper()],
