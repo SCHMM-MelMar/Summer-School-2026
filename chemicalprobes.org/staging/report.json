@@ -1,0 +1,28 @@
+{
+  "counts": {
+    "probes in": 1247,
+    "compounds written": 1223,
+    "compounds skipped": 24,
+    "targets written": 644,
+    "bioactivity rows written": 3626,
+    "rows held for curation": 23,
+    "rows with no unit": 155,
+    "in vivo rows written": 1450,
+    "reference rows written": 1792,
+    "unsuitable rows written": 260
+  },
+  "written": {
+    "compound": 1223,
+    "target": 644,
+    "uniprot": 644,
+    "bioactivity": 3626,
+    "unsuitable": 260,
+    "quarantine": 23,
+    "compound_annotation": 11428,
+    "target_annotation": 1475,
+    "in_vivo": 1450,
+    "reference": 1792,
+    "skipped_compound": 24
+  },
+  "problems": []
+}

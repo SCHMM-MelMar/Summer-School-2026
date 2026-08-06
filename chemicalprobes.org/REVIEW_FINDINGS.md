@@ -71,7 +71,7 @@ against a path walk of the JSON**, and no longer typed twice.
 | probes citing one paper as both DOI and PubMed | 322 | 254 |
 | in-vitro descriptions mentioning a cell | 55 | 53 |
 | `bioactivity_source` rows | ~950 | 1213, one per loadable probe |
-| rows re-inserted per reload | 158 | 156 |
+| rows re-inserted per reload | 158 | 149 |
 | rows the loader drops | 32, 26 distinct | 35, 29 distinct |
 | `db.py` line of the unit bug | 301 | 297 |
 | subclasses | 330 | 329 — the blank was being counted as a value |
@@ -104,13 +104,13 @@ pass's own writer, not the projection in the notebook; the reconciled figure is
 every neighbouring column has, so a blank unit is stored as `''` while
 `loader/load.py:82` builds its duplicate key with `row.get("unit") or None`. The
 key never matches what comes back from the database, so **every row without a
-unit is re-inserted on every reload** — 156 of them here: the 124 value-less rows
-plus the 32 that carry a value and no unit. After the one-word fix they store as
+unit is re-inserted on every reload** — 149 of them here: the 124 value-less rows
+plus the 31 that carry a value and no unit. After the one-word fix they store as
 NULL and a second load re-inserts nothing.
 
 (The review pass reported this at line 301 and as 158 rows, against a staging
 directory it generated itself. Re-checked against the file and against the row
-counts in the notebook: line **297**, **156** rows.)
+counts in the notebook: line **297**, **149** rows.)
 
 **`loader/load.py:60,82`** — the duplicate identity omits `assay_description`,
 `assay_type` and `cell_line`, so **35 rows are dropped of which only 6 are
@@ -216,7 +216,7 @@ because 193 dose strings hold more than one dose.
 
 `database/schema.sql`, `database/probedb/` and `loader/` are unchanged by
 decision. That means the two blockers above are live properties of loading this
-source: a reload re-inserts the 156 rows without a unit, and 35 rows are dropped
+source: a reload re-inserts the 149 rows without a unit, and 35 rows are dropped
 of which 29 are distinct measurements. Both are one-line fixes whenever they are
 wanted, and the counts here are what they cost until then.
 

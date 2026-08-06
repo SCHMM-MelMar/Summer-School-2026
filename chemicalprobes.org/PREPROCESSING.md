@@ -21,7 +21,7 @@ has been changed** — that is a decision, not an omission, see below.
 | | decision |
 | --- | -------- |
 | **schema** | `database/schema.sql` is **not changed**. D2, D3, D5 and D11 are not taken, so the 11 fields with no column, the 1265 in vivo records, and the range/error numbers do not reach the database. The summary of exactly what that omits is below |
-| **loader** | `database/` and `loader/` are **not touched**. The two defects stay documented in `REVIEW_FINDINGS.md`; the 156 rows re-inserted per reload and the 35 dropped rows are a property of loading this source as things stand |
+| **loader** | `database/` and `loader/` are **not touched**. The two defects stay documented in `REVIEW_FINDINGS.md`; the 149 rows re-inserted per reload and the 33 dropped rows are a property of loading this source as things stand |
 | **the keyless 34** | resolved externally. 10 of 34 resolved through PubChem, all 10 round-tripping through RDKit and none colliding with an existing key. Written with the lookup recorded, so a resolved structure is never mistakable for a portal one |
 | **the unsuitables** | their own entry, `unsuitable.tsv`, keyed on `inchikey` so it references `compound` the way `chembl` does. 260 rows, 14 columns |
 
@@ -251,7 +251,7 @@ real.
 | where | what | cost on this data | fix |
 | ----- | ---- | ----------------- | --- |
 | `database/probedb/db.py:297` | `unit=unit,` is missing the `or None` that every neighbouring column has, so a blank unit is stored as `''` while `loader/load.py` looks for `None` | 155 of the 3626 written rows have no unit; 149 of them survive the loader, and **all 149 are re-inserted on every reload** | `unit=unit or None` |
-| `loader/load.py:60,82` | the duplicate identity is `(inchikey, target_id, source_id, bioactivity_type, relation, value, unit)` — `assay_description`, `assay_type` and `cell_line` are not in it, so an ITC and a TR-FRET number that agree, or a Dmax in two cell lines, collapse | **35 rows dropped, only 6 of them genuine repeats** | add `assay_description` and `cell_line` to the identity |
+| `loader/load.py:60,82` | the duplicate identity is `(inchikey, target_id, source_id, bioactivity_type, relation, value, unit)` — `assay_description`, `assay_type` and `cell_line` are not in it, so an ITC and a TR-FRET number that agree, or a Dmax in two cell lines, collapse | **33 rows dropped, only 6 of them genuine repeats.** Censoring ranges with `>=` removed 2 of the original 35 by making those rows distinguishable | add `assay_description` and `cell_line` to the identity |
 
 The template has no unitless rows and no colliding assays, which is why neither
 has surfaced before.
@@ -323,8 +323,15 @@ bioactivity_source   951
 
 3591, not 3626, because the loader drops 35 rows as duplicates — see below.
 
-Of those, **35 are silently dropped by the loader as it stands**, only 6 of them
+Of those, **33 are silently dropped by the loader as it stands**, only 6 of them
 genuine repeats — D13 was declined, so that stands.
+
+## The generated files are in the branch
+
+`chemicalprobes.org/staging/` holds the pipeline's output, so the result is
+readable without running anything. Copy it to `staging/chemicalprobes.org/` (or
+re-run with `--out staging/chemicalprobes.org`) for `load_all` and
+`examples/populate_db.py` to pick it up, since `staging/` is gitignored.
 
 ## What we are omitting
 
@@ -361,7 +368,7 @@ them back through `loader.validate`:
 - a pandas `NaN` is truthy, so `value or ""` writes the literal string `'nan'`
 
 `validate` will report one line per row without an operator and one per row
-without a unit — about 3500 and 156 here. None is a hard error: the portal writes
+without a unit — about 3500 and 155 here. None is a hard error: the portal writes
 an operator on 112 of 3611 numbers, and the 124 value-less rows have no unit
 either.
 

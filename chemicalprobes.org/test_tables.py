@@ -125,7 +125,7 @@ EXPECTED_UNSUITABLE = 260
 EXPECTED_SKIPPED_COMPOUNDS = 24
 EXPECTED_PROBES = 1247
 # the loader is not touched by decision, so this drop is current behaviour
-EXPECTED_DUPLICATES_DROPPED = 35
+EXPECTED_DUPLICATES_DROPPED = 33   # 35 before ranges were censored with '>='
 EXPECTED_GENUINE_REPEATS = 6
 # 156 in PREPROCESSING.md, 149 measured: see the pinned reload test
 EXPECTED_REINSERTED_ON_RELOAD = 149
@@ -1070,14 +1070,27 @@ def test_main_writes_every_file_of_the_contract(fixture_staging):
     assert (out / "report.json").exists()
 
 
-def test_main_validate_prints_the_problems(workdir, fixture_export, capsys):
+def test_main_validate_prints_the_problems(workdir, fixture_export):
+    # the module reports through loguru, like examples/populate_db.py, and loguru
+    # writes to the stderr it was imported with, so neither capsys nor capfd sees
+    # it. a sink of our own does.
+    from loguru import logger
+
+    said = []
+    sink = logger.add(said.append, format="{message}")
     out = workdir / "validated"
     out.mkdir(exist_ok=True)
-    with pytest.MonkeyPatch.context() as patch:
-        block_network(patch)
-        preprocess.main(["--json", str(fixture_export), "--out", str(out),
-                         "--validate"])
-    assert capsys.readouterr().out.strip()
+    try:
+        with pytest.MonkeyPatch.context() as patch:
+            block_network(patch)
+            preprocess.main(["--json", str(fixture_export), "--out", str(out),
+                             "--validate"])
+    finally:
+        logger.remove(sink)
+    printed = " ".join(said)
+    assert "validate:" in printed
+    assert "hard errors" in printed
+    assert "bioactivity.tsv" in printed          # the counts block a student sees
     assert (out / "bioactivity.tsv").exists()
 
 
@@ -1360,7 +1373,7 @@ def test_integration_pinned_reload_reinserts_the_rows_without_a_unit(
 
 
 @slow
-def test_integration_pinned_duplicate_identity_drops_35_rows(portal_staging,
+def test_integration_pinned_duplicate_identity_drops_rows(portal_staging,
                                                              portal_db):
     rows = read_staged(portal_staging(), "bioactivity")
     dropped = len(rows) - len({loader_identity(r) for r in rows})

@@ -38,11 +38,15 @@ import sys
 from pathlib import Path
 
 import pandas as pd
+from loguru import logger
 
 SOURCE_DB = "Chemical Probes Portal"
 PORTAL_PREFIX = "https://www.chemicalprobes.org/"
 DOI_PREFIX = "https://doi.org/"
 PUBMED_PREFIX = "https://pubmed.ncbi.nlm.nih.gov/"
+
+# every portal target entry is one accession, so a one-member protein target
+TARGET_TYPE = "protein"
 
 STAGING_FILES = ("compound", "target", "uniprot", "bioactivity")
 # unsuitable is the one that carries a foreign key: its inchikey references
@@ -87,6 +91,21 @@ COLUMNS = {
 
 
 # ---------------------------------------------------------------- reading
+
+def check_vocabularies():
+    """The closed vocabularies live in the CHECK constraints in schema.sql and
+    nowhere else, so what this module writes has to be read back out of them."""
+    from probedb.schema import vocabulary
+
+    for name, used in (("relation", set(RELATION.values())),
+                       ("type", {TARGET_TYPE})):
+        allowed = vocabulary(name)
+        if not used <= allowed:
+            raise ValueError(
+                f"{name}: this module writes {sorted(used - allowed)}, which "
+                f"schema.sql does not allow ({sorted(allowed)})"
+            )
+
 
 def load_export(path):
     payload = json.loads(Path(path).read_text())
@@ -206,6 +225,8 @@ ENDPOINT_FIX = {
     "gi50*": "GI50", "k 0.5": "K0.5", "kd apparent": "Kd(app)", "dc50 @ 16h": "DC50",
     "inh": "% inhibition", "inhibition": "% inhibition", "% in": "% inhibition",
     "% ac": "% activation", "pkbb": "pKb", "not done": None, "delta tm": "ΔTm",
+    "activity": "activity", "residual activity": "residual activity",
+    "ratio": "ratio",
 }
 CANON_ENDPOINT = {e.lower(): e for e in
                   ["IC50", "EC50", "DC50", "GI50", "Ki", "Kd", "Dmax", "ΔTm", "pIC50",
@@ -276,7 +297,12 @@ NOT_A_VALUE = {"", "none", "na", "n/a", "nd", "not determined", "not done",
                "-", "not available"}
 P_SCALE = re.compile(r"^p[A-Z]", re.I)
 PERCENT_ENDPOINT = re.compile(r"^(?:%|dmax|emax)", re.I)
-AT_CONCENTRATION = re.compile(rf"(?:@|\bat\b)\s*(?P<value>{NUM})\s*(?P<unit>{ANY_UNIT})", re.I)
+# only a real concentration is lifted out: '88% @ 20 h' is a time window, and
+# 20 hours in bioactivity.concentration would be a lie
+CONCENTRATION_UNIT = "|".join(
+    p for p, canon in UNIT_ALT if canon in ("pM", "nM", "uM", "mM", "M", "%"))
+AT_CONCENTRATION = re.compile(
+    rf"(?:@|\bat\b)\s*(?P<value>{NUM})\s*(?P<unit>{CONCENTRATION_UNIT})", re.I)
 EXPONENT = re.compile(r"[xX×*]\s*10\s*[\^*]?\s*[-−–+]?\d+|[eE][-+]\d+")
 SLASHED_NUMBERS = re.compile(rf"(?<![A-Za-z0-9]){NUM}\s*/\s*{NUM}(?![A-Za-z0-9])")
 FRAGMENT = re.compile(
@@ -405,14 +431,30 @@ def parse_dose(raw):
     text = as_text(raw)
     if not text or text.lower() in NOT_A_VALUE or text.lower() == "unknown":
         return []
+    matches = list(DOSE.finditer(text))
     out = []
-    for match in DOSE.finditer(text):
-        # the route sits next to its dose: '1 mg/Kg IV, 5 mg/Kg PO'
-        after = text[match.end():match.end() + 12]
-        route = ROUTE.search(after) or ROUTE.search(text[max(0, match.start() - 12):match.start()])
-        out.append((float(match.group("value")), normalise_dose_unit(match.group("unit")),
-                    route.group(1).upper() if route else None))
+    for i, match in enumerate(matches):
+        # the route follows its own dose. looking backwards would pick up the
+        # route of the dose before it: '1 mg/Kg IV, 5 mg/Kg' has one route
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+        route = ROUTE.search(text[match.end():end])
+        value = float(match.group("value"))
+        # a dose range keeps its low end, the same convention bioactivity uses
+        low = re.search(rf"({NUM})\s*(?:[-–—]|\bto\b)\s*{re.escape(match.group('value'))}\b",
+                        text[:match.end()])
+        if low:
+            value = float(low.group(1))
+        out.append((value, normalise_dose_unit(match.group("unit")),
+                    normalise_route(route.group(1)) if route else None))
     return out
+
+
+ROUTE_CANON = {"oral": "PO", "gavage": "PO"}
+
+
+def normalise_route(route):
+    route = as_text(route).lower()
+    return ROUTE_CANON.get(route, route.upper())
 
 
 DOI = re.compile(r"(10\.\d{4,9}/\S+)")
@@ -471,6 +513,7 @@ def read_resolved_cache(path=RESOLVED_CACHE):
     """
     path = Path(path)
     if not path.exists():
+        logger.warning(f"no {path.name}, the probes with no InChIKey stay skipped")
         return {}
     try:
         from rdkit import Chem, RDLogger
@@ -478,7 +521,7 @@ def read_resolved_cache(path=RESOLVED_CACHE):
 
         RDLogger.DisableLog("rdApp.*")
     except ImportError:
-        print(f"rdkit not installed, ignoring {path.name}", file=sys.stderr)
+        logger.warning(f"rdkit not installed, ignoring {path.name}")
         return {}
 
     resolved = {}
@@ -489,8 +532,8 @@ def read_resolved_cache(path=RESOLVED_CACHE):
                 continue
             mol = Chem.MolFromSmiles(smiles)
             if mol is None or MolToInchiKey(mol) != key:
-                print(f"{path.name}: {name} smiles and inchikey disagree, ignored",
-                      file=sys.stderr)
+                logger.warning(
+                    f"{path.name}: {name} smiles and inchikey disagree, ignored")
                 continue
             resolved[name] = {
                 "inchikey": key.upper(),
@@ -513,18 +556,10 @@ def resolve_missing_structures(probe, cache=RESOLVED_CACHE):
     resolved = read_resolved_cache(cache)
     if not resolved:
         return []
-    rows = probe if isinstance(probe, list) else (
-        [probe] if isinstance(probe, dict) else probe.to_dict("records"))
-    out = []
-    for row in rows:
-        # a portal structure is never overwritten, only a missing one filled
-        name = as_text(row.get("name") or row.get("InChIkey") and row.get("name"))
-        if as_text(row.get("inchikey") or row.get("InChIkey")):
-            continue
-        hit = resolved.get(name)
-        if hit:
-            out.append({"name": name, **hit})
-    return out
+    # a portal structure is never overwritten, only a missing one filled in
+    return [{"name": as_text(row["name"]), **resolved[as_text(row["name"])]}
+            for row in probe.to_dict("records")
+            if not as_text(row["inchikey"]) and as_text(row["name"]) in resolved]
 
 
 def apply_resolved(probe, resolved):
@@ -593,6 +628,10 @@ def refresh_resolved_cache(probes, path=RESOLVED_CACHE):
         rows.append({"name": name, "inchikey": hit["InChIKey"], "smiles": hit["SMILES"],
                      "resolved_from": source, "lookup": lookup,
                      "resolved_title": as_text(hit.get("Title"))})
+    if not rows:
+        # the network was down, or every lookup failed. an empty cache is worse
+        # than the one already on disk, so the file is left alone
+        raise RuntimeError(f"--resolve resolved nothing, {Path(path).name} untouched")
     write_table(Path(path), rows,
                 ["name", "inchikey", "smiles", "resolved_from", "lookup", "resolved_title"])
     return rows
@@ -603,12 +642,17 @@ def refresh_resolved_cache(probes, path=RESOLVED_CACHE):
 def build_compound(probe, chembl):
     ids = (chembl.groupby("probe_ix").chembl_id
            .apply(lambda s: "|".join(dict.fromkeys(s))))   # loader splits on '|'
-    keyed = probe[probe.inchikey != ""]
-    return [{"inchikey": row.inchikey,
-             "smiles": row.smiles,
-             "chembl_id": ids.get(row.probe_ix, ""),
-             "name": row.name}
-            for row in keyed.itertuples()]
+    rows, seen = [], set()
+    for row in probe[probe.inchikey != ""].itertuples():
+        if row.inchikey in seen:
+            # two probes on one key: the loader would keep the first row's name
+            # and silently attribute the second probe's measurements to it
+            logger.warning(f"{row.name}: {row.inchikey} is already used, not written")
+            continue
+        seen.add(row.inchikey)
+        rows.append({"inchikey": row.inchikey, "smiles": row.smiles,
+                     "chembl_id": ids.get(row.probe_ix, ""), "name": row.name})
+    return rows
 
 
 def build_target(target):
@@ -620,7 +664,7 @@ def build_target(target):
     rows = {}
     for row in target.itertuples():
         rows.setdefault(row.uniprot_id,
-                        {"target_key": row.uniprot_id, "type": "protein",
+                        {"target_key": row.uniprot_id, "type": TARGET_TYPE,
                          "name": row.symbol})
     return [rows[key] for key in sorted(rows)]
 
@@ -674,15 +718,6 @@ def build_bioactivity(probe, target, validation, reference=None):
     return split_bioactivity(probe, target, validation, reference)[0]
 
 
-def build_quarantine(probe, target, validation, reference=None):
-    """The rows a number cannot be trusted for, with the reason (D15).
-
-    These never reach bioactivity.tsv; they are written to quarantine.tsv so a
-    curator can look at them.
-    """
-    return split_bioactivity(probe, target, validation, reference)[1]
-
-
 def split_bioactivity(probe, target, validation, reference=None):
     """(loadable rows, held-back rows). One row per parsed number."""
     provenance = build_provenance(probe, reference)
@@ -699,29 +734,15 @@ def split_bioactivity(probe, target, validation, reference=None):
         fragments = parse_potency_value(record.potency_value, record.potency)
         description = as_text(record.assay_desc)
         for fragment in fragments or [None]:
-            # the label that qualifies a number travels with it (D9), and it is
-            # also where a range's upper end and a standard deviation survive (D8)
-            note = description
-            if fragment and len(fragments) > 1 and fragment["fragment"] != description:
-                note = f"{description} | {fragment['fragment']}".strip(" |")
-            row = {
-                "inchikey": key_of[record.probe_ix],
-                "target_key": accession[(record.probe_ix, record.target_ix)],
-                "moa": moa[(record.probe_ix, record.target_ix)],
-                "bioactivity_type": (fragment or {}).get("bioactivity_type") or "",
-                "relation": (fragment or {}).get("relation") or "",
-                "value": "" if not fragment else as_number(fragment["value"]),
-                "unit": (fragment or {}).get("unit") or "",
-                "assay_type": assay_type_for(record.tier, description),
-                "assay_description": note,
-                "cell_line": "",                                  # D10
-                "concentration": as_number((fragment or {}).get("concentration")),
-                "concentration_unit": (fragment or {}).get("concentration_unit") or "",
-                "source_db": SOURCE_DB,
-                "source": source,
-                "source_xref": source_xref,
-                "xref_id": xref_id,
-            }
+            row = bioactivity_row_from(
+                fragment, description,
+                inchikey=key_of[record.probe_ix],
+                target_key=accession[(record.probe_ix, record.target_ix)],
+                moa=moa[(record.probe_ix, record.target_ix)],
+                assay_type=assay_type_for(record.tier, description),
+                provenance=(source, source_xref, xref_id),
+                siblings=len(fragments),
+            )
             if fragment and fragment["quarantine"]:
                 quarantined.append({
                     "inchikey": row["inchikey"], "target_key": row["target_key"],
@@ -729,11 +750,53 @@ def split_bioactivity(probe, target, validation, reference=None):
                     "fragment": fragment["fragment"], "relation": row["relation"],
                     "value": row["value"], "unit": row["unit"],
                     "bioactivity_type": row["bioactivity_type"],
-                    "assay_description": note, "source_db": SOURCE_DB,
+                    "assay_description": row["assay_description"],
+                    "source_db": SOURCE_DB,
                     "source": row["source"]})
                 continue
             rows.append(row)
     return rows, quarantined
+
+
+def bioactivity_row_from(fragment, description="", inchikey="", target_key="",
+                         moa="", assay_type="", provenance=("", "", ""),
+                         siblings=1):
+    """One parsed number -> one bioactivity row.
+
+    The schema has no column for the upper end of a range or for a standard
+    deviation, so the fragment text is appended to the description whenever it
+    carries either -- otherwise a 10-100 nM range would be written as a bare
+    10 nM and read as exact. A range is also censored with '>=', which is a true
+    statement about it, where no relation at all is not.
+    """
+    fragment = fragment or {}
+    source, source_xref, xref_id = provenance
+    spread = fragment.get("value_high") is not None or fragment.get("error") is not None
+    note = description
+    label = as_text(fragment.get("fragment"))
+    if label and label != description and (siblings > 1 or spread):
+        note = f"{description} | {label}".strip(" |")
+    relation = fragment.get("relation") or ""
+    if not relation and fragment.get("value_high") is not None:
+        relation = ">="
+    return {
+        "inchikey": inchikey,
+        "target_key": target_key,
+        "moa": moa,
+        "bioactivity_type": fragment.get("bioactivity_type") or "",
+        "relation": relation,
+        "value": as_number(fragment.get("value")),
+        "unit": fragment.get("unit") or "",
+        "assay_type": assay_type,
+        "assay_description": note,
+        "cell_line": "",                                  # D10
+        "concentration": as_number(fragment.get("concentration")),
+        "concentration_unit": fragment.get("concentration_unit") or "",
+        "source_db": SOURCE_DB,
+        "source": source,
+        "source_xref": source_xref,
+        "xref_id": xref_id,
+    }
 
 
 def build_unsuitable(probe, chembl, reference):
@@ -872,7 +935,7 @@ def cell(value):
     return as_number(value) if isinstance(value, float) else as_text(value)
 
 
-def write_staging(out, tables, leftovers=None, quarantined=None):
+def write_staging(out, tables, leftovers=None, quarantined=None, probes=None):
     out = Path(out)
     everything = dict(tables)
     everything.update(leftovers or {})
@@ -882,20 +945,19 @@ def write_staging(out, tables, leftovers=None, quarantined=None):
     for name in STAGING_FILES + EXTRA_FILES:
         written[name] = write_table(out / f"{name}.tsv", everything.get(name, []),
                                     COLUMNS[name])
-    summary = report(tables, leftovers, quarantined)
+    summary = report(tables, leftovers, quarantined, probes=probes)
     summary["written"] = written
     (out / "report.json").write_text(json.dumps(summary, indent=2))
-    return written
+    return summary
 
 
-def report(tables, leftovers=None, quarantined=None):
+def report(tables, leftovers=None, quarantined=None, probes=None):
     """Row counts per file, and the reconciliation that every input record
     reached exactly one output.
 
     Every probe is either a compound row or a skipped one. Every number found
     under a writable compound is either written to bioactivity.tsv or held back
-    in quarantine.tsv, and never both (D15). Anything that does not add up is a
-    bug here, not a property of the data.
+    in quarantine.tsv, never both (D15).
     """
     leftovers = leftovers or {}
     quarantined = [] if quarantined is None else quarantined
@@ -905,25 +967,33 @@ def report(tables, leftovers=None, quarantined=None):
     written = {name: len(counted.get(name, [])) for name in STAGING_FILES + EXTRA_FILES}
 
     compounds, skipped = written["compound"], written["skipped_compound"]
-    numbers = written["bioactivity"] + written["quarantine"]
     counts = {
-        "probes in": compounds + skipped,
+        "probes in": len(probes) if probes is not None else compounds + skipped,
         "compounds written": compounds,
         "compounds skipped": skipped,
         "targets written": written["target"],
-        "numbers found": numbers,
         "bioactivity rows written": written["bioactivity"],
         "rows held for curation": written["quarantine"],
+        "rows with no unit": sum(1 for r in tables.get("bioactivity", [])
+                                 if not r.get("unit")),
         "in vivo rows written": written["in_vivo"],
         "reference rows written": written["reference"],
         "unsuitable rows written": written["unsuitable"],
     }
     problems = []
-    held = {(row.get("inchikey"), row.get("raw"), row.get("fragment"))
-            for row in quarantined}
-    if held and any((row.get("inchikey"), row.get("raw"), row.get("fragment")) in held
-                    for row in tables.get("bioactivity", [])):
-        problems.append("a held-back row also reached bioactivity.tsv")
+    if probes is not None and compounds + skipped != len(probes):
+        problems.append(f"{len(probes)} probes in, {compounds} written and "
+                        f"{skipped} skipped")
+    # the two files share these columns and no others, so this is the only
+    # tuple that can be compared between them
+    def measurement(row):
+        return tuple(row.get(column) for column in
+                     ("inchikey", "target_key", "value", "unit", "bioactivity_type"))
+
+    held = {measurement(row) for row in quarantined}
+    for row in tables.get("bioactivity", []):
+        if measurement(row) in held:
+            problems.append(f"held back and written at once: {measurement(row)}")
     return {"counts": counts, "written": written, "problems": problems}
 
 
@@ -952,34 +1022,42 @@ def preprocess(json_path, out, resolve=False):
     }
     leftovers = build_leftovers(probe, target, frames["invivo"], frames["reference"],
                                frames["control"], frames["validation"])
-    written = write_staging(out, tables, leftovers, quarantined)
-    summary = report(tables, leftovers, quarantined)
-    summary["written"] = written
-    return summary
+    return write_staging(out, tables, leftovers, quarantined, probes=probes)
 
 
-def populate(db_path, out, strict=True, force=False):
+def refuse_existing(db_path, force):
+    """create=True needs empty tables, so an existing file has to go first."""
+    path = Path(db_path)
+    if str(path) == ":memory:" or not path.exists():
+        return
+    if not force:
+        raise FileExistsError(
+            f"{path} already exists. create=True needs empty tables, so pass "
+            f"--force to replace it or delete it yourself"
+        )
+    path.unlink()
+
+
+def populate(db_path, out, force=False):
     """Build a fresh database from the staging directory, through loader/."""
     from loader import load
     from probedb import ProbeDB
 
-    path = Path(db_path)
-    if str(path) != ":memory:" and path.exists():
-        if not force:
-            raise FileExistsError(
-                f"{path} already exists. create=True needs empty tables, so pass "
-                f"--force to replace it or delete it yourself"
-            )
-        path.unlink()
-    db = ProbeDB(str(path), create=True)
-    result = load(db, out, source=SOURCE_DB, strict=strict)
+    refuse_existing(db_path, force)
+    db = ProbeDB(str(db_path), create=True)
+    result = load(db, out, source=SOURCE_DB)
     return db, result
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--json", type=Path, required=True)
-    parser.add_argument("--out", type=Path, required=True)
+    parser = argparse.ArgumentParser(
+        description=__doc__.split("Decided:")[0].rstrip(),
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument("--json", type=Path, required=True,
+                        help="the portal export to read")
+    parser.add_argument("--out", type=Path, required=True,
+                        help="the staging directory to write, created if missing")
     parser.add_argument("--db", type=Path, help="also build a database from the result")
     parser.add_argument("--force", action="store_true",
                         help="replace the database file if it already exists")
@@ -991,29 +1069,32 @@ def main(argv=None):
                              "Expect one 'no relation, kept anyway' per row without an "
                              "operator, about 3500, and none of them is a hard error")
     args = parser.parse_args(argv)
+    if args.db:
+        refuse_existing(args.db, args.force)      # before doing all the work
+    check_vocabularies()
 
     summary = preprocess(args.json, args.out, resolve=args.resolve)
-    for key, value in summary["counts"].items():
-        print(f"{value:>7}  {key}")
-    print()
-    for name, rows in summary["written"].items():
-        print(f"{rows:>7}  {name}.tsv")
+    logger.info("\n" + "\n".join(f"{v:>7}  {k}" for k, v in summary["counts"].items()))
+    logger.info("\n" + "\n".join(f"{n:>7}  {name}.tsv"
+                                 for name, n in summary["written"].items()))
     for problem in summary["problems"]:
-        print(f"PROBLEM: {problem}", file=sys.stderr)
+        logger.error(problem)
 
     if args.validate:
         from loader import validate
         problems = validate(args.out)
         hard = [p for p in problems if not p.endswith(("ignored", "kept anyway"))]
-        print(f"\nvalidate: {len(problems)} problems, {len(hard)} of them hard errors")
+        logger.info(f"validate: {len(problems)} problems, "
+                    f"{len(hard)} of them hard errors")
         for problem in hard[:20]:
-            print("   ", problem)
+            logger.error(problem)
 
     if args.db:
         db, result = populate(args.db, args.out, force=args.force)
-        print(f"\nloaded into {args.db}")
-        print(db.counts().to_string(index=False))
-        print(f"duplicates skipped by the loader: {result['duplicates_skipped']}")
+        logger.info(f"loaded into {args.db}\n"
+                    + db.counts().to_string(index=False)
+                    + f"\nduplicates skipped by the loader: "
+                      f"{result['duplicates_skipped']}")
         db.close()
     return 0 if not summary["problems"] else 1
 
