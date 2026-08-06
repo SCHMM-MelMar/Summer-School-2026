@@ -195,7 +195,7 @@ def test_two_probes_that_resolve_to_one_key_are_not_merged_silently():
 # ----------------------------------------------------------------- helpers
 
 def read(directory, name):
-    with open(pathlib.Path(directory) / f"{name}.tsv", newline="") as handle:
+    with open(pathlib.Path(directory) / f"{preprocess.PREFIX}{name}.tsv", newline="") as handle:
         return list(csv.DictReader(handle, delimiter="\t"))
 
 
@@ -204,3 +204,216 @@ def pd_frame(rows, columns=None):
 
     return pd.DataFrame(rows, columns=columns) if columns is not None \
         else pd.DataFrame(rows)
+
+
+# ------------------------------------------- the files have to match the tables
+
+CONTRACT = {"compound": "compound", "target": "target", "uniprot": "uniprot",
+            "bioactivity": "bioactivity"}
+# a column that is not a column of its own table goes somewhere the loader puts it
+ELSEWHERE = {"target_key": "the join key inside the directory, never in the db",
+             "chembl_id": "chembl", "source_db": "bioactivity_source",
+             "source": "bioactivity_source", "xref_id": "bioactivity_source"}
+
+
+@slow
+@pytest.mark.parametrize("name,table", sorted(CONTRACT.items()))
+def test_every_written_column_is_a_column_of_its_table(name, table, staged):
+    from probedb import ProbeDB
+
+    db = ProbeDB(":memory:", create=True)
+    columns = {r[1] for r in db.conn.execute(f"PRAGMA table_info({table})")}
+    db.close()
+    for column in read(staged, name)[0]:
+        assert column in columns or column in ELSEWHERE, (
+            f"{name}.tsv writes {column!r}, which is not a column of {table} "
+            f"and has nowhere else to go"
+        )
+
+
+@slow
+def test_what_is_in_the_tables_is_what_is_in_the_files(staged):
+    """Nothing invented, nothing mangled: every row in a table came from a file
+    row, and every column value survives the trip."""
+    db = load_staged(staged)
+    blank = lambda v: "" if v is None else str(v)
+
+    for name, sql, keys in [
+        ("compound", "SELECT inchikey, smiles, name FROM compound",
+         ("inchikey", "smiles", "name")),
+        ("uniprot", "SELECT uniprot_id, hgnc, species FROM uniprot",
+         ("uniprot_id", "hgnc", "species")),
+        ("target", "SELECT type, name FROM target", ("type", "name")),
+    ]:
+        in_file = {tuple(r[k] for k in keys) for r in read(staged, name)}
+        in_table = {tuple(blank(v) for v in row) for row in db.conn.execute(sql)}
+        assert in_file == in_table, f"{name}.tsv and the table disagree"
+
+    # chembl is unpacked from compound.tsv's '|'-joined cell
+    in_file = {(c.strip().upper(), r["inchikey"]) for r in read(staged, "compound")
+               for c in r["chembl_id"].split("|") if c.strip()}
+    assert in_file == set(db.conn.execute("SELECT chembl_id, inchikey FROM chembl"))
+
+    in_file = {(r["source_db"], r["source"], r["xref_id"])
+               for r in read(staged, "bioactivity")}
+    in_table = {tuple(blank(v) for v in row) for row in
+                db.conn.execute("SELECT source_db, source, xref_id FROM bioactivity_source")}
+    assert in_file == in_table, "bioactivity.tsv and bioactivity_source disagree"
+    db.close()
+
+
+@slow
+def test_the_only_rows_missing_from_bioactivity_are_the_ones_the_loader_drops(staged):
+    from collections import Counter
+
+    db = load_staged(staged)
+    blank = lambda v: "" if v is None else str(v)
+    number = lambda v: float(v) if v not in (None, "") else None
+    columns = ("moa", "bioactivity_type", "relation", "unit", "assay_type",
+               "assay_description", "cell_line", "concentration_unit", "source_xref")
+    accession = dict(db.conn.execute(
+        "SELECT t.name, tu.uniprot_id FROM target_uniprot tu "
+        " JOIN target t ON t.target_id = tu.target_id"))
+    in_file = Counter(
+        (r["inchikey"], r["target_key"], *(r[c] for c in columns),
+         number(r["value"]), number(r["concentration"]))
+        for r in read(staged, "bioactivity"))
+    in_table = Counter(
+        (row[0], accession.get(row[1], row[1]), *(blank(v) for v in row[2:11]),
+         row[11], row[12])
+        for row in db.conn.execute("""
+            SELECT b.inchikey, t.name, b.moa, b.bioactivity_type, b.relation, b.unit,
+                   b.assay_type, b.assay_description, b.cell_line,
+                   b.concentration_unit, b.source_xref, b.value, b.concentration
+              FROM bioactivity b JOIN target t ON t.target_id = b.target_id"""))
+    assert sum((in_table - in_file).values()) == 0, (
+        "the table holds rows that are in no file"
+    )
+    dropped = sum((in_file - in_table).values())
+    assert dropped == 33, (
+        f"{dropped} file rows are missing from the table, expected the 33 the "
+        f"loader collapses on its 7-column identity"
+    )
+    db.close()
+
+
+@pytest.fixture(scope="module")
+def staged(tmp_path_factory):
+    out = tmp_path_factory.mktemp("staged")
+    preprocess.preprocess(EXPORT_JSON, out)
+    return out
+
+
+def load_staged(directory):
+    import tempfile
+
+    from loader import load
+    from probedb import ProbeDB
+
+    db = ProbeDB(":memory:", create=True)
+    with tempfile.TemporaryDirectory() as tmp:
+        load(db, preprocess.contract_directory(directory, tmp),
+             source=preprocess.SOURCE_DB, strict=True)
+    return db
+
+
+# ------------------------------------------------------- the unsuitable table
+
+def test_the_schema_has_an_unsuitable_table():
+    from probedb import ProbeDB, schema
+
+    assert "unsuitable" in schema.TABLES, (
+        "a table db.counts() cannot see is a table nobody knows loaded"
+    )
+    db = ProbeDB(":memory:", create=True)
+    columns = [r[1] for r in db.conn.execute("PRAGMA table_info(unsuitable)")]
+    assert columns == ["inchikey", "portal_path", "published_date", "pains",
+                       "toxicophore", "cansar_id", "rating_in_cell",
+                       "rating_in_organism", "rating_count", "reference",
+                       "source_id"]
+    # name, smiles and the ChEMBL ids are not repeated here: the inchikey is a
+    # foreign key onto compound, which already holds them
+    assert "name" not in columns and "smiles" not in columns
+    db.close()
+
+
+def test_the_unsuitable_foreign_keys_are_enforced():
+    from probedb import ProbeDB
+
+    db = ProbeDB(":memory:", create=True)
+    with pytest.raises(Exception) as bad:
+        db.insert("unsuitable", inchikey="AAAAAAAAAAAAAA-BBBBBBBBBB-N",
+                  portal_path="unsuitables/x")
+    assert "FOREIGN KEY" in str(bad.value), (
+        "a verdict about a compound that is not in the database is not a verdict"
+    )
+    db.add_compound("AAAAAAAAAAAAAA-BBBBBBBBBB-N", "CC", "x")
+    db.insert("unsuitable", inchikey="AAAAAAAAAAAAAA-BBBBBBBBBB-N",
+              portal_path="unsuitables/x")
+    with pytest.raises(Exception) as twice:
+        db.insert("unsuitable", inchikey="AAAAAAAAAAAAAA-BBBBBBBBBB-N",
+                  portal_path="unsuitables/x")
+    assert "UNIQUE" in str(twice.value), "one verdict per compound"
+    with pytest.raises(Exception) as source:
+        db.add_compound("CCCCCCCCCCCCCC-DDDDDDDDDD-N", "CCC", "y")
+        db.insert("unsuitable", inchikey="CCCCCCCCCCCCCC-DDDDDDDDDD-N", source_id=999)
+    assert "FOREIGN KEY" in str(source.value), "the source has to exist"
+    db.close()
+
+
+@pytest.mark.parametrize("column", ["pains", "toxicophore"])
+def test_the_alerts_are_a_closed_vocabulary(column):
+    from probedb import ProbeDB
+    from probedb.schema import vocabulary
+
+    assert vocabulary(column) == {"Yes", "No"}
+    db = ProbeDB(":memory:", create=True)
+    db.add_compound("EEEEEEEEEEEEEE-FFFFFFFFFF-N", "C", "z")
+    with pytest.raises(Exception) as bad:
+        db.insert("unsuitable", inchikey="EEEEEEEEEEEEEE-FFFFFFFFFF-N",
+                  **{column: "Unknown"})
+    assert "CHECK" in str(bad.value)
+    db.close()
+
+
+@slow
+def test_the_unsuitable_file_matches_the_unsuitable_table(staged):
+    db = load_staged(staged)
+    from probedb import schema
+
+    load_unsuitable = preprocess.load_unsuitable
+    load_unsuitable(db, staged)
+    columns = [r[1] for r in db.conn.execute("PRAGMA table_info(unsuitable)")]
+    written = read(staged, "unsuitable")
+    # the file carries source_db/source/xref_id where the table carries source_id,
+    # the same way bioactivity.tsv does
+    assert set(written[0]) - {"source_db", "source", "xref_id"} == set(columns) - {"source_id"}
+    assert db.one("SELECT COUNT(*) FROM unsuitable") == len(written) == 260
+    blank = lambda v: "" if v is None else str(v)
+    keys = [c for c in columns if c != "source_id"]
+    in_file = {tuple(r[c] for c in keys) for r in written}
+    in_table = {tuple(blank(v) for v in row) for row in
+                db.conn.execute(f"SELECT {', '.join(keys)} FROM unsuitable")}
+    assert in_file == in_table
+    # every verdict points at a compound that is in the database, and at a source
+    assert db.one("SELECT COUNT(*) FROM unsuitable u "
+                  " LEFT JOIN compound c ON c.inchikey = u.inchikey "
+                  "WHERE c.inchikey IS NULL") == 0
+    assert db.one("SELECT COUNT(*) FROM unsuitable WHERE source_id IS NULL") == 0
+    assert db.conn.execute("PRAGMA foreign_key_check").fetchall() == []
+    db.close()
+
+
+@slow
+def test_the_unsuitable_table_explains_the_compounds_with_no_measurement(staged):
+    """The whole point: 260 of the 261 compounds with no data are rejects, and
+    now the database says so."""
+    db = load_staged(staged)
+    preprocess.load_unsuitable(db, staged)
+    quiet = db.read("""SELECT c.inchikey FROM compound c
+                        LEFT JOIN bioactivity b ON b.inchikey = c.inchikey
+                       WHERE b.id IS NULL""")
+    explained = db.read("SELECT inchikey FROM unsuitable")
+    assert len(quiet) == 261
+    assert len(set(quiet.inchikey) & set(explained.inchikey)) == 260
+    db.close()

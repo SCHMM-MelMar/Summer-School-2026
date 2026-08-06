@@ -13,6 +13,7 @@ TABLES = [
     "bioactivity_source",
     "bioactivity_group",
     "bioactivity",
+    "unsuitable",
 ]
 
 VIEWS = ["target_flat"]

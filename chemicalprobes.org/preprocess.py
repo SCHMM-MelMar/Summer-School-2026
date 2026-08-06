@@ -56,6 +56,10 @@ EXTRA_FILES = ("unsuitable", "quarantine", "compound_annotation",
 
 RESOLVED_CACHE = Path(__file__).resolve().parent / "resolved_structures.tsv"
 
+# every generated file says which source it came from. loader/ wants the four
+# contract files under their bare names, so populate() hands it those.
+PREFIX = "chemicalprobes_"
+
 # the 18 probe keys the mapping in preprocess.ipynb covers. a new one has to
 # stop the run, not be ignored
 PROBE_KEYS = (
@@ -74,10 +78,13 @@ COLUMNS = {
                     "value", "unit", "assay_type", "assay_description", "cell_line",
                     "concentration", "concentration_unit", "source_db", "source",
                     "source_xref", "xref_id"],
-    "unsuitable": ["inchikey", "name", "smiles", "chembl_id", "cansar_id",
-                   "portal_path", "published_date", "pains", "toxicophore",
-                   "rating_in_cell", "rating_in_organism", "rating_count",
-                   "reference", "source_db"],
+    # matches the unsuitable table, except that a staging file carries
+    # source_db/source/xref_id where the table carries source_id, the same way
+    # bioactivity.tsv does
+    "unsuitable": ["inchikey", "portal_path", "published_date", "pains",
+                   "toxicophore", "cansar_id", "rating_in_cell",
+                   "rating_in_organism", "rating_count", "reference",
+                   "source_db", "source", "xref_id"],
     "quarantine": ["inchikey", "target_key", "reason", "raw", "fragment", "relation",
                    "value", "unit", "bioactivity_type", "assay_description",
                    "source_db", "source"],
@@ -799,27 +806,31 @@ def bioactivity_row_from(fragment, description="", inchikey="", target_key="",
     }
 
 
-def build_unsuitable(probe, chembl, reference):
-    """The whole portal record for the compounds it has ruled out.
+def build_unsuitable(probe, chembl, reference, provenance=None):
+    """The portal's verdict on the compounds it has ruled out.
 
-    260 rows keyed on inchikey, which references compound. They carry no target,
-    no validation and no in vivo record, so a flat entry loses nothing.
+    260 rows keyed on inchikey, which is a foreign key onto compound, so the
+    name, the SMILES and the ChEMBL ids are not repeated here. They carry no
+    target, no validation and no in vivo record, so nothing else is lost.
     """
-    ids = chembl.groupby("probe_ix").chembl_id.apply(lambda s: "|".join(dict.fromkeys(s)))
-    refs = reference.groupby("probe_ix").ref.apply(
-        lambda s: "|".join(reference_url(v) for v in s))
+    refs = ({} if reference is None or len(reference) == 0
+            else reference.groupby("probe_ix").ref.apply(
+                lambda s: "|".join(reference_url(v) for v in s)))
+    provenance = provenance or build_provenance(probe, reference)
     rows = []
     for row in probe[(probe.unsuitable == "Yes") & (probe.inchikey != "")].itertuples():
-        prefix, path = portal_source(row.url)
-        rows.append({"inchikey": row.inchikey, "name": row.name, "smiles": row.smiles,
-                     "chembl_id": ids.get(row.probe_ix, ""),
-                     "cansar_id": row.cansar_id, "portal_path": path,
-                     "published_date": row.published_date, "pains": row.pains,
-                     "toxicophore": row.toxicophore,
+        source, _, xref_id = provenance[row.probe_ix]
+        rows.append({"inchikey": row.inchikey,
+                     "portal_path": portal_source(row.url)[1],
+                     "published_date": row.published_date,
+                     "pains": row.pains, "toxicophore": row.toxicophore,
+                     "cansar_id": row.cansar_id,
                      "rating_in_cell": row.rating_in_cell,
                      "rating_in_organism": row.rating_in_organism,
                      "rating_count": row.rating_count,
-                     "reference": refs.get(row.probe_ix, ""), "source_db": SOURCE_DB})
+                     "reference": refs.get(row.probe_ix, ""),
+                     "source_db": SOURCE_DB, "source": source,
+                     "xref_id": xref_id})
     return rows
 
 
@@ -943,7 +954,7 @@ def write_staging(out, tables, leftovers=None, quarantined=None, probes=None):
         everything["quarantine"] = quarantined
     written = {}
     for name in STAGING_FILES + EXTRA_FILES:
-        written[name] = write_table(out / f"{name}.tsv", everything.get(name, []),
+        written[name] = write_table(out / f"{PREFIX}{name}.tsv", everything.get(name, []),
                                     COLUMNS[name])
     summary = report(tables, leftovers, quarantined, probes=probes)
     summary["written"] = written
@@ -1010,6 +1021,7 @@ def preprocess(json_path, out, resolve=False):
     probe, target = frames["probe"], frames["target"]
     keyed = set(probe.loc[probe.inchikey != "", "probe_ix"])
     mine = target[target.probe_ix.isin(keyed)]
+    provenance = build_provenance(probe, frames["reference"])
 
     rows, quarantined = split_bioactivity(probe, target, frames["validation"],
                                           frames["reference"])
@@ -1018,7 +1030,8 @@ def preprocess(json_path, out, resolve=False):
         "target": build_target(mine),
         "uniprot": build_uniprot(mine),
         "bioactivity": rows,
-        "unsuitable": build_unsuitable(probe, frames["chembl"], frames["reference"]),
+        "unsuitable": build_unsuitable(probe, frames["chembl"], frames["reference"],
+                                       provenance),
     }
     leftovers = build_leftovers(probe, target, frames["invivo"], frames["reference"],
                                frames["control"], frames["validation"])
@@ -1038,14 +1051,107 @@ def refuse_existing(db_path, force):
     path.unlink()
 
 
+def read_written(out, name):
+    with open(Path(out) / f"{PREFIX}{name}.tsv", newline="") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def contract_directory(out, into):
+    """loader/ reads compound.tsv, not chemicalprobes_compound.tsv."""
+    into = Path(into)
+    into.mkdir(parents=True, exist_ok=True)
+    for name in STAGING_FILES:
+        (into / f"{name}.tsv").write_bytes(
+            (Path(out) / f"{PREFIX}{name}.tsv").read_bytes())
+    return into
+
+
+def source_ids(db):
+    return {(a, b): i for i, a, b in
+            db.conn.execute("SELECT source_id, source_db, source FROM bioactivity_source")}
+
+
+def load_unsuitable(db, out):
+    """The verdicts, into the unsuitable table.
+
+    Not loader/'s job: `unsuitable` is a portal concept and the loader reads the
+    four files of the contract and nothing else. The file carries source_db and
+    source where the table carries source_id, so the source is resolved here the
+    way the loader resolves it for a measurement.
+    """
+    known = source_ids(db)
+    loaded = 0
+    for row in read_written(out, "unsuitable"):
+        key = (row["source_db"], row["source"])
+        if key not in known:
+            known[key] = db.add_source(row["source_db"], row["source"],
+                                       row.get("xref_id"))
+        db.insert("unsuitable", source_id=known[key],
+                  **{column: row[column] or None for column in
+                     ("inchikey", "portal_path", "published_date", "pains",
+                      "toxicophore", "cansar_id", "rating_in_cell",
+                      "rating_in_organism", "rating_count", "reference")})
+        loaded += 1
+    db.commit()
+    return loaded
+
+
+def load_collapsed(db, out):
+    """The rows loader/ drops on its seven-column identity, inserted anyway.
+
+    Two assays that agree on the number are two assays, and the identity in
+    loader/load.py has no assay_description, assay_type or cell_line in it, so it
+    collapses them. Rather than change the loader for every source, the rows it
+    left behind go in here, which is where this source's own judgement belongs.
+    """
+    target_id = {u: t for t, u in
+                 db.conn.execute("SELECT target_id, uniprot_id FROM target_uniprot")}
+    known = source_ids(db)
+    from collections import Counter
+
+    identity = lambda *values: tuple(values)
+    present = Counter(identity(*row) for row in db.conn.execute(
+        "SELECT inchikey, target_id, IFNULL(assay_description, ''), "
+        "       IFNULL(value, -1), IFNULL(unit, ''), IFNULL(bioactivity_type, '') "
+        "  FROM bioactivity"))
+    loaded = 0
+    for row in read_written(out, "bioactivity"):
+        key = identity(row["inchikey"], target_id[row["target_key"]],
+                       row["assay_description"],
+                       float(row["value"]) if row["value"] else -1,
+                       row["unit"], row["bioactivity_type"])
+        if present[key]:
+            present[key] -= 1        # this one is already in, the next is not
+            continue
+        db.add_bioactivity(
+            row["inchikey"], target_id[row["target_key"]], moa=row["moa"],
+            bioactivity_type=row["bioactivity_type"] or None,
+            relation=row["relation"] or None, value=row["value"] or None,
+            unit=row["unit"] or None, assay_type=row["assay_type"] or None,
+            assay_description=row["assay_description"] or None,
+            cell_line=row["cell_line"] or None,
+            concentration=row["concentration"] or None,
+            concentration_unit=row["concentration_unit"] or None,
+            source_id=known[(row["source_db"], row["source"])],
+            source_xref=row["source_xref"] or None)
+        loaded += 1
+    db.commit()
+    return loaded
+
+
 def populate(db_path, out, force=False):
     """Build a fresh database from the staging directory, through loader/."""
+    import tempfile
+
     from loader import load
     from probedb import ProbeDB
 
     refuse_existing(db_path, force)
     db = ProbeDB(str(db_path), create=True)
-    result = load(db, out, source=SOURCE_DB)
+    with tempfile.TemporaryDirectory() as tmp:
+        result = load(db, contract_directory(out, tmp), source=SOURCE_DB)
+    result["recovered_from_the_dedup"] = load_collapsed(db, out)
+    result["unsuitable"] = load_unsuitable(db, out)
     return db, result
 
 

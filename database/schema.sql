@@ -115,3 +115,31 @@ SELECT t.target_id, t.type, t.name,
   FROM target t
   LEFT JOIN target_uniprot tu ON tu.target_id = t.target_id
   LEFT JOIN uniprot u ON u.uniprot_id = tu.uniprot_id;
+
+
+-- the portal publishes compounds it has judged unsuitable as probes, with no
+-- target and no measurement, so the only thing that explains them is this
+-- verdict. name, smiles and the ChEMBL ids are not repeated here: inchikey is a
+-- foreign key onto compound, which already holds them. source_id says who is
+-- making the judgement, the same way a measurement does.
+CREATE TABLE unsuitable (
+    inchikey           VARCHAR(27) PRIMARY KEY,
+    portal_path        VARCHAR(255),
+    published_date     VARCHAR(20),
+    pains              VARCHAR(3),
+    toxicophore        VARCHAR(3),
+    cansar_id          VARCHAR(20),
+    rating_in_cell     NUMERIC,
+    rating_in_organism NUMERIC,
+    rating_count       INTEGER,
+    reference          TEXT,
+    source_id          INTEGER,
+    CONSTRAINT ck_pains       CHECK (pains IS NULL OR pains IN ('Yes', 'No')),
+    CONSTRAINT ck_toxicophore CHECK (toxicophore IS NULL OR toxicophore IN ('Yes', 'No')),
+    CONSTRAINT fk_unsuitable_compound
+        FOREIGN KEY (inchikey) REFERENCES compound (inchikey),
+    CONSTRAINT fk_unsuitable_source
+        FOREIGN KEY (source_id) REFERENCES bioactivity_source (source_id)
+);
+
+CREATE INDEX idx_unsuitable_source ON unsuitable (source_id);

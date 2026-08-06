@@ -1,0 +1,261 @@
+inchikey	portal_path	published_date	pains	toxicophore	cansar_id	rating_in_cell	rating_in_organism	rating_count	reference	source_db	source	xref_id
+YHHFKWKMXWRVTJ-OQKWZONESA-N	unsuitables/jib-04	2016-12-15	No	Yes	1354531	0	0	0		Chemical Probes Portal	JIB-04	https://www.chemicalprobes.org/
+MOUNHKKCIGVIDI-UHFFFAOYSA-L	unsuitables/ami-1	2017-03-07	No	No	723373	0	0	0		Chemical Probes Portal	AMI-1	https://www.chemicalprobes.org/
+XVBGRTMNFNMINE-UHFFFAOYSA-N	unsuitables/xmd17-109	2016-12-15	No	No	927800	0	0	0		Chemical Probes Portal	XMD17-109	https://www.chemicalprobes.org/
+OMKHWTRUYNAGFG-IEBDPFPHSA-N	unsuitables/dznep	2017-02-03	No	No	1117457	0	0	0		Chemical Probes Portal	DZNep	https://www.chemicalprobes.org/
+PZPPOCZWRGNKIR-PNVYSBBASA-N	unsuitables/chaetocin	2017-02-03	No	Yes	915616	0	0	0		Chemical Probes Portal	Chaetocin	https://www.chemicalprobes.org/
+ZWNKKZSRANLVEW-UHFFFAOYSA-N	unsuitables/epiblastin	2020-12-05	No	No	2922952	0	0	0	http://www.cell.com/cell-chemical-biology/abstract/S2451-9456(16)30085-X|http://www.cell.com/cell-reports/abstract/S2211-1247(16)30362-X?_returnURL=http%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS221112471630362X%3Fshowall%3Dtruehttp://www.cell.com/cell-reports/abstract/S2211-1247(16)30362-X?_returnURL=http%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS221112471630362X%3F|https://pubmed.ncbi.nlm.nih.gov/27049670|https://pubmed.ncbi.nlm.nih.gov/27149845	Chemical Probes Portal	Epiblastin A	https://www.chemicalprobes.org/
+UXXQOJXBIDBUAC-UHFFFAOYSA-N	unsuitables/tandutinib	2016-12-09	No	No	848749	0	0	0		Chemical Probes Portal	Tandutinib	https://www.chemicalprobes.org/
+REFJWTPEDVJJIY-UHFFFAOYSA-N	unsuitables/quercetin	2016-12-09	Yes	Yes	1305802	0	0	0		Chemical Probes Portal	Quercetin	https://www.chemicalprobes.org/
+PIMQWRZWLQKKBJ-SFHVURJKSA-N	unsuitables/dinaciclib	2016-12-09	No	No	256723	0	0	0		Chemical Probes Portal	Dinaciclib	https://www.chemicalprobes.org/
+WMBWREPUVVBILR-WIYYLYMNSA-N	unsuitables/epigallocatechin-3-gallate-ecgc	2016-12-09	Yes	Yes	498738	0	0	0		Chemical Probes Portal	Epigallocatechin-3-gallate (ECGC)	https://www.chemicalprobes.org/
+LUKBXSAWLPMMSZ-OWOJBTEDSA-N	unsuitables/resveratrol	2016-12-09	No	No	96102	0	0	0		Chemical Probes Portal	Resveratrol	https://www.chemicalprobes.org/
+FIAFUQMPZJWCLV-UHFFFAOYSA-N	unsuitables/suramin	2016-12-09	No	No	1009853	0	0	0		Chemical Probes Portal	Suramin	https://www.chemicalprobes.org/
+ZEWQUBUPAILYHI-UHFFFAOYSA-N	unsuitables/trifluoperazine	2016-12-09	No	No	1899498	0	0	0		Chemical Probes Portal	Trifluoperazine	https://www.chemicalprobes.org/
+RRKRXIFOHFBLHY-YEZSYGFXSA-M	unsuitables/fluoxetine-glucuronide	2016-12-09	No	No	3312909	0	0	0		Chemical Probes Portal	Fluoxetine glucuronide	https://www.chemicalprobes.org/
+AOJJSUZBOXZQNB-TZSSRYMLSA-N	unsuitables/doxorubicin	2016-12-09	Yes	Yes	791569	0	0	0		Chemical Probes Portal	Doxorubicin	https://www.chemicalprobes.org/
+UHTHHESEBZOYNR-UHFFFAOYSA-N	unsuitables/vandetanib	2016-12-09	No	No	233726	0	0	0		Chemical Probes Portal	Vandetanib	https://www.chemicalprobes.org/
+RITAVMQDGBJQJZ-FMIVXFBMSA-N	unsuitables/axitinib	2016-12-09	No	No	1927385	0	0	0		Chemical Probes Portal	Axitinib	https://www.chemicalprobes.org/
+UYJNQQDJUOUFQJ-UHFFFAOYSA-N	unsuitables/nvp-tae-226	2016-12-09	No	No	512994	0	0	0		Chemical Probes Portal	NVP-TAE 226	https://www.chemicalprobes.org/
+VAARYSWULJUGST-UHFFFAOYSA-N	unsuitables/pd173955	2016-12-09	No	No	158055	0	0	0		Chemical Probes Portal	PD173955	https://www.chemicalprobes.org/
+ODPGGGTTYSGTGO-UHFFFAOYSA-N	unsuitables/ast-487	2016-12-09	No	No	764849	0	0	0		Chemical Probes Portal	AST 487	https://www.chemicalprobes.org/
+WAEXFXRVDQXREF-UHFFFAOYSA-N	unsuitables/vorinostat	2017-04-10	No	Yes	1113023	0	0	0		Chemical Probes Portal	Vorinostat	https://www.chemicalprobes.org/
+WINHZLLDWRZWRT-ATVHPVEESA-N	unsuitables/sunitinib	2016-12-09	No	No	154683	0	0	0		Chemical Probes Portal	Sunitinib	https://www.chemicalprobes.org/
+HVXKQKFEHMGHSL-QKDCVEJESA-N	unsuitables/xl-647	2016-12-09	No	No	535317	0	0	0		Chemical Probes Portal	XL-647	https://www.chemicalprobes.org/
+VMWNQDUVQKEIOC-CYBMUJFWSA-N	unsuitables/apomorphine	2016-12-09	Yes	Yes	1185273	0	0	0		Chemical Probes Portal	Apomorphine	https://www.chemicalprobes.org/
+DYEFUKCXAQOFHX-UHFFFAOYSA-N	unsuitables/ebselen	2016-12-09	No	Yes	65636	0	0	0		Chemical Probes Portal	Ebselen	https://www.chemicalprobes.org/
+IQPNAANSBPBGFQ-UHFFFAOYSA-N	unsuitables/digitoflavone	2016-12-09	Yes	Yes	1241698	0	0	0		Chemical Probes Portal	Digitoflavone	https://www.chemicalprobes.org/
+KZNIFHPLKGYRTM-UHFFFAOYSA-N	unsuitables/apigenin	2016-12-09	No	No	1161291	0	0	0		Chemical Probes Portal	Apigenin	https://www.chemicalprobes.org/
+ZIUSSTSXXLLKKK-KOBPDPAPSA-N	unsuitables/curcumin	2016-12-09	No	Yes	1795385	0	0	0		Chemical Probes Portal	Curcumin	https://www.chemicalprobes.org/
+IZEKFCXSFNUWAM-UHFFFAOYSA-N	unsuitables/dipyridamole	2016-12-09	No	No	681918	0	0	0		Chemical Probes Portal	Dipyridamole	https://www.chemicalprobes.org/
+KTEIFNKAUNYNJU-GFCCVEGCSA-N	unsuitables/crizotinib	2016-12-09	No	No	259783	0	0	0		Chemical Probes Portal	Crizotinib	https://www.chemicalprobes.org/
+IYIKLHRQXLHMJQ-UHFFFAOYSA-N	unsuitables/amiodarone	2016-12-09	No	No	322374	0	0	0		Chemical Probes Portal	Amiodarone	https://www.chemicalprobes.org/
+MPVGZUGXCQEXTM-UHFFFAOYSA-N	unsuitables/linifanib	2016-12-09	No	No	1920436	0	0	0		Chemical Probes Portal	Linifanib	https://www.chemicalprobes.org/
+QDPVYZNVVQQULH-UHFFFAOYSA-N	unsuitables/dovitinib-lactate	2016-12-09	No	No	711445	0	0	0		Chemical Probes Portal	Dovitinib lactate	https://www.chemicalprobes.org/
+RTIXKCRFFJGDFG-UHFFFAOYSA-N	unsuitables/57-dihydroxyflavone	2016-12-09	No	No	1115786	0	0	0		Chemical Probes Portal	5,7-Dihydroxyflavone	https://www.chemicalprobes.org/
+QQWUGDVOUVUTOY-UHFFFAOYSA-N	unsuitables/nvp-tae684	2016-12-09	No	No	868137	0	0	0		Chemical Probes Portal	NVP-TAE684	https://www.chemicalprobes.org/
+GUBJNPWVIUFSTR-UHFFFAOYSA-N	unsuitables/jnj-28312141	2016-12-09	No	No	591760	0	0	0		Chemical Probes Portal	JNJ-28312141	https://www.chemicalprobes.org/
+WPHKIQPVPYJNAX-UHFFFAOYSA-N	unsuitables/ilorasertib	2016-12-09	No	No	644156	0	0	0		Chemical Probes Portal	Ilorasertib	https://www.chemicalprobes.org/
+XZXHXSATPCNXJR-ZIADKAODSA-N	unsuitables/intedanib	2016-12-09	No	Yes	817948	0	0	0		Chemical Probes Portal	Intedanib	https://www.chemicalprobes.org/
+MZDKLVOWGIOKTN-UHFFFAOYSA-N	unsuitables/pf-562271	2016-12-09	No	No	631801	0	0	0		Chemical Probes Portal	PF-562271	https://www.chemicalprobes.org/
+QQUXFYAWXPMDOE-UHFFFAOYSA-N	unsuitables/kenpaullone	2016-12-09	No	No	1185198	0	0	0		Chemical Probes Portal	Kenpaullone	https://www.chemicalprobes.org/
+SEJGTFPOEJWEGG-UHFFFAOYSA-N	unsuitables/chembl1908393	2016-12-09	No	No	3100290	0	0	0		Chemical Probes Portal	CHEMBL1908393	https://www.chemicalprobes.org/
+JOOXLOJCABQBSG-UHFFFAOYSA-N	unsuitables/fedratinib	2016-12-09	No	No	729057	0	0	0		Chemical Probes Portal	Fedratinib	https://www.chemicalprobes.org/
+MVJMMLFMPWITEJ-UHFFFAOYSA-N	unsuitables/kinome1198	2016-12-09	No	Yes	212832	0	0	0		Chemical Probes Portal	Kinome_1198	https://www.chemicalprobes.org/
+CTNPALGJUAXMMC-PMFHANACSA-N	unsuitables/su14813	2016-12-09	Yes	No	449255	0	0	0		Chemical Probes Portal	SU14813	https://www.chemicalprobes.org/
+KDKUVYLMPJIGKA-UHFFFAOYSA-N	unsuitables/jnj-7706621	2016-12-09	No	No	1799601	0	0	0		Chemical Probes Portal	JNJ-7706621	https://www.chemicalprobes.org/
+YYLKKYCXAOBSRM-JXMROGBWSA-N	unsuitables/kw-2449	2016-12-09	No	No	1708627	0	0	0		Chemical Probes Portal	KW-2449	https://www.chemicalprobes.org/
+OWRXHGAFWZFFCW-UHFFFAOYSA-N	unsuitables/kinome1194	2016-12-09	No	No	455055	0	0	0		Chemical Probes Portal	Kinome_1194	https://www.chemicalprobes.org/
+JZTOUVBEZONDKA-UHFFFAOYSA-N	unsuitables/kinome2079	2016-12-09	No	No	1720177	0	0	0		Chemical Probes Portal	Kinome_2079	https://www.chemicalprobes.org/
+RYYNGWLOYLRZLK-UHFFFAOYSA-N	unsuitables/pf-03814735	2016-12-09	No	No	593029	0	0	0		Chemical Probes Portal	PF-03814735	https://www.chemicalprobes.org/
+FUMCKNCUEAQHCV-XYPYZODXSA-N	unsuitables/chembl2062936	2016-12-09	No	No	1543298	0	0	0		Chemical Probes Portal	CHEMBL2062936	https://www.chemicalprobes.org/
+ZGZVRPRSFXRGCF-UHFFFAOYSA-N	unsuitables/kinome1054	2016-12-09	No	No	593085	0	0	0		Chemical Probes Portal	Kinome_1054	https://www.chemicalprobes.org/
+ZPEIMTDSQAKGNT-UHFFFAOYSA-N	unsuitables/chlorpromazine	2016-12-09	No	No	1233755	0	0	0		Chemical Probes Portal	Chlorpromazine	https://www.chemicalprobes.org/
+CGIGDMFJXJATDK-UHFFFAOYSA-N	unsuitables/indometacin	2016-12-09	No	No	1616755	0	0	0		Chemical Probes Portal	Indometacin	https://www.chemicalprobes.org/
+GCBJDOWIQHMCMR-UHFFFAOYSA-N	unsuitables/kinome1199	2016-12-09	No	No	1705658	0	0	0		Chemical Probes Portal	Kinome_1199	https://www.chemicalprobes.org/
+KRIUNPBAQZGFQA-UHFFFAOYSA-N	unsuitables/zinc04335977	2016-12-09	No	Yes	1049783	0	0	0		Chemical Probes Portal	ZINC04335977	https://www.chemicalprobes.org/
+HJGFPNFAFSFDNN-UHFFFAOYSA-N	unsuitables/cx5011	2016-12-09	No	No	1798236	0	0	0		Chemical Probes Portal	CX5011	https://www.chemicalprobes.org/
+BPNUQXPIQBZCMR-IBGZPJMESA-N	unsuitables/674563	2016-12-08	No	No	1807394	0	0	0		Chemical Probes Portal	A-674563	https://www.chemicalprobes.org/
+RFAXLXKIAKIUDT-UHFFFAOYSA-N	unsuitables/ipa-3	2017-01-04	No	Yes	1503412	0	0	0		Chemical Probes Portal	IPA-3	https://www.chemicalprobes.org/
+KRMDCWKBEZIMAB-UHFFFAOYSA-N	unsuitables/amitriptyline	2016-12-09	Yes	No	1253640	0	0	0		Chemical Probes Portal	Amitriptyline	https://www.chemicalprobes.org/
+DDLZLOKCJHBUHD-WAVHTBQISA-N	unsuitables/6-bromoindirubin-3-oxime	2016-12-09	No	Yes	1322637	0	0	0		Chemical Probes Portal	6-Bromoindirubin-3'-oxime	https://www.chemicalprobes.org/
+UUADYKVKJIMIPA-UHFFFAOYSA-N	unsuitables/enzastaurin-hydrochloride	2016-12-09	No	Yes	826365	0	0	0		Chemical Probes Portal	Enzastaurin hydrochloride	https://www.chemicalprobes.org/
+KSOVGRCOLZZTPF-UHFFFAOYSA-N	unsuitables/kinome635	2016-12-09	Yes	No	521608	0	0	0		Chemical Probes Portal	Kinome_635	https://www.chemicalprobes.org/
+ZVWRFVCNQOECJS-UHFFFAOYSA-N	unsuitables/kinome1202	2016-12-09	No	No	292199	0	0	0		Chemical Probes Portal	Kinome_1202	https://www.chemicalprobes.org/
+VADOZMZXXRBXNY-UHFFFAOYSA-N	unsuitables/chembl3115681	2016-12-09	Yes	No	462817	0	0	0		Chemical Probes Portal	CHEMBL3115681	https://www.chemicalprobes.org/
+UIARLYUEJFELEN-LROUJFHJSA-N	unsuitables/lestaurtinib	2016-12-09	No	No	578962	0	0	0		Chemical Probes Portal	Lestaurtinib	https://www.chemicalprobes.org/
+BSFNGHCTZDCQBF-UHFFFAOYSA-N	unsuitables/kinome1901	2016-12-09	No	No	698309	0	0	0		Chemical Probes Portal	Kinome_1901	https://www.chemicalprobes.org/
+LYNBNVBMAGDJRW-UHFFFAOYSA-N	unsuitables/4-anilinopyrimidine-8c	2016-12-09	No	No	1493914	0	0	0		Chemical Probes Portal	4-anilinopyrimidine 8c	https://www.chemicalprobes.org/
+GCYXEGSPUDSZJY-PTNGSMBKSA-N	unsuitables/gw8510	2016-12-09	Yes	Yes	352155	0	0	0		Chemical Probes Portal	Gw8510	https://www.chemicalprobes.org/
+YMIJUBCSOKSFRU-UHFFFAOYSA-N	unsuitables/4-anilinopyrimidine-15a	2016-12-09	No	No	1699687	0	0	0		Chemical Probes Portal	4-anilinopyrimidine 15a	https://www.chemicalprobes.org/
+KLBQZWRITKRQQV-UHFFFAOYSA-N	unsuitables/thioridazine	2016-12-09	No	No	1583578	0	0	0		Chemical Probes Portal	Thioridazine	https://www.chemicalprobes.org/
+GPSZYOIFQZPWEJ-UHFFFAOYSA-N	unsuitables/cyc-116	2016-12-09	Yes	No	1709990	0	0	0		Chemical Probes Portal	CYC-116	https://www.chemicalprobes.org/
+BIIVYFLTOXDAOV-YVEFUNNKSA-N	unsuitables/flavopiridol	2016-12-09	No	No	1905588	0	0	0		Chemical Probes Portal	Flavopiridol	https://www.chemicalprobes.org/
+OUSFTKFNBAZUKL-UHFFFAOYSA-N	unsuitables/bms-387032	2016-12-09	No	No	1596650	0	0	0		Chemical Probes Portal	BMS-387032	https://www.chemicalprobes.org/
+JPYQFPGTGGLOMD-UHFFFAOYSA-N	unsuitables/chembl1649761	2016-12-09	No	No	1643156	0	0	0		Chemical Probes Portal	CHEMBL1649761	https://www.chemicalprobes.org/
+BQDHCGJUSXMIIS-UHFFFAOYSA-N	unsuitables/schembl3814469	2016-12-09	No	No	3312912	0	0	0		Chemical Probes Portal	SCHEMBL3814469	https://www.chemicalprobes.org/
+AFSDNFLWKVMVRB-UHFFFAOYSA-N	unsuitables/ellagic-acid	2016-12-09	Yes	Yes	1305685	0	0	0		Chemical Probes Portal	Ellagic acid	https://www.chemicalprobes.org/
+AYQYIBVVCJFCAE-KSEXSDGBSA-N	unsuitables/c646	2016-12-13	Yes	No	654302	0	0	0		Chemical Probes Portal	C646	https://www.chemicalprobes.org/
+XHBVYDAKJHETMP-UHFFFAOYSA-N	unsuitables/dorsomorphin	2016-12-15	No	No	252407	0	0	0		Chemical Probes Portal	Dorsomorphin	https://www.chemicalprobes.org/
+SHPFDGWALWEPGS-UHFFFAOYSA-N	unsuitables/ki-20227	2017-03-02	No	No	592278	0	0	0		Chemical Probes Portal	Ki-20227	https://www.chemicalprobes.org/
+MLKHXLFEYOOYEY-NVNXTCNLSA-N	unsuitables/k00564a	2021-02-18	Yes	No	1588377	0	0	0		Chemical Probes Portal	K00564a	https://www.chemicalprobes.org/
+FMETVQKSDIOGPX-UHFFFAOYSA-N	unsuitables/lck-inhibitor	2017-03-02	No	No	1889063	0	0	0		Chemical Probes Portal	Lck inhibitor	https://www.chemicalprobes.org/
+SXOZSDJHGMAEGZ-IGKKHSBFSA-N	unsuitables/sl0101	2017-03-02	No	No	716875	0	0	0		Chemical Probes Portal	SL0101	https://www.chemicalprobes.org/
+BLQYVHBZHAISJM-CMDGGOBGSA-N	unsuitables/enmd-2076	2017-02-01	No	No	1907784	0	0	0		Chemical Probes Portal	ENMD-2076	https://www.chemicalprobes.org/
+CXQHYVUVSFXTMY-UHFFFAOYSA-N	unsuitables/foretinib	2017-02-01	No	No	916365	0	0	0		Chemical Probes Portal	Foretinib	https://www.chemicalprobes.org/
+XZXHXSATPCNXJR-UHFFFAOYSA-N	unsuitables/ninetedanib	2017-02-01	No	Yes	826661	0	0	0		Chemical Probes Portal	Ninetedanib	https://www.chemicalprobes.org/
+IFPPYSWJNWHOLQ-UHFFFAOYSA-N	unsuitables/pd166285	2017-02-01	No	No	614800	0	0	0		Chemical Probes Portal	PD166285	https://www.chemicalprobes.org/
+ZBNZXTGUTAYRHI-UHFFFAOYSA-N	unsuitables/dasatinib	2017-02-01	No	No	501089	0	0	0		Chemical Probes Portal	Dasatinib	https://www.chemicalprobes.org/
+GCIKSSRWRFVXBI-UHFFFAOYSA-N	unsuitables/tozasertib	2017-02-01	No	No	567748	0	0	0		Chemical Probes Portal	Tozasertib	https://www.chemicalprobes.org/
+JJWMRRNGWSITSQ-UHFFFAOYSA-N	unsuitables/upf1069	2017-01-31	No	No	1302916	0	0	0		Chemical Probes Portal	UPF1069	https://www.chemicalprobes.org/
+HAYYBYPASCDWEQ-UHFFFAOYSA-N	unsuitables/entrectinib	2017-02-01	No	No	849266	0	0	0		Chemical Probes Portal	Entrectinib	https://www.chemicalprobes.org/
+GKEYKDOLBLYGRB-LGMDPLHJSA-N	unsuitables/famitinib	2017-02-01	No	No	265157	0	0	0		Chemical Probes Portal	Famitinib	https://www.chemicalprobes.org/
+JLYAXFNOILIKPP-KXQOOQHDSA-N	unsuitables/navitoclax	2017-01-31	No	Yes	997861	0	0	0		Chemical Probes Portal	Navitoclax	https://www.chemicalprobes.org/
+UQTPDWDAYHAZNT-AWEZNQCLSA-N	unsuitables/ns-018	2017-02-01	No	No	147527	0	0	0		Chemical Probes Portal	NS-018	https://www.chemicalprobes.org/
+WVXNSAVVKYZVOE-UHFFFAOYSA-N	unsuitables/rebastinib	2017-02-01	No	No	848780	0	0	0		Chemical Probes Portal	Rebastinib	https://www.chemicalprobes.org/
+MLDQJTXFUGDVEO-UHFFFAOYSA-N	unsuitables/sorafenib	2017-02-01	No	No	429624	0	0	0		Chemical Probes Portal	Sorafenib	https://www.chemicalprobes.org/
+UYJZZVDLGDDTCL-UHFFFAOYSA-N	unsuitables/pj34	2017-01-31	No	No	1321633	0	0	0		Chemical Probes Portal	PJ34	https://www.chemicalprobes.org/
+WVMANZPBOBRWCB-UHFFFAOYSA-N	unsuitables/aloisine	2017-02-01	No	No	1264460	0	0	0		Chemical Probes Portal	Aloisine	https://www.chemicalprobes.org/
+QYPJBTMRYKRTFG-UHFFFAOYSA-N	unsuitables/maritoclax	2017-03-13	No	No	466403	0	0	0		Chemical Probes Portal	Maritoclax	https://www.chemicalprobes.org/
+UUECJWRVDTUDCB-ISLYRVAYSA-N	unsuitables/ischemin	2017-03-07	Yes	Yes	1453644	0	0	0		Chemical Probes Portal	Ischemin	https://www.chemicalprobes.org/
+MDOJTZQKHMAPBK-UHFFFAOYSA-N	unsuitables/iniparib	2017-03-02	No	Yes	24483	0	0	0		Chemical Probes Portal	Iniparib	https://www.chemicalprobes.org/
+LLEJIEBFSOEYIV-UHFFFAOYSA-N	unsuitables/chelerythrine	2017-03-02	No	No	1688064	0	0	0		Chemical Probes Portal	Chelerythrine	https://www.chemicalprobes.org/
+PBJKWGWHZVXBGU-UHFFFAOYSA-N	unsuitables/apogossypol	2017-03-02	Yes	Yes	572876	0	0	0		Chemical Probes Portal	Apogossypol	https://www.chemicalprobes.org/
+SXJDCULZDFWMJC-UHFFFAOYSA-N	unsuitables/ha14-1	2017-03-02	No	No	1596359	0	0	0		Chemical Probes Portal	HA14-1	https://www.chemicalprobes.org/
+HYTMVPCGCCQGST-JGUILPGDSA-N	unsuitables/bxi-61	2017-03-02	Yes	Yes	234445	0	0	0		Chemical Probes Portal	BXI-61	https://www.chemicalprobes.org/
+PQAPVTKIEGUPRN-UHFFFAOYSA-N	unsuitables/tw37	2017-03-02	Yes	Yes	839902	0	0	0		Chemical Probes Portal	TW37	https://www.chemicalprobes.org/
+WUGANDSUVKXMEC-UHFFFAOYSA-N	unsuitables/umi-77	2017-03-02	Yes	No	1829299	0	0	0		Chemical Probes Portal	UMI-77	https://www.chemicalprobes.org/
+YPSXFMHXRZAGTG-UHFFFAOYSA-N	unsuitables/bcl-2-inhibitor	2017-03-02	No	Yes	3312891	0	0	0		Chemical Probes Portal	Bcl-2 Inhibitor	https://www.chemicalprobes.org/
+ILMNSCQOSGKTNZ-NKWVEPMBSA-N	unsuitables/adenosine-dialdehyde	2017-03-07	No	Yes	1146558	0	0	0		Chemical Probes Portal	Adenosine dialdehyde	https://www.chemicalprobes.org/
+NAWIFPQLACUTSO-MXGDDHKLSA-N	unsuitables/mdl-28842	2017-03-07	No	Yes	1144457	0	0	0		Chemical Probes Portal	MDL 28842	https://www.chemicalprobes.org/
+MUJOCHRZXRZONW-FOCLMDBBSA-N	unsuitables/methylstat	2017-03-07	No	Yes	719521	0	0	0		Chemical Probes Portal	Methylstat	https://www.chemicalprobes.org/
+AELCINSCMGFISI-DTWKUNHWSA-N	unsuitables/tranylcypromine	2017-03-07	No	No	45808	0	0	0		Chemical Probes Portal	Tranylcypromine	https://www.chemicalprobes.org/
+ZJZCTCNQTXBBFZ-PLMZOXRSSA-N	unsuitables/mb-3	2017-03-07	No	Yes	3312903	0	0	0		Chemical Probes Portal	MB-3	https://www.chemicalprobes.org/
+YGSDEFSMJLZEOE-UHFFFAOYSA-M	unsuitables/salicylate	2017-03-07	No	No	2880280	0	0	0		Chemical Probes Portal	Salicylate	https://www.chemicalprobes.org/
+JAXSELKSZJMFSA-UHFFFAOYSA-N	unsuitables/apha	2017-03-07	No	No	3312911	0	0	0		Chemical Probes Portal	APHA	https://www.chemicalprobes.org/
+PAWIYAYFNXQGAP-UHFFFAOYSA-N	unsuitables/quisinostat	2017-03-07	No	Yes	256735	0	0	0		Chemical Probes Portal	Quisinostat	https://www.chemicalprobes.org/
+FPOHNWQLNRZRFC-ZHACJKMWSA-N	unsuitables/panobinostat	2017-03-07	Yes	Yes	1710013	0	0	0		Chemical Probes Portal	Panobinostat	https://www.chemicalprobes.org/
+KGDMFBRXTHKRPA-GRCJMCHGSA-N	unsuitables/pandacostat	2017-03-07	Yes	Yes	1718170	0	0	0		Chemical Probes Portal	Pandacostat	https://www.chemicalprobes.org/
+PTJGLFIIZFVFJV-UHFFFAOYSA-N	unsuitables/pyroxamide	2017-03-07	No	Yes	1123828	0	0	0		Chemical Probes Portal	Pyroxamide	https://www.chemicalprobes.org/
+MUTBJZVSRNUIHA-UHFFFAOYSA-N	unsuitables/r306465	2017-03-07	No	Yes	169499	0	0	0		Chemical Probes Portal	R306465	https://www.chemicalprobes.org/
+IDQPVOFTURLJPT-UHFFFAOYSA-N	unsuitables/sbha	2017-03-07	No	Yes	30287	0	0	0		Chemical Probes Portal	SBHA	https://www.chemicalprobes.org/
+GYKLFBYWXZYSOW-UHFFFAOYSA-N	unsuitables/pivanex	2017-03-07	No	Yes	28056	0	0	0		Chemical Probes Portal	Pivanex	https://www.chemicalprobes.org/
+MIGJEXKBUJPKJF-UHFFFAOYSA-N	unsuitables/ms7972	2017-04-04	No	No	1119325	0	0	0		Chemical Probes Portal	MS7972	https://www.chemicalprobes.org/
+RFTSSZJZXOSICM-GRSHGNNSSA-N	unsuitables/obatoclax	2017-03-02	No	No	1500972	0	0	0		Chemical Probes Portal	Obatoclax	https://www.chemicalprobes.org/
+QBKSWRVVCFFDOT-UHFFFAOYSA-N	unsuitables/gossypol	2017-03-02	Yes	Yes	754444	0	0	0		Chemical Probes Portal	Gossypol	https://www.chemicalprobes.org/
+KLDXJTOLSGUMSJ-JGWLITMVSA-N	unsuitables/101	2017-03-02	No	No	56967	0	0	0		Chemical Probes Portal	AT-101	https://www.chemicalprobes.org/
+UIFFUZWRFRDZJC-SBOOETFBSA-N	unsuitables/antimycin	2017-03-02	No	Yes	793808	0	0	0		Chemical Probes Portal	Antimycin A	https://www.chemicalprobes.org/
+PRDFBSVERLRRMY-UHFFFAOYSA-N	unsuitables/bxi-72	2017-03-02	No	No	565476	0	0	0		Chemical Probes Portal	BXI-72	https://www.chemicalprobes.org/
+RGGFUBMUOVFZEF-LDRVEFRDSA-N	unsuitables/mim1	2017-03-02	Yes	Yes	1556735	0	0	0		Chemical Probes Portal	MIM1	https://www.chemicalprobes.org/
+COHIEJLWRGREHV-XFFZJAGNSA-N	unsuitables/bh3i-1	2017-03-02	Yes	Yes	1320297	0	0	0		Chemical Probes Portal	BH3I-1	https://www.chemicalprobes.org/
+YUYJEQHNWKQNBT-UHFFFAOYSA-N	unsuitables/lji308	2017-03-02	No	No	1868394	0	0	0		Chemical Probes Portal	LJI308	https://www.chemicalprobes.org/
+OUKYUETWWIPKQR-UHFFFAOYSA-N	unsuitables/saracatinib	2017-03-02	No	No	766308	0	0	0		Chemical Probes Portal	Saracatinib	https://www.chemicalprobes.org/
+WUUGFSXJNOTRMR-IOSLPCCCSA-N	unsuitables/5-methyl-thioadenosine	2017-03-07	No	No	1171526	0	0	0		Chemical Probes Portal	5-methyl thioadenosine	https://www.chemicalprobes.org/
+LMXOHSDXUQEUSF-YECHIGJVSA-N	unsuitables/sinefungin	2017-03-07	No	No	1823000	0	0	0		Chemical Probes Portal	Sinefungin	https://www.chemicalprobes.org/
+IRSFLDGTOHBADP-UHFFFAOYSA-N	unsuitables/embelin	2017-03-07	Yes	Yes	1241811	0	0	0		Chemical Probes Portal	Embelin	https://www.chemicalprobes.org/
+VCMMXZQDRFWYSE-UHFFFAOYSA-N	unsuitables/plumbagin	2017-03-07	Yes	Yes	30007	0	0	0		Chemical Probes Portal	Plumbagin	https://www.chemicalprobes.org/
+FECGNJPYVFEKOD-VMPITWQZSA-N	unsuitables/resminostat	2017-03-07	No	Yes	1583363	0	0	0		Chemical Probes Portal	Resminostat	https://www.chemicalprobes.org/
+YALNUENQHAQXEA-UHFFFAOYSA-N	unsuitables/givinostat	2017-03-07	No	Yes	350456	0	0	0		Chemical Probes Portal	Givinostat	https://www.chemicalprobes.org/
+BWDQBBCUWLSASG-MDZDMXLPSA-N	unsuitables/dacinostat	2017-03-07	No	Yes	1902688	0	0	0		Chemical Probes Portal	Dacinostat	https://www.chemicalprobes.org/
+IVTKCTFTVKYWIQ-WEVVVXLNSA-N	unsuitables/oxamflatin	2017-03-07	No	Yes	1496674	0	0	0		Chemical Probes Portal	Oxamflatin	https://www.chemicalprobes.org/
+MAUCONCHVWBMHK-UHFFFAOYSA-N	unsuitables/abexinostat	2017-03-07	No	Yes	256658	0	0	0		Chemical Probes Portal	Abexinostat	https://www.chemicalprobes.org/
+NCNRHFGMJRPRSK-MDZDMXLPSA-N	unsuitables/belinostat	2017-03-07	No	Yes	1322821	0	0	0		Chemical Probes Portal	Belinostat	https://www.chemicalprobes.org/
+JHDKZFFAIZKUCU-ZRDIBKRKSA-N	unsuitables/pracinostat	2017-03-07	No	Yes	1718108	0	0	0		Chemical Probes Portal	Pracinostat	https://www.chemicalprobes.org/
+JTDYUFSDZATMKU-UHFFFAOYSA-N	unsuitables/scriptaid	2017-03-07	No	Yes	1487542	0	0	0		Chemical Probes Portal	Scriptaid	https://www.chemicalprobes.org/
+RTKIYFITIVXBLE-QEQCGCAPSA-N	unsuitables/trichostatin	2017-03-07	No	Yes	1317329	0	0	0		Chemical Probes Portal	Trichostatin A	https://www.chemicalprobes.org/
+MFBOGIVSZKQAPD-UHFFFAOYSA-M	unsuitables/butyrate	2017-03-07	No	No	1190	0	0	0		Chemical Probes Portal	Butyrate	https://www.chemicalprobes.org/
+NIJJYAXOARWZEE-UHFFFAOYSA-N	unsuitables/valproic-acid	2017-03-07	No	Yes	45378	0	0	0		Chemical Probes Portal	Valproic acid	https://www.chemicalprobes.org/
+XHEFDIBZLJXQHF-UHFFFAOYSA-N	unsuitables/fisetin	2017-03-07	Yes	Yes	1234742	0	0	0		Chemical Probes Portal	Fisetin	https://www.chemicalprobes.org/
+CDRPUGZCRXZLFL-OWOJBTEDSA-N	unsuitables/piceatannol	2017-03-07	Yes	Yes	1066438	0	0	0		Chemical Probes Portal	Piceatannol	https://www.chemicalprobes.org/
+NETXMUIMUZJUTB-UHFFFAOYSA-N	unsuitables/apabetalone	2017-03-07	No	No	1857922	0	0	0		Chemical Probes Portal	Apabetalone	https://www.chemicalprobes.org/
+HUPFGZXOMWLGNK-UHFFFAOYSA-N	unsuitables/diflusinal	2017-03-20	No	No	1065883	0	0	0		Chemical Probes Portal	Diflusinal	https://www.chemicalprobes.org/
+XGALLCVXEZPNRQ-UHFFFAOYSA-N	unsuitables/gefitinib	2017-03-21	No	No	337949	0	0	0		Chemical Probes Portal	Gefitinib	https://www.chemicalprobes.org/
+AYMYWHCQALZEGT-ORCRQEGFSA-N	unsuitables/butein	2017-03-07	Yes	Yes	1166678	0	0	0		Chemical Probes Portal	Butein	https://www.chemicalprobes.org/
+DXDRHHKMWQZJHT-FPYGCLRLSA-N	unsuitables/isoliquiritigenin	2017-03-07	No	Yes	1116690	0	0	0		Chemical Probes Portal	Isoliquiritigenin	https://www.chemicalprobes.org/
+KDPSGIFCBZTBEZ-UHFFFAOYSA-N	unsuitables/bic1	2017-03-07	No	Yes	1508966	0	0	0		Chemical Probes Portal	BIC1	https://www.chemicalprobes.org/
+ZZZYHIMVKOHVIH-MWFXHRFLSA-N	unsuitables/brusatol	2017-03-17	No	Yes	720663	0	0	0		Chemical Probes Portal	Brusatol	https://www.chemicalprobes.org/
+QDKLRKZQSOQWJQ-SMDXAGPFSA-N	unsuitables/garcinol	2017-03-20	Yes	Yes	898879	0	0	0		Chemical Probes Portal	Garcinol	https://www.chemicalprobes.org/
+AJRGHIGYPXNABY-UHFFFAOYSA-N	unsuitables/pci-34051	2017-04-10	No	Yes	1358819	0	0	0		Chemical Probes Portal	PCI-34051	https://www.chemicalprobes.org/
+JWOGUUIOCYMBPV-GMFLJSBRSA-N	unsuitables/apicidin	2017-04-11	No	No	902928	0	0	0		Chemical Probes Portal	Apicidin	https://www.chemicalprobes.org/
+VAZAPHZUAVEOMC-UHFFFAOYSA-N	unsuitables/ci-994	2017-04-11	No	Yes	1170255	0	0	0		Chemical Probes Portal	CI-994	https://www.chemicalprobes.org/
+DLVJMFOLJOOWFS-VJIFSZOSSA-N	unsuitables/depudecin	2017-04-11	No	Yes	51775	0	0	0		Chemical Probes Portal	Depudecin	https://www.chemicalprobes.org/
+GNYCTMYOHGBSBI-KVUCBBCISA-N	unsuitables/hc-toxin	2017-04-11	No	Yes	3312889	0	0	0		Chemical Probes Portal	HC Toxin	https://www.chemicalprobes.org/
+HRNLUBSXIHFDHP-UHFFFAOYSA-N	unsuitables/mocetinostat	2017-04-11	No	Yes	244348	0	0	0		Chemical Probes Portal	Mocetinostat	https://www.chemicalprobes.org/
+INVTYAOGFAGBOE-UHFFFAOYSA-N	unsuitables/entinostat	2017-04-11	No	Yes	1888264	0	0	0		Chemical Probes Portal	Entinostat	https://www.chemicalprobes.org/
+DEZFNHCVIZBHBI-ZHACJKMWSA-N	unsuitables/rottlerin	2017-06-27	No	No	754171	0	0	0		Chemical Probes Portal	Rottlerin	https://www.chemicalprobes.org/
+URWCXPXBBITYLR-UHFFFAOYSA-N	unsuitables/th287	2017-07-08	No	No	1061093	0	0	0		Chemical Probes Portal	TH287	https://www.chemicalprobes.org/
+PVRYEWOXWGDQHA-URLMMPGGSA-N	unsuitables/nutlin-2	2017-06-02	No	No	847292	0	0	0		Chemical Probes Portal	Nutlin-2	https://www.chemicalprobes.org/
+UNXQGBMZYKHQCO-NVHWNKAKSA-N	unsuitables/mi-219	2017-06-02	No	No	724668	0	0	0		Chemical Probes Portal	MI-219	https://www.chemicalprobes.org/
+RLUGRMMSGGKTPV-UHFFFAOYSA-N	unsuitables/mcl0527-3	2017-06-02	Yes	No	203147	0	0	0		Chemical Probes Portal	MCL0527-3	https://www.chemicalprobes.org/
+NNGMKDJOKUWNGN-NMMPVGNLSA-N	unsuitables/4-pbha	2017-04-11	No	Yes	1078674	0	0	0		Chemical Probes Portal	4-PBHA	https://www.chemicalprobes.org/
+IYDMGGPKSVWQRT-UHFFFAOYSA-N	unsuitables/nutlin-1	2017-06-02	No	No	865782	0	0	0		Chemical Probes Portal	Nutlin-1	https://www.chemicalprobes.org/
+BDUHCSBCVGXTJM-WUFINQPMSA-N	unsuitables/nutlin-3a	2017-06-02	No	No	813911	0	0	0		Chemical Probes Portal	Nutlin-3A	https://www.chemicalprobes.org/
+QZJRNGXHRQJBJH-UHFFFAOYSA-N	unsuitables/pb12	2017-06-02	No	No	432336	0	0	0		Chemical Probes Portal	PB12	https://www.chemicalprobes.org/
+FLEPRYJBTOPZTM-UKILVPOCSA-N	unsuitables/pb11	2017-06-02	No	No	391134	0	0	0		Chemical Probes Portal	PB11	https://www.chemicalprobes.org/
+HMKAZNCSHAJLSA-HIJQLYNKSA-N	unsuitables/am-8735	2017-06-06	No	No	777492	0	0	0	https://doi.org/10.1021/jm401767k|https://pubmed.ncbi.nlm.nih.gov/24548297	Chemical Probes Portal	AM-8735	https://www.chemicalprobes.org/
+XZFYSTPLSPZNKJ-UHFFFAOYSA-N	unsuitables/rh02007	2017-06-22	Yes	No	3312902	0	0	0		Chemical Probes Portal	RH02007	https://www.chemicalprobes.org/
+ZFEXNHYQHDJAGL-UHFFFAOYSA-N	unsuitables/nsc83143	2017-06-22	No	No	3312905	0	0	0		Chemical Probes Portal	NSC83143	https://www.chemicalprobes.org/
+CGLMQIIIQWNAMG-UHFFFAOYSA-N	unsuitables/nsc135098	2017-06-22	No	Yes	3313081	0	0	0		Chemical Probes Portal	NSC135098	https://www.chemicalprobes.org/
+XKTMIJODWOEBKO-UHFFFAOYSA-M	unsuitables/acid green 3	2017-06-22	Yes	Yes	933654	0	0	0		Chemical Probes Portal	Acid Green 3	https://www.chemicalprobes.org/
+ASUGUQWIHMTFJL-QGZVFWFLSA-N	unsuitables/decernotinib	2017-06-26	No	No	113802	0	0	0		Chemical Probes Portal	Decernotinib	https://www.chemicalprobes.org/
+ZHEHVZXPFVXKEY-LYGOBDSISA-N	unsuitables/kt5720	2017-06-27	No	No	3145847	0	0	0		Chemical Probes Portal	KT5720	https://www.chemicalprobes.org/
+VLULRUCCHYVXOH-UHFFFAOYSA-N	unsuitables/onc201	2017-07-18	No	No	233041	0	0	0		Chemical Probes Portal	ONC201	https://www.chemicalprobes.org/
+YRRAGUMVDQQZIY-UHFFFAOYSA-N	unsuitables/gossypetin	2017-06-22	Yes	Yes	1401932	0	0	0		Chemical Probes Portal	Gossypetin	https://www.chemicalprobes.org/
+VWFIHGWHMXSTAO-UHFFFAOYSA-N	unsuitables/dshs00884	2017-06-22	No	No	1200722	0	0	0		Chemical Probes Portal	DSHS00884	https://www.chemicalprobes.org/
+JPOAXWSMFOLMQH-UWWJMHSNSA-N	unsuitables/nsc117907	2017-06-22	No	No	3312910	0	0	0		Chemical Probes Portal	NSC117907	https://www.chemicalprobes.org/
+QKJRDUVFCNBDGG-YKXMQWBGSA-N	unsuitables/nsc216029	2017-06-22	No	Yes	3312907	0	0	0		Chemical Probes Portal	NSC216029	https://www.chemicalprobes.org/
+BGLPECHZZQDNCD-UHFFFAOYSA-N	unsuitables/cerdulatinib	2017-06-26	Yes	No	328588	0	0	0		Chemical Probes Portal	Cerdulatinib	https://www.chemicalprobes.org/
+HWXVIOGONBBTBY-ONEGZZNKSA-N	unsuitables/pacritinib	2017-06-26	No	No	646856	0	0	0		Chemical Probes Portal	Pacritinib	https://www.chemicalprobes.org/
+PNMYJIOQIAEYQL-UHFFFAOYSA-N	unsuitables/th588	2017-07-08	No	No	1157610	0	0	0		Chemical Probes Portal	TH588	https://www.chemicalprobes.org/
+KTEIFNKAUNYNJU-LBPRGKRZSA-N	unsuitables/s-crizotinib	2017-07-08	No	No	255181	0	0	0		Chemical Probes Portal	S-crizotinib	https://www.chemicalprobes.org/
+AVZCPICCWKMZDT-UHFFFAOYSA-N	unsuitables/gsk-j1	2017-07-08	No	No	207430	0	0	0		Chemical Probes Portal	GSK-J1	https://www.chemicalprobes.org/
+KWUZCAVKPCRJPO-UHFFFAOYSA-N	unsuitables/thio-2	2017-07-08	No	No	3312908	0	0	0		Chemical Probes Portal	Thio-2	https://www.chemicalprobes.org/
+TZALECNALKOBPY-UHFFFAOYSA-N	unsuitables/thioflavin-s	2017-07-08	Yes	No	3313069	0	0	0		Chemical Probes Portal	Thioflavin S	https://www.chemicalprobes.org/
+RYCBSFIKWACFBY-UHFFFAOYSA-N	unsuitables/frax1036	2017-07-08	No	No	744970	0	0	0		Chemical Probes Portal	FRAX1036	https://www.chemicalprobes.org/
+JVDOKQYTTYUYDV-UHFFFAOYSA-N	unsuitables/tg10129	2017-07-08	Yes	No	698084	0	0	0		Chemical Probes Portal	TG10129	https://www.chemicalprobes.org/
+HHFBDROWDBDFBR-UHFFFAOYSA-N	unsuitables/mln8054	2017-07-08	No	No	575044	0	0	0		Chemical Probes Portal	MLN8054	https://www.chemicalprobes.org/
+ZIMMTPFXOMAJTQ-UHFFFAOYSA-N	unsuitables/apoptozole	2017-07-08	No	No	908308	0	0	0		Chemical Probes Portal	Apoptozole	https://www.chemicalprobes.org/
+ZZUZYEMRHCMVTB-UHFFFAOYSA-N	unsuitables/pifithrin-mu	2017-07-08	No	No	8743	0	0	0		Chemical Probes Portal	Pifithrin-mu	https://www.chemicalprobes.org/
+HAGVCKULCLQGRF-UHFFFAOYSA-N	unsuitables/pifithrin-alpha	2017-07-08	Yes	No	1244293	0	0	0		Chemical Probes Portal	Pifithrin-alpha	https://www.chemicalprobes.org/
+IMUKUMUNZJILCG-UHFFFAOYSA-N	unsuitables/pifithrin-beta	2017-07-08	No	No	1118708	0	0	0		Chemical Probes Portal	Pifithrin-beta	https://www.chemicalprobes.org/
+MMBSCBVEHMETSA-GDAWTGGTSA-N	unsuitables/mcb-613	2017-07-08	Yes	No	1433969	0	0	0		Chemical Probes Portal	MCB-613	https://www.chemicalprobes.org/
+LUYWAGVRXKSNLL-DEOSSOPVSA-N	unsuitables/k4f	2017-07-08	No	No	528188	0	0	0		Chemical Probes Portal	K4F	https://www.chemicalprobes.org/
+FDQXEDMRIBACLZ-UHFFFAOYSA-N	unsuitables/chembl3414768	2017-07-08	No	No	1221513	0	0	0		Chemical Probes Portal	CHEMBL3414768	https://www.chemicalprobes.org/
+GNFSYBNDPOBXLJ-PLNGDYQASA-N	unsuitables/chembl2179989	2017-07-08	No	Yes	1054590	0	0	0		Chemical Probes Portal	CHEMBL2179989	https://www.chemicalprobes.org/
+HWTVYWVFOWWESR-GFCCVEGCSA-N	unsuitables/chembl3092538	2017-07-08	No	No	1550908	0	0	0		Chemical Probes Portal	CHEMBL3092538	https://www.chemicalprobes.org/
+HRYKZAKEAVZGJD-UHFFFAOYSA-N	unsuitables/chembl483348	2017-07-08	No	No	8926	0	0	0		Chemical Probes Portal	CHEMBL483348	https://www.chemicalprobes.org/
+VBHDTUSGPSUCNL-KRWDZBQOSA-N	unsuitables/chembl3092523	2017-07-08	No	No	114471	0	0	0		Chemical Probes Portal	CHEMBL3092523	https://www.chemicalprobes.org/
+HWTVYWVFOWWESR-LBPRGKRZSA-N	unsuitables/chembl3092539	2017-07-08	No	No	1550909	0	0	0		Chemical Probes Portal	CHEMBL3092539	https://www.chemicalprobes.org/
+NMZRTRAYSHQMPR-UHFFFAOYSA-N	unsuitables/chembl3416132	2017-07-08	No	No	14467	0	0	0		Chemical Probes Portal	CHEMBL3416132	https://www.chemicalprobes.org/
+ZHXIMGYEMBZGOI-UHFFFAOYSA-N	unsuitables/nsc-93392	2017-07-08	No	No	1065940	0	0	0		Chemical Probes Portal	NSC-93392	https://www.chemicalprobes.org/
+DTMHAFMUJHYVGK-UHFFFAOYSA-N	unsuitables/chembl3589281	2017-07-08	No	No	1107538	0	0	0		Chemical Probes Portal	CHEMBL3589281	https://www.chemicalprobes.org/
+KXSIHXHEHABEJX-UHFFFAOYSA-N	unsuitables/620223	2017-07-08	No	No	1308630	0	0	0		Chemical Probes Portal	A-620223	https://www.chemicalprobes.org/
+IJAPPYDYQCXOEF-UHFFFAOYSA-N	unsuitables/phthalazinone	2017-07-08	No	No	89399	0	0	0		Chemical Probes Portal	Phthalazinone	https://www.chemicalprobes.org/
+ZLYVTQGSZRQZLA-UHFFFAOYSA-N	unsuitables/gjw	2017-07-08	No	No	1181168	0	0	0		Chemical Probes Portal	GJW	https://www.chemicalprobes.org/
+NVVWVYYHTKCIAE-UHFFFAOYSA-N	unsuitables/bzc	2017-07-08	No	No	1166997	0	0	0		Chemical Probes Portal	BZC	https://www.chemicalprobes.org/
+GLBZSOQDAOLMGC-UHFFFAOYSA-N	unsuitables/amg-458	2017-07-08	No	No	817363	0	0	0		Chemical Probes Portal	AMG-458	https://www.chemicalprobes.org/
+AXRCEOKUDYDWLF-UHFFFAOYSA-N	unsuitables/enzastaurin	2017-07-08	No	Yes	795308	0	0	0		Chemical Probes Portal	Enzastaurin	https://www.chemicalprobes.org/
+VHBFFQKBGNRLFZ-UHFFFAOYSA-N	unsuitables/flavone	2017-07-08	No	No	1109148	0	0	0		Chemical Probes Portal	Flavone	https://www.chemicalprobes.org/
+WHTVZRBIWZFKQO-UHFFFAOYSA-N	unsuitables/chloroquine	2017-07-08	No	No	1305871	0	0	0		Chemical Probes Portal	Chloroquine	https://www.chemicalprobes.org/
+PPOQMSJVMJCEAI-UHFFFAOYSA-N	unsuitables/aj4	2017-07-08	No	No	1146534	0	0	0		Chemical Probes Portal	AJ4	https://www.chemicalprobes.org/
+GNFSYBNDPOBXLJ-SNAWJCMRSA-N	unsuitables/chembl2179988	2017-07-08	No	Yes	1054589	0	0	0		Chemical Probes Portal	CHEMBL2179988	https://www.chemicalprobes.org/
+NZSKSXWSNJEOQY-UHFFFAOYSA-N	unsuitables/chembl3593715	2017-07-08	No	No	1570026	0	0	0		Chemical Probes Portal	CHEMBL3593715	https://www.chemicalprobes.org/
+INPZIMSQNZGLHQ-JTQLQIEISA-N	unsuitables/chembl3092521	2017-07-08	No	No	1284750	0	0	0		Chemical Probes Portal	CHEMBL3092521	https://www.chemicalprobes.org/
+YAXDRRKYLDEMKO-INIZCTEOSA-N	unsuitables/chembl3092544	2017-07-08	No	No	1653084	0	0	0		Chemical Probes Portal	CHEMBL3092544	https://www.chemicalprobes.org/
+XFDUHJPVQKIXHO-UHFFFAOYSA-N	unsuitables/3-aminobenzoic-acid	2017-07-08	No	No	56288	0	0	0		Chemical Probes Portal	3-Aminobenzoic Acid	https://www.chemicalprobes.org/
+YWPMKTWUFVOFPL-UHFFFAOYSA-N	unsuitables/chembl1688212	2017-07-08	No	No	3985	0	0	0		Chemical Probes Portal	CHEMBL1688212	https://www.chemicalprobes.org/
+ISZWRZGKEWQACU-UHFFFAOYSA-N	unsuitables/nsc-22356	2017-07-08	No	No	1068678	0	0	0		Chemical Probes Portal	NSC-22356	https://www.chemicalprobes.org/
+PVFGJHYLIHMCQD-UHFFFAOYSA-N	unsuitables/chembl301624	2017-07-08	Yes	Yes	1172273	0	0	0		Chemical Probes Portal	CHEMBL301624	https://www.chemicalprobes.org/
+SQVXWIUVAILQRH-UHFFFAOYSA-N	unsuitables/nsc-123414	2017-07-08	No	No	1161709	0	0	0		Chemical Probes Portal	NSC-123414	https://www.chemicalprobes.org/
+ZGSXEXBYLJIOGF-ALFLXDJESA-N	unsuitables/iwr-1	2017-07-08	No	Yes	344422	0	0	0		Chemical Probes Portal	IWR-1	https://www.chemicalprobes.org/
+PISBNXWDAGANOP-UHFFFAOYSA-N	unsuitables/ag-014376	2017-07-08	No	No	1499401	0	0	0		Chemical Probes Portal	AG-014376	https://www.chemicalprobes.org/
+HGEPGGJUGUMFHT-UHFFFAOYSA-N	unsuitables/ku-0058948	2017-07-08	No	No	1903925	0	0	0		Chemical Probes Portal	KU-0058948	https://www.chemicalprobes.org/
+YQSZNYLPVBOGPO-UHFFFAOYSA-N	unsuitables/ku-58684	2017-07-08	No	No	1696288	0	0	0		Chemical Probes Portal	KU-58684	https://www.chemicalprobes.org/
+SDXBGOVSVBZDFL-UHFFFAOYSA-N	unsuitables/cep-6800	2017-07-08	No	Yes	1401652	0	0	0		Chemical Probes Portal	CEP-6800	https://www.chemicalprobes.org/
+UVSVTDVJQAJIFG-VURMDHGXSA-N	unsuitables/lfm-a13	2017-07-08	No	Yes	99599	0	0	0		Chemical Probes Portal	LFM-A13	https://www.chemicalprobes.org/
+ZRWNRAJCPNLYAK-UHFFFAOYSA-N	unsuitables/4-bromo-benzamide	2017-07-08	No	No	56360	0	0	0		Chemical Probes Portal	4-Bromo-Benzamide	https://www.chemicalprobes.org/
+SQCWABLHLAOJBR-UHFFFAOYSA-N	unsuitables/wlh	2017-07-08	No	No	1107542	0	0	0		Chemical Probes Portal	WLH	https://www.chemicalprobes.org/
+LPTGUSPVGHUCQF-UHFFFAOYSA-N	unsuitables/ruski-41	2020-03-05	No	No	3312888	0	0	0	https://doi.org/10.1021/acschembio.6b00896	Chemical Probes Portal	DOI:10.1021/acschembio.6b00896	https://www.chemicalprobes.org/
+AEENEMOEBJOKGN-UHFFFAOYSA-N	unsuitables/ruski-43	2020-03-05	No	No	1861430	0	0	0	https://doi.org/10.1021/acschembio.6b00896	Chemical Probes Portal	DOI:10.1021/acschembio.6b00896	https://www.chemicalprobes.org/
+AYUNIORJHRXIBJ-TXHRRWQRSA-N	unsuitables/tanespimycin-17-aag	2020-12-02	Yes	Yes	866964	0	0	0		Chemical Probes Portal	Tanespimycin (17-AAG)	https://www.chemicalprobes.org/
+CYPYTURSJDMMMP-WVCUSYJESA-N	unsuitables/tris-dba-palladium	2021-05-27	No	Yes	3313089	0	0	0		Chemical Probes Portal	Tris-DBA palladium	https://www.chemicalprobes.org/
+XUSDVLHKNBOGJY-UHFFFAOYSA-N	unsuitables/d-nmappd	2021-05-27	No	Yes	296713	0	0	0		Chemical Probes Portal	D-NMAPPD	https://www.chemicalprobes.org/
+JYZJYKOZGGEXSX-UHFFFAOYSA-N	unsuitables/2-hydroxymyristic-acid	2021-05-27	No	Yes	1052019	0	0	0		Chemical Probes Portal	2-hydroxymyristic acid	https://www.chemicalprobes.org/
+CSWHYHPUEDNIQY-UHFFFAOYSA-N	unsuitables/ihap1	2022-09-21	No	No	1610895	0	0	0		Chemical Probes Portal	iHAP1	https://www.chemicalprobes.org/
+PHCFSFBQEROREL-BQBZGAKWSA-N	unsuitables/talabostat	2021-03-29	No	Yes	27596	0	0	0		Chemical Probes Portal	Talabostat	https://www.chemicalprobes.org/
+WGKGADVPRVLHHZ-ZHRMCQFGSA-N	unsuitables/dt-061	2022-09-21	No	No	2912974	0	0	0		Chemical Probes Portal	DT-061	https://www.chemicalprobes.org/
+QMGUOJYZJKLOLH-UHFFFAOYSA-N	unsuitables/gf109203x	2017-07-20	No	Yes	321917	0	0	0		Chemical Probes Portal	GF109203X	https://www.chemicalprobes.org/
+QGZYDVAGYRLSKP-UHFFFAOYSA-N	unsuitables/ricolinostat	2023-01-12	No	Yes	3450665	0	0	0		Chemical Probes Portal	Ricolinostat	https://www.chemicalprobes.org/
+OBKXEAXTFZPCHS-UHFFFAOYSA-N	unsuitables/phenylbutyrate	2023-03-31	No	No	7664	0	0	0		Chemical Probes Portal	Phenylbutyrate	https://www.chemicalprobes.org/
+DGEZNRSVGBDHLK-UHFFFAOYSA-N	unsuitables/phenanthroline	2023-05-09	No	No	31029	0	0	0		Chemical Probes Portal	PHENANTHROLINE	https://www.chemicalprobes.org/
+GSCPDZHWVNUUFI-UHFFFAOYSA-N	unsuitables/3-aminobenzamide	2017-02-01	No	No	67064	0	0	0		Chemical Probes Portal	3-AMINOBENZAMIDE	https://www.chemicalprobes.org/
+TUCIOBMMDDOEMM-RIYZIHGNSA-N	unsuitables/ag490	2024-02-19	Yes	Yes	3444910	0	0	0		Chemical Probes Portal	AG490	https://www.chemicalprobes.org/
+HKSZLNNOFSGOKW-FYTWVXJKSA-N	unsuitables/staurosporine	2016-12-09	No	No	624063	0	0	0		Chemical Probes Portal	Staurosporine	https://www.chemicalprobes.org/
+OPQRFPHLZZPCCH-PGMHBOJBSA-N	unsuitables/ldn-57444	2023-06-19	No	Yes	1660579	0	0	0		Chemical Probes Portal	LDN-57444	https://www.chemicalprobes.org/
+PCOXPBOKDABARQ-UHFFFAOYSA-N	unsuitables/nsc617145	2024-08-14	No	Yes	1443338	0	0	0		Chemical Probes Portal	NSC617145	https://www.chemicalprobes.org/
+YXEWPGYLMHXLPS-UHFFFAOYSA-N	unsuitables/nsc19630	2024-08-14	No	Yes	20808	0	0	0		Chemical Probes Portal	NSC19630	https://www.chemicalprobes.org/
+WMCOYUSJXXCHFH-UHFFFAOYSA-N	unsuitables/ml216	2024-08-14	No	No	1756830	0	0	0		Chemical Probes Portal	ML216	https://www.chemicalprobes.org/
+HUQKUJNSVHEHIH-UHFFFAOYSA-N	unsuitables/an2	2024-12-12	No	No	1129932	0	0	0		Chemical Probes Portal	AN2	https://www.chemicalprobes.org/
+LMXYVLFTZRPNRV-KMKOMSMNSA-N	unsuitables/gw-5074	2024-12-12	No	No	1236171	0	0	0		Chemical Probes Portal	GW-5074	https://www.chemicalprobes.org/
+GPKLWRHHVIBYEO-KMKOMSMNSA-N	unsuitables/an1	2024-12-12	Yes	Yes	4205887	0	0	0		Chemical Probes Portal	AN1	https://www.chemicalprobes.org/
+CZQHHVNHHHRRDU-UHFFFAOYSA-N	unsuitables/ly294002	2016-12-15	No	No	1394412	0	0	0		Chemical Probes Portal	LY294002	https://www.chemicalprobes.org/

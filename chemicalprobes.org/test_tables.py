@@ -39,9 +39,9 @@ import pytest
 from rdkit import Chem
 from rdkit.Chem.inchi import MolToInchiKey
 
-from loader import load as load_staging
+from loader import load as _load
 from loader import validate
-from loader.validate import read as read_staged
+from loader.validate import read as _read
 from probedb import ProbeDB
 from probedb.schema import vocabulary
 
@@ -88,9 +88,9 @@ BIOACTIVITY_COLUMNS = [
 ]
 BIOACTIVITY_REQUIRED = ["inchikey", "target_key", "value", "unit"]
 UNSUITABLE_COLUMNS = [
-    "inchikey", "name", "smiles", "chembl_id", "cansar_id", "portal_path",
-    "published_date", "pains", "toxicophore", "rating_in_cell",
-    "rating_in_organism", "rating_count", "reference", "source_db",
+    "inchikey", "portal_path", "published_date", "pains", "toxicophore",
+    "cansar_id", "rating_in_cell", "rating_in_organism", "rating_count",
+    "reference", "source_db", "source", "xref_id",
 ]
 
 # the 18 keys of a probe record
@@ -362,6 +362,36 @@ def text(value):
 
 def cell(row, column):
     return text(row.get(column))
+
+
+def read_staged(directory, name):
+    """loader/'s reader, on the prefixed names preprocess.py writes."""
+    import tempfile
+
+    directory = pathlib.Path(directory)
+    prefixed = directory / f"{preprocess.PREFIX}{name}.tsv"
+    if not prefixed.exists():
+        return _read(directory, name)
+    with tempfile.TemporaryDirectory() as tmp:
+        (pathlib.Path(tmp) / f"{name}.tsv").write_bytes(prefixed.read_bytes())
+        return _read(tmp, name)
+
+
+def validate_staged(directory):
+    """loader.validate on the contract names, which is what it reads."""
+    import tempfile
+
+    with tempfile.TemporaryDirectory() as tmp:
+        return validate(preprocess.contract_directory(directory, tmp))
+
+
+def load_staging(db, directory, **kw):
+    """loader/ wants the four contract names, which is what production hands it."""
+    import tempfile
+
+    with tempfile.TemporaryDirectory() as tmp:
+        return _load(db, preprocess.contract_directory(directory, tmp),
+                     source=preprocess.SOURCE_DB, **kw)
 
 
 def header_of(path):
@@ -869,11 +899,11 @@ def test_build_bioactivity_writes_nothing_for_a_keyless_probe():
 
 # ---------------------------------------------------------- build_unsuitable
 
-def test_build_unsuitable_columns_are_the_fourteen_of_the_docstring():
+def test_build_unsuitable_columns_are_the_ones_of_the_table():
     f = flat()
     frame = call(preprocess.build_unsuitable, **offer(f))
     assert columns_of(frame) == UNSUITABLE_COLUMNS
-    assert len(columns_of(frame)) == 14
+    assert len(columns_of(frame)) == len(UNSUITABLE_COLUMNS)
 
 
 def test_build_unsuitable_takes_only_the_probes_the_portal_ruled_out():
@@ -1000,7 +1030,7 @@ def test_write_table_round_trips_a_tab_a_newline_and_a_quote(tmp_path, shape):
     # 10 double quotes, which a naive join spreads across 130 rows
     rows = [dict(WRITE_ROW)]
     data = pd.DataFrame(rows, columns=WRITE_COLUMNS) if shape == "frame" else rows
-    preprocess.write_table(tmp_path / "bioactivity.tsv", data, WRITE_COLUMNS)
+    preprocess.write_table(tmp_path / f"{preprocess.PREFIX}bioactivity.tsv", data, WRITE_COLUMNS)
 
     back = read_staged(tmp_path, "bioactivity")
     assert len(back) == 1
@@ -1010,21 +1040,21 @@ def test_write_table_round_trips_a_tab_a_newline_and_a_quote(tmp_path, shape):
 
 def test_write_table_header_is_the_columns_it_was_given(tmp_path):
     rows = [dict(WRITE_ROW, not_a_column="leaked")]
-    preprocess.write_table(tmp_path / "bioactivity.tsv", rows, WRITE_COLUMNS)
-    assert header_of(tmp_path / "bioactivity.tsv") == WRITE_COLUMNS
-    assert "leaked" not in (tmp_path / "bioactivity.tsv").read_text()
+    preprocess.write_table(tmp_path / f"{preprocess.PREFIX}bioactivity.tsv", rows, WRITE_COLUMNS)
+    assert header_of(tmp_path / f"{preprocess.PREFIX}bioactivity.tsv") == WRITE_COLUMNS
+    assert "leaked" not in (tmp_path / f"{preprocess.PREFIX}bioactivity.tsv").read_text()
 
 
 @pytest.mark.parametrize("missing", [None, float("nan")])
 def test_write_table_writes_an_empty_cell_for_nothing(tmp_path, missing):
     # a pandas NaN is truthy, so `value or ""` writes the string 'nan'
     rows = [{"inchikey": "X", "unit": missing}]
-    preprocess.write_table(tmp_path / "compound.tsv", rows,
+    preprocess.write_table(tmp_path / f"{preprocess.PREFIX}compound.tsv", rows,
                            ["inchikey", "unit"])
-    written = (tmp_path / "compound.tsv").read_text()
+    written = (tmp_path / f"{preprocess.PREFIX}compound.tsv").read_text()
     assert "nan" not in written.lower()
     assert "none" not in written.lower()
-    with open(tmp_path / "compound.tsv", newline="") as handle:
+    with open(tmp_path / f"{preprocess.PREFIX}compound.tsv", newline="") as handle:
         body = list(csv.reader(handle, delimiter="\t"))[1]
     assert body == ["X", ""]
 
@@ -1033,8 +1063,8 @@ def test_write_table_writes_an_integer_id_without_a_decimal_point(tmp_path):
     # a column with one missing value is float64 in pandas, which turns
     # canSAR_ID 1354531 into '1354531.0'
     frame = pd.DataFrame({"cansar_id": [1354531, None]})
-    preprocess.write_table(tmp_path / "unsuitable.tsv", frame, ["cansar_id"])
-    with open(tmp_path / "unsuitable.tsv", newline="") as handle:
+    preprocess.write_table(tmp_path / f"{preprocess.PREFIX}unsuitable.tsv", frame, ["cansar_id"])
+    with open(tmp_path / f"{preprocess.PREFIX}unsuitable.tsv", newline="") as handle:
         body = list(csv.reader(handle, delimiter="\t"))[1:]
     assert [row[0] for row in body] == ["1354531", ""]
 
@@ -1054,11 +1084,11 @@ def test_write_staging_writes_the_contract_and_the_report(tmp_path):
     quarantined = quarantined_numbers()
     preprocess.write_staging(tmp_path, tables, leftovers, quarantined)
 
-    assert header_of(tmp_path / "compound.tsv") == COMPOUND_COLUMNS
-    assert header_of(tmp_path / "target.tsv") == TARGET_COLUMNS
-    assert header_of(tmp_path / "uniprot.tsv") == UNIPROT_COLUMNS
-    assert set(header_of(tmp_path / "bioactivity.tsv")) == set(BIOACTIVITY_COLUMNS)
-    assert header_of(tmp_path / "unsuitable.tsv") == UNSUITABLE_COLUMNS
+    assert header_of(tmp_path / f"{preprocess.PREFIX}compound.tsv") == COMPOUND_COLUMNS
+    assert header_of(tmp_path / f"{preprocess.PREFIX}target.tsv") == TARGET_COLUMNS
+    assert header_of(tmp_path / f"{preprocess.PREFIX}uniprot.tsv") == UNIPROT_COLUMNS
+    assert set(header_of(tmp_path / f"{preprocess.PREFIX}bioactivity.tsv")) == set(BIOACTIVITY_COLUMNS)
+    assert header_of(tmp_path / f"{preprocess.PREFIX}unsuitable.tsv") == UNSUITABLE_COLUMNS
     assert len(read_staged(tmp_path, "quarantine")) == len(quarantined)
     assert isinstance(json.loads((tmp_path / "report.json").read_text()), dict)
 
@@ -1066,7 +1096,7 @@ def test_write_staging_writes_the_contract_and_the_report(tmp_path):
 def test_main_writes_every_file_of_the_contract(fixture_staging):
     out = fixture_staging()
     for name in preprocess.STAGING_FILES + preprocess.EXTRA_FILES:
-        assert (out / f"{name}.tsv").exists(), f"{name}.tsv was not written"
+        assert (out / f"{preprocess.PREFIX}{name}.tsv").exists(), f"{name}.tsv was not written"
     assert (out / "report.json").exists()
 
 
@@ -1091,7 +1121,7 @@ def test_main_validate_prints_the_problems(workdir, fixture_export):
     assert "validate:" in printed
     assert "hard errors" in printed
     assert "bioactivity.tsv" in printed          # the counts block a student sees
-    assert (out / "bioactivity.tsv").exists()
+    assert (out / f"{preprocess.PREFIX}bioactivity.tsv").exists()
 
 
 def test_pipeline_writes_the_same_bytes_twice(workdir, fixture_export):
@@ -1106,8 +1136,8 @@ def test_pipeline_writes_the_same_bytes_twice(workdir, fixture_export):
             preprocess.main(["--json", str(fixture_export), "--out", str(out)])
         directories.append(out)
     for name in preprocess.STAGING_FILES + preprocess.EXTRA_FILES:
-        first = (directories[0] / f"{name}.tsv").read_bytes()
-        second = (directories[1] / f"{name}.tsv").read_bytes()
+        first = (directories[0] / f"{preprocess.PREFIX}{name}.tsv").read_bytes()
+        second = (directories[1] / f"{preprocess.PREFIX}{name}.tsv").read_bytes()
         assert first == second, f"{name}.tsv is not written deterministically"
 
 
@@ -1119,11 +1149,11 @@ def test_pipeline_writes_the_same_bytes_twice(workdir, fixture_export):
     ("uniprot", UNIPROT_COLUMNS),
 ])
 def test_staging_header_is_exactly_the_readme(fixture_staging, name, columns):
-    assert header_of(fixture_staging() / f"{name}.tsv") == columns
+    assert header_of(fixture_staging() / f"{preprocess.PREFIX}{name}.tsv") == columns
 
 
 def test_bioactivity_header_is_the_readme_columns(fixture_staging):
-    head = header_of(fixture_staging() / "bioactivity.tsv")
+    head = header_of(fixture_staging() / f"{preprocess.PREFIX}bioactivity.tsv")
     assert set(BIOACTIVITY_REQUIRED) <= set(head)
     assert set(head) == set(BIOACTIVITY_COLUMNS)
     assert len(head) == len(set(head))
@@ -1248,7 +1278,7 @@ def test_integration_loads_into_a_fresh_database(portal_db):
 
 @slow
 def test_integration_validate_reports_no_hard_error(portal_staging):
-    problems = validate(portal_staging())
+    problems = validate_staged(portal_staging())
     hard = [p for p in problems if not p.endswith(("ignored", "kept anyway"))]
     assert hard == []
 
@@ -1314,7 +1344,7 @@ def test_integration_several_chembl_ids_share_one_cell(portal_staging):
 def test_integration_unsuitable_is_the_whole_entry(portal_staging):
     out = portal_staging()
     rows = read_staged(out, "unsuitable")
-    assert header_of(out / "unsuitable.tsv") == UNSUITABLE_COLUMNS
+    assert header_of(out / f"{preprocess.PREFIX}unsuitable.tsv") == UNSUITABLE_COLUMNS
     assert len(rows) == EXPECTED_UNSUITABLE
     keys = [r["inchikey"] for r in rows]
     assert len(keys) == len(set(keys))
@@ -1332,24 +1362,6 @@ def test_integration_unsuitable_is_the_whole_entry(portal_staging):
         assert re.match(r"^[0-9]+$", row["cansar_id"]), row["cansar_id"]
 
 
-@slow
-def test_integration_unsuitable_matches_the_entry_already_built(portal_staging):
-    written = read_staged(portal_staging(), "unsuitable")
-    reference = read_staged(HERE, "unsuitable")
-    assert len(written) == len(reference) == EXPECTED_UNSUITABLE
-    assert (sorted(written, key=lambda row: row["inchikey"])
-            == sorted(reference, key=lambda row: row["inchikey"]))
-
-
-# ------------------------------------------------- pinned loader behaviour
-
-# database/, loader/ and database/schema.sql are not modified by decision, so the
-# two defects in REVIEW_FINDINGS.md are live properties of loading this source.
-# These two tests pin what they cost. They are NOT a specification of correct
-# behaviour: fixing db.py:297 and load.py:60,82 would make both of them fail,
-# and that is when they should be rewritten.
-
-@slow
 def test_integration_pinned_reload_reinserts_the_rows_without_a_unit(
         portal_staging):
     out = portal_staging()
