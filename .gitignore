@@ -5,3 +5,5 @@ staging/*
 !staging/_template/
 build/
 dist/
+data/
+files/
