@@ -63,6 +63,7 @@ def generate_tsvs():
     compound_df['name'] = df['Virtual Compound Preferred Name']
     
     compound_df = compound_df.drop_duplicates(subset=['inchikey'])
+    compound_df = compound_df.dropna(subset=['inchikey'])
     compound_df = compound_df.dropna(subset=['inchikey', 'smiles'], how='all')
     compound_df.to_csv("compound.tsv", sep='\t', index=False)
     print("Successfully generated compound.tsv")
@@ -121,6 +122,7 @@ def generate_tsvs():
     bioactivity_df['value'] = pd.to_numeric(bioactivity_df['value'], errors='coerce')
     bioactivity_df = normalize_negative_control_values(bioactivity_df)
     bioactivity_df = bioactivity_df.dropna(subset=['value'])
+    bioactivity_df = bioactivity_df.dropna(subset=['inchikey'])
     
     # Save to TSV
     bioactivity_df.to_csv("bioactivity.tsv", sep='\t', index=False)

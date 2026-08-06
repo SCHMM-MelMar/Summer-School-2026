@@ -626,7 +626,6 @@ FSELUFUYNUNZKD-UHFFFAOYSA-N	CDK12	inhibitor		nM	1	uM	EUbOPEN			biochemical	98.0	
 FSELUFUYNUNZKD-UHFFFAOYSA-N	CDK13	inhibitor		nM	1	uM	EUbOPEN			biochemical	4.9	Kd	=	Competition- binding assay (DiscoverX)	https://pubmed.ncbi.nlm.nih.gov/31668947/
 KPABJHHKKJIDGX-JOCHJYFZSA-N	CDK7	Covalent inhibitor		nM	1	uM	EUbOPEN			biochemical	9.7	IC50	=	Adapta Eu kinase assay (for CDK7/CycH/MNAT1 using ATP = Km)	https://pubmed.ncbi.nlm.nih.gov/30905681/
 ATKHYZXUMVNCIO-UHFFFAOYSA-N	PRKDC	Inhibitor		nM	1	uM	EUbOPEN			biochemical	81.0	IC50	=	TR-FRET (using 2 mM ATP)	https://pubmed.ncbi.nlm.nih.gov/34428039/
-	SYK	Inhibitor		nM	1	uM	EUbOPEN			biochemical	0.8	IC50	=	Kinase-Glo ATP (15 µM ATP)	https://pubmed.ncbi.nlm.nih.gov/27048659/
 QTCZUCSALXBZQR-UHFFFAOYSA-N	OLR1	Inhibitor		nM	10	uM	EUbOPEN			biochemical	4300.0	Kd	=	SPR measurement	https://pubmed.ncbi.nlm.nih.gov/36703453/
 DZCCAQZCZGYKMP-UHFFFAOYSA-N	SOS1	Negative control for BI-3406		nM	1	uM	EUbOPEN			biochemical	10000.0	IC50	>	Enzymatic assay (interaction of SOS1 with GDP-loaded KRAS)	https://www.opnme.com/molecules/sos1-kras-inhibitor-bi-3406
 UVVQLQQNGHYTOL-JIVXZRRKSA-N	PTK2	Protac		nM	100	uM	EUbOPEN			biochemical	20.0	IC50	=	Z´-Light assay (Thermo Fisher SelectScreen Kinase Profiling Services, conc. ATP = Km)	https://pubmed.ncbi.nlm.nih.gov/30739444/
@@ -1272,7 +1271,6 @@ KZSKGLFYQAYZCO-UHFFFAOYSA-N	NR1H4	Agonist		nM	1	uM	EUbOPEN			cell	41.0	EC50		cel
 VYLOOGHLKSNNEK-PIIMJCKOSA-N	NR1H4	Agonist		nM	1	uM	EUbOPEN			cell	0.26	EC50		Reporter gene assay (HEK293T cells were cotransfected with pGL3-hBSEP-luc reporter plasmid and hFXR expression plasmid)	https://doi.org/10.1021/acs.jmedchem.7b00907
 BIHPJIJLDNUDGH-UHFFFAOYSA-N	RORC	inverse agonist		nM	1	uM	EUbOPEN			cell	4.0	IC50	=	cell-based	https://doi.org/10.1021/acs.jmedchem.8b00392
 BIHPJIJLDNUDGH-UHFFFAOYSA-N	NR1F3	Inverse Agonist		nM	1	uM	EUbOPEN			cell	4.1	IC50		Gal4 reporter gene assay (Neuro2A cells were cotransfected with 5xGAL4UAS-Luc reporter plasmid and pM-Gal4-ROR?2-LBD)	https://doi.org/10.1021/acs.jmedchem.8b00392
-	NR1F3	Agonist		nM	1	uM	EUbOPEN			cell	21.0	EC50		Gal4 hybrid reporter gene assay (HEK293T cells were cotransfected with pFR-Luc reporter, pRL-SV40 control reporter and pFA-CMV-hROR?-LBD expression plasmid)	
 GULSIMHVQYBADX-UHFFFAOYSA-N	RORC	Agonist		nM	1	uM	EUbOPEN			cell	21.0	EC50	=	cell-based	https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2016201225
 RPVDFHPBGBMWID-UHFFFAOYSA-N	NR1H4	Agonist		nM	1	uM	EUbOPEN			cell	193.0	EC50		Reporter gene assay (HEK293 cells were cotransfected with a 2XIR-1-luciferase reporter plasmid and human FXR expression plasmid)	https://doi.org/10.1021/acs.jmedchem.5b01161
 KQSPAAPFKIEUGH-UHFFFAOYSA-N	NR1H4	Antagonist		nM	1	uM	EUbOPEN			cell	581.0	IC50		Gal4 hybrid reporter gene assay (HEK293T cells were cotransfected with pFR-Luc reporter, pRL-SV40 control reporter and pFA-CMV-hFXR-LBD expression plasmid)	
