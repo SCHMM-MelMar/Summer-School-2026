@@ -25,6 +25,25 @@ has been changed** — that is a decision, not an omission, see below.
 | **the keyless 34** | resolved externally. 10 of 34 resolved through PubChem, all 10 round-tripping through RDKit and none colliding with an existing key. Written with the lookup recorded, so a resolved structure is never mistakable for a portal one |
 | **the unsuitables** | their own entry, `unsuitable.tsv`, keyed on `inchikey` so it references `compound` the way `chembl` does. 260 rows, 14 columns |
 
+### How the examples see it
+
+Every call in `examples/explore_db.ipynb` and in this README works on the loaded
+portal data: `db.counts()`, `db.table(...)`, `target_flat`, `db.find`,
+`db.compound_key` by name, ChEMBL id and InChIKey, `db.bioactivities` by compound
+and by HGNC symbol, `db.targets_for`, `db.sources`, and `source_url`, which
+resolves for all 3591 rows.
+
+Two places where portal data is shaped differently from the template, neither a
+defect:
+
+- `explore_db.ipynb` groups by `bioactivity_type`, and pandas drops NaN group
+  keys, so **1840 of 3591 rows vanish from that summary**. The portal's in-vitro
+  tier carries no endpoint at all (D6), where the template always has one. Pass
+  `dropna=False` to see them.
+- `db.targets_for("P09874")` returns one target here, not the two the README
+  shows. Every portal target entry is a single accession, so this source
+  contributes no complex or family — the load report says `complexes: 0`.
+
 ### unsuitable.tsv
 
 ```
@@ -231,7 +250,7 @@ real.
 
 | where | what | cost on this data | fix |
 | ----- | ---- | ----------------- | --- |
-| `database/probedb/db.py:297` | `unit=unit,` is missing the `or None` that every neighbouring column has, so a blank unit is stored as `''` while `loader/load.py` looks for `None` | **156 rows re-inserted on every reload** — the 124 value-less rows plus the 32 that have a value but no unit | `unit=unit or None` |
+| `database/probedb/db.py:297` | `unit=unit,` is missing the `or None` that every neighbouring column has, so a blank unit is stored as `''` while `loader/load.py` looks for `None` | 155 of the 3626 written rows have no unit; 149 of them survive the loader, and **all 149 are re-inserted on every reload** | `unit=unit or None` |
 | `loader/load.py:60,82` | the duplicate identity is `(inchikey, target_id, source_id, bioactivity_type, relation, value, unit)` — `assay_description`, `assay_type` and `cell_line` are not in it, so an ITC and a TR-FRET number that agree, or a Dmax in two cell lines, collapse | **35 rows dropped, only 6 of them genuine repeats** | add `assay_description` and `cell_line` to the identity |
 
 The template has no unitless rows and no colliding assays, which is why neither
@@ -258,8 +277,51 @@ PARP1/PARP2/TNKS/TNKS2), which is what `target.type = 'family'` exists for (D14)
 | `compound.tsv` | 1223 — 1213 from the portal plus the 10 resolved externally |
 | `target.tsv` | 644 |
 | `uniprot.tsv` | 644 |
-| `bioactivity.tsv` | 3649 — 23 of them quarantined and held back, the rest loadable |
+| `bioactivity.tsv` | 3626 — 3649 parsed rows less the 23 held for curation |
+| `quarantine.tsv` | 23 |
 | `unsuitable.tsv` | 260 |
+| `compound_annotation.tsv` | 11428 |
+| `target_annotation.tsv` | 1475 |
+| `in_vivo.tsv` | 1450 — 1265 records, expanded one row per dose |
+| `reference.tsv` | 1792 |
+| `skipped_compound.tsv` | 24 |
+
+Only the first three plus `bioactivity.tsv` are the staging contract; the rest sit
+beside them because the schema has nowhere to put them.
+
+## Running it
+
+```bash
+python chemicalprobes.org/preprocess.py \
+    --json chemicalprobes.org/ChemicalProbesPortal-6_8_2026.json \
+    --out  staging/chemicalprobes.org \
+    --validate --db probe.db
+```
+
+`--validate` runs `loader.validate` on the result, `--db` builds a database from
+it through `loader/`, and `--resolve` re-queries PubChem for the probes with no
+structure and rewrites `resolved_structures.tsv`. Without `--resolve` the run is
+offline and deterministic: two runs produce byte-identical files.
+
+Writing to `staging/chemicalprobes.org` means `python examples/populate_db.py`
+picks it up unchanged, which is the check that the output really is a staging
+directory and not just shaped like one.
+
+Loading it gives:
+
+```
+             table  rows
+          compound  1223
+            chembl   678
+           uniprot   644
+            target   644
+    target_uniprot   644
+bioactivity_source   951
+ bioactivity_group  1333
+       bioactivity  3591
+```
+
+3591, not 3626, because the loader drops 35 rows as duplicates — see below.
 
 Of those, **35 are silently dropped by the loader as it stands**, only 6 of them
 genuine repeats — D13 was declined, so that stands.
