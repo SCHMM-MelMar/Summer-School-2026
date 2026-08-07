@@ -209,6 +209,13 @@ class ProbeDB:
             )
         return uniprot_id
 
+    def set_superfamily(self, uniprot_id, superfamily):
+        uniprot_id = uniprot_id.strip().upper()
+        self.conn.execute(
+            "UPDATE uniprot SET superfamily = ? WHERE uniprot_id = ?",
+            (superfamily or None, uniprot_id),
+        )
+
     def add_target(self, type, name=None, uniprots=()):
         uniprots = [u if isinstance(u, (list, tuple)) else (u,) for u in uniprots]
         accessions = [u[0].strip().upper() for u in uniprots if u[0]]

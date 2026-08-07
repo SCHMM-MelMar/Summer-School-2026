@@ -13,11 +13,14 @@ CREATE TABLE chembl (
 );
 
 
+-- superfamily is UniProt's own family/superfamily classification text, e.g.
+-- "ABC transporter superfamily, ABCB family". Not every entry has one.
 CREATE TABLE uniprot (
     uniprot_id    VARCHAR(20) PRIMARY KEY,
     entrez_gene   VARCHAR(50),
     hgnc          VARCHAR(50),
-    species       VARCHAR(100)
+    species       VARCHAR(100),
+    superfamily   VARCHAR(255)
 );
 
 
@@ -111,7 +114,7 @@ CREATE INDEX idx_chembl_inchikey       ON chembl (inchikey);
 -- LEFT so a target with no accession yet still shows up.
 CREATE VIEW target_flat AS
 SELECT t.target_id, t.type, t.name,
-       tu.uniprot_id, u.hgnc, u.species, u.entrez_gene
+       tu.uniprot_id, u.hgnc, u.species, u.entrez_gene, u.superfamily
   FROM target t
   LEFT JOIN target_uniprot tu ON tu.target_id = t.target_id
   LEFT JOIN uniprot u ON u.uniprot_id = tu.uniprot_id;

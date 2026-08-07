@@ -3,7 +3,7 @@ from pathlib import Path
 from loguru import logger
 
 from probedb import ProbeDB
-from loader import load_all
+from loader import load_all, load_families
 
 STAGING = Path(__file__).resolve().parent.parent / "staging"
 
@@ -23,5 +23,8 @@ for report in reports:
         k: report[k] for k in ("compounds", "targets", "complexes", "bioactivities")
     }
     logger.info(f"{report['directory']}  {counts}")
+
+updated = load_families(db)
+logger.info(f"uniprot.superfamily backfilled for {updated} accessions")
 
 logger.info("\n" + db.counts().to_string(index=False))
