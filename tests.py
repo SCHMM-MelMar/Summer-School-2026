@@ -120,6 +120,27 @@ assert compounds.set_index("inchikey").loc[JQ1, "sets"] == "template"
 # the other direction, from a compound to what claims it
 assert db.compound_sets("BI-2536")["name"].tolist() == ["template"]
 
+# the UniProt classification is a property of one protein, and it is stored as
+# the whole hierarchy, so either level answers by name
+db.set_superfamily("P53350", "Protein kinase superfamily, Ser/Thr protein kinase family")
+assert db.targets(family="Ser/Thr protein kinase family").target_id.tolist() == [1]
+assert db.targets(family="Protein kinase superfamily").target_id.tolist() == [1]
+assert len(db.targets(family="Ras family")) == 0
+assert db.families()["family"].tolist() == [
+    "Protein kinase superfamily",
+    "Ser/Thr protein kinase family",
+]
+# on whole words, so asking for Ras does not find transferase
+assert len(db.families(like="kinase")) == 2
+assert len(db.families(like="Ras")) == 0
+# measured against, not active against: Olaparib is in because the template
+# counter-screens it on PLK1 at Kd > 30 uM, which is a real answer to
+# "what is available", just not a hit
+assert sorted(db.compounds(family="Protein kinase superfamily").name) == [
+    "BI-2536",
+    "Olaparib",
+]
+
 # target and uniprot are two tables with no shared column, targets() joins them
 flat = db.targets()
 assert set(flat["target_id"]) == set(db.table("target")["target_id"])

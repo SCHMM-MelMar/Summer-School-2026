@@ -44,11 +44,19 @@ CREATE TABLE compound_set_member (
 );
 
 
+-- superfamily is UniProt's own classification of the protein, read from
+-- reference/uniprot_protein_families.tsv rather than from any one source, so
+-- every source agrees on it. it is the whole string UniProt gives, outermost
+-- group first: "Small GTPase superfamily, Ras family". not every entry has one.
+-- this is a property of one protein, not of a target: a complex has as many
+-- classifications as it has members, and a target of type 'family' is our own
+-- curated grouping, which is a different thing entirely.
 CREATE TABLE uniprot (
     uniprot_id    VARCHAR(20) PRIMARY KEY,
     entrez_gene   VARCHAR(50),
     hgnc          VARCHAR(50),
-    species       VARCHAR(100)
+    species       VARCHAR(100),
+    superfamily   VARCHAR(255)
 );
 
 
@@ -175,7 +183,7 @@ SELECT c.inchikey, c.name, c.smiles,
 -- LEFT so a target with no accession yet still shows up.
 CREATE VIEW target_flat AS
 SELECT t.target_id, t.type, t.name,
-       tu.uniprot_id, u.hgnc, u.species, u.entrez_gene
+       tu.uniprot_id, u.hgnc, u.species, u.entrez_gene, u.superfamily
   FROM target t
   LEFT JOIN target_uniprot tu ON tu.target_id = t.target_id
   LEFT JOIN uniprot u ON u.uniprot_id = tu.uniprot_id;

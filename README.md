@@ -7,6 +7,7 @@ on, and the measurements linking the two.
 database/schema.sql       the DDL, the single source of truth
 database/probedb/         connect, insert, query
 loader/                   read staging files, write them into the database
+reference/                lookups that are the same for every source
 staging/_template/        worked example of what a data source hands over
 examples/                 populate_db.py, qc_db.py, explore_db.ipynb
 tests.py
@@ -306,6 +307,61 @@ db.read("""
 If you want one row per membership instead, to merge a frame of your own onto,
 that is the `compound_flat` view.
 
+### Protein families
+
+`uniprot.superfamily` is UniProt's own classification of a protein, filled in
+from `reference/uniprot_protein_families.tsv` rather than from any one source,
+so every source agrees on it. It is the whole string UniProt gives, outermost
+group first:
+
+```
+P01116  KRAS   Small GTPase superfamily, Ras family
+P53350  PLK1   Protein kinase superfamily, Ser/Thr protein kinase family, CDC5/Polo subfamily
+```
+
+`db.families()` splits that into levels and counts what sits under each, so you
+can ask for either the superfamily or the family by name:
+
+```python
+db.families(like="kinase")
+```
+
+```
+                            family  proteins  targets
+        Protein kinase superfamily       249      474
+         Tyr protein kinase family        58      120
+ AGC Ser/Thr protein kinase family        37       61
+```
+
+Then `family=` on the three query methods:
+
+```python
+db.targets(family="Ras family")             # the targets in it, with all their members
+db.compounds(family="Ras family")           # what has been measured against them
+db.bioactivities(family="Ras family")       # the measurements themselves
+```
+
+Asking for `Protein kinase superfamily` gets everything under it; asking for
+`Tyr protein kinase family` gets only that level.
+
+Two things to know before trusting an answer.
+
+**It is measured against, not active against.** Deciding what counts as active
+needs a threshold and a unit, and the database picks neither, so a counter
+screen at `Kd > 30 uM` comes back too. Filter on `value` and `relation`
+yourself if you want hits.
+
+**A family answer is only as good as the target rows underneath it.** A target
+of type `protein` should have one accession. 258 of them have more, because a
+source filed a PROTAC screen or an ortholog group as a single protein, and each
+of those accessions drags the target into its own family. `qc_db.py` lists the
+worst offenders. Check `db.targets(family=...)` before quoting a number from
+`db.compounds(family=...)`.
+
+Note that this is a property of a *protein*, and separate from a target of type
+`family`, which is our own curated grouping like `PARP 1, 2 and 3`. A complex
+has as many classifications as it has members.
+
 ### Everything measured for one compound
 
 ```python
@@ -500,7 +556,7 @@ follows.
 | `chembl`             | ChEMBL id of a compound, keyed on the id                     |
 | `compound_set`       | a collection, one per staging directory                      |
 | `compound_set_member`| which compounds are in it                                    |
-| `uniprot`            | accession, HGNC symbol, species                              |
+| `uniprot`            | accession, HGNC symbol, species, UniProt family classification |
 | `target`             | one row per target, with a type                              |
 | `target_uniprot`     | which accessions make up a target                            |
 | `bioactivity_source` | where the numbers came from, and how to resolve an xref      |

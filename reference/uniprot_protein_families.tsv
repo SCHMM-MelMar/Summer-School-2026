@@ -1,0 +1,2032 @@
+uniprot_id	gene_names	protein_family	hgnc_id
+A5LHX3	PSMB11	Peptidase T1B family	HGNC:31963
+A5X5Y0	HTR3E	Ligand-gated ion channel (TC 1.A.9) family, 5-hydroxytryptamine receptor (TC 1.A.9.2) subfamily, HTR3E sub-subfamily	HGNC:24005
+A8K7I4	CLCA1 CACC1	CLCR family	HGNC:2015
+B2RXH2	KDM4E KDM4DL KDM5E	JHDM3 histone demethylase family	HGNC:37098
+O00141	SGK1 SGK	Protein kinase superfamily, AGC Ser/Thr protein kinase family	HGNC:10810
+O00142	TK2	DCK/DGK family	HGNC:11831
+O00180	KCNK1 HOHO1 KCNO1 TWIK1	Two pore domain potassium channel (TC 1.A.1.8) family	HGNC:6272
+O00206	TLR4	Toll-like receptor family	HGNC:11850
+O00222	GRM8 GPRC1H MGLUR8	G protein-coupled receptor 3 family	HGNC:4600
+O00231	PSMD11	Proteasome subunit S9 family	HGNC:9556
+O00238	BMPR1B	Protein kinase superfamily, TKL Ser/Thr protein kinase family, TGFB receptor subfamily	HGNC:1077
+O00244	ATOX1 HAH1	ATX1 family	HGNC:798
+O00255	MEN1 SCG2		HGNC:7010
+O00257	CBX4		HGNC:1554
+O00305	CACNB4 CACNLB4	Calcium channel beta subunit family	HGNC:1404
+O00311	CDC7 CDC7L1	Protein kinase superfamily, Ser/Thr protein kinase family, CDC7 subfamily	HGNC:1745
+O00329	PIK3CD	PI3/PI4-kinase family	HGNC:8977
+O00408	PDE2A	Cyclic nucleotide phosphodiesterase family, PDE2 subfamily	HGNC:8777
+O00411	POLRMT	Phage and mitochondrial RNA polymerase family	HGNC:9200
+O00482	NR5A2 B1F CPF FTF	Nuclear hormone receptor family, NR5 subfamily	HGNC:7984
+O00487	PSMD14 POH1	Peptidase M67A family, PSMD14 subfamily	HGNC:16889
+O00519	FAAH FAAH1	Amidase family	HGNC:3553
+O00555	CACNA1A CACH4 CACN3 CACNL1A4	Calcium channel alpha-1 subunit (TC 1.A.1.11) family, CACNA1A subfamily	HGNC:1388
+O00571	DDX3X DBX DDX3	DEAD box helicase family, DDX3/DED1 subfamily	HGNC:2745
+O00574	CXCR6 BONZO STRL33 TYMSTR	G protein-coupled receptor 1 family	HGNC:16647
+O00591	GABRP	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRP sub-subfamily	HGNC:4089
+O00625	PIR	Pirin family	HGNC:30048
+O00748	CES2 ICE	Type-B carboxylesterase/lipase family	HGNC:1864
+O00750	PIK3C2B	PI3/PI4-kinase family	HGNC:8972
+O00754	MAN2B1 LAMAN MANB	Glycosyl hydrolase 38 family	HGNC:6826
+O00757	FBP2	FBPase class 1 family	HGNC:3607
+O00763	ACACB ACC2 ACCB		HGNC:85
+O00767	SCD FADS5 SCD1 SCDOS	Fatty acid desaturase type 1 family	HGNC:10571
+O14497	ARID1A BAF250 BAF250A C1orf4 OSA1 SMARCF1		HGNC:11110
+O14521	SDHD SDH4	CybS family	HGNC:10683
+O14561	NDUFAB1	Acyl carrier protein (ACP) family	HGNC:7694
+O14607	UTY KDM6C	UTX family	HGNC:12638
+O14626	GPR171 H963	G protein-coupled receptor 1 family	HGNC:30057
+O14638	ENPP3 PDNP3	Nucleotide pyrophosphatase/phosphodiesterase family	HGNC:3358
+O14649	KCNK3 TASK TASK1	Two pore domain potassium channel (TC 1.A.1.8) family	HGNC:6278
+O14672	ADAM10 KUZ MADM		HGNC:188
+O14684	PTGES MGST1L1 MPGES1 PGES PIG12	MAPEG family	HGNC:9599
+O14730	RIOK3 SUDD	Protein kinase superfamily, RIO-type Ser/Thr kinase family	HGNC:11451
+O14733	MAP2K7 JNKK2 MEK7 MKK7 PRKMK7 SKK4	Protein kinase superfamily, STE Ser/Thr protein kinase family, MAP kinase kinase subfamily	HGNC:6847
+O14744	PRMT5 HRMT1L5 IBP72 JBP1 SKB1	Class I-like SAM-binding methyltransferase superfamily, Protein arginine N-methyltransferase family	HGNC:10894
+O14746	TERT EST2 TCS1 TRT	Reverse transcriptase family, Telomerase subfamily	HGNC:11730
+O14756	HSD17B6 RODH SDR9C6	Short-chain dehydrogenases/reductases (SDR) family	HGNC:23316
+O14757	CHEK1 CHK1	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, NIM1 subfamily	HGNC:1925
+O14764	GABRD	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRD sub-subfamily	HGNC:4084
+O14786	NRP1 NRP VEGF165R	Neuropilin family	HGNC:8004
+O14788	TNFSF11 OPGL RANKL TRANCE	Tumor necrosis factor family	HGNC:11926
+O14818	PSMA7 HSPC	Peptidase T1A family	HGNC:9536
+O14842	FFAR1 GPR40	G protein-coupled receptor 1 family	HGNC:4498
+O14843	FFAR3 GPR41	G protein-coupled receptor 1 family	HGNC:4499
+O14867	BACH1	BZIP family, CNC subfamily	HGNC:935
+O14920	IKBKB IKKB	Protein kinase superfamily, Ser/Thr protein kinase family, I-kappa-B kinase subfamily	HGNC:5960
+O14929	HAT1 KAT1	HAT1 family	HGNC:4821
+O14939	PLD2	Phospholipase D family	HGNC:9068
+O14965	AURKA AIK AIRK1 ARK1 AURA AYK1 BTAK IAK1 STK15 STK6	Protein kinase superfamily, Ser/Thr protein kinase family, Aurora subfamily	HGNC:11393
+O14976	GAK DNAJC26	Protein kinase superfamily, Ser/Thr protein kinase family	HGNC:4113
+O14980	XPO1 CRM1	Exportin family	HGNC:12825
+O14983	ATP2A1	Cation transport ATPase (P-type) (TC 3.A.3) family, Type IIA subfamily	HGNC:811
+O15054	KDM6B JMJD3 KIAA0346	UTX family	HGNC:29012
+O15111	CHUK IKKA TCF16	Protein kinase superfamily, Ser/Thr protein kinase family, I-kappa-B kinase subfamily	HGNC:1974
+O15118	NPC1	Patched family	HGNC:7897
+O15120	AGPAT2	1-acyl-sn-glycerol-3-phosphate acyltransferase family	HGNC:325
+O15121	DEGS1 DES1 MLD MIG15	Fatty acid desaturase type 1 family, DEGS subfamily	HGNC:13709
+O15146	MUSK	Protein kinase superfamily, Tyr protein kinase family	HGNC:7525
+O15164	TRIM24 RNF82 TIF1 TIF1A		HGNC:11812
+O15169	AXIN1 AXIN		HGNC:903
+O15229	KMO	Aromatic-ring hydroxylase family, KMO subfamily	HGNC:6381
+O15244	SLC22A2 OCT2	Major facilitator (TC 2.A.1) superfamily, Organic cation transporter (TC 2.A.1.19) family	HGNC:10966
+O15245	SLC22A1 OCT1	Major facilitator (TC 2.A.1) superfamily, Organic cation transporter (TC 2.A.1.19) family	HGNC:10963
+O15264	MAPK13 PRKM13 SAPK4	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MAP kinase subfamily	HGNC:6875
+O15269	SPTLC1 LCB1	Class-II pyridoxal-phosphate-dependent aminotransferase family	HGNC:11277
+O15270	SPTLC2 KIAA0526 LCB2	Class-II pyridoxal-phosphate-dependent aminotransferase family	HGNC:11278
+O15294	OGT	Glycosyltransferase 41 family, O-GlcNAc transferase subfamily	HGNC:8127
+O15296	ALOX15B	Lipoxygenase family	HGNC:434
+O15297	PPM1D WIP1	PP2C family	HGNC:9277
+O15303	GRM6 GPRC1F MGLUR6	G protein-coupled receptor 3 family	HGNC:4598
+O15357	INPPL1 SHIP2	Inositol 1,4,5-trisphosphate 5-phosphatase family	HGNC:6080
+O15379	HDAC3	Histone deacetylase family, HD type 1 subfamily	HGNC:4854
+O15382	BCAT2 BCATM BCT2 ECA40	Class-IV pyridoxal-phosphate-dependent aminotransferase family	HGNC:977
+O15392	BIRC5 API4 IAP4	IAP family	HGNC:593
+O15399	GRIN2D GluN2D NMDAR2D	Glutamate-gated ion channel (TC 1.A.10.1) family, NR2D/GRIN2D subfamily	HGNC:4588
+O15438	ABCC3 CMOAT2 MLP2 MRP3	ABC transporter superfamily, ABCC family, Conjugate transporter (TC 3.A.1.208) subfamily	HGNC:54
+C0HM02	PRKCH		HGNC:9403
+A6NFH5	FABP12	Calycin superfamily, Fatty-acid binding protein (FABP) family	HGNC:34524
+F7VJQ1	PRNP ALTPRP PRIP PRP		HGNC:9449
+B1AH88	TSPO PBRS		HGNC:1158
+O15439	ABCC4 MOATB MRP4	ABC transporter superfamily, ABCC family, Conjugate transporter (TC 3.A.1.208) subfamily	HGNC:55
+O15440	ABCC5 MRP5	ABC transporter superfamily, ABCC family, Conjugate transporter (TC 3.A.1.208) subfamily	HGNC:56
+O15455	TLR3	Toll-like receptor family	HGNC:11849
+O15460	P4HA2 UNQ290/PRO330	P4HA family	HGNC:8547
+O15496	PLA2G10	Phospholipase A2 family	HGNC:9029
+O15527	OGG1 MMH MUTM OGH1	Type-1 OGG1 family	HGNC:8125
+O15528	CYP27B1 CYP1ALPHA CYP27B	Cytochrome P450 family	HGNC:2606
+O15530	PDPK1 PDK1	Protein kinase superfamily, AGC Ser/Thr protein kinase family, PDPK1 subfamily	HGNC:8816
+O15540	FABP7 BLBP FABPB MRG	Calycin superfamily, Fatty-acid binding protein (FABP) family	HGNC:3562
+O15550	KDM6A UTX	UTX family	HGNC:12637
+O15552	FFAR2 FFA2 GPCR43 GPR43	G protein-coupled receptor 1 family	HGNC:4501
+O15554	KCNN4 IK1 IKCA1 KCA4 SK4	Potassium channel KCNN family, KCa3.1/KCNN4 subfamily	HGNC:6293
+O43172	PRPF4 PRP4		HGNC:17349
+O43174	CYP26A1 CYP26 P450RAI1	Cytochrome P450 family	HGNC:2603
+O43175	PHGDH PGDH3	D-isomer specific 2-hydroxyacid dehydrogenase family	HGNC:8923
+O43184	ADAM12 MLTN UNQ346/PRO545		HGNC:190
+O43187	IRAK2	Protein kinase superfamily, TKL Ser/Thr protein kinase family, Pelle subfamily	HGNC:6113
+O43193	MLNR GPR38 MTLR MTLR1	G protein-coupled receptor 1 family	HGNC:4495
+O43240	KLK10 NES1 PRSSL1	Peptidase S1 family, Kallikrein subfamily	HGNC:6358
+O43242	PSMD3	Proteasome subunit S3 family	HGNC:9560
+O43293	DAPK3 ZIPK	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, DAP kinase subfamily	HGNC:2676
+O43306	ADCY6 KIAA0422	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:237
+O43323	DHH	Hedgehog family	HGNC:2865
+O43353	RIPK2 CARDIAK RICK RIP2 UNQ277/PRO314/PRO34092	Protein kinase superfamily, TKL Ser/Thr protein kinase family	HGNC:10020
+O43463	SUV39H1 KMT1A SUV39H	Class V-like SAM-binding methyltransferase superfamily, Histone-lysine methyltransferase family, Suvar3-9 subfamily	HGNC:11479
+O43464	HTRA2 OMI PRSS25	Peptidase S1C family	HGNC:14348
+O43474	KLF4 EZF GKLF	Krueppel C2H2-type zinc-finger protein family	HGNC:6348
+O43497	CACNA1G KIAA1123	Calcium channel alpha-1 subunit (TC 1.A.1.11) family, CACNA1G subfamily	HGNC:1394
+O43525	KCNQ3	Potassium channel family, KQT (TC 1.A.1.15) subfamily, Kv7.3/KCNQ3 sub-subfamily	HGNC:6297
+O43526	KCNQ2	Potassium channel family, KQT (TC 1.A.1.15) subfamily, Kv7.2/KCNQ2 sub-subfamily	HGNC:6296
+O43570	CA12	Alpha-carbonic anhydrase family	HGNC:1371
+O43603	GALR2 GALNR2	G protein-coupled receptor 1 family	HGNC:4133
+O43612	HCRT OX PPORX PPOX	Orexin family	HGNC:4847
+O43613	HCRTR1 ORXR1 OX1R OXR1	G protein-coupled receptor 1 family	HGNC:4848
+O43614	HCRTR2 ORXR2 OX2R OXR2	G protein-coupled receptor 1 family	HGNC:4849
+O43639	NCK2 GRB4		HGNC:7665
+O43683	BUB1 BUB1L	Protein kinase superfamily, Ser/Thr protein kinase family, BUB1 subfamily	HGNC:1148
+O43741	PRKAB2	5'-AMP-activated protein kinase beta subunit family	HGNC:9379
+O43781	DYRK3	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MNB/DYRK subfamily	HGNC:3094
+O43868	SLC28A2 CNT2	Concentrative nucleoside transporter (CNT) (TC 2.A.41) family	HGNC:11002
+O43895	XPNPEP2	Peptidase M24B family	HGNC:12823
+O43924	PDE6D PDED	PDE6D/unc-119 family	HGNC:8788
+O43927	CXCL13 BCA1 BLC SCYB13	Intercrine alpha (chemokine CxC) family	HGNC:10639
+O60218	AKR1B10 AKR1B11	Aldo/keto reductase family	HGNC:382
+O60259	KLK8 NRPN PRSS19 TADG14 UNQ283/PRO322	Peptidase S1 family, Kallikrein subfamily	HGNC:6369
+O60266	ADCY3 KIAA0511	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:234
+O60285	NUAK1 ARK5 KIAA0537 OMPHK1	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, SNF1 subfamily	HGNC:14311
+O60331	PIP5K1C KIAA0589		HGNC:8996
+O60341	KDM1A AOF2 BHC110 KDM1 KIAA0601 LSD1	Flavin monoamine oxidase family	HGNC:29079
+O60359	CACNG3	PMP-22/EMP/MP20 family, CACNG subfamily	HGNC:1407
+O60391	GRIN3B	Glutamate-gated ion channel (TC 1.A.10.1) family, NR3B/GRIN3B subfamily	HGNC:16768
+O60427	FADS1 FADSD5	Fatty acid desaturase type 1 family	HGNC:3574
+O60502	OGA HEXC KIAA0679 MEA5 MGEA5	Glycosyl hydrolase 84 family	HGNC:7056
+O60503	ADCY9 KIAA0520	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:240
+O60563	CCNT1	Cyclin family, Cyclin C subfamily	HGNC:1599
+O60603	TLR2 TIL4	Toll-like receptor family	HGNC:11848
+O60658	PDE8A	Cyclic nucleotide phosphodiesterase family, PDE8 subfamily	HGNC:8793
+O60673	REV3L POLZ REV3	DNA polymerase type-B family	HGNC:9968
+O60674	JAK2	Protein kinase superfamily, Tyr protein kinase family, JAK subfamily	HGNC:6192
+O60678	PRMT3 HRMT1L3	Class I-like SAM-binding methyltransferase superfamily, Protein arginine N-methyltransferase family	HGNC:30163
+O60706	ABCC9 SUR2	ABC transporter superfamily, ABCC family, Conjugate transporter (TC 3.A.1.208) subfamily	HGNC:60
+O60725	ICMT PCCMT	Class VI-like SAM-binding methyltransferase superfamily, Isoprenylcysteine carboxyl methyltransferase family	HGNC:5350
+O60733	PLA2G6 PLPLA9		HGNC:9039
+O60741	HCN1 BCNG1	Potassium channel HCN family	HGNC:4845
+O60755	GALR3 GALNR3	G protein-coupled receptor 1 family	HGNC:4134
+O60760	HPGDS GSTS PGDS PTGDS2	GST superfamily, Sigma family	HGNC:17890
+O60840	CACNA1F CACNAF1	Calcium channel alpha-1 subunit (TC 1.A.1.11) family, CACNA1F subfamily	HGNC:1393
+O60882	MMP20	Peptidase M10A family	HGNC:7167
+O60885	BRD4 HUNK1	BET family	HGNC:13575
+O60894	RAMP1	RAMP family	HGNC:9843
+O60906	SMPD2	Neutral sphingomyelinase family	HGNC:11121
+O60911	CTSV CATL2 CTSL2 CTSU UNQ268/PRO305	Peptidase C1 family	HGNC:2538
+O60939	SCN2B UNQ326/PRO386	Sodium channel auxiliary subunit SCN2B (TC 8.A.17) family	HGNC:10589
+O75116	ROCK2 KIAA0619	Protein kinase superfamily, AGC Ser/Thr protein kinase family	HGNC:10252
+O75164	KDM4A JHDM3A JMJD2 JMJD2A KIAA0677	JHDM3 histone demethylase family	HGNC:22978
+O75173	ADAMTS4 KIAA0688 UNQ769/PRO1563		HGNC:220
+O75311	GLRA3	Ligand-gated ion channel (TC 1.A.9) family, Glycine receptor (TC 1.A.9.3) subfamily, GLRA3 sub-subfamily	HGNC:4328
+O75343	GUCY1B2	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:4686
+O75348	ATP6V1G1 ATP6G ATP6G1 ATP6J	V-ATPase G subunit family	HGNC:864
+O75365	PTP4A3 PRL3	Protein-tyrosine phosphatase family	HGNC:9636
+O75385	ULK1 KIAA0722	Protein kinase superfamily, Ser/Thr protein kinase family, APG1/unc-51/ULK1 subfamily	HGNC:12558
+O75387	SLC43A1 LAT3 PB39 POV1	SLC43A transporter (TC 2.A.1.44) family	HGNC:9225
+O75417	POLQ POLH	DNA polymerase type-A family	HGNC:9186
+O75460	ERN1 IRE1	Protein kinase superfamily, Ser/Thr protein kinase family	HGNC:3449
+O75469	NR1I2 PXR	Nuclear hormone receptor family, NR1 subfamily	HGNC:7968
+O75530	EED	WD repeat ESC family	HGNC:3188
+O75531	BANF1 BAF BCRG1	BAF family	HGNC:17397
+O75533	SF3B1 SAP155	SF3B1 family	HGNC:10768
+O75575	CRCP	Eukaryotic RPC9 RNA polymerase subunit family	HGNC:17888
+O75493	CA11 CARP2 UNQ211/PRO237	Alpha-carbonic anhydrase family	HGNC:1370
+O75582	RPS6KA5 MSK1	Protein kinase superfamily, AGC Ser/Thr protein kinase family, S6 kinase subfamily	HGNC:10434
+O75676	RPS6KA4 MSK2	Protein kinase superfamily, AGC Ser/Thr protein kinase family, S6 kinase subfamily	HGNC:10433
+O75751	SLC22A3 EMTH OCT3	Major facilitator (TC 2.A.1) superfamily, Organic cation transporter (TC 2.A.1.19) family	HGNC:10967
+O75762	TRPA1 ANKTM1	Transient receptor (TC 1.A.4) family	HGNC:497
+O75807	PPP1R15A GADD34	PPP1R15 family	HGNC:14375
+O75845	SC5D SC5DL	Sterol desaturase family	HGNC:10547
+O75874	IDH1 PICD	Isocitrate and isopropylmalate dehydrogenases family	HGNC:5382
+O75899	GABBR2 GPR51 GPRC3B	G protein-coupled receptor 3 family, GABA-B receptor subfamily	HGNC:4507
+O75900	MMP23B MMP21 MMP22	Peptidase M10A family	HGNC:7171
+O75907	DGAT1 AGRP1 DGAT	Membrane-bound acyltransferase family, Sterol o-acyltransferase subfamily	HGNC:2843
+O75908	SOAT2 ACACT2 ACAT2	Membrane-bound acyltransferase family, Sterol o-acyltransferase subfamily	HGNC:11178
+O76039	CDKL5 STK9	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, CDC2/CDKX subfamily	HGNC:11411
+O76074	PDE5A PDE5	Cyclic nucleotide phosphodiesterase family	HGNC:8784
+O76083	PDE9A	Cyclic nucleotide phosphodiesterase family, PDE9 subfamily	HGNC:8795
+O94759	TRPM2 EREG1 KNP3 LTRPC2 TRPC7	Transient receptor (TC 1.A.4) family, LTrpC subfamily, TRPM2 sub-subfamily	HGNC:12339
+O94782	USP1	Peptidase C19 family	HGNC:12607
+O94788	ALDH1A2 RALDH2	Aldehyde dehydrogenase family	HGNC:15472
+O94806	PRKD3 EPK2 PRKCN	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, PKD subfamily	HGNC:9408
+O94925	GLS GLS1 KIAA0838	Glutaminase family	HGNC:4331
+O94953	KDM4B JHDM3B JMJD2B KIAA0876	JHDM3 histone demethylase family	HGNC:29136
+O95067	CCNB2	Cyclin family, Cyclin AB subfamily	HGNC:1580
+O95069	KCNK2 TREK TREK1	Two pore domain potassium channel (TC 1.A.1.8) family	HGNC:6277
+O95136	S1PR2 EDG5	G protein-coupled receptor 1 family	HGNC:3169
+O95153	TSPOAP1 BZRAP1 KIAA0612 RBP1 RIMBP1	RIMBP family	HGNC:16831
+O95163	ELP1 IKAP IKBKAP	ELP1/IKA1 family	HGNC:5959
+O95180	CACNA1H	Calcium channel alpha-1 subunit (TC 1.A.1.11) family, CACNA1H subfamily	HGNC:1395
+O95259	KCNH1 EAG EAG1	Potassium channel family, H (Eag) (TC 1.A.1.20) subfamily, Kv10.1/KCNH1 sub-subfamily	HGNC:6250
+O95263	PDE8B PIG22	Cyclic nucleotide phosphodiesterase family, PDE8 subfamily	HGNC:8794
+O95264	HTR3B	Ligand-gated ion channel (TC 1.A.9) family, 5-hydroxytryptamine receptor (TC 1.A.9.2) subfamily, HTR3B sub-subfamily	HGNC:5298
+O95271	TNKS PARP5A PARPL TIN1 TINF1 TNKS1	ARTD/PARP family	HGNC:11941
+O95363	FARS2 FARS1 HSPC320	Class-II aminoacyl-tRNA synthetase family	HGNC:21062
+O95372	LYPLA2 APT2	AB hydrolase superfamily, AB hydrolase 2 family	HGNC:6738
+O95398	RAPGEF3 CGEF1 EPAC EPAC1		HGNC:16629
+O95399	UTS2 UNQ525/PRO1068	Urotensin-2 family	HGNC:12636
+O95470	SGPL1 KIAA1252	Group II decarboxylase family, Sphingosine-1-phosphate lyase subfamily	HGNC:10817
+O95477	ABCA1 ABC1 CERP	ABC transporter superfamily, ABCA family	HGNC:29
+O95503	CBX6		HGNC:1556
+O95551	TDP2 EAP2 TTRAP AD-022	CCR4/nocturin family	HGNC:17768
+O95563	MPC2 BRP44	Mitochondrial pyruvate carrier (MPC) (TC 2.A.105) family	HGNC:24515
+O95622	ADCY5	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:236
+O95696	BRD1 BRL BRPF2		HGNC:1102
+O95749	GGPS1	FPP/GGPP synthase family	HGNC:4249
+O95819	MAP4K4 HGK KIAA0687 NIK	Protein kinase superfamily, STE Ser/Thr protein kinase family, STE20 subfamily	HGNC:6866
+O95822	MLYCD		HGNC:7150
+O95835	LATS1 WARTS	Protein kinase superfamily, AGC Ser/Thr protein kinase family	HGNC:6514
+O95870	ABHD16A BAT5 G5 NG26 PP199	AB hydrolase superfamily, ABHD16 family	HGNC:13921
+O95931	CBX7		HGNC:1557
+O95977	S1PR4 EDG6	G protein-coupled receptor 1 family	HGNC:3170
+O96013	PAK4 KIAA1142	Protein kinase superfamily, STE Ser/Thr protein kinase family, STE20 subfamily	HGNC:16059
+O96017	CHEK2 CDS1 CHK2 RAD53	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, CHK2 subfamily	HGNC:16627
+O96020	CCNE2	Cyclin family, Cyclin E subfamily	HGNC:1590
+P00338	LDHA PIG19	LDH/MDH superfamily, LDH family	HGNC:6535
+P00352	ALDH1A1 ALDC ALDH1 PUMB1	Aldehyde dehydrogenase family	HGNC:402
+P00374	DHFR	Dihydrofolate reductase family	HGNC:2861
+P00439	PAH	Biopterin-dependent aromatic amino acid hydroxylase family	HGNC:8582
+P00441	SOD1	Cu-Zn superoxide dismutase family	HGNC:11179
+P00491	PNP NP	PNP/MTAP phosphorylase family	HGNC:7892
+P00492	HPRT1 HPRT	Purine/pyrimidine phosphoribosyltransferase family	HGNC:5157
+P00519	ABL1 ABL JTK7	Protein kinase superfamily, Tyr protein kinase family, ABL subfamily	HGNC:76
+P00533	EGFR ERBB ERBB1 HER1	Protein kinase superfamily, Tyr protein kinase family, EGF receptor subfamily	HGNC:3236
+P00558	PGK1 PGKA MIG10 OK/SW-cl.110	Phosphoglycerate kinase family	HGNC:8896
+P00568	AK1	Adenylate kinase family, AK1 subfamily	HGNC:361
+P00734	F2	Peptidase S1 family	HGNC:3535
+P00736	C1R	Peptidase S1 family	HGNC:1246
+P00738	HP	Peptidase S1 family	HGNC:5141
+P00740	F9	Peptidase S1 family	HGNC:3551
+P00742	F10	Peptidase S1 family	HGNC:3528
+P00746	CFD DF PFD	Peptidase S1 family	HGNC:2771
+P00747	PLG	Peptidase S1 family, Plasminogen subfamily	HGNC:9071
+P00748	F12	Peptidase S1 family	HGNC:3530
+P00749	PLAU	Peptidase S1 family	HGNC:9052
+P00750	PLAT	Peptidase S1 family	HGNC:9051
+P00751	CFB BF BFD	Peptidase S1 family	HGNC:1037
+P00797	REN	Peptidase A1 family	HGNC:9958
+P00813	ADA ADA1	Metallo-dependent hydrolases superfamily, Adenosine and AMP deaminases family	HGNC:186
+P00846	MT-ATP6 ATP6 ATPASE6 MTATP6	ATPase A chain family	HGNC:7414
+P00915	CA1	Alpha-carbonic anhydrase family	HGNC:1368
+P00918	CA2	Alpha-carbonic anhydrase family	HGNC:1373
+P01024	C3 CPAMD1		HGNC:1318
+P01031	C5 CPAMD4		HGNC:1331
+P01106	MYC BHLHE39		HGNC:7553
+P01111	NRAS HRAS1	Small GTPase superfamily, Ras family	HGNC:7989
+P01116	KRAS KRAS2 RASK2	Small GTPase superfamily, Ras family	HGNC:6407
+P01130	LDLR	LDLR family	HGNC:6547
+P01137	TGFB1 TGFB	TGF-beta family	HGNC:11766
+P01138	NGF NGFB	NGF-beta family	HGNC:7808
+P01148	GNRH1 GNRH GRH LHRH	GnRH family	HGNC:4419
+P01236	PRL	Somatotropin/prolactin family	HGNC:9445
+P01241	GH1	Somatotropin/prolactin family	HGNC:4261
+O95665	NTSR2	G protein-coupled receptor 1 family, Neurotensin receptor subfamily, NTSR2 sub-subfamily	HGNC:8040
+P01258	CALCA CALC1	Calcitonin family	HGNC:1437
+P01375	TNF TNFA TNFSF2	Tumor necrosis factor family	HGNC:11892
+P01584	IL1B IL1F2	IL-1 family	HGNC:5992
+P01730	CD4		HGNC:1678
+P01854	IGHE		HGNC:5522
+P02708	CHRNA1 ACHRA CHNRA	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Alpha-1/CHRNA1 sub-subfamily	HGNC:1955
+P02743	APCS PTX2	Pentraxin family	HGNC:584
+P02753	RBP4 PRO2222	Calycin superfamily, Lipocalin family	HGNC:9922
+P02766	TTR PALB	Transthyretin family	HGNC:12405
+P02818	BGLAP	Osteocalcin/matrix Gla protein family	HGNC:1043
+P03372	ESR1 ESR NR3A1	Nuclear hormone receptor family, NR3 subfamily	HGNC:3467
+P03886	MT-ND1 MTND1 NADH1 ND1	Complex I subunit 1 family	HGNC:7455
+P03951	F11	Peptidase S1 family, Plasma kallikrein subfamily	HGNC:3529
+P03952	KLKB1 KLK3	Peptidase S1 family, Plasma kallikrein subfamily	HGNC:6371
+P03956	MMP1 CLG	Peptidase M10A family	HGNC:7155
+P04035	HMGCR	HMG-CoA reductase family	HGNC:5006
+P04049	RAF1 RAF	Protein kinase superfamily, TKL Ser/Thr protein kinase family, RAF subfamily	HGNC:9829
+P04054	PLA2G1B PLA2 PLA2A PPLA2	Phospholipase A2 family	HGNC:9030
+P04062	GBA1 GBA GC GLUC	Glycosyl hydrolase 30 family	HGNC:4177
+P04066	FUCA1 Nbla10230	Glycosyl hydrolase 29 family	HGNC:4006
+P04070	PROC	Peptidase S1 family	HGNC:9451
+P04114	APOB		HGNC:603
+P04150	NR3C1 GRL	Nuclear hormone receptor family, NR3 subfamily	HGNC:7978
+P04181	OAT	Class-III pyridoxal-phosphate-dependent aminotransferase family	HGNC:8091
+P04183	TK1	Thymidine kinase family	HGNC:11830
+P04350	TUBB4A TUBB4 TUBB5	Tubulin family	HGNC:20774
+P04406	GAPDH GAPD CDABP0047 OK/SW-cl.12	Glyceraldehyde-3-phosphate dehydrogenase family	HGNC:4141
+P04626	ERBB2 HER2 MLN19 NEU NGL	Protein kinase superfamily, Tyr protein kinase family, EGF receptor subfamily	HGNC:3430
+P04629	NTRK1 MTC TRK TRKA	Protein kinase superfamily, Tyr protein kinase family, Insulin receptor subfamily	HGNC:8031
+P04637	TP53 P53	P53 family	HGNC:11998
+P04792	HSPB1 HSP27 HSP28	Small heat shock protein (HSP20) family	HGNC:5246
+P04798	CYP1A1	Cytochrome P450 family	HGNC:2595
+P04818	TYMS TS OK/SW-cl.29	Thymidylate synthase family	HGNC:12441
+P04839	CYBB NOX2		HGNC:2578
+P05023	ATP1A1	Cation transport ATPase (P-type) (TC 3.A.3) family, Type IIC subfamily	HGNC:799
+P05026	ATP1B1 ATP1B	X(+)/potassium ATPases subunit beta family	HGNC:804
+P05067	APP A4 AD1	APP family	HGNC:620
+P05089	ARG1	Arginase family	HGNC:663
+P05091	ALDH2 ALDM	Aldehyde dehydrogenase family	HGNC:404
+P05093	CYP17A1 CYP17 S17AH	Cytochrome P450 family	HGNC:2593
+P05106	ITGB3 GP3A	Integrin beta chain family	HGNC:6156
+P05107	ITGB2 CD18 MFI7	Integrin beta chain family	HGNC:6155
+P05108	CYP11A1 CYP11A	Cytochrome P450 family	HGNC:2590
+P05112	IL4	IL-4/IL-13 family	HGNC:6014
+P05113	IL5	IL-5 family	HGNC:6016
+P05121	SERPINE1 PAI1 PLANH1	Serpin family	HGNC:8583
+P05129	PRKCG PKCG	Protein kinase superfamily, AGC Ser/Thr protein kinase family, PKC subfamily	HGNC:9402
+P05156	CFI IF	Peptidase S1 family	HGNC:5394
+P05164	MPO	Peroxidase family, XPO subfamily	HGNC:7218
+P05177	CYP1A2	Cytochrome P450 family	HGNC:2596
+P05186	ALPL	Alkaline phosphatase family	HGNC:438
+P05187	ALPP PLAP	Alkaline phosphatase family	HGNC:439
+P05230	FGF1 FGFA	Heparin-binding growth factors family	HGNC:3665
+P05231	IL6 IFNB2	IL-6 superfamily	HGNC:6018
+P05362	ICAM1	Immunoglobulin superfamily, ICAM family	HGNC:5344
+P05412	JUN	BZIP family, Jun subfamily	HGNC:6204
+P05413	FABP3 FABP11 MDGI	Calycin superfamily, Fatty-acid binding protein (FABP) family	HGNC:3557
+P05496	ATP5MC1 ATP5G1	ATPase C chain family	HGNC:841
+P05556	ITGB1 FNRB MDF2 MSK12	Integrin beta chain family	HGNC:6153
+P05771	PRKCB PKCB PRKCB1	Protein kinase superfamily, AGC Ser/Thr protein kinase family, PKC subfamily	HGNC:9395
+P05981	HPN TMPRSS1	Peptidase S1 family	HGNC:5155
+P06213	INSR	Protein kinase superfamily, Tyr protein kinase family, Insulin receptor subfamily	HGNC:6091
+P06239	LCK	Protein kinase superfamily, Tyr protein kinase family, SRC subfamily	HGNC:6524
+P06241	FYN	Protein kinase superfamily, Tyr protein kinase family, SRC subfamily	HGNC:4037
+P06276	BCHE CHE1	Type-B carboxylesterase/lipase family	HGNC:983
+P06280	GLA	Glycosyl hydrolase 27 family	HGNC:4296
+P06401	PGR NR3C3	Nuclear hormone receptor family, NR3 subfamily	HGNC:8910
+P06493	CDK1 CDC2 CDC28A CDKN1 P34CDC2	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, CDC2/CDKX subfamily	HGNC:1722
+P06576	ATP5F1B ATP5B ATPMB ATPSB	ATPase alpha/beta chains family	HGNC:830
+P06702	S100A9 CAGB CFAG MRP14	S-100 family	HGNC:10499
+P06730	EIF4E EIF4EL1 EIF4F	Eukaryotic initiation factor 4E family	HGNC:3287
+P06731	CEACAM5 CEA	Immunoglobulin superfamily, CEA family	HGNC:1817
+P06732	CKM CKMM	ATP:guanido phosphotransferase family	HGNC:1994
+P06734	FCER2 CD23A CLEC4J FCE2 IGEBF		HGNC:3612
+P06737	PYGL	Glycogen phosphorylase family	HGNC:9725
+P06746	POLB	DNA polymerase type-X family	HGNC:9174
+P06756	ITGAV MSK8 VNRA VTNR	Integrin alpha chain family	HGNC:6150
+P06865	HEXA	Glycosyl hydrolase 20 family	HGNC:4878
+P06870	KLK1	Peptidase S1 family, Kallikrein subfamily	HGNC:6357
+P07098	LIPF	AB hydrolase superfamily, Lipase family	HGNC:6622
+P07101	TH TYH	Biopterin-dependent aromatic amino acid hydroxylase family	HGNC:11782
+P07148	FABP1 FABPL	Calycin superfamily, Fatty-acid binding protein (FABP) family	HGNC:3555
+P07195	LDHB	LDH/MDH superfamily, LDH family	HGNC:6541
+P07202	TPO	Peroxidase family, XPO subfamily	HGNC:12015
+P07237	P4HB ERBA2L PDI PDIA1 PO4DB	Protein disulfide isomerase family	HGNC:8548
+P07288	KLK3 APS	Peptidase S1 family, Kallikrein subfamily	HGNC:6364
+P07333	CSF1R FMS	Protein kinase superfamily, Tyr protein kinase family, CSF-1/PDGF receptor subfamily	HGNC:2433
+P07339	CTSD CPSD	Peptidase A1 family	HGNC:2529
+P07384	CAPN1 CANPL1 PIG30	Peptidase C2 family	HGNC:1476
+P07437	TUBB TUBB5 OK/SW-cl.56	Tubulin family	HGNC:20778
+P07451	CA3	Alpha-carbonic anhydrase family	HGNC:1374
+P07477	PRSS1 TRP1 TRY1 TRYP1	Peptidase S1 family	HGNC:9475
+P07478	PRSS2 TRY2 TRYP2	Peptidase S1 family	HGNC:9483
+P07510	CHRNG ACHRG	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Gamma/CHRNG sub-subfamily	HGNC:1967
+P07550	ADRB2 ADRB2R B2AR	G protein-coupled receptor 1 family, Adrenergic receptor subfamily, ADRB2 sub-subfamily	HGNC:286
+P07686	HEXB HCC7	Glycosyl hydrolase 20 family	HGNC:4879
+P07711	CTSL CTSL1	Peptidase C1 family	HGNC:2537
+P07814	EPRS1 EPRS GLNS PARS QARS QPRS PIG32	Class-I aminoacyl-tRNA synthetase family, Glutamate--tRNA ligase type 2 subfamily; Class-II aminoacyl-tRNA synthetase family	HGNC:3418
+P07858	CTSB CPSB	Peptidase C1 family	HGNC:2527
+P07900	HSP90AA1 HSP90A HSPC1 HSPCA	Heat shock protein 90 family	HGNC:5253
+P07947	YES1 YES	Protein kinase superfamily, Tyr protein kinase family, SRC subfamily	HGNC:12841
+P07948	LYN JTK8	Protein kinase superfamily, Tyr protein kinase family, SRC subfamily	HGNC:6735
+P07949	RET CDHF12 CDHR16 PTC	Protein kinase superfamily, Tyr protein kinase family	HGNC:9967
+P07992	ERCC1	ERCC1/RAD10/SWI10 family	HGNC:3433
+P07998	RNASE1 RIB1 RNS1	Pancreatic ribonuclease family	HGNC:10044
+P08069	IGF1R	Protein kinase superfamily, Tyr protein kinase family, Insulin receptor subfamily	HGNC:5465
+P08134	RHOC ARH9 ARHC	Small GTPase superfamily, Rho family	HGNC:669
+P08151	GLI1 GLI	GLI C2H2-type zinc-finger protein family	HGNC:4317
+P08172	CHRM2	G protein-coupled receptor 1 family, Muscarinic acetylcholine receptor subfamily, CHRM2 sub-subfamily	HGNC:1951
+P08173	CHRM4	G protein-coupled receptor 1 family, Muscarinic acetylcholine receptor subfamily, CHRM4 sub-subfamily	HGNC:1953
+P08183	ABCB1 MDR1 PGY1	ABC transporter superfamily, ABCB family, Multidrug resistance exporter (TC 3.A.1.201) subfamily	HGNC:40
+P08235	NR3C2 MCR MLR	Nuclear hormone receptor family, NR3 subfamily	HGNC:7979
+P08238	HSP90AB1 HSP90B HSPC2 HSPC3 HSPCB	Heat shock protein 90 family	HGNC:5258
+P08246	ELANE ELA2	Peptidase S1 family, Elastase subfamily	HGNC:3309
+P08253	MMP2 CLG4A	Peptidase M10A family	HGNC:7166
+P08254	MMP3 STMY1	Peptidase M10A family	HGNC:7173
+P08311	CTSG	Peptidase S1 family	HGNC:2532
+P08473	MME EPN	Peptidase M13 family	HGNC:7154
+P08514	ITGA2B GP2B ITGAB	Integrin alpha chain family	HGNC:6138
+P08559	PDHA1 PHE1A		HGNC:8806
+P08575	PTPRC CD45	Protein-tyrosine phosphatase family, Receptor class 1/6 subfamily	HGNC:9666
+P08581	MET	Protein kinase superfamily, Tyr protein kinase family	HGNC:7029
+P08588	ADRB1 ADRB1R B1AR	G protein-coupled receptor 1 family, Adrenergic receptor subfamily, ADRB1 sub-subfamily	HGNC:285
+P08620	FGF4 HST HSTF1 KS3	Heparin-binding growth factors family	HGNC:3682
+P08631	HCK	Protein kinase superfamily, Tyr protein kinase family, SRC subfamily	HGNC:4840
+P08648	ITGA5 FNRA	Integrin alpha chain family	HGNC:6141
+P08684	CYP3A4 CYP3A3	Cytochrome P450 family	HGNC:2637
+P08686	CYP21A2 CYP21 CYP21B	Cytochrome P450 family	HGNC:2600
+P08709	F7	Peptidase S1 family	HGNC:3544
+P08842	STS ARSC1	Sulfatase family	HGNC:11425
+P08908	HTR1A ADRB2RL1 ADRBRL1	G protein-coupled receptor 1 family, 5-hydroxytryptamine receptor subfamily, HTR1A sub-subfamily	HGNC:5286
+P08912	CHRM5	G protein-coupled receptor 1 family, Muscarinic acetylcholine receptor subfamily, CHRM5 sub-subfamily	HGNC:1954
+P08913	ADRA2A ADRA2R ADRAR	G protein-coupled receptor 1 family, Adrenergic receptor subfamily, ADRA2A sub-subfamily	HGNC:281
+P08922	ROS1 MCF3 ROS	Protein kinase superfamily, Tyr protein kinase family, Insulin receptor subfamily	HGNC:10261
+P09038	FGF2 FGFB	Heparin-binding growth factors family	HGNC:3676
+P09172	DBH	Copper type II ascorbate-dependent monooxygenase family	HGNC:2689
+P09211	GSTP1 FAEES3 GST3	GST superfamily, Pi family	HGNC:4638
+P09234	SNRPC	U1 small nuclear ribonucleoprotein C family	HGNC:11157
+P09237	MMP7 MPSL1 PUMP1	Peptidase M10A family	HGNC:7174
+P09238	MMP10 STMY2	Peptidase M10A family	HGNC:7156
+P09382	LGALS1		HGNC:6561
+P09429	HMGB1 HMG1	HMGB family	HGNC:4983
+P09467	FBP1 FBP	FBPase class 1 family	HGNC:3606
+P09601	HMOX1 HO HO1	Heme oxygenase family	HGNC:5013
+P09619	PDGFRB PDGFR PDGFR1	Protein kinase superfamily, Tyr protein kinase family, CSF-1/PDGF receptor subfamily	HGNC:8804
+P09871	C1S	Peptidase S1 family	HGNC:1247
+P09874	PARP1 ADPRT PPOL	ARTD/PARP family	HGNC:270
+P09884	POLA1 POLA	DNA polymerase type-B family	HGNC:9173
+P09917	ALOX5 LOG5	Lipoxygenase family	HGNC:435
+P09923	ALPI	Alkaline phosphatase family	HGNC:437
+P09936	UCHL1	Peptidase C12 family	HGNC:12513
+P09958	FURIN FUR PACE PCSK3	Peptidase S8 family, Furin subfamily	HGNC:8568
+P09960	LTA4H LTA4	Peptidase M1 family	HGNC:6710
+P0C1S8	WEE2 WEE1B	Protein kinase superfamily, Ser/Thr protein kinase family, WEE1 subfamily	HGNC:19684
+P0DMS8	ADORA3	G protein-coupled receptor 1 family	HGNC:268
+P0DMV8	HSPA1A HSP72 HSPA1 HSX70	Heat shock protein 70 family	HGNC:5232
+P0DP23	CALM1 CALM CAM CAM1	Calmodulin family	HGNC:1442
+P0DPD6	ECE2 KIAA0604 UNQ403/PRO740	Peptidase M13 family	HGNC:13275
+P0DPH7	TUBA3C TUBA2	Tubulin family	HGNC:12408
+P0DPH8	TUBA3D	Tubulin family	HGNC:24071
+P10092	CALCB CALC2	Calcitonin family	HGNC:1438
+P10144	GZMB CGL1 CSPB CTLA1 GRB	Peptidase S1 family, Granzyme subfamily	HGNC:4709
+P10253	GAA	Glycosyl hydrolase 31 family	HGNC:4065
+P10275	AR DHTR NR3C4	Nuclear hormone receptor family, NR3 subfamily	HGNC:644
+P10276	RARA NR1B1	Nuclear hormone receptor family, NR1 subfamily	HGNC:9864
+P10415	BCL2	Bcl-2 family	HGNC:990
+P10515	DLAT DLTA	2-oxoacid dehydrogenase family	HGNC:2896
+P10599	TXN TRDX TRX TRX1	Thioredoxin family	HGNC:12435
+P10619	CTSA PPGB	Peptidase S10 family	HGNC:9251
+P10635	CYP2D6 CYP2DL1	Cytochrome P450 family	HGNC:2625
+P10636	MAPT MAPTL MTBT1 TAU		HGNC:6893
+P10721	KIT SCFR	Protein kinase superfamily, Tyr protein kinase family, CSF-1/PDGF receptor subfamily	HGNC:6342
+P10747	CD28		HGNC:1653
+P10826	RARB HAP NR1B2	Nuclear hormone receptor family, NR1 subfamily	HGNC:9865
+P10827	THRA EAR7 ERBA1 NR1A1 THRA1 THRA2	Nuclear hormone receptor family, NR1 subfamily	HGNC:11796
+P10828	THRB ERBA2 NR1A2 THR1	Nuclear hormone receptor family, NR1 subfamily	HGNC:11799
+P11086	PNMT PENT	Class I-like SAM-binding methyltransferase superfamily, NNMT/PNMT/TEMT family	HGNC:9160
+P11142	HSPA8 HSC70 HSP73 HSPA10	Heat shock protein 70 family	HGNC:5241
+P11150	LIPC HTGL	AB hydrolase superfamily, Lipase family	HGNC:6619
+P0A3M6	penA pbp2b spr1517	Transpeptidase family	
+P11166	SLC2A1 GLUT1	Major facilitator superfamily, Sugar transporter (TC 2.A.1.1) family, Glucose transporter subfamily	HGNC:11005
+P11169	SLC2A3 GLUT3	Major facilitator superfamily, Sugar transporter (TC 2.A.1.1) family, Glucose transporter subfamily	HGNC:11007
+P11177	PDHB PHE1B		HGNC:8808
+P11216	PYGB	Glycogen phosphorylase family	HGNC:9723
+P11217	PYGM	Glycogen phosphorylase family	HGNC:9726
+P11229	CHRM1	G protein-coupled receptor 1 family, Muscarinic acetylcholine receptor subfamily, CHRM1 sub-subfamily	HGNC:1950
+P11230	CHRNB1 ACHRB CHRNB	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Beta-1/CHRNB1 sub-subfamily	HGNC:1961
+P11274	BCR BCR1 D22S11		HGNC:1014
+P11279	LAMP1	LAMP family	HGNC:6499
+P11309	PIM1	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, PIM subfamily	HGNC:8986
+P11362	FGFR1 BFGFR CEK FGFBR FLG FLT2 HBGFR	Protein kinase superfamily, Tyr protein kinase family, Fibroblast growth factor receptor subfamily	HGNC:3688
+P11387	TOP1	Type IB topoisomerase family	HGNC:11986
+P11388	TOP2A TOP2	Type II topoisomerase family	HGNC:11989
+P11473	VDR NR1I1	Nuclear hormone receptor family, NR1 subfamily	HGNC:12679
+P11474	ESRRA ERR1 ESRL1 NR3B1	Nuclear hormone receptor family, NR3 subfamily	HGNC:3471
+P11509	CYP2A6 CYP2A3	Cytochrome P450 family	HGNC:2610
+P11511	CYP19A1 ARO1 CYAR CYP19	Cytochrome P450 family	HGNC:2594
+P11597	CETP	BPI/LBP/Plunc superfamily, BPI/LBP family	HGNC:1869
+P11712	CYP2C9 CYP2C10	Cytochrome P450 family	HGNC:2623
+P11766	ADH5 ADHX FDH	Zinc-containing alcohol dehydrogenase family, Class-III subfamily	HGNC:253
+P11802	CDK4	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, CDC2/CDKX subfamily	HGNC:1773
+P11926	ODC1	Orn/Lys/Arg decarboxylase class-II family	HGNC:8109
+P12104	FABP2 FABPI	Calycin superfamily, Fatty-acid binding protein (FABP) family	HGNC:3556
+P12235	SLC25A4 AAC1 ANT1	Mitochondrial carrier (TC 2.A.29) family	HGNC:10990
+P12268	IMPDH2 IMPD2	IMPDH/GMPR family	HGNC:6053
+P12277	CKB CKBB	ATP:guanido phosphotransferase family	HGNC:1991
+P12319	FCER1A FCE1A		HGNC:3609
+P12532	CKMT1A CKMT; CKMT1B CKMT	ATP:guanido phosphotransferase family	HGNC:31736;HGNC:1995
+P12643	BMP2 BMP2A	TGF-beta family	HGNC:1069
+P12644	BMP4 BMP2B DVR4	TGF-beta family	HGNC:1071
+P12821	ACE DCP DCP1	Peptidase M2 family	HGNC:2707
+P12883	MYH7 MYHCB	TRAFAC class myosin-kinesin ATPase superfamily, Myosin family	HGNC:7577
+P12931	SRC SRC1	Protein kinase superfamily, Tyr protein kinase family, SRC subfamily	HGNC:11283
+P12956	XRCC6 G22P1	Ku70 family	HGNC:4055
+P13497	BMP1 PCOLC		HGNC:1067
+P13500	CCL2 MCP1 SCYA2	Intercrine beta (chemokine CC) family	HGNC:10618
+P13569	CFTR ABCC7	ABC transporter superfamily, ABCC family, CFTR transporter (TC 3.A.1.202) subfamily	HGNC:1884
+P13612	ITGA4 CD49D	Integrin alpha chain family	HGNC:6140
+P13631	RARG NR1B3	Nuclear hormone receptor family, NR1 subfamily	HGNC:9866
+P13637	ATP1A3	Cation transport ATPase (P-type) (TC 3.A.3) family, Type IIC subfamily	HGNC:801
+P13674	P4HA1 P4HA	P4HA family	HGNC:8546
+P13798	APEH D3F15S2 D3S48E DNF15S2	Peptidase S9C family	HGNC:586
+P13807	GYS1 GYS	Glycosyltransferase 3 family	HGNC:4706
+P13866	SLC5A1 NAGT SGLT1	Sodium:solute symporter (SSF) (TC 2.A.21) family	HGNC:11036
+P13945	ADRB3 ADRB3R B3AR	G protein-coupled receptor 1 family, Adrenergic receptor subfamily, ADRB3 sub-subfamily	HGNC:288
+P14060	HSD3B1 3BH HSDB3A	3-beta-HSD family	HGNC:5217
+P14061	HSD17B1 E17KSR EDH17B1 EDH17B2 EDHB17 SDR28C1	Short-chain dehydrogenases/reductases (SDR) family	HGNC:5210
+P14091	CTSE	Peptidase A1 family	HGNC:2530
+P14174	MIF GLIF MMIF	MIF family	HGNC:7097
+P14210	HGF HPTA	Peptidase S1 family, Plasminogen subfamily	HGNC:4893
+P14324	FDPS FPS KIAA1293	FPP/GGPP synthase family	HGNC:3631
+P14410	SI	Glycosyl hydrolase 31 family	HGNC:10856
+P14415	ATP1B2	X(+)/potassium ATPases subunit beta family	HGNC:805
+P14416	DRD2	G protein-coupled receptor 1 family	HGNC:3023
+P14550	AKR1A1 ALDR1 ALR	Aldo/keto reductase family	HGNC:380
+P14555	PLA2G2A PLA2B PLA2L RASF-A	Phospholipase A2 family	HGNC:9031
+P14618	PKM OIP3 PK2 PK3 PKM2	Pyruvate kinase family	HGNC:9021
+P14625	HSP90B1 GRP94 HSPC4 TRA1	Heat shock protein 90 family	HGNC:12028
+P14635	CCNB1 CCNB	Cyclin family, Cyclin AB subfamily	HGNC:1579
+P14679	TYR	Tyrosinase family	HGNC:12442
+P14735	IDE	Peptidase M16 family	HGNC:5381
+P14780	MMP9 CLG4B	Peptidase M10A family	HGNC:7176
+P14867	GABRA1	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRA1 sub-subfamily	HGNC:4075
+P14902	IDO1 IDO INDO	Indoleamine 2,3-dioxygenase family	HGNC:6059
+P14920	DAO DAMOX	DAMOX/DASOX family	HGNC:2671
+P15056	BRAF BRAF1 RAFB1	Protein kinase superfamily, TKL Ser/Thr protein kinase family, RAF subfamily	HGNC:1097
+P15085	CPA1 CPA	Peptidase M14 family	HGNC:2296
+P15090	FABP4	Calycin superfamily, Fatty-acid binding protein (FABP) family	HGNC:3559
+P15121	AKR1B1 ALDR1 ALR2	Aldo/keto reductase family	HGNC:381
+P15144	ANPEP APN CD13 PEPN	Peptidase M1 family	HGNC:500
+P15309	ACP3 ACPP	Histidine acid phosphatase family	HGNC:125
+P15313	ATP6V1B1 ATP6B1 VATB VPP3	ATPase alpha/beta chains family	HGNC:853
+P15328	FOLR1 FOLR	Folate receptor family	HGNC:3791
+P15374	UCHL3	Peptidase C12 family	HGNC:12515
+P15382	KCNE1	Potassium channel KCNE family	HGNC:6240
+P15428	HPGD PGDH1 SDR36C1	Short-chain dehydrogenases/reductases (SDR) family	HGNC:5154
+P15531	NME1 NDPKA NM23	NDK family	HGNC:7849
+P15538	CYP11B1 S11BH	Cytochrome P450 family	HGNC:2591
+P15559	NQO1 DIA4 NMOR1	NAD(P)H dehydrogenase (quinone) family	HGNC:2874
+P15884	TCF4 BHLHB19 ITF2 SEF2		HGNC:11634
+P16050	ALOX15 LOG15	Lipoxygenase family	HGNC:433
+P16066	NPR1 ANPRA	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:7943
+P16083	NQO2 NMOR2	NAD(P)H dehydrogenase (quinone) family	HGNC:7856
+P16109	SELP GMRP GRMP	Selectin/LECAM family	HGNC:10721
+P16152	CBR1 CBR CRN SDR21C1	Short-chain dehydrogenases/reductases (SDR) family	HGNC:1548
+P16220	CREB1	BZIP family	HGNC:2345
+P16233	PNLIP	AB hydrolase superfamily, Lipase family	HGNC:9155
+P16234	PDGFRA PDGFR2 RHEPDGFRA	Protein kinase superfamily, Tyr protein kinase family, CSF-1/PDGF receptor subfamily	HGNC:8803
+P16298	PPP3CB CALNA2 CALNB CNA2	PPP phosphatase family, PP-2B subfamily	HGNC:9315
+P16333	NCK1 NCK		HGNC:7664
+P16389	KCNA2	Potassium channel family, A (Shaker) (TC 1.A.1.2) subfamily, Kv1.2/KCNA2 sub-subfamily	HGNC:6220
+P16444	DPEP1 MDP RDP	Metallo-dependent hydrolases superfamily, Peptidase M19 family	HGNC:3002
+P16455	MGMT	MGMT family	HGNC:7059
+P16473	TSHR LGR3	G protein-coupled receptor 1 family, FSH/LSH/TSH subfamily	HGNC:12373
+P16499	PDE6A PDEA	Cyclic nucleotide phosphodiesterase family	HGNC:8785
+P16581	SELE ELAM1	Selectin/LECAM family	HGNC:10718
+P16615	ATP2A2 ATP2B	Cation transport ATPase (P-type) (TC 3.A.3) family, Type IIA subfamily	HGNC:812
+P16662	UGT2B7 UGTB2B9	UDP-glycosyltransferase family	HGNC:12554
+P17252	PRKCA PKCA PRKACA	Protein kinase superfamily, AGC Ser/Thr protein kinase family, PKC subfamily	HGNC:9393
+P17405	SMPD1 ASM	Acid sphingomyelinase family	HGNC:11120
+P17540	CKMT2	ATP:guanido phosphotransferase family	HGNC:1996
+P17612	PRKACA PKACA	Protein kinase superfamily, AGC Ser/Thr protein kinase family, cAMP subfamily	HGNC:9380
+P17655	CAPN2 CANPL2	Peptidase C2 family	HGNC:1479
+P17658	KCNA6	Potassium channel family, A (Shaker) (TC 1.A.1.2) subfamily, Kv1.6/KCNA6 sub-subfamily	HGNC:6225
+P17706	PTPN2 PTPT	Protein-tyrosine phosphatase family, Non-receptor class 1 subfamily	HGNC:9650
+P17707	AMD1 AMD	Eukaryotic AdoMetDC family	HGNC:457
+P17752	TPH1 TPH TPRH TRPH	Biopterin-dependent aromatic amino acid hydroxylase family	HGNC:12008
+P17787	CHRNB2	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Beta-2/CHRNB2 sub-subfamily	HGNC:1962
+P17813	ENG END		HGNC:3349
+P17844	DDX5 G17P1 HELR HLR1	DEAD box helicase family, DDX5/DBP2 subfamily	HGNC:2746
+P17931	LGALS3 MAC2		HGNC:6563
+P17947	SPI1	ETS family	HGNC:11241
+P17948	FLT1 FLT FRT VEGFR1	Protein kinase superfamily, Tyr protein kinase family, CSF-1/PDGF receptor subfamily	HGNC:3763
+P17980	PSMC3 TBP1	AAA ATPase family	HGNC:9549
+P18031	PTPN1 PTP1B	Protein-tyrosine phosphatase family, Non-receptor class 1 subfamily	HGNC:9642
+P18054	ALOX12 12LO LOG12	Lipoxygenase family	HGNC:429
+P18084	ITGB5	Integrin beta chain family	HGNC:6160
+P18085	ARF4 ARF2	Small GTPase superfamily, Arf family	HGNC:655
+P18089	ADRA2B ADRA2L1 ADRA2RL1	G protein-coupled receptor 1 family, Adrenergic receptor subfamily, ADRA2B sub-subfamily	HGNC:282
+P18405	SRD5A1	Steroid 5-alpha reductase family	HGNC:11284
+P18440	NAT1 AAC1	Arylamine N-acetyltransferase family	HGNC:7645
+P18505	GABRB1	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRB1 sub-subfamily	HGNC:4081
+P18507	GABRG2	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRG2 sub-subfamily	HGNC:4087
+P18509	ADCYAP1	Glucagon family	HGNC:241
+P18545	PDE6G PDEG	Rod/cone cGMP-PDE gamma subunit family	HGNC:8789
+P18564	ITGB6	Integrin beta chain family	HGNC:6161
+P18621	RPL17	Universal ribosomal protein uL22 family	HGNC:10307
+P18825	ADRA2C ADRA2L2 ADRA2RL2	G protein-coupled receptor 1 family, Adrenergic receptor subfamily, ADRA2C sub-subfamily	HGNC:283
+P18858	LIG1	ATP-dependent DNA ligase family	HGNC:6598
+P18859	ATP5PF ATP5A ATP5J ATPM	Eukaryotic ATPase subunit F6 family	HGNC:847
+P19021	PAM	Peptidyl-alpha-hydroxyglycine alpha-amidating lyase family; Copper type II ascorbate-dependent monooxygenase family	HGNC:8596
+P19022	CDH2 CDHN NCAD		HGNC:1759
+P19099	CYP11B2	Cytochrome P450 family	HGNC:2592
+P19113	HDC	Group II decarboxylase family	HGNC:4855
+P19174	PLCG1 PLC1		HGNC:9065
+P19320	VCAM1		HGNC:12663
+P19440	GGT1 GGT	Gamma-glutamyltransferase family	HGNC:4250
+P19447	ERCC3 XPB XPBC	Helicase family, RAD25/XPB subfamily	HGNC:3435
+P19525	EIF2AK2 PKR PRKR	Protein kinase superfamily, Ser/Thr protein kinase family, GCN2 subfamily	HGNC:9437
+P19634	SLC9A1 APNH1 NHE1	Monovalent cation:proton antiporter 1 (CPA1) transporter (TC 2.A.36) family	HGNC:11071
+P19784	CSNK2A2 CK2A2	Protein kinase superfamily, Ser/Thr protein kinase family, CK2 subfamily	HGNC:2459
+P19793	RXRA NR2B1	Nuclear hormone receptor family, NR2 subfamily	HGNC:10477
+P19835	CEL BAL	Type-B carboxylesterase/lipase family	HGNC:1848
+P19838	NFKB1		HGNC:7794
+P19957	PI3 WAP3 WFDC14		HGNC:8947
+P19971	TYMP ECGF1	Thymidine/pyrimidine-nucleoside phosphorylase family	HGNC:3148
+P20151	KLK2	Peptidase S1 family, Kallikrein subfamily	HGNC:6363
+P20231	TPSB2 TPS2	Peptidase S1 family, Tryptase subfamily	HGNC:14120
+P20248	CCNA2 CCN1 CCNA	Cyclin family, Cyclin AB subfamily	HGNC:1578
+P20292	ALOX5AP FLAP	MAPEG family	HGNC:436
+P20309	CHRM3	G protein-coupled receptor 1 family, Muscarinic acetylcholine receptor subfamily, CHRM3 sub-subfamily	HGNC:1952
+P20393	NR1D1 EAR1 HREV THRAL	Nuclear hormone receptor family, NR1 subfamily	HGNC:7962
+P20618	PSMB1 PSC5	Peptidase T1B family	HGNC:9537
+P20648	ATP4A	Cation transport ATPase (P-type) (TC 3.A.3) family, Type IIC subfamily	HGNC:819
+P20701	ITGAL CD11A	Integrin alpha chain family	HGNC:6148
+P20711	DDC AADC	Group II decarboxylase family	HGNC:2719
+P20813	CYP2B6	Cytochrome P450 family	HGNC:2615
+P20815	CYP3A5	Cytochrome P450 family	HGNC:2638
+P20839	IMPDH1 IMPD1	IMPDH/GMPR family	HGNC:6052
+P21217	FUT3 FT3B LE	Glycosyltransferase 10 family	HGNC:4014
+P21281	ATP6V1B2 ATP6B2 VPP3	ATPase alpha/beta chains family	HGNC:854
+P21283	ATP6V1C1 ATP6C ATP6D VATC	V-ATPase C subunit family	HGNC:856
+P21333	FLNA FLN FLN1	Filamin family	HGNC:3754
+P21397	MAOA	Flavin monoamine oxidase family	HGNC:6833
+P21452	TACR2 NK2R NKNAR TAC2R	G protein-coupled receptor 1 family	HGNC:11527
+P21453	S1PR1 CHEDG1 EDG1	G protein-coupled receptor 1 family	HGNC:3165
+P21462	FPR1	G protein-coupled receptor 1 family	HGNC:3826
+P21554	CNR1 CNR	G protein-coupled receptor 1 family	HGNC:2159
+P21675	TAF1 BA2R CCG1 CCGS TAF2A	TAF1 family	HGNC:11535
+P21695	GPD1	NAD-dependent glycerol-3-phosphate dehydrogenase family	HGNC:4455
+P21728	DRD1	G protein-coupled receptor 1 family	HGNC:3020
+P21730	C5AR1 C5AR C5R1	G protein-coupled receptor 1 family	HGNC:1338
+P21731	TBXA2R	G protein-coupled receptor 1 family	HGNC:11608
+P21796	VDAC1 VDAC	Eukaryotic mitochondrial porin family	HGNC:12669
+P21802	FGFR2 BEK KGFR KSAM	Protein kinase superfamily, Tyr protein kinase family, Fibroblast growth factor receptor subfamily	HGNC:3689
+P21817	RYR1 RYDR	Ryanodine receptor (TC 1.A.3.1) family, RYR1 subfamily	HGNC:10483
+P21860	ERBB3 HER3	Protein kinase superfamily, Tyr protein kinase family, EGF receptor subfamily	HGNC:3431
+P21912	SDHB SDH SDH1	Succinate dehydrogenase/fumarate reductase iron-sulfur protein family	HGNC:10681
+P21917	DRD4	G protein-coupled receptor 1 family	HGNC:3025
+P17538	CTRB1 CTRB	Peptidase S1 family	HGNC:2521
+P21918	DRD5 DRD1B DRD1L2	G protein-coupled receptor 1 family	HGNC:3026
+P21964	COMT	Class I-like SAM-binding methyltransferase superfamily, Cation-dependent O-methyltransferase family	HGNC:2228
+P21980	TGM2	Transglutaminase superfamily, Transglutaminase family	HGNC:11778
+P22001	KCNA3 HGK5	Potassium channel family, A (Shaker) (TC 1.A.1.2) subfamily, Kv1.3/KCNA3 sub-subfamily	HGNC:6221
+P22102	GART PGFT PRGS	GARS family; AIR synthase family; GART family	HGNC:4163
+P22301	IL10	IL-10 family	HGNC:5962
+P22303	ACHE	Type-B carboxylesterase/lipase family	HGNC:108
+P22314	UBA1 A1S9T UBE1	Ubiquitin-activating E1 family	HGNC:12469
+P22392	NME2 NDK2 NM23B	NDK family	HGNC:7850
+P22455	FGFR4 JTK2 TKF	Protein kinase superfamily, Tyr protein kinase family, Fibroblast growth factor receptor subfamily	HGNC:3691
+P22459	KCNA4 KCNA4L	Potassium channel family, A (Shaker) (TC 1.A.1.2) subfamily, Kv1.4/KCNA4 sub-subfamily	HGNC:6222
+P22460	KCNA5	Potassium channel family, A (Shaker) (TC 1.A.1.2) subfamily, Kv1.5/KCNA5 sub-subfamily	HGNC:6224
+P22607	FGFR3 JTK4	Protein kinase superfamily, Tyr protein kinase family, Fibroblast growth factor receptor subfamily	HGNC:3690
+P22612	PRKACG	Protein kinase superfamily, AGC Ser/Thr protein kinase family, cAMP subfamily	HGNC:9382
+P22680	CYP7A1 CYP7	Cytochrome P450 family	HGNC:2651
+P22692	IGFBP4 IBP4		HGNC:5473
+P22694	PRKACB	Protein kinase superfamily, AGC Ser/Thr protein kinase family, cAMP subfamily	HGNC:9381
+P22735	TGM1 KTG	Transglutaminase superfamily, Transglutaminase family	HGNC:11777
+P22736	NR4A1 GFRP1 HMR NAK1	Nuclear hormone receptor family, NR4 subfamily	HGNC:7980
+P22748	CA4	Alpha-carbonic anhydrase family	HGNC:1375
+P22888	LHCGR LCGR LGR2 LHRHR	G protein-coupled receptor 1 family, FSH/LSH/TSH subfamily	HGNC:6585
+P22894	MMP8 CLG1	Peptidase M10A family	HGNC:7175
+P23109	AMPD1	Metallo-dependent hydrolases superfamily, Adenosine and AMP deaminases family	HGNC:468
+P23141	CES1 CES2 SES1	Type-B carboxylesterase/lipase family	HGNC:1863
+P23219	PTGS1 COX1	Prostaglandin G/H synthase family	HGNC:9604
+P23229	ITGA6	Integrin alpha chain family	HGNC:6142
+P23258	TUBG1 TUBG	Tubulin family	HGNC:12417
+P23280	CA6	Alpha-carbonic anhydrase family	HGNC:1380
+P23284	PPIB CYPB	Cyclophilin-type PPIase family, PPIase B subfamily	HGNC:9255
+P23368	ME2	Malic enzymes family	HGNC:6984
+P23415	GLRA1	Ligand-gated ion channel (TC 1.A.9) family, Glycine receptor (TC 1.A.9.3) subfamily, GLRA1 sub-subfamily	HGNC:4326
+P23416	GLRA2	Ligand-gated ion channel (TC 1.A.9) family, Glycine receptor (TC 1.A.9.3) subfamily, GLRA2 sub-subfamily	HGNC:4327
+P23443	RPS6KB1 STK14A	Protein kinase superfamily, AGC Ser/Thr protein kinase family, S6 kinase subfamily	HGNC:10436
+P23458	JAK1 JAK1A JAK1B	Protein kinase superfamily, Tyr protein kinase family, JAK subfamily	HGNC:6190
+P23467	PTPRB PTPB	Protein-tyrosine phosphatase family, Receptor class 3 subfamily	HGNC:9665
+P23470	PTPRG PTPG	Protein-tyrosine phosphatase family, Receptor class 5 subfamily	HGNC:9671
+P23526	AHCY SAHH	Adenosylhomocysteinase family	HGNC:343
+P23786	CPT2 CPT1	Carnitine/choline acetyltransferase family	HGNC:2330
+P23919	DTYMK CDC8 TMPK TYMK	Thymidylate kinase family	HGNC:3061
+P23921	RRM1 RR1	Ribonucleoside diphosphate reductase large chain family	HGNC:10451
+P23945	FSHR LGR1	G protein-coupled receptor 1 family, FSH/LSH/TSH subfamily	HGNC:3969
+P23946	CMA1 CYH CYM	Peptidase S1 family, Granzyme subfamily	HGNC:2097
+P23975	SLC6A2 NAT1 NET1 SLC6A5	Sodium:neurotransmitter symporter (SNF) (TC 2.A.22) family, SLC6A2 subfamily	HGNC:11048
+P24046	GABRR1	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRR1 sub-subfamily	HGNC:4090
+P24347	MMP11 STMY3	Peptidase M10A family	HGNC:7157
+P24385	CCND1 BCL1 PRAD1	Cyclin family, Cyclin D subfamily	HGNC:1582
+P24530	EDNRB ETRB	G protein-coupled receptor 1 family, Endothelin receptor subfamily, EDNRB sub-subfamily	HGNC:3180
+P24557	TBXAS1 CYP5 CYP5A1 TXAS	Cytochrome P450 family	HGNC:11609
+P24666	ACP1	Low molecular weight phosphotyrosine protein phosphatase family	HGNC:122
+P24752	ACAT1 ACAT MAT	Thiolase-like superfamily, Thiolase family	HGNC:93
+P24864	CCNE1 CCNE	Cyclin family, Cyclin E subfamily	HGNC:1589
+P24928	POLR2A POLR2	RNA polymerase beta' chain family	HGNC:9187
+P24941	CDK2 CDKN2	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, CDC2/CDKX subfamily	HGNC:1771
+P25021	HRH2	G protein-coupled receptor 1 family	HGNC:5183
+P25024	CXCR1 CMKAR1 IL8RA	G protein-coupled receptor 1 family	HGNC:6026
+P25025	CXCR2 IL8RB	G protein-coupled receptor 1 family	HGNC:6027
+P25090	FPR2 FPRH1 FPRL1 LXA4R	G protein-coupled receptor 1 family	HGNC:3827
+P25092	GUCY2C GUC2C STAR	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:4688
+P25098	GRK2 ADRBK1 BARK BARK1	Protein kinase superfamily, AGC Ser/Thr protein kinase family, GPRK subfamily	HGNC:289
+P25100	ADRA1D ADRA1A	G protein-coupled receptor 1 family, Adrenergic receptor subfamily, ADRA1D sub-subfamily	HGNC:280
+P25101	EDNRA ETA ETRA	G protein-coupled receptor 1 family, Endothelin receptor subfamily, EDNRA sub-subfamily	HGNC:3179
+P25103	TACR1 NK1R TAC1R	G protein-coupled receptor 1 family	HGNC:11526
+P25105	PTAFR PAFR	G protein-coupled receptor 1 family	HGNC:9582
+P25106	ACKR3 CMKOR1 CXCR7 GPR159 RDC1	G protein-coupled receptor 1 family, Atypical chemokine receptor subfamily	HGNC:23692
+P25116	F2R CF2R PAR1 TR	G protein-coupled receptor 1 family	HGNC:3537
+P25440	BRD2 KIAA9001 RING3	BET family	HGNC:1103
+P25685	DNAJB1 DNAJ1 HDJ1 HSPF1		HGNC:5270
+P25705	ATP5F1A ATP5A ATP5A1 ATP5AL2 ATPM	ATPase alpha/beta chains family	HGNC:823
+P25774	CTSS	Peptidase C1 family	HGNC:2545
+P25786	PSMA1 HC2 NU PROS30 PSC2	Peptidase T1A family	HGNC:9530
+P25787	PSMA2 HC3 PSC3	Peptidase T1A family	HGNC:9531
+P25788	PSMA3 HC8 PSC8	Peptidase T1A family	HGNC:9532
+P25789	PSMA4 HC9 PSC9	Peptidase T1A family	HGNC:9533
+P25815	S100P S100E	S-100 family	HGNC:10504
+P25929	NPY1R NPYR NPYY1	G protein-coupled receptor 1 family	HGNC:7956
+P26006	ITGA3 MSK18	Integrin alpha chain family	HGNC:6139
+P26358	DNMT1 AIM CXXC9 DNMT	Class I-like SAM-binding methyltransferase superfamily, C5-methyltransferase family	HGNC:2976
+P26368	U2AF2 U2AF65	Splicing factor SR family	HGNC:23156
+P26439	HSD3B2 HSDB3B	3-beta-HSD family	HGNC:5218
+P26447	S100A4 CAPL MTS1	S-100 family	HGNC:10494
+P26583	HMGB2 HMG2	HMGB family	HGNC:5000
+P26639	TARS1 TARS	Class-II aminoacyl-tRNA synthetase family	HGNC:11572
+P26678	PLN PLB	Phospholamban family	HGNC:9080
+P27144	AK4 AK3 AK3L1	Adenylate kinase family, AK3 subfamily	HGNC:363
+P27169	PON1 PON	Paraoxonase family	HGNC:9204
+P27338	MAOB	Flavin monoamine oxidase family	HGNC:6834
+P27361	MAPK3 ERK1 PRKM3	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MAP kinase subfamily	HGNC:6877
+P27487	DPP4 ADCP2 CD26	Peptidase S9B family, DPPIV subfamily	HGNC:3009
+P27544	CERS1 LAG1 LASS1 UOG1	Sphingosine N-acyltransferase family	HGNC:14253
+P27695	APEX1 APE APE1 APEX APX HAP1 REF1	DNA repair enzymes AP/ExoA family	HGNC:587
+P27707	DCK	DCK/DGK family	HGNC:2704
+P27708	CAD	CarA family; CarB family; Metallo-dependent hydrolases superfamily, DHOase family, CAD subfamily; Aspartate/ornithine carbamoyltransferase superfamily, ATCase family	HGNC:1424
+P27815	PDE4A DPDE2	Cyclic nucleotide phosphodiesterase family, PDE4 subfamily	HGNC:8780
+P27987	ITPKB	Inositol phosphokinase (IPK) family	HGNC:6179
+P28062	PSMB8 LMP7 PSMB5i RING10 Y2	Peptidase T1B family	HGNC:9545
+P28065	PSMB9 LMP2 PSMB6i RING12	Peptidase T1B family	HGNC:9546
+P28066	PSMA5	Peptidase T1A family	HGNC:9534
+P28070	PSMB4 PROS26	Peptidase T1B family	HGNC:9541
+P28072	PSMB6 LMPY Y	Peptidase T1B family	HGNC:9543
+P28074	PSMB5 LMPX MB1 X	Peptidase T1B family	HGNC:9542
+P28161	GSTM2 GST4	GST superfamily, Mu family	HGNC:4634
+P28221	HTR1D HTR1DA HTRL	G protein-coupled receptor 1 family	HGNC:5289
+P28222	HTR1B HTR1DB	G protein-coupled receptor 1 family	HGNC:5287
+P28223	HTR2A HTR2	G protein-coupled receptor 1 family	HGNC:5293
+P28300	LOX	Lysyl oxidase family	HGNC:6664
+P28329	CHAT	Carnitine/choline acetyltransferase family	HGNC:1912
+P28331	NDUFS1	Complex I 75 kDa subunit family	HGNC:7707
+P28335	HTR2C HTR1C	G protein-coupled receptor 1 family	HGNC:5295
+P28336	NMBR	G protein-coupled receptor 1 family	HGNC:7843
+P28340	POLD1 POLD	DNA polymerase type-B family	HGNC:9175
+P28472	GABRB3	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRB3 sub-subfamily	HGNC:4083
+P28476	GABRR2	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRR2 sub-subfamily	HGNC:4091
+P28482	MAPK1 ERK2 PRKM1 PRKM2	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MAP kinase subfamily	HGNC:6871
+P28566	HTR1E	G protein-coupled receptor 1 family	HGNC:5291
+P28702	RXRB NR2B2	Nuclear hormone receptor family, NR2 subfamily	HGNC:10478
+P28715	ERCC5 ERCM2 XPG XPGC	XPG/RAD2 endonuclease family, XPG subfamily	HGNC:3437
+P28838	LAP3 LAPEP PEPS	Peptidase M17 family	HGNC:18449
+P28845	HSD11B1 HSD11 HSD11L SDR26C1	Short-chain dehydrogenases/reductases (SDR) family	HGNC:5208
+P28907	CD38	ADP-ribosyl cyclase family	HGNC:1667
+P29144	TPP2	Peptidase S8 family	HGNC:12016
+P29218	IMPA1 IMPA	Inositol monophosphatase superfamily	HGNC:6050
+P29274	ADORA2A ADORA2	G protein-coupled receptor 1 family	HGNC:263
+P29275	ADORA2B	G protein-coupled receptor 1 family	HGNC:264
+P29317	EPHA2 ECK	Protein kinase superfamily, Tyr protein kinase family, Ephrin receptor subfamily	HGNC:3386
+P29350	PTPN6 HCP PTP1C	Protein-tyrosine phosphatase family, Non-receptor class 2 subfamily	HGNC:9658
+P29371	TACR3 NK3R TAC3R	G protein-coupled receptor 1 family	HGNC:11528
+P29373	CRABP2	Calycin superfamily, Fatty-acid binding protein (FABP) family	HGNC:2339
+P29375	KDM5A JARID1A RBBP2 RBP2	JARID1 histone demethylase family	HGNC:9886
+P29401	TKT	Transketolase family	HGNC:11834
+P29466	CASP1 IL1BC IL1BCE	Peptidase C14A family	HGNC:1499
+P29474	NOS3	NOS family	HGNC:7876
+P29475	NOS1	NOS family	HGNC:7872
+P29597	TYK2	Protein kinase superfamily, Tyr protein kinase family, JAK subfamily	HGNC:12440
+P29803	PDHA2 PDHAL		HGNC:8807
+P29972	AQP1 CHIP28	MIP/aquaporin (TC 1.A.8) family	HGNC:633
+P29973	CNGA1 CNCG CNCG1	Cyclic nucleotide-gated cation channel (TC 1.A.1.5) family, CNGA1 subfamily	HGNC:2148
+P29992	GNA11 GA11	G-alpha family, G(q) subfamily	HGNC:4379
+P30086	PEBP1 PBP PEBP	Phosphatidylethanolamine-binding protein family	HGNC:8630
+P30101	PDIA3 ERP57 ERP60 GRP58	Protein disulfide isomerase family	HGNC:4606
+P30154	PPP2R1B	Phosphatase 2A regulatory subunit A family	HGNC:9303
+P30260	CDC27 ANAPC3 D0S1430E D17S978E	APC3/CDC27 family	HGNC:1728
+P30279	CCND2	Cyclin family, Cyclin D subfamily	HGNC:1583
+P30281	CCND3	Cyclin family, Cyclin D subfamily	HGNC:1585
+P30291	WEE1	Protein kinase superfamily, Ser/Thr protein kinase family, WEE1 subfamily	HGNC:12761
+P30305	CDC25B CDC25HU2	MPI phosphatase family	HGNC:1726
+P30307	CDC25C	MPI phosphatase family	HGNC:1727
+P30411	BDKRB2 BKR2	G protein-coupled receptor 1 family, Bradykinin receptor subfamily, BDKRB2 sub-subfamily	HGNC:1030
+P30419	NMT1 NMT	NMT family	HGNC:7857
+P30518	AVPR2 ADHR DIR DIR3 V2R	G protein-coupled receptor 1 family, Vasopressin/oxytocin receptor subfamily	HGNC:897
+P30530	AXL UFO	Protein kinase superfamily, Tyr protein kinase family, AXL/UFO subfamily	HGNC:905
+P30531	SLC6A1 GABATR GABT1 GAT1	Sodium:neurotransmitter symporter (SNF) (TC 2.A.22) family, SLC6A1 subfamily	HGNC:11042
+P30532	CHRNA5 NACHRA5	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Alpha-5/CHRNA5 sub-subfamily	HGNC:1959
+P30542	ADORA1	G protein-coupled receptor 1 family	HGNC:262
+P30550	GRPR	G protein-coupled receptor 1 family	HGNC:4609
+P30556	AGTR1 AGTR1A AGTR1B AT2R1 AT2R1B	G protein-coupled receptor 1 family	HGNC:336
+P30559	OXTR	G protein-coupled receptor 1 family, Vasopressin/oxytocin receptor subfamily	HGNC:8529
+P30613	PKLR PK1 PKL	Pyruvate kinase family	HGNC:9020
+P30838	ALDH3A1 ALDH3	Aldehyde dehydrogenase family	HGNC:405
+P30872	SSTR1	G protein-coupled receptor 1 family	HGNC:11330
+P30874	SSTR2	G protein-coupled receptor 1 family	HGNC:11331
+P30926	CHRNB4	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Beta-4/CHRNB4 sub-subfamily	HGNC:1964
+P30939	HTR1F HTR1EL	G protein-coupled receptor 1 family	HGNC:5292
+P30968	GNRHR GRHR	G protein-coupled receptor 1 family	HGNC:4421
+P30989	NTSR1 NTRR	G protein-coupled receptor 1 family, Neurotensin receptor subfamily, NTSR1 sub-subfamily	HGNC:8039
+P31040	SDHA SDH2 SDHF	FAD-dependent oxidoreductase 2 family, FRD/SDH subfamily	HGNC:10680
+P31152	MAPK4 ERK4 PRKM4	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MAP kinase subfamily	HGNC:6878
+P31153	MAT2A AMS2 MATA2	AdoMet synthase family	HGNC:6904
+P31213	SRD5A2	Steroid 5-alpha reductase family	HGNC:11285
+P31327	CPS1		HGNC:2323
+P31350	RRM2 RR2	Ribonucleoside diphosphate reductase small chain family	HGNC:10452
+P31391	SSTR4	G protein-coupled receptor 1 family	HGNC:11333
+P31639	SLC5A2 SGLT2	Sodium:solute symporter (SSF) (TC 2.A.21) family	HGNC:11037
+P31644	GABRA5	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRA5 sub-subfamily	HGNC:4079
+P31645	SLC6A4 HTT SERT	Sodium:neurotransmitter symporter (SNF) (TC 2.A.22) family, SLC6A4 subfamily	HGNC:11050
+P31749	AKT1 PKB RAC	Protein kinase superfamily, AGC Ser/Thr protein kinase family, RAC subfamily	HGNC:391
+P31751	AKT2	Protein kinase superfamily, AGC Ser/Thr protein kinase family, RAC subfamily	HGNC:392
+P31930	UQCRC1	Peptidase M16 family, UQCRC1/QCR1 subfamily	HGNC:12585
+P31939	ATIC PURH OK/SW-cl.86	PurH family	HGNC:794
+P32121	ARRB2 ARB2 ARR2	Arrestin family	HGNC:712
+P32238	CCKAR CCKRA	G protein-coupled receptor 1 family	HGNC:1570
+P32239	CCKBR CCKRB	G protein-coupled receptor 1 family	HGNC:1571
+P32241	VIPR1	G protein-coupled receptor 2 family	HGNC:12694
+P32245	MC4R	G protein-coupled receptor 1 family	HGNC:6932
+P32246	CCR1 CMKBR1 CMKR1 SCYAR1	G protein-coupled receptor 1 family	HGNC:1602
+P32247	BRS3	G protein-coupled receptor 1 family	HGNC:1113
+P32248	CCR7 CMKBR7 EBI1 EVI1	G protein-coupled receptor 1 family	HGNC:1608
+P32249	GPR183 EBI2	G protein-coupled receptor 1 family	HGNC:3128
+P32297	CHRNA3 NACHRA3	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Alpha-3/CHRNA3 sub-subfamily	HGNC:1957
+P32320	CDA CDD	Cytidine and deoxycytidylate deaminase family	HGNC:1712
+P32418	SLC8A1 CNC NCX1	Ca(2+):cation antiporter (CaCA) (TC 2.A.19) family, SLC8 subfamily	HGNC:11068
+P32745	SSTR3	G protein-coupled receptor 1 family	HGNC:11332
+P32754	HPD PPD	4HPPD family	HGNC:5147
+P33032	MC5R	G protein-coupled receptor 1 family	HGNC:6933
+P33261	CYP2C19	Cytochrome P450 family	HGNC:2621
+P33316	DUT	DUTPase family	HGNC:3078
+P33402	GUCY1A2 GUC1A2 GUCSA2	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:4684
+P33527	ABCC1 MRP MRP1	ABC transporter superfamily, ABCC family, Conjugate transporter (TC 3.A.1.208) subfamily	HGNC:51
+P33681	CD80 CD28LG CD28LG1 LAB7		HGNC:1700
+P33981	TTK MPS1 MPS1L1	Protein kinase superfamily, Ser/Thr protein kinase family	HGNC:12401
+P34903	GABRA3	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRA3 sub-subfamily	HGNC:4077
+P34913	EPHX2	AB hydrolase superfamily, Epoxide hydrolase family	HGNC:3402
+P34932	HSPA4 APG2 HSPH2	Heat shock protein 70 family	HGNC:5237
+P34949	MPI PMI1	Mannose-6-phosphate isomerase type 1 family	HGNC:7216
+P34969	HTR7	G protein-coupled receptor 1 family	HGNC:5302
+P34972	CNR2 CB2A CB2B	G protein-coupled receptor 1 family	HGNC:2160
+P34981	TRHR	G protein-coupled receptor 1 family	HGNC:12299
+P34995	PTGER1	G protein-coupled receptor 1 family	HGNC:9593
+P34998	CRHR1 CRFR CRFR1 CRHR	G protein-coupled receptor 2 family	HGNC:2357
+P35030	PRSS3 PRSS4 TRY3 TRY4	Peptidase S1 family	HGNC:9486
+P35218	CA5A CA5	Alpha-carbonic anhydrase family	HGNC:1377
+P35219	CA8 CALS	Alpha-carbonic anhydrase family	HGNC:1382
+P35222	CTNNB1 CTNNB OK/SW-cl.35 PRO2286	Beta-catenin family	HGNC:2514
+P35226	BMI1 PCGF4 RNF51		HGNC:1066
+P35228	NOS2 NOS2A	NOS family	HGNC:7873
+P35270	SPR	Sepiapterin reductase family	HGNC:11257
+P35346	SSTR5	G protein-coupled receptor 1 family	HGNC:11334
+P35348	ADRA1A ADRA1C	G protein-coupled receptor 1 family, Adrenergic receptor subfamily, ADRA1A sub-subfamily	HGNC:277
+P35354	PTGS2 COX2	Prostaglandin G/H synthase family	HGNC:9605
+P35367	HRH1	G protein-coupled receptor 1 family	HGNC:5182
+P35368	ADRA1B	G protein-coupled receptor 1 family, Adrenergic receptor subfamily, ADRA1B sub-subfamily	HGNC:278
+P35372	OPRM1 MOR1	G protein-coupled receptor 1 family	HGNC:8156
+P35398	RORA NR1F1 RZRA	Nuclear hormone receptor family, NR1 subfamily	HGNC:10258
+P35408	PTGER4 PTGER2	G protein-coupled receptor 1 family	HGNC:9596
+P35414	APLNR AGTRL1 APJ	G protein-coupled receptor 1 family	HGNC:339
+P35462	DRD3	G protein-coupled receptor 1 family	HGNC:3024
+P35498	SCN1A NAC1 SCN1	Sodium channel (TC 1.A.1.10) family, Nav1.1/SCN1A subfamily	HGNC:10585
+P35499	SCN4A	Sodium channel (TC 1.A.1.10) family, Nav1.4/SCN4A subfamily	HGNC:10591
+P35520	CBS	Cysteine synthase/cystathionine beta-synthase family	HGNC:1550
+P35557	GCK	Hexokinase family	HGNC:4195
+P35558	PCK1 PEPCK1	Phosphoenolpyruvate carboxykinase [GTP] family	HGNC:8724
+P35575	G6PC1 G6PC G6PT	Glucose-6-phosphatase family	HGNC:4056
+P35579	MYH9	TRAFAC class myosin-kinesin ATPase superfamily, Myosin family	HGNC:7579
+P35580	MYH10	TRAFAC class myosin-kinesin ATPase superfamily, Myosin family	HGNC:7568
+P35590	TIE1 TIE	Protein kinase superfamily, Tyr protein kinase family, Tie subfamily	HGNC:11809
+P35610	SOAT1 ACACT ACACT1 ACAT ACAT1 SOAT STAT	Membrane-bound acyltransferase family, Sterol o-acyltransferase subfamily	HGNC:11177
+P35626	GRK3 ADRBK2 BARK2	Protein kinase superfamily, AGC Ser/Thr protein kinase family, GPRK subfamily	HGNC:290
+P35713	SOX18		HGNC:11194
+P35869	AHR BHLHE76		HGNC:348
+P35913	PDE6B PDEB	Cyclic nucleotide phosphodiesterase family	HGNC:8786
+P35916	FLT4 VEGFR3	Protein kinase superfamily, Tyr protein kinase family, CSF-1/PDGF receptor subfamily	HGNC:3767
+P35968	KDR FLK1 VEGFR2	Protein kinase superfamily, Tyr protein kinase family, CSF-1/PDGF receptor subfamily	HGNC:6307
+P36507	MAP2K2 MEK2 MKK2 PRKMK2	Protein kinase superfamily, STE Ser/Thr protein kinase family, MAP kinase kinase subfamily	HGNC:6842
+P36543	ATP6V1E1 ATP6E ATP6E2	V-ATPase E subunit family	HGNC:857
+P36544	CHRNA7 NACHRA7	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Alpha-7/CHRNA7 sub-subfamily	HGNC:1960
+P36639	NUDT1 MTH1	Nudix hydrolase family	HGNC:8048
+P36873	PPP1CC	PPP phosphatase family, PP-1 subfamily	HGNC:9283
+P36888	FLT3 CD135 FLK2 STK1	Protein kinase superfamily, Tyr protein kinase family, CSF-1/PDGF receptor subfamily	HGNC:3765
+P36894	BMPR1A ACVRLK3 ALK3	Protein kinase superfamily, TKL Ser/Thr protein kinase family, TGFB receptor subfamily	HGNC:1076
+P36896	ACVR1B ACVRLK4 ALK4	Protein kinase superfamily, TKL Ser/Thr protein kinase family, TGFB receptor subfamily	HGNC:172
+P36897	TGFBR1 ALK5 SKR4	Protein kinase superfamily, TKL Ser/Thr protein kinase family, TGFB receptor subfamily	HGNC:11772
+P36956	SREBF1 BHLHD1 SREBP1	SREBP family	HGNC:11289
+P36969	GPX4	Glutathione peroxidase family	HGNC:4556
+P37023	ACVRL1 ACVRLK1 ALK1	Protein kinase superfamily, TKL Ser/Thr protein kinase family, TGFB receptor subfamily	HGNC:175
+P37058	HSD17B3 EDH17B3 SDR12C2	Short-chain dehydrogenases/reductases (SDR) family, 17-beta-HSD 3 subfamily	HGNC:5212
+P37059	HSD17B2 EDH17B2 SDR9C2	Short-chain dehydrogenases/reductases (SDR) family	HGNC:5211
+P37088	SCNN1A SCNN1	Amiloride-sensitive sodium channel (TC 1.A.6) family, SCNN1A subfamily	HGNC:10599
+P37173	TGFBR2	Protein kinase superfamily, TKL Ser/Thr protein kinase family, TGFB receptor subfamily	HGNC:11773
+P37231	PPARG NR1C3	Nuclear hormone receptor family, NR1 subfamily	HGNC:9236
+P37268	FDFT1	Phytoene/squalene synthase family	HGNC:3629
+P37288	AVPR1A AVPR1	G protein-coupled receptor 1 family, Vasopressin/oxytocin receptor subfamily	HGNC:895
+P38435	GGCX GC	Vitamin K-dependent gamma-carboxylase family	HGNC:4247
+P38571	LIPA	AB hydrolase superfamily, Lipase family	HGNC:6617
+P38606	ATP6V1A ATP6A1 ATP6V1A1 VPP2	ATPase alpha/beta chains family	HGNC:851
+P38919	EIF4A3 DDX48 KIAA0111	DEAD box helicase family, eIF4A subfamily	HGNC:18683
+P38936	CDKN1A CAP20 CDKN1 CIP1 MDA6 PIC1 SDI1 WAF1	CDI family	HGNC:1784
+P39023	RPL3 OK/SW-cl.32	Universal ribosomal protein uL3 family	HGNC:10332
+P39086	GRIK1 GLUR5	Glutamate-gated ion channel (TC 1.A.10.1) family, GRIK1 subfamily	HGNC:4579
+P39748	FEN1 RAD2	XPG/RAD2 endonuclease family, FEN1 subfamily	HGNC:3650
+P39877	PLA2G5	Phospholipase A2 family	HGNC:9038
+P39900	MMP12 HME	Peptidase M10A family	HGNC:7158
+P40145	ADCY8	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:239
+P40238	MPL TPOR	Type I cytokine receptor family, Type 1 subfamily	HGNC:7217
+P40306	PSMB10 LMP10 MECL1	Peptidase T1B family	HGNC:9538
+P40337	VHL	VHL family	HGNC:12687
+P40429	RPL13A	Universal ribosomal protein uL13 family	HGNC:10304
+P40763	STAT3 APRF	Transcription factor STAT family	HGNC:11364
+P40818	USP8 KIAA0055 UBPY	Peptidase C19 family	HGNC:12631
+P40879	SLC26A3 DRA	SLC26A/SulP transporter (TC 2.A.53) family	HGNC:3018
+P41143	OPRD1 OPRD	G protein-coupled receptor 1 family	HGNC:8153
+P41145	OPRK1 OPRK	G protein-coupled receptor 1 family	HGNC:8154
+P41146	OPRL1 OOR ORL1	G protein-coupled receptor 1 family	HGNC:8155
+P41180	CASR GPRC2A PCAR1	G protein-coupled receptor 3 family	HGNC:1514
+P41222	PTGDS PDS	Calycin superfamily, Lipocalin family	HGNC:9592
+P41229	KDM5C DXS1272E JARID1C SMCX XE169	JARID1 histone demethylase family	HGNC:11114
+P41231	P2RY2 P2RU1	G protein-coupled receptor 1 family	HGNC:8541
+P41240	CSK	Protein kinase superfamily, Tyr protein kinase family, CSK subfamily	HGNC:2444
+P41247	PNPLA4 DXS1283E GS2		HGNC:24887
+P41252	IARS1 IARS	Class-I aminoacyl-tRNA synthetase family	HGNC:5330
+P41279	MAP3K8 COT ESTF	Protein kinase superfamily, STE Ser/Thr protein kinase family, MAP kinase kinase kinase subfamily	HGNC:6860
+P41440	SLC19A1 FLOT1 RFC1	Reduced folate carrier (RFC) transporter (TC 2.A.48) family	HGNC:10937
+P41594	GRM5 GPRC1E MGLUR5	G protein-coupled receptor 3 family	HGNC:4597
+P41595	HTR2B	G protein-coupled receptor 1 family	HGNC:5294
+P41597	CCR2 CMKBR2	G protein-coupled receptor 1 family	HGNC:1603
+P41743	PRKCI DXS1179E	Protein kinase superfamily, AGC Ser/Thr protein kinase family, PKC subfamily	HGNC:9404
+P41968	MC3R	G protein-coupled receptor 1 family	HGNC:6931
+P42226	STAT6	Transcription factor STAT family	HGNC:11368
+P42261	GRIA1 GLUA1 GLUH1 GLUR1	Glutamate-gated ion channel (TC 1.A.10.1) family, GRIA1 subfamily	HGNC:4571
+P42262	GRIA2 GluA2 GLUR2	Glutamate-gated ion channel (TC 1.A.10.1) family, GRIA2 subfamily	HGNC:4572
+P42263	GRIA3 GluA3 GLUR3 GLURC	Glutamate-gated ion channel (TC 1.A.10.1) family, GRIA3 subfamily	HGNC:4573
+P42330	AKR1C3 DDH1 HSD17B5 KIAA0119 PGFS	Aldo/keto reductase family	HGNC:386
+P42336	PIK3CA	PI3/PI4-kinase family	HGNC:8975
+P42338	PIK3CB PIK3C1	PI3/PI4-kinase family	HGNC:8976
+P42345	MTOR FRAP FRAP1 FRAP2 RAFT1 RAPT1	PI3/PI4-kinase family	HGNC:3942
+P42356	PI4KA PIK4 PIK4CA	PI3/PI4-kinase family, Type III PI4K subfamily	HGNC:8983
+P42568	MLLT3 AF9 YEATS3		HGNC:7136
+P42574	CASP3 CPP32	Peptidase C14A family	HGNC:1504
+P42684	ABL2 ABLL ARG	Protein kinase superfamily, Tyr protein kinase family, ABL subfamily	HGNC:77
+P42765	ACAA2	Thiolase-like superfamily, Thiolase family	HGNC:83
+P42785	PRCP PCP	Peptidase S28 family	HGNC:9344
+P42892	ECE1	Peptidase M13 family	HGNC:3146
+P43003	SLC1A3 EAAT1 GLAST GLAST1	Dicarboxylate/amino acid:cation symporter (DAACS) (TC 2.A.23) family, SLC1A3 subfamily	HGNC:10941
+P43004	SLC1A2 EAAT2 GLT1	Dicarboxylate/amino acid:cation symporter (DAACS) (TC 2.A.23) family, SLC1A2 subfamily	HGNC:10940
+P43005	SLC1A1 EAAC1 EAAT3 HEAAC1	Dicarboxylate/amino acid:cation symporter (DAACS) (TC 2.A.23) family, SLC1A1 subfamily	HGNC:10939
+P43007	SLC1A4 ASCT1 SATT	Dicarboxylate/amino acid:cation symporter (DAACS) (TC 2.A.23) family, SLC1A4 subfamily	HGNC:10942
+P43088	PTGFR	G protein-coupled receptor 1 family	HGNC:9600
+P43115	PTGER3	G protein-coupled receptor 1 family	HGNC:9595
+P43119	PTGIR PRIPR	G protein-coupled receptor 1 family	HGNC:9602
+P43155	CRAT CAT1	Carnitine/choline acetyltransferase family	HGNC:2342
+P43166	CA7	Alpha-carbonic anhydrase family	HGNC:1381
+P43220	GLP1R	G protein-coupled receptor 2 family	HGNC:4324
+P43235	CTSK CTSO CTSO2	Peptidase C1 family	HGNC:2536
+P43304	GPD2	FAD-dependent glycerol-3-phosphate dehydrogenase family	HGNC:4456
+P43354	NR4A2 NOT NURR1 TINUR	Nuclear hormone receptor family, NR4 subfamily	HGNC:7981
+P43403	ZAP70 SRK	Protein kinase superfamily, Tyr protein kinase family, SYK/ZAP-70 subfamily	HGNC:12858
+P43405	SYK	Protein kinase superfamily, Tyr protein kinase family, SYK/ZAP-70 subfamily	HGNC:11491
+P43490	NAMPT PBEF PBEF1	NAPRTase family	HGNC:30092
+P43681	CHRNA4 NACRA4	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Alpha-4/CHRNA4 sub-subfamily	HGNC:1958
+P45378	TNNT3	Troponin T family	HGNC:11950
+P45452	MMP13	Peptidase M10A family	HGNC:7159
+P45954	ACADSB	Acyl-CoA dehydrogenase family	HGNC:91
+P45983	MAPK8 JNK1 PRKM8 SAPK1 SAPK1C	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MAP kinase subfamily	HGNC:6881
+P45984	MAPK9 JNK2 PRKM9 SAPK1A	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MAP kinase subfamily	HGNC:6886
+P45985	MAP2K4 JNKK1 MEK4 MKK4 PRKMK4 SEK1 SERK1 SKK1	Protein kinase superfamily, STE Ser/Thr protein kinase family, MAP kinase kinase subfamily	HGNC:6844
+P46059	SLC15A1 PEPT1	Major facilitator superfamily, Proton-dependent oligopeptide transporter (POT/PTR) (TC 2.A.17) family	HGNC:10920
+P46089	GPR3 ACCA	G protein-coupled receptor 1 family	HGNC:4484
+P46092	CCR10 GPR2	G protein-coupled receptor 1 family	HGNC:4474
+P46093	GPR4	G protein-coupled receptor 1 family	HGNC:4497
+P46095	GPR6	G protein-coupled receptor 1 family	HGNC:4515
+P46098	HTR3A 5HT3R HTR3	Ligand-gated ion channel (TC 1.A.9) family, 5-hydroxytryptamine receptor (TC 1.A.9.2) subfamily, HTR3A sub-subfamily	HGNC:5297
+P46527	CDKN1B KIP1 p27	CDI family	HGNC:1785
+P46663	BDKRB1 BRADYB1	G protein-coupled receptor 1 family, Bradykinin receptor subfamily, BDKRB1 sub-subfamily	HGNC:1029
+P46734	MAP2K3 MEK3 MKK3 PRKMK3 SKK2	Protein kinase superfamily, STE Ser/Thr protein kinase family, MAP kinase kinase subfamily	HGNC:6843
+P46934	NEDD4 KIAA0093 NEDD4-1 RPF1 PIG53		HGNC:7727
+P47211	GALR1 GALNR GALNR1	G protein-coupled receptor 1 family	HGNC:4132
+P47712	PLA2G4A CPLA2 PLA2G4		HGNC:9035
+P47869	GABRA2	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRA2 sub-subfamily	HGNC:4076
+P47870	GABRB2	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRB2 sub-subfamily	HGNC:4082
+P47871	GCGR	G protein-coupled receptor 2 family	HGNC:4192
+P47898	HTR5A	G protein-coupled receptor 1 family	HGNC:5300
+P47900	P2RY1	G protein-coupled receptor 1 family	HGNC:8539
+P47901	AVPR1B AVPR3 VPR3	G protein-coupled receptor 1 family, Vasopressin/oxytocin receptor subfamily	HGNC:896
+P47989	XDH XDHA	Xanthine dehydrogenase family	HGNC:12805
+P48039	MTNR1A	G protein-coupled receptor 1 family	HGNC:7463
+P48048	KCNJ1 ROMK1	Inward rectifier-type potassium channel (TC 1.A.2.1) family, KCNJ1 subfamily	HGNC:6255
+P48058	GRIA4 GluA4 GLUR4	Glutamate-gated ion channel (TC 1.A.10.1) family, GRIA4 subfamily	HGNC:4574
+P48065	SLC6A12 BGT1	Sodium:neurotransmitter symporter (SNF) (TC 2.A.22) family, SLC6A12 subfamily	HGNC:11045
+P48067	SLC6A9	Sodium:neurotransmitter symporter (SNF) (TC 2.A.22) family, SLC6A9 subfamily	HGNC:11056
+P48145	NPBWR1 GPR7	G protein-coupled receptor 1 family	HGNC:4522
+P48147	PREP PEP	Peptidase S9A family	HGNC:9358
+P43116	PTGER2	G protein-coupled receptor 1 family	HGNC:9594
+P48163	ME1	Malic enzymes family	HGNC:6983
+P48165	GJA8	Connexin family, Alpha-type (group II) subfamily	HGNC:4281
+P48169	GABRA4	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRA4 sub-subfamily	HGNC:4078
+P48201	ATP5MC3 ATP5G3	ATPase C chain family	HGNC:843
+P48357	LEPR DB OBR	Type I cytokine receptor family, Type 2 subfamily	HGNC:6554
+P48443	RXRG NR2B3	Nuclear hormone receptor family, NR2 subfamily	HGNC:10479
+P48449	LSS OSC	Terpene cyclase/mutase family	HGNC:6708
+P48454	PPP3CC CALNA3 CNA3	PPP phosphatase family, PP-2B subfamily	HGNC:9316
+P48547	KCNC1	Potassium channel family, C (Shaw) (TC 1.A.1.2) subfamily, Kv3.1/KCNC1 sub-subfamily	HGNC:6233
+P48556	PSMD8	Proteasome subunit S14 family	HGNC:9566
+P48729	CSNK1A1	Protein kinase superfamily, CK1 Ser/Thr protein kinase family, Casein kinase I subfamily	HGNC:2451
+P48730	CSNK1D HCKID	Protein kinase superfamily, CK1 Ser/Thr protein kinase family, Casein kinase I subfamily	HGNC:2452
+P48735	IDH2	Isocitrate and isopropylmalate dehydrogenases family	HGNC:5383
+P48736	PIK3CG	PI3/PI4-kinase family	HGNC:8978
+P48764	SLC9A3 NHE3	Monovalent cation:proton antiporter 1 (CPA1) transporter (TC 2.A.36) family	HGNC:11073
+P48775	TDO2 TDO	Tryptophan 2,3-dioxygenase family	HGNC:11708
+P48788	TNNI2	Troponin I family	HGNC:11946
+P49005	POLD2	DNA polymerase delta/II small subunit family	HGNC:9176
+P49019	HCAR3 GPR109B HCA3 HM74B NIACR2	G protein-coupled receptor 1 family	HGNC:16824
+P49137	MAPKAPK2	Protein kinase superfamily, CAMK Ser/Thr protein kinase family	HGNC:6887
+P49146	NPY2R	G protein-coupled receptor 1 family	HGNC:7957
+P49238	CX3CR1 CMKBRL1 GPR13	G protein-coupled receptor 1 family	HGNC:2558
+P49281	SLC11A2 DCT1 DMT1 NRAMP2 OK/SW-cl.20	NRAMP (TC 2.A.55) family	HGNC:10908
+P49286	MTNR1B	G protein-coupled receptor 1 family	HGNC:7464
+P49327	FASN FAS		HGNC:3594
+P49336	CDK8	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, CDC2/CDKX subfamily	HGNC:1779
+P49354	FNTA	Protein prenyltransferase subunit alpha family	HGNC:3782
+P49356	FNTB	Protein prenyltransferase subunit beta family	HGNC:3785
+P49366	DHPS DS	Deoxyhypusine synthase family	HGNC:2869
+P49411	TUFM	TRAFAC class translation factor GTPase superfamily, Classic translation factor GTPase family, EF-Tu/EF-1A subfamily	HGNC:12420
+P49419	ALDH7A1 ATQ1	Aldehyde dehydrogenase family	HGNC:877
+P49427	CDC34 UBCH3 UBE2R1	Ubiquitin-conjugating enzyme family	HGNC:1734
+P49585	PCYT1A CTPCT PCYT1	Cytidylyltransferase family	HGNC:8754
+P49641	MAN2A2 MANA2X	Glycosyl hydrolase 38 family	HGNC:6825
+P49642	PRIM1	Eukaryotic-type primase small subunit family	HGNC:9369
+P49674	CSNK1E	Protein kinase superfamily, CK1 Ser/Thr protein kinase family, Casein kinase I subfamily	HGNC:2453
+P49682	CXCR3 GPR9	G protein-coupled receptor 1 family	HGNC:4540
+P49720	PSMB3	Peptidase T1B family	HGNC:9540
+P49721	PSMB2	Peptidase T1B family	HGNC:9539
+P49759	CLK1 CLK	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, Lammer subfamily	HGNC:2068
+P49760	CLK2	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, Lammer subfamily	HGNC:2069
+P49768	PSEN1 AD3 PS1 PSNL1	Peptidase A22A family	HGNC:9508
+P49773	HINT1 HINT PKCI1 PRKCNH1	HINT family	HGNC:4912
+P49798	RGS4		HGNC:10000
+P49810	PSEN2 AD4 PS2 PSNL2 STM2	Peptidase A22A family	HGNC:9509
+P49821	NDUFV1 UQOR1	Complex I 51 kDa subunit family	HGNC:7716
+P49840	GSK3A	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, GSK-3 subfamily	HGNC:4616
+P49841	GSK3B	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, GSK-3 subfamily	HGNC:4617
+P49862	KLK7 PRSS6 SCCE	Peptidase S1 family, Kallikrein subfamily	HGNC:6368
+P49888	SULT1E1 STE	Sulfotransferase 1 family	HGNC:11377
+P49895	DIO1 ITDI1 TXDI1	Iodothyronine deiodinase family	HGNC:2883
+P49915	GMPS		HGNC:4378
+P49916	LIG3	ATP-dependent DNA ligase family	HGNC:6600
+P49917	LIG4	ATP-dependent DNA ligase family	HGNC:6601
+P50052	AGTR2	G protein-coupled receptor 1 family	HGNC:338
+P50053	KHK	Carbohydrate kinase PfkB family	HGNC:6315
+P50135	HNMT	Class I-like SAM-binding methyltransferase superfamily, HNMT family	HGNC:5028
+P50148	GNAQ GAQ	G-alpha family, G(q) subfamily	HGNC:4390
+P50225	SULT1A1 STP STP1 OK/SW-cl.88	Sulfotransferase 1 family	HGNC:11453
+P50281	MMP14	Peptidase M10A family	HGNC:7160
+P50336	PPOX	Protoporphyrinogen/coproporphyrinogen oxidase family, Protoporphyrinogen oxidase subfamily	HGNC:9280
+P50406	HTR6	G protein-coupled receptor 1 family	HGNC:5301
+P50416	CPT1A CPT1	Carnitine/choline acetyltransferase family	HGNC:2328
+P50570	DNM2 DYN2	TRAFAC class dynamin-like GTPase superfamily, Dynamin/Fzo/YdjA family	HGNC:2974
+P50579	METAP2 MNPEP P67EIF2	Peptidase M24A family, Methionine aminopeptidase eukaryotic type 2 subfamily	HGNC:16672
+P50583	NUDT2 APAH1	Nudix hydrolase family	HGNC:8049
+P50591	TNFSF10 APO2L TRAIL	Tumor necrosis factor family	HGNC:11925
+P50613	CDK7 CAK CAK1 CDKN7 MO15 STK1	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, CDC2/CDKX subfamily	HGNC:1778
+P50750	CDK9 CDC2L4 TAK	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, CDC2/CDKX subfamily	HGNC:1780
+P50897	PPT1 CLN1 PPT	Palmitoyl-protein thioesterase family	HGNC:9325
+P50993	ATP1A2 KIAA0778	Cation transport ATPase (P-type) (TC 3.A.3) family, Type IIC subfamily	HGNC:800
+P51003	PAPOLA PAP	Poly(A) polymerase family	HGNC:14981
+P51160	PDE6C PDEA2	Cyclic nucleotide phosphodiesterase family	HGNC:8787
+P51161	FABP6 ILBP ILLBP	Calycin superfamily, Fatty-acid binding protein (FABP) family	HGNC:3561
+P51164	ATP4B	X(+)/potassium ATPases subunit beta family	HGNC:820
+P51168	SCNN1B	Amiloride-sensitive sodium channel (TC 1.A.6) family, SCNN1B subfamily	HGNC:10600
+P51170	SCNN1G	Amiloride-sensitive sodium channel (TC 1.A.6) family, SCNN1G subfamily	HGNC:10602
+P51172	SCNN1D DNACH	Amiloride-sensitive sodium channel (TC 1.A.6) family, SCNN1D subfamily	HGNC:10601
+P51449	RORC NR1F3 RORG RZRG	Nuclear hormone receptor family, NR1 subfamily	HGNC:10260
+P51511	MMP15	Peptidase M10A family	HGNC:7161
+P51512	MMP16 C8orf57 MMPX2	Peptidase M10A family	HGNC:7162
+P51531	SMARCA2 BAF190B BRM SNF2A SNF2L2	SNF2/RAD54 helicase family	HGNC:11098
+P51532	SMARCA4 BAF190A BRG1 SNF2B SNF2L4	SNF2/RAD54 helicase family	HGNC:11100
+P51575	P2RX1 P2X1	P2X receptor family	HGNC:8533
+P51580	TPMT	Class I-like SAM-binding methyltransferase superfamily, TPMT family	HGNC:12014
+P51582	P2RY4 NRU	G protein-coupled receptor 1 family	HGNC:8542
+P51617	IRAK1 IRAK	Protein kinase superfamily, TKL Ser/Thr protein kinase family, Pelle subfamily	HGNC:6112
+P51649	ALDH5A1 SSADH	Aldehyde dehydrogenase family	HGNC:408
+P51659	HSD17B4 EDH17B4 SDR8C1	Short-chain dehydrogenases/reductases (SDR) family	HGNC:5213
+P51665	PSMD7 MOV34L	Peptidase M67A family	HGNC:9565
+P51677	CCR3 CMKBR3	G protein-coupled receptor 1 family	HGNC:1604
+P51679	CCR4 CMKBR4	G protein-coupled receptor 1 family	HGNC:1605
+P51681	CCR5 CMKBR5	G protein-coupled receptor 1 family	HGNC:1606
+P51684	CCR6 CKRL3 CMKBR6 GPR29 STRL22	G protein-coupled receptor 1 family	HGNC:1607
+P51685	CCR8 CKRL1 CMKBR8 CMKBRL2	G protein-coupled receptor 1 family	HGNC:1609
+P51686	CCR9 GPR28	G protein-coupled receptor 1 family	HGNC:1610
+P51787	KCNQ1 KCNA8 KCNA9 KVLQT1	Potassium channel family, KQT (TC 1.A.1.15) subfamily, Kv7.1/KCNQ1 sub-subfamily	HGNC:6294
+P51788	CLCN2	Chloride channel (TC 2.A.49) family, ClC-2/CLCN2 subfamily	HGNC:2020
+P51790	CLCN3	Chloride channel (TC 2.A.49) family, ClC-3/CLCN3 subfamily	HGNC:2021
+P51798	CLCN7	Chloride channel (TC 2.A.49) family, ClC-7/CLCN7 subfamily	HGNC:2025
+P51812	RPS6KA3 ISPK1 MAPKAPK1B RSK2	Protein kinase superfamily, AGC Ser/Thr protein kinase family, S6 kinase subfamily	HGNC:10432
+P51817	PRKX PKX1	Protein kinase superfamily, AGC Ser/Thr protein kinase family, cAMP subfamily	HGNC:9441
+P51828	ADCY7 KIAA0037	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:238
+P51955	NEK2 NEK2A NLK1	Protein kinase superfamily, NEK Ser/Thr protein kinase family, NIMA subfamily	HGNC:7745
+P52209	PGD PGDH	6-phosphogluconate dehydrogenase family	HGNC:8891
+P52333	JAK3	Protein kinase superfamily, Tyr protein kinase family, JAK subfamily	HGNC:6193
+P52564	MAP2K6 MEK6 MKK6 PRKMK6 SKK3	Protein kinase superfamily, STE Ser/Thr protein kinase family, MAP kinase kinase subfamily	HGNC:6846
+P52630	STAT2	Transcription factor STAT family	HGNC:11363
+P52732	KIF11 EG5 KNSL1 TRIP5	TRAFAC class myosin-kinesin ATPase superfamily, Kinesin family, BimC subfamily	HGNC:6388
+P52789	HK2	Hexokinase family	HGNC:4923
+P53350	PLK1 PLK	Protein kinase superfamily, Ser/Thr protein kinase family, CDC5/Polo subfamily	HGNC:9077
+P53355	DAPK1 DAPK	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, DAP kinase subfamily	HGNC:2674
+P53396	ACLY	Succinate/malate CoA ligase beta subunit family; Succinate/malate CoA ligase alpha subunit family	HGNC:115
+P53582	METAP1 KIAA0094	Peptidase M24A family, Methionine aminopeptidase type 1 subfamily	HGNC:15789
+P53602	MVD MPD	Diphosphomevalonate decarboxylase family	HGNC:7529
+P53609	PGGT1B	Protein prenyltransferase subunit beta family	HGNC:8895
+P53611	RABGGTB GGTB	Protein prenyltransferase subunit beta family	HGNC:9796
+P53634	CTSC CPPI	Peptidase C1 family	HGNC:2528
+P53667	LIMK1 LIMK	Protein kinase superfamily, TKL Ser/Thr protein kinase family	HGNC:6613
+P53671	LIMK2	Protein kinase superfamily, TKL Ser/Thr protein kinase family	HGNC:6614
+P53778	MAPK12 ERK6 SAPK3	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MAP kinase subfamily	HGNC:6874
+P53779	MAPK10 JNK3 JNK3A PRKM10 SAPK1B	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MAP kinase subfamily	HGNC:6872
+P53985	SLC16A1 MCT1	Major facilitator superfamily, Monocarboxylate porter (TC 2.A.1.13) family	HGNC:10922
+P54098	POLG MDP1 POLG1 POLGA	DNA polymerase type-A family	HGNC:9179
+P54132	BLM RECQ2 RECQL3	Helicase family, RecQ subfamily	HGNC:1058
+P54219	SLC18A1 VAT1 VMAT1	Major facilitator superfamily, Vesicular transporter family	HGNC:10934
+P54289	CACNA2D1 CACNL2A CCHL2A MHS3	Calcium channel subunit alpha-2/delta family	HGNC:1399
+P54578	USP14 TGT	Peptidase C19 family, USP14/UBP6 subfamily	HGNC:12612
+P54619	PRKAG1	5'-AMP-activated protein kinase gamma subunit family	HGNC:9385
+P54646	PRKAA2 AMPK AMPK2	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, SNF1 subfamily	HGNC:9377
+P54652	HSPA2	Heat shock protein 70 family	HGNC:5235
+P54687	BCAT1 BCT1 ECA39	Class-IV pyridoxal-phosphate-dependent aminotransferase family	HGNC:976
+P54709	ATP1B3	X(+)/potassium ATPases subunit beta family	HGNC:806
+P54710	FXYD2 ATP1C ATP1G1	FXYD family	HGNC:4026
+P54750	PDE1A	Cyclic nucleotide phosphodiesterase family, PDE1 subfamily	HGNC:8774
+P54753	EPHB3 ETK2 HEK2 TYRO6	Protein kinase superfamily, Tyr protein kinase family, Ephrin receptor subfamily	HGNC:3394
+P54760	EPHB4 HTK MYK1 TYRO11	Protein kinase superfamily, Tyr protein kinase family, Ephrin receptor subfamily	HGNC:3395
+P54819	AK2 ADK2	Adenylate kinase family, AK2 subfamily	HGNC:362
+P54829	PTPN5	Protein-tyrosine phosphatase family, Non-receptor class subfamily	HGNC:9657
+P55011	SLC12A2 NKCC1	SLC12A transporter family	HGNC:10911
+P55017	SLC12A3 NCC TSC	SLC12A transporter family	HGNC:10912
+P55036	PSMD4 MCB1	Proteasome subunit S5A family	HGNC:9561
+P55055	NR1H2 LXRB NER UNR	Nuclear hormone receptor family, NR1 subfamily	HGNC:7965
+P55072	VCP HEL-220 HEL-S-70	AAA ATPase family	HGNC:12666
+P55085	F2RL1 GPR11 PAR2	G protein-coupled receptor 1 family	HGNC:3538
+P55087	AQP4	MIP/aquaporin (TC 1.A.8) family	HGNC:637
+P55157	MTTP MTP		HGNC:7467
+P55201	BRPF1 BR140		HGNC:14255
+P55210	CASP7 MCH3	Peptidase C14A family	HGNC:1508
+P55211	CASP9 MCH6	Peptidase C14A family	HGNC:1511
+P55212	CASP6 MCH2	Peptidase C14A family	HGNC:1507
+P55263	ADK	Carbohydrate kinase PfkB family	HGNC:257
+P55265	ADAR ADAR1 DSRAD G1P1 IFI4		HGNC:225
+P55786	NPEPPS PSA	Peptidase M1 family	HGNC:7900
+P55851	UCP2 SLC25A8	Mitochondrial carrier (TC 2.A.29) family	HGNC:12518
+P56159	GFRA1 GDNFRA RETL1 TRNR1	GDNFR family	HGNC:4243
+P56192	MARS1 MARS	Class-I aminoacyl-tRNA synthetase family	HGNC:6898
+P56282	POLE2 DPE2	DNA polymerase epsilon subunit B family	HGNC:9178
+P56373	P2RX3	P2X receptor family	HGNC:8534
+P56524	HDAC4 KIAA0288	Histone deacetylase family, HD type 2 subfamily	HGNC:14063
+P56696	KCNQ4	Potassium channel family, KQT (TC 1.A.1.15) subfamily, Kv7.4/KCNQ4 sub-subfamily	HGNC:6298
+P56817	BACE1 BACE KIAA1149	Peptidase A1 family	HGNC:933
+P56937	HSD17B7 17HSD7 SDR37C1 UNQ2563/PRO6243	Short-chain dehydrogenases/reductases (SDR) family, ERG27 subfamily	HGNC:5215
+P57059	SIK1 SIK SNF1LK	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, AMPK subfamily	HGNC:11142
+P57764	GSDMD DFNA5L GSDMDC1 FKSG10	Gasdermin family	HGNC:25697
+P58418	CLRN1 USH3A	Clarin family	HGNC:12605
+P60484	PTEN MMAC1 TEP1	PTEN phosphatase protein family	HGNC:9588
+P60568	IL2	IL-2 family	HGNC:6001
+P60709	ACTB	Actin family	HGNC:132
+P60842	EIF4A1 DDX2A EIF4A	DEAD box helicase family, eIF4A subfamily	HGNC:3282
+P60866	RPS20	Universal ribosomal protein uS10 family	HGNC:10405
+P60900	PSMA6 PROS27	Peptidase T1A family	HGNC:9535
+P60953	CDC42	Small GTPase superfamily, Rho family, CDC42 subfamily	HGNC:1736
+P61073	CXCR4	G protein-coupled receptor 1 family	HGNC:2561
+P61081	UBE2M UBC12	Ubiquitin-conjugating enzyme family, UBC12 subfamily	HGNC:12491
+P61158	ACTR3 ARP3	Actin family, ARP3 subfamily	HGNC:170
+P61160	ACTR2 ARP2	Actin family, ARP2 subfamily	HGNC:169
+P61313	RPL15 EC45 TCBAP0781	Eukaryotic ribosomal protein eL15 family	HGNC:10306
+P61927	RPL37	Eukaryotic ribosomal protein eL37 family	HGNC:10347
+P61964	WDR5 BIG3	WD repeat WDR5/wds family	HGNC:12757
+P62136	PPP1CA PPP1A	PPP phosphatase family, PP-1 subfamily	HGNC:9281
+P62140	PPP1CB	PPP phosphatase family, PP-1 subfamily	HGNC:9282
+P62195	PSMC5 SUG1	AAA ATPase family	HGNC:9552
+P62263	RPS14 PRO2640	Universal ribosomal protein uS11 family	HGNC:10387
+P62508	ESRRG ERR3 ERRG2 KIAA0832 NR3B3	Nuclear hormone receptor family, NR3 subfamily	HGNC:3474
+P62714	PPP2CB	PPP phosphatase family, PP-1 subfamily	HGNC:9300
+P62750	RPL23A	Universal ribosomal protein uL23 family	HGNC:10317
+P62829	RPL23	Universal ribosomal protein uL14 family	HGNC:10316
+P62913	RPL11	Universal ribosomal protein uL5 family	HGNC:10301
+P62917	RPL8	Universal ribosomal protein uL2 family	HGNC:10368
+P62937	PPIA CYPA	Cyclophilin-type PPIase family, PPIase A subfamily	HGNC:9253
+P62942	FKBP1A FKBP1 FKBP12	FKBP-type PPIase family, FKBP1 subfamily	HGNC:3711
+P62993	GRB2 ASH	GRB2/sem-5/DRK family	HGNC:4566
+P63000	RAC1 TC25 MIG5	Small GTPase superfamily, Rho family	HGNC:9801
+P63098	PPP3R1 CNA2 CNB	Calcineurin regulatory subunit family	HGNC:9317
+P63316	TNNC1 TNNC	Troponin C family	HGNC:11943
+P67775	PPP2CA	PPP phosphatase family, PP-1 subfamily	HGNC:9299
+P67870	CSNK2B CK2N G5A	Casein kinase 2 subunit beta family	HGNC:2460
+P68104	EEF1A1 EEF1A EF1A LENG7	TRAFAC class translation factor GTPase superfamily, Classic translation factor GTPase family, EF-Tu/EF-1A subfamily	HGNC:3189
+P68133	ACTA1 ACTA	Actin family	HGNC:129
+P68363	TUBA1B	Tubulin family	HGNC:18809
+P68366	TUBA4A TUBA1	Tubulin family	HGNC:12407
+P68371	TUBB4B TUBB2C	Tubulin family	HGNC:20771
+P68400	CSNK2A1 CK2A1	Protein kinase superfamily, Ser/Thr protein kinase family, CK2 subfamily	HGNC:2457
+P68871	HBB	Globin family	HGNC:4827
+P78329	CYP4F2	Cytochrome P450 family	HGNC:2645
+P78334	GABRE	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRE sub-subfamily	HGNC:4085
+P78348	ASIC1 ACCN2 BNAC2	Amiloride-sensitive sodium channel (TC 1.A.6) family, ASIC1 subfamily	HGNC:100
+P78396	CCNA1	Cyclin family, Cyclin AB subfamily	HGNC:1577
+P78508	KCNJ10	Inward rectifier-type potassium channel (TC 1.A.2.1) family, KCNJ10 subfamily	HGNC:6256
+P78527	PRKDC HYRC HYRC1	PI3/PI4-kinase family	HGNC:9413
+P78536	ADAM17 CSVP TACE		HGNC:195
+P78540	ARG2	Arginase family	HGNC:664
+P80192	MAP3K9 MLK1 PRKE1	Protein kinase superfamily, STE Ser/Thr protein kinase family, MAP kinase kinase kinase subfamily	HGNC:6861
+P80365	HSD11B2 HSD11K SDR9C3	Short-chain dehydrogenases/reductases (SDR) family	HGNC:5209
+P80404	ABAT GABAT	Class-III pyridoxal-phosphate-dependent aminotransferase family	HGNC:23
+P80511	S100A12	S-100 family	HGNC:10489
+P83111	LACTB MRPL56 UNQ843/PRO1781	Peptidase S12 family	HGNC:16468
+P84022	SMAD3 MADH3	Dwarfin/SMAD family	HGNC:6769
+P84077	ARF1	Small GTPase superfamily, Arf family	HGNC:652
+P84098	RPL19	Eukaryotic ribosomal protein eL19 family	HGNC:10312
+P98161	PKD1	Polycystin family	HGNC:9008
+P98170	XIAP API3 BIRC4 IAP3	IAP family	HGNC:592
+P9WGY9	rpoB Rv0667 MTCI376.08c	RNA polymerase beta chain family	
+Q00534	CDK6 CDKN6	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, CDC2/CDKX subfamily	HGNC:1777
+Q00535	CDK5 CDKN5 PSSALRE	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, CDC2/CDKX subfamily	HGNC:1774
+Q00536	CDK16 PCTAIRE1 PCTK1	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, CDC2/CDKX subfamily	HGNC:8749
+Q00653	NFKB2 LYT10		HGNC:7795
+Q00796	SORD	Zinc-containing alcohol dehydrogenase family	HGNC:11184
+Q00975	CACNA1B CACH5 CACNL1A5	Calcium channel alpha-1 subunit (TC 1.A.1.11) family, CACNA1B subfamily	HGNC:1389
+Q00987	MDM2	MDM2/MDM4 family	HGNC:6973
+Q01064	PDE1B PDES1B	Cyclic nucleotide phosphodiesterase family, PDE1 subfamily	HGNC:8775
+Q01118	SCN7A SCN6A	Sodium channel (TC 1.A.1.10) family, SCN7A subfamily	HGNC:10594
+Q01196	RUNX1 AML1 CBFA2		HGNC:10471
+Q01344	IL5RA IL5R	Type I cytokine receptor family, Type 5 subfamily	HGNC:6017
+Q01362	MS4A2 APY FCER1B IGER	MS4A family	HGNC:7316
+Q01432	AMPD3	Metallo-dependent hydrolases superfamily, Adenosine and AMP deaminases family	HGNC:470
+Q01433	AMPD2	Metallo-dependent hydrolases superfamily, Adenosine and AMP deaminases family	HGNC:469
+Q01469	FABP5	Calycin superfamily, Fatty-acid binding protein (FABP) family	HGNC:3560
+Q01543	FLI1	ETS family	HGNC:3749
+Q01668	CACNA1D CACH3 CACN4 CACNL1A2 CCHL1A2	Calcium channel alpha-1 subunit (TC 1.A.1.11) family, CACNA1D subfamily	HGNC:1391
+Q01726	MC1R MSHR	G protein-coupled receptor 1 family	HGNC:6929
+Q01844	EWSR1 EWS	RRM TET family	HGNC:3508
+Q01959	SLC6A3 DAT1	Sodium:neurotransmitter symporter (SNF) (TC 2.A.22) family, SLC6A3 subfamily	HGNC:11049
+Q02083	NAAA ASAHL PLT	Acid ceramidase family	HGNC:736
+Q02108	GUCY1A1 GUC1A3 GUCSA3 GUCY1A3	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:4685
+Q02127	DHODH	Dihydroorotate dehydrogenase family, Type 2 subfamily	HGNC:2867
+Q02153	GUCY1B1 GUC1B3 GUCSB3 GUCY1B3	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:4687
+Q02156	PRKCE PKCE	Protein kinase superfamily, AGC Ser/Thr protein kinase family, PKC subfamily	HGNC:9401
+Q02224	CENPE	TRAFAC class myosin-kinesin ATPase superfamily, Kinesin family	HGNC:1856
+Q02318	CYP27A1 CYP27	Cytochrome P450 family	HGNC:2605
+Q02641	CACNB1 CACNLB1	Calcium channel beta subunit family	HGNC:1401
+Q02750	MAP2K1 MEK1 PRKMK1	Protein kinase superfamily, STE Ser/Thr protein kinase family, MAP kinase kinase subfamily	HGNC:6840
+Q02763	TEK TIE2 VMCM VMCM1	Protein kinase superfamily, Tyr protein kinase family, Tie subfamily	HGNC:11724
+Q02790	FKBP4 FKBP52		HGNC:3720
+Q02818	NUCB1 NUC	Nucleobindin family	HGNC:8043
+Q02878	RPL6 TXREB1	Eukaryotic ribosomal protein eL6 family	HGNC:10362
+Q02880	TOP2B	Type II topoisomerase family	HGNC:11990
+Q02928	CYP4A11 CYP4A2	Cytochrome P450 family	HGNC:2642
+Q02962	PAX2		HGNC:8616
+Q03111	MLLT1 ENL LTG19 YEATS1		HGNC:7134
+Q03164	KMT2A ALL1 CXXC7 HRX HTRX MLL MLL1 TRX1	Class V-like SAM-binding methyltransferase superfamily, Histone-lysine methyltransferase family, TRX/MLL subfamily	HGNC:7132
+Q03181	PPARD NR1C2 PPARB	Nuclear hormone receptor family, NR1 subfamily	HGNC:9235
+Q03405	PLAUR MO3 UPAR		HGNC:9053
+Q03431	PTH1R PTHR PTHR1	G protein-coupled receptor 2 family	HGNC:9608
+Q04206	RELA NFKB3		HGNC:9955
+Q04609	FOLH1 FOLH NAALAD1 PSM PSMA GIG27	Peptidase M28 family, M28B subfamily	HGNC:3788
+Q04637	EIF4G1 EIF4F EIF4G EIF4GI	Eukaryotic initiation factor 4G family	HGNC:3296
+Q04759	PRKCQ PRKCT	Protein kinase superfamily, AGC Ser/Thr protein kinase family, PKC subfamily	HGNC:9410
+Q04760	GLO1	Glyoxalase I family	HGNC:4323
+Q04771	ACVR1 ACVRLK2	Protein kinase superfamily, TKL Ser/Thr protein kinase family, TGFB receptor subfamily	HGNC:171
+Q04828	AKR1C1 DDH DDH1	Aldo/keto reductase family	HGNC:384
+Q04844	CHRNE ACHRE	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Epsilon/CHRNE sub-subfamily	HGNC:1966
+Q04864	REL		HGNC:9954
+Q04912	MST1R PTK8 RON	Protein kinase superfamily, Tyr protein kinase family	HGNC:7381
+Q05193	DNM1 DNM	TRAFAC class dynamin-like GTPase superfamily, Dynamin/Fzo/YdjA family	HGNC:2972
+Q05397	PTK2 FAK FAK1	Protein kinase superfamily, Tyr protein kinase family, FAK subfamily	HGNC:9611
+Q05469	LIPE	'GDXG' lipolytic enzyme family	HGNC:6621
+Q05513	PRKCZ PKC2	Protein kinase superfamily, AGC Ser/Thr protein kinase family, PKC subfamily	HGNC:9412
+Q05586	GRIN1 NMDAR1	Glutamate-gated ion channel (TC 1.A.10.1) family, NR1/GRIN1 subfamily	HGNC:4584
+Q05655	PRKCD PKCD	Protein kinase superfamily, AGC Ser/Thr protein kinase family, PKC subfamily	HGNC:9399
+Q05901	CHRNB3	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Beta-3/CHRNB3 sub-subfamily	HGNC:1963
+Q05940	SLC18A2 SVMT VMAT2	Major facilitator superfamily, Vesicular transporter family	HGNC:10935
+Q06055	ATP5MC2 ATP5G2 PSEC0033	ATPase C chain family	HGNC:842
+Q06124	PTPN11 PTP2C SHPTP2	Protein-tyrosine phosphatase family, Non-receptor class 2 subfamily	HGNC:9644
+Q06187	BTK AGMX1 ATK BPK	Protein kinase superfamily, Tyr protein kinase family, TEC subfamily	HGNC:1133
+Q06203	PPAT GPAT	Purine/pyrimidine phosphoribosyltransferase family	HGNC:9238
+Q06432	CACNG1 CACNLG	PMP-22/EMP/MP20 family, CACNG subfamily	HGNC:1405
+Q06587	RING1 RING1A RNF1		HGNC:10018
+Q06609	RAD51 RAD51A RECA	RecA family, RAD51 subfamily	HGNC:9817
+Q07001	CHRND ACHRD	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Delta/CHRND sub-subfamily	HGNC:1965
+Q07075	ENPEP	Peptidase M1 family	HGNC:3355
+Q07343	PDE4B DPDE4	Cyclic nucleotide phosphodiesterase family, PDE4 subfamily	HGNC:8781
+Q07699	SCN1B	Sodium channel auxiliary subunit SCN1B (TC 8.A.17) family	HGNC:10586
+Q07812	BAX BCL2L4	Bcl-2 family	HGNC:959
+Q07817	BCL2L1 BCL2L BCLX	Bcl-2 family	HGNC:992
+Q07820	MCL1 BCL2L3	Bcl-2 family	HGNC:6943
+Q07864	POLE POLE1	DNA polymerase type-B family	HGNC:9177
+Q07869	PPARA NR1C1 PPAR	Nuclear hormone receptor family, NR1 subfamily	HGNC:9232
+Q07889	SOS1		HGNC:11187
+Q07912	TNK2 ACK1	Protein kinase superfamily, Tyr protein kinase family	HGNC:19297
+Q07973	CYP24A1 CYP24	Cytochrome P450 family	HGNC:2602
+Q08209	PPP3CA CALNA CNA	PPP phosphatase family, PP-2B subfamily	HGNC:9314
+Q08289	CACNB2 CACNLB2 MYSB	Calcium channel beta subunit family	HGNC:1402
+Q08345	DDR1 CAK EDDR1 NEP NTRK4 PTK3A RTK6 TRKE	Protein kinase superfamily, Tyr protein kinase family, Insulin receptor subfamily	HGNC:2730
+Q08462	ADCY2 KIAA1060	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:233
+Q08493	PDE4C DPDE1	Cyclic nucleotide phosphodiesterase family, PDE4 subfamily	HGNC:8782
+Q08499	PDE4D DPDE3	Cyclic nucleotide phosphodiesterase family, PDE4 subfamily	HGNC:8783
+Q08752	PPID CYP40 CYPD	Cyclophilin-type PPIase family, PPIase D subfamily	HGNC:9257
+Q08828	ADCY1	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:232
+Q08881	ITK EMT LYK	Protein kinase superfamily, Tyr protein kinase family, TEC subfamily	HGNC:6171
+Q09428	ABCC8 HRINS SUR SUR1	ABC transporter superfamily, ABCC family, Conjugate transporter (TC 3.A.1.208) subfamily	HGNC:59
+Q09470	KCNA1	Potassium channel family, A (Shaker) (TC 1.A.1.2) subfamily, Kv1.1/KCNA1 sub-subfamily	HGNC:6218
+Q09472	EP300 P300		HGNC:3373
+Q12791	KCNMA1 KCNMA SLO	Potassium channel family, Calcium-activated (TC 1.A.1.3) subfamily, KCa1.1/KCNMA1 sub-subfamily	HGNC:6284
+Q12802	AKAP13 BRX HT31 LBC		HGNC:371
+Q12809	KCNH2 ERG ERG1 HERG	Potassium channel family, H (Eag) (TC 1.A.1.20) subfamily, Kv11.1/KCNH2 sub-subfamily	HGNC:6251
+Q12830	BPTF FAC1 FALZ	PBTF family	HGNC:3581
+Q12834	CDC20	WD repeat CDC20/Fizzy family	HGNC:1723
+Q12852	MAP3K12 ZPK	Protein kinase superfamily, STE Ser/Thr protein kinase family, MAP kinase kinase kinase subfamily	HGNC:6851
+Q12866	MERTK MER	Protein kinase superfamily, Tyr protein kinase family, AXL/UFO subfamily	HGNC:7027
+Q12879	GRIN2A NMDAR2A	Glutamate-gated ion channel (TC 1.A.10.1) family, NR2A/GRIN2A subfamily	HGNC:4585
+Q12882	DPYD	Dihydropyrimidine dehydrogenase family	HGNC:3012
+Q12908	SLC10A2 ASBT ISBT NTCP2	Bile acid:sodium symporter (BASS) (TC 2.A.28) family	HGNC:10906
+Q12931	TRAP1 HSP75 HSPC5	Heat shock protein 90 family	HGNC:16264
+Q12933	TRAF2 TRAP3	TNF receptor-associated factor family, A subfamily	HGNC:12032
+Q12974	PTP4A2 PRL2 PTPCAAX2 BM-008	Protein-tyrosine phosphatase family	HGNC:9635
+Q13002	GRIK2 GLUR6	Glutamate-gated ion channel (TC 1.A.10.1) family, GRIK2 subfamily	HGNC:4580
+Q13003	GRIK3 GLUR7	Glutamate-gated ion channel (TC 1.A.10.1) family, GRIK3 subfamily	HGNC:4581
+Q13018	PLA2R1 CLEC13C		HGNC:9042
+Q13042	CDC16 ANAPC6	APC6/CDC16 family	HGNC:1720
+Q13043	STK4 KRS2 MST1	Protein kinase superfamily, STE Ser/Thr protein kinase family, STE20 subfamily	HGNC:11408
+Q13057	COASY PSEC0106	Eukaryotic CoaD family	HGNC:29932
+Q13085	ACACA ACAC ACC1 ACCA		HGNC:84
+Q13093	PLA2G7 PAFAH	AB hydrolase superfamily, Lipase family	HGNC:9040
+Q13126	MTAP MSAP	PNP/MTAP phosphorylase family, MTAP subfamily	HGNC:7413
+Q13131	PRKAA1 AMPK1	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, SNF1 subfamily	HGNC:9376
+Q13133	NR1H3 LXRA	Nuclear hormone receptor family, NR1 subfamily	HGNC:7966
+Q13153	PAK1	Protein kinase superfamily, STE Ser/Thr protein kinase family, STE20 subfamily	HGNC:8590
+Q13163	MAP2K5 MEK5 MKK5 PRKMK5	Protein kinase superfamily, STE Ser/Thr protein kinase family, MAP kinase kinase subfamily	HGNC:6845
+Q13164	MAPK7 BMK1 ERK5 PRKM7	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MAP kinase subfamily	HGNC:6880
+Q13188	STK3 KRS1 MST2	Protein kinase superfamily, STE Ser/Thr protein kinase family, STE20 subfamily	HGNC:11406
+Q13200	PSMD2 TRAP2	Proteasome subunit S2 family	HGNC:9559
+Q13224	GRIN2B NMDAR2B	Glutamate-gated ion channel (TC 1.A.10.1) family, NR2B/GRIN2B subfamily	HGNC:4586
+Q13255	GRM1 GPRC1A MGLUR1	G protein-coupled receptor 3 family	HGNC:4593
+Q13258	PTGDR	G protein-coupled receptor 1 family	HGNC:9591
+Q13285	NR5A1 AD4BP FTZF1 SF1	Nuclear hormone receptor family, NR5 subfamily	HGNC:7983
+Q13303	KCNAB2 KCNA2B KCNK2	Shaker potassium channel beta subunit family	HGNC:6229
+Q13308	PTK7 CCK4	Protein kinase superfamily, Tyr protein kinase family, Insulin receptor subfamily	HGNC:9618
+Q13315	ATM	PI3/PI4-kinase family, ATM subfamily	HGNC:795
+Q13324	CRHR2 CRF2R CRH2R	G protein-coupled receptor 2 family	HGNC:2358
+Q13336	SLC14A1 HUT11 JK RACH1 UT1 UTE	Urea transporter family	HGNC:10918
+Q13370	PDE3B	Cyclic nucleotide phosphodiesterase family, PDE3 subfamily	HGNC:8779
+Q13393	PLD1	Phospholipase D family	HGNC:9067
+Q13418	ILK ILK1 ILK2	Protein kinase superfamily, TKL Ser/Thr protein kinase family	HGNC:6040
+Q13435	SF3B2 SAP145		HGNC:10769
+Q13451	FKBP5 AIG6 FKBP51		HGNC:3721
+Q13464	ROCK1	Protein kinase superfamily, AGC Ser/Thr protein kinase family	HGNC:10251
+Q13304	GPR17	G protein-coupled receptor 1 family	HGNC:4471
+Q0Z7S8	FABP9	Calycin superfamily, Fatty-acid binding protein (FABP) family	HGNC:3563
+Q13489	BIRC3 API2 MIHC RNF49	IAP family	HGNC:591
+Q13490	BIRC2 API1 MIHB RNF48	IAP family	HGNC:590
+Q13507	TRPC3 TRP3	Transient receptor (TC 1.A.4) family, STrpC subfamily, TRPC3 sub-subfamily	HGNC:12335
+Q13509	TUBB3 TUBB4	Tubulin family	HGNC:20772
+Q13510	ASAH1 ASAH HSD-33 HSD33	Acid ceramidase family	HGNC:735
+Q13516	OLIG2 BHLHB1 BHLHE19 PRKCBP2 RACK17		HGNC:9398
+Q13526	PIN1		HGNC:8988
+Q13535	ATR FRP1	PI3/PI4-kinase family, ATM subfamily	HGNC:882
+Q13546	RIPK1 RIP RIP1	Protein kinase superfamily, TKL Ser/Thr protein kinase family	HGNC:10019
+Q13547	HDAC1 RPD3L1	Histone deacetylase family, HD type 1 subfamily	HGNC:4852
+Q13554	CAMK2B CAM2 CAMK2 CAMKB	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, CaMK subfamily	HGNC:1461
+Q13555	CAMK2G CAMK CAMK-II CAMKG	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, CaMK subfamily	HGNC:1463
+Q13557	CAMK2D CAMKD	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, CaMK subfamily	HGNC:1462
+Q13564	NAE1 APPBP1 HPP1	Ubiquitin-activating E1 family, ULA1 subfamily	HGNC:621
+Q13609	DNASE1L3 DHP2 DNAS1L3	DNase I family	HGNC:2959
+Q13621	SLC12A1 NKCC2	SLC12A transporter family	HGNC:10910
+Q13627	DYRK1A DYRK MNB MNBH	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MNB/DYRK subfamily	HGNC:3091
+Q13635	PTCH1 PTCH	Patched family	HGNC:9585
+Q13639	HTR4	G protein-coupled receptor 1 family	HGNC:5299
+Q13698	CACNA1S CACH1 CACN1 CACNL1A3	Calcium channel alpha-1 subunit (TC 1.A.1.11) family, CACNA1S subfamily	HGNC:1397
+Q13724	MOGS GCS1	Glycosyl hydrolase 63 family	HGNC:24862
+Q13733	ATP1A4 ATP1AL2	Cation transport ATPase (P-type) (TC 3.A.3) family, Type IIC subfamily	HGNC:14073
+Q13822	ENPP2 ATX PDNP2	Nucleotide pyrophosphatase/phosphodiesterase family	HGNC:3357
+Q13882	PTK6 BRK	Protein kinase superfamily, Tyr protein kinase family, BRK/PTK6/SIK subfamily	HGNC:9617
+Q13885	TUBB2A TUBB2	Tubulin family	HGNC:12412
+Q13936	CACNA1C CACH2 CACN2 CACNL1A1 CCHL1A1	Calcium channel alpha-1 subunit (TC 1.A.1.11) family, CACNA1C subfamily	HGNC:1390
+Q13946	PDE7A	Cyclic nucleotide phosphodiesterase family, PDE7 subfamily	HGNC:8791
+Q13956	PDE6H	Rod/cone cGMP-PDE gamma subunit family	HGNC:8790
+Q13976	PRKG1 PRKG1B PRKGR1A PRKGR1B	Protein kinase superfamily, AGC Ser/Thr protein kinase family, cGMP subfamily	HGNC:9414
+Q14003	KCNC3	Potassium channel family, C (Shaw) (TC 1.A.1.2) subfamily, Kv3.3/KCNC3 sub-subfamily	HGNC:6235
+Q14012	CAMK1	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, CaMK subfamily	HGNC:1459
+Q14028	CNGB1 CNCG2 CNCG3L CNCG4 RCNC2	Cyclic nucleotide-gated cation channel (TC 1.A.1.5) family, CNGB1 subfamily	HGNC:2151
+Q14123	PDE1C	Cyclic nucleotide phosphodiesterase family, PDE1 subfamily	HGNC:8776
+Q14145	KEAP1 INRF2 KIAA0132 KLHL19	KEAP1 family	HGNC:23177
+Q14164	IKBKE IKKE IKKI KIAA0151	Protein kinase superfamily, Ser/Thr protein kinase family, I-kappa-B kinase subfamily	HGNC:14552
+Q14181	POLA2	DNA polymerase alpha subunit B family	HGNC:30073
+Q14240	EIF4A2 DDX2B EIF4F	DEAD box helicase family, eIF4A subfamily	HGNC:3284
+Q14289	PTK2B FAK2 PYK2 RAFTK	Protein kinase superfamily, Tyr protein kinase family, FAK subfamily	HGNC:9612
+Q14416	GRM2 GPRC1B MGLUR2	G protein-coupled receptor 3 family	HGNC:4594
+Q14432	PDE3A	Cyclic nucleotide phosphodiesterase family, PDE3 subfamily	HGNC:8778
+Q14498	RBM39 HCC1 RNPC2	Splicing factor SR family	HGNC:15923
+Q14500	KCNJ12 IRK2 KCNJN1	Inward rectifier-type potassium channel (TC 1.A.2.1) family, KCNJ12 subfamily	HGNC:6258
+Q14524	SCN5A	Sodium channel (TC 1.A.1.10) family, Nav1.5/SCN5A subfamily	HGNC:10593
+Q14534	SQLE ERG1	Squalene monooxygenase family	HGNC:11279
+Q14542	SLC29A2 DER12 ENT2 HNP36	SLC29A/ENT transporter (TC 2.A.57) family	HGNC:11004
+Q14563	SEMA3A SEMAD	Semaphorin family	HGNC:10723
+Q14571	ITPR2	InsP3 receptor family	HGNC:6181
+Q14573	ITPR3	InsP3 receptor family	HGNC:6182
+Q14623	IHH	Hedgehog family	HGNC:5956
+Q14643	ITPR1 INSP3R1	InsP3 receptor family	HGNC:6180
+Q14654	KCNJ11	Inward rectifier-type potassium channel (TC 1.A.2.1) family, KCNJ11 subfamily	HGNC:6257
+Q14680	MELK KIAA0175	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, SNF1 subfamily	HGNC:16870
+Q14703	MBTPS1 KIAA0091 S1P SKI1	Peptidase S8 family	HGNC:15456
+Q14790	CASP8 MCH5	Peptidase C14A family	HGNC:1509
+Q14831	GRM7 GPRC1G MGLUR7	G protein-coupled receptor 3 family	HGNC:4599
+Q14832	GRM3 GPRC1C MGLUR3	G protein-coupled receptor 3 family	HGNC:4595
+Q14833	GRM4 GPRC1D MGLUR4	G protein-coupled receptor 3 family	HGNC:4596
+Q14872	MTF1		HGNC:7428
+Q14940	SLC9A5 NHE5	Monovalent cation:proton antiporter 1 (CPA1) transporter (TC 2.A.36) family	HGNC:11078
+Q14957	GRIN2C NMDAR2C	Glutamate-gated ion channel (TC 1.A.10.1) family, NR2C/GRIN2C subfamily	HGNC:4587
+Q14974	KPNB1 NTF97	Importin beta family, Importin beta-1 subfamily	HGNC:6400
+Q14994	NR1I3 CAR	Nuclear hormone receptor family, NR1 subfamily	HGNC:7969
+Q15031	LARS2 KIAA0028	Class-I aminoacyl-tRNA synthetase family	HGNC:17095
+Q15054	POLD3 KIAA0039		HGNC:20932
+Q15059	BRD3 KIAA0043 RING3L	BET family	HGNC:1104
+Q15077	P2RY6 PP2891	G protein-coupled receptor 1 family	HGNC:8543
+Q15078	CDK5R1 CDK5R NCK5A	Cyclin-dependent kinase 5 activator family	HGNC:1775
+Q15116	PDCD1 PD1		HGNC:8760
+Q15118	PDK1 PDHK1	PDK/BCKDK protein kinase family	HGNC:8809
+Q15119	PDK2 PDHK2	PDK/BCKDK protein kinase family	HGNC:8810
+Q15120	PDK3 PDHK3	PDK/BCKDK protein kinase family	HGNC:8811
+Q15125	EBP	EBP family	HGNC:3133
+Q15139	PRKD1 PKD PKD1 PRKCM	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, PKD subfamily	HGNC:9407
+Q15303	ERBB4 HER4	Protein kinase superfamily, Tyr protein kinase family, EGF receptor subfamily	HGNC:3432
+Q15349	RPS6KA2 MAPKAPK1C RSK3	Protein kinase superfamily, AGC Ser/Thr protein kinase family, S6 kinase subfamily	HGNC:10431
+Q15382	RHEB RHEB2	Small GTPase superfamily, Rheb family	HGNC:10011
+Q15392	DHCR24 KIAA0018	FAD-binding oxidoreductase/transferase type 4 family	HGNC:2859
+Q15393	SF3B3 KIAA0017 SAP130	RSE1 family	HGNC:10770
+Q15399	TLR1 KIAA0012	Toll-like receptor family	HGNC:11847
+Q15418	RPS6KA1 MAPKAPK1A RSK1	Protein kinase superfamily, AGC Ser/Thr protein kinase family, S6 kinase subfamily	HGNC:10430
+Q15427	SF3B4 SAP49	SF3B4 family	HGNC:10771
+Q15438	CYTH1 D17S811E PSCD1		HGNC:9501
+Q15459	SF3A1 SAP114		HGNC:10765
+Q15465	SHH	Hedgehog family	HGNC:10848
+Q15628	TRADD		HGNC:12030
+Q15661	TPSAB1 TPS1 TPS2 TPSB1	Peptidase S1 family, Tryptase subfamily	HGNC:12019
+Q15717	ELAVL1 HUR	RRM elav family	HGNC:3312
+Q15722	LTB4R BLT BLT1 BLTR CMKRL1 GPR16 P2RY7	G protein-coupled receptor 1 family	HGNC:6713
+Q15738	NSDHL H105E3	3-beta-HSD family	HGNC:13398
+Q15391	P2RY14 GPR105 KIAA0001	G protein-coupled receptor 1 family	HGNC:16442
+Q15743	GPR68 OGR1	G protein-coupled receptor 1 family	HGNC:4519
+Q15746	MYLK MLCK MLCK1 MYLK1	Protein kinase superfamily, CAMK Ser/Thr protein kinase family	HGNC:7590
+Q15758	SLC1A5 ASCT2 M7V1 RDR RDRC	Dicarboxylate/amino acid:cation symporter (DAACS) (TC 2.A.23) family, SLC1A5 subfamily	HGNC:10943
+Q15759	MAPK11 PRKM11 SAPK2 SAPK2B	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MAP kinase subfamily	HGNC:6873
+Q15761	NPY5R NPYR5	G protein-coupled receptor 1 family	HGNC:7958
+Q15822	CHRNA2	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Alpha-2/CHRNA2 sub-subfamily	HGNC:1956
+Q15825	CHRNA6	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Alpha-6/CHRNA6 sub-subfamily	HGNC:15963
+Q15835	GRK1 RHOK	Protein kinase superfamily, AGC Ser/Thr protein kinase family, GPRK subfamily	HGNC:10013
+Q15842	KCNJ8	Inward rectifier-type potassium channel (TC 1.A.2.1) family, KCNJ8 subfamily	HGNC:6269
+Q15843	NEDD8	Ubiquitin family	HGNC:7732
+Q15849	SLC14A2 HUT2 UT2	Urea transporter family	HGNC:10919
+Q15858	SCN9A NENA	Sodium channel (TC 1.A.1.10) family, Nav1.7/SCN9A subfamily	HGNC:10597
+Q15878	CACNA1E CACH6 CACNL1A6	Calcium channel alpha-1 subunit (TC 1.A.1.11) family, CACNA1E subfamily	HGNC:1392
+Q15910	EZH2 KMT6	Class V-like SAM-binding methyltransferase superfamily, Histone-lysine methyltransferase family, EZ subfamily	HGNC:3527
+Q16099	GRIK4 GRIK	Glutamate-gated ion channel (TC 1.A.10.1) family, GRIK4 subfamily	HGNC:4582
+Q16206	ENOX2 COVA1	ENOX family	HGNC:2259
+Q16236	NFE2L2 NRF2	BZIP family, CNC subfamily	HGNC:7782
+Q16280	CNGA2 CNCA CNCA1 CNCG2	Cyclic nucleotide-gated cation channel (TC 1.A.1.5) family, CNGA2 subfamily	HGNC:2149
+Q16281	CNGA3 CNCG3	Cyclic nucleotide-gated cation channel (TC 1.A.1.5) family, CNGA3 subfamily	HGNC:2150
+Q16288	NTRK3 TRKC	Protein kinase superfamily, Tyr protein kinase family, Insulin receptor subfamily	HGNC:8033
+Q16445	GABRA6	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRA6 sub-subfamily	HGNC:4080
+Q16478	GRIK5 GRIK2	Glutamate-gated ion channel (TC 1.A.10.1) family, GRIK5 subfamily	HGNC:4583
+Q16513	PKN2 PRK2 PRKCL2	Protein kinase superfamily, AGC Ser/Thr protein kinase family, PKC subfamily	HGNC:9406
+Q16518	RPE65	Carotenoid oxygenase family	HGNC:10294
+Q16526	CRY1 PHLL1	DNA photolyase class-1 family	HGNC:2384
+Q16539	MAPK14 CSBP CSBP1 CSBP2 CSPB1 MXI2 SAPK2A	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MAP kinase subfamily	HGNC:6876
+Q16548	BCL2A1 BCL2L5 BFL1 GRS HBPA1	Bcl-2 family	HGNC:991
+Q16558	KCNMB1	KCNMB (TC 8.A.14.1) family, KCNMB1 subfamily	HGNC:6285
+Q16572	SLC18A3 VACHT	Major facilitator superfamily, Vesicular transporter family	HGNC:10936
+Q16581	C3AR1 AZ3B C3R1 HNFAG09	G protein-coupled receptor 1 family	HGNC:1319
+Q16584	MAP3K11 MLK3 PTK1 SPRK	Protein kinase superfamily, STE Ser/Thr protein kinase family, MAP kinase kinase kinase subfamily	HGNC:6850
+Q16594	TAF9 TAF2G TAFII31	TAF9 family	HGNC:11542
+Q16602	CALCRL CGRPR	G protein-coupled receptor 2 family	HGNC:16709
+Q16620	NTRK2 TRKB	Protein kinase superfamily, Tyr protein kinase family, Insulin receptor subfamily	HGNC:8032
+Q16637	SMN1 SMN SMNT; SMN2 SMNC	SMN family	HGNC:11117;HGNC:11118
+Q16651	PRSS8	Peptidase S1 family	HGNC:9491
+Q16654	PDK4 PDHK4	PDK/BCKDK protein kinase family	HGNC:8812
+Q16659	MAPK6 ERK3 PRKM6	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MAP kinase subfamily	HGNC:6879
+Q16665	HIF1A BHLHE78 MOP1 PASD8		HGNC:4910
+Q16678	CYP1B1	Cytochrome P450 family	HGNC:2597
+Q16706	MAN2A1 MANA2	Glycosyl hydrolase 38 family	HGNC:6824
+Q16739	UGCG	Glycosyltransferase 2 family	HGNC:12524
+Q16769	QPCT	Glutaminyl-peptide cyclotransferase family	HGNC:9753
+Q16790	CA9 G250 MN	Alpha-carbonic anhydrase family	HGNC:1383
+Q16820	MEP1B		HGNC:7020
+Q16828	DUSP6 MKP3 PYST1	Protein-tyrosine phosphatase family, Non-receptor class dual specificity subfamily	HGNC:3072
+Q16831	UPP1 UP	PNP/UDP phosphorylase family	HGNC:12576
+Q16832	DDR2 NTRKR3 TKT TYRO10	Protein kinase superfamily, Tyr protein kinase family, Insulin receptor subfamily	HGNC:2731
+Q16850	CYP51A1 CYP51	Cytochrome P450 family	HGNC:2649
+Q16853	AOC3 VAP1	Copper/topaquinone oxidase family	HGNC:550
+Q16873	LTC4S	MAPEG family	HGNC:6719
+Q16875	PFKFB3	Phosphoglycerate mutase family	HGNC:8874
+Q16877	PFKFB4	Phosphoglycerate mutase family	HGNC:8875
+Q16881	TXNRD1 GRIM12 KDRF	Class-I pyridine nucleotide-disulfide oxidoreductase family	HGNC:12437
+Q2M2I8	AAK1 KIAA1048	Protein kinase superfamily, Ser/Thr protein kinase family	HGNC:19679
+Q32MK0	MYLK3 MLCK	Protein kinase superfamily, CAMK Ser/Thr protein kinase family	HGNC:29826
+Q3SYC2	MOGAT2 DC5 DGAT2L5	Diacylglycerol acyltransferase family	HGNC:23248
+Q3ZCM7	TUBB8	Tubulin family	HGNC:20773
+Q49AN0	CRY2 KIAA0658	DNA photolyase class-1 family	HGNC:2385
+Q4FZB7	KMT5B SUV420H1 CGI-85	Class V-like SAM-binding methyltransferase superfamily, Histone-lysine methyltransferase family, Suvar4-20 subfamily	HGNC:24283
+Q4U2R8	SLC22A6 OAT1 PAHT	Major facilitator (TC 2.A.1) superfamily, Organic cation transporter (TC 2.A.1.19) family	HGNC:10970
+Q53GL7	PARP10	ARTD/PARP family	HGNC:25895
+Q53GQ0	HSD17B12 SDR12C1	Short-chain dehydrogenases/reductases (SDR) family, 17-beta-HSD 3 subfamily	HGNC:18646
+Q58F21	BRDT	BET family	HGNC:1105
+Q59H18	TNNI3K CARK	Protein kinase superfamily, TKL Ser/Thr protein kinase family, MAP kinase kinase kinase subfamily	HGNC:19661
+Q5BJF2	TMEM97 MAC30 S2R	TMEM97/sigma-2 receptor family	HGNC:28106
+Q5NUL3	FFAR4 GPR120 GPR129 O3FAR1 PGR4	G protein-coupled receptor 1 family	HGNC:19061
+Q5S007	LRRK2 PARK8	Protein kinase superfamily, TKL Ser/Thr protein kinase family	HGNC:18618
+Q5TCS8	AK9 AKD1 AKD2 C6orf199 C6orf224	Adenylate kinase family	HGNC:33814
+Q5VT25	CDC42BPA KIAA0451	Protein kinase superfamily, AGC Ser/Thr protein kinase family, DMPK subfamily	HGNC:1737
+Q5VTY9	HHAT MART2 SKI1	Membrane-bound acyltransferase family, HHAT subfamily	HGNC:18270
+Q5VWZ2	LYPLAL1	AB hydrolase superfamily, AB hydrolase 2 family	HGNC:20440
+Q5XG87	TENT4A PAPD7 POLS TRF4	DNA polymerase type-B-like family	HGNC:16705
+Q5XXA6	ANO1 DOG1 ORAOV2 TAOS2 TMEM16A	Anoctamin family	HGNC:21625
+Q66K64	DCAF15 C19orf72		HGNC:25095
+Q68DD2	PLA2G4F		HGNC:27396
+Q6B0I6	KDM4D JHDM3D JMJD2D	JHDM3 histone demethylase family	HGNC:25498
+Q6P988	NOTUM OK/SW-CL.30	Pectinacetylesterase family, Notum subfamily	HGNC:27106
+Q6PEY2	TUBA3E	Tubulin family	HGNC:20765
+Q6PIU2	NCEH1 AADACL1 KIAA1363	'GDXG' lipolytic enzyme family	HGNC:29260
+Q6PL18	ATAD2 L16 PRO2000	AAA ATPase family	HGNC:30123
+Q6TGC4	PADI6 PAD6	Protein arginine deiminase family	HGNC:20449
+Q6UWR7	ENPP6 UNQ1889/PRO4334	Nucleotide pyrophosphatase/phosphodiesterase family	HGNC:23409
+Q6UWW8	CES3 UNQ869/PRO1887	Type-B carboxylesterase/lipase family	HGNC:1865
+Q6V1X1	DPP8 DPRP1 MSTP097 MSTP135 MSTP141	Peptidase S9B family, DPPIV subfamily	HGNC:16490
+Q6W5P4	NPSR1 GPR154 GPRA PGR14	G protein-coupled receptor 1 family, Vasopressin/oxytocin receptor subfamily	HGNC:23631
+Q6DWJ6	GPR139 GPRG1 PGR3	G protein-coupled receptor 1 family	HGNC:19995
+Q6NT32	CES5A CES7	Type-B carboxylesterase/lipase family	HGNC:26459
+Q5R387	PLA2G2C	Phospholipase A2 family	HGNC:9032
+Q5NE16	CTSL3P CTSL3	Peptidase C1 family	HGNC:33132
+Q8WXS5	CACNG8 CACNG6	PMP-22/EMP/MP20 family, CACNG subfamily	HGNC:13628
+Q8WYB5	KAT6B KIAA0383 MORF MOZ2 MYST4	MYST (SAS/MOZ) family	HGNC:17582
+Q8WZA2	RAPGEF4 CGEF2 EPAC2		HGNC:16626
+Q92504	SLC39A7 HKE4 RING5	ZIP transporter (TC 2.A.5) family, KE4/Catsup subfamily	HGNC:4927
+Q92506	HSD17B8 FABGL HKE6 RING2 SDR30C1	Short-chain dehydrogenases/reductases (SDR) family	HGNC:3554
+Q92508	PIEZO1 FAM38A KIAA0233	PIEZO (TC 1.A.75) family	HGNC:28993
+Q92523	CPT1B KIAA1670	Carnitine/choline acetyltransferase family	HGNC:2329
+Q92538	GBF1 KIAA0248		HGNC:4181
+Q92540	SMG7 C1orf16 EST1C KIAA0250		HGNC:16792
+Q92630	DYRK2	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MNB/DYRK subfamily	HGNC:3093
+Q92633	LPAR1 EDG2 LPA1	G protein-coupled receptor 1 family	HGNC:3166
+Q92696	RABGGTA	Protein prenyltransferase subunit alpha family	HGNC:9795
+Q92731	ESR2 ESTRB NR3A2	Nuclear hormone receptor family, NR3 subfamily	HGNC:3468
+Q92736	RYR2	Ryanodine receptor (TC 1.A.3.1) family, RYR2 subfamily	HGNC:10484
+Q92743	HTRA1 HTRA PRSS11	Peptidase S1C family	HGNC:9476
+Q92753	RORB NR1F2 RZRB	Nuclear hormone receptor family, NR1 subfamily	HGNC:10259
+Q92769	HDAC2	Histone deacetylase family, HD type 1 subfamily	HGNC:4853
+Q92793	CREBBP CBP		HGNC:2348
+Q92794	KAT6A MOZ MYST3 RUNXBP2 ZNF220	MYST (SAS/MOZ) family	HGNC:13013
+Q92800	EZH1 KIAA0388	Class V-like SAM-binding methyltransferase superfamily, Histone-lysine methyltransferase family, EZ subfamily	HGNC:3526
+Q92830	KAT2A GCN5 GCN5L2	Acetyltransferase family, GCN5 subfamily	HGNC:4201
+Q92831	KAT2B PCAF	Acetyltransferase family, GCN5 subfamily	HGNC:8638
+Q92843	BCL2L2 BCLW KIAA0271	Bcl-2 family	HGNC:995;HGNC:42959
+Q92847	GHSR	G protein-coupled receptor 1 family	HGNC:4267
+Q92851	CASP10 MCH4	Peptidase C14A family	HGNC:1500
+Q92876	KLK6 PRSS18 PRSS9	Peptidase S1 family, Kallikrein subfamily	HGNC:6367
+Q92887	ABCC2 CMOAT CMOAT1 CMRP MRP2	ABC transporter superfamily, ABCC family, Conjugate transporter (TC 3.A.1.208) subfamily	HGNC:53
+Q92889	ERCC4 ERCC11 XPF	XPF family	HGNC:3436
+Q92918	MAP4K1 HPK1	Protein kinase superfamily, STE Ser/Thr protein kinase family, STE20 subfamily	HGNC:6863
+Q92952	KCNN1 SK	Potassium channel KCNN family, KCa2.1/KCNN1 subfamily	HGNC:6290
+Q92993	KAT5 HTATIP TIP60	MYST (SAS/MOZ) family	HGNC:5275
+Q93008	USP9X DFFRX FAM USP9	Peptidase C19 family	HGNC:12632
+Q93009	USP7 HAUSP	Peptidase C19 family	HGNC:12630
+Q93084	ATP2A3	Cation transport ATPase (P-type) (TC 3.A.3) family, Type IIA subfamily	HGNC:813
+Q93096	PTP4A1 PRL1 PTPCAAX1	Protein-tyrosine phosphatase family	HGNC:9634
+Q969F8	KISS1R AXOR12 GPR54	G protein-coupled receptor 1 family	HGNC:4510
+Q969Q6	PPP2R3C C14orf10 G5PR		HGNC:17485
+Q969S8	HDAC10	Histone deacetylase family, HD type 2 subfamily	HGNC:18128
+Q969V1	MCHR2 GPR145 SLT	G protein-coupled receptor 1 family	HGNC:20867
+Q96A54	ADIPOR1 PAQR1 TESBP1A CGI-45	ADIPOR family	HGNC:24040
+Q96AD5	PNPLA2 ATGL FP17548		HGNC:30802
+Q96BI3	APH1A PSF CGI-78 UNQ579/PRO1141	APH-1 family	HGNC:29509
+Q96C86	DCPS DCS1 HINT5 HSPC015	HIT family	HGNC:29812
+Q96CV9	OPTN FIP2 GLC1E HIP7 HYPL NRP		HGNC:17142
+Q96D31	ORAI1 CRACM1 TMEM142A	Orai family	HGNC:25896
+Q96DB2	HDAC11	Histone deacetylase family	HGNC:19086
+Q96EB6	SIRT1 SIR2L1	Sirtuin family, Class I subfamily	HGNC:14929
+Q96FL8	SLC47A1 MATE1	Multi antimicrobial extrusion (MATE) (TC 2.A.66.1) family	HGNC:25588
+Q96GD4	AURKB AIK2 AIM1 AIRK2 ARK2 STK1 STK12 STK5	Protein kinase superfamily, Ser/Thr protein kinase family, Aurora subfamily	HGNC:11390
+Q96GG9	DCUN1D1 DCN1 DCUN1L1 RP42 SCCRO		HGNC:18184
+Q96IV0	NGLY1 PNG1	Transglutaminase-like superfamily, PNGase family	HGNC:17646
+Q96IY4	CPB2	Peptidase M14 family	HGNC:2300
+Q96J92	WNK4 PRKWNK4	Protein kinase superfamily, Ser/Thr protein kinase family, WNK subfamily	HGNC:14544
+Q96JM7	L3MBTL3 KIAA1798 MBT1		HGNC:23035
+Q96KB5	PBK TOPK	Protein kinase superfamily, STE Ser/Thr protein kinase family, MAP kinase kinase subfamily	HGNC:18282
+Q96KQ7	EHMT2 BAT8 C6orf30 G9A KMT1C NG36	Class V-like SAM-binding methyltransferase superfamily, Histone-lysine methyltransferase family, Suvar3-9 subfamily	HGNC:14129
+Q96KS0	EGLN2 EIT6		HGNC:14660
+Q96L21	RPL10L	Universal ribosomal protein uL16 family	HGNC:17976
+Q96LA8	PRMT6 HRMT1L6	Class I-like SAM-binding methyltransferase superfamily, Protein arginine N-methyltransferase family, PRMT6 subfamily	HGNC:18241
+Q96LB1	MRGPRX2 MRGX2	G protein-coupled receptor 1 family, Mas subfamily	HGNC:17983
+Q96LB2	MRGPRX1 MRGX1 SNSR3 SNSR4	G protein-coupled receptor 1 family, Mas subfamily	HGNC:17962
+Q96LZ3	PPP3R2 CBLP PPP3RL	Calcineurin regulatory subunit family	HGNC:9318
+Q96M32	AK7	Adenylate kinase family; Dpy-30 family	HGNC:20091
+Q96MA6	AK8 C9orf98	Adenylate kinase family	HGNC:26526
+Q96NX5	CAMK1G CLICK3 VWS1	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, CaMK subfamily	HGNC:14585
+Q96P20	NLRP3 C1orf7 CIAS1 NALP3 PYPAF1	NLRP family	HGNC:16400
+Q96P65	QRFPR GPR103	G protein-coupled receptor 1 family	HGNC:15565
+Q96PD7	DGAT2 HMFN1045 UNQ738/PRO1433	Diacylglycerol acyltransferase family	HGNC:16940
+Q96PH1	NOX5		HGNC:14874
+Q96PN6	ADCY10 SAC	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:21285
+Q96PR1	KCNC2	Potassium channel family, C (Shaw) (TC 1.A.1.2) subfamily, Kv3.2/KCNC2 sub-subfamily	HGNC:6234
+Q96PY6	NEK1 KIAA1901	Protein kinase superfamily, NEK Ser/Thr protein kinase family, NIMA subfamily	HGNC:7744
+Q96Q15	SMG1 ATX KIAA0421 LIP	PI3/PI4-kinase family	HGNC:30045
+Q96Q83	ALKBH3 ABH3 DEPC1	AlkB family	HGNC:30141
+Q96QE3	ATAD5 C17orf41 Elg1 FRAG1	AAA ATPase family	HGNC:25752
+Q96RD7	PANX1 MRS1 UNQ2529/PRO6028	Pannexin family	HGNC:8599
+Q96RI0	F2RL3 PAR4	G protein-coupled receptor 1 family	HGNC:3540
+Q96RI1	NR1H4 BAR FXR HRR1 RIP14	Nuclear hormone receptor family, NR1 subfamily	HGNC:7967
+Q96RJ0	TAAR1 TA1 TAR1 TRAR1	G protein-coupled receptor 1 family	HGNC:17734
+Q96RP8	KCNA7	Potassium channel family, A (Shaker) (TC 1.A.1.2) subfamily, Kv1.7/KCNA7 sub-subfamily	HGNC:6226
+Q96RP9	GFM1 EFG EFG1 GFM	TRAFAC class translation factor GTPase superfamily, Classic translation factor GTPase family, EF-G/EF-2 subfamily	HGNC:13780
+Q96RR4	CAMKK2 CAMKKB KIAA0787	Protein kinase superfamily, Ser/Thr protein kinase family	HGNC:1470
+Q96S37	SLC22A12 OATL4 URAT1 UNQ6453/PRO34004	Major facilitator (TC 2.A.1) superfamily, Organic cation transporter (TC 2.A.1.19) family	HGNC:17989
+Q96S38	RPS6KC1 RPK118	Protein kinase superfamily, Ser/Thr protein kinase family, S6 kinase subfamily	HGNC:10439
+Q96SN7	ORAI2 C7orf19 CBCIP2 TMEM142B PP1729	Orai family	HGNC:21667
+Q96SW2	CRBN AD-006	CRBN family	HGNC:30185
+Q96T53	MBOAT4 GOAT OACT4 FKSG89	Membrane-bound acyltransferase family	HGNC:32311
+Q96T88	UHRF1 ICBP90 NP95 RNF106		HGNC:12556
+Q99250	SCN2A HBA NAC2 SCN2A1 SCN2A2	Sodium channel (TC 1.A.1.10) family, Nav1.2/SCN2A subfamily	HGNC:10588
+Q99418	CYTH2 ARNO PSCD2 PSCD2L		HGNC:9502
+Q99436	PSMB7 Z	Peptidase T1B family	HGNC:9544
+Q99447	PCYT2	Cytidylyltransferase family	HGNC:8756
+Q99456	KRT12	Intermediate filament family	HGNC:6414
+Q99460	PSMD1	Proteasome subunit S1 family	HGNC:9554
+Q99496	RNF2 BAP1 DING HIPI3 RING1B		HGNC:10061
+Q99500	S1PR3 C9orf108 C9orf47 EDG3	G protein-coupled receptor 1 family	HGNC:3167
+Q99519	NEU1 NANH	Glycosyl hydrolase 33 family	HGNC:7758
+Q99523	SORT1	VPS10-related sortilin family, SORT1 subfamily	HGNC:11186
+Q99527	GPER1 CEPR CMKRL2 DRY12 GPER GPR30	G protein-coupled receptor 1 family	HGNC:4485
+Q99538	LGMN PRSC1	Peptidase C13 family	HGNC:9472
+Q99542	MMP19 MMP18 RASI	Peptidase M10A family	HGNC:7165
+Q99558	MAP3K14 NIK	Protein kinase superfamily, STE Ser/Thr protein kinase family, MAP kinase kinase kinase subfamily	HGNC:6853
+Q99571	P2RX4	P2X receptor family	HGNC:8535
+Q99572	P2RX7	P2X receptor family	HGNC:8537
+Q99584	S100A13	S-100 family	HGNC:10490
+Q99643	SDHC CYB560 SDH3	Cytochrome b560 family	HGNC:10682
+Q99683	MAP3K5 ASK1 MAPKKK5 MEKK5	Protein kinase superfamily, STE Ser/Thr protein kinase family, MAP kinase kinase kinase subfamily	HGNC:6857
+Q99685	MGLL	AB hydrolase superfamily, Monoacylglycerol lipase family	HGNC:17038
+Q99705	MCHR1 GPR24 SLC1	G protein-coupled receptor 1 family	HGNC:4479
+Q99714	HSD17B10 ERAB HADH2 MRPP2 SCHAD SDR5C1 XH98G2	Short-chain dehydrogenases/reductases (SDR) family	HGNC:4800
+Q99720	SIGMAR1 OPRS1 SRBP AAG8	ERG2 family	HGNC:8157
+Q99755	PIP5K1A		HGNC:8994
+Q99788	CMKLR1 CHEMR23 DEZ	Chemokine-like receptor (CMKLR) family	HGNC:2121
+Q99808	SLC29A1 ENT1	SLC29A/ENT transporter (TC 2.A.57) family	HGNC:11003
+Q99814	EPAS1 BHLHE73 HIF2A MOP2 PASD2		HGNC:3374
+Q99835	SMO SMOH	G protein-coupled receptor Fz/Smo family	HGNC:11119
+Q99836	MYD88		HGNC:7562
+Q99873	PRMT1 HMT2 HRMT1L2 IR1B4	Class I-like SAM-binding methyltransferase superfamily, Protein arginine N-methyltransferase family	HGNC:5187
+Q99884	SLC6A7 PROT	Sodium:neurotransmitter symporter (SNF) (TC 2.A.22) family, SLC6A7 subfamily	HGNC:11054
+Q99895	CTRC CLCR	Peptidase S1 family, Elastase subfamily	HGNC:2523
+Q99928	GABRG3	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRG3 sub-subfamily	HGNC:4088
+Q9BPV8	P2RY13 GPR86 GPR94 FKSG77	G protein-coupled receptor 1 family	HGNC:4537
+Q9BPX1	HSD17B14 DHRS10 SDR3 SDR47C1 UNQ502/PRO474	Short-chain dehydrogenases/reductases (SDR) family	HGNC:23238
+Q9BQ31	KCNS3	Potassium channel family, S (TC 1.A.1.2) subfamily, Kv9.3/KCNS3 sub-subfamily	HGNC:6302
+Q9BQB6	VKORC1 VKOR MSTP134 MSTP576 UNQ308/PRO351	VKOR family	HGNC:23663
+Q9BQE3	TUBA1C TUBA6	Tubulin family	HGNC:20768
+Q9BQI3	EIF2AK1 HRI KIAA1369 PRO1362	Protein kinase superfamily, Ser/Thr protein kinase family, GCN2 subfamily	HGNC:24921
+Q9BRQ5	ORAI3 TMEM142C	Orai family	HGNC:28185
+Q9BUB5	MKNK1 MNK1	Protein kinase superfamily, CAMK Ser/Thr protein kinase family	HGNC:7110
+Q9BUF5	TUBB6	Tubulin family	HGNC:20776
+Q9BV23	ABHD6	AB hydrolase superfamily	HGNC:21398
+Q9BVA1	TUBB2B	Tubulin family	HGNC:30829
+Q9BWD1	ACAT2 ACTL	Thiolase-like superfamily, Thiolase family	HGNC:94
+Q9BWU1	CDK19 CDC2L6 CDK11 KIAA1028	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, CDC2/CDKX subfamily	HGNC:19338
+Q9BXA5	SUCNR1 GPR91	G protein-coupled receptor 1 family	HGNC:4542
+Q9BXF3	CECR2 KIAA1740		HGNC:1840
+Q9BXM7	PINK1	Protein kinase superfamily, Ser/Thr protein kinase family	HGNC:14581
+Q9BY41	HDAC8 HDACL1 CDA07	Histone deacetylase family, HD type 1 subfamily	HGNC:13315
+Q9BY66	KDM5D HY HYA JARID1D KIAA0234 SMCY	JARID1 histone demethylase family	HGNC:11115
+Q9BYF1	ACE2 UNQ868/PRO1885	Peptidase M2 family	HGNC:13557
+Q9BYP7	WNK3 KIAA1566 PRKWNK3	Protein kinase superfamily, Ser/Thr protein kinase family, WNK subfamily	HGNC:14543
+Q9BYT3	STK33	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, CaMK subfamily	HGNC:14568
+Q9BZ95	NSD3 WHSC1L1 DC28	Class V-like SAM-binding methyltransferase superfamily, Histone-lysine methyltransferase family, SET2 subfamily	HGNC:12767
+Q9BZD2	SLC29A3 ENT3 UNQ717/PRO1380	SLC29A/ENT transporter (TC 2.A.57) family	HGNC:23096
+Q9BZJ3	TPSD1	Peptidase S1 family, Tryptase subfamily	HGNC:14118
+Q9BZL6	PRKD2 PKD2 HSPC187	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, PKD subfamily	HGNC:17293
+Q9BZM1	PLA2G12A PLA2G12 FKSG38 UNQ2519/PRO6012	Phospholipase A2 family	HGNC:18554
+Q9BZP6	CHIA	Glycosyl hydrolase 18 family, Chitinase class II subfamily	HGNC:17432
+Q9BZV2	SLC19A3	Reduced folate carrier (RFC) transporter (TC 2.A.48) family	HGNC:16266
+Q9GZN0	GPR88 STRG	G protein-coupled receptor 1 family	HGNC:4539
+Q9GZQ4	NMUR2 NMU2 NMU2R TGR1	G protein-coupled receptor 1 family	HGNC:16454
+Q9GZQ6	NPFFR1 GPR147 NPFF1	G protein-coupled receptor 1 family	HGNC:17425
+Q9GZT9	EGLN1 C1orf12 PNAS-118 PNAS-137		HGNC:1232
+Q9GZU1	MCOLN1 ML4 TRPML1 MSTP080	Transient receptor (TC 1.A.4) family, Polycystin subfamily, MCOLN1 sub-subfamily	HGNC:13356
+Q9GZV3	SLC5A7 CHT1	Sodium:solute symporter (SSF) (TC 2.A.21) family	HGNC:14025
+Q9GZW8	MS4A7 4SPAN2 CD20L4 CFFM4	MS4A family	HGNC:13378
+Q9GZZ6	CHRNA10 NACHRA10	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Alpha-10/CHRNA10 sub-subfamily	HGNC:13800
+Q9GZZ9	UBA5 UBE1DC1	Ubiquitin-activating E1 family, UBA5 subfamily	HGNC:23230
+Q9H093	NUAK2 OMPHK2 SNARK	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, SNF1 subfamily	HGNC:29558
+Q9H0A0	NAT10 ALP KIAA1709	RNA cytidine acetyltransferase family, NAT10 subfamily	HGNC:29830
+Q9H0K1	SIK2 KIAA0781 QIK SNF1LK2	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, SNF1 subfamily	HGNC:21680
+Q9H0M0	WWP1		HGNC:17004
+Q9H1R3	MYLK2	Protein kinase superfamily, CAMK Ser/Thr protein kinase family	HGNC:16243
+Q9H228	S1PR5 EDG8	G protein-coupled receptor 1 family	HGNC:14299
+Q9H237	PORCN MG61 PORC PPN	Membrane-bound acyltransferase family, Porcupine subfamily	HGNC:17652
+Q9H239	MMP28 MMP25 UNQ1893/PRO4339	Peptidase M10A family	HGNC:14366
+Q9H244	P2RY12 HORK3	G protein-coupled receptor 1 family	HGNC:18124
+Q9H252	KCNH6 ERG2	Potassium channel family, H (Eag) (TC 1.A.1.20) subfamily, Kv11.2/KCNH6 sub-subfamily	HGNC:18862
+Q9H2F3	HSD3B7	3-beta-HSD family	HGNC:18324
+Q9H2K2	TNKS2 PARP5B TANK2 TNKL	ARTD/PARP family	HGNC:15677
+Q9H2K8	TAOK3 DPK JIK KDS MAP3K18	Protein kinase superfamily, STE Ser/Thr protein kinase family, STE20 subfamily	HGNC:18133
+Q9H2R5	KLK15	Peptidase S1 family, Kallikrein subfamily	HGNC:20453
+Q9H2S1	KCNN2	Potassium channel KCNN family, KCa2.2/KCNN2 subfamily	HGNC:6291
+Q9H2X9	SLC12A5 KCC2 KIAA1176	SLC12A transporter family, K/Cl co-transporter subfamily	HGNC:13818
+Q9H306	MMP27 UNQ2503/PRO5992	Peptidase M10A family	HGNC:14250
+Q9H3M7	TXNIP VDUP1	Arrestin family	HGNC:16952
+Q9H3N8	HRH4 GPCR105	G protein-coupled receptor 1 family	HGNC:17383
+Q9H3R0	KDM4C GASC1 JHDM3C JMJD2C KIAA0780	JHDM3 histone demethylase family	HGNC:17071
+Q9BX93	PLA2G12B PLA2G13 FKSG71	Phospholipase A2 family	HGNC:18555
+Q9H1C0	LPAR5 GPR92 GPR93	G protein-coupled receptor 1 family	HGNC:13307
+Q9H4A3	WNK1 HSN2 KDP KIAA0344 PRKWNK1	Protein kinase superfamily, Ser/Thr protein kinase family, WNK subfamily	HGNC:14540
+Q9H4B4	PLK3 CNK FNK PRK	Protein kinase superfamily, Ser/Thr protein kinase family, CDC5/Polo subfamily	HGNC:2154
+Q9H4B7	TUBB1	Tubulin family	HGNC:16257
+Q9H5I1	SUV39H2 KMT1B	Class V-like SAM-binding methyltransferase superfamily, Histone-lysine methyltransferase family, Suvar3-9 subfamily	HGNC:17287
+Q9H5J4	ELOVL6 FACE LCE	ELO family, ELOVL6 subfamily	HGNC:15829
+Q9H6Z9	EGLN3		HGNC:14661
+Q9H773	DCTPP1 XTP3TPA CDA03		HGNC:28777
+Q9H7B4	SMYD3 ZMYND1 ZNFN3A1	Class V-like SAM-binding methyltransferase superfamily, Histone-lysine methyltransferase family	HGNC:15513
+Q9H7D0	DOCK5	DOCK family	HGNC:23476
+Q9H8M2	BRD9 UNQ3040/PRO9856		HGNC:25818
+Q9H9B1	EHMT1 EUHMTASE1 GLP KIAA1876 KMT1D	Class V-like SAM-binding methyltransferase superfamily	HGNC:24650
+Q9H9Z2	LIN28A CSDD1 LIN28 ZCCHC1	Lin-28 family	HGNC:15986
+Q9HAU4	SMURF2		HGNC:16809
+Q9HAZ1	CLK4	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, Lammer subfamily	HGNC:13659
+Q9HB89	NMUR1 GPR66 NMU1	G protein-coupled receptor 1 family	HGNC:4518
+Q9HBA0	TRPV4 VRL2 VROAC	Transient receptor (TC 1.A.4) family, TrpV subfamily, TRPV4 sub-subfamily	HGNC:18083
+Q9HBH1	PDF PDF1A	Polypeptide deformylase family	HGNC:30012
+Q9HBH9	MKNK2 GPRK7 MNK2	Protein kinase superfamily, CAMK Ser/Thr protein kinase family	HGNC:7111
+Q9HBW0	LPAR2 EDG4 LPA2	G protein-coupled receptor 1 family	HGNC:3168
+Q9HBY0	NOX3 MOX2		HGNC:7890
+Q9HBY8	SGK2	Protein kinase superfamily, AGC Ser/Thr protein kinase family	HGNC:13900
+Q9HC35	EML4 C2orf2 EMAPL4	WD repeat EMAP family	HGNC:1316
+Q9HC97	GPR35	G protein-coupled receptor 1 family	HGNC:4492
+Q9HCE7	SMURF1 KIAA1625		HGNC:16807
+Q9HCF6	TRPM3 KIAA1616 LTRPC3	Transient receptor (TC 1.A.4) family, LTrpC subfamily, TRPM3 sub-subfamily	HGNC:17992
+Q9HCG7	GBA2 KIAA1605 SPG46 AD035	Non-lysosomal glucosylceramidase family	HGNC:18986
+Q9HCR9	PDE11A	Cyclic nucleotide phosphodiesterase family	HGNC:8773
+Q9HCU8	POLD4 POLDS	DNA polymerase delta subunit 4 family	HGNC:14106
+Q9NNW7	TXNRD2 KIAA1652 TRXR2	Class-I pyridine nucleotide-disulfide oxidoreductase family	HGNC:18155
+Q9NP56	PDE7B	Cyclic nucleotide phosphodiesterase family, PDE7 subfamily	HGNC:8792
+Q9NP59	SLC40A1 FPN FPN1 IREG1 SLC11A3 MSTP079	Ferroportin (FP) (TC 2.A.100) family, SLC40A subfamily	HGNC:10909
+Q9NP87	POLM polmu	DNA polymerase type-X family	HGNC:9185
+Q9NPC1	LTB4R2 BLT2R BLTR2	G protein-coupled receptor 1 family	HGNC:19260
+Q9NPC2	KCNK9 TASK3	Two pore domain potassium channel (TC 1.A.1.8) family	HGNC:6283
+Q9NPH5	NOX4 RENOX		HGNC:7891
+Q9NPI1	BRD7 BP75 CELTIX1		HGNC:14310
+Q9NQ66	PLCB1 KIAA0581		HGNC:15917
+Q9NQR1	KMT5A PRSET7 SET07 SET8 SETD8	Class V-like SAM-binding methyltransferase superfamily, Histone-lysine methyltransferase family, PR/SET subfamily	HGNC:29489
+Q9NQS5	GPR84 EX33	G protein-coupled receptor 1 family	HGNC:4535
+Q9NQU5	PAK6 PAK5	Protein kinase superfamily, STE Ser/Thr protein kinase family, STE20 subfamily	HGNC:16061
+Q9NQV7	PRDM9 PFM6	Class V-like SAM-binding methyltransferase superfamily	HGNC:13994
+Q9NQW8	CNGB3	Cyclic nucleotide-gated cation channel (TC 1.A.1.5) family, CNGB3 subfamily	HGNC:2153
+Q9NR22	PRMT8 HRMT1L3 HRMT1L4	Class I-like SAM-binding methyltransferase superfamily, Protein arginine N-methyltransferase family, PRMT8 subfamily	HGNC:5188
+Q9NR33	POLE4		HGNC:18755
+Q9NR82	KCNQ5	Potassium channel family, KQT (TC 1.A.1.15) subfamily, Kv7.5/KCNQ5 sub-subfamily	HGNC:6299
+Q9NR96	TLR9 UNQ5798/PRO19605	Toll-like receptor family	HGNC:15633
+Q9NR97	TLR8 UNQ249/PRO286	Toll-like receptor family	HGNC:15632
+Q9NRA0	SPHK2 SK2		HGNC:18859
+Q9NRF9	POLE3 CHRAC17		HGNC:13546
+Q9NRG4	SMYD2 KMT3C	Class V-like SAM-binding methyltransferase superfamily	HGNC:20982
+Q9NRH3	TUBG2	Tubulin family	HGNC:12419
+Q9NRM7	LATS2 KPM	Protein kinase superfamily, AGC Ser/Thr protein kinase family	HGNC:6515
+Q9NRR2	TPSG1 PRSS31 TMT	Peptidase S1 family, Tryptase subfamily	HGNC:14134
+Q9NS40	KCNH7 ERG3	Potassium channel family, H (Eag) (TC 1.A.1.20) subfamily, Kv11.3/KCNH7 sub-subfamily	HGNC:18863
+Q9NS75	CYSLTR2 CYSLT2 CYSLT2R PSEC0146	G protein-coupled receptor 1 family	HGNC:18274
+Q9NSA0	SLC22A11 OAT4	Major facilitator (TC 2.A.1) superfamily, Organic cation transporter (TC 2.A.1.19) family	HGNC:18120
+Q9NST1	PNPLA3 ADPN C22orf20		HGNC:18590
+Q9NSY1	BMP2K BIKE HRIHFB2017	Protein kinase superfamily, Ser/Thr protein kinase family	HGNC:18041
+Q9NTG7	SIRT3 SIR2L3	Sirtuin family, Class I subfamily	HGNC:14931
+Q9NTJ4	MAN2C1 MANA MANA1	Glycosyl hydrolase 38 family	HGNC:6827
+Q9NUV7	SPTLC3 C20orf38 SPTLC2L	Class-II pyridoxal-phosphate-dependent aminotransferase family	HGNC:16253
+Q9NUW8	TDP1	Tyrosyl-DNA phosphodiesterase family	HGNC:18884
+Q9NVM4	PRMT7 KIAA1933	Class I-like SAM-binding methyltransferase superfamily, Protein arginine N-methyltransferase family, PRMT7 subfamily	HGNC:25557
+Q9NWM0	SMOX C20orf16 SMO UNQ3039/PRO9854	Flavin monoamine oxidase family	HGNC:15862
+Q9NWZ3	IRAK4	Protein kinase superfamily, TKL Ser/Thr protein kinase family, Pelle subfamily	HGNC:17967
+Q9NXA8	SIRT5 SIR2L5	Sirtuin family, Class III subfamily	HGNC:14933
+Q9NY46	SCN3A KIAA1356 NAC3	Sodium channel (TC 1.A.1.10) family, Nav1.3/SCN3A subfamily	HGNC:10590
+Q9NY47	CACNA2D2 KIAA0558	Calcium channel subunit alpha-2/delta family	HGNC:1400
+Q9NY65	TUBA8 TUBAL2	Tubulin family	HGNC:12410
+Q9NY72	SCN3B KIAA1158	Sodium channel auxiliary subunit SCN3B (TC 8.A.17) family	HGNC:20665
+Q9NY91	SLC5A4 SAAT1 SGLT3	Sodium:solute symporter (SSF) (TC 2.A.21) family	HGNC:11039
+Q9NYA1	SPHK1 SK1 SPHK SPK		HGNC:11240
+Q9NYK1	TLR7 UNQ248/PRO285	Toll-like receptor family	HGNC:15631
+Q9NYL2	MAP3K20 MLK7 MLTK ZAK HCCS4	Protein kinase superfamily, STE Ser/Thr protein kinase family, MAP kinase kinase kinase subfamily	HGNC:17797
+Q9NYY3	PLK2 SNK	Protein kinase superfamily, Ser/Thr protein kinase family, CDC5/Polo subfamily	HGNC:19699
+Q9NZ20	PLA2G3	Phospholipase A2 family	HGNC:17934
+Q9NZ42	PSENEN PEN2 MDS033	PEN-2 family	HGNC:30100
+Q9NZJ5	EIF2AK3 PEK PERK	Protein kinase superfamily, Ser/Thr protein kinase family, GCN2 subfamily	HGNC:3255
+Q9NZK7	PLA2G2E	Phospholipase A2 family	HGNC:13414
+Q9NZM6	PKD2L2 TRPP5	Polycystin family	HGNC:9012
+Q9NZV8	KCND2 KIAA1044	Potassium channel family, D (Shal) (TC 1.A.1.2) subfamily, Kv4.2/KCND2 sub-subfamily	HGNC:6238
+Q9P0G3	KLK14 KLKL6	Peptidase S1 family, Kallikrein subfamily	HGNC:6362
+Q9P0U3	SENP1	Peptidase C48 family	HGNC:17927
+Q9P0X4	CACNA1I KIAA1120	Calcium channel alpha-1 subunit (TC 1.A.1.11) family, CACNA1I subfamily	HGNC:1396
+Q9P1W9	PIM2	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, PIM subfamily	HGNC:8987
+Q9P1Z3	HCN3 KIAA1535	Potassium channel HCN family	HGNC:19183
+Q9UBE0	SAE1 AOS1 SUA1 UBLE1A	Ubiquitin-activating E1 family	HGNC:30660
+Q9UBF8	PI4KB PIK4CB	PI3/PI4-kinase family, Type III PI4K subfamily	HGNC:8984
+Q9NSD7	RXFP3 GPCR135 RLN3R1 SALPR	G protein-coupled receptor 1 family	HGNC:24883
+Q9NS85	CA10 hucep-15 UNQ533/PRO1076	Alpha-carbonic anhydrase family	HGNC:1369
+Q9UBL9	P2RX2 P2X2	P2X receptor family	HGNC:15459
+Q9UBM7	DHCR7 D7SR	ERG4/ERG24 family	HGNC:2860
+Q9UBN4	TRPC4	Transient receptor (TC 1.A.4) family, STrpC subfamily, TRPC4 sub-subfamily	HGNC:12336
+Q9UBN7	HDAC6 KIAA0901 JM21	Histone deacetylase family, HD type 2 subfamily	HGNC:14064
+Q9UBR2	CTSZ	Peptidase C1 family	HGNC:2547
+Q9UBS0	RPS6KB2 STK14B	Protein kinase superfamily, AGC Ser/Thr protein kinase family, S6 kinase subfamily	HGNC:10437
+Q9UBS5	GABBR1 GPRC3A	G protein-coupled receptor 3 family, GABA-B receptor subfamily	HGNC:4070
+Q9UBT6	POLK DINB1	DNA polymerase type-Y family	HGNC:9183
+Q9UBX1	CTSF	Peptidase C1 family	HGNC:2531
+Q9UBX7	KLK11 PRSS20 TLSP UNQ649/PRO1279	Peptidase S1 family, Kallikrein subfamily	HGNC:6359
+Q9UBY0	SLC9A2 NHE2	Monovalent cation:proton antiporter 1 (CPA1) transporter (TC 2.A.36) family	HGNC:11072
+Q9UBY5	LPAR3 EDG7 LPA3	G protein-coupled receptor 1 family	HGNC:14298
+Q9UDY8	MALT1 MLT	Peptidase C14B family	HGNC:6819
+Q9UGI6	KCNN3 K3	Potassium channel KCNN family, KCa2.3/KCNN3 subfamily	HGNC:6292
+Q9UGI9	PRKAG3 AMPKG3	5'-AMP-activated protein kinase gamma subunit family	HGNC:9387
+Q9UGJ0	PRKAG2	5'-AMP-activated protein kinase gamma subunit family	HGNC:9386
+Q9UGL1	KDM5B JARID1B PLU1 RBBP2H1	JARID1 histone demethylase family	HGNC:18039
+Q9UGM1	CHRNA9 NACHRA9	Ligand-gated ion channel (TC 1.A.9) family, Acetylcholine receptor (TC 1.A.9.1) subfamily, Alpha-9/CHRNA9 sub-subfamily	HGNC:14079
+Q9UGM6	WARS2	Class-I aminoacyl-tRNA synthetase family	HGNC:12730
+Q9UGN5	PARP2 ADPRT2 ADPRTL2	ARTD/PARP family	HGNC:272
+Q9UGP5	POLL	DNA polymerase type-X family	HGNC:9184
+Q9UHC3	ASIC3 ACCN3 DRASIC SLNAC1 TNAC1	Amiloride-sensitive sodium channel (TC 1.A.6) family, ASIC3 subfamily	HGNC:101
+Q9UHC9	NPC1L1	Patched family	HGNC:7898
+Q9UHD2	TBK1 NAK	Protein kinase superfamily, Ser/Thr protein kinase family, I-kappa-B kinase subfamily	HGNC:11584
+Q9UHL4	DPP7 DPP2 QPP	Peptidase S28 family	HGNC:14892
+Q9UHM6	OPN4 MOP	G protein-coupled receptor 1 family, Opsin subfamily	HGNC:14449
+Q9UHN1	POLG2 MTPOLB		HGNC:9180
+Q9UI10	EIF2B4 EIF2BD	EIF-2B alpha/beta/delta subunits family	HGNC:3260
+Q9UI12	ATP6V1H CGI-11	V-ATPase H subunit family	HGNC:18303
+Q9UIF8	BAZ2B KIAA1476	WAL family	HGNC:963
+Q9UIF9	BAZ2A KIAA0314 TIP5	WAL family	HGNC:962
+Q9UIJ7	AK3 AK3L1 AK6 AKL3L	Adenylate kinase family, AK3 subfamily	HGNC:17376
+Q9UIQ6	LNPEP OTASE	Peptidase M1 family	HGNC:6656
+Q9UJT1	TUBD1 TUBD	Tubulin family	HGNC:16811
+Q9UJX2	CDC23 ANAPC8	APC8/CDC23 family	HGNC:1724
+Q9UJX3	ANAPC7 APC7	APC7 family	HGNC:17380
+Q9UK17	KCND3	Potassium channel family, D (Shal) (TC 1.A.1.2) subfamily, Kv4.3/KCND3 sub-subfamily	HGNC:6239
+Q9UK32	RPS6KA6 RSK4	Protein kinase superfamily, AGC Ser/Thr protein kinase family, S6 kinase subfamily	HGNC:10435
+Q9UK99	FBXO3 FBX3		HGNC:13582
+Q9UKE5	TNIK KIAA0551	Protein kinase superfamily, STE Ser/Thr protein kinase family, STE20 subfamily	HGNC:30765
+Q9UKL4	GJD2 GJA9	Connexin family, Delta-type subfamily	HGNC:19154
+Q9UKL6	PCTP STARD2		HGNC:8752
+Q9UKP6	UTS2R GPR14	G protein-coupled receptor 1 family	HGNC:4468
+Q9UKR0	KLK12 KLKL5 UNQ669/PRO1303	Peptidase S1 family, Kallikrein subfamily	HGNC:6360
+Q9UKV0	HDAC9 HDAC7 HDAC7B HDRP KIAA0744 MITR	Histone deacetylase family, HD type 2 subfamily	HGNC:14065
+Q9UL51	HCN2 BCNG2	Potassium channel HCN family	HGNC:4846
+Q9UL54	TAOK2 KIAA0881 MAP3K17 PSK PSK1 UNQ2971/PRO7431	Protein kinase superfamily, STE Ser/Thr protein kinase family, STE20 subfamily	HGNC:16835
+Q9ULC6	PADI1 PAD1 PDI1	Protein arginine deiminase family	HGNC:18367
+Q9ULD4	BRPF3 KIAA1286		HGNC:14256
+Q9ULD8	KCNH3 KIAA1282	Potassium channel family, H (Eag) (TC 1.A.1.20) subfamily, Kv12.2/KCNH3 sub-subfamily	HGNC:6252
+Q9ULI0	ATAD2B KIAA1240	AAA ATPase family	HGNC:29230
+Q9ULQ1	TPCN1 KIAA1169 TPC1	Calcium channel alpha-1 subunit (TC 1.A.1.11) family, Two pore calcium channel subfamily	HGNC:18182
+Q9ULV1	FZD4	G protein-coupled receptor Fz/Smo family	HGNC:4042
+Q9ULW8	PADI3 PAD3 PDI3	Protein arginine deiminase family	HGNC:18337
+Q9ULX7	CA14 UNQ690/PRO1335	Alpha-carbonic anhydrase family	HGNC:1372
+Q9ULZ9	MMP17 MT4MMP	Peptidase M10A family	HGNC:7163
+Q9UM07	PADI4 PAD4 PADI5 PDI5	Protein arginine deiminase family	HGNC:18368
+Q9UM73	ALK	Protein kinase superfamily, Tyr protein kinase family, Insulin receptor subfamily	HGNC:427
+Q9UN42	ATP1B4	X(+)/potassium ATPases subunit beta family	HGNC:808
+Q9UN88	GABRQ	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRQ sub-subfamily	HGNC:14454
+Q9UNA0	ADAMTS5 ADAMTS11 ADMP2		HGNC:221
+Q9UNA4	POLI RAD30B	DNA polymerase type-Y family	HGNC:9182
+Q9UNI1	CELA1 ELA1	Peptidase S1 family, Elastase subfamily	HGNC:3308
+Q9UNK4	PLA2G2D SPLASH	Phospholipase A2 family	HGNC:9033
+Q9UNM6	PSMD13	Proteasome subunit S11 family	HGNC:9558
+Q9UNQ0	ABCG2 ABCP BCRP BCRP1 MXR	ABC transporter superfamily, ABCG family, Eye pigment precursor importer (TC 3.A.1.204) subfamily	HGNC:74
+Q9UP95	SLC12A4 KCC1	SLC12A transporter family, K/Cl co-transporter subfamily	HGNC:10913
+Q9UPR5	SLC8A2 KIAA1087 NCX2	Ca(2+):cation antiporter (CaCA) (TC 2.A.19) family, SLC8 subfamily	HGNC:11069
+Q9UPY5	SLC7A11	Amino acid-polyamine-organocation (APC) superfamily, L-type amino acid transporter (LAT) (TC 2.A.3.8) family	HGNC:11059
+Q9UQ49	NEU3	Glycosyl hydrolase 33 family	HGNC:7760
+Q9UQB9	AURKC AIE2 AIK3 AIRK3 ARK3 STK13	Protein kinase superfamily, Ser/Thr protein kinase family, Aurora subfamily	HGNC:11391
+Q9UQD0	SCN8A MED	Sodium channel (TC 1.A.1.10) family, Nav1.6/SCN8A subfamily	HGNC:10596
+Q9UQL6	HDAC5 KIAA0600	Histone deacetylase family, HD type 2 subfamily	HGNC:14068
+Q9UQM7	CAMK2A CAMKA KIAA0968	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, CaMK subfamily	HGNC:1460
+Q9Y210	TRPC6 TRP6	Transient receptor (TC 1.A.4) family, STrpC subfamily, TRPC6 sub-subfamily	HGNC:12338
+Q9Y233	PDE10A	Cyclic nucleotide phosphodiesterase family	HGNC:8772
+Q9Y243	AKT3 PKBG	Protein kinase superfamily, AGC Ser/Thr protein kinase family, RAC subfamily	HGNC:393
+Q9Y251	HPSE HEP HPA HPA1 HPR1 HPSE1 HSE1	Glycosyl hydrolase 79 family	HGNC:5164
+Q9Y253	POLH RAD30 RAD30A XPV	DNA polymerase type-Y family	HGNC:9181
+Q9Y256	RCE1 FACE2 RCE1A RCE1B	Peptidase U48 family	HGNC:13721
+Q9Y257	KCNK6 TOSS TWIK2	Two pore domain potassium channel (TC 1.A.1.8) family	HGNC:6281
+Q9Y271	CYSLTR1 CYSLT1	G protein-coupled receptor 1 family	HGNC:17451
+Q9UHA3	RSL24D1 C15orf15 RPL24L My024	Eukaryotic ribosomal protein eL24 family	HGNC:18479
+Q9UJT0	TUBE1 TUBE	Tubulin family	HGNC:20775
+Q9UKR3	KLK13 KLKL4	Peptidase S1 family, Kallikrein subfamily	HGNC:6361
+Q9UKY3	CES1P1 CES4	Type-B carboxylesterase/lipase family	HGNC:18546
+Q9UPC5	GPR34	G protein-coupled receptor 1 family	HGNC:4490
+Q9UF02	CACNG5	PMP-22/EMP/MP20 family, CACNG subfamily	HGNC:1409
+Q9UKQ9	KLK9	Peptidase S1 family, Kallikrein subfamily	HGNC:6370
+Q9UNX3	RPL26L1 RPL26P1	Universal ribosomal protein uL24 family	HGNC:17050
+Q9Y297	BTRC BTRCP FBW1A FBXW1A		HGNC:1144
+Q9Y2D0	CA5B	Alpha-carbonic anhydrase family	HGNC:1378
+Q9Y2E5	MAN2B2 KIAA0935	Glycosyl hydrolase 38 family	HGNC:29623
+Q9Y2I1	NISCH IRAS KIAA0975		HGNC:18006
+Q9Y2I7	PIKFYVE KIAA0981 PIP5K3		HGNC:23785
+Q9Y2J8	PADI2 KIAA0994 PAD2 PDI2	Protein arginine deiminase family	HGNC:18341
+Q9Y2K2	SIK3 KIAA0999 QSK L19	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, SNF1 subfamily	HGNC:29165
+Q9Y2K7	KDM2A CXXC8 FBL11 FBL7 FBXL11 JHDM1A KIAA1004	JHDM1 histone demethylase family	HGNC:13606
+Q9Y2R2	PTPN22 PTPN8	Protein-tyrosine phosphatase family, Non-receptor class 4 subfamily	HGNC:9652
+Q9Y2T1	AXIN2		HGNC:904
+Q9Y2T6	GPR55	G protein-coupled receptor 1 family	HGNC:4511
+Q9Y337	KLK5 SCTE UNQ570/PRO1132	Peptidase S1 family, Kallikrein subfamily	HGNC:6366
+Q9Y345	SLC6A5 GLYT2 NET1	Sodium:neurotransmitter symporter (SNF) (TC 2.A.22) family, SLC6A5 subfamily	HGNC:11051
+Q9Y3D8	AK6 CINAP AD-004 CGI-137	Adenylate kinase family, AK6 subfamily	HGNC:49151
+Q9Y3Q4	HCN4	Potassium channel HCN family	HGNC:16882
+Q9Y3R4	NEU2	Glycosyl hydrolase 33 family	HGNC:7759
+Q9Y3S1	WNK2 KIAA1760 PRKWNK2 SDCCAG43 P/OKcl.13	Protein kinase superfamily, Ser/Thr protein kinase family, WNK subfamily	HGNC:14542
+Q9Y463	DYRK1B MIRK	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MNB/DYRK subfamily	HGNC:3092
+Q9Y468	L3MBTL1 KIAA0681 L3MBT L3MBTL		HGNC:15905
+Q9Y478	PRKAB1 AMPK	5'-AMP-activated protein kinase beta subunit family	HGNC:9378
+Q9Y487	ATP6V0A2	V-ATPase 116 kDa subunit family	HGNC:18481
+Q9Y4D2	DAGLA C11orf11 KIAA0659 NSDDR	AB hydrolase superfamily, Lipase family	HGNC:1165
+Q9Y4K0	LOXL2	Lysyl oxidase family	HGNC:6666
+Q9Y4P1	ATG4B APG4B AUTL1 KIAA0943	Peptidase C54 family	HGNC:20790
+Q9Y570	PPME1 PME1 PP2593 PRO0750	AB hydrolase superfamily	HGNC:30178
+Q9Y5K2	KLK4 EMSP1 PRSS17 PSTS	Peptidase S1 family, Kallikrein subfamily	HGNC:6365
+Q9Y5N1	HRH3 GPCR97	G protein-coupled receptor 1 family	HGNC:5184
+Q9Y5P8	PPP2R3B PPP2R3L		HGNC:13417
+Q9Y5S1	TRPV2 VRL	Transient receptor (TC 1.A.4) family, TrpV subfamily, TRPV2 sub-subfamily	HGNC:18082
+Q9Y5S2	CDC42BPB KIAA1124	Protein kinase superfamily, AGC Ser/Thr protein kinase family, DMPK subfamily	HGNC:1738
+Q9Y5S8	NOX1 MOX1 NOH1		HGNC:7889
+Q9Y5U8	MPC1 BRP44L CGI-129 HSPC040 PNAS-115	Mitochondrial pyruvate carrier (MPC) (TC 2.A.105) family	HGNC:21606
+Q9Y5X5	NPFFR2 GPR74 NPFF2 NPGPR	G protein-coupled receptor 1 family	HGNC:4525
+Q9Y5X9	LIPG UNQ387/PRO719	AB hydrolase superfamily, Lipase family	HGNC:6623
+Q9Y5Y4	PTGDR2 CRTH2 DL1R GPR44	G protein-coupled receptor 1 family	HGNC:4502
+Q9Y5Y6	ST14 PRSS14 SNC19 TADG15	Peptidase S1 family	HGNC:11344
+Q9Y5Y9	SCN10A	Sodium channel (TC 1.A.1.10) family, Nav1.8/SCN10A subfamily	HGNC:10582
+Q9Y5Z0	BACE2 AEPLC ALP56 ASP21 CDA13 UNQ418/PRO852	Peptidase A1 family	HGNC:934
+Q9Y698	CACNG2	PMP-22/EMP/MP20 family, CACNG subfamily	HGNC:1406
+Q9Y6D5	ARFGEF2 ARFGEP2 BIG2		HGNC:15853
+Q9Y6D6	ARFGEF1 ARFGEP1 BIG1		HGNC:15772
+Q9Y6F1	PARP3 ADPRT3 ADPRTL3	ARTD/PARP family	HGNC:273
+Q9Y6H6	KCNE3	Potassium channel KCNE family	HGNC:6243
+Q9Y6J6	KCNE2	Potassium channel KCNE family	HGNC:6242
+Q9Y6K1	DNMT3A	Class I-like SAM-binding methyltransferase superfamily, C5-methyltransferase family	HGNC:2978
+Q9Y6K8	AK5	Adenylate kinase family	HGNC:365
+Q9Y6K9	IKBKG FIP3 NEMO		HGNC:5961
+Q9Y6L6	SLCO1B1 LST1 OATP1B1 OATP2 OATPC SLC21A6	Organo anion transporter (TC 2.A.60) family	HGNC:10959
+Q9Y6X5	ENPP4 KIAA0879 NPP4	Nucleotide pyrophosphatase/phosphodiesterase family	HGNC:3359
+Q9Y6X8	ZHX2 AFR1 KIAA0854 RAF	ZHX family	HGNC:18513
+Q9Y2T5	GPR52	G protein-coupled receptor 1 family	HGNC:4508
+Q70CQ3	USP30	Peptidase C19 family	HGNC:20065
+Q70Z44	HTR3D	Ligand-gated ion channel (TC 1.A.9) family, 5-hydroxytryptamine receptor (TC 1.A.9.2) subfamily, HTR3D sub-subfamily	HGNC:24004
+Q71U36	TUBA1A TUBA3	Tubulin family	HGNC:20766
+Q7L0J3	SV2A KIAA0736 PSEC0174	Major facilitator superfamily	HGNC:20566
+Q7L7X3	TAOK1 KIAA1361 MAP3K16 MARKK	Protein kinase superfamily, STE Ser/Thr protein kinase family, STE20 subfamily	HGNC:29259
+Q7RTT9	SLC29A4 ENT4 PMAT PSEC0113	SLC29A/ENT transporter (TC 2.A.57) family	HGNC:23097
+Q7RTX1	TAS1R1 GPR70 T1R1 TR1 GM148	G protein-coupled receptor 3 family, TAS1R subfamily	HGNC:14448
+Q7Z2W7	TRPM8 LTRPC6 TRPP8	Transient receptor (TC 1.A.4) family, LTrpC subfamily, TRPM8 sub-subfamily	HGNC:17961
+Q7Z3S7	CACNA2D4	Calcium channel subunit alpha-2/delta family	HGNC:20202
+Q7Z418	KCNK18 TRESK TRIK	Two pore domain potassium channel (TC 1.A.1.8) family	HGNC:19439
+Q7Z4N8	P4HA3 UNQ711/PRO1374	P4HA family	HGNC:30135
+Q7Z5P4	HSD17B13 SCDR9 SDR16C3 HMFN0376 UNQ497/PRO1014	Short-chain dehydrogenases/reductases (SDR) family	HGNC:18685
+Q7Z5Q5	POLN	DNA polymerase type-A family	HGNC:18870
+Q86TI2	DPP9 DPRP2	Peptidase S9B family, DPPIV subfamily	HGNC:18648
+Q86U86	PBRM1 BAF180 PB1		HGNC:30064
+Q86V24	ADIPOR2 PAQR2	ADIPOR family	HGNC:24041
+Q86V86	PIM3	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, PIM subfamily	HGNC:19310
+Q86VF5	MOGAT3 DC7 DGAT2L7 UNQ9383/PRO34208	Diacylglycerol acyltransferase family	HGNC:23249
+Q86VZ5	SGMS1 MOB SMS1 TMEM23	Sphingomyelin synthase family	HGNC:29799
+Q86W56	PARG	Poly(ADP-ribose) glycohydrolase family	HGNC:8605
+Q86WV6	STING1 ERIS MITA STING TMEM173	STING family	HGNC:27962
+Q86X55	CARM1 PRMT4	Class I-like SAM-binding methyltransferase superfamily, Protein arginine N-methyltransferase family	HGNC:23393
+Q86Y97	KMT5C SUV420H2 PP7130	Class V-like SAM-binding methyltransferase superfamily, Histone-lysine methyltransferase family, Suvar4-20 subfamily	HGNC:28405
+Q86YT5	SLC13A5 NACT	SLC13A/DASS transporter (TC 2.A.47) family, NADC subfamily	HGNC:23089
+Q8IU85	CAMK1D CAMKID	Protein kinase superfamily, CAMK Ser/Thr protein kinase family, CaMK subfamily	HGNC:19341
+Q8IUH5	ZDHHC17 HIP14 HIP3 HYPH KIAA0946 HSPC294	DHHC palmitoyltransferase family, AKR/ZDHHC17 subfamily	HGNC:18412
+Q8IV61	RASGRP3 GRP3 KIAA0846	RASGRP family	HGNC:14545
+Q8IV77	CNGA4	Cyclic nucleotide-gated cation channel (TC 1.A.1.5) family, CNGA4 subfamily	HGNC:2152
+Q7Z601	GPR142 GPRG1B PGR2	G protein-coupled receptor 1 family	HGNC:20088
+Q86YV6	MYLK4 SGK085	Protein kinase superfamily, CAMK Ser/Thr protein kinase family	HGNC:27972
+Q8IVT5	KSR1 KSR	Protein kinase superfamily, TKL Ser/Thr protein kinase family	HGNC:6465
+Q8IW41	MAPKAPK5 PRAK	Protein kinase superfamily, CAMK Ser/Thr protein kinase family	HGNC:6889
+Q8IWU9	TPH2 NTPH	Biopterin-dependent aromatic amino acid hydroxylase family	HGNC:20692
+Q8IXJ6	SIRT2 SIR2L SIR2L2	Sirtuin family, Class I subfamily	HGNC:10886
+Q8IYL9	GPR65 TDAG8	G protein-coupled receptor 1 family	HGNC:4517
+Q8IZS8	CACNA2D3	Calcium channel subunit alpha-2/delta family	HGNC:15460
+Q8IZX4	TAF1L	TAF1 family	HGNC:18056
+Q8N0U8	VKORC1L1	VKOR family	HGNC:21492
+Q8N119	MMP21	Peptidase M10A family	HGNC:14357
+Q8N1C3	GABRG1	Ligand-gated ion channel (TC 1.A.9) family, Gamma-aminobutyric acid receptor (TC 1.A.9.5) subfamily, GABRG1 sub-subfamily	HGNC:4086
+Q8N1Q1	CA13	Alpha-carbonic anhydrase family	HGNC:14914
+Q8N474	SFRP1 FRP FRP1 SARP2	Secreted frizzled-related protein (sFRP) family	HGNC:10776
+Q8N5S9	CAMKK1 CAMKKA	Protein kinase superfamily, Ser/Thr protein kinase family	HGNC:1469
+Q8N5Z0	AADAT KAT2 KYAT2	Class-I pyridoxal-phosphate-dependent aminotransferase family	HGNC:17929
+Q8N6T3	ARFGAP1 ARF1GAP		HGNC:15852
+Q8N6T7	SIRT6 SIR2L6	Sirtuin family, Class IV subfamily	HGNC:14934
+Q8N884	CGAS C6orf150 MB21D1	Mab-21 family	HGNC:21367
+Q8NB16	MLKL	Protein kinase superfamily	HGNC:26617
+Q8NBP7	PCSK9 NARC1 PSEC0052	Peptidase S8 family	HGNC:20001
+Q8NBQ5	HSD17B11 DHRS8 PAN1B SDR16C2 PSEC0029 UNQ207/PRO233	Short-chain dehydrogenases/reductases (SDR) family, 17-beta-HSD 3 subfamily	HGNC:22960
+Q8NCG7	DAGLB	AB hydrolase superfamily, Lipase family	HGNC:28923
+Q8NE86	MCU C10orf42 CCDC109A	MCU (TC 1.A.77) family	HGNC:23526
+Q8NEB9	PIK3C3 VPS34	PI3/PI4-kinase family	HGNC:8974
+Q8NER1	TRPV1 VR1	Transient receptor (TC 1.A.4) family, TrpV subfamily, TRPV1 sub-subfamily	HGNC:12716
+Q8NET8	TRPV3	Transient receptor (TC 1.A.4) family, TrpV subfamily, TRPV3 sub-subfamily	HGNC:18084
+Q8NEY4	ATP6V1C2	V-ATPase C subunit family	HGNC:18264
+Q8NFA2	NOXO1 P41NOX SH3PXD5		HGNC:19404
+Q8NFM4	ADCY4	Adenylyl cyclase class-4/guanylyl cyclase family	HGNC:235
+Q8N8U2	CDYL2		HGNC:23030
+Q8NA19	L3MBTL4		HGNC:26677
+Q8NFU7	TET1 CXXC6 KIAA1676 LCX	TET family	HGNC:29484
+Q8NHX9	TPCN2 TPC2	Calcium channel alpha-1 subunit (TC 1.A.1.11) family, Two pore calcium channel subfamily	HGNC:20820
+Q8TAF3	WDR48 KIAA1449 UAF1	WD repeat WDR48 family	HGNC:30914
+Q8TAV3	CYP2W1	Cytochrome P450 family	HGNC:20243
+Q8TBC4	UBA3 UBE1C	Ubiquitin-activating E1 family, UBA3 subfamily	HGNC:12470
+Q8TCC7	SLC22A8 OAT3	Major facilitator (TC 2.A.1) superfamily, Organic cation transporter (TC 2.A.1.19) family	HGNC:10972
+Q8TCT0	CERK KIAA1646		HGNC:19256
+Q8TCT8	SPPL2A IMP3 PSL2 PSEC0147	Peptidase A22B family	HGNC:30227
+Q8TCT9	HM13 H13 IMP1 PSL3 SPP MSTP086	Peptidase A22B family	HGNC:16435
+Q8TCU5	GRIN3A KIAA1973	Glutamate-gated ion channel (TC 1.A.10.1) family, NR3A/GRIN3A subfamily	HGNC:16767
+Q8TD08	MAPK15 ERK7 ERK8	Protein kinase superfamily, CMGC Ser/Thr protein kinase family, MAP kinase subfamily	HGNC:24667
+Q8TD43	TRPM4 LTRPC4	Transient receptor (TC 1.A.4) family, LTrpC subfamily, TRPM4 sub-subfamily	HGNC:17993
+Q8TDS4	HCAR2 GPR109A HCA2 HM74A NIACR1	G protein-coupled receptor 1 family	HGNC:24827
+Q8TDS5	OXER1 GPR170 TG1019	G protein-coupled receptor 1 family	HGNC:24884
+Q8TDU6	GPBAR1 TGR5	G protein-coupled receptor 1 family	HGNC:19680
+Q8TDX5	ACMSD	Metallo-dependent hydrolases superfamily, ACMSD family	HGNC:19288
+Q8TEK3	DOT1L KIAA1814 KMT4	Class I-like SAM-binding methyltransferase superfamily, DOT1 family	HGNC:24948
+Q8TF76	HASPIN GSG2	Protein kinase superfamily, Ser/Thr protein kinase family, Haspin subfamily	HGNC:19682
+Q8WTS6	SETD7 KIAA1717 KMT7 SET7 SET9	Class V-like SAM-binding methyltransferase superfamily, Histone-lysine methyltransferase family, SET7 subfamily	HGNC:30412
+Q8WTV0	SCARB1 CD36L1 CLA1	CD36 family	HGNC:1664
+Q8WUI4	HDAC7 HDAC7A	Histone deacetylase family, HD type 2 subfamily	HGNC:14067
+Q8WW43	APH1B PSFL UNQ688/PRO1328	APH-1 family	HGNC:24080
+Q8WWG9	KCNE4	Potassium channel KCNE family	HGNC:6244
+Q8WWL7	CCNB3 CYCB3	Cyclin family, Cyclin AB subfamily	HGNC:18709
+Q8WXA8	HTR3C	Ligand-gated ion channel (TC 1.A.9) family, 5-hydroxytryptamine receptor (TC 1.A.9.2) subfamily, HTR3C sub-subfamily	HGNC:24003
+Q8WXE1	ATRIP AGS1	ATRIP family	HGNC:33499
+Q8TAA3	PSMA8 PSMA7L	Peptidase T1A family	HGNC:22985
+Q8TCW9	PROKR1 GPR73 PKR1	G protein-coupled receptor 1 family	HGNC:4524
+Q8TDV5	GPR119	G protein-coupled receptor 1 family	HGNC:19060
+Q8TET4	GANC	Glycosyl hydrolase 31 family	HGNC:4139

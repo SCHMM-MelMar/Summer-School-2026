@@ -170,22 +170,47 @@ check(split == 0, "one protein is one target however many sources report it",
 # -- what the sources look like, which is their business and not ours -------
 
 # a `protein` target with several accessions is a source calling a complex, an
-# ortholog group or a PROTAC pair a protein. it loads, it just does not mean
-# what the type says
+# ortholog group or a whole screening panel a protein. it loads, it just does
+# not mean what the type says, and now that uniprot.superfamily exists it does
+# real damage: every one of those accessions drags the target into its family,
+# so asking for the Ras family also returns whatever else got lumped in
 lumped = db.read(
     """
-    SELECT s.name AS set_name, COUNT(DISTINCT t.target_id) AS n
-      FROM target t
-      JOIN bioactivity b ON b.target_id = t.target_id
-      JOIN compound_set_member m ON m.inchikey = b.inchikey
-      JOIN compound_set s ON s.set_id = m.set_id
-     WHERE t.type = 'protein' AND t.target_id IN (
-           SELECT target_id FROM target_uniprot GROUP BY target_id HAVING COUNT(*) > 1)
-     GROUP BY 1 ORDER BY n DESC
+    SELECT t.target_id, t.name, COUNT(*) AS accessions
+      FROM target t JOIN target_uniprot tu ON tu.target_id = t.target_id
+     WHERE t.type = 'protein'
+     GROUP BY t.target_id HAVING accessions > 1
+     ORDER BY accessions DESC LIMIT 8
 """
 )
-note("protein targets carrying more than one accession, by set",
+total = count(
+    """
+    SELECT COUNT(*) FROM (
+      SELECT tu.target_id FROM target_uniprot tu
+        JOIN target t ON t.target_id = tu.target_id
+       WHERE t.type = 'protein'
+       GROUP BY tu.target_id HAVING COUNT(*) > 1)
+"""
+)
+note(f"protein targets carrying more than one accession: {total}",
      lumped.to_string(index=False))
+
+# how much of the reference file landed, and how far it reaches
+classified = count("SELECT COUNT(*) FROM uniprot WHERE superfamily IS NOT NULL")
+reached = count(
+    """
+    SELECT COUNT(*) FROM bioactivity b WHERE b.target_id IN (
+      SELECT tu.target_id FROM target_uniprot tu
+        JOIN uniprot u ON u.uniprot_id = tu.uniprot_id
+       WHERE u.superfamily IS NOT NULL)
+"""
+)
+measurements = count("SELECT COUNT(*) FROM bioactivity")
+note(f"accessions with a UniProt family: {classified} of "
+     f"{count('SELECT COUNT(*) FROM uniprot')}",
+     f"they carry {reached} of {measurements} measurements "
+     f"({100 * reached // max(measurements, 1)}%), so the classified proteins "
+     f"are the well studied ones")
 
 # a homodimer is two copies of one accession, and a set of accessions cannot
 # say how many copies. so it is stored, correctly, as one member

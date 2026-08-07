@@ -7,6 +7,12 @@ from . import schema
 
 INCHIKEY = re.compile(r"^[A-Z]{14}-[A-Z]{10}-[A-Z]$")
 
+# uniprot.superfamily is the whole classification, outermost group first:
+# "Small GTPase superfamily, Ras family". this matches one level of it by name,
+# so asking for the superfamily gets everything under it and asking for the
+# family gets just that family. LIKE is case insensitive in SQLite.
+FAMILY_MATCH = "(', ' || u.superfamily || ', ') LIKE ('%, ' || ? || ', %')"
+
 
 class ProbeDB:
 
@@ -45,24 +51,40 @@ class ProbeDB:
         ]
         return pd.DataFrame(rows, columns=["table", "rows"])
 
-    def compounds(self, set=None, category=None):
+    def compounds(self, set=None, category=None, family=None):
         # one row per compound, whatever it is a member of. the sets are rolled
         # up into a readable column here and stay a link table underneath, so
         # filtering by one set still shows you the other sets it belongs to
-        where, params = [], []
+        member, params = [], []
         if set is not None:
-            where.append("s.name = ?")
+            member.append("s.name = ?")
             params.append(set)
         if category is not None:
-            where.append("s.category = ?")
+            member.append("s.category = ?")
             params.append(category)
-        member = ""
-        if where:
-            member = f"""
-             WHERE c.inchikey IN (
-                   SELECT m.inchikey FROM compound_set_member m
-                     JOIN compound_set s ON s.set_id = m.set_id
-                    WHERE {' AND '.join(where)})"""
+
+        where = []
+        if member:
+            where.append(
+                f"""c.inchikey IN (
+                    SELECT m.inchikey FROM compound_set_member m
+                      JOIN compound_set s ON s.set_id = m.set_id
+                     WHERE {' AND '.join(member)})"""
+            )
+        if family is not None:
+            # measured against, not active against. deciding what counts as
+            # active needs a threshold and a unit, and the database picks
+            # neither, so a counter screen at >30 uM is still an answer to
+            # "what is available for this family"
+            where.append(
+                f"""c.inchikey IN (
+                    SELECT g.inchikey FROM bioactivity_group g
+                      JOIN target_uniprot tu ON tu.target_id = g.target_id
+                      JOIN uniprot u ON u.uniprot_id = tu.uniprot_id
+                     WHERE {FAMILY_MATCH})"""
+            )
+            params.append(family)
+
         return self.read(
             f"""
             SELECT c.inchikey, c.name, c.smiles,
@@ -73,12 +95,46 @@ class ProbeDB:
               FROM compound c
               LEFT JOIN compound_set_member cm ON cm.inchikey = c.inchikey
               LEFT JOIN compound_set s ON s.set_id = cm.set_id
-              {member}
+              {"WHERE " + " AND ".join(where) if where else ""}
              GROUP BY c.inchikey
              ORDER BY n_targets DESC, c.name
         """,
             *params,
         )
+
+    def families(self, like=None):
+        """Every level of the UniProt classification, with what sits under it."""
+        # the stored value is the whole hierarchy, outermost first, so
+        # "Small GTPase superfamily, Ras family" is two answers and not one.
+        # splitting it here means you can ask for either level by name
+        rows = self.read(
+            """
+            SELECT u.superfamily,
+                   COUNT(DISTINCT u.uniprot_id) AS proteins,
+                   COUNT(DISTINCT tu.target_id) AS targets
+              FROM uniprot u
+              LEFT JOIN target_uniprot tu ON tu.uniprot_id = u.uniprot_id
+             WHERE u.superfamily IS NOT NULL AND u.superfamily != ''
+             GROUP BY u.superfamily
+        """
+        )
+        if rows.empty:
+            return rows.assign(family=None)
+        out = (
+            rows.assign(family=rows["superfamily"].str.split(", "))
+            .explode("family")
+            .groupby("family", as_index=False)
+            .agg(proteins=("proteins", "sum"), targets=("targets", "sum"))
+            .sort_values(["proteins", "family"], ascending=[False, True])
+        )
+        if like is not None:
+            # on whole words, or asking for "Ras" also finds "transferase"
+            out = out[
+                out["family"].str.contains(
+                    rf"\b{re.escape(like)}\b", case=False, regex=True
+                )
+            ]
+        return out.reset_index(drop=True)
 
     def sets(self):
         return self.read(
@@ -102,16 +158,28 @@ class ProbeDB:
             self.compound_key(key),
         )
 
-    def targets(self, key=None):
+    def targets(self, key=None, family=None):
         # target and uniprot share no column, target_uniprot is the link.
         # one row per target and accession, so a complex comes back as
         # several rows with the same target_id
-        sql = "SELECT * FROM target_flat"
-        params = []
+        where, params = [], []
         if key is not None:
             ids = self.targets_for(key)
-            sql += f" WHERE target_id IN ({','.join('?' * len(ids))})"
-            params = ids
+            where.append(f"target_id IN ({','.join('?' * len(ids))})")
+            params += ids
+        if family is not None:
+            # a complex is in the family if any of its members is, and it still
+            # comes back with all its members, not only the classified one
+            where.append(
+                f"""target_id IN (
+                    SELECT tu.target_id FROM target_uniprot tu
+                      JOIN uniprot u ON u.uniprot_id = tu.uniprot_id
+                     WHERE {FAMILY_MATCH})"""
+            )
+            params.append(family)
+        sql = "SELECT * FROM target_flat"
+        if where:
+            sql += " WHERE " + " AND ".join(where)
         return self.read(sql + " ORDER BY target_id, uniprot_id", *params)
 
     def sources(self):
@@ -126,7 +194,7 @@ class ProbeDB:
         """
         )
 
-    def bioactivities(self, compound=None, target=None):
+    def bioactivities(self, compound=None, target=None, family=None):
         # the view is the join; this only filters it
         where, params = [], []
         if compound is not None:
@@ -136,6 +204,14 @@ class ProbeDB:
             ids = self.targets_for(target)
             where.append(f"target_id IN ({','.join('?' * len(ids))})")
             params += ids
+        if family is not None:
+            where.append(
+                f"""target_id IN (
+                    SELECT tu.target_id FROM target_uniprot tu
+                      JOIN uniprot u ON u.uniprot_id = tu.uniprot_id
+                     WHERE {FAMILY_MATCH})"""
+            )
+            params.append(family)
         sql = "SELECT * FROM bioactivity_flat"
         if where:
             sql += " WHERE " + " AND ".join(where)
@@ -273,6 +349,13 @@ class ProbeDB:
                 entrez_gene=entrez_gene or None,
             )
         return uniprot_id
+
+    def set_superfamily(self, uniprot_id, superfamily):
+        uniprot_id = uniprot_id.strip().upper()
+        self.conn.execute(
+            "UPDATE uniprot SET superfamily = ? WHERE uniprot_id = ?",
+            (superfamily or None, uniprot_id),
+        )
 
     def add_target(self, type, name=None, uniprots=()):
         uniprots = [u if isinstance(u, (list, tuple)) else (u,) for u in uniprots]

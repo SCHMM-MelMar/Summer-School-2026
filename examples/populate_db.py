@@ -4,7 +4,7 @@ from pathlib import Path
 from loguru import logger
 
 from probedb import ProbeDB
-from loader import load
+from loader import load, load_families
 
 STAGING = Path(__file__).resolve().parent.parent / "staging"
 
@@ -58,6 +58,11 @@ for directory in sources:
     dropped = {k: report[k] for k in SKIPPED if report[k]}
     if dropped:
         logger.warning(f"{directory.name}  dropped {dropped}")
+
+# the family classification is the same for everybody, so it comes from one
+# reference file rather than from whichever source happened to mention it
+updated = load_families(db)
+logger.info(f"uniprot.superfamily filled in for {updated} accessions")
 
 logger.info("\n" + db.counts().to_string(index=False))
 logger.info(f"wrote {path.resolve()}")
