@@ -160,6 +160,20 @@ def pairs(db, target=None, family=None, set=None, compounds=None, threshold=0.0)
 MATRIX_LIMIT = 400
 
 
+def scores(db, target=None, family=None, set=None, compounds=None):
+    """Just the numbers, one per pair, unlabelled and unsorted.
+
+    What a histogram wants. pairs() on a 578 compound target builds 166753
+    DataFrame rows to say the same thing.
+    """
+    import numpy as np
+
+    keys, _ = _selected(db, target, family, set, compounds)
+    if len(keys) < 2:
+        return np.empty(0)
+    return np.concatenate([chunk for _, chunk in _rows(db, keys)])
+
+
 def matrix(db, target=None, family=None, set=None, compounds=None, limit=MATRIX_LIMIT):
     """The same thing square, for a set small enough to read as a heatmap."""
     _, DataStructs, _ = _rdkit()
