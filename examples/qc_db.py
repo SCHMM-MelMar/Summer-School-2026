@@ -195,6 +195,31 @@ total_fragmented = count(
 note(f"accessions reached by more than one protein target: {total_fragmented}",
      fragmented.to_string(index=False))
 
+# db.targets_for() matches an HGNC symbol as well as an accession, so a symbol
+# claimed by two accessions silently answers for the wrong protein. P01112 is
+# HRAS and arrives here filed under hgnc 'KRAS', so asking for KRAS returns the
+# HRAS target too. an accession is unambiguous, a symbol is not
+ambiguous = db.read(
+    """
+    SELECT hgnc, COUNT(*) AS accessions, GROUP_CONCAT(uniprot_id) AS which
+      FROM uniprot WHERE hgnc IS NOT NULL AND hgnc != ''
+     GROUP BY hgnc HAVING accessions > 1
+     ORDER BY accessions DESC LIMIT 6
+"""
+)
+total_ambiguous = count(
+    """
+    SELECT COUNT(*) FROM (
+      SELECT hgnc FROM uniprot WHERE hgnc IS NOT NULL AND hgnc != ''
+       GROUP BY hgnc HAVING COUNT(*) > 1)
+"""
+)
+note(f"HGNC symbols claimed by more than one accession: {total_ambiguous}",
+     ambiguous.to_string(index=False)
+     + "\nmost are orthologs sharing a gene name, but KRAS is not: it is on "
+       "P01116 and on P01112, which is HRAS. select on the accession when it "
+       "matters")
+
 # a target with no accession is identified by its name alone, so it can only
 # merge with a source that spells the name identically. EGFR arrives as
 # 'EGFR' with an accession and as 'Epidermal growth factor receptor' without
