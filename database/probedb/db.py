@@ -245,14 +245,22 @@ class ProbeDB:
         # and a member of the PARP1/2/3 complex
         if isinstance(key, int):
             return [key]
-        key = str(key).strip().upper()
+        key = str(key).strip()
         rows = self.conn.execute(
             "SELECT DISTINCT tu.target_id FROM target_uniprot tu "
             "  JOIN uniprot u ON u.uniprot_id = tu.uniprot_id "
             " WHERE tu.uniprot_id = ? OR u.hgnc = ? ORDER BY tu.target_id",
-            (key, key),
+            (key.upper(), key.upper()),
         ).fetchall()
-        return [r[0] for r in rows]
+        # and by name as well, not instead. not every uniprot row carries an
+        # HGNC symbol, and 302 protein targets have no accession at all, so
+        # matching only on the accession side silently drops them: asking for
+        # EGFR by symbol finds a 152 row target and misses the 3263 row one
+        named = self.conn.execute(
+            "SELECT target_id FROM target WHERE name = ? COLLATE NOCASE",
+            (key,),
+        ).fetchall()
+        return sorted({r[0] for r in rows} | {r[0] for r in named})
 
     def find_target(self, type, accessions):
         accessions = sorted({a.strip().upper() for a in accessions if a})

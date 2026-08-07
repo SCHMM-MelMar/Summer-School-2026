@@ -164,8 +164,56 @@ split = count(
        GROUP BY tu.uniprot_id HAVING COUNT(*) > 1)
 """
 )
-check(split == 0, "one protein is one target however many sources report it",
+check(split == 0,
+      "no accession is stored as two separate single-accession proteins",
       f"{split} accessions ended up on two rows")
+
+# the check above is narrow on purpose: it is the part the loader controls.
+# it says nothing about an accession that also appears inside a lumped target,
+# or about a target carrying no accession at all, and both of those split one
+# protein across several rows just as effectively
+fragmented = db.read(
+    """
+    SELECT tu.uniprot_id, u.hgnc, COUNT(DISTINCT tu.target_id) AS targets
+      FROM target_uniprot tu
+      JOIN target t ON t.target_id = tu.target_id
+      JOIN uniprot u ON u.uniprot_id = tu.uniprot_id
+     WHERE t.type = 'protein'
+     GROUP BY tu.uniprot_id HAVING targets > 1
+     ORDER BY targets DESC LIMIT 6
+"""
+)
+total_fragmented = count(
+    """
+    SELECT COUNT(*) FROM (
+      SELECT tu.uniprot_id FROM target_uniprot tu
+        JOIN target t ON t.target_id = tu.target_id
+       WHERE t.type = 'protein'
+       GROUP BY tu.uniprot_id HAVING COUNT(DISTINCT tu.target_id) > 1)
+"""
+)
+note(f"accessions reached by more than one protein target: {total_fragmented}",
+     fragmented.to_string(index=False))
+
+# a target with no accession is identified by its name alone, so it can only
+# merge with a source that spells the name identically. EGFR arrives as
+# 'EGFR' with an accession and as 'Epidermal growth factor receptor' without
+# one, and those are two targets that will never come together
+nameless = count(
+    """
+    SELECT COUNT(*) FROM target t WHERE NOT EXISTS
+      (SELECT 1 FROM target_uniprot tu WHERE tu.target_id = t.target_id)
+"""
+)
+nameless_rows = count(
+    """
+    SELECT COUNT(*) FROM bioactivity b WHERE NOT EXISTS
+      (SELECT 1 FROM target_uniprot tu WHERE tu.target_id = b.target_id)
+"""
+)
+note(f"targets with no accession at all: {nameless}",
+     f"they carry {nameless_rows} measurements and can only ever merge with a "
+     f"source that spells the name the same way")
 
 # -- what the sources look like, which is their business and not ours -------
 
