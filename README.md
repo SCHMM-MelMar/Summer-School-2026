@@ -8,7 +8,7 @@ database/schema.sql       the DDL, the single source of truth
 database/probedb/         connect, insert, query
 loader/                   read staging files, write them into the database
 staging/_template/        worked example of what a data source hands over
-examples/                 populate_db.py, explore_db.ipynb
+examples/                 populate_db.py, qc_db.py, explore_db.ipynb
 tests.py
 ```
 
@@ -61,6 +61,12 @@ Only `inchikey`, `target_key`, `value` and `unit` have to be there in
 `bioactivity.tsv`, and `inchikey` in `compound.tsv`. Any other column can be
 left out of the header entirely and it loads as empty.
 
+There is no fifth file for provenance: the directory is the set. Loading
+`staging/reFRAME` records a compound set called `reFRAME` and puts every
+compound in it, so `db.compounds(set="reFRAME")` works with nothing extra to
+maintain. A compound arriving from three directories is one compound row and
+three memberships.
+
 The rules, in short:
 
 - `inchikey` is the compound key everywhere.
@@ -110,12 +116,19 @@ load_all(db)                            # every directory under staging/
 ```
 
 Pass `":memory:"` instead of a path to build the database in RAM. Nothing is
-written to disk and it disappears when you are done, which is what the notebook
-and `tests.py` use. Rebuilding from the staging files takes under a second, so
-there is rarely a reason to keep a file around while exploring.
+written to disk and it disappears when you are done, which is what `tests.py`
+uses.
 
 `create=True` builds the tables, so it fails on a database that already has
-them. Delete the file first for a clean rebuild.
+them. Delete the file first for a clean rebuild. To open one that already
+exists, leave it out:
+
+```python
+db = ProbeDB("probe.db")     # read what is already there
+```
+
+Assembling all of `staging/` takes about two minutes, so it is worth keeping
+the file. `explore_db.ipynb` opens it rather than rebuilding.
 
 One source at a time:
 
@@ -125,10 +138,24 @@ from loader import load
 load(db, "staging/my_source", source="my_source")
 ```
 
+`source` names the compound set, and stands in for any measurement whose row
+does not say which `source_db` it came from. `load_all` passes the directory
+name, so the set is called after the directory.
+
 From the shell:
 
 ```bash
-python examples/populate_db.py
+python examples/populate_db.py                 # refuse a directory that does not validate
+python examples/populate_db.py --lenient       # load what each one can represent
+```
+
+`--lenient` is for the merged database while sources are still being cleaned
+up. It loads what a directory can represent instead of refusing the whole
+thing, and counts everything it dropped:
+
+```
+reFRAME  {'compounds': 8513, 'targets': 5609, 'sets': 1, 'bioactivities': 435266}
+reFRAME  dropped {'targets_skipped': 1642, 'bioactivities_skipped': 1005973}
 ```
 
 Loading the same directory twice does not duplicate anything. Compounds,
@@ -149,15 +176,48 @@ db.counts()
 ```
 
 ```
-             table  rows
-          compound     3
-            chembl     3
-           uniprot     8
+              table  rows
+           compound     3
+             chembl     3
+       compound_set     1
+compound_set_member     3
+            uniprot     8
             target     6
     target_uniprot     9
 bioactivity_source    10
  bioactivity_group     8
        bioactivity    13
+```
+
+### Checking a merged database
+
+`populate_db.py` says what each directory contributed. `qc_db.py` asks the
+opposite question: now that six sources are in one file, did they actually
+merge, or is it six databases sharing a file?
+
+```bash
+python examples/qc_db.py probe.db
+```
+
+It splits what it finds in two. Checks are things that would mean the database
+is wrong, and it exits non-zero if any fail:
+
+```
+    ok    one protein is one target however many sources report it
+              0 accessions ended up on two rows
+    ok    compounds are shared between sets
+              2631 in more than one set
+    FAIL  no log endpoint carries a molar unit
+              46 rows
+```
+
+Notes are things worth knowing that belong to the source data rather than to
+the merge, so they are printed and not failed:
+
+```
+    measurements with no unit: 6374
+             source_db    n  no_type
+        Probes & Drugs 6224     6224
 ```
 
 ## 5. Fetching data
@@ -183,6 +243,68 @@ db.compound_key("Olaparib")
 db.compound_key("CHEMBL521686")
 db.compound_key("FDLYAMZZIXQODN-UHFFFAOYSA-N")
 ```
+
+### One row per compound, and which set it came from
+
+`db.compounds()` is the compound index: one row per structure whatever it is a
+member of, with the sets it belongs to spelled out.
+
+```python
+db.compounds()[["name", "n_sets", "sets", "n_targets"]]
+```
+
+```
+    name  n_sets     sets  n_targets
+ BI-2536       1 template          3
+Olaparib       1 template          3
+ (+)-JQ1       1 template          2
+```
+
+Filtering keeps that shape, so a compound in five libraries is still one row
+and still shows all five:
+
+```python
+db.compounds(set="reFRAME")        # by set, which is the directory it came in from
+db.compounds(category="library")   # by kind of collection
+```
+
+The other direction, from a compound to what claims it:
+
+```python
+db.compound_sets("BI-2536")
+```
+
+```
+ set_id     name category source_db description
+      1 template  library  template        None
+```
+
+And `db.sets()` is the catalogue, with how big each one is:
+
+```python
+db.sets()
+```
+
+```
+ set_id     name category source_db  compounds
+      1 template  library  template          3
+```
+
+Membership is a link table, not a column on the compound, so a compound is in
+as many sets as claim it and the overlap between two libraries is a join:
+
+```python
+db.read("""
+  SELECT a.name AS set_a, b.name AS set_b, COUNT(*) AS shared
+    FROM compound_set_member ma JOIN compound_set a ON a.set_id = ma.set_id
+    JOIN compound_set_member mb ON mb.inchikey = ma.inchikey
+    JOIN compound_set b ON b.set_id = mb.set_id
+   WHERE a.set_id < b.set_id GROUP BY a.set_id, b.set_id ORDER BY shared DESC
+""")
+```
+
+If you want one row per membership instead, to merge a frame of your own onto,
+that is the `compound_flat` view.
 
 ### Everything measured for one compound
 
@@ -317,6 +439,22 @@ compound                              target   value unit  source_db        sour
 for the in-house rows and for a Probes & Drugs activity id. The identifier is
 still in `source_xref` either way.
 
+`bioactivity` itself stores `source_id`, an integer, because the name of a
+source belongs in one place and not on every one of its measurements. If you
+want the names without writing the join, read `bioactivity_flat` instead of
+`bioactivity`. It is the same rows with the compound, the target and the source
+spelled out, and it is what `db.bioactivities()` returns:
+
+```python
+db.read("SELECT source_db, COUNT(*) n FROM bioactivity_flat GROUP BY 1")
+```
+
+```
+     source_db    n
+Probes & Drugs 1684
+         opnMe   75
+```
+
 ### Assay context
 
 How a number was measured sits on the measurement, so a biochemical IC50 and a
@@ -339,7 +477,7 @@ compound                               target bioactivity_type  value    unit  a
 
 ### Fixed vocabularies
 
-The two closed vocabularies live in `CHECK` constraints in `database/schema.sql`
+The closed vocabularies live in `CHECK` constraints in `database/schema.sql`
 and nowhere else. The loader reads them back out of that file, so there is one
 definition and it cannot drift:
 
@@ -348,6 +486,7 @@ from probedb.schema import vocabulary
 
 vocabulary("type")       # {'protein', 'complex', 'family', 'ppi'}
 vocabulary("relation")   # {'=', '>', '<', '>=', '<=', '~'}
+vocabulary("category")   # what kind of collection a compound set is
 ```
 
 Adding a value means editing the `CHECK` in `schema.sql`. Everything else
@@ -359,6 +498,8 @@ follows.
 | ---------------------- | ------------------------------------------------------------ |
 | `compound`           | one row per structure, keyed on InChIKey, searchable by name |
 | `chembl`             | ChEMBL id of a compound, keyed on the id                     |
+| `compound_set`       | a collection, one per staging directory                      |
+| `compound_set_member`| which compounds are in it                                    |
 | `uniprot`            | accession, HGNC symbol, species                              |
 | `target`             | one row per target, with a type                              |
 | `target_uniprot`     | which accessions make up a target                            |
@@ -366,8 +507,10 @@ follows.
 | `bioactivity_group`  | compound, target and MoA, the unit you would aggregate over  |
 | `bioactivity`        | one row per reported measurement, with how it was measured   |
 | `target_flat`        | view, one row per target and accession pair                  |
+| `compound_flat`      | view, one row per compound and set                           |
+| `bioactivity_flat`   | view, every measurement with its compound, target and source named |
 
-Three things worth knowing before you query.
+A few things worth knowing before you query.
 
 **The InChIKey is the compound key.** There is no surrogate compound id: every
 source is matched on the InChIKey anyway, so a second identifier would only be
@@ -388,3 +531,8 @@ comparison has to name the unit it is comparing on.
 **Measurements are never merged.** The same compound, target and assay measured
 three times stays three rows. Averaging on load would hide the spread and lose
 the per source attribution.
+
+**A set is a directory, and membership is a table.** The same compound arriving
+from five sources is one `compound` row and five `compound_set_member` rows, so
+where it came from survives the merge and the overlap between two sources is a
+join. A column on `compound` could not hold five answers.

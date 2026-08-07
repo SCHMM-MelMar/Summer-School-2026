@@ -7,6 +7,8 @@ SCHEMA_SQL = Path(__file__).resolve().parent.parent / "schema.sql"
 TABLES = [
     "compound",
     "chembl",
+    "compound_set",
+    "compound_set_member",
     "uniprot",
     "target",
     "target_uniprot",
@@ -15,12 +17,13 @@ TABLES = [
     "bioactivity",
 ]
 
-VIEWS = ["target_flat"]
+VIEWS = ["bioactivity_flat", "compound_flat", "target_flat"]
 
 
 def vocabulary(column):
     """The allowed values for a column, read from its CHECK constraint."""
-    pattern = rf"{column}\s+IN\s*\(([^)]*)\)"
+    # \b so asking for `type` does not find `relation_type`
+    pattern = rf"\b{column}\s+IN\s*\(([^)]*)\)"
     match = re.search(pattern, SCHEMA_SQL.read_text(), re.I)
     if not match:
         raise KeyError(f"no CHECK vocabulary for {column!r}")

@@ -106,6 +106,20 @@ assert lit["source_url"].str.startswith("https://doi.org/10.").all()
 assert rows[rows.source_db == "in-house"]["source_url"].isna().all()
 assert db.sources()["measurements"].sum() == len(rows)
 
+# one directory is one set, named after itself, so every compound can say where
+# it came from. this is one row per compound, not one row per membership
+compounds = db.compounds()
+assert len(compounds) == counts["compound"]
+assert len(db.table("compound_flat")) == counts["compound_set_member"]
+assert db.sets()["name"].tolist() == ["template"]
+assert db.sets()["compounds"].tolist() == [3]
+assert len(db.compounds(set="template")) == 3
+assert len(db.compounds(set="not a set")) == 0
+assert compounds.set_index("inchikey").loc[JQ1, "sets"] == "template"
+
+# the other direction, from a compound to what claims it
+assert db.compound_sets("BI-2536")["name"].tolist() == ["template"]
+
 # target and uniprot are two tables with no shared column, targets() joins them
 flat = db.targets()
 assert set(flat["target_id"]) == set(db.table("target")["target_id"])
@@ -139,8 +153,15 @@ sources = [
 if not sources:
     logger.warning("no source directories in staging/, checked the template only")
 else:
-    full = ProbeDB(":memory:", create=True)
-    load_all(full, STAGING)
-    logger.info(f"loaded {len(sources)} source(s): " f"{dict(full.counts().values)}")
+    # staging/ is where everybody drops their source, so a directory that is
+    # still being worked on is reported and skipped rather than failing the run
+    full, loaded = ProbeDB(":memory:", create=True), []
+    for directory in sources:
+        try:
+            load(full, directory, source=directory.name)
+            loaded.append(directory.name)
+        except ValueError as problem:
+            logger.warning(f"skipped {directory.name}\n{problem}")
+    logger.info(f"loaded {loaded}: {dict(full.counts().values)}")
 
 logger.info("ok")

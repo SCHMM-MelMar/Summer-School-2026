@@ -45,6 +45,63 @@ class ProbeDB:
         ]
         return pd.DataFrame(rows, columns=["table", "rows"])
 
+    def compounds(self, set=None, category=None):
+        # one row per compound, whatever it is a member of. the sets are rolled
+        # up into a readable column here and stay a link table underneath, so
+        # filtering by one set still shows you the other sets it belongs to
+        where, params = [], []
+        if set is not None:
+            where.append("s.name = ?")
+            params.append(set)
+        if category is not None:
+            where.append("s.category = ?")
+            params.append(category)
+        member = ""
+        if where:
+            member = f"""
+             WHERE c.inchikey IN (
+                   SELECT m.inchikey FROM compound_set_member m
+                     JOIN compound_set s ON s.set_id = m.set_id
+                    WHERE {' AND '.join(where)})"""
+        return self.read(
+            f"""
+            SELECT c.inchikey, c.name, c.smiles,
+                   COUNT(s.set_id) AS n_sets,
+                   GROUP_CONCAT(s.name, ', ') AS sets,
+                   (SELECT COUNT(DISTINCT g.target_id) FROM bioactivity_group g
+                     WHERE g.inchikey = c.inchikey) AS n_targets
+              FROM compound c
+              LEFT JOIN compound_set_member cm ON cm.inchikey = c.inchikey
+              LEFT JOIN compound_set s ON s.set_id = cm.set_id
+              {member}
+             GROUP BY c.inchikey
+             ORDER BY n_targets DESC, c.name
+        """,
+            *params,
+        )
+
+    def sets(self):
+        return self.read(
+            """
+            SELECT s.set_id, s.name, s.category, s.source_db,
+                   COUNT(m.inchikey) AS compounds
+              FROM compound_set s
+              LEFT JOIN compound_set_member m ON m.set_id = s.set_id
+             GROUP BY s.set_id
+             ORDER BY compounds DESC, s.name
+        """
+        )
+
+    def compound_sets(self, key):
+        # the other direction: given a compound, which collections claim it
+        return self.read(
+            "SELECT s.set_id, s.name, s.category, s.source_db, s.description "
+            "  FROM compound_set_member m "
+            "  JOIN compound_set s ON s.set_id = m.set_id "
+            " WHERE m.inchikey = ? ORDER BY s.category, s.name",
+            self.compound_key(key),
+        )
+
     def targets(self, key=None):
         # target and uniprot share no column, target_uniprot is the link.
         # one row per target and accession, so a complex comes back as
@@ -70,31 +127,19 @@ class ProbeDB:
         )
 
     def bioactivities(self, compound=None, target=None):
+        # the view is the join; this only filters it
         where, params = [], []
         if compound is not None:
-            where.append("b.inchikey = ?")
+            where.append("inchikey = ?")
             params.append(self.compound_key(compound))
         if target is not None:
             ids = self.targets_for(target)
-            where.append(f"b.target_id IN ({','.join('?' * len(ids))})")
+            where.append(f"target_id IN ({','.join('?' * len(ids))})")
             params += ids
-        sql = """
-            SELECT b.id, b.inchikey, c.name AS compound, b.target_id,
-                   t.type AS target_type, t.name AS target, b.moa,
-                   b.bioactivity_type, b.relation, b.value, b.unit,
-                   b.assay_type, b.assay_description, b.cell_line,
-                   b.concentration, b.concentration_unit,
-                   b.source_id, s.source_db, s.source, b.source_xref,
-                   CASE WHEN s.xref_id IS NOT NULL AND b.source_xref IS NOT NULL
-                        THEN s.xref_id || b.source_xref END AS source_url
-              FROM bioactivity b
-              JOIN compound c ON c.inchikey = b.inchikey
-              JOIN target t ON t.target_id = b.target_id
-              LEFT JOIN bioactivity_source s ON s.source_id = b.source_id
-        """
+        sql = "SELECT * FROM bioactivity_flat"
         if where:
             sql += " WHERE " + " AND ".join(where)
-        return self.read(sql + " ORDER BY b.id", *params)
+        return self.read(sql + " ORDER BY id", *params)
 
     # lookup
 
@@ -193,6 +238,26 @@ class ProbeDB:
         ):
             self.insert("chembl", chembl_id=chembl_id, inchikey=inchikey)
         return chembl_id
+
+    def add_set(self, name, category, source_db=None, description=None):
+        found = self.one("SELECT set_id FROM compound_set WHERE name = ?", name)
+        if found is not None:
+            return found
+        return self.insert(
+            "compound_set",
+            name=name,
+            category=category,
+            source_db=source_db or None,
+            description=description or None,
+        )
+
+    def add_set_member(self, set_id, inchikey):
+        self.conn.execute(
+            "INSERT OR IGNORE INTO compound_set_member (set_id, inchikey) "
+            "VALUES (?, ?)",
+            (set_id, inchikey.strip().upper()),
+        )
+        return set_id
 
     def add_uniprot(self, uniprot_id, hgnc=None, species=None, entrez_gene=None):
         uniprot_id = uniprot_id.strip().upper()

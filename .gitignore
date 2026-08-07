@@ -1,7 +1,9 @@
-*.db
+*.db*
 __pycache__/
 *.egg-info/
 staging/*
 !staging/_template/
+staging_test/
+.DS_Store
 build/
 dist/
