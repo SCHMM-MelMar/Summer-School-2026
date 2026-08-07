@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import requests
+import re
 from rdkit import Chem
 
 # ==========================================
@@ -61,7 +62,7 @@ def generate_tsvs():
     # Read the CSV file once
     df = pd.read_csv(input_file, low_memory=False)
     
-    # Handle slight variations in user's column naming (InChi Key vs InChiKey)
+    # Handle slight variations in user's column naming
     inchikey_col = 'Compound InChi Key' if 'Compound InChi Key' in df.columns else 'Compound InChiKey'
     
     # Pre-clean InChIKeys
@@ -124,15 +125,12 @@ def generate_tsvs():
     # ==========================================
     # 4. bioactivity.tsv
     # ==========================================
-    # Update the raw dataframe's InChIKey column so the bioactivity table 
-    # benefits from the missing InChIKeys we just generated from SMILES.
     inchikey_map = dict(zip(compound_df['smiles'], compound_df['inchikey']))
     df[inchikey_col] = df.apply(
         lambda row: inchikey_map.get(row['Compound SMILES'], row[inchikey_col]), 
         axis=1
     )
 
-    # Extract only the integer from Recommended Concentration
     extracted_concentration = df['Recommended Concentration'].astype(str).str.extract(r'(\d+)', expand=False)
     
     # --- Create Biochemical DataFrame ---
@@ -178,25 +176,53 @@ def generate_tsvs():
     # Combine both DataFrames
     bioactivity_df = pd.concat([bio1, bio2], ignore_index=True)
     
-    # Remove rows where the bioactivity value is missing to prevent unnecessary duplications
     bioactivity_df['relation'] = bioactivity_df['relation'].replace('0', np.nan)
-    
-    # Normalize 'Negative Control' text before coercing to numeric
     bioactivity_df = normalize_negative_control_values(bioactivity_df)
-
-    # add missing InChiKeys
-    print("Processing missing InChIKeys using RDKit...")
-    bioactivity_df['inchikey'] = bioactivity_df.apply(
-        lambda row: smiles_to_inchikey(row['smiles']) if pd.isna(row['inchikey']) else row['inchikey'], 
-        axis=1
-    )
-    
-    # Force value to numeric
     bioactivity_df['value'] = pd.to_numeric(bioactivity_df['value'], errors='coerce')
     
     bioactivity_df = bioactivity_df.dropna(subset=['value'])
+    bioactivity_df = bioactivity_df.dropna(subset=['inchikey'])
+
+    # ==========================================
+    # 5. control.tsv
+    # ==========================================
+    # Extract everything after "negative control of "
+    moa_pattern = r'(?i)negative control for\s+(.*)'
+    extracted_names = bioactivity_df['moa'].str.extract(moa_pattern)[0]
     
-    # Save to TSV
+    control_mask = extracted_names.notna()
+    
+    # Build an intermediate control dataframe
+    control_df = pd.DataFrame()
+    control_df['inchikey_control'] = bioactivity_df.loc[control_mask, 'inchikey']
+    control_df['compound_names'] = extracted_names[control_mask]
+    
+    # Split the target compounds by " and " OR commas (case-insensitive)
+    # e.g., "CompoundX and CompoundY" becomes ['CompoundX', 'CompoundY']
+    control_df['compound_names'] = control_df['compound_names'].str.split(r'(?i)\s+and\s+|\s*,\s*')
+    
+    # Explode the lists into separate rows
+    control_df = control_df.explode('compound_names')
+    
+    # Clean up any accidental leading/trailing whitespace
+    control_df['compound_names'] = control_df['compound_names'].str.strip()
+    
+    # Map compound name to inchikey_compound
+    name_to_inchikey = dict(zip(compound_df['name'], compound_df['inchikey']))
+    control_df['inchikey_compound'] = control_df['compound_names'].map(name_to_inchikey)
+    
+    # Finalize columns, drop any mapping failures (NaNs), and deduplicate
+    control_df = control_df[['inchikey_compound', 'inchikey_control']]
+    control_df = control_df.dropna(subset=['inchikey_compound']).drop_duplicates()
+    
+    # Remove these control rows from bioactivity_df
+    bioactivity_df = bioactivity_df[~control_mask]
+    
+    # Save control.tsv
+    control_df.to_csv("control.tsv", sep='\t', index=False)
+    print(f"Successfully generated control.tsv ({len(control_df)} rows)")
+
+    # Save finalized bioactivity.tsv
     bioactivity_df.to_csv("bioactivity.tsv", sep='\t', index=False)
     print("Successfully generated bioactivity.tsv")
     
