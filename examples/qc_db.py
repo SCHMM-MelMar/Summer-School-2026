@@ -169,9 +169,9 @@ check(split == 0,
       f"{split} accessions ended up on two rows")
 
 # the check above is narrow on purpose: it is the part the loader controls.
-# it says nothing about an accession that also appears inside a lumped target,
-# or about a target carrying no accession at all, and both of those split one
-# protein across several rows just as effectively
+# it says nothing about an accession that also sits inside a target carrying
+# several of them, nor about a target carrying no accession at all, and both
+# of those split one protein across several rows just as effectively
 fragmented = db.read(
     """
     SELECT tu.uniprot_id, u.hgnc, COUNT(DISTINCT tu.target_id) AS targets
@@ -246,8 +246,8 @@ note(f"targets with no accession at all: {nameless}",
 # ortholog group or a whole screening panel a protein. it loads, it just does
 # not mean what the type says, and now that uniprot.superfamily exists it does
 # real damage: every one of those accessions drags the target into its family,
-# so asking for the Ras family also returns whatever else got lumped in
-lumped = db.read(
+# so asking for the Ras family also returns whatever else was filed with it
+several = db.read(
     """
     SELECT t.target_id, t.name, COUNT(*) AS accessions
       FROM target t JOIN target_uniprot tu ON tu.target_id = t.target_id
@@ -266,7 +266,7 @@ total = count(
 """
 )
 note(f"protein targets carrying more than one accession: {total}",
-     lumped.to_string(index=False))
+     several.to_string(index=False))
 
 # how much of the reference file landed, and how far it reaches
 classified = count("SELECT COUNT(*) FROM uniprot WHERE superfamily IS NOT NULL")
