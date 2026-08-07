@@ -511,6 +511,53 @@ Probes & Drugs 1684
          opnMe   75
 ```
 
+### Structural similarity
+
+`probedb.similarity` answers "how similar are the compounds tested against this
+target". It needs RDKit, which is an optional dependency: `pip install -e
+.[chem]`. Everything else in `probedb` works without it.
+
+```python
+from probedb import similarity
+
+similarity.summary(db, target="EGFR")
+```
+
+```
+ compounds   pairs   median   max  pairs_over_0.7  in_a_series
+       578  166753   0.1761  0.97             166          143
+```
+
+A low median with a handful of close pairs is the usual shape: mostly unrelated
+chemotypes, plus one or two optimised series. `in_a_series` counts the
+compounds that have at least one close relative in the set.
+
+```python
+similarity.pairs(db, target="PLK1", threshold=0.9)   # the close pairs, ranked
+similarity.matrix(db, target="KRAS")                 # square, for a small set
+similarity.neighbours(db, "BI-2536", n=10)           # nearest across everything
+```
+
+Nothing is precomputed or stored, because nothing needs to be. Fingerprinting
+all 16564 structures takes 3.4 seconds once per session, and the largest target
+in the database, 3115 compounds and 4.85 million pairs, comes back in under ten.
+A stored similarity matrix would be 137 million pairs, larger than the whole
+database, to answer questions almost none of which get asked.
+
+Three things about the numbers:
+
+- **Count fingerprints, not bits.** A binary fingerprint records which atom
+  environments a molecule has and not how many, so lauric acid (C12) and
+  behenic acid (C22) are identical to it, as are azelaic and sebacic acid.
+  Counts put them at 0.57 and 0.92. It costs 14x in speed. `similarity.COUNTS`
+  trades it back.
+- **Chirality is on**, or a probe and its inactive enantiomer score 1.00.
+- **A 1.00 is not necessarily a duplicate.** `pairs()` carries a
+  `same_skeleton` column comparing the first block of the two InChIKeys, which
+  hashes the constitution. True means the pair differs only in stereochemistry
+  or isotopes, which a fingerprint cannot always see: PD081989 and PD084493 are
+  diastereomers and score 1.00.
+
 ### Assay context
 
 How a number was measured sits on the measurement, so a biochemical IC50 and a

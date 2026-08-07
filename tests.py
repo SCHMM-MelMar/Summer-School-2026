@@ -168,6 +168,48 @@ assert again == counts
 assert report["bioactivities"] == 0
 assert report["duplicates_skipped"] == counts["bioactivity"]
 
+# structural similarity. RDKit is optional, so this is skipped rather than
+# failed when it is not installed
+from probedb import similarity
+
+try:
+    similarity.fingerprints(db)
+except ImportError as missing:
+    logger.warning(f"skipping the similarity checks: {missing}")
+else:
+    assert len(similarity.fingerprints(db)) == 3
+    scored = similarity.pairs(db)
+    assert len(scored) == 3  # one row per pair, never the mirror image
+    assert (scored.tanimoto < 0.5).all()  # three unrelated chemotypes
+    assert not scored.same_skeleton.any()
+    assert similarity.neighbours(db, "BI-2536", n=1).tanimoto.iloc[0] < 0.5
+    square = similarity.matrix(db)
+    assert square.shape == (3, 3)
+    assert (square.to_numpy().diagonal() == 1.0).all()
+
+    # the two decisions this module makes, checked rather than asserted in a
+    # comment. counts, because a binary fingerprint cannot count carbons:
+    bench = ProbeDB(":memory:", create=True)
+    bench.add_compound("POULHZVOKOAJMA-UHFFFAOYSA-N", "CCCCCCCCCCCC(=O)O", "lauric acid")
+    bench.add_compound(
+        "UKMSUNONTOPOIO-UHFFFAOYSA-N", "CCCCCCCCCCCCCCCCCCCCCC(=O)O", "behenic acid"
+    )
+    homologues = similarity.pairs(bench).tanimoto.iloc[0]
+    assert homologues < 0.7, f"C12 and C22 scored {homologues}, counts are off"
+
+    # and chirality, because a probe and its inactive enantiomer are the pair
+    # that most needs telling apart
+    bench = ProbeDB(":memory:", create=True)
+    JQ1_MINUS = "DNVXATUJJDPFDM-QGZVFWFLSA-N"
+    bench.add_compound(JQ1, db.one("SELECT smiles FROM compound WHERE inchikey = ?", JQ1))
+    bench.add_compound(
+        JQ1_MINUS,
+        "Cc1sc2c(c1C)C(c1ccc(Cl)cc1)=N[C@H](CC(=O)OC(C)(C)C)c1nnc(C)n1-2",
+    )
+    enantiomers = similarity.pairs(bench).iloc[0]
+    assert enantiomers.tanimoto < 1.0, "the JQ1 enantiomers scored identical"
+    assert enantiomers.same_skeleton  # same constitution, different stereochemistry
+
 sources = [
     d for d in sorted(STAGING.iterdir()) if d.is_dir() and not d.name.startswith("_")
 ]
